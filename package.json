@@ -1,0 +1,10 @@
+{
+  "name": "engrafo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Readapaper",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "distill-template": "^1.1.0"
+  }
+}

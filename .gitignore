@@ -1,2 +1,11 @@
+# node
 /local
 /node_modules
+
+# emacs
+*_flymake.py
+
+# python
+*.egg
+*.egg-info
+/engrafo_pandocfilter/build/

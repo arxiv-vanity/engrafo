@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <h1>Arxiv Sanity Sanity</h1>
+    <h1>Arxiv Sanity Sanity <span id="stats"></span></h1>
     <ul id="papers">
       {% for paper in papers %}
       <li class="paper"><img class="status" /><a class="paper-link" href="/html/{{ paper.pid }}/">{{ paper.title }}</a></li>

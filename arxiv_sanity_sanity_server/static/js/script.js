@@ -1,3 +1,6 @@
+var numGood = 0;
+var numTotal = 0;
+
 $(function() {
 
     var papers = $('.paper').toArray();
@@ -15,6 +18,11 @@ function syncApply(list, func) {
 }
 
 
+function updateStats() {
+    var goodPercent = Math.round(100 * numGood / numTotal);
+    $('#stats').text(`(${numGood} / ${numTotal} == ${goodPercent}%)`);
+}
+
 function showStatus(paper) {
     return new Promise((resolve, reject) => {
 
@@ -27,6 +35,9 @@ function showStatus(paper) {
         $.ajax({
             url: link,
             success: (data, status) => {
+                numGood ++;
+                numTotal ++;
+                updateStats();
                 $status.attr('src', '/img/check-mark.png');
                 resolve();
             },
@@ -36,6 +47,8 @@ function showStatus(paper) {
                 if (isAmbiguous) {
                     $status.attr('src', '/img/question-mark.png');
                 } else {
+                    numTotal ++;
+                    updateStats();
                     $status.attr('src', '/img/no-entry.png');
                 }
                 resolve();

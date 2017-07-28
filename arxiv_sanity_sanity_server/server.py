@@ -57,7 +57,7 @@ stderr:
 
 %s:
 %s
-''' % (e.returncode, e.stdout, e.stderr, e.error_filename, e.latex_source.decode('utf-8')),
+''' % (e.returncode, e.stdout, e.stderr.decode('utf-8'), e.error_filename, e.latex_source.decode('utf-8')),
                         mimetype='text/plain',
                         status=400)
 

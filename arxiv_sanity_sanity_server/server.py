@@ -38,8 +38,8 @@ def html(arxiv_id):
         os.makedirs(folder)
         app.logger.info('%s: Downloading sources', arxiv_id)
         download_sources(folder, arxiv_id)
-    app.logger.info('%s: Extracting sources', arxiv_id)
-    extract_sources(folder)
+        app.logger.info('%s: Extracting sources', arxiv_id)
+        extract_sources(folder)
     app.logger.info('%s: Converting to HTML', arxiv_id)
     try:
         html_path = convert_latex_to_html(folder)

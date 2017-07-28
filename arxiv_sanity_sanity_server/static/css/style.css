@@ -1,0 +1,29 @@
+body, html {
+    font-family: sans-serif;
+    color: #333;
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding: 0;
+}
+
+.status {
+    heigth: 20px;
+    width: 20px;
+    margin-right: 10px;
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Arxiv Sanity Sanity</title>
+  </head>
+  <body>
+    <h1>Arxiv Sanity Sanity</h1>
+    <ul>
+      {% for paper in papers %}
+      <li><a href="/html/{{ paper.pid }}/">{{ paper.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

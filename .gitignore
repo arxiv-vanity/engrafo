@@ -2,6 +2,9 @@
 /local
 /node_modules
 
+# arxiv-sanity-sanity prototype
+/arxiv_sanity_sanity_server/papers
+
 # emacs
 *_flymake.py
 

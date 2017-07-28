@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import re
 import json
 import requests
 import logging
@@ -52,9 +53,9 @@ stdout:
 stderr:
 %s
 
-Main latex file:
+%s:
 %s
-''' % (e.returncode, e.stdout, e.stderr, e.latex_source),
+''' % (e.returncode, e.stdout, e.stderr, e.error_filename, e.latex_source),
                         mimetype='text/plain',
                         status=400)
 
@@ -124,23 +125,31 @@ def convert_latex_to_html(folder):
     process = subprocess.Popen(
         cmd, cwd=folder, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     stdout, stderr = process.communicate()
+    error_filename = re.search(r'Error at "(.+)" \(line ', stderr).group(1)
+    if error_filename == 'source':
+        error_filename = latex_path
+    else:
+        error_filename = os.path.join(folder, error_filename)
+
     if process.returncode != 0:
-        with open(latex_path) as f:
+        with open(error_filename) as f:
             latex_source = ''.join(
                 ['%04d  %s' % (i + 1, line)
                  for i, line in enumerate(f.readlines())])
-        raise PandocError(process.returncode, stdout, stderr, latex_source)
+        raise PandocError(process.returncode, stdout, stderr,
+                          error_filename, latex_source)
 
     return html_path
 
 
 class PandocError(Exception):
 
-    def __init__(self, returncode, stdout, stderr, latex_source):
+    def __init__(self, returncode, stdout, stderr, error_filename, latex_source):
         super(PandocError, self).__init__(self, 'Pandoc failed to convert LaTeX')
         self.returncode = returncode
         self.stdout = stdout
         self.stderr = stderr
+        self.error_filename = error_filename
         self.latex_source = latex_source
 
 

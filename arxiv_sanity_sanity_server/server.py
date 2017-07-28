@@ -129,13 +129,13 @@ def convert_latex_to_html(folder):
     if process.returncode != 0:
 
         error_match = re.search(r'Error at "(.+)" \(line ', stderr)
-        error_filename = latex_path
+        error_path = latex_path
         if error_match:
             error_filename = error_match.group(1)
             if error_filename != 'source':
-                error_filename = os.path.join(folder, error_filename)
+                error_path = os.path.join(folder, error_filename)
 
-        with open(error_filename) as f:
+        with open(error_path) as f:
             latex_source = ''.join(
                 ['%04d  %s' % (i + 1, line)
                  for i, line in enumerate(f.readlines())])

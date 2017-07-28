@@ -24,7 +24,9 @@ PAPERS_PATH = 'papers'
 
 @app.route('/')
 def index():
-    text = requests.get('http://arxiv-sanity.com').text
+    #text = requests.get('http://arxiv-sanity.com').text
+    with open('arxiv-sanity-snapshot.html') as f:
+        text = f.read()
     papers = json.loads([line for line in text.splitlines()
                        if line.startswith('var papers = ')][0][len('var papers = '):-1])
 
@@ -55,7 +57,7 @@ stderr:
 
 %s:
 %s
-''' % (e.returncode, e.stdout, e.stderr, e.error_filename, e.latex_source),
+''' % (e.returncode, e.stdout, e.stderr, e.error_filename, e.latex_source.decode('utf-8')),
                         mimetype='text/plain',
                         status=400)
 

@@ -113,7 +113,7 @@ def convert_latex_to_html(folder):
 
     cmd = [
         'pandoc',
-        '--from', 'latex+raw_tex',
+        '--from', 'latex+raw_tex-latex_macros',
         '--to', 'html',
         '--mathjax',
         '--standalone',

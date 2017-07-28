@@ -31,7 +31,13 @@ function showStatus(paper) {
                 resolve();
             },
             error: (xhr) => {
-                $status.attr('src', '/img/no-entry.png');
+                var body = xhr.responseText;
+                var isAmbiguous = body.indexOf('Ambiguous LaTeX path') != -1;
+                if (isAmbiguous) {
+                    $status.attr('src', '/img/question-mark.png');
+                } else {
+                    $status.attr('src', '/img/no-entry.png');
+                }
                 resolve();
             }
         });

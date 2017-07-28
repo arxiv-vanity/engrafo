@@ -96,7 +96,7 @@ def pick_latex_path(latex_paths):
                 candidates.append(path)
 
     if len(candidates) != 1:
-        raise BadRequest('Ambiguous latex path, len candidates: %d' % len(candidates))
+        raise BadRequest('Ambiguous LaTeX path, len candidates: %d' % len(candidates))
 
     return candidates[0]
 

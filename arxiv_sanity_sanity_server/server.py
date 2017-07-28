@@ -140,7 +140,7 @@ def convert_latex_to_html(folder):
                 ['%04d  %s' % (i + 1, line)
                  for i, line in enumerate(f.readlines())])
         raise PandocError(process.returncode, stdout, stderr,
-                          error_filename, latex_source)
+                          error_path, latex_source)
 
     return html_path
 

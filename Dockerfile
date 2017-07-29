@@ -1,7 +1,6 @@
 FROM andreasjansson/pandoc as pandoc
 
 FROM debian:stretch
-# RUN apk --no-cache add ca-certificates python py-setuptools gmp libgcc
 RUN apt-get update -qq && apt-get install -qy \
   ca-certificates \
   libgmp10 \

@@ -29,6 +29,7 @@ function showStatus(paper) {
         var $paper = $(paper);
         var link = $('a', $paper).attr('href');
         var $status = $('.status', $paper);
+        var $code = $('.parse-error', $paper);
 
         $status.attr('src', '/img/ajax-loader.gif');
 
@@ -43,14 +44,22 @@ function showStatus(paper) {
             },
             error: (xhr) => {
                 var body = xhr.responseText;
+                var error;
+
                 var isAmbiguous = body.indexOf('Ambiguous LaTeX path') != -1;
                 if (isAmbiguous) {
+                    error = body.match(/(Ambiguous LaTeX path, len candidates: ([0-9]+))/)[1];
                     $status.attr('src', '/img/question-mark.png');
                 } else {
                     numTotal ++;
                     updateStats();
                     $status.attr('src', '/img/no-entry.png');
+                    var match = body.match(/(Error at ".+" \(line.+[^\^]+\^)/mi);
+                    error = match ? match[1] : 'unknown error, click the link';
                 }
+
+                $code.text(error);
+
                 resolve();
             }
         });

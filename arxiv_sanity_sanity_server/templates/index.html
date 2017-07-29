@@ -9,10 +9,14 @@
     <h1>Arxiv Sanity Sanity <span id="stats"></span></h1>
     <ul id="papers">
       {% for paper in papers %}
-      <li class="paper"><img class="status" /><a class="paper-link" href="/html/{{ paper.pid }}/">{{ paper.title }}</a></li>
+      <li class="paper">
+        <img class="status" />
+        <a class="paper-link" href="/html/{{ paper.pid }}/">{{ paper.title }}</a>
+        <pre class="parse-error"></pre>
+      </li>
       {% endfor %}
     </ul>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
   </body>
 </html>

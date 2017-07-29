@@ -9,6 +9,7 @@ from glob import glob
 import subprocess
 import os
 import urllib
+import random
 
 from flask import (
     Flask, session, redirect, url_for, request, render_template, g, jsonify,
@@ -29,6 +30,7 @@ def index():
         text = f.read()
     papers = json.loads([line for line in text.splitlines()
                        if line.startswith('var papers = ')][0][len('var papers = '):-1])
+    random.shuffle(papers)
 
     return render_template('index.html', papers=papers)
 

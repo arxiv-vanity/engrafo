@@ -27,3 +27,8 @@ ul {
     width: 20px;
     margin-right: 10px;
 }
+
+.parse-error {
+    font-size: 10px;
+    margin-left: 37px;
+}

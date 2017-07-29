@@ -271,9 +271,13 @@ def tikz2image(tikz_src, prefix):
             f.write(tikz_src)
             f.write('\n\\end{document}\n')
         try:
-            subprocess.check_output([
-                'pdflatex', '-interaction=nonstopmode', tex_filename])
-        except subprocess.CalledProcessError:
+            subprocess.check_output(
+                ['pdflatex', '-interaction=nonstopmode', tex_filename])
+        except subprocess.CalledProcessError as e:
+            # an actual error occurred
+            if "Fatal error occurred" in e.output:
+                print >>sys.stderr, e.output
+                raise
             # pdflatex tends to return 1 regardless
             pass
         pdf2svg(pdf_filename, svg_filename)

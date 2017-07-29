@@ -2,13 +2,33 @@
 
 var fs = require("fs"),
     engrafo = require("../index.js"),
-    program = require('commander');
+    program = require('commander'),
+    childProcess = require('child_process');
 
 program
   .version('0.0.1')
-  .option('-i, --input <path>', 'path to input file.')
   .parse(process.argv);
 
-let htmlString = fs.readFileSync(program.input, "utf8");
-let transformedHtml = engrafo.render(htmlString);
-process.stdout.write(transformedHtml);
+let texFile = program.args[0];
+
+let args = [
+  "--from", "latex+raw_tex",
+  "--to", "html",
+  "--standalone",
+  "--mathjax",
+  "--filter", "engrafo_pandocfilter",
+  "--output", "index.html",
+  texFile
+];
+let pandoc = childProcess.spawn("/usr/local/bin/pandoc", args);
+pandoc.stderr.on('data', (data) => { console.error(data.toString()); });
+pandoc.on('close', (code) => {
+  if (code !== 0) {
+    console.error(`pandoc exited with status ${code}`);
+    process.exit(1);
+  }
+
+  let htmlString = fs.readFileSync("index.html", "utf8");
+  let transformedHtml = engrafo.render(htmlString);
+  fs.writeFileSync("index.html", transformedHtml);
+});

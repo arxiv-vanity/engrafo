@@ -8,6 +8,7 @@ function render(htmlString) {
   });
   postprocessors.layout(dom);
   postprocessors.header(dom);
+  postprocessors.figures(dom);
   postprocessors.footnotes(dom);
   distill.render(dom, {});
   return jsdom.serializeDocument(dom);

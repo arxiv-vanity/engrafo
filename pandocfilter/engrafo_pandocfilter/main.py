@@ -100,7 +100,10 @@ def insert_table_labels(key, val, fmt, meta):
                     span_index = i
                     caption.pop(span_index)
                     caption.insert(0, Str('Table %d: ' % index))
-                    return Div(['table-%d' % index, [], []], [Table(*val)])
+                    return Div(
+                        ['table-%d' % index, ['engrafo-table'], []],
+                        [Table(*val)]
+                    )
 
 
 def insert_equation_labels(key, val, fmt, meta):

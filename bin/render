@@ -16,7 +16,7 @@ let args = [
   "--to", "html",
   "--standalone",
   "--mathjax",
-  "--filter", "engrafo_pandocfilter",
+  "--filter", "/app/pandocfilter/engrafo_pandocfilter.py",
   "--output", "index.html",
   texFile
 ];

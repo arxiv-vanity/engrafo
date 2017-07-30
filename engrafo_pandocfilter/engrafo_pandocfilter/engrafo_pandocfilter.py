@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import os
@@ -168,8 +169,9 @@ def insert_section_labels(key, val, fmt, meta):
             )
 
         if not unnumbered:
-            children = [Str(sec_number), Space()] + children
-        attrs[0] = 'section-%s' % sec_number
+            span = Span(['', ['section-number'], []], [Str(sec_number)])
+            children = [span, Space()] + children
+        attrs[0] = 'section-%s' % sec_number.lower()
 
         return Header(level, attrs, children)
 

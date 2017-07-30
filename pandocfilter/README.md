@@ -1,4 +1,4 @@
-# engrafo_pandocfilter
+# pandocfilter
 
 One single
 monolithic [Pandoc filter](http://pandoc.org/scripting.html) for all
@@ -10,6 +10,10 @@ For example:
 * Move figure captions from hidden `alt` texts to visible paragraphs
 
 ## Installation
+
+Use Docker installation in parent directory.
+
+If you are Andreas:
 
 ```sh
 python setup.py install
@@ -23,7 +27,7 @@ pandoc \
     --to html \
     --standalone \
     --mathjax \
-    --filter engrafo_pandocfilter \
+    --filter pandocfilter/main.py \
     --output index.html \
     lstm-syl.tex
 ```

@@ -1,0 +1,13 @@
+#!/bin/bash
+DIR=$(dirname "$1")
+DIR="$(cd "$DIR" && pwd)" # make absolute
+FILENAME=$(basename "$1")
+
+exec docker run \
+    -v "$DIR":/workdir -w /workdir \
+    engrafo pandoc \
+        --from latex+raw_tex \
+        --to json \
+        --standalone \
+        --mathjax \
+        "$FILENAME"

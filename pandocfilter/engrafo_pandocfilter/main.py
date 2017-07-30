@@ -26,7 +26,10 @@ PDF_REGEX = re.compile(r'^(.+)\.pdf$')
 REF_REGEX = re.compile(r'^ref\{([^\}]+)\}$')
 LABEL_REGEX = re.compile(r'\\label\{([^\}]+)\}')
 
+# - State
+# Label indexes
 label_map = {}
+# Section position state for generating section numbers
 sec_lengths = [0] * 10
 is_appendix = False
 
@@ -171,6 +174,9 @@ def insert_section_labels(key, val, fmt, meta):
             span = Span(['', ['section-number'], []], [Str(sec_number)])
             children = [span, Space()] + children
         attrs[0] = 'section-%s' % sec_number.lower()
+
+        # Decrease levels one more than Pandoc outputs (<h1> -> <h2>)
+        level += 1
 
         return Header(level, attrs, children)
 

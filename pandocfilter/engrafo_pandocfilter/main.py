@@ -71,7 +71,14 @@ def insert_figure_labels(key, val, fmt, meta):
                     span_index = i
                     alt.pop(span_index)
                     alt.insert(0, Str('Figure %d: ' % index))
-                    return Span(['figure-%d' % index, [], []], [Image(*val)])
+
+                    children = [
+                        Image(*val),
+                        Span(['', ['engrafo-figcaption'], []], alt)
+                    ]
+
+                    return Span(['figure-%d' % index, ['engrafo-figure'], []],
+                                children)
 
 
 def insert_table_labels(key, val, fmt, meta):

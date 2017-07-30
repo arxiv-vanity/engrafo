@@ -29,10 +29,29 @@ module.exports = function(dom) {
   style.appendChild(dom.createTextNode(css));
   dom.head.appendChild(style);
 
+  // Make tables figures
   let tables = dom.body.getElementsByClassName('engrafo-table');
   Array.from(tables).forEach((div) => {
     let figure = dom.createElement('figure');
     figure.id = div.id;
     utils.replaceAndKeepChildren(div, figure);
   })
+
+  // Make figures figures
+  let figures = dom.body.getElementsByClassName('engrafo-figure');
+  Array.from(figures).forEach((span) => {
+    // Pandoc gives us <p><span></span></p> so get rid of surrounding paragraph
+    let paragraph = span.parentNode;
+    paragraph.parentNode.insertBefore(span, paragraph);
+    if (paragraph.children.length === 0) {
+      paragraph.parentNode.removeChild(paragraph);
+    }
+
+    let figure = dom.createElement('figure');
+    figure.id = span.id;
+    utils.replaceAndKeepChildren(span, figure);
+
+    let caption = figure.getElementsByClassName('engrafo-figcaption')[0];
+    utils.replaceAndKeepChildren(caption, dom.createElement('figcaption'));
+  });
 };

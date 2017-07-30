@@ -7,6 +7,14 @@ module.exports = function(dom) {
   }
   dom.body.appendChild(dtArticle);
 
+  // Get rid of <header>
+  Array.from(dom.body.getElementsByTagName('header')).forEach((header) => {
+    while(header.firstChild) {
+      header.parentNode.insertBefore(header.firstChild, header);
+    }
+    header.parentNode.removeChild(header);
+  });
+
   // Put appendix at the end
   let dtAppendix = dom.createElement('dt-appendix');
   dom.body.appendChild(dtAppendix);

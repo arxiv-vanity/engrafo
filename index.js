@@ -7,6 +7,7 @@ function render(htmlString) {
     features: { ProcessExternalResources: false, FetchExternalResources: false }
   });
   postprocessors.layout(dom);
+  postprocessors.header(dom);
   postprocessors.footnotes(dom);
   distill.render(dom, {});
   return jsdom.serializeDocument(dom);

@@ -1,3 +1,4 @@
 module.exports = {
-  header: require("./header"),
+  footnotes: require("./footnotes"),
+  layout: require("./layout"),
 };

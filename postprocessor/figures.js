@@ -25,9 +25,8 @@ var css = `
 `;
 
 module.exports = function(dom) {
-  let style = dom.createElement('style');
-  style.appendChild(dom.createTextNode(css));
-  dom.head.appendChild(style);
+  utils.addStylesheet(dom, css);
+  
 
   // Make tables figures
   let tables = dom.body.getElementsByClassName('engrafo-table');

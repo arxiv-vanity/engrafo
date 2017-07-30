@@ -4,3 +4,9 @@ exports.replaceAndKeepChildren = function(oldEl, newEl) {
   }
   oldEl.parentNode.replaceChild(newEl, oldEl);
 };
+
+exports.addStylesheet = function(dom, css) {
+  let style = dom.createElement('style');
+  style.appendChild(dom.createTextNode(css));
+  dom.head.appendChild(style);
+};

@@ -3,4 +3,10 @@ DIR=$(dirname "$1")
 DIR="$(cd "$DIR" && pwd)" # make absolute
 FILENAME=$(basename "$1")
 
-exec docker run -v "$DIR":/workdir -w /workdir engrafo /app/bin/render "$FILENAME"
+ENGRAFO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
+
+exec docker run \
+    -v "$DIR":/workdir -w /workdir \
+    -v "/app/node_modules" \
+    -v "$ENGRAFO_DIR:/app" \
+    engrafo /app/bin/render "$FILENAME"

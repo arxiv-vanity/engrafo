@@ -107,6 +107,8 @@ def pick_latex_path(latex_paths):
 
 
 def convert_latex_to_html(folder):
+    timeout = 30
+
     main_path = os.path.join(folder, 'main.tex')
     if os.path.exists(main_path):
         latex_path = main_path
@@ -117,6 +119,8 @@ def convert_latex_to_html(folder):
     html_path = os.path.join(folder, 'index.html')
 
     cmd = [
+        'timeout',
+        '%d' % timeout,
         'pandoc',
         '--from', 'latex+raw_tex-latex_macros',
         '--to', 'html',
@@ -132,18 +136,24 @@ def convert_latex_to_html(folder):
 
     if process.returncode != 0:
 
-        error_match = re.search(r'Error at "(.+)" \(line ', stderr)
         error_path = latex_path
-        if error_match:
-            error_filename = error_match.group(1)
-            if error_filename != 'source':
-                error_path = os.path.join(folder, error_filename)
+
+        if process.returncode in (129, 124):
+            message = 'Timed out after %d seconds' % timeout
+
+        else:
+            message = 'Pandoc failed to convert LaTeX'
+            error_match = re.search(r'Error at "(.+)" \(line ', stderr)
+            if error_match:
+                error_filename = error_match.group(1)
+                if error_filename != 'source':
+                    error_path = os.path.join(folder, error_filename)
 
         with open(error_path) as f:
             latex_source = ''.join(
                 ['%04d  %s' % (i + 1, line)
                  for i, line in enumerate(f.readlines())])
-        raise PandocError(process.returncode, stdout, stderr,
+        raise PandocError(message, process.returncode, stdout, stderr,
                           error_path, latex_source)
 
     return html_path
@@ -151,8 +161,8 @@ def convert_latex_to_html(folder):
 
 class PandocError(Exception):
 
-    def __init__(self, returncode, stdout, stderr, error_filename, latex_source):
-        super(PandocError, self).__init__(self, 'Pandoc failed to convert LaTeX')
+    def __init__(self, message, returncode, stdout, stderr, error_filename, latex_source):
+        super(PandocError, self).__init__(self, message)
         self.returncode = returncode
         self.stdout = stdout
         self.stderr = stderr

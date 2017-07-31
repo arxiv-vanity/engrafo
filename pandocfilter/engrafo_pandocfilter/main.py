@@ -225,10 +225,10 @@ def make_explicit_figure_captions(key, val, fmt, meta):
     '''
     if key == 'Image':
         caption = val[1]
-        return [
+        return Span(['', ['engrafo-figure'], []], [
             Image(*val),
-            Span(['', ['figure-caption'], []], caption),
-        ]
+            Span(['', ['engrafo-figcaption'], []], caption),
+        ])
 
 
 def replace_references(key, val, fmt, meta):

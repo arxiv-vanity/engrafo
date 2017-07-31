@@ -7,6 +7,11 @@ var css = `
   right: 0;
   transform: translateY(-50%);
 }
+@media(min-width: 768px) {
+  .engrafo-equation-number {
+    right: 5%;
+  }
+}
 @media (min-width: 1080px) {
   .engrafo-equation-number {
     right: 5%;

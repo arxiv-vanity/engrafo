@@ -6,13 +6,12 @@ h2, h3, h4, h5, h6 {
 }
 
 .section-number {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.3);
   position: absolute;
   width: 6em;
-  left: -7.5em;
-  padding-right: 1.5em;
-  color: rgba(0, 0, 0, 0.3);
+  right: 0;
   text-align: right;
-  font-style: italic;
 }
 
 a.section-number,
@@ -23,6 +22,20 @@ a.section-number:hover {
 
 a.section-number:hover {
   text-decoration: underline;
+}
+
+@media(min-width: 768px) {
+  .section-number {
+    right: unset;
+    left: -7em;
+  }
+}
+
+@media (min-width: 1080px) {
+  .section-number {
+    right: unset;
+    left: -7.5em;
+  }
 }
 `;
 

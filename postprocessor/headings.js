@@ -6,10 +6,11 @@ h2, h3, h4, h5, h6 {
 }
 
 .section-number {
+  font-family: HoeflerText-Regular, Georgia, serif;
   font-style: italic;
   color: rgba(0, 0, 0, 0.3);
   position: absolute;
-  width: 6em;
+  width: 150px;
   right: 0;
   text-align: right;
 }
@@ -27,14 +28,14 @@ a.section-number:hover {
 @media(min-width: 768px) {
   .section-number {
     right: unset;
-    left: -7em;
+    left: -170px;
   }
 }
 
 @media (min-width: 1080px) {
   .section-number {
     right: unset;
-    left: -7.5em;
+    left: -180px;
   }
 }
 `;

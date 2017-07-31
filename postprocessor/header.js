@@ -16,19 +16,23 @@ module.exports = function(dom) {
 
   // Get rid of <header>
   Array.from(dom.body.getElementsByTagName('header')).forEach((header) => {
-    while(header.firstChild) {
-      header.parentNode.insertBefore(header.firstChild, header);
-    }
-    header.parentNode.removeChild(header);
+    utils.removeAndFlattenChildren(header);
   });
 
-  // Remove new lines from title
   let title = dom.body.getElementsByTagName('h1')[0];
+  // Remove <strong> or <em> from title
+  let titleChild = title.firstChild;
+  if (titleChild.tagName === 'STRONG' || titleChild.tagName === 'EM') {
+    utils.removeAndFlattenChildren(titleChild);
+  }
+
+  // Remove new lines from title
   Array.from(title.children).forEach((child) => {
     if (child.tagName === 'BR') {
       title.removeChild(child);
     }
   });
+
 
   // Insert byline after title
   let dtByline = dom.createElement('dt-byline');

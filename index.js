@@ -8,6 +8,7 @@ function render(htmlString) {
   });
   postprocessors.layout(dom);
   postprocessors.header(dom);
+  postprocessors.code(dom);
   postprocessors.figures(dom);
   postprocessors.math(dom);
   postprocessors.headings(dom);

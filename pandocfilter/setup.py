@@ -1,17 +1,18 @@
 from setuptools import setup
 from pip.req import parse_requirements
 
-install_reqs = parse_requirements('requirements.txt')
+with open('requirements.txt') as f:
+    install_requires = f.read().splitlines()
 
 setup(
     name="engrafo_pandocfilter",
     packages=[
         'engrafo_pandocfilter',
     ],
-    install_requires=[str(ir.req) for ir in install_reqs],
+    install_requires=install_requires,
     entry_points={
         'console_scripts': [
-            'engrafo_pandocfilter=enfrafo_pandocfilter.main:main',
+            'engrafo_pandocfilter=engrafo_pandocfilter.main:main',
         ],
     },
 )

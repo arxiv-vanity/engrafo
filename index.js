@@ -9,6 +9,7 @@ function render(htmlString) {
   postprocessors.layout(dom);
   postprocessors.header(dom);
   postprocessors.figures(dom);
+  postprocessors.math(dom);
   postprocessors.headings(dom);
   postprocessors.footnotes(dom);
   distill.render(dom, {});

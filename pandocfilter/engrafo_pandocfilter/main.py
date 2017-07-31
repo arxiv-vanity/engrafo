@@ -113,26 +113,54 @@ def insert_table_labels(key, val, fmt, meta):
                     )
 
 
-def insert_equation_labels(key, val, fmt, meta):
-    '''
-    Insert equation numbers as strings after equations.
-    '''
-    if key == 'Math':
-        latex = val[1]
-        match = LABEL_REGEX.search(latex)
-        if match:
-            val[1] = val[1].replace(match.group(0), '')
-            label = match.group(1)
-            index = next_label_index('equation')
+def process_display_math(key, val, fmt, meta):
+    """
+    Block-level math is inside paragraphs for some reason, so split the
+    paragraph and pull out into a div.
+    """
+    if key != 'Para' or not val:
+        return
+    paras = []
+    last_math_index = 0
+    for i, child in enumerate(val):
+        if child['t'] == 'Math' and child['c'][0]['t'] == 'DisplayMath':
+            # This filter doesn't seem to work if it follows this filter in
+            # walk, so let's just call it from here
+            equation_id, new_children = insert_equation_labels(child['c'])
 
-            label_map[label] = Label(
-                name='equation',
-                index=index,
-                abbreviation=None,
-                prepend_name=False
-            )
-            return Span(['equation-%d' % index, ['equation'], []],
-                        [Math(*val), Str('(%d)' % index)])
+            paras.append(Para(val[last_math_index:i]))
+            paras.append(Div([equation_id, ['engrafo-equation'], []],
+                             [Para(new_children)]))
+            last_math_index = i + 1
+    if last_math_index == 0:
+        return
+    paras.append(Para(val[last_math_index:]))
+    return paras
+
+
+def insert_equation_labels(val):
+    '''
+    Insert equation numbers as strings after equations. Returns the ID
+    of the equation and its new children.
+    '''
+    latex = val[1]
+    match = LABEL_REGEX.search(latex)
+    if match:
+        val[1] = val[1].replace(match.group(0), '')
+        label = match.group(1)
+        index = next_label_index('equation')
+
+        label_map[label] = Label(
+            name='equation',
+            index=index,
+            abbreviation=None,
+            prepend_name=False
+        )
+        equation_id = 'equation-%d' % index
+        number = Span(['', ['engrafo-equation-number'], []],
+                      [Str('(%d)' % index)])
+        return equation_id, [Math(*val), number]
+    return '', [Math(*val)]
 
 
 def insert_section_labels(key, val, fmt, meta):
@@ -401,12 +429,12 @@ def main():
     altered = blocks
 
     for action in [
+            process_display_math,
             replace_pdf_images,
             replace_tikz_images,
             insert_figure_labels,
             insert_table_labels,
             insert_section_labels,
-            insert_equation_labels,
             make_explicit_figure_captions,
             replace_references,
             inline_footnotes,

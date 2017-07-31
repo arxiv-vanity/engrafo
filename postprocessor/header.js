@@ -42,10 +42,10 @@ module.exports = function(dom) {
   }
 
   // Extract authors
-  let pandocAuthor = dom.body.getElementsByClassName('author')[0];
-  if (pandocAuthor) {
+  let authorEls = dom.body.getElementsByClassName('author');
+  Array.from(authorEls).forEach((authorEl) => {
     var bit;
-    var children = Array.from(pandocAuthor.childNodes);
+    var children = Array.from(authorEl.childNodes);
     while (children.length > 0) {
       // Extract name
       bit = children.shift();
@@ -90,8 +90,8 @@ module.exports = function(dom) {
       frontMatter.affiliations.push(obj);
     }
 
-    pandocAuthor.parentNode.removeChild(pandocAuthor);
-  }
+    authorEl.parentNode.removeChild(authorEl);
+  });
 
   // Set up front matter
   frontMatterEl = dom.createElement('script');

@@ -181,7 +181,7 @@ def insert_section_labels(key, val, fmt, meta):
         is_appendix = True
         sec_lengths[0] = 0
 
-        return Div(['appendix-below', [], []], [])
+        return Div(['engrafo-appendix-below', [], []], [])
 
     if key == 'Header':
         level, attrs, children = val

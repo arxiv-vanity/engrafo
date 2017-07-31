@@ -1,0 +1,12 @@
+#!/bin/bash
+ENGRAFO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
+
+exec docker run \
+    -v "/app/node_modules" \
+    -v "$ENGRAFO_DIR:/app" \
+    -w /app \
+    -p 8010:8010 \
+    -w /app/server/ \
+    -e PYTHONUNBUFFERED=1 \
+    engrafo \
+    python server.py

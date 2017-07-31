@@ -19,7 +19,8 @@ from flask import (
 app = Flask(__name__, static_url_path='', static_folder='static')
 app.logger.setLevel(logging.DEBUG)
 
-
+CURRENT_PATH = os.path.dirname(os.path.realpath(__file__))
+ENGRAFO_PATH = os.path.realpath(os.path.join(CURRENT_PATH, '..'))
 PAPERS_PATH = 'papers'
 
 
@@ -42,7 +43,7 @@ def index():
 
 @app.route('/html/<arxiv_id>/')
 def html(arxiv_id):
-    enable_filters = request.args.get('filters') != 'disabled'
+    pandoc_only = 'pandoc_only' in request.args
     folder = get_folder(arxiv_id)
     app.logger.info('%s: Using folder %s', arxiv_id, folder)
     if not os.path.exists(folder):
@@ -53,9 +54,9 @@ def html(arxiv_id):
         extract_sources(folder)
     app.logger.info('%s: Converting to HTML', arxiv_id)
     try:
-        html_path = convert_latex_to_html(folder, enable_filters)
+        html_path = convert_latex_to_html(folder, pandoc_only=pandoc_only)
     except PandocError as e:
-        return Response('''Pandoc failed to convert LaTeX (error code %d)
+        return Response('''Engrafo failed to convert LaTeX (error code %d)
 
 stdout:
 %s
@@ -116,7 +117,7 @@ def pick_latex_path(latex_paths):
     return candidates[0]
 
 
-def convert_latex_to_html(folder, enable_filters):
+def convert_latex_to_html(folder, pandoc_only=False):
     timeout = 30
 
     main_path = os.path.join(folder, 'main.tex')
@@ -131,20 +132,22 @@ def convert_latex_to_html(folder, enable_filters):
     cmd = [
         'timeout',
         '%d' % timeout,
-        'pandoc',
-        '--from', 'latex+raw_tex+latex_macros',
-        '--to', 'html',
-        '--mathjax',
-        '--standalone'
     ]
-
-    if enable_filters:
-        cmd += ['--filter', 'engrafo_pandocfilter']
-
-    cmd += [
-        '--output', html_path,
-        latex_path
-    ]
+    if pandoc_only:
+        cmd += [
+            'pandoc',
+            '--from', 'latex+raw_tex+latex_macros',
+            '--to', 'html',
+            '--mathjax',
+            '--standalone',
+            '--output', html_path,
+            latex_path
+        ]
+    else:
+        cmd += [
+            os.path.join(ENGRAFO_PATH, 'bin/render'),
+            latex_path
+        ]
     process = subprocess.Popen(
         cmd, cwd=folder, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     stdout, stderr = process.communicate()

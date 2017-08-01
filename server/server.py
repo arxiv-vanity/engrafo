@@ -53,8 +53,11 @@ def html(arxiv_id):
         app.logger.info('%s: Extracting sources', arxiv_id)
         extract_sources(folder)
     app.logger.info('%s: Converting to HTML', arxiv_id)
+
+    latex_path = pick_latex_path(folder)
+
     try:
-        html_path = convert_latex_to_html(folder, pandoc_only=pandoc_only)
+        html_path = convert_latex_to_html(latex_path, pandoc_only=pandoc_only)
     except PandocError as e:
         return Response('''Engrafo failed to convert LaTeX (error code %d)
 
@@ -101,7 +104,13 @@ def extract_sources(folder):
         cwd=folder))
 
 
-def pick_latex_path(latex_paths):
+def pick_latex_path(folder):
+    main_path = os.path.join(folder, 'main.tex')
+    if os.path.exists(main_path):
+        return main_path
+    else:
+        latex_paths = glob('%s/*.tex' % folder)
+
     if len(latex_paths) == 1:
         return latex_paths[0]
 
@@ -117,15 +126,10 @@ def pick_latex_path(latex_paths):
     return candidates[0]
 
 
-def convert_latex_to_html(folder, pandoc_only=False):
+def convert_latex_to_html(latex_path, pandoc_only=False):
     timeout = 30
 
-    main_path = os.path.join(folder, 'main.tex')
-    if os.path.exists(main_path):
-        latex_path = main_path
-    else:
-        latex_paths = glob('%s/*.tex' % folder)
-        latex_path = pick_latex_path(latex_paths)
+    folder = os.path.dirname(latex_path)
 
     html_path = os.path.join(folder, 'index.html')
 

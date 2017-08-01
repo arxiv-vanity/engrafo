@@ -11,6 +11,11 @@ from .labels import (process_display_math, insert_figure_labels,
 
 def main():
     doc = json.loads(sys.stdin.read())
+
+    # Save unmodified AST for debugging
+    with open('pandoc-ast.json', 'w') as f:
+        json.dump(doc, f)
+
     blocks = doc['blocks']
     meta = doc['meta']
     fmt = 'latex'
@@ -31,6 +36,10 @@ def main():
         altered = walk(altered, action, fmt, meta)
 
     doc['blocks'] = altered
+
+    # Save filtered AST for debugging
+    with open('pandoc-ast-filtered.json', 'w') as f:
+        json.dump(doc, f)
 
     json.dump(doc, sys.stdout)
     sys.stdout.flush()

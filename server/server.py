@@ -13,11 +13,21 @@ import random
 
 from flask import (
     Flask, session, redirect, url_for, request, render_template, g, jsonify,
-    send_from_directory, Response
+    send_from_directory, Response, make_response
 )
+from flask_debugtoolbar import DebugToolbarExtension
 
 app = Flask(__name__, static_url_path='', static_folder='static')
 app.logger.setLevel(logging.DEBUG)
+app.debug = True
+app.config['SECRET_KEY'] = 'unsafe-for-development'
+app.config['DEBUG_TB_PANELS'] = [
+    'flask_debugtoolbar.panels.timer.TimerDebugPanel',
+    'debug_panels.LatexSourceDebugPanel',
+    'debug_panels.PandocDebugPanel',
+    'debug_panels.PandocFilteredDebugPanel',
+]
+toolbar = DebugToolbarExtension(app)
 
 CURRENT_PATH = os.path.dirname(os.path.realpath(__file__))
 ENGRAFO_PATH = os.path.realpath(os.path.join(CURRENT_PATH, '..'))
@@ -78,7 +88,12 @@ stderr:
                         status=400)
 
     with open(html_path) as f:
-        return f.read()
+        response = make_response(f.read())
+    response.engrafo_debug_data = {
+        'render_directory': folder,
+        'latex_path': latex_path,
+    }
+    return response
 
 
 @app.route('/html/<arxiv_id>/<path:filename>')
@@ -195,4 +210,4 @@ class PandocError(Exception):
 if __name__ == '__main__':
     if not os.path.exists(PAPERS_PATH):
         os.makedirs(PAPERS_PATH)
-    app.run(host='0.0.0.0', port=8010, debug=True, threaded=True)
+    app.run(host='0.0.0.0', port=8010, threaded=True)

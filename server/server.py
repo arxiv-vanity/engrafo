@@ -26,6 +26,7 @@ app.config['DEBUG_TB_PANELS'] = [
     'debug_panels.LatexSourceDebugPanel',
     'debug_panels.PandocDebugPanel',
     'debug_panels.PandocFilteredDebugPanel',
+    'debug_panels.EngrafoOutputDebugPanel',
 ]
 toolbar = DebugToolbarExtension(app)
 
@@ -67,7 +68,7 @@ def html(arxiv_id):
     latex_path = pick_latex_path(folder)
 
     try:
-        html_path = convert_latex_to_html(latex_path, pandoc_only=pandoc_only)
+        html_path, stdout, stderr = convert_latex_to_html(latex_path, pandoc_only=pandoc_only)
     except PandocError as e:
         return Response('''Engrafo failed to convert LaTeX (error code %d)
 
@@ -92,6 +93,8 @@ stderr:
     response.engrafo_debug_data = {
         'render_directory': folder,
         'latex_path': latex_path,
+        'stdout': stdout,
+        'stderr': stderr,
     }
     return response
 
@@ -193,7 +196,7 @@ def convert_latex_to_html(latex_path, pandoc_only=False):
         raise PandocError(message, process.returncode, stdout, stderr,
                           error_path, latex_source)
 
-    return html_path
+    return html_path, stdout, stderr
 
 
 class PandocError(Exception):

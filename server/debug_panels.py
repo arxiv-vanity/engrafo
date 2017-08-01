@@ -73,3 +73,27 @@ class PandocFilteredDebugPanel(PandocDebugPanel):
 
     def title(self):
         return 'Pandoc AST (after filtering)'
+
+
+class EngrafoOutputDebugPanel(DebugPanel):
+    name = 'engrafo-output'
+    has_content = True
+
+    def title(self):
+        return 'Engrafo console output'
+
+    def nav_title(self):
+        return self.title()
+
+    def url(self):
+        return ''
+
+    def process_response(self, request, response):
+        debug_data = getattr(response, 'engrafo_debug_data', {})
+        self.stdout = debug_data.get('stdout')
+        self.stderr = debug_data.get('stderr')
+
+    def content(self):
+        if self.stdout is None:
+            return 'Nothing rendered.'
+        return '<h3>stdout</h3><pre>%s</pre><h3>stderr</h3><pre>%s</pre>' % (flask.escape(self.stdout), flask.escape(self.stderr))

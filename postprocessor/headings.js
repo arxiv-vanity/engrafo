@@ -38,6 +38,10 @@ a.section-number:hover {
     left: -180px;
   }
 }
+
+.paragraph-heading {
+  margin-right: 0.5em;
+}
 `;
 
 module.exports = function(dom) {
@@ -50,4 +54,19 @@ module.exports = function(dom) {
     a.className = 'section-number';
     utils.replaceAndKeepChildren(span, a);
   })
+
+  var paragraphHeadings = Array.from(dom.getElementsByTagName('h5'));
+  paragraphHeadings = paragraphHeadings.concat(dom.getElementsByTagName('h6'));
+  paragraphHeadings.forEach((heading) => {
+    var p = heading.nextElementSibling;
+    if (p && p.tagName == 'P') {
+      // Put at start of <p>
+      p.insertBefore(dom.createTextNode(' '), p.firstChild);
+      p.insertBefore(heading, p.firstChild);
+      // Turn it into <strong>
+      var newHeading = dom.createElement('strong');
+      newHeading.className = 'paragraph-heading';
+      utils.replaceAndKeepChildren(heading, newHeading);
+    }
+  });
 };

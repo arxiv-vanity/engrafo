@@ -13,13 +13,25 @@ import random
 
 from flask import (
     Flask, session, redirect, url_for, request, render_template, g, jsonify,
-    send_from_directory, Response
+    send_from_directory, Response, make_response
 )
+from flask_debugtoolbar import DebugToolbarExtension
 
 app = Flask(__name__, static_url_path='', static_folder='static')
 app.logger.setLevel(logging.DEBUG)
+app.debug = True
+app.config['SECRET_KEY'] = 'unsafe-for-development'
+app.config['DEBUG_TB_PANELS'] = [
+    'flask_debugtoolbar.panels.timer.TimerDebugPanel',
+    'debug_panels.LatexSourceDebugPanel',
+    'debug_panels.PandocDebugPanel',
+    'debug_panels.PandocFilteredDebugPanel',
+    'debug_panels.EngrafoOutputDebugPanel',
+]
+toolbar = DebugToolbarExtension(app)
 
-
+CURRENT_PATH = os.path.dirname(os.path.realpath(__file__))
+ENGRAFO_PATH = os.path.realpath(os.path.join(CURRENT_PATH, '..'))
 PAPERS_PATH = 'papers'
 
 
@@ -42,7 +54,7 @@ def index():
 
 @app.route('/html/<arxiv_id>/')
 def html(arxiv_id):
-    enable_filters = request.args.get('filters') != 'disabled'
+    pandoc_only = 'pandoc_only' in request.args
     folder = get_folder(arxiv_id)
     app.logger.info('%s: Using folder %s', arxiv_id, folder)
     if not os.path.exists(folder):
@@ -52,10 +64,13 @@ def html(arxiv_id):
         app.logger.info('%s: Extracting sources', arxiv_id)
         extract_sources(folder)
     app.logger.info('%s: Converting to HTML', arxiv_id)
+
+    latex_path = pick_latex_path(folder)
+
     try:
-        html_path = convert_latex_to_html(folder, enable_filters)
+        html_path, stdout, stderr = convert_latex_to_html(latex_path, pandoc_only=pandoc_only)
     except PandocError as e:
-        return Response('''Pandoc failed to convert LaTeX (error code %d)
+        return Response('''Engrafo failed to convert LaTeX (error code %d)
 
 stdout:
 %s
@@ -74,7 +89,14 @@ stderr:
                         status=400)
 
     with open(html_path) as f:
-        return f.read()
+        response = make_response(f.read())
+    response.engrafo_debug_data = {
+        'render_directory': folder,
+        'latex_path': latex_path,
+        'stdout': stdout,
+        'stderr': stderr,
+    }
+    return response
 
 
 @app.route('/html/<arxiv_id>/<path:filename>')
@@ -100,7 +122,13 @@ def extract_sources(folder):
         cwd=folder))
 
 
-def pick_latex_path(latex_paths):
+def pick_latex_path(folder):
+    main_path = os.path.join(folder, 'main.tex')
+    if os.path.exists(main_path):
+        return main_path
+    else:
+        latex_paths = glob('%s/*.tex' % folder)
+
     if len(latex_paths) == 1:
         return latex_paths[0]
 
@@ -116,35 +144,32 @@ def pick_latex_path(latex_paths):
     return candidates[0]
 
 
-def convert_latex_to_html(folder, enable_filters):
+def convert_latex_to_html(latex_path, pandoc_only=False):
     timeout = 30
 
-    main_path = os.path.join(folder, 'main.tex')
-    if os.path.exists(main_path):
-        latex_path = main_path
-    else:
-        latex_paths = glob('%s/*.tex' % folder)
-        latex_path = pick_latex_path(latex_paths)
+    folder = os.path.dirname(latex_path)
 
     html_path = os.path.join(folder, 'index.html')
 
     cmd = [
         'timeout',
         '%d' % timeout,
-        'pandoc',
-        '--from', 'latex+raw_tex+latex_macros',
-        '--to', 'html',
-        '--mathjax',
-        '--standalone'
     ]
-
-    if enable_filters:
-        cmd += ['--filter', 'engrafo_pandocfilter']
-
-    cmd += [
-        '--output', html_path,
-        latex_path
-    ]
+    if pandoc_only:
+        cmd += [
+            'pandoc',
+            '--from', 'latex+raw_tex+latex_macros',
+            '--to', 'html',
+            '--mathjax',
+            '--standalone',
+            '--output', html_path,
+            latex_path
+        ]
+    else:
+        cmd += [
+            os.path.join(ENGRAFO_PATH, 'bin/render'),
+            latex_path
+        ]
     process = subprocess.Popen(
         cmd, cwd=folder, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     stdout, stderr = process.communicate()
@@ -171,7 +196,7 @@ def convert_latex_to_html(folder, enable_filters):
         raise PandocError(message, process.returncode, stdout, stderr,
                           error_path, latex_source)
 
-    return html_path
+    return html_path, stdout, stderr
 
 
 class PandocError(Exception):
@@ -188,4 +213,4 @@ class PandocError(Exception):
 if __name__ == '__main__':
     if not os.path.exists(PAPERS_PATH):
         os.makedirs(PAPERS_PATH)
-    app.run(host='0.0.0.0', port=8010, debug=True, threaded=True)
+    app.run(host='0.0.0.0', port=8010, threaded=True)

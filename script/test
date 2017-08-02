@@ -1,0 +1,10 @@
+#!/bin/bash
+ENGRAFO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
+
+exec docker run \
+    -v "/app/node_modules" \
+    -v "$ENGRAFO_DIR:/app" \
+    -e PYTHONUNBUFFERED=1 \
+    -w /app/pandocfilter \
+    engrafo \
+    python -m unittest discover

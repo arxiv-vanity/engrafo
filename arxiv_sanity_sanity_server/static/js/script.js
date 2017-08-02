@@ -27,6 +27,7 @@ function showStatus(paper) {
     return new Promise((resolve, reject) => {
 
         var $paper = $(paper);
+        var $parent = $($paper.parent());
         var link = $('a', $paper).attr('href');
         var $status = $('.status', $paper);
         var $code = $('.parse-error', $paper);
@@ -47,10 +48,16 @@ function showStatus(paper) {
                 var error;
 
                 var isAmbiguous = body.indexOf('Ambiguous LaTeX path') != -1;
+                var isUtf8Error = body.indexOf("UnicodeDecodeError: 'utf8' codec can't decode byte") != -1;
                 if (isAmbiguous) {
                     error = body.match(/(Ambiguous LaTeX path, len candidates: ([0-9]+))/)[1];
                     $status.attr('src', '/img/question-mark.png');
+                } else if(isUtf8Error) {
+                    error = 'Unicode error 😜';
+                    $status.attr('src', '/img/question-mark.png');
                 } else {
+                    $paper.remove();
+                    $parent.prepend($paper);
                     numTotal ++;
                     updateStats();
                     $status.attr('src', '/img/no-entry.png');

@@ -12,3 +12,4 @@
 *.egg
 *.egg-info
 /engrafo_pandocfilter/build/
+*.pyc

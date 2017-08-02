@@ -25,18 +25,24 @@ PAPERS_PATH = 'papers'
 
 @app.route('/')
 def index():
-    #text = requests.get('http://arxiv-sanity.com').text
-    with open('arxiv-sanity-snapshot.html') as f:
-        text = f.read()
+    data = request.args.get('data', 'cached')
+    if data == 'live':
+        text = requests.get('http://arxiv-sanity.com').text
+    if data == 'top':
+        text = requests.get('http://www.arxiv-sanity.com/top?timefilter=alltime&vfilter=all').text
+    else:
+        with open('arxiv-sanity-snapshot.html') as f:
+            text = f.read()
     papers = json.loads([line for line in text.splitlines()
                        if line.startswith('var papers = ')][0][len('var papers = '):-1])
-    random.shuffle(papers)
+    #random.shuffle(papers)
 
     return render_template('index.html', papers=papers)
 
 
 @app.route('/html/<arxiv_id>/')
 def html(arxiv_id):
+    enable_filters = request.args.get('filters') != 'disabled'
     folder = get_folder(arxiv_id)
     app.logger.info('%s: Using folder %s', arxiv_id, folder)
     if not os.path.exists(folder):
@@ -47,7 +53,7 @@ def html(arxiv_id):
         extract_sources(folder)
     app.logger.info('%s: Converting to HTML', arxiv_id)
     try:
-        html_path = convert_latex_to_html(folder)
+        html_path = convert_latex_to_html(folder, enable_filters)
     except PandocError as e:
         return Response('''Pandoc failed to convert LaTeX (error code %d)
 
@@ -59,7 +65,11 @@ stderr:
 
 %s:
 %s
-''' % (e.returncode, e.stdout, e.stderr.decode('utf-8'), e.error_filename, e.latex_source.decode('utf-8')),
+''' % (e.returncode,
+       e.stdout.decode('utf-8'),
+       e.stderr.decode('utf-8'),
+       e.error_filename.decode('utf-8'),
+       e.latex_source.decode('utf-8')),
                         mimetype='text/plain',
                         status=400)
 
@@ -106,7 +116,7 @@ def pick_latex_path(latex_paths):
     return candidates[0]
 
 
-def convert_latex_to_html(folder):
+def convert_latex_to_html(folder, enable_filters):
     timeout = 30
 
     main_path = os.path.join(folder, 'main.tex')
@@ -122,11 +132,16 @@ def convert_latex_to_html(folder):
         'timeout',
         '%d' % timeout,
         'pandoc',
-        '--from', 'latex+raw_tex-latex_macros',
+        '--from', 'latex+raw_tex+latex_macros',
         '--to', 'html',
         '--mathjax',
-        '--standalone',
-        '--filter', 'engrafo_pandocfilter',
+        '--standalone'
+    ]
+
+    if enable_filters:
+        cmd += ['--filter', 'engrafo_pandocfilter']
+
+    cmd += [
         '--output', html_path,
         latex_path
     ]

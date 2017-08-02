@@ -27,10 +27,10 @@ class LatexSourceDebugPanel(DebugPanel):
             return 'Nothing rendered.'
         try:
             with open(self.latex_path) as f:
-                src = f.read()
+                src = f.read().decode('utf-8')
         except IOError:
             return 'Could not find latex source.'
-        return '<pre>%s</pre>' % flask.escape(src)
+        return u'<pre>%s</pre>' % flask.escape(src)
 
 
 class PandocDebugPanel(DebugPanel):
@@ -63,8 +63,8 @@ class PandocDebugPanel(DebugPanel):
         # pprint is much more readable than json.dump
         s = pprint.pformat(ast)
         # HACK: remove u''. Either do something more clever or upgrade to py3
-        s = s.replace("u'", "'")
-        return '<pre>%s</pre>' % flask.escape(s)
+        s = s.replace(u"u'", u"'")
+        return u'<pre>%s</pre>' % flask.escape(s)
 
 
 class PandocFilteredDebugPanel(PandocDebugPanel):

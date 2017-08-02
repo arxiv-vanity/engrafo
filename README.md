@@ -27,3 +27,7 @@ Start it by running:
     $ script/server
 
 And it will be available at [http://localhost:8010/](http://localhost:8010/).
+
+If you are working on Pandoc locally and want to pass through a Pandoc binary, set `$PANDOC_BINARY` to an absolute path to the binary. For example:
+
+    $ PANDOC_BINARY=$HOME/projects/pandoc/pandoc script/server

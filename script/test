@@ -6,5 +6,6 @@ exec docker run \
     -v "$ENGRAFO_DIR:/app" \
     -e PYTHONUNBUFFERED=1 \
     -w /app/pandocfilter \
+    --rm \
     engrafo \
     python -m unittest discover

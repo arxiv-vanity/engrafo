@@ -13,5 +13,6 @@ exec docker run \
     -p 8010:8010 \
     -w /app/server/ \
     -e PYTHONUNBUFFERED=1 \
+    --rm \
     engrafo \
     python server.py

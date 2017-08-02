@@ -13,5 +13,6 @@ exec docker run \
     -v "$DIR":/workdir -w /workdir \
     -v "/app/node_modules" \
     -v "$ENGRAFO_DIR:/app" \
+    --rm \
     $PANDOC_VOLUME_FLAG \
     engrafo /app/bin/render "$FILENAME"

@@ -90,8 +90,8 @@ class EngrafoOutputDebugPanel(DebugPanel):
 
     def process_response(self, request, response):
         debug_data = getattr(response, 'engrafo_debug_data', {})
-        self.stdout = debug_data.get('stdout')
-        self.stderr = debug_data.get('stderr')
+        self.stdout = debug_data.get('stdout').decode('utf-8')
+        self.stderr = debug_data.get('stderr').decode('utf-8')
 
     def content(self):
         if self.stdout is None:

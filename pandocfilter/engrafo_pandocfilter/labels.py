@@ -130,7 +130,7 @@ def insert_equation_labels(val):
     latex = val[1]
     match = LABEL_REGEX.search(latex)
     if match:
-        val[1] = val[1].replace(match.group(0), '')
+        latex = latex.replace(match.group(0), '')
         label = match.group(1)
         index = next_label_index('equation')
 
@@ -143,7 +143,7 @@ def insert_equation_labels(val):
         equation_id = 'equation-%d' % index
         number = Span(['', ['engrafo-equation-number'], []],
                       [Str('(%d)' % index)])
-        return equation_id, [Math(*val), number]
+        return equation_id, [Math(val[0], latex), number]
     return '', [Math(*val)]
 
 

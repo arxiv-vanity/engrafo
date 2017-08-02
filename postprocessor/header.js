@@ -20,6 +20,11 @@ module.exports = function(dom) {
   });
 
   let title = dom.body.getElementsByTagName('h1')[0];
+
+  // No title, bail out because there isn't much we can do here.
+  if (!title) {
+    return;
+  }
   // Remove <strong> or <em> from title
   let titleChild = title.firstChild;
   if (titleChild.tagName === 'STRONG' || titleChild.tagName === 'EM') {

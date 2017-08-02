@@ -1,34 +1,17 @@
 #!/usr/bin/env node
 
-var fs = require("fs"),
-    engrafo = require("../index.js"),
-    program = require('commander'),
-    childProcess = require('child_process');
+var engrafo = require("../index.js");
+var program = require('commander');
 
 program
   .version('0.0.1')
   .parse(process.argv);
 
-let texFile = program.args[0];
-
-let args = [
-  "--from", "latex+raw_tex",
-  "--to", "html",
-  "--standalone",
-  "--mathjax",
-  "--filter", "/app/pandocfilter/engrafo_pandocfilter.py",
-  "--output", "index.html",
-  texFile
-];
-let pandoc = childProcess.spawn("/usr/local/bin/pandoc", args);
-pandoc.stderr.on('data', (data) => { console.error(data.toString()); });
-pandoc.on('close', (code) => {
-  if (code !== 0) {
-    console.error(`pandoc exited with status ${code}`);
+let texPath = program.args[0];
+engrafo.render(texPath, (err, htmlPath) => {
+  if (err) {
+    console.error("Engrafo rendering failed:", err);
     process.exit(1);
   }
-
-  let htmlString = fs.readFileSync("index.html", "utf8");
-  let transformedHtml = engrafo.render(htmlString);
-  fs.writeFileSync("index.html", transformedHtml);
+  console.log("💃 Document successfully rendered to", htmlPath);
 });

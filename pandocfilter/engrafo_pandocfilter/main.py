@@ -7,6 +7,7 @@ from .images import replace_pdf_images, replace_tikz_images
 from .labels import (process_display_math, insert_figure_labels,
                      insert_table_labels, insert_section_labels,
                      make_explicit_figure_captions, replace_references)
+from .math import replace_smallcaps
 
 
 def main():
@@ -23,6 +24,7 @@ def main():
     altered = blocks
 
     for action in [
+            replace_smallcaps,
             process_display_math,
             replace_pdf_images,
             replace_tikz_images,

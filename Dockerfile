@@ -1,4 +1,4 @@
-FROM andreasjansson/pandoc as pandoc
+FROM andreasjansson/engrafo-pandoc as pandoc
 
 FROM debian:stretch
 # TODO: delete python-setuptools (but I don't want to bust my cache)

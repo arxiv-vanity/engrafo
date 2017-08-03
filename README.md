@@ -28,9 +28,19 @@ Start it by running:
 
 And it will be available at [http://localhost:8010/](http://localhost:8010/).
 
-If you are working on Pandoc locally and want to pass through a Pandoc binary, set `$PANDOC_BINARY` to an absolute path to the binary. For example:
+### Local Pandoc development
 
-    $ PANDOC_BINARY=$HOME/projects/pandoc/pandoc script/server
+If you are working on Pandoc locally, continuously build the `pandoc` binary from your local `pandoc` folder:
+
+    $ ./docker-watch-build.sh
+
+This will build an executable in `pandoc/.stack-work/install/x86_64-linux/lts-8.16/8.0.2/bin/pandoc` (that is then symlinked to `~/.local/bin` in the container).
+
+In another shell, in the `engrafo-pandoc` folder, start the server with
+
+    $ PANDOC_BIN=/path/to/pandoc/.stack-work/install/x86_64-linux/lts-8.16/8.0.2/bin/pandoc script/server
+
+Now, whenever you make a change to a Pandoc source file, the binary will build and will be visible in the Engrafo container.
 
 ## Tests
 

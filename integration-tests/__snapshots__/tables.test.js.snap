@@ -5,17 +5,6 @@ exports[`basic tables render correctly 1`] = `
   <dt-article
     class="centered"
   >
-    <h2
-      id="section-1"
-    >
-      <a
-        href="#section-1"
-        class="section-number"
-      >
-        1
-      </a>
-      Test
-    </h2>
     <figure
       id="table-1"
     >

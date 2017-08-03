@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from collections import namedtuple
+from collections import namedtuple, defaultdict
 import re
 import string
 from pandocfilters import (
@@ -7,26 +7,28 @@ from pandocfilters import (
     Header, Table, Div
 )
 
+from debug import log
+
 # - State
 # Label indexes
 label_map = {}
 # Section position state for generating section numbers
 sec_lengths = [0] * 10
 is_appendix = False
-
+latest_index = defaultdict(int)
 
 Label = namedtuple('Label', [
-    'name', 'index', 'abbreviation', 'prepend_name'
+    'ref_string', 'ref_index', 'prev_strings',
 ])
 
 LABEL_REGEX = re.compile(r'\\label\{([^\}]+)\}')
 REF_REGEX = re.compile(r'^ref\{([^\}]+)\}$')
 
 
-def next_label_index(name):
-    indices = [label.index for label in label_map.values()
-               if label.name == name]
-    return max(indices) + 1 if indices else 1
+def incr_latest_index(name):
+    index = latest_index[name] + 1
+    latest_index[name] = index
+    return index
 
 
 def insert_figure_labels(key, val, fmt, meta):
@@ -43,13 +45,13 @@ def insert_figure_labels(key, val, fmt, meta):
                     and len(span_val[0]) == 2
                         and span_val[0][0] == 'data-label'):
                     label = span_val[0][1]
-                    index = next_label_index('figure')
+                    index = incr_latest_index('figure')
+                    ref_index = 'figure-%d' % index
 
                     label_map[label] = Label(
-                        name='figure',
-                        index=index,
-                        abbreviation='fig.',
-                        prepend_name=True
+                        ref_string='Figure %d' % index,
+                        ref_index=ref_index,
+                        prev_strings=['figure', 'fig.'],
                     )
 
                     span_index = i
@@ -61,8 +63,7 @@ def insert_figure_labels(key, val, fmt, meta):
                         Span(['', ['engrafo-figcaption'], []], alt)
                     ]
 
-                    return Span(['figure-%d' % index, ['engrafo-figure'], []],
-                                children)
+                    return Span([ref_index, ['engrafo-figure'], []], children)
 
 
 def insert_table_labels(key, val, fmt, meta):
@@ -79,20 +80,20 @@ def insert_table_labels(key, val, fmt, meta):
                     and len(span_val[0]) == 2
                         and span_val[0][0] == 'data-label'):
                     label = span_val[0][1]
-                    index = next_label_index('table')
+                    index = incr_latest_index('table')
+                    ref_index = 'table-%d' % index
 
                     label_map[label] = Label(
-                        name='table',
-                        index=index,
-                        abbreviation='tab.',
-                        prepend_name=True
+                        ref_string='Table %d' % index,
+                        ref_index=ref_index,
+                        prev_strings=['table', 'tab.'],
                     )
 
                     span_index = i
                     caption.pop(span_index)
                     caption.insert(0, Str('Table %d: ' % index))
                     return Div(
-                        ['table-%d' % index, ['engrafo-table'], []],
+                        [ref_index, ['engrafo-table'], []],
                         [Table(*val)]
                     )
 
@@ -132,18 +133,18 @@ def insert_equation_labels(val):
     if match:
         latex = latex.replace(match.group(0), '')
         label = match.group(1)
-        index = next_label_index('equation')
+        index = incr_latest_index('equation')
+        ref_index = 'equation-%d' % index
 
         label_map[label] = Label(
-            name='equation',
-            index=index,
-            abbreviation=None,
-            prepend_name=False
+            ref_string='Equation %d' % index,
+            ref_index=ref_index,
+            prev_strings=['equation', 'eqn.'],
         )
-        equation_id = 'equation-%d' % index
+
         number = Span(['', ['engrafo-equation-number'], []],
                       [Str('(%d)' % index)])
-        return equation_id, [Math(val[0], latex), number]
+        return ref_index, [Math(val[0], latex), number]
     return '', [Math(*val)]
 
 
@@ -189,11 +190,19 @@ def insert_section_labels(key, val, fmt, meta):
             sec_number = '.'.join([str(x) for x in sec_lengths[:level]])
 
         if label and label not in label_map:
+            if is_appendix:
+                ref_string = 'Appendix %s' % sec_number
+                ref_index = 'appendix-%s' % sec_number
+                prev_strings = ['appendix', 'app.']
+            else:
+                ref_string = 'Section %s' % sec_number
+                ref_index = 'section-%s' % sec_number
+                prev_strings = ['section', 'sec.']
+
             label_map[label] = Label(
-                name='appendix' if is_appendix else 'section',
-                index=sec_number,
-                abbreviation='appendix' if is_appendix else 'sec.',
-                prepend_name=True
+                ref_string=ref_string,
+                ref_index=ref_index,
+                prev_strings=prev_strings,
             )
 
         if not unnumbered:
@@ -205,6 +214,26 @@ def insert_section_labels(key, val, fmt, meta):
         level += 1
 
         return Header(level, attrs, children)
+
+
+def insert_cite_labels(key, val, fmt, meta):
+    if (key == 'Div' and val and val[0] and val[0][1]
+        and 'bibitem' in val[0][1]):
+        keyvals = dict(val[0][2])
+        label = keyvals['label']
+
+        index = incr_latest_index('cite')
+        ref_index = 'cite-%d' % index
+
+        label_map[label] = Label(
+            ref_string='[%d]' % index,
+            ref_index=ref_index,
+            prev_strings=[],
+        )
+
+        val[0][0] = 'cite-%d' % index
+
+        return Div(*val)
 
 
 def make_explicit_figure_captions(key, val, fmt, meta):
@@ -246,18 +275,18 @@ def replace_references(key, val, fmt, meta):
 
                 label = match_ref(obj['c'][1])
                 if label and label in label_map:
-                    name, index, abbreviation, prepend_name = label_map[label]
+                    ref_string, ref_id, prev_strings = label_map[label]
                     prev = val[i - 1] if i > 0 else None
                     prevprev = val[i - 2] if i > 1 else None
 
                     new_objs = []
 
                     # handle "Table ", "(Table" etc.
-                    if (prepend_name
+                    if (prev_strings
                         and prevprev and prev['t'] == 'Space'
                             and 'c' in prevprev and prevprev['t'] == 'Str'):
                         prevprev_lower = prevprev['c'].lower()
-                        for needle in [name, abbreviation]:
+                        for needle in prev_strings:
                             if prevprev_lower.endswith(needle):
                                 altered = altered[:-2]
                                 prefix = prevprev_lower[:-len(needle)]
@@ -266,26 +295,32 @@ def replace_references(key, val, fmt, meta):
 
                     # hack around bug in pandoc where non-breaking space
                     # doesn't tokenize properly
-                    if (prepend_name
+                    if (prev_strings
                         and prev['t'] == 'Str'
-                            and prev['c'].replace(u'\xa0', ' ').strip().lower() in (name, abbreviation)):
+                            and prev['c'].replace(u'\xa0', ' ').strip().lower() in prev_strings):
                         altered = altered[:-1]
 
                     link_content = []
 
-                    if prepend_name:
-                        link_content += [
-                            Str(string.capwords(name)),
-                            Space(),
-                        ]
-
-                    link_content.append(Str('%s' % index))
+                    link_content.append(Str(ref_string))
                     new_objs += [Link(['', [], []], link_content,
-                                      ['#%s-%s' % (name, index), ''])]
+                                      ['#%s' % ref_id, ''])]
 
             altered += new_objs
 
         return {'t': key, 'c': altered}
+
+
+def replace_cite_references(key, val, fmt, meta):
+    if key == 'Cite':
+        label = val[0][0]['citationId']
+        if label and label in label_map:
+            ref_string, ref_id, prev_strings = label_map[label]
+            return [Link(['', ['cite-ref'], []], [Str(ref_string)],
+                         ['#%s' % ref_id, ''])]
+        # TODO: below doesn't work yet
+        else:
+            return Span(['', ['cite-ref', 'unresolved'], []], [Str('[?]')])
 
 
 def match_ref(s):

@@ -6,7 +6,8 @@ from .footnotes import inline_footnotes
 from .images import replace_pdf_images, replace_tikz_images
 from .labels import (process_display_math, insert_figure_labels,
                      insert_table_labels, insert_section_labels,
-                     make_explicit_figure_captions, replace_references)
+                     make_explicit_figure_captions, replace_references,
+                     insert_cite_labels, replace_cite_references)
 from .math import replace_smallcaps
 
 
@@ -31,8 +32,10 @@ def main():
             insert_figure_labels,
             insert_table_labels,
             insert_section_labels,
+            insert_cite_labels,
             make_explicit_figure_captions,
             replace_references,
+            replace_cite_references,
             inline_footnotes,
     ]:
         altered = walk(altered, action, fmt, meta)

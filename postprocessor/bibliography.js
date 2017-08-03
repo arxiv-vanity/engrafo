@@ -1,6 +1,9 @@
 let utils = require('./utils');
 
 function parseBibitem(el) {
+  // TODO(andreas): this isn't always the structure (e.g. 1707.08084v1)
+  // reformat to this consistent format in the filter.
+
   var sourceEl = el.children[2];
   // Flatten them paragraphs
   Array.from(sourceEl.children).forEach(el => {
@@ -13,7 +16,7 @@ function parseBibitem(el) {
     authors: el.children[0],
     title: el.children[1],
     source: sourceEl,
-    label: el.getAttribute('label'),
+    id: el.getAttribute('id'),
   };
 }
 
@@ -26,6 +29,7 @@ module.exports = function(dom) {
   var ol = dom.createElement('ol');
   bibliography.forEach(item => {
     var li = dom.createElement('li');
+    li.setAttribute('id', item.id);
     var strong = dom.createElement('strong');
     utils.moveChildren(item.title, strong);
     li.appendChild(strong);

@@ -24,11 +24,10 @@ exports[`block math renders correctly 1`] = `
     </figure>
     <p />
     <p>
-      Equation 
       <a
         href="#equation-1"
       >
-        1
+        Equation 1
       </a>
       is some good math.
     </p>

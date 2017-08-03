@@ -23,8 +23,6 @@ def replace_smallcaps(key, val, fmt=None, meta=None):
     if key != 'Math':
         return
 
-    print >>sys.stderr, val[1]
-
     latex = val[1]
     latex = TEXTSC_REGEX.sub(_textsc_replace, latex)
     return Math(val[0], latex)

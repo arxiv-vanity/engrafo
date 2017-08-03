@@ -30,7 +30,7 @@ class LatexSourceDebugPanel(DebugPanel):
                 src = f.read().decode('utf-8')
         except IOError:
             return 'Could not find latex source.'
-        return u'<pre>%s</pre>' % flask.escape(src)
+        return u'<pre style="white-space: pre-wrap">%s</pre>' % flask.escape(src)
 
 
 class PandocDebugPanel(DebugPanel):
@@ -64,7 +64,7 @@ class PandocDebugPanel(DebugPanel):
         s = pprint.pformat(ast)
         # HACK: remove u''. Either do something more clever or upgrade to py3
         s = s.replace(u"u'", u"'")
-        return u'<pre>%s</pre>' % flask.escape(s)
+        return u'<pre style="white-space: pre-wrap">%s</pre>' % flask.escape(s)
 
 
 class PandocFilteredDebugPanel(PandocDebugPanel):
@@ -96,4 +96,4 @@ class EngrafoOutputDebugPanel(DebugPanel):
     def content(self):
         if self.stdout is None:
             return 'Nothing rendered.'
-        return '<h3>stdout</h3><pre>%s</pre><h3>stderr</h3><pre>%s</pre>' % (flask.escape(self.stdout), flask.escape(self.stderr))
+        return '<h3>stdout</h3><pre style="white-space: pre-wrap">%s</pre><h3>stderr</h3><pre style="white-space: pre-wrap">%s</pre>' % (flask.escape(self.stdout), flask.escape(self.stderr))

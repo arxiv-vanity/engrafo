@@ -167,7 +167,7 @@ def convert_latex_to_html(latex_path, pandoc_only=False):
         ]
     else:
         cmd += [
-            os.path.join(ENGRAFO_PATH, 'bin/render'),
+            os.path.join(ENGRAFO_PATH, 'bin/engrafo'),
             latex_path
         ]
     process = subprocess.Popen(

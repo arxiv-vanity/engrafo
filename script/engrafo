@@ -1,8 +1,4 @@
 #!/bin/bash
-DIR=$(dirname "$1")
-DIR="$(cd "$DIR" && pwd)" # make absolute
-FILENAME=$(basename "$1")
-
 ENGRAFO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 
 if [ ! -z "$PANDOC_BINARY" ]; then
@@ -10,9 +6,9 @@ if [ ! -z "$PANDOC_BINARY" ]; then
 fi
 
 exec docker run \
-    -v "$DIR":/workdir -w /workdir \
+    -v "$(pwd)":/workdir -w /workdir \
     -v "/app/node_modules" \
     -v "$ENGRAFO_DIR:/app" \
     --rm \
     $PANDOC_VOLUME_FLAG \
-    engrafo /app/bin/render "$FILENAME"
+    engrafo /app/bin/render "$@"

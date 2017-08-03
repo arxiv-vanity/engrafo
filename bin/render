@@ -1,14 +1,21 @@
 #!/usr/bin/env node
 
 var engrafo = require("../index.js");
-var program = require('commander');
+var path = require("path");
+var program = require("commander");
 
 program
-  .version('0.0.1')
+  .version("0.0.1")
+  .usage("[options] <tex file>")
+  .option(
+    "-o, --output <dir>",
+    "Output directory (default: same as tex file)"
+  )
   .parse(process.argv);
 
-let texPath = program.args[0];
-engrafo.render(texPath, (err, htmlPath) => {
+var texPath = program.args[0];
+var outputDir = program.output || path.dirname(texPath);
+engrafo.render(texPath, outputDir, (err, htmlPath) => {
   if (err) {
     console.error("Engrafo rendering failed:", err);
     process.exit(1);

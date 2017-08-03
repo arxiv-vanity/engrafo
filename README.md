@@ -58,7 +58,7 @@ Or individual tests by matching a string:
 
 The integration tests use [Jest's](http://facebook.github.io/jest/) snapshotting feature.
 
-Each test renders a LaTeX file and ensures it matches a snapshot. If it does not match, Jest prints a pretty diff and gives us the option to automatically fix the test.
+Each test renders a LaTeX file and ensures it matches a snapshot. If it does not match, Jest prints a pretty diff and gives you the option to automatically fix the test.
 
 First, write a test case describing in plain text what you are testing. For example, in `integration-tests/formatting.test.js`:
 

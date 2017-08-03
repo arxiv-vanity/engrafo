@@ -68,7 +68,7 @@ test("bold text renders correctly", done => {
 });
 ```
 
-Then, write `integration-tests/formatting/bold.text`:
+Then, write `integration-tests/formatting/bold.tex`:
 
 ```latex
 \begin{document}

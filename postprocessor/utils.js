@@ -17,3 +17,9 @@ exports.addStylesheet = function(dom, css) {
   style.appendChild(dom.createTextNode(css));
   dom.head.appendChild(style);
 };
+
+exports.moveChildren = function(from, to) {
+  while(from.firstChild) {
+    to.appendChild(from.firstChild);
+  }
+};

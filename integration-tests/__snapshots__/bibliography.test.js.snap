@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`a basic bibliography renders correctly 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    >
+      <h3>
+        References
+      </h3>
+      <dt-bibliography>
+        <ol>
+          <li>
+            <strong>
+              Compositional morphology for word representations and language modelling.
+            </strong>
+            <br />
+            Joe Bloggs and Phil Jones. 2014. In 
+            <em>
+              Proceedings of ICML
+            </em>
+            .
+          </li>
+          <li>
+            <strong>
+              Morphological word-embeddings.
+            </strong>
+            <br />
+            Ryan Cotterell and Hinrich Sch
+            <span>
+              ü
+            </span>
+            tze. 2015. In 
+            <em>
+              Proceedings of HLT-NAACL
+            </em>
+            .
+          </li>
+        </ol>
+        <ol />
+      </dt-bibliography>
+    </div>
+  </dt-appendix>
+  <div
+    id="cite-hover-boxes-container"
+  />
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;

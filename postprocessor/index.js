@@ -1,4 +1,5 @@
 module.exports = {
+  bibliography: require("./bibliography"),
   code: require("./code"),
   figures: require("./figures"),
   footnotes: require("./footnotes"),

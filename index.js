@@ -76,6 +76,7 @@ exports.postprocess = htmlString => {
   postprocessors.math(dom);
   postprocessors.headings(dom);
   postprocessors.footnotes(dom);
+  postprocessors.bibliography(dom);
   distill.render(dom, {});
   return jsdom.serializeDocument(dom);
 };

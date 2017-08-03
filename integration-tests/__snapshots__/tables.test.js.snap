@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic tables render correctly 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <h2
+      id="section-1"
+    >
+      <a
+        href="#section-1"
+        class="section-number"
+      >
+        1
+      </a>
+      Test
+    </h2>
+    <figure
+      id="table-1"
+    >
+      <table>
+        <caption>
+          Table 1: Some numbers.
+        </caption>
+        <thead>
+          <tr
+            class="header"
+          >
+            <th
+              style="text-align: center;"
+            >
+              First column 
+            </th>
+            <th
+              style="text-align: center;"
+            >
+              Second column 
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="odd"
+          >
+            <td
+              style="text-align: center;"
+            >
+              123 
+            </td>
+            <td
+              style="text-align: center;"
+            >
+              456 
+            </td>
+          </tr>
+          <tr
+            class="even"
+          >
+            <td
+              style="text-align: center;"
+            >
+              234 
+            </td>
+            <td
+              style="text-align: center;"
+            >
+              567 
+            </td>
+          </tr>
+          <tr
+            class="odd"
+          >
+            <td
+              style="text-align: center;"
+            >
+              567 
+            </td>
+            <td
+              style="text-align: center;"
+            >
+              890 
+            </td>
+          </tr>
+          <tr
+            class="even"
+          >
+            <td
+              style="text-align: center;"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </figure>
+    <p>
+      Take a look at some cool data in 
+      <a
+        href="#table-1"
+      >
+        Table 1
+      </a>
+      .
+    </p>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="cite-hover-boxes-container"
+  />
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;

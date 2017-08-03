@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lists render correctly 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <ul>
+      <li>
+        <p>
+          An unordered list
+        </p>
+      </li>
+      <li>
+        <p>
+          Second item
+        </p>
+      </li>
+    </ul>
+    <ol>
+      <li>
+        <p>
+          An ordered list
+        </p>
+      </li>
+      <li>
+        <p>
+          Second one.
+        </p>
+      </li>
+    </ol>
+    <ul>
+      <li>
+        <p>
+          A nested unordered list
+        </p>
+        <ul>
+          <li>
+            <p>
+              First nested item
+            </p>
+          </li>
+          <li>
+            <p>
+              Second nested item
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Second item
+        </p>
+      </li>
+    </ul>
+    <h2
+      id="section-1"
+    >
+      <a
+        href="#section-1"
+        class="section-number"
+      >
+        1
+      </a>
+      A nested ordered list
+    </h2>
+    <ol>
+      <li>
+        <p>
+          First item
+        </p>
+        <ol>
+          <li>
+            <p>
+              First nested item
+            </p>
+          </li>
+          <li>
+            <p>
+              Second nested item
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>
+          Second item
+        </p>
+      </li>
+    </ol>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="cite-hover-boxes-container"
+  />
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;
+
+exports[`text formatting renders correctly 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <p>
+      This is 
+      <strong>
+        bold
+      </strong>
+      .
+    </p>
+    <p>
+      This is 
+      <em>
+        textit
+      </em>
+      .
+    </p>
+    <p>
+      This is 
+      <em>
+        emph
+      </em>
+      .
+    </p>
+    <p>
+      This is 
+      <a
+        href="https://www.example.com"
+      >
+        a link
+      </a>
+      .
+    </p>
+    <p>
+      This is 
+      <code>
+        fixed width
+      </code>
+      .
+    </p>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="cite-hover-boxes-container"
+  />
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;

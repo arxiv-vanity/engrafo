@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`footnotes render correctly 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <p>
+      This is some text.
+      <dt-fn>
+        <sup>
+          <span
+            id="fn-1"
+            data-hover-ref="dt-fn-hover-box-0"
+            style="cursor:pointer"
+          >
+            1
+          </span>
+        </sup>
+      </dt-fn>
+      This is some more text.
+      <dt-fn>
+        <sup>
+          <span
+            id="fn-2"
+            data-hover-ref="dt-fn-hover-box-1"
+            style="cursor:pointer"
+          >
+            2
+          </span>
+        </sup>
+      </dt-fn>
+    </p>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    >
+      <h3>
+        Footnotes
+      </h3>
+      <dt-fn-list>
+        <ol>
+          <li>
+            This is a footnote.
+          </li>
+          <li>
+            And a footnote with a
+            <br />
+            <br />
+            second paragraph! And some 
+            <em>
+              formatting
+            </em>
+            .
+          </li>
+        </ol>
+      </dt-fn-list>
+    </div>
+  </dt-appendix>
+  <div
+    id="cite-hover-boxes-container"
+  />
+  <div
+    id="footnote-hover-boxes-container"
+  >
+    <div
+      style="display:none;"
+      class="dt-hover-box"
+      id="dt-fn-hover-box-0"
+    >
+      This is a footnote.
+    </div>
+    <div
+      style="display:none;"
+      class="dt-hover-box"
+      id="dt-fn-hover-box-1"
+    >
+      And a footnote with a
+      <br />
+      <br />
+      second paragraph! And some 
+      <em>
+        formatting
+      </em>
+      .
+    </div>
+  </div>
+</body>
+`;
+
+exports[`paragraphs and line breaks render correctly 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <p>
+      This is the first paragraph.
+    </p>
+    <p>
+      This is the second paragraph.
+    </p>
+    <p>
+      This is a centered paragraph.
+    </p>
+    <p>
+      This is a
+      <br />
+      line break.
+    </p>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="cite-hover-boxes-container"
+  />
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;
+
+exports[`titles and headings render correctly 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <h1
+      class="title"
+    >
+      Headings Test
+    </h1>
+    <dt-byline>
+      <div
+        class="byline"
+      >
+        <div
+          class="authors"
+        >
+          
+        </div>
+      </div>
+    </dt-byline>
+    <h2
+      id="section-1"
+    >
+      <a
+        href="#section-1"
+        class="section-number"
+      >
+        1
+      </a>
+      Section Title
+    </h2>
+    <h3
+      id="section-1.1"
+    >
+      <a
+        href="#section-1.1"
+        class="section-number"
+      >
+        1.1
+      </a>
+      Subsection Title
+    </h3>
+    <h4
+      id="section-1.1.1"
+    >
+      <a
+        href="#section-1.1.1"
+        class="section-number"
+      >
+        1.1.1
+      </a>
+      Subsubsection Title
+    </h4>
+    <p>
+      <strong
+        class="paragraph-heading"
+      >
+        Paragraph title
+      </strong>
+      Hello.
+    </p>
+    <h2
+      id="section-2"
+    >
+      <a
+        href="#section-2"
+        class="section-number"
+      >
+        2
+      </a>
+      Another section
+    </h2>
+    <h2
+      id="section-3"
+      class="unnumbered"
+    >
+      Unnumbered section
+    </h2>
+    <h2
+      id="section-4"
+    >
+      <a
+        href="#section-4"
+        class="section-number"
+      >
+        4
+      </a>
+      Another section
+    </h2>
+    <p>
+      A reference to 
+      <a
+        href="#section-1"
+      >
+        Section 1
+      </a>
+      .
+    </p>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="cite-hover-boxes-container"
+  />
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;

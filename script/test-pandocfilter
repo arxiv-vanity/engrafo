@@ -5,7 +5,7 @@ exec docker run \
     -v "/app/node_modules" \
     -v "$ENGRAFO_DIR:/app" \
     -e PYTHONUNBUFFERED=1 \
+    -w /app/pandocfilter \
     --rm \
-    -it \
     engrafo \
-    node_modules/.bin/jest "$@"
+    python -m unittest discover

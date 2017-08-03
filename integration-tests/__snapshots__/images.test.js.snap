@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`images in figures render correctly 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <figure
+      id="figure-1"
+    >
+      <img
+        src="fig.png"
+        title="fig:"
+        alt="Figure 1: Fig."
+      />
+      <figcaption>
+        Figure 1: Fig.
+      </figcaption>
+    </figure>
+    <p>
+      See fig 
+      <a
+        href="#figure-1"
+      >
+        Figure 1
+      </a>
+      .
+    </p>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="cite-hover-boxes-container"
+  />
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;

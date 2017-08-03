@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`block math renders correctly 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <p />
+    <figure
+      id="equation-1"
+    >
+      <p>
+        <span
+          class="math display"
+        >
+          \\[e^{i\\pi}=-1 \\]
+        </span>
+        <span
+          class="engrafo-equation-number"
+        >
+          (1)
+        </span>
+      </p>
+    </figure>
+    <p />
+    <p>
+      Equation 
+      <a
+        href="#equation-1"
+      >
+        1
+      </a>
+      is some good math.
+    </p>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="cite-hover-boxes-container"
+  />
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;
+
+exports[`inline math renders correctly 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <p>
+      Ooh look some lovely maths 
+      <span
+        class="math inline"
+      >
+        \\(x^2 + y^2 = z^2\\)
+      </span>
+      oh yeah.
+    </p>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="cite-hover-boxes-container"
+  />
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;

@@ -90,10 +90,10 @@ class EngrafoOutputDebugPanel(DebugPanel):
 
     def process_response(self, request, response):
         debug_data = getattr(response, 'engrafo_debug_data', {})
-        self.stdout = debug_data.get('stdout').decode('utf-8')
-        self.stderr = debug_data.get('stderr').decode('utf-8')
+        self.stdout = debug_data.get('stdout')
+        self.stderr = debug_data.get('stderr')
 
     def content(self):
         if self.stdout is None:
             return 'Nothing rendered.'
-        return '<h3>stdout</h3><pre style="white-space: pre-wrap">%s</pre><h3>stderr</h3><pre style="white-space: pre-wrap">%s</pre>' % (flask.escape(self.stdout), flask.escape(self.stderr))
+        return '<h3>stdout</h3><pre style="white-space: pre-wrap">%s</pre><h3>stderr</h3><pre style="white-space: pre-wrap">%s</pre>' % (flask.escape(self.stdout.decode('utf-8')), flask.escape(self.stderr.decode('utf-8')))

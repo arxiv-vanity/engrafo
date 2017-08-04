@@ -1,5 +1,88 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`a 3-line inline bibliography renders correctly 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <p>
+      Refer to 
+      <a
+        href="#cite-1"
+      >
+        [1]
+      </a>
+      then refer to 
+      <a
+        href="#cite-2"
+      >
+        [2]
+      </a>
+      but misspell 
+    </p>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    >
+      <h3>
+        References
+      </h3>
+      <dt-bibliography>
+        <ol>
+          <li
+            id="cite-1"
+          >
+            <strong>
+              Convolutional networks can learn to generate affinity graphs for image segmentation.
+            </strong>
+            <br />
+            S. C. Turaga, J. F. Murray, V. Jain, F. Roth, M. Helmstaedter, K. Briggman, W. Denk, and H. S. Seung. 
+            <em>
+              Neural Comput.
+            </em>
+            , 22(2):511–538, Feb. 2010.
+          </li>
+          <li
+            id="cite-2"
+          >
+            <strong>
+              Segmentation fusion for connectomics.
+            </strong>
+            <br />
+            A. Vazquez-Reina, M. Gelbart, D. Huang, J. Lichtman, E. Miller, and H. Pfister. In 
+            <em>
+              ICCV
+            </em>
+            , 2011.
+          </li>
+          <li
+            id="cite-3"
+          >
+            <strong>
+              Image segmentation by size-dependent single linkage clustering of a watershed basin graph.
+            </strong>
+            <br />
+            A. Zlateski and H. S. Seung. 
+            <em>
+              CoRR
+            </em>
+            , abs/1505.00249, 2015.
+          </li>
+        </ol>
+        <ol />
+      </dt-bibliography>
+    </div>
+  </dt-appendix>
+  <div
+    id="cite-hover-boxes-container"
+  />
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;
+
 exports[`a basic bibliography renders correctly 1`] = `
 <body>
   <dt-article
@@ -16,7 +99,9 @@ exports[`a basic bibliography renders correctly 1`] = `
       </h3>
       <dt-bibliography>
         <ol>
-          <li>
+          <li
+            id="cite-1"
+          >
             <strong>
               Compositional morphology for word representations and language modelling.
             </strong>
@@ -27,7 +112,9 @@ exports[`a basic bibliography renders correctly 1`] = `
             </em>
             .
           </li>
-          <li>
+          <li
+            id="cite-2"
+          >
             <strong>
               Morphological word-embeddings.
             </strong>

@@ -124,7 +124,10 @@ def extract_sources(folder):
 
 def pick_latex_path(folder):
     main_path = os.path.join(folder, 'main.tex')
-    if os.path.exists(main_path):
+    ms_path = os.path.join(folder, 'ms.tex')
+    if os.path.exists(ms_path):
+        return ms_path
+    elif os.path.exists(main_path):
         return main_path
     else:
         latex_paths = glob('%s/*.tex' % folder)
@@ -137,6 +140,13 @@ def pick_latex_path(folder):
         with open(path) as f:
             if r'\documentclass' in f.read():
                 candidates.append(path)
+
+    if candidates > 1:
+        bbl_candidates = []
+        for path in candidates:
+            if os.path.exists(path.replace('.tex', '.bbl')):
+                bbl_candidates.append(path)
+        candidates = bbl_candidates
 
     if len(candidates) != 1:
         raise BadRequest('Ambiguous LaTeX path, len candidates: %d' % len(candidates))

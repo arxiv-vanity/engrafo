@@ -10,7 +10,6 @@ exec docker run \
     -v "$ENGRAFO_DIR:/app" \
     $PANDOC_VOLUME_FLAG \
     -w /app \
-    -w /app/server/ \
     --rm \
     engrafo \
     $@

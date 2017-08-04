@@ -129,6 +129,15 @@ exports[`a basic bibliography renders correctly 1`] = `
             </em>
             .
           </li>
+          <li
+            id="cite-3"
+          >
+            <strong>
+              Just a title, not a source.
+            </strong>
+            <br />
+            Foo and Bar. 2020.
+          </li>
         </ol>
         <ol />
       </dt-bibliography>

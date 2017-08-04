@@ -8,4 +8,8 @@ Joe Bloggs and Phil Jones. 2014.
 Ryan Cotterell and Hinrich Sch{\"u}tze. 2015.
 \newblock Morphological word-embeddings.
 \newblock In \emph{Proceedings of HLT-NAACL}.
+
+\bibitem[{Foo and Bar(2020)}]{foobar2020}
+Foo and Bar. 2020.
+\newblock Just a title, not a source.
 \end{thebibliography}

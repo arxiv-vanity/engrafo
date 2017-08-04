@@ -5,12 +5,14 @@ function parseBibitem(el) {
   // reformat to this consistent format in the filter.
 
   var sourceEl = el.children[2];
-  // Flatten them paragraphs
-  Array.from(sourceEl.children).forEach(el => {
-    if (el.tagName == "P") {
-      utils.removeAndFlattenChildren(el);
-    }
-  });
+  if (sourceEl) {
+    // Flatten them paragraphs
+    Array.from(sourceEl.children).forEach(el => {
+      if (el.tagName == "P") {
+        utils.removeAndFlattenChildren(el);
+      }
+    });
+  }
 
   return {
     authors: el.children[0],
@@ -30,13 +32,19 @@ module.exports = function(dom) {
   bibliography.forEach(item => {
     var li = dom.createElement('li');
     li.setAttribute('id', item.id);
-    var strong = dom.createElement('strong');
-    utils.moveChildren(item.title, strong);
-    li.appendChild(strong);
-    li.appendChild(dom.createElement('br'));
-    utils.moveChildren(item.authors, li);
-    li.appendChild(dom.createTextNode(' '));
-    utils.moveChildren(item.source, li);
+    if (item.title) {
+      var strong = dom.createElement('strong');
+      utils.moveChildren(item.title, strong);
+      li.appendChild(strong);
+      li.appendChild(dom.createElement('br'));
+    }
+    if (item.authors) {
+      utils.moveChildren(item.authors, li);
+    }
+    if (item.source) {
+      li.appendChild(dom.createTextNode(' '));
+      utils.moveChildren(item.source, li);
+    }
     ol.appendChild(li);
   });
 

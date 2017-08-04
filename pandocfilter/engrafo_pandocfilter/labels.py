@@ -7,7 +7,7 @@ from pandocfilters import (
     Header, Table, Div
 )
 
-from debug import log
+from .debug import log
 
 # - State
 # Label indexes

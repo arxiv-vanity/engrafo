@@ -2,3 +2,4 @@ version: '2'
 services:
   engrafo:
     build: .
+    cached: true

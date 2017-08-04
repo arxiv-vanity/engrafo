@@ -8,4 +8,4 @@ class MathTestCase(unittest.TestCase):
             {'t': 'DisplayMath'}, '\\text{\\textsc{3CosAdd} }'])
         self.assertEqual(result, Math(
             {'t': 'DisplayMath'},
-            '\\text{\\rm{3C{\small OS}A{\small DD}} }'))
+            '\\rm{3C{\small OS}A{\small DD}}'))

@@ -34,4 +34,6 @@ WORKDIR /app
 COPY package.json yarn.lock /app/
 RUN yarn
 
+ENV PYTHONUNBUFFERED=1
+
 COPY . /app

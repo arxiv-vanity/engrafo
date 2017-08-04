@@ -88,12 +88,35 @@ exports[`a basic bibliography renders correctly 1`] = `
   <dt-article
     class="centered"
   >
-    
+    <p>
+      Hello.
+      <dt-fn>
+        <sup>
+          <span
+            id="fn-1"
+            data-hover-ref="dt-fn-hover-box-0"
+            style="cursor:pointer"
+          >
+            1
+          </span>
+        </sup>
+      </dt-fn>
+    </p>
   </dt-article>
   <dt-appendix>
     <div
       class="l-body"
     >
+      <h3>
+        Footnotes
+      </h3>
+      <dt-fn-list>
+        <ol>
+          <li>
+            Just checking the bibliography comes after footnotes.
+          </li>
+        </ol>
+      </dt-fn-list>
       <h3>
         References
       </h3>
@@ -148,6 +171,14 @@ exports[`a basic bibliography renders correctly 1`] = `
   />
   <div
     id="footnote-hover-boxes-container"
-  />
+  >
+    <div
+      style="display:none;"
+      class="dt-hover-box"
+      id="dt-fn-hover-box-0"
+    >
+      Just checking the bibliography comes after footnotes.
+    </div>
+  </div>
 </body>
 `;

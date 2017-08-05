@@ -38,18 +38,21 @@ PAPERS_PATH = 'papers'
 @app.route('/')
 def index():
     data = request.args.get('data', 'cached')
+    pandoc_only = 'pandoc_only' in request.args
     if data == 'live':
         text = requests.get('http://arxiv-sanity.com').text
     if data == 'top':
-        text = requests.get('http://www.arxiv-sanity.com/top?timefilter=alltime&vfilter=all').text
+        with open('arxiv-sanity-snapshots/top-20170727.html') as f:
+            text = f.read()
     else:
-        with open('arxiv-sanity-snapshot.html') as f:
+        with open('arxiv-sanity-snapshots/live-20170727.html') as f:
             text = f.read()
     papers = json.loads([line for line in text.splitlines()
                        if line.startswith('var papers = ')][0][len('var papers = '):-1])
     #random.shuffle(papers)
 
-    return render_template('index.html', papers=papers)
+    return render_template(
+        'index.html', papers=papers, pandoc_only=pandoc_only)
 
 
 @app.route('/html/<arxiv_id>/')

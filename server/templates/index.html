@@ -11,7 +11,7 @@
       {% for paper in papers %}
       <li class="paper">
         <img class="status" />
-        <a class="paper-link" href="/html/{{ paper.pid }}/{% if 'pandoc_only' in request.args %}?pandoc_only{% endif %}">{{ paper.title }}</a>
+        <a class="paper-link" href="/html/{{ paper.pid }}/{% if pandoc_only %}?pandoc_only{% endif %}">{{ paper.title }}</a>
         <pre class="parse-error"></pre>
       </li>
       {% endfor %}

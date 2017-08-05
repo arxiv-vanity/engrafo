@@ -8,6 +8,7 @@ from pandocfilters import Image, Para
 
 
 PDF_REGEX = re.compile(r'^(.+)\.pdf$')
+EPS_REGEX = re.compile(r'^(.+)\.e?ps$')
 IMAGE_EXTENSIONS = [
     'jpg',
     'jpeg',
@@ -116,9 +117,34 @@ def replace_pdf_images(key, val, fmt, meta):
             return Image(*val)
 
 
+def replace_eps_images(key, val, fmt, meta):
+    '''
+    Replace PDFs with SVGs.
+    '''
+    if key == 'Image':
+        image_path = val[2][0]
+        match = EPS_REGEX.match(image_path)
+        if match:
+            prefix = match.group(1)
+            pdf_path = '%s.pdf' % prefix
+            svg_path = '%s.svg' % prefix
+            eps2pdf(image_path, pdf_path)
+            pdf2svg(pdf_path, svg_path)
+            val[2][0] = svg_path
+            return Image(*val)
+
+
 def pdf2svg(src, dest):
     subprocess.check_output([
         'pdf2svg',
+        src,
+        dest,
+    ])
+
+
+def eps2pdf(src, dest):
+    subprocess.check_output([
+        'ps2pdf',
         src,
         dest,
     ])

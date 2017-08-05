@@ -41,7 +41,7 @@ def index():
     pandoc_only = 'pandoc_only' in request.args
     if data == 'live':
         text = requests.get('http://arxiv-sanity.com').text
-    if data == 'top':
+    elif data == 'top':
         with open('arxiv-sanity-snapshots/top-20170727.html') as f:
             text = f.read()
     else:

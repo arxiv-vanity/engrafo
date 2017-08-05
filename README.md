@@ -1,5 +1,7 @@
 # Engrafo
 
+[ ![Codeship Status for bfirsh/engrafo](https://app.codeship.com/projects/df36a360-5b2c-0135-2a70-66335668a83b/status?branch=master)](https://app.codeship.com/projects/237445)
+
 Converts LaTeX documents to beautiful, readable, responsive web pages.
 
 ## Building

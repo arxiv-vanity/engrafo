@@ -28,7 +28,7 @@ exports.renderPandoc = (texPath, callback) => {
   var htmlPath = path.join(outputDir, "index.html");
   var args = [
     "--from",
-    "latex+raw_tex",
+    "latex+raw_tex+latex_macros",
     "--to",
     "html",
     "--standalone",

@@ -8,6 +8,35 @@ from pandocfilters import Image, Para
 
 
 PDF_REGEX = re.compile(r'^(.+)\.pdf$')
+IMAGE_EXTENSIONS = [
+    'jpg',
+    'jpeg',
+    'png',
+    'svg',
+    'bmp',
+    'tiff',
+    'pdf',
+    'eps',
+]
+
+
+def append_image_extensions(key, val, fmt, meta):
+    '''
+    Often LaTeX authors don't include the image file extension,
+    e.g. \includegraphics{eps/teaser}
+
+    Here we loop through a list of image formats and append the
+    first one we have a file for.
+    '''
+    if key == 'Image':
+        image_path = val[2][0]
+        image_filename = image_path.split('/')[-1]
+        if '.' not in image_filename:
+            for extension in IMAGE_EXTENSIONS:
+                proposed = '%s.%s' % (image_path, extension)
+                if os.path.exists(proposed):
+                    val[2][0] = proposed
+                    return Image(*val)
 
 
 def tikz2image(tikz_src, prefix):

@@ -3,7 +3,8 @@ import json
 import sys
 from pandocfilters import walk
 from .footnotes import inline_footnotes
-from .images import replace_pdf_images, replace_tikz_images
+from .images import (replace_pdf_images, replace_tikz_images,
+                     append_image_extensions)
 from .labels import (process_display_math, insert_figure_labels,
                      insert_table_labels, insert_section_labels,
                      make_explicit_figure_captions, replace_references,
@@ -27,6 +28,7 @@ def main():
     for action in [
             replace_smallcaps,
             process_display_math,
+            append_image_extensions,
             replace_pdf_images,
             replace_tikz_images,
             insert_figure_labels,

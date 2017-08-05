@@ -51,7 +51,7 @@ def insert_figure_labels(key, val, fmt, meta):
                     label_map[label] = Label(
                         ref_string='Figure %d' % index,
                         ref_index=ref_index,
-                        prev_strings=['figure', 'fig.'],
+                        prev_strings=['figure', 'fig.', 'fig'],
                     )
 
                     span_index = i
@@ -139,7 +139,7 @@ def insert_equation_labels(val):
         label_map[label] = Label(
             ref_string='Equation %d' % index,
             ref_index=ref_index,
-            prev_strings=['equation', 'eqn.'],
+            prev_strings=['equation', 'eqn.', 'eqn', 'eq.', 'eq'],
         )
 
         number = Span(['', ['engrafo-equation-number'], []],

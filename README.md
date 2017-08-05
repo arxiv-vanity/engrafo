@@ -38,7 +38,7 @@ This will build an executable in `pandoc/.stack-work/install/x86_64-linux/lts-8.
 
 In another shell, in the `engrafo-pandoc` folder, start the server with
 
-    $ PANDOC_BIN=/path/to/pandoc/.stack-work/install/x86_64-linux/lts-8.16/8.0.2/bin/pandoc script/server
+    $ PANDOC_BINARY=/path/to/pandoc/.stack-work/install/x86_64-linux/lts-8.16/8.0.2/bin/pandoc script/server
 
 Now, whenever you make a change to a Pandoc source file, the binary will build and will be visible in the Engrafo container.
 

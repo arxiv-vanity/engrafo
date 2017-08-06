@@ -9,6 +9,7 @@ from .labels import (process_display_math, insert_figure_labels,
                      insert_table_labels, insert_section_labels,
                      make_explicit_figure_captions, replace_references,
                      insert_cite_labels, replace_cite_references)
+from .links import wrap_urls_in_anchors
 from .math import replace_smallcaps
 
 
@@ -26,6 +27,7 @@ def main():
     altered = blocks
 
     for action in [
+            wrap_urls_in_anchors,
             replace_smallcaps,
             process_display_math,
             append_image_extensions,

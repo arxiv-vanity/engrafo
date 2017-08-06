@@ -7,14 +7,13 @@ from pandocfilters import (
     Header, Table, Div
 )
 
-from .debug import log
-
 # - State
 # Label indexes
 label_map = {}
 # Section position state for generating section numbers
 sec_lengths = [0] * 10
 is_appendix = False
+# map of (reference type => previous index)
 latest_index = defaultdict(int)
 
 Label = namedtuple('Label', [

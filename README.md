@@ -68,6 +68,10 @@ Or individual tests by matching a string:
 
     $ script/test -t "titles and headings"
 
+Or tests in a single module:
+
+    $ script/test -- formatting
+
 ### Writing integration tests
 
 The integration tests use [Jest's](http://facebook.github.io/jest/) snapshotting feature.

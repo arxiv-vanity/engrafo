@@ -7,3 +7,7 @@ test("lists render correctly", done => {
 test("text formatting renders correctly", done => {
   utils.expectBodyToMatchSnapshot("formatting/text.tex", done);
 });
+
+test("links get wrapped in anchors", done => {
+  utils.expectBodyToMatchSnapshot("formatting/links.tex", done);
+});

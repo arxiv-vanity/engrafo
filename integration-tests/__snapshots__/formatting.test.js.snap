@@ -1,5 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`links get wrapped in anchors 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <p>
+      http link: 
+      <a
+        href="http://link.co.uk/to#something"
+        class="uri"
+      >
+        http://link.co.uk/to#something
+      </a>
+    </p>
+    <p>
+      https link: 
+      <a
+        href="https://link.info?param"
+        class="uri"
+      >
+        https://link.info?param
+      </a>
+      url
+    </p>
+    <p>
+      link with trailing period: 
+      <a
+        href="https://example.com"
+        class="uri"
+      >
+        https://example.com
+      </a>
+      .
+    </p>
+    <p>
+      this should not make a link: foo.bar
+    </p>
+    <p>
+      this is a link without leading space: badlatex.
+      <a
+        href="http://example.com"
+        class="uri"
+      >
+        http://example.com
+      </a>
+    </p>
+    <p>
+      this is already a link: 
+      <a
+        href="http://example.com"
+      >
+        example.com
+      </a>
+    </p>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="cite-hover-boxes-container"
+  />
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;
+
 exports[`lists render correctly 1`] = `
 <body>
   <dt-article

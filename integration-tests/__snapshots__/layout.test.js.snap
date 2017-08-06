@@ -56,6 +56,10 @@ exports[`footnotes render correctly 1`] = `
           </li>
         </ol>
       </dt-fn-list>
+      <h3>
+        Footnotes
+      </h3>
+      <dt-fn-list />
     </div>
   </dt-appendix>
   <div

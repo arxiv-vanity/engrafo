@@ -164,10 +164,6 @@ exports[`a basic bibliography renders correctly 1`] = `
         </ol>
         <ol />
       </dt-bibliography>
-      <h3>
-        Footnotes
-      </h3>
-      <dt-fn-list />
     </div>
   </dt-appendix>
   <div

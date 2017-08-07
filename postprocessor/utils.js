@@ -18,6 +18,20 @@ exports.addStylesheet = function(dom, css) {
   dom.head.appendChild(style);
 };
 
+exports.addExternalScript = function(dom, src) {
+  let script = dom.createElement('script');
+  script.setAttribute('type', 'text/javascript');
+  script.setAttribute('src', src);
+  dom.body.appendChild(script);
+};
+
+exports.addExternalStylesheet = function(dom, href) {
+  let style = dom.createElement('link');
+  style.setAttribute('rel', 'stylesheet');
+  style.setAttribute('href', href);
+  dom.head.appendChild(style);
+};
+
 exports.moveChildren = function(from, to) {
   while(from.firstChild) {
     to.appendChild(from.firstChild);

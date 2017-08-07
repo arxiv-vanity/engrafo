@@ -2,6 +2,7 @@
 
 import re
 import json
+import base64
 import requests
 import logging
 from werkzeug.exceptions import BadRequest
@@ -16,6 +17,8 @@ from flask import (
     send_from_directory, Response, make_response
 )
 from flask_debugtoolbar import DebugToolbarExtension
+
+from feedback import Feedback
 
 app = Flask(__name__, static_url_path='', static_folder='static')
 app.logger.setLevel(logging.DEBUG)
@@ -120,6 +123,25 @@ stderr:
 def paper_static(arxiv_id, filename):
     folder = get_folder(arxiv_id)
     return send_from_directory(folder, filename)
+
+
+@app.route('/bug-report', methods=['POST'])
+def bug_report():
+    data = request.form
+    arxiv_id = data['arxivId']
+    jpg_data_b64 = data.get('jpgData')
+    if jpg_data_b64:
+        jpg_data = base64.b64decode(jpg_data_b64)
+    else:
+        jpg_data = None
+    text = request.form['text']
+
+    # TODO: this properly
+    github_access_token = open('github-access-token.txt').read().strip()
+    feedback = Feedback(github_access_token)
+    issue_url = feedback.create_issue(arxiv_id, text, jpg_data)
+
+    return jsonify({'issue_url': issue_url})
 
 
 def get_folder(arxiv_id):

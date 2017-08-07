@@ -4,6 +4,7 @@
 
 # arxiv-sanity-sanity prototype
 /server/papers
+/server/github-access-token.txt
 
 # emacs
 *_flymake.py
@@ -14,5 +15,5 @@
 /engrafo_pandocfilter/build/
 *.pyc
 
-pandoc-ast-filtered.json
-pandoc-ast.json
+/pandoc-ast-filtered.json
+/pandoc-ast.json

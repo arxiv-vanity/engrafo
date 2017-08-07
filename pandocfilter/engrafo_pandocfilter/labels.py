@@ -170,8 +170,8 @@ def insert_section_labels(key, val, fmt, meta):
     if key == 'Header':
         level, attrs, children = val
 
-        # Ignore \paragraph{} and smaller
-        if level >= 4:
+        # Ignore \subsubsection{}, \paragraph{} and smaller
+        if level >= 3:
             return Header(level + 1, attrs, children)
 
         unnumbered = 'unnumbered' in val[1][1]

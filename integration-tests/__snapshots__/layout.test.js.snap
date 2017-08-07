@@ -167,14 +167,8 @@ exports[`titles and headings render correctly 1`] = `
       Subsection Title
     </h3>
     <h4
-      id="section-1.1.1"
+      id="subsubsection-title"
     >
-      <a
-        href="#section-1.1.1"
-        class="section-number"
-      >
-        1.1.1
-      </a>
       Subsubsection Title
     </h4>
     <p>

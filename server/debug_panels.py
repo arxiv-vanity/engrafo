@@ -97,3 +97,23 @@ class EngrafoOutputDebugPanel(DebugPanel):
         if self.stdout is None:
             return 'Nothing rendered.'
         return '<h3>stdout</h3><pre style="white-space: pre-wrap">%s</pre><h3>stderr</h3><pre style="white-space: pre-wrap">%s</pre>' % (flask.escape(self.stdout.decode('utf-8')), flask.escape(self.stderr.decode('utf-8')))
+
+
+class PDFDebugPanel(DebugPanel):
+    name = 'pdf'
+    has_content = True
+
+    def title(self):
+        return 'PDF output'
+
+    nav_title = title
+
+    def content(self):
+        url = 'https://arxiv.org/pdf/' + self.arxiv_id
+        return '<a href="{url}">{url}</a><iframe src="{url}" style="width: 100%; height: 100%">'.format(url=url)
+
+    def process_response(self, request, response):
+        self.arxiv_id = request.view_args.get('arxiv_id')
+
+    def url(self):
+        return ''

@@ -27,6 +27,7 @@ app.config['SECRET_KEY'] = 'unsafe-for-development'
 app.config['DEBUG_TB_PANELS'] = [
     'flask_debugtoolbar.panels.timer.TimerDebugPanel',
     'debug_panels.LatexSourceDebugPanel',
+    'debug_panels.PDFDebugPanel',
     'debug_panels.PandocDebugPanel',
     'debug_panels.PandocFilteredDebugPanel',
     'debug_panels.EngrafoOutputDebugPanel',

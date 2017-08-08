@@ -37,3 +37,9 @@ exports.moveChildren = function(from, to) {
     to.appendChild(from.firstChild);
   }
 };
+
+exports.nodeFromString = function(dom, str) {
+  var div = dom.createElement("div");
+  div.innerHTML = str;
+  return div.firstChild;
+};

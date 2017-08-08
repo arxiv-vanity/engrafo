@@ -1,5 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`authors render correctly 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <h1
+      class="title"
+    >
+      Hello
+    </h1>
+    <dt-byline>
+      <div
+        class="byline"
+      >
+        <div
+          class="authors"
+        >
+          <div
+            class="author"
+          >
+            Joe Bloggs
+          </div>
+          <div
+            class="author"
+          >
+            Jane Smith
+          </div>
+        </div>
+      </div>
+    </dt-byline>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="cite-hover-boxes-container"
+  />
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;
+
 exports[`footnotes render correctly 1`] = `
 <body>
   <dt-article

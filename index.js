@@ -78,6 +78,7 @@ exports.postprocess = htmlString => {
   postprocessors.footnotes(dom);
   postprocessors.bibliography(dom);
   distill.render(dom, {});
+  postprocessors.authors(dom);
   return jsdom.serializeDocument(dom);
 };
 

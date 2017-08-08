@@ -1,5 +1,9 @@
 var utils = require("./utils");
 
+test("authors render correctly", done => {
+  utils.expectBodyToMatchSnapshot("layout/authors.tex", done);
+});
+
 test("titles and headings render correctly", done => {
   utils.expectBodyToMatchSnapshot("layout/headings.tex", done);
 });

@@ -108,12 +108,14 @@ class PDFDebugPanel(DebugPanel):
 
     nav_title = title
 
-    def content(self):
-        url = 'https://arxiv.org/pdf/' + self.arxiv_id
-        return '<a href="{url}">{url}</a><iframe src="{url}" style="width: 100%; height: 100%">'.format(url=url)
-
     def process_response(self, request, response):
         self.arxiv_id = request.view_args.get('arxiv_id')
+
+    def content(self):
+        if not self.arxiv_id:
+            return
+        url = 'https://arxiv.org/pdf/' + self.arxiv_id
+        return '<a href="{url}">{url}</a><iframe src="{url}" style="width: 100%; height: 100%">'.format(url=url)
 
     def url(self):
         return ''

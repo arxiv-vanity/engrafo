@@ -9,16 +9,33 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
       Refer to 
       <a
         href="#cite-1"
+        class="engrafo-cite"
+        onclick="event.preventDefault()"
       >
-        [1]
+        <span
+          data-hover-ref="dt-cite-hover-box-1"
+        >
+          [1]
+        </span>
       </a>
       then refer to 
       <a
         href="#cite-2"
+        class="engrafo-cite"
+        onclick="event.preventDefault()"
       >
-        [2]
+        <span
+          data-hover-ref="dt-cite-hover-box-2"
+        >
+          [2]
+        </span>
       </a>
       but misspell 
+      <span
+        class="engrafo-cite unresolved"
+      >
+        [?]
+      </span>
     </p>
   </dt-article>
   <dt-appendix>
@@ -76,6 +93,40 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
   <div
     id="footnote-hover-boxes-container"
   />
+  <div
+    id="cite-hover-boxes-container"
+  >
+    <div
+      style="display:none;"
+      class="dt-hover-box"
+      id="dt-cite-hover-box-1"
+    >
+      <strong>
+        Convolutional networks can learn to generate affinity graphs for image segmentation.
+      </strong>
+      <br />
+      S. C. Turaga, J. F. Murray, V. Jain, F. Roth, M. Helmstaedter, K. Briggman, W. Denk, and H. S. Seung. 
+      <em>
+        Neural Comput.
+      </em>
+      , 22(2):511–538, Feb. 2010.
+    </div>
+    <div
+      style="display:none;"
+      class="dt-hover-box"
+      id="dt-cite-hover-box-2"
+    >
+      <strong>
+        Segmentation fusion for connectomics.
+      </strong>
+      <br />
+      A. Vazquez-Reina, M. Gelbart, D. Huang, J. Lichtman, E. Miller, and H. Pfister. In 
+      <em>
+        ICCV
+      </em>
+      , 2011.
+    </div>
+  </div>
 </body>
 `;
 
@@ -85,7 +136,19 @@ exports[`a basic bibliography renders correctly 1`] = `
     class="centered"
   >
     <p>
-      Hello.
+      Hello
+      <a
+        href="#cite-1"
+        class="engrafo-cite"
+        onclick="event.preventDefault()"
+      >
+        <span
+          data-hover-ref="dt-cite-hover-box-0"
+        >
+          [1]
+        </span>
+      </a>
+      World
       <dt-fn>
         <sup>
           <span
@@ -170,6 +233,25 @@ exports[`a basic bibliography renders correctly 1`] = `
       id="dt-fn-hover-box-0"
     >
       Just checking the bibliography comes after footnotes.
+    </div>
+  </div>
+  <div
+    id="cite-hover-boxes-container"
+  >
+    <div
+      style="display:none;"
+      class="dt-hover-box"
+      id="dt-cite-hover-box-0"
+    >
+      <strong>
+        Compositional morphology for word representations and language modelling.
+      </strong>
+      <br />
+      Joe Bloggs and Phil Jones. 2014. In 
+      <em>
+        Proceedings of ICML
+      </em>
+      .
     </div>
   </div>
 </body>

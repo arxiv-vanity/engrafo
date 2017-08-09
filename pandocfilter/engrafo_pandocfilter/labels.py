@@ -315,11 +315,11 @@ def replace_cite_references(key, val, fmt, meta):
         label = val[0][0]['citationId']
         if label and label in label_map:
             ref_string, ref_id, prev_strings = label_map[label]
-            return [Link(['', ['cite-ref'], []], [Str(ref_string)],
+            return [Link(['', ['engrafo-cite'], []], [Str(ref_string)],
                          ['#%s' % ref_id, ''])]
         # TODO: below doesn't work yet
         else:
-            return Span(['', ['cite-ref', 'unresolved'], []], [Str('[?]')])
+            return Span(['', ['engrafo-cite', 'unresolved'], []], [Str('[?]')])
 
 
 def match_ref(s):

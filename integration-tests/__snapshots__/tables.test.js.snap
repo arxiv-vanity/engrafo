@@ -97,9 +97,6 @@ exports[`basic tables render correctly 1`] = `
     />
   </dt-appendix>
   <div
-    id="cite-hover-boxes-container"
-  />
-  <div
     id="footnote-hover-boxes-container"
   />
 </body>

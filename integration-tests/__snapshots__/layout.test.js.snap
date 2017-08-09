@@ -37,9 +37,6 @@ exports[`authors render correctly 1`] = `
     />
   </dt-appendix>
   <div
-    id="cite-hover-boxes-container"
-  />
-  <div
     id="footnote-hover-boxes-container"
   />
 </body>
@@ -104,9 +101,6 @@ exports[`footnotes render correctly 1`] = `
     </div>
   </dt-appendix>
   <div
-    id="cite-hover-boxes-container"
-  />
-  <div
     id="footnote-hover-boxes-container"
   >
     <div
@@ -159,9 +153,6 @@ exports[`paragraphs and line breaks render correctly 1`] = `
       class="l-body"
     />
   </dt-appendix>
-  <div
-    id="cite-hover-boxes-container"
-  />
   <div
     id="footnote-hover-boxes-container"
   />
@@ -267,9 +258,6 @@ exports[`titles and headings render correctly 1`] = `
       class="l-body"
     />
   </dt-appendix>
-  <div
-    id="cite-hover-boxes-container"
-  />
   <div
     id="footnote-hover-boxes-container"
   />

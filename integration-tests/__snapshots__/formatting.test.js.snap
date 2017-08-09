@@ -61,9 +61,6 @@ exports[`links get wrapped in anchors 1`] = `
     />
   </dt-appendix>
   <div
-    id="cite-hover-boxes-container"
-  />
-  <div
     id="footnote-hover-boxes-container"
   />
 </body>
@@ -164,9 +161,6 @@ exports[`lists render correctly 1`] = `
     />
   </dt-appendix>
   <div
-    id="cite-hover-boxes-container"
-  />
-  <div
     id="footnote-hover-boxes-container"
   />
 </body>
@@ -220,9 +214,6 @@ exports[`text formatting renders correctly 1`] = `
       class="l-body"
     />
   </dt-appendix>
-  <div
-    id="cite-hover-boxes-container"
-  />
   <div
     id="footnote-hover-boxes-container"
   />

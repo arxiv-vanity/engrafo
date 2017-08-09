@@ -1,7 +1,7 @@
 let utils = require('./utils');
 let yaml = require('js-yaml');
 
-module.exports = function(dom) {
+module.exports = function(dom, data) {
   for (var scriptSrc of [
     'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js',
     '/js/jquery-1.12.4.min.js',
@@ -27,6 +27,9 @@ module.exports = function(dom) {
   if (!title) {
     return;
   }
+
+  data.title = title.innerHTML;
+
   // Remove <strong> or <em> from title
   let titleChild = title.firstChild;
   if (titleChild.tagName === 'STRONG' || titleChild.tagName === 'EM') {
@@ -44,16 +47,5 @@ module.exports = function(dom) {
   // Insert byline after title
   let dtByline = dom.createElement('dt-byline');
   title.parentNode.insertBefore(dtByline, title.nextSibling);
-
-  // Front matter
-  var frontMatter = {
-    title: title.innerHTML,
-  }
-
-  // Set up front matter
-  frontMatterEl = dom.createElement('script');
-  frontMatterEl.setAttribute('type', 'text/front-matter');
-  frontMatterEl.appendChild(dom.createTextNode(yaml.safeDump(frontMatter)));
-  dom.head.appendChild(frontMatterEl);
 
 };

@@ -70,13 +70,9 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
             , abs/1505.00249, 2015.
           </li>
         </ol>
-        <ol />
       </dt-bibliography>
     </div>
   </dt-appendix>
-  <div
-    id="cite-hover-boxes-container"
-  />
   <div
     id="footnote-hover-boxes-container"
   />
@@ -162,13 +158,9 @@ exports[`a basic bibliography renders correctly 1`] = `
             Foo and Bar. 2020.
           </li>
         </ol>
-        <ol />
       </dt-bibliography>
     </div>
   </dt-appendix>
-  <div
-    id="cite-hover-boxes-container"
-  />
   <div
     id="footnote-hover-boxes-container"
   >

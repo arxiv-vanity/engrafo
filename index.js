@@ -69,16 +69,33 @@ exports.postprocess = htmlString => {
   var dom = jsdom.jsdom(htmlString, {
     features: { ProcessExternalResources: false, FetchExternalResources: false }
   });
-  postprocessors.layout(dom);
-  postprocessors.header(dom);
-  postprocessors.code(dom);
-  postprocessors.figures(dom);
-  postprocessors.math(dom);
-  postprocessors.headings(dom);
-  postprocessors.footnotes(dom);
-  postprocessors.bibliography(dom);
-  distill.render(dom, {});
-  postprocessors.authors(dom);
+
+  // Document state
+  var data = {};
+
+  // Run all processing on document.
+  //
+  // Order is important -- typically the Engrafo processor comes before the
+  // Distill one so that we can massage the Pandoc output into the format
+  // that Distill expects.
+  postprocessors.layout(dom, data);
+  distill.components.html(dom, data);
+  distill.components.styles(dom, data);
+  postprocessors.header(dom, data);
+  distill.components.byline(dom, data);
+  postprocessors.authors(dom, data);
+  postprocessors.code(dom, data);
+  distill.components.code(dom, data);
+  postprocessors.figures(dom, data);
+  postprocessors.math(dom, data);
+  postprocessors.headings(dom, data);
+  postprocessors.footnotes(dom, data);
+  distill.components.footnote(dom, data);
+  postprocessors.bibliography(dom, data);
+  distill.components.appendix(dom, data);
+  distill.components.typeset(dom, data);
+  distill.components.hoverBox(dom, data);
+
   return jsdom.serializeDocument(dom);
 };
 

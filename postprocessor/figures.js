@@ -1,4 +1,4 @@
-let utils = require('./utils');
+let utils = require("./utils");
 
 var css = `
   table {
@@ -26,19 +26,18 @@ var css = `
 
 module.exports = function(dom) {
   utils.addStylesheet(dom, css);
-  
 
   // Make tables figures
-  let tables = dom.body.getElementsByClassName('engrafo-table');
-  Array.from(tables).forEach((div) => {
-    let figure = dom.createElement('figure');
+  let tables = dom.querySelectorAll(".engrafo-table");
+  Array.from(tables).forEach(div => {
+    let figure = dom.createElement("figure");
     figure.id = div.id;
     utils.replaceAndKeepChildren(div, figure);
-  })
+  });
 
   // Make figures figures
-  let figures = dom.body.getElementsByClassName('engrafo-figure');
-  Array.from(figures).forEach((span) => {
+  let figures = dom.querySelectorAll(".engrafo-figure");
+  Array.from(figures).forEach(span => {
     // Pandoc gives us <p><span></span></p> so get rid of surrounding paragraph
     let paragraph = span.parentNode;
     paragraph.parentNode.insertBefore(span, paragraph);
@@ -46,11 +45,11 @@ module.exports = function(dom) {
       paragraph.parentNode.removeChild(paragraph);
     }
 
-    let figure = dom.createElement('figure');
+    let figure = dom.createElement("figure");
     figure.id = span.id;
     utils.replaceAndKeepChildren(span, figure);
 
-    let caption = figure.getElementsByClassName('engrafo-figcaption')[0];
-    utils.replaceAndKeepChildren(caption, dom.createElement('figcaption'));
+    let caption = figure.querySelector(".engrafo-figcaption");
+    utils.replaceAndKeepChildren(caption, dom.createElement("figcaption"));
   });
 };

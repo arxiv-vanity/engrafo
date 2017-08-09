@@ -1,4 +1,4 @@
-let utils = require('./utils');
+let utils = require("./utils");
 
 var css = `
 .engrafo-equation-number {
@@ -23,9 +23,9 @@ module.exports = function(dom) {
   utils.addStylesheet(dom, css);
 
   // Make math figures
-  let mathBlocks = dom.getElementsByClassName('engrafo-equation');
-  Array.from(mathBlocks).forEach((div) => {
-    let figure = dom.createElement('figure');
+  let mathBlocks = dom.querySelectorAll(".engrafo-equation");
+  Array.from(mathBlocks).forEach(div => {
+    let figure = dom.createElement("figure");
     figure.id = div.id;
     utils.replaceAndKeepChildren(div, figure);
   });

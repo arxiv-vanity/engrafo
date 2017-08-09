@@ -184,8 +184,8 @@ exports[`titles and headings render correctly 1`] = `
       id="section-1"
     >
       <a
-        href="#section-1"
         class="section-number"
+        href="#section-1"
       >
         1
       </a>
@@ -195,8 +195,8 @@ exports[`titles and headings render correctly 1`] = `
       id="section-1.1"
     >
       <a
-        href="#section-1.1"
         class="section-number"
+        href="#section-1.1"
       >
         1.1
       </a>
@@ -219,8 +219,8 @@ exports[`titles and headings render correctly 1`] = `
       id="section-2"
     >
       <a
-        href="#section-2"
         class="section-number"
+        href="#section-2"
       >
         2
       </a>
@@ -236,8 +236,8 @@ exports[`titles and headings render correctly 1`] = `
       id="section-4"
     >
       <a
-        href="#section-4"
         class="section-number"
+        href="#section-4"
       >
         4
       </a>

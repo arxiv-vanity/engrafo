@@ -123,8 +123,8 @@ exports[`lists render correctly 1`] = `
       id="section-1"
     >
       <a
-        href="#section-1"
         class="section-number"
+        href="#section-1"
       >
         1
       </a>

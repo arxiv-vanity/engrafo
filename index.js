@@ -5,12 +5,12 @@ var jsdom = require("jsdom");
 var path = require("path");
 var postprocessors = require("./postprocessor");
 
-var normalizeDirectory = (dir) => {
+var normalizeDirectory = dir => {
   if (dir.slice(-1) == "/") {
     dir = dir.slice(0, -1);
   }
   return path.normalize(dir);
-}
+};
 
 var prepareOutputDir = (inputDir, outputDir, callback) => {
   // Nothing to prepare
@@ -40,7 +40,7 @@ exports.renderPandoc = (texPath, callback) => {
     texFilename
   ];
   var pandoc = childProcess.spawn("/usr/local/bin/pandoc", args, {
-    cwd: outputDir,
+    cwd: outputDir
   });
   var stdout = "";
   var stderr = "";
@@ -108,7 +108,7 @@ exports.render = (texPath, outputDir, callback) => {
   var texFilename = path.basename(texPath);
   var outputTexPath = path.join(outputDir, texFilename);
 
-  prepareOutputDir(inputDir, outputDir, (err) => {
+  prepareOutputDir(inputDir, outputDir, err => {
     if (err) return callback(err);
     exports.renderPandoc(outputTexPath, (err, htmlPath) => {
       if (err) return callback(err, htmlPath);

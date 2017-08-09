@@ -1,4 +1,4 @@
-let utils = require('./utils');
+let utils = require("./utils");
 
 function parseBibitem(el) {
   // TODO(andreas): this isn't always the structure (e.g. 1707.08084v1)
@@ -18,45 +18,43 @@ function parseBibitem(el) {
     authors: el.children[0],
     title: el.children[1],
     source: sourceEl,
-    id: el.getAttribute('id'),
+    id: el.id
   };
 }
 
 module.exports = function(dom) {
-  var items = dom.getElementsByClassName('bibitem');
+  var items = dom.querySelectorAll(".bibitem");
   if (items.length === 0) return;
 
   var bibliography = Array.from(items).map(parseBibitem);
 
-  var ol = dom.createElement('ol');
+  var ol = dom.createElement("ol");
   bibliography.forEach(item => {
-    var li = dom.createElement('li');
-    li.setAttribute('id', item.id);
+    var li = dom.createElement("li");
+    li.id = item.id;
     if (item.title) {
-      var strong = dom.createElement('strong');
+      var strong = dom.createElement("strong");
       utils.moveChildren(item.title, strong);
       li.appendChild(strong);
-      li.appendChild(dom.createElement('br'));
+      li.appendChild(dom.createElement("br"));
     }
     if (item.authors) {
       utils.moveChildren(item.authors, li);
     }
     if (item.source) {
-      li.appendChild(dom.createTextNode(' '));
+      li.appendChild(dom.createTextNode(" "));
       utils.moveChildren(item.source, li);
     }
     ol.appendChild(li);
   });
 
-  var bibliographyEl = dom.getElementsByClassName('bibliography')[0];
+  var bibliographyEl = dom.querySelector(".bibliography");
   bibliographyEl.parentNode.removeChild(bibliographyEl);
 
-  var dtBibliography = dom.createElement('dt-bibliography');
+  var dtBibliography = dom.createElement("dt-bibliography");
   dtBibliography.appendChild(ol);
 
-  var dtAppendix = dom.getElementsByTagName('dt-appendix')[0];
-  var h3 = dom.createElement('h3');
-  h3.textContent = "References";
-  dtAppendix.appendChild(h3);
+  var dtAppendix = dom.querySelector("dt-appendix");
+  dtAppendix.appendChild(utils.nodeFromString(dom, "<h3>References</h3>"));
   dtAppendix.appendChild(dtBibliography);
 };

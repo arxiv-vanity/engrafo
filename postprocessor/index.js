@@ -7,5 +7,6 @@ module.exports = {
   header: require("./header"),
   headings: require("./headings"),
   layout: require("./layout"),
-  math: require("./math")
+  math: require("./math"),
+  styles: require("./styles")
 };

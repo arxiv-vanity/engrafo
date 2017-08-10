@@ -6,8 +6,8 @@ h2, h3, h4, h5, h6 {
 }
 
 .section-number {
-  font-family: HoeflerText-Regular, Georgia, serif;
-  font-style: italic;
+  font-family: Baskerville, Georgia, serif;
+  font-style: normal;
   color: rgba(0, 0, 0, 0.3);
   position: absolute;
   width: 150px;
@@ -15,14 +15,13 @@ h2, h3, h4, h5, h6 {
   text-align: right;
 }
 
-a.section-number,
-a.section-number:active,
-a.section-number:hover {
+.section-number a,
+.section-number a:active {
   border-bottom: none;
 }
 
-a.section-number:hover {
-  text-decoration: underline;
+.section-number a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 @media(min-width: 768px) {
@@ -49,9 +48,10 @@ module.exports = function(dom) {
 
   let sectionNumbers = dom.querySelectorAll(".section-number");
   Array.from(sectionNumbers).forEach(span => {
-    let a = utils.nodeFromString(dom, '<a class="section-number"></a>');
+    let a = utils.nodeFromString(dom, '<a></a>');
     a.href = "#" + span.parentNode.id;
-    utils.replaceAndKeepChildren(span, a);
+    utils.moveChildren(span, a);
+    span.appendChild(a);
   });
 
   var paragraphHeadings = Array.from(dom.querySelectorAll("h5"));

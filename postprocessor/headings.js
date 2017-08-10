@@ -13,6 +13,7 @@ h2, h3, h4, h5, h6 {
   width: 150px;
   right: 0;
   text-align: right;
+  font-size: 0.9em;
 }
 
 .section-number a,

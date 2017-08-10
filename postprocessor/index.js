@@ -8,5 +8,6 @@ module.exports = {
   headings: require("./headings"),
   layout: require("./layout"),
   math: require("./math"),
-  styles: require("./styles")
+  styles: require("./styles"),
+  typeset: require("./typeset")
 };

@@ -206,7 +206,7 @@ def insert_section_labels(key, val, fmt, meta):
 
         if not unnumbered:
             span = Span(['', ['section-number'], []], [Str(sec_number)])
-            children = [span, Space()] + children
+            children = [span] + children
         attrs[0] = 'section-%s' % sec_number.lower()
 
         # Decrease levels one more than Pandoc outputs (<h1> -> <h2>)

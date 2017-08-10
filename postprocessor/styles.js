@@ -19,6 +19,12 @@ dt-article h3 {
   font-size: 22px;
 }
 
+@media (min-width: 768px) {
+  dt-article h1 {
+    font-size: 46px;
+  }
+}
+
 @media (min-width: 1024px) {
   dt-article h2 {
     font-size: 32px;

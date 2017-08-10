@@ -23,6 +23,18 @@ dt-article h3 {
     font-size: 28px;
   }
 }
+
+dt-article p {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+@media(min-width: 768px) {
+  dt-article p {
+    hyphens: none;
+    -webkit-hyphens: none;
+  }
+}
 `;
 
 module.exports = function(dom) {

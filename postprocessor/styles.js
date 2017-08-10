@@ -7,6 +7,10 @@ dt-article h3 {
   font-family: Baskerville, Georgia, serif;
 }
 
+dt-article h1 {
+  font-size: 32px;
+}
+
 dt-article h2 {
   font-size: 28px;
 }

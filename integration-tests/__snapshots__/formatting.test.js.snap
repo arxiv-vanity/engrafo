@@ -122,13 +122,16 @@ exports[`lists render correctly 1`] = `
     <h2
       id="section-1"
     >
-      <a
+      <span
         class="section-number"
-        href="#section-1"
       >
-        1
-      </a>
-      A nested ordered list
+        <a
+          href="#section-1"
+        >
+          1
+        </a>
+      </span>
+      A nested ordered list
     </h2>
     <ol>
       <li>

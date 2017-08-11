@@ -167,7 +167,7 @@ exports[`titles and headings render correctly 1`] = `
     <h1
       class="title"
     >
-      Headings Test
+      Headings Test
     </h1>
     <dt-byline>
       <div
@@ -183,29 +183,35 @@ exports[`titles and headings render correctly 1`] = `
     <h2
       id="section-1"
     >
-      <a
+      <span
         class="section-number"
-        href="#section-1"
       >
-        1
-      </a>
-      Section Title
+        <a
+          href="#section-1"
+        >
+          1
+        </a>
+      </span>
+      Section Title
     </h2>
     <h3
       id="section-1.1"
     >
-      <a
+      <span
         class="section-number"
-        href="#section-1.1"
       >
-        1.1
-      </a>
-      Subsection Title
+        <a
+          href="#section-1.1"
+        >
+          1.1
+        </a>
+      </span>
+      Subsection Title
     </h3>
     <h4
       id="subsubsection-title"
     >
-      Subsubsection Title
+      Subsubsection Title
     </h4>
     <p>
       <strong
@@ -218,30 +224,36 @@ exports[`titles and headings render correctly 1`] = `
     <h2
       id="section-2"
     >
-      <a
+      <span
         class="section-number"
-        href="#section-2"
       >
-        2
-      </a>
-      Another section
+        <a
+          href="#section-2"
+        >
+          2
+        </a>
+      </span>
+      Another section
     </h2>
     <h2
       id="section-3"
       class="unnumbered"
     >
-      Unnumbered section
+      Unnumbered section
     </h2>
     <h2
       id="section-4"
     >
-      <a
+      <span
         class="section-number"
-        href="#section-4"
       >
-        4
-      </a>
-      Another section
+        <a
+          href="#section-4"
+        >
+          4
+        </a>
+      </span>
+      Another section
     </h2>
     <p>
       A reference to 

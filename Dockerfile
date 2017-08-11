@@ -1,6 +1,10 @@
 FROM andreasjansson/engrafo-pandoc as pandoc
 
 FROM debian:stretch
+
+# Official CDN throws 503s
+RUN sed -i 's/deb.debian.org/cloudfront.debian.net/g' /etc/apt/sources.list
+
 # TODO: delete python-setuptools (but I don't want to bust my cache)
 RUN apt-get update -qq && apt-get install -qy \
   ca-certificates \

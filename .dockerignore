@@ -1,3 +1,18 @@
-.git/
-local/
-server/papers/
+.git
+local
+
+# node
+node_modules
+
+# arxiv-sanity-sanity prototype
+server/papers
+server/github-access-token.txt
+
+# emacs
+*_flymake.py
+
+# python
+*.egg
+*.egg-info
+engrafo_pandocfilter/build/
+*.pyc

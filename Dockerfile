@@ -5,22 +5,30 @@ FROM debian:stretch
 # Official CDN throws 503s
 RUN sed -i 's/deb.debian.org/cloudfront.debian.net/g' /etc/apt/sources.list
 
-# TODO: delete python-setuptools (but I don't want to bust my cache)
+# LaTeX stuff first, because it's enormous and doesn't change much
 RUN apt-get update -qq && apt-get install -qy \
-  ca-certificates \
+  curl \
+  gnupg2 \
   libgmp10 \
   pdf2svg \
-  python \
-  python-setuptools \
   texlive \
   texlive-latex-extra
 
-RUN apt-get update -qq && apt-get install -qy curl gnupg2
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-RUN apt-get update -qq && apt-get install -qy nodejs yarn python-pip git-core
+RUN apt-get update -qq && apt-get install -qy \
+  ca-certificates \
+  curl \
+  nodejs \
+  git-core \
+  gnupg2 \
+  python \
+  python-pip \
+  yarn
 
+
+# pandoc
 COPY --from=pandoc /root/.local/bin/pandoc /usr/local/bin/pandoc
 
 # pandocfilter

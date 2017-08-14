@@ -6,5 +6,6 @@ exec docker run \
     -v "$ENGRAFO_DIR:/app" \
     -w /app/pandocfilter \
     --rm \
+    --entrypoint="" \
     engrafo \
     python -m unittest discover

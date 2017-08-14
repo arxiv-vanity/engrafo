@@ -11,4 +11,5 @@ exec docker run \
     -v "$ENGRAFO_DIR:/app" \
     --rm \
     $PANDOC_VOLUME_FLAG \
-    engrafo /app/bin/engrafo "$@"
+    engrafo \
+    "$@"

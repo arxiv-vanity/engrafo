@@ -49,3 +49,5 @@ RUN yarn
 ENV PYTHONUNBUFFERED=1
 
 COPY . /app
+
+ENTRYPOINT ["/app/bin/engrafo"]

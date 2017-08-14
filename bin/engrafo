@@ -13,6 +13,11 @@ program
   )
   .parse(process.argv);
 
+if (!process.argv.slice(2).length) {
+  program.outputHelp();
+  process.exit(1);
+}
+
 var texPath = program.args[0];
 var outputDir = program.output || path.dirname(texPath);
 engrafo.render(texPath, outputDir, (err, htmlPath) => {

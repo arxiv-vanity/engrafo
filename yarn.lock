@@ -564,7 +564,7 @@ diff@^3.2.0:
 
 "distill-template@git+https://github.com/bfirsh/template.git#engrafo":
   version "1.1.0"
-  resolved "git+https://github.com/bfirsh/template.git#1437463d42812d8b1262cbe61e7bcb2cf34a3837"
+  resolved "git+https://github.com/bfirsh/template.git#9f86e07aab30ca9d6711539a9bac7d61edc6608e"
   dependencies:
     bibtex-parse-js "^0.0.23"
     chai "^3.5.0"

@@ -1,4 +1,4 @@
-var engrafo = require("../");
+var engrafo = require("../src");
 var fs = require("fs");
 var jsdom = require("jsdom");
 var path = require("path");

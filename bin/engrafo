@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var engrafo = require("../index.js");
+var engrafo = require("../src");
 var path = require("path");
 var program = require("commander");
 

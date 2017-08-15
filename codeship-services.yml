@@ -2,5 +2,4 @@ version: '2'
 services:
   engrafo:
     build: .
-    entrypoint: []
     cached: true

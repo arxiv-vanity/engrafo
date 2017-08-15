@@ -5,9 +5,7 @@ FILENAME=$(basename "$1")
 
 exec docker run \
     -v "$DIR":/workdir -w /workdir \
-    --entrypoint "" \
-    engrafo \
-        pandoc \
+    engrafo pandoc \
         --from latex+raw_tex \
         --to json \
         --standalone \

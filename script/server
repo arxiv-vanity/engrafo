@@ -12,7 +12,6 @@ exec docker run \
     -w /app \
     -p 8010:8010 \
     -w /app/server/ \
-    --entrypoint="" \
     --rm \
     engrafo \
     python server.py

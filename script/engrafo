@@ -12,4 +12,4 @@ exec docker run \
     --rm \
     $PANDOC_VOLUME_FLAG \
     engrafo \
-    "$@"
+    engrafo "$@"

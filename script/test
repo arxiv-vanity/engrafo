@@ -5,7 +5,6 @@ exec docker run \
     -v "/app/node_modules" \
     -v "$ENGRAFO_DIR:/app" \
     --rm \
-    --entrypoint="" \
     -it \
     engrafo \
     node_modules/.bin/jest "$@"

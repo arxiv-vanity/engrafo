@@ -11,6 +11,5 @@ exec docker run \
     $PANDOC_VOLUME_FLAG \
     -w /app \
     --rm \
-    --entrypoint="" \
     engrafo \
     "$@"

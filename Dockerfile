@@ -47,5 +47,6 @@ COPY package.json yarn.lock /app/
 RUN yarn
 
 ENV PYTHONUNBUFFERED=1
+ENV PATH="/app/bin:${PATH}"
 
 COPY . /app

@@ -12,4 +12,4 @@ exec docker run \
     -w /app \
     --rm \
     engrafo \
-    $@
+    "$@"

@@ -3,22 +3,9 @@ var distill = require("distill-template");
 var fs = require("fs-extra");
 var jsdom = require("jsdom");
 var path = require("path");
+
+var input = require("./input");
 var postprocessors = require("./postprocessor");
-
-var normalizeDirectory = dir => {
-  if (dir.slice(-1) == "/") {
-    dir = dir.slice(0, -1);
-  }
-  return path.normalize(dir);
-};
-
-var prepareOutputDir = (inputDir, outputDir, callback) => {
-  // Nothing to prepare
-  if (inputDir === outputDir) {
-    return callback();
-  }
-  fs.copy(inputDir, outputDir, callback);
-};
 
 // Render a LaTeX document with Pandoc. Callback is called with error or
 // path to directory with index.html in it.
@@ -105,13 +92,9 @@ exports.postprocess = htmlString => {
 // exist). Calls callback with an error on failure or a path to an HTML file
 // on success.
 exports.render = (texPath, outputDir, callback) => {
-  var inputDir = normalizeDirectory(path.dirname(texPath));
-  outputDir = normalizeDirectory(outputDir);
-  var texFilename = path.basename(texPath);
-  var outputTexPath = path.join(outputDir, texFilename);
-
-  prepareOutputDir(inputDir, outputDir, err => {
+  input.prepareOutput(texPath, outputDir, (err, outputTexPath) => {
     if (err) return callback(err);
+    console.log("Rendering tex file", outputTexPath);
     exports.renderPandoc(outputTexPath, (err, htmlPath) => {
       if (err) return callback(err, htmlPath);
       fs.readFile(htmlPath, "utf8", (err, htmlString) => {

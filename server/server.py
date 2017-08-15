@@ -73,6 +73,13 @@ def index():
         'index.html', papers=papers, pandoc_only=pandoc_only)
 
 
+def _get_latex_path_from_output(output):
+    text = "Rendering tex file "
+    for line in output.split('\n'):
+        if line.startswith(text):
+            return line[len(text):]
+
+
 @app.route('/html/<arxiv_id>/')
 def html(arxiv_id):
     pandoc_only = 'pandoc_only' in request.args
@@ -86,10 +93,8 @@ def html(arxiv_id):
         extract_sources(folder)
     app.logger.info('%s: Converting to HTML', arxiv_id)
 
-    latex_path = pick_latex_path(folder)
-
     try:
-        html_path, stdout, stderr = convert_latex_to_html(latex_path, pandoc_only=pandoc_only)
+        html_path, stdout, stderr = convert_latex_to_html(folder, pandoc_only=pandoc_only)
     except PandocError as e:
         return Response('''Engrafo failed to convert LaTeX (error code %d)
 
@@ -102,10 +107,10 @@ stderr:
 %s:
 %s
 ''' % (e.returncode,
-       e.stdout.decode('utf-8'),
-       e.stderr.decode('utf-8'),
-       e.error_filename.decode('utf-8'),
-       e.latex_source.decode('utf-8')),
+       e.stdout,
+       e.stderr,
+       e.error_filename,
+       e.latex_source),
                         mimetype='text/plain',
                         status=400)
 
@@ -113,7 +118,7 @@ stderr:
         response = make_response(f.read())
     response.engrafo_debug_data = {
         'render_directory': folder,
-        'latex_path': latex_path,
+        'latex_path': _get_latex_path_from_output(stdout),
         'stdout': stdout,
         'stderr': stderr,
     }
@@ -162,71 +167,39 @@ def extract_sources(folder):
         cwd=folder))
 
 
-def pick_latex_path(folder):
-    main_path = os.path.join(folder, 'main.tex')
-    ms_path = os.path.join(folder, 'ms.tex')
-    if os.path.exists(ms_path):
-        return ms_path
-    elif os.path.exists(main_path):
-        return main_path
-    else:
-        latex_paths = glob('%s/*.tex' % folder)
-
-    if len(latex_paths) == 1:
-        return latex_paths[0]
-
-    candidates = []
-    for path in latex_paths:
-        with open(path) as f:
-            if r'\documentclass' in f.read():
-                candidates.append(path)
-
-    if candidates > 1:
-        bbl_candidates = []
-        for path in candidates:
-            if os.path.exists(path.replace('.tex', '.bbl')):
-                bbl_candidates.append(path)
-        candidates = bbl_candidates
-
-    if len(candidates) != 1:
-        raise BadRequest('Ambiguous LaTeX path, len candidates: %d' % len(candidates))
-
-    return candidates[0]
-
-
-def convert_latex_to_html(latex_path, pandoc_only=False):
+def convert_latex_to_html(folder, pandoc_only=False):
     timeout = 30
-
-    folder = os.path.dirname(latex_path)
 
     html_path = os.path.join(folder, 'index.html')
 
     cmd = [
         'timeout',
         '%d' % timeout,
+        os.path.join(ENGRAFO_PATH, 'bin/engrafo'),
+        folder
     ]
-    if pandoc_only:
-        cmd += [
-            'pandoc',
-            '--from', 'latex+raw_tex+latex_macros',
-            '--to', 'html',
-            '--mathjax',
-            '--standalone',
-            '--output', html_path,
-            latex_path
-        ]
-    else:
-        cmd += [
-            os.path.join(ENGRAFO_PATH, 'bin/engrafo'),
-            latex_path
-        ]
+
+    # TODO(bfirsh): move pandoc_only to engrafo itself
+    # if pandoc_only:
+    #     cmd += [
+    #         'pandoc',
+    #         '--from', 'latex+raw_tex+latex_macros',
+    #         '--to', 'html',
+    #         '--mathjax',
+    #         '--standalone',
+    #         '--output', html_path,
+    #         latex_path
+    #     ]
+
     process = subprocess.Popen(
         cmd, cwd=folder, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     stdout, stderr = process.communicate()
+    stdout = stdout.decode('utf-8')
+    stderr = stderr.decode('utf-8')
 
     if process.returncode != 0:
 
-        error_path = latex_path
+        error_path = _get_latex_path_from_output(stdout)
 
         if process.returncode in (129, 124):
             message = 'Timed out after %d seconds' % timeout
@@ -239,10 +212,13 @@ def convert_latex_to_html(latex_path, pandoc_only=False):
                 if error_filename != 'source':
                     error_path = os.path.join(folder, error_filename)
 
-        with open(error_path) as f:
-            latex_source = ''.join(
-                ['%04d  %s' % (i + 1, line)
-                 for i, line in enumerate(f.readlines())])
+        latex_source = ''
+        if error_path:
+            with open(error_path) as f:
+                latex_source = ''.join(
+                    ['%04d  %s' % (i + 1, line)
+                     for i, line in enumerate(f.readlines())])
+            latex_source = latex_source.decode('utf-8')
         raise PandocError(message, process.returncode, stdout, stderr,
                           error_path, latex_source)
 

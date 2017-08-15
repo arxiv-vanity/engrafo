@@ -12,6 +12,7 @@
     "fs-extra": "^4.0.1"
   },
   "devDependencies": {
+    "async": "^2.5.0",
     "jest": "^20.0.4",
     "tmp": "^0.0.31"
   }

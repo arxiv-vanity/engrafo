@@ -96,7 +96,7 @@ class EngrafoOutputDebugPanel(DebugPanel):
     def content(self):
         if self.stdout is None:
             return 'Nothing rendered.'
-        return '<h3>stdout</h3><pre style="white-space: pre-wrap">%s</pre><h3>stderr</h3><pre style="white-space: pre-wrap">%s</pre>' % (flask.escape(self.stdout.decode('utf-8')), flask.escape(self.stderr.decode('utf-8')))
+        return '<h3>stdout</h3><pre style="white-space: pre-wrap">%s</pre><h3>stderr</h3><pre style="white-space: pre-wrap">%s</pre>' % (flask.escape(self.stdout), flask.escape(self.stderr))
 
 
 class PDFDebugPanel(DebugPanel):

@@ -1,9 +1,23 @@
 var async = require("async");
 var fs = require("fs-extra");
 var path = require("path");
+var tar = require("tar");
 
 // Do everything to prepare an output directory that is going to be rendered
 exports.prepareOutput = (texPath, outputDir, callback) => {
+  // If we've been passed a tarball, extract directly to output dir
+  if (texPath.endsWith(".tar.gz")) {
+    tar.extract({file: texPath, cwd: outputDir}).then(() => {
+      exports.pickLatexFile(outputDir, (err, filename) => {
+        if (err) return callback(err);
+        callback(null, path.join(outputDir, filename));
+      });
+    }).catch(err => {
+      callback(err);
+    });
+    return;
+  }
+  // Otherwise, figure out what our input is and copy over to output dir
   normalizeInputDirAndTexFilename(texPath, (err, inputDir, texFilename) => {
     if (err) return callback(err);
     outputDir = normalizeDirectory(outputDir);

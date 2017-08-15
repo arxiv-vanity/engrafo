@@ -2,7 +2,7 @@
   "name": "engrafo",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Readapaper",
+  "author": "Andreas Jansson & Ben Firshman",
   "license": "Apache-2.0",
   "scripts": {
     "test": "jest"

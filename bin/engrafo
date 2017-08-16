@@ -25,5 +25,5 @@ engrafo.render(texPath, outputDir, (err, htmlPath) => {
     console.error("Engrafo rendering failed:", err);
     process.exit(1);
   }
-  console.log("💃 Document successfully rendered to", htmlPath);
+  console.log("💃  Document successfully rendered to", htmlPath);
 });

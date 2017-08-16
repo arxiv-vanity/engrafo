@@ -17,7 +17,7 @@ exports.renderPandoc = (texPath, callback) => {
     "--from",
     "latex+raw_tex+latex_macros",
     "--to",
-    "html",
+    "html5",
     "--standalone",
     "--mathjax",
     "--filter",

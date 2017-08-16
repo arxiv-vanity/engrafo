@@ -1,6 +1,11 @@
 var utils = require("./utils");
 
 module.exports = function(dom) {
+  // Even in html5 mode, Pandoc adds XHTML namespaces
+  var html = dom.querySelector("html");
+  html.removeAttribute("xmlns");
+  html.removeAttribute("xml:lang");
+
   // Wrap whole thing in <dt-article>
   let dtArticle = utils.nodeFromString(
     dom,

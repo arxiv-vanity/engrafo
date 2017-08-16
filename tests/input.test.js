@@ -3,7 +3,7 @@ var path = require("path");
 var tmp = require("tmp");
 var input = require("../src/input");
 
-describe("prepareOutput", () => {
+describe("prepareRenderingDir", () => {
   beforeEach(done => {
     tmp.dir({ unsafeCleanup: true }, (err, dir, cleanup) => {
       this.inputDir = dir;
@@ -24,7 +24,7 @@ describe("prepareOutput", () => {
     fs.writeFileSync(path.join(this.inputDir, "main.tex"), "");
     fs.writeFileSync(path.join(this.inputDir, "cool.gif"), "");
     var texPath = path.join(this.inputDir, "main.tex");
-    input.prepareOutput(texPath, this.outputDir, (err, outputTexPath) => {
+    input.prepareRenderingDir(texPath, this.outputDir, (err, outputTexPath) => {
       if (err) throw err;
       expect(outputTexPath).toBe(path.join(this.outputDir, "main.tex"));
       expect(fs.lstatSync(outputTexPath).isFile()).toBe(true);
@@ -37,7 +37,7 @@ describe("prepareOutput", () => {
     fs.writeFileSync(path.join(this.inputDir, "main.tex"), "");
     fs.writeFileSync(path.join(this.inputDir, "nope.tex"), "");
     fs.writeFileSync(path.join(this.inputDir, "cool.gif"), "");
-    input.prepareOutput(this.inputDir, this.outputDir, (err, outputTexPath) => {
+    input.prepareRenderingDir(this.inputDir, this.outputDir, (err, outputTexPath) => {
       if (err) throw err;
       expect(outputTexPath).toBe(path.join(this.outputDir, "main.tex"));
       expect(fs.lstatSync(outputTexPath).isFile()).toBe(true);

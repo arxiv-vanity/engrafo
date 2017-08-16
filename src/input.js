@@ -1,34 +1,106 @@
 var async = require("async");
 var fs = require("fs-extra");
 var path = require("path");
+var s3 = require("s3");
 var tar = require("tar");
+var tmp = require("tmp");
+var url = require("url");
 
-// Do everything to prepare an output directory that is going to be rendered
-exports.prepareOutput = (texPath, outputDir, callback) => {
-  // If we've been passed a tarball, extract directly to output dir
-  if (texPath.endsWith(".tar.gz")) {
-    tar.extract({file: texPath, cwd: outputDir}).then(() => {
-      exports.pickLatexFile(outputDir, (err, filename) => {
-        if (err) return callback(err);
-        callback(null, path.join(outputDir, filename));
-      });
-    }).catch(err => {
-      callback(err);
-    });
-    return;
-  }
-  // Otherwise, figure out what our input is and copy over to output dir
-  normalizeInputDirAndTexFilename(texPath, (err, inputDir, texFilename) => {
+// Do everything to prepare a directory that is going to be rendered
+exports.prepareRenderingDir = (inputPath, outputDir, callback) => {
+  setUpOutputDir(outputDir, (err, outputDir) => {
     if (err) return callback(err);
-    outputDir = normalizeDirectory(outputDir);
-    var outputTexPath = path.join(outputDir, texFilename);
-    if (inputDir === outputDir) {
-      return callback(null, outputTexPath);
+    // If we've been passed a tarball, extract directly to output dir
+    if (inputPath.endsWith(".tar.gz")) {
+      fetchInput(inputPath, (err, inputPath) => {
+        if (err) return callback(err);
+        tar.extract({file: inputPath, cwd: outputDir, strict: true}, (err) => {
+          if (err) callback(err);
+          exports.pickLatexFile(outputDir, (err, filename) => {
+            if (err) return callback(err);
+            callback(null, path.join(outputDir, filename));
+          });
+        });
+      });
+    } else {
+      // Otherwise, figure out what our input is and copy over to output dir
+      normalizeInputDirAndTexFilename(inputPath, (err, inputDir, texFilename) => {
+        if (err) return callback(err);
+        var outputTexPath = path.join(outputDir, texFilename);
+        if (inputDir === outputDir) {
+          return callback(null, outputTexPath);
+        }
+        fs.copy(inputDir, outputDir, err => {
+          callback(err, outputTexPath);
+        });
+      });
     }
-    fs.copy(inputDir, outputDir, err => {
-      callback(err, outputTexPath);
+  });
+};
+
+var createS3Client = function() {
+  return s3.createClient({
+    s3Options: {
+      accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+      region: process.env.AWS_S3_REGION_NAME,
+    }
+  });
+};
+
+// If input dir is on S3, fetch it first
+var fetchInput = (texPath, callback) => {
+  if (!texPath.startsWith("s3://")) {
+    return callback(null, texPath);
+  }
+  var client = createS3Client();
+  tmp.dir((err, tmpDir) => {
+    if (err) return callback(err);
+    var s3url = url.parse(texPath);
+    var localFile = path.join(tmpDir, path.basename(s3url.path));
+    var params = {
+      localFile: localFile,
+      s3Params: {
+        Bucket: s3url.host,
+        Key: s3url.path.slice(1),
+      }
+    };
+    var downloader = client.downloadFile(params);
+    downloader.on("error", callback);
+    downloader.on("end", () => {
+      callback(null, localFile);
     });
   });
+};
+
+// Upload rendered directory to S3 if need be
+exports.uploadOutput = (renderedTexPath, outputDir, callback) => {
+  if (!outputDir.startsWith('s3://')) {
+    return callback();
+  }
+  var renderedPath = path.dirname(renderedTexPath);
+  var client = createS3Client();
+  var s3url = url.parse(outputDir);
+  var params = {
+    localDir: renderedPath,
+    s3Params: {
+      Bucket: s3url.host,
+      Prefix: s3url.path.slice(1),
+    },
+  };
+  var uploader = client.uploadDir(params);
+  uploader.on("error", callback);
+  uploader.on("end", () => {
+    callback();
+  });
+};
+
+// Set up a temporary directory if the output directory is on S3
+var setUpOutputDir = (outputDir, callback) => {
+  if (!outputDir.startsWith("s3://")) {
+    return callback(null, normalizeDirectory(outputDir));
+  }
+  tmp.dir(callback);
 };
 
 var normalizeDirectory = dir => {

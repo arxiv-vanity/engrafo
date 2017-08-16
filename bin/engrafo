@@ -26,4 +26,6 @@ engrafo.render(texPath, outputDir, (err, htmlPath) => {
     process.exit(1);
   }
   console.log("💃  Document successfully rendered to", htmlPath);
+  // S3 library sometimes causes Node not to quit
+  process.exit(0);
 });

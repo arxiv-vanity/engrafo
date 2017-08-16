@@ -91,17 +91,20 @@ exports.postprocess = htmlString => {
 // Render and postprocess a LaTeX file into outputDir (created if does not
 // exist). Calls callback with an error on failure or a path to an HTML file
 // on success.
-exports.render = (texPath, outputDir, callback) => {
-  input.prepareOutput(texPath, outputDir, (err, outputTexPath) => {
+exports.render = (inputPath, outputDir, callback) => {
+  input.prepareRenderingDir(inputPath, outputDir, (err, texPath) => {
     if (err) return callback(err);
-    console.log("Rendering tex file", outputTexPath);
-    exports.renderPandoc(outputTexPath, (err, htmlPath) => {
+    console.log("Rendering tex file", texPath);
+    exports.renderPandoc(texPath, (err, htmlPath) => {
       if (err) return callback(err, htmlPath);
       fs.readFile(htmlPath, "utf8", (err, htmlString) => {
         if (err) return callback(err, htmlPath);
         var transformedHtml = exports.postprocess(htmlString);
         fs.writeFile(htmlPath, transformedHtml, err => {
-          return callback(err, htmlPath);
+          if (err) return callback(err);
+          input.uploadOutput(texPath, outputDir, (err) => {
+            return callback(err, htmlPath);
+          });
         });
       });
     });

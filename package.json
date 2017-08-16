@@ -10,6 +10,7 @@
   "dependencies": {
     "distill-template": "git+https://github.com/bfirsh/template.git#engrafo",
     "fs-extra": "^4.0.1",
+    "s3": "^4.4.0",
     "tar": "^3.1.11"
   },
   "devDependencies": {

@@ -222,3 +222,26 @@ exports[`text formatting renders correctly 1`] = `
   />
 </body>
 `;
+
+exports[`vskip is ignored 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <p>
+      before
+    </p>
+    <p>
+      after
+    </p>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;

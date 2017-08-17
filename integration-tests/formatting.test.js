@@ -11,3 +11,7 @@ test("text formatting renders correctly", done => {
 test("links get wrapped in anchors", done => {
   utils.expectBodyToMatchSnapshot("formatting/links.tex", done);
 });
+
+test("vskip is ignored", done => {
+  utils.expectBodyToMatchSnapshot("formatting/vskip.tex", done);
+});

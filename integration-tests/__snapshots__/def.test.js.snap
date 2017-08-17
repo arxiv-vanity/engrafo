@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\\def multiple simple arguments render correctly 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <p>
+      one one two two three three four four five five six six seven seven after
+    </p>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="cite-hover-boxes-container"
+  />
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;
+
+exports[`\\def with control seq suffix renders correctly 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <blockquote>
+      <p>
+        <span>
+          hello
+        </span>
+        <code>
+          world
+        </code>
+      </p>
+    </blockquote>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="cite-hover-boxes-container"
+  />
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;
+
+exports[`simple \\def without arguments render correctly 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <p>
+      bar
+    </p>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="cite-hover-boxes-container"
+  />
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;

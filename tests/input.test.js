@@ -99,10 +99,10 @@ describe("pickLatexFile", () => {
       done();
     });
   });
-  it("chooses the only tex file with \\documentclass and a .bib file if there are several", done => {
+  it("chooses the only tex file with \\documentclass and a .bbl file if there are several", done => {
     fs.writeFileSync(path.join(this.dir, "wibble.tex"), "\\documentclass[12pt, letterpaper]{article}");
     fs.writeFileSync(path.join(this.dir, "correct.tex"), "\\documentclass[12pt, letterpaper]{article}");
-    fs.writeFileSync(path.join(this.dir, "correct.bib"), "");
+    fs.writeFileSync(path.join(this.dir, "correct.bbl"), "");
     fs.writeFileSync(path.join(this.dir, "cool.gif"), "");
     fs.writeFileSync(path.join(this.dir, "rad.jpg"), "");
     input.pickLatexFile(this.dir, (err, filename) => {
@@ -129,11 +129,11 @@ describe("pickLatexFile", () => {
       done();
     });
   });
-  it("fails if there are several candidates with .bib files", done => {
+  it("fails if there are several candidates with .bbl files", done => {
     fs.writeFileSync(path.join(this.dir, "wibble.tex"), "\\documentclass[12pt, letterpaper]{article}");
-    fs.writeFileSync(path.join(this.dir, "wibble.bib"), "");
+    fs.writeFileSync(path.join(this.dir, "wibble.bbl"), "");
     fs.writeFileSync(path.join(this.dir, "correct.tex"), "\\documentclass[12pt, letterpaper]{article}");
-    fs.writeFileSync(path.join(this.dir, "correct.bib"), "");
+    fs.writeFileSync(path.join(this.dir, "correct.bbl"), "");
     fs.writeFileSync(path.join(this.dir, "cool.gif"), "");
     fs.writeFileSync(path.join(this.dir, "rad.jpg"), "");
     input.pickLatexFile(this.dir, (err, filename) => {

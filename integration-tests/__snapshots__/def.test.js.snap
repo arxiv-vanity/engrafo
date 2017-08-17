@@ -15,9 +15,6 @@ exports[`\\def multiple simple arguments render correctly 1`] = `
     />
   </dt-appendix>
   <div
-    id="cite-hover-boxes-container"
-  />
-  <div
     id="footnote-hover-boxes-container"
   />
 </body>
@@ -45,9 +42,6 @@ exports[`\\def with control seq suffix renders correctly 1`] = `
     />
   </dt-appendix>
   <div
-    id="cite-hover-boxes-container"
-  />
-  <div
     id="footnote-hover-boxes-container"
   />
 </body>
@@ -67,9 +61,6 @@ exports[`simple \\def without arguments render correctly 1`] = `
       class="l-body"
     />
   </dt-appendix>
-  <div
-    id="cite-hover-boxes-container"
-  />
   <div
     id="footnote-hover-boxes-container"
   />

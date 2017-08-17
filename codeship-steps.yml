@@ -6,3 +6,15 @@
     - name: pandocfilter
       service: engrafo
       command: sh -c "cd pandocfilter && python -m unittest discover"
+- service: engrafo
+  type: push
+  tag: master
+  image_name: bfirsh/engrafo
+  encrypted_dockercfg_path: .codeship.dockercfg
+  image_tag: "{{.CommitID}}"
+- service: engrafo
+  type: push
+  tag: master
+  image_name: bfirsh/engrafo
+  encrypted_dockercfg_path: .codeship.dockercfg
+  image_tag: latest

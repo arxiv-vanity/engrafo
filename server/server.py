@@ -58,14 +58,14 @@ def index():
     # TODO: fix parse errors in these papers.
     # for now, omit them so we can focus on fixing pandocfilter errors
     known_non_parsing_papers = set([
-        '1609.01704v7',
-        '1607.06450v1',
-        '1608.05343v2',
-        '1602.05179v5',
-        '1608.08225v3',
-        '1612.08810v3',
-        '1606.00704v3',
         '1702.07825v2',
+        '1606.00704v3',
+        '1612.08810v3',
+        '1602.05179v5',
+        '1506.02025v3',
+        '1606.04080v1',
+        '1608.05343v2',
+        '1609.01704v7',
     ])
     papers = [p for p in papers if p['pid'] not in known_non_parsing_papers]
 

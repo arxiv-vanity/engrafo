@@ -19,3 +19,7 @@ test("vskip is ignored", done => {
 test("\pdfoutput=1 is ignored", done => {
   utils.expectBodyToMatchSnapshot("formatting/pdfoutput.tex", done);
 });
+
+test("pinforms3 TITLE, AUTHOR, AFF are supported", done => {
+  utils.expectBodyToMatchSnapshot("formatting/pinforms3.tex", done);
+});

@@ -189,6 +189,64 @@ exports[`pdfoutput=1 is ignored 1`] = `
 </body>
 `;
 
+exports[`pinforms3 TITLE, AUTHOR, AFF are supported 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <h1
+      class="title"
+    >
+      The Title of the Paper
+    </h1>
+    <dt-byline>
+      <div
+        class="byline"
+      >
+        <div
+          class="authors"
+        >
+          
+        </div>
+      </div>
+    </dt-byline>
+    <div
+      class="authors"
+    >
+      <p>
+        <span>
+          <span
+            class="author"
+          >
+            <span>
+              Author Name
+            </span>
+          </span>
+          <span
+            class="affiliation"
+          >
+            <span>
+              Author Affiliation
+            </span>
+          </span>
+        </span>
+      </p>
+      <p>
+        hello world
+      </p>
+    </div>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;
+
 exports[`text formatting renders correctly 1`] = `
 <body>
   <dt-article

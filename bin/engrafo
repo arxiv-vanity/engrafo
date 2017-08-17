@@ -2,6 +2,7 @@
 
 var engrafo = require("../src");
 var path = require("path");
+var fs = require("fs");
 var program = require("commander");
 
 program
@@ -19,7 +20,10 @@ if (!process.argv.slice(2).length) {
 }
 
 var texPath = program.args[0];
-var outputDir = program.output || path.dirname(texPath);
+var outputDir = program.output ||
+    (fs.lstatSync(texPath).isDirectory()
+     ? texPath : path.dirname(texPath));
+
 engrafo.render(texPath, outputDir, (err, htmlPath) => {
   if (err) {
     console.error("Engrafo rendering failed:", err);

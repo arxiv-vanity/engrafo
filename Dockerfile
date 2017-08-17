@@ -3,7 +3,7 @@ FROM andreasjansson/engrafo-pandoc as pandoc
 FROM debian:stretch
 
 # Official CDN throws 503s
-RUN sed -i 's/deb.debian.org/cloudfront.debian.net/g' /etc/apt/sources.list
+RUN sed -i 's/deb.debian.org/mirrors.kernel.org/g' /etc/apt/sources.list
 
 # LaTeX stuff first, because it's enormous and doesn't change much
 RUN apt-get update -qq && apt-get install -qy \

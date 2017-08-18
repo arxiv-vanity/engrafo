@@ -1,4 +1,4 @@
-FROM andreasjansson/engrafo-pandoc as pandoc
+FROM andreasjansson/engrafo-pandoc@sha256:a2f55a7be1b70e9f70f44f9f1af9bc1533909b69300065c2737df0ba3ba62a02 as pandoc
 
 FROM debian:stretch
 

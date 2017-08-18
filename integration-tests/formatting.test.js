@@ -15,3 +15,7 @@ test("links get wrapped in anchors", done => {
 test("vskip is ignored", done => {
   utils.expectBodyToMatchSnapshot("formatting/vskip.tex", done);
 });
+
+test("\pdfoutput=1 is ignored", done => {
+  utils.expectBodyToMatchSnapshot("formatting/pdfoutput.tex", done);
+});

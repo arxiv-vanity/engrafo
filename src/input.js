@@ -158,7 +158,7 @@ exports.pickLatexFile = (dir, callback) => {
       }
       // Find .tex files with a corresponding .bib file
       async.filter(candidates, (filename, filtercb) => {
-        var bibFilename = filename.replace(".tex", ".bib");
+        var bibFilename = filename.replace(".tex", ".bbl");
         fs.stat(path.join(dir, bibFilename), (err) => {
           filtercb(null, err === null);
         });

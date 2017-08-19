@@ -102,8 +102,8 @@ var setUpOutputDir = (outputDir, callback) => {
   }
   else {
     // Create output directory if it doesn't exist
-    fs.mkdir(outputDir, (err) => {
-      if (err && err.code != 'EEXIST') return callback(err);
+    fs.ensureDir(outputDir, (err) => {
+      if (err) return callback(err);
       callback(null, normalizeDirectory(outputDir));
     });
   }

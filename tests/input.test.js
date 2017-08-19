@@ -73,7 +73,7 @@ describe("prepareRenderingDir", () => {
   it("extracts tarballs into a directory that doesn't exist", done => {
     fs.writeFileSync(path.join(this.inputDir, "main.tex"), "");
     var tarball = path.join(this.inputDir, 'tarball.tar.gz');
-    var outputDir = path.join(this.outputDir, "doesnotexist");
+    var outputDir = path.join(this.outputDir, "does/not/exist");
     tar.c({gzip: true, file: tarball, strict: true, sync: true, cwd: this.inputDir}, ["main.tex"]);
     input.prepareRenderingDir(tarball, outputDir, (err, outputTexPath) => {
       if (err) throw err;

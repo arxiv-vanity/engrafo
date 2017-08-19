@@ -1,5 +1,6 @@
 var fs = require("fs");
 var path = require("path");
+var tar = require("tar");
 var tmp = require("tmp");
 var input = require("../src/input");
 
@@ -42,6 +43,42 @@ describe("prepareRenderingDir", () => {
       expect(outputTexPath).toBe(path.join(this.outputDir, "main.tex"));
       expect(fs.lstatSync(outputTexPath).isFile()).toBe(true);
       expect(fs.lstatSync(path.join(this.outputDir, "cool.gif")).isFile()).toBe(true);
+      done();
+    });
+  });
+
+  it("creates the output directory if it does not exist", done => {
+    fs.writeFileSync(path.join(this.inputDir, "main.tex"), "");
+    var outputDir = path.join(this.outputDir, "doesnotexist");
+    input.prepareRenderingDir(this.inputDir, outputDir, (err, outputTexPath) => {
+      if (err) throw err;
+      expect(fs.lstatSync(outputDir).isDirectory()).toBe(true);
+      expect(outputTexPath).toBe(path.join(outputDir, "main.tex"));
+      done();
+    });
+  });
+
+  it("extracts tarballs", done => {
+    fs.writeFileSync(path.join(this.inputDir, "main.tex"), "");
+    var tarball = path.join(this.inputDir, 'tarball.tar.gz');
+    tar.c({gzip: true, file: tarball, strict: true, sync: true, cwd: this.inputDir}, ["main.tex"]);
+    input.prepareRenderingDir(tarball, this.outputDir, (err, outputTexPath) => {
+      if (err) throw err;
+      expect(outputTexPath).toBe(path.join(this.outputDir, "main.tex"));
+      expect(fs.lstatSync(outputTexPath).isFile()).toBe(true);
+      done();
+    });
+  });
+
+  it("extracts tarballs into a directory that doesn't exist", done => {
+    fs.writeFileSync(path.join(this.inputDir, "main.tex"), "");
+    var tarball = path.join(this.inputDir, 'tarball.tar.gz');
+    var outputDir = path.join(this.outputDir, "doesnotexist");
+    tar.c({gzip: true, file: tarball, strict: true, sync: true, cwd: this.inputDir}, ["main.tex"]);
+    input.prepareRenderingDir(tarball, outputDir, (err, outputTexPath) => {
+      if (err) throw err;
+      expect(outputTexPath).toBe(path.join(outputDir, "main.tex"));
+      expect(fs.lstatSync(outputTexPath).isFile()).toBe(true);
       done();
     });
   });

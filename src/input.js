@@ -97,10 +97,16 @@ exports.uploadOutput = (renderedTexPath, outputDir, callback) => {
 
 // Set up a temporary directory if the output directory is on S3
 var setUpOutputDir = (outputDir, callback) => {
-  if (!outputDir.startsWith("s3://")) {
-    return callback(null, normalizeDirectory(outputDir));
+  if (outputDir.startsWith("s3://")) {
+    tmp.dir(callback);
   }
-  tmp.dir(callback);
+  else {
+    // Create output directory if it doesn't exist
+    fs.mkdir(outputDir, (err) => {
+      if (err && err.code != 'EEXIST') return callback(err);
+      callback(null, normalizeDirectory(outputDir));
+    });
+  }
 };
 
 var normalizeDirectory = dir => {

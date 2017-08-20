@@ -12,6 +12,10 @@ program
     "-o, --output <dir>",
     "Output directory (default: same as tex file)"
   )
+  .option(
+    "--pandoc-only",
+    "Raw Pandoc output, without filters or postprocessors (for debugging)"
+  )
   .parse(process.argv);
 
 if (!process.argv.slice(2).length) {
@@ -24,7 +28,7 @@ var outputDir = program.output ||
     (fs.lstatSync(texPath).isDirectory()
      ? texPath : path.dirname(texPath));
 
-engrafo.render(texPath, outputDir, (err, htmlPath) => {
+engrafo.render(texPath, outputDir, program.pandocOnly, (err, htmlPath) => {
   if (err) {
     console.error("Engrafo rendering failed:", err);
     process.exit(1);

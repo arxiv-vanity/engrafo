@@ -9,7 +9,7 @@ var postprocessors = require("./postprocessor");
 
 // Render a LaTeX document with Pandoc. Callback is called with error or
 // path to directory with index.html in it.
-exports.renderPandoc = (texPath, callback) => {
+exports.renderPandoc = (texPath, pandocOnly, callback) => {
   var outputDir = path.dirname(texPath);
   var texFilename = path.basename(texPath);
   var htmlPath = path.join(outputDir, "index.html");
@@ -20,12 +20,21 @@ exports.renderPandoc = (texPath, callback) => {
     "html5",
     "--standalone",
     "--mathjax",
-    "--filter",
-    "/app/pandocfilter/engrafo_pandocfilter.py",
+  ]
+
+  if (!pandocOnly) {
+    args.push(
+      "--filter",
+      "/app/pandocfilter/engrafo_pandocfilter.py",
+    );
+  }
+
+  args.push(
     "--output",
     "index.html",
     texFilename
-  ];
+  );
+
   var pandoc = childProcess.spawn("/usr/local/bin/pandoc", args, {
     cwd: outputDir
   });
@@ -91,15 +100,17 @@ exports.postprocess = htmlString => {
 // Render and postprocess a LaTeX file into outputDir (created if does not
 // exist). Calls callback with an error on failure or a path to an HTML file
 // on success.
-exports.render = (inputPath, outputDir, callback) => {
+exports.render = (inputPath, outputDir, pandocOnly, callback) => {
   input.prepareRenderingDir(inputPath, outputDir, (err, texPath) => {
     if (err) return callback(err);
     console.log("Rendering tex file", texPath);
-    exports.renderPandoc(texPath, (err, htmlPath) => {
+    exports.renderPandoc(texPath, pandocOnly, (err, htmlPath) => {
       if (err) return callback(err, htmlPath);
       fs.readFile(htmlPath, "utf8", (err, htmlString) => {
         if (err) return callback(err, htmlPath);
-        var transformedHtml = exports.postprocess(htmlString);
+        var transformedHtml = pandocOnly
+            ? htmlString
+            : exports.postprocess(htmlString);
         fs.writeFile(htmlPath, transformedHtml, err => {
           if (err) return callback(err);
           input.uploadOutput(texPath, outputDir, (err) => {

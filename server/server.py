@@ -176,8 +176,12 @@ def convert_latex_to_html(folder, pandoc_only=False):
         'timeout',
         '%d' % timeout,
         os.path.join(ENGRAFO_PATH, 'bin/engrafo'),
-        folder
     ]
+
+    if pandoc_only:
+        cmd.append('--pandoc-only')
+
+    cmd.append(folder)
 
     # TODO(bfirsh): move pandoc_only to engrafo itself
     # if pandoc_only:

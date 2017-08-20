@@ -2,18 +2,6 @@ let utils = require("./utils");
 let yaml = require("js-yaml");
 
 module.exports = function(dom, data) {
-  for (var scriptSrc of [
-    "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js",
-    "/js/jquery-1.12.4.min.js",
-    "/js/html-script.js"
-  ]) {
-    utils.addExternalScript(dom, scriptSrc);
-  }
-
-  for (var styleHref of ["/css/html-style.css"]) {
-    utils.addExternalStylesheet(dom, styleHref);
-  }
-
   // Get rid of <header>
   Array.from(dom.querySelectorAll("header")).forEach(header => {
     utils.removeAndFlattenChildren(header);

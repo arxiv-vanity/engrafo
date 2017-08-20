@@ -20,12 +20,16 @@ exports[`authors render correctly 1`] = `
           <div
             class="author"
           >
-            Joe Bloggs
+            <span>
+              Joe Bloggs
+            </span>
           </div>
           <div
             class="author"
           >
-            Jane Smith
+            <span>
+              Jane Smith
+            </span>
           </div>
         </div>
       </div>

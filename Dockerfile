@@ -1,5 +1,4 @@
-FROM andreasjansson/engrafo-pandoc@sha256:a2f55a7be1b70e9f70f44f9f1af9bc1533909b69300065c2737df0ba3ba62a02 as pandoc
-
+FROM andreasjansson/engrafo-pandoc@sha256:a50d822d5890323431ac5a6496a4dd2de65d105248bde5d7538fdbad8ea15130 as pandoc
 FROM debian:stretch
 
 # Official CDN throws 503s

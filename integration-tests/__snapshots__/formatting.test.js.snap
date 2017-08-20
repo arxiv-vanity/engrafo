@@ -1,5 +1,199 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ICML commands are supported 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <h1
+      class="title"
+    >
+      Paper Title
+    </h1>
+    <dt-byline>
+      <div
+        class="byline"
+      >
+        <div
+          class="authors"
+        >
+          <div
+            class="author"
+          >
+            <span
+              class="author"
+              data-affiliation-abbrev="one"
+            >
+              Author One
+              <sup>
+                1
+              </sup>
+            </span>
+            <span
+              class="author"
+              data-affiliation-abbrev="one"
+            >
+              Second Author
+              <sup>
+                1
+              </sup>
+              <sup>
+                2
+              </sup>
+            </span>
+            <span
+              class="affiliation"
+            >
+              <sup>
+                1
+              </sup>
+              First Affiliation
+            </span>
+            <span
+              class="affiliation"
+            >
+              <sup>
+                2
+              </sup>
+              Affiliation Two
+            </span>
+          </div>
+        </div>
+      </div>
+    </dt-byline>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;
+
+exports[`institute command is supported 1`] = `
+<body>
+  <dt-article
+    class="centered"
+  >
+    <h1
+      class="title"
+    >
+      A Title
+    </h1>
+    <dt-byline>
+      <div
+        class="byline"
+      >
+        <div
+          class="authors"
+        >
+          <div
+            class="author"
+          >
+            <span
+              data-affiliation-abbrev="1"
+            >
+              Ekaterina Vylomova
+              <sup>
+                1
+              </sup>
+            </span>
+            <span
+              data-affiliation-abbrev="1"
+            >
+              Andrei Shcherbakov
+              <sup>
+                1
+              </sup>
+            </span>
+            <span
+              data-affiliation-abbrev="2"
+            >
+              Yuriy Philippovich
+              <sup>
+                2
+              </sup>
+            </span>
+            <span
+              data-affiliation-abbrev="3"
+            >
+              Galina Cherkasova
+              <sup>
+                3
+              </sup>
+            </span>
+            <span
+              class="affiliation"
+            >
+              <sup>
+                1
+              </sup>
+              The University of Melbourne, Melbourne, Australia,
+              <br />
+              <a
+                href="evylomova@gmail.com"
+                class="uri"
+              >
+                evylomova@gmail.com
+              </a>
+              & 
+              <a
+                href="ultrasparc@yandex.ru"
+                class="uri"
+              >
+                ultrasparc@yandex.ru
+              </a>
+              , 
+            </span>
+            <span
+              class="affiliation"
+            >
+              <sup>
+                2
+              </sup>
+              Moscow Polytech, Moscow, Russia,
+              <br />
+              <a
+                href="Y_philippovich@mail.ru"
+                class="uri"
+              >
+                Y_philippovich@mail.ru
+              </a>
+            </span>
+            <span
+              class="affiliation"
+            >
+              <sup>
+                3
+              </sup>
+              Institute of the Science of Language, Moscow, Russia
+              <br />
+              <a
+                href="gacherk@mail.ru"
+                class="uri"
+              >
+                gacherk@mail.ru
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </dt-byline>
+  </dt-article>
+  <dt-appendix>
+    <div
+      class="l-body"
+    />
+  </dt-appendix>
+  <div
+    id="footnote-hover-boxes-container"
+  />
+</body>
+`;
+
 exports[`links get wrapped in anchors 1`] = `
 <body>
   <dt-article

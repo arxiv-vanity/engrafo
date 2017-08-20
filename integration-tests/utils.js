@@ -4,12 +4,12 @@ var jsdom = require("jsdom");
 var path = require("path");
 var tmp = require("tmp");
 
-exports.expectBodyToMatchSnapshot = (texPath, done) => {
-  texPath = path.join(__dirname, texPath);
+exports.expectBodyToMatchSnapshot = (inputPath, done) => {
+  inputPath = path.join(__dirname, inputPath);
 
   tmp.dir({unsafeCleanup: true}, (err, outputDir, cleanupCallback) => {
     if (err) throw err;
-    engrafo.render(texPath, outputDir, (err, htmlPath) => {
+    engrafo.render({inputPath: inputPath, outputDir: outputDir}, (err, htmlPath) => {
       if (err) throw err;
       fs.readFile(htmlPath, "utf-8", (err, htmlString) => {
         if (err) throw err;

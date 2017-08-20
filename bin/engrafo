@@ -23,12 +23,18 @@ if (!process.argv.slice(2).length) {
   process.exit(1);
 }
 
-var texPath = program.args[0];
+var inputPath = program.args[0];
 var outputDir = program.output ||
-    (fs.lstatSync(texPath).isDirectory()
-     ? texPath : path.dirname(texPath));
+    (fs.lstatSync(inputPath).isDirectory()
+     ? inputPath : path.dirname(inputPath));
 
-engrafo.render(texPath, outputDir, program.pandocOnly, (err, htmlPath) => {
+var options = {
+  inputPath: inputPath,
+  outputDir: outputDir,
+  pandocOnly: program.pandocOnly
+};
+
+engrafo.render(options, (err, htmlPath) => {
   if (err) {
     console.error("Engrafo rendering failed:", err);
     process.exit(1);

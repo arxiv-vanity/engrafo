@@ -20,12 +20,12 @@ exports.renderPandoc = (texPath, pandocOnly, callback) => {
     "html5",
     "--standalone",
     "--mathjax",
-  ]
+  ];
 
   if (!pandocOnly) {
     args.push(
       "--filter",
-      "/app/pandocfilter/engrafo_pandocfilter.py",
+      "/app/pandocfilter/engrafo_pandocfilter.py"
     );
   }
 
@@ -99,7 +99,7 @@ exports.postprocess = htmlString => {
 // Render and postprocess a LaTeX file into outputDir (created if does not
 // exist). Calls callback with an error on failure or a path to an HTML file
 // on success.
-exports.render = (inputPath, outputDir, pandocOnly, callback) => {
+exports.render = ({inputPath, outputDir, pandocOnly}, callback) => {
   input.prepareRenderingDir(inputPath, outputDir, (err, texPath) => {
     if (err) return callback(err);
     console.log("Rendering tex file", texPath);

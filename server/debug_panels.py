@@ -1,5 +1,6 @@
 import flask
 from flask_debugtoolbar.panels import DebugPanel
+from flask import render_template
 import json
 import pprint
 import os.path
@@ -61,10 +62,13 @@ class PandocDebugPanel(DebugPanel):
         except IOError:
             return 'Could not find AST.'
         # pprint is much more readable than json.dump
-        s = pprint.pformat(ast)
+        ast_pprint = pprint.pformat(ast)
         # HACK: remove u''. Either do something more clever or upgrade to py3
-        s = s.replace(u"u'", u"'")
-        return u'<pre style="white-space: pre-wrap">%s</pre>' % flask.escape(s)
+        ast_pprint = ast_pprint.replace(u"u'", u"'")
+        ast_json = json.dumps(ast, sort_keys=True,
+                              indent=4, separators=(',', ': '))
+        return render_template('debug-panels/pandoc.html',
+                               ast_pprint=ast_pprint, ast_json=ast_json)
 
 
 class PandocFilteredDebugPanel(PandocDebugPanel):

@@ -2,9 +2,7 @@
 
 exports[`basic tables render correctly 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <figure
       id="table-1"
     >

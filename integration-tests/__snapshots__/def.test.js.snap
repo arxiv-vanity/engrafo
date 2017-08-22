@@ -2,9 +2,7 @@
 
 exports[`\\def multiple simple arguments render correctly 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <p>
       one one two two three three four four five five six six seven seven after
     </p>
@@ -22,9 +20,7 @@ exports[`\\def multiple simple arguments render correctly 1`] = `
 
 exports[`\\def with control seq suffix renders correctly 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <blockquote>
       <p>
         <span>
@@ -49,9 +45,7 @@ exports[`\\def with control seq suffix renders correctly 1`] = `
 
 exports[`simple \\def without arguments render correctly 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <p>
       bar
     </p>

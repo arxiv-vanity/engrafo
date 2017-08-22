@@ -2,9 +2,7 @@
 
 exports[`block math renders correctly 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <p />
     <figure
       id="equation-1"
@@ -45,9 +43,7 @@ exports[`block math renders correctly 1`] = `
 
 exports[`inline math renders correctly 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <p>
       Ooh look some lovely maths 
       <span

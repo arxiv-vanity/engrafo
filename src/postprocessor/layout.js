@@ -9,7 +9,7 @@ module.exports = function(dom) {
   // Wrap whole thing in <dt-article>
   let dtArticle = utils.nodeFromString(
     dom,
-    '<dt-article class="centered"></dt-article>'
+    '<dt-article></dt-article>'
   );
   while (dom.body.firstChild) {
     dtArticle.appendChild(dom.body.firstChild);

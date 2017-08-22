@@ -2,9 +2,7 @@
 
 exports[`authors render correctly 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <h1
       class="title"
     >
@@ -48,9 +46,7 @@ exports[`authors render correctly 1`] = `
 
 exports[`footnotes render correctly 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <p>
       This is some text.
       <dt-fn>
@@ -134,9 +130,7 @@ exports[`footnotes render correctly 1`] = `
 
 exports[`paragraphs and line breaks render correctly 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <p>
       This is the first paragraph.
     </p>
@@ -165,9 +159,7 @@ exports[`paragraphs and line breaks render correctly 1`] = `
 
 exports[`titles and headings render correctly 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <h1
       class="title"
     >

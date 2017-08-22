@@ -2,9 +2,7 @@
 
 exports[`images in figures render correctly 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <figure
       id="figure-1"
     >

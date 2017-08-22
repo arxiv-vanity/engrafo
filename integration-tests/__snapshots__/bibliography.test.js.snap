@@ -2,9 +2,7 @@
 
 exports[`a 3-line inline bibliography renders correctly 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <p>
       Refer to 
       <a
@@ -132,9 +130,7 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
 
 exports[`a basic bibliography renders correctly 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <p>
       Hello
       <a

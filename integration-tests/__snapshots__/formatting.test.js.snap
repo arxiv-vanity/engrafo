@@ -2,9 +2,7 @@
 
 exports[`ICML commands are supported 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <h1
       class="title"
     >
@@ -75,9 +73,7 @@ exports[`ICML commands are supported 1`] = `
 
 exports[`institute command is supported 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <h1
       class="title"
     >
@@ -196,9 +192,7 @@ exports[`institute command is supported 1`] = `
 
 exports[`links get wrapped in anchors 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <p>
       http link: 
       <a
@@ -262,9 +256,7 @@ exports[`links get wrapped in anchors 1`] = `
 
 exports[`lists render correctly 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <ul>
       <li>
         <p>
@@ -365,9 +357,7 @@ exports[`lists render correctly 1`] = `
 
 exports[`pdfoutput=1 is ignored 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <p>
       hello world
     </p>
@@ -385,9 +375,7 @@ exports[`pdfoutput=1 is ignored 1`] = `
 
 exports[`pinforms3 TITLE, AUTHOR, AFF are supported 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <h1
       class="title"
     >
@@ -443,9 +431,7 @@ exports[`pinforms3 TITLE, AUTHOR, AFF are supported 1`] = `
 
 exports[`text formatting renders correctly 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <p>
       This is 
       <strong>
@@ -497,9 +483,7 @@ exports[`text formatting renders correctly 1`] = `
 
 exports[`vskip is ignored 1`] = `
 <body>
-  <dt-article
-    class="centered"
-  >
+  <dt-article>
     <p>
       before
     </p>

@@ -1,11 +1,23 @@
 let utils = require("./utils");
 
 var css = `
-h2, h3, h4, h5, h6 {
+dt-article h2,
+dt-article h3,
+dt-article h4 {
   position: relative;
+  /* Space for section number */
+  padding-right: 40px;
 }
 
-.section-number {
+@media(min-width: 768px) {
+  dt-article h2,
+  dt-article h3,
+  dt-article h4 {
+    padding-right: 0;
+  }
+}
+
+dt-article .section-number {
   font-family: Baskerville, Georgia, serif;
   font-style: normal;
   color: rgba(0, 0, 0, 0.3);
@@ -16,30 +28,30 @@ h2, h3, h4, h5, h6 {
   font-size: 0.9em;
 }
 
-.section-number a,
-.section-number a:active {
+dt-article .section-number a,
+dt-article .section-number a:active {
   border-bottom: none;
 }
 
-.section-number a:hover {
+dt-article .section-number a:hover {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 @media(min-width: 768px) {
-  .section-number {
+  dt-article .section-number {
     right: unset;
     left: -170px;
   }
 }
 
 @media (min-width: 1080px) {
-  .section-number {
+  dt-article .section-number {
     right: unset;
     left: -180px;
   }
 }
 
-.paragraph-heading {
+dt-article .paragraph-heading {
   margin-right: 0.5em;
 }
 `;

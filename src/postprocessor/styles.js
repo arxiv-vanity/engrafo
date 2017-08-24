@@ -3,6 +3,13 @@ var path = require("path");
 var utils = require("./utils");
 
 var css = `
+/* HACK: We just need this for the dev server, but it shouldn't make
+its way out to rendered output. Figure out some way of doing this so it is
+just shown in dev server. */
+body {
+  margin: 0;
+}
+
 dt-article,
 dt-appendix,
 .dt-hover-box {

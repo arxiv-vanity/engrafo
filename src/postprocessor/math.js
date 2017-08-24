@@ -1,6 +1,12 @@
 let utils = require("./utils");
 
 var css = `
+dt-article figure .math {
+  display: block;
+  overflow: scroll;
+  margin-right: 30px;
+}
+
 .engrafo-equation-number {
   position: absolute;
   top: 50%;

@@ -1,5 +1,18 @@
 let utils = require("./utils");
+
+let css = `
+dt-byline code {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+}
+`;
+
 module.exports = function(dom) {
+  utils.addStylesheet(dom, css);
+
   var bylineAuthors = dom.querySelector("dt-byline .authors");
   Array.from(dom.querySelectorAll("p.author")).forEach(el => {
     if (el.tagName == "P") {

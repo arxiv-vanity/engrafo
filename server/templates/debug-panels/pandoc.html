@@ -1,19 +1,16 @@
-<script src="/js/clipboard.min.js"></script>
-<script>
-  $(function() {
-    function pandocAstCopy(e) {
-      console.log(e.target.getAttribute('data-ast-json'))
-      clipboard.copy(e.target.getAttribute('data-ast-json'));
-      return false;
-    }
-
-    $('.pandoc-ast-copy').off('click');
-    $('.pandoc-ast-copy').on('click', pandocAstCopy);
-  });
-</script>
-
 <a class="pandoc-ast-copy" href="#" data-ast-json="{{ ast_json }}">
   Copy AST JSON to clipboard
 </a>
 
 <pre style="white-space: pre-wrap">{{ ast_pprint }}</pre>
+
+<script src="/js/clipboard.min.js"></script>
+<script>
+  function pandocAstCopy(e) {
+    e.preventDefault();
+    clipboard.copy(e.target.getAttribute('data-ast-json'));
+    return false;
+  }
+
+  document.querySelector('.pandoc-ast-copy').addEventListener('click', pandocAstCopy);
+</script>

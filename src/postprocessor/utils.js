@@ -43,3 +43,8 @@ exports.nodeFromString = function(dom, str) {
   div.innerHTML = str;
   return div.firstChild;
 };
+
+exports.wrapElement = function(innerEl, outerEl) {
+  innerEl.parentNode.insertBefore(outerEl, innerEl);
+  outerEl.appendChild(innerEl);
+}

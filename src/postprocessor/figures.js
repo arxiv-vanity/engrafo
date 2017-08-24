@@ -19,8 +19,8 @@ var css = `
     }
   }
 
-  dt-article figure table {
-    width: 100%;
+  dt-article figure {
+    overflow: auto;
   }
 `;
 
@@ -28,11 +28,17 @@ module.exports = function(dom) {
   utils.addStylesheet(dom, css);
 
   // Make tables figures
-  let tables = dom.querySelectorAll(".engrafo-table");
-  Array.from(tables).forEach(div => {
+  let tableDivs = dom.querySelectorAll(".engrafo-table");
+  Array.from(tableDivs).forEach(div => {
     let figure = dom.createElement("figure");
     figure.id = div.id;
     utils.replaceAndKeepChildren(div, figure);
+  });
+
+  let tables = dom.querySelectorAll("dt-article > table");
+  Array.from(tables).forEach(table => {
+    let figure = dom.createElement("figure");
+    utils.wrapElement(table, figure);
   });
 
   // Make figures figures

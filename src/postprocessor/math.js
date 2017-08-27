@@ -3,7 +3,7 @@ let utils = require("./utils");
 var css = `
 dt-article figure .math {
   display: block;
-  overflow: scroll;
+  overflow-x: auto;
   margin-right: 30px;
 }
 

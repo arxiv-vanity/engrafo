@@ -20,7 +20,7 @@ var css = `
   }
 
   dt-article figure {
-    overflow: auto;
+    overflow-x: auto;
   }
 `;
 

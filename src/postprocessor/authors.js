@@ -7,6 +7,8 @@ dt-byline code {
   padding: 0;
   font-size: inherit;
   color: inherit;
+  word-break: break-word;
+  white-space: normal;
 }
 `;
 

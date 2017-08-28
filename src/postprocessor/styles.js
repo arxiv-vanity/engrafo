@@ -22,9 +22,10 @@ dt-appendix,
   }
 }
 
-/* The appendix tends to have really long URLs which mess up the design,
-so slice them off */
-dt-appendix {
+/* Slice off long URLs because they mess up the mobile design */
+dt-article a,
+dt-appendix a,
+.dt-hover-box a {
   word-break: break-word;
 }
 

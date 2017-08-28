@@ -1,20 +1,6 @@
 let utils = require("./utils");
 
 var css = `
-  dt-article table caption {
-    color: rgba(0, 0, 0, 0.6);
-    font-size: 12px;
-    line-height: 1.5em;
-    caption-side: bottom;
-    margin-top: 24px;
-    text-align: left;
-  }
-  @media(min-width: 1024px) {
-    dt-article table caption {
-      font-size: 13px;
-    }
-  }
-
   dt-article figure {
     overflow-x: auto;
   }

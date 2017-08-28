@@ -10,15 +10,15 @@ body {
   margin: 0;
 }
 
-dt-article,
 dt-appendix,
 .dt-hover-box {
-  font: 400 16px/1.55em -apple-system, BlinkMacSystemFont, "Roboto", Helvetica, sans-serif;
+  font: 400 14px/1.55em -apple-system, BlinkMacSystemFont, "Roboto", Helvetica, sans-serif;
 }
 
 @media (min-width: 1024px) {
-  dt-article {
-      font-size: 20px;
+  dt-appendix,
+  .dt-hover-box {
+    font-size: 17px;
   }
 }
 

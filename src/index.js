@@ -66,6 +66,11 @@ exports.postprocess = htmlString => {
     features: { ProcessExternalResources: false, FetchExternalResources: false }
   });
 
+  // Check there is actually a document to process
+  if (dom.body.children.length == 0) {
+    throw new Error("Document is blank");
+  }
+
   // Document state
   var data = {};
 
@@ -107,10 +112,14 @@ exports.render = ({inputPath, outputDir, pandocOnly}, callback) => {
       if (err) return callback(err, htmlPath);
       fs.readFile(htmlPath, "utf8", (err, htmlString) => {
         if (err) return callback(err, htmlPath);
-        var transformedHtml = pandocOnly
-            ? htmlString
-            : exports.postprocess(htmlString);
-        fs.writeFile(htmlPath, transformedHtml, err => {
+        if (!pandocOnly) {
+          try {
+            htmlString = exports.postprocess(htmlString);
+          } catch(err) {
+            return callback(err, htmlPath);
+          }
+        }
+        fs.writeFile(htmlPath, htmlString, err => {
           if (err) return callback(err);
           input.uploadOutput(texPath, outputDir, (err) => {
             return callback(err, htmlPath);

@@ -22,6 +22,12 @@ dt-appendix,
   }
 }
 
+/* The appendix tends to have really long URLs which mess up the design,
+so slice them off */
+dt-appendix {
+  word-break: break-word;
+}
+
 dt-article h1,
 dt-article h2,
 dt-article h3 {

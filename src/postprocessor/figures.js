@@ -1,11 +1,7 @@
 let utils = require("./utils");
 
 var css = `
-  table {
-    margin-top: 48px;
-    margin-bottom: 48px;
-  }
-  table caption {
+  dt-article table caption {
     color: rgba(0, 0, 0, 0.6);
     font-size: 12px;
     line-height: 1.5em;
@@ -14,7 +10,7 @@ var css = `
     text-align: left;
   }
   @media(min-width: 1024px) {
-    table caption {
+    dt-article table caption {
       font-size: 13px;
     }
   }

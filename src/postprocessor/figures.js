@@ -1,6 +1,16 @@
 let utils = require("./utils");
 
 var css = `
+  dt-article table th,
+  dt-article table td {
+    padding-right: 1rem;
+  }
+
+  dt-article table th:last-child,
+  dt-article table td:last-child {
+    padding-right: 0;
+  }
+
   dt-article figure {
     overflow-x: auto;
   }

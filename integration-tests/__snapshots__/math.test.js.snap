@@ -10,13 +10,11 @@ exports[`block math renders correctly 1`] = `
       <figure
         id="equation-1"
       >
-        <p>
-          <span
-            class="math display"
-          >
-            \\[e^{i\\pi}=-1 \\tag{1}\\]
-          </span>
-        </p>
+        <span
+          class="math display"
+        >
+          \\[e^{i\\pi}=-1 \\tag{1}\\]
+        </span>
       </figure>
       <p />
       <p>

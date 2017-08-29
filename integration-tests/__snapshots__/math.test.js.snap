@@ -14,12 +14,7 @@ exports[`block math renders correctly 1`] = `
           <span
             class="math display"
           >
-            \\[e^{i\\pi}=-1 \\]
-          </span>
-          <span
-            class="engrafo-equation-number"
-          >
-            (1)
+            \\[e^{i\\pi}=-1 \\tag{1}\\]
           </span>
         </p>
       </figure>

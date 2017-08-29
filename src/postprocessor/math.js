@@ -1,7 +1,7 @@
 let utils = require("./utils");
 
 var css = `
-dt-article figure .math {
+dt-article figure .math.display {
   display: block;
 }
 

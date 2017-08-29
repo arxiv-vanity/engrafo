@@ -41,6 +41,9 @@ module.exports = function(dom) {
       processRefs: false,
       ignoreClass: "engrafo-container", // Ignore everything
       processClass: "math" // Then just process math
+    },
+    CommonHTML: {
+      mtextFontInherit: true, // Use body font for text
     }
   };
 

@@ -3,6 +3,13 @@ let utils = require("./utils");
 var css = `
 dt-article figure .math.display {
   display: block;
+  font-family: Georgia, serif;
+}
+
+@media (min-width: 768px) {
+  dt-article figure .math.display {
+    margin-left: 24px;
+  }
 }
 
 .engrafo-container .mjx-chtml[tabindex]:focus {
@@ -42,7 +49,6 @@ module.exports = function(dom) {
       inTabOrder: false,
     },
     displayAlign: "left",
-    displayIndent: "24px",
     tex2jax: {
       processRefs: false,
       ignoreClass: "engrafo-container", // Ignore everything

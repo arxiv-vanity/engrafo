@@ -16,10 +16,9 @@ module.exports = function(dom, data) {
 
   data.title = title.innerHTML;
 
-  // Remove <strong> or <em> from title
-  let titleChild = title.firstChild;
-  if (titleChild.tagName === "STRONG" || titleChild.tagName === "EM") {
-    utils.removeAndFlattenChildren(titleChild);
+  // Remove <strong> from title
+  if (title.children.length && title.children[0].tagName === "STRONG") {
+    utils.removeAndFlattenChildren(title.children[0]);
   }
 
   // Remove new lines from title

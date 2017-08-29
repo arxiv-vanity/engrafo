@@ -78,6 +78,33 @@ dt-article p {
   word-break: break-word;
   white-space: normal;
 }
+
+dt-article > blockquote {
+  padding-left: 24px;
+}
+
+/* Standard article bit alignment. Add more to this definition to add support
+in articles. */
+dt-article > blockquote {
+  width: auto;
+  margin-left: 24px;
+  margin-right: 24px;
+  box-sizing: border-box;
+}
+
+@media(min-width: 768px) {
+  dt-article > blockquote {
+    margin-left: 72px;
+    margin-right: 72px;
+  }
+}
+
+@media(min-width: 1080px) {
+  dt-article > blockquote {
+    margin-left: calc(50% - 984px / 2);
+    width: 648px;
+  }
+}
 `;
 
 module.exports = function(dom) {

@@ -42,6 +42,7 @@ module.exports = function(dom) {
       inTabOrder: false,
     },
     displayAlign: "left",
+    displayIndent: "24px",
     tex2jax: {
       processRefs: false,
       ignoreClass: "engrafo-container", // Ignore everything

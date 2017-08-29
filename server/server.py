@@ -162,18 +162,6 @@ def convert_latex_to_html(folder, pandoc_only=False):
 
     cmd.append(folder)
 
-    # TODO(bfirsh): move pandoc_only to engrafo itself
-    # if pandoc_only:
-    #     cmd += [
-    #         'pandoc',
-    #         '--from', 'latex+raw_tex+latex_macros',
-    #         '--to', 'html',
-    #         '--mathjax',
-    #         '--standalone',
-    #         '--output', html_path,
-    #         latex_path
-    #     ]
-
     process = subprocess.Popen(
         cmd, cwd=folder, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     stdout, stderr = process.communicate()

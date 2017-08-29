@@ -17,6 +17,11 @@ module.exports = function(dom) {
   // Make math figures
   let mathBlocks = dom.querySelectorAll(".engrafo-equation");
   Array.from(mathBlocks).forEach(div => {
+    // Sometimes there is a <p> in there for some reason
+    if (div.children[0].tagName == 'P') {
+      utils.removeAndFlattenChildren(div.children[0]);
+    }
+
     let figure = dom.createElement("figure");
     figure.id = div.id;
     utils.replaceAndKeepChildren(div, figure);

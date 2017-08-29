@@ -36,6 +36,7 @@ module.exports = function(dom) {
     menuSettings: {
       inTabOrder: false,
     },
+    displayAlign: "left",
     tex2jax: {
       processRefs: false,
       ignoreClass: "engrafo-container", // Ignore everything

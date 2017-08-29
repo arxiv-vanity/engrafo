@@ -14,6 +14,12 @@ var css = `
   dt-article figure {
     overflow-x: auto;
   }
+
+  @media (min-width: 1080px) {
+    dt-article figure {
+      overflow: visible;
+    }
+  }
 `;
 
 module.exports = function(dom) {

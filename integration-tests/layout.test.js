@@ -15,3 +15,7 @@ test("paragraphs and line breaks render correctly", done => {
 test("footnotes render correctly", done => {
   utils.expectBodyToMatchSnapshot("layout/footnotes.tex", done);
 });
+
+test("footnotes in author render correctly", done => {
+  utils.expectBodyToMatchSnapshot("layout/footnotes-author.tex", done);
+})

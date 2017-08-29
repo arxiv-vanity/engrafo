@@ -20,11 +20,19 @@ def main():
     with open('pandoc-ast.json', 'w') as f:
         json.dump(doc, f)
 
-    blocks = doc['blocks']
     meta = doc['meta']
     fmt = 'latex'
 
-    altered = blocks
+    for action in [
+            wrap_urls_in_anchors,
+            replace_references,
+            replace_cite_references,
+            inline_footnotes,
+    ]:
+        if 'title' in doc['meta']:
+            doc['meta']['title'] = walk(doc['meta']['title'], action, fmt, meta)
+        if 'author' in doc['meta']:
+            doc['meta']['author'] = walk(doc['meta']['author'], action, fmt, meta)
 
     for action in [
             wrap_urls_in_anchors,
@@ -43,9 +51,8 @@ def main():
             replace_cite_references,
             inline_footnotes,
     ]:
-        altered = walk(altered, action, fmt, meta)
+        doc['blocks'] = walk(doc['blocks'], action, fmt, meta)
 
-    doc['blocks'] = altered
 
     # Save filtered AST for debugging
     with open('pandoc-ast-filtered.json', 'w') as f:

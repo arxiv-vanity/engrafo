@@ -48,6 +48,77 @@ exports[`authors render correctly 1`] = `
 </body>
 `;
 
+exports[`footnotes in author render correctly 1`] = `
+<body>
+  <div
+    class="engrafo-container"
+  >
+    <dt-article>
+      <h1
+        class="title"
+      >
+        Hello
+      </h1>
+      <dt-byline>
+        <div
+          class="byline"
+        >
+          <div
+            class="authors"
+          >
+            <div
+              class="author"
+            >
+              <span>
+                Joe Bloggs
+                <dt-fn>
+                  <sup>
+                    <span
+                      id="fn-1"
+                      data-hover-ref="dt-fn-hover-box-0"
+                      style="cursor:pointer"
+                    >
+                      1
+                    </span>
+                  </sup>
+                </dt-fn>
+              </span>
+            </div>
+          </div>
+        </div>
+      </dt-byline>
+    </dt-article>
+    <dt-appendix>
+      <div
+        class="l-body"
+      >
+        <h3>
+          Footnotes
+        </h3>
+        <dt-fn-list>
+          <ol>
+            <li>
+              Equal contribution.
+            </li>
+          </ol>
+        </dt-fn-list>
+      </div>
+    </dt-appendix>
+    <div
+      id="footnote-hover-boxes-container"
+    >
+      <div
+        style="display:none;"
+        class="dt-hover-box"
+        id="dt-fn-hover-box-0"
+      >
+        Equal contribution.
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
 exports[`footnotes render correctly 1`] = `
 <body>
   <div

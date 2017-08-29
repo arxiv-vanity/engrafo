@@ -2,127 +2,135 @@
 
 exports[`authors render correctly 1`] = `
 <body>
-  <dt-article>
-    <h1
-      class="title"
-    >
-      Hello
-    </h1>
-    <dt-byline>
-      <div
-        class="byline"
+  <div
+    class="engrafo-container"
+  >
+    <dt-article>
+      <h1
+        class="title"
       >
+        Hello
+      </h1>
+      <dt-byline>
         <div
-          class="authors"
+          class="byline"
         >
           <div
-            class="author"
+            class="authors"
           >
-            <span>
-              Joe Bloggs
-            </span>
-          </div>
-          <div
-            class="author"
-          >
-            <span>
-              Jane Smith
-            </span>
+            <div
+              class="author"
+            >
+              <span>
+                Joe Bloggs
+              </span>
+            </div>
+            <div
+              class="author"
+            >
+              <span>
+                Jane Smith
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-    </dt-byline>
-  </dt-article>
-  <dt-appendix>
+      </dt-byline>
+    </dt-article>
+    <dt-appendix>
+      <div
+        class="l-body"
+      />
+    </dt-appendix>
     <div
-      class="l-body"
+      id="footnote-hover-boxes-container"
     />
-  </dt-appendix>
-  <div
-    id="footnote-hover-boxes-container"
-  />
+  </div>
 </body>
 `;
 
 exports[`footnotes render correctly 1`] = `
 <body>
-  <dt-article>
-    <p>
-      This is some text.
-      <dt-fn>
-        <sup>
-          <span
-            id="fn-1"
-            data-hover-ref="dt-fn-hover-box-0"
-            style="cursor:pointer"
-          >
-            1
-          </span>
-        </sup>
-      </dt-fn>
-      This is some more text.
-      <dt-fn>
-        <sup>
-          <span
-            id="fn-2"
-            data-hover-ref="dt-fn-hover-box-1"
-            style="cursor:pointer"
-          >
-            2
-          </span>
-        </sup>
-      </dt-fn>
-    </p>
-  </dt-article>
-  <dt-appendix>
-    <div
-      class="l-body"
-    >
-      <h3>
-        Footnotes
-      </h3>
-      <dt-fn-list>
-        <ol>
-          <li>
-            This is a footnote.
-          </li>
-          <li>
-            And a footnote with a
-            <br />
-            <br />
-            second paragraph! And some 
-            <em>
-              formatting
-            </em>
-            .
-          </li>
-        </ol>
-      </dt-fn-list>
-    </div>
-  </dt-appendix>
   <div
-    id="footnote-hover-boxes-container"
+    class="engrafo-container"
   >
+    <dt-article>
+      <p>
+        This is some text.
+        <dt-fn>
+          <sup>
+            <span
+              id="fn-1"
+              data-hover-ref="dt-fn-hover-box-0"
+              style="cursor:pointer"
+            >
+              1
+            </span>
+          </sup>
+        </dt-fn>
+        This is some more text.
+        <dt-fn>
+          <sup>
+            <span
+              id="fn-2"
+              data-hover-ref="dt-fn-hover-box-1"
+              style="cursor:pointer"
+            >
+              2
+            </span>
+          </sup>
+        </dt-fn>
+      </p>
+    </dt-article>
+    <dt-appendix>
+      <div
+        class="l-body"
+      >
+        <h3>
+          Footnotes
+        </h3>
+        <dt-fn-list>
+          <ol>
+            <li>
+              This is a footnote.
+            </li>
+            <li>
+              And a footnote with a
+              <br />
+              <br />
+              second paragraph! And some 
+              <em>
+                formatting
+              </em>
+              .
+            </li>
+          </ol>
+        </dt-fn-list>
+      </div>
+    </dt-appendix>
     <div
-      style="display:none;"
-      class="dt-hover-box"
-      id="dt-fn-hover-box-0"
+      id="footnote-hover-boxes-container"
     >
-      This is a footnote.
-    </div>
-    <div
-      style="display:none;"
-      class="dt-hover-box"
-      id="dt-fn-hover-box-1"
-    >
-      And a footnote with a
-      <br />
-      <br />
-      second paragraph! And some 
-      <em>
-        formatting
-      </em>
-      .
+      <div
+        style="display:none;"
+        class="dt-hover-box"
+        id="dt-fn-hover-box-0"
+      >
+        This is a footnote.
+      </div>
+      <div
+        style="display:none;"
+        class="dt-hover-box"
+        id="dt-fn-hover-box-1"
+      >
+        And a footnote with a
+        <br />
+        <br />
+        second paragraph! And some 
+        <em>
+          formatting
+        </em>
+        .
+      </div>
     </div>
   </div>
 </body>
@@ -130,144 +138,152 @@ exports[`footnotes render correctly 1`] = `
 
 exports[`paragraphs and line breaks render correctly 1`] = `
 <body>
-  <dt-article>
-    <p>
-      This is the first paragraph.
-    </p>
-    <p>
-      This is the second paragraph.
-    </p>
-    <p>
-      This is a centered paragraph.
-    </p>
-    <p>
-      This is a
-      <br />
-      line break.
-    </p>
-  </dt-article>
-  <dt-appendix>
-    <div
-      class="l-body"
-    />
-  </dt-appendix>
   <div
-    id="footnote-hover-boxes-container"
-  />
+    class="engrafo-container"
+  >
+    <dt-article>
+      <p>
+        This is the first paragraph.
+      </p>
+      <p>
+        This is the second paragraph.
+      </p>
+      <p>
+        This is a centered paragraph.
+      </p>
+      <p>
+        This is a
+        <br />
+        line break.
+      </p>
+    </dt-article>
+    <dt-appendix>
+      <div
+        class="l-body"
+      />
+    </dt-appendix>
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
 </body>
 `;
 
 exports[`titles and headings render correctly 1`] = `
 <body>
-  <dt-article>
-    <h1
-      class="title"
-    >
-      Headings Test
-    </h1>
-    <dt-byline>
-      <div
-        class="byline"
+  <div
+    class="engrafo-container"
+  >
+    <dt-article>
+      <h1
+        class="title"
       >
+        Headings Test
+      </h1>
+      <dt-byline>
         <div
-          class="authors"
+          class="byline"
         >
-          
+          <div
+            class="authors"
+          >
+            
+          </div>
         </div>
-      </div>
-    </dt-byline>
-    <h2
-      id="section-1"
-    >
-      <span
-        class="section-number"
+      </dt-byline>
+      <h2
+        id="section-1"
       >
+        <span
+          class="section-number"
+        >
+          <a
+            href="#section-1"
+          >
+            1
+          </a>
+        </span>
+        Section Title
+      </h2>
+      <h3
+        id="section-1.1"
+      >
+        <span
+          class="section-number"
+        >
+          <a
+            href="#section-1.1"
+          >
+            1.1
+          </a>
+        </span>
+        Subsection Title
+      </h3>
+      <h4
+        id="subsubsection-title"
+      >
+        Subsubsection Title
+      </h4>
+      <p>
+        <strong
+          class="paragraph-heading"
+        >
+          Paragraph title
+        </strong>
+        Hello.
+      </p>
+      <h2
+        id="section-2"
+      >
+        <span
+          class="section-number"
+        >
+          <a
+            href="#section-2"
+          >
+            2
+          </a>
+        </span>
+        Another section
+      </h2>
+      <h2
+        id="section-3"
+        class="unnumbered"
+      >
+        Unnumbered section
+      </h2>
+      <h2
+        id="section-4"
+      >
+        <span
+          class="section-number"
+        >
+          <a
+            href="#section-4"
+          >
+            4
+          </a>
+        </span>
+        Another section
+      </h2>
+      <p>
+        A reference to 
         <a
           href="#section-1"
         >
-          1
+          Section 1
         </a>
-      </span>
-      Section Title
-    </h2>
-    <h3
-      id="section-1.1"
-    >
-      <span
-        class="section-number"
-      >
-        <a
-          href="#section-1.1"
-        >
-          1.1
-        </a>
-      </span>
-      Subsection Title
-    </h3>
-    <h4
-      id="subsubsection-title"
-    >
-      Subsubsection Title
-    </h4>
-    <p>
-      <strong
-        class="paragraph-heading"
-      >
-        Paragraph title
-      </strong>
-      Hello.
-    </p>
-    <h2
-      id="section-2"
-    >
-      <span
-        class="section-number"
-      >
-        <a
-          href="#section-2"
-        >
-          2
-        </a>
-      </span>
-      Another section
-    </h2>
-    <h2
-      id="section-3"
-      class="unnumbered"
-    >
-      Unnumbered section
-    </h2>
-    <h2
-      id="section-4"
-    >
-      <span
-        class="section-number"
-      >
-        <a
-          href="#section-4"
-        >
-          4
-        </a>
-      </span>
-      Another section
-    </h2>
-    <p>
-      A reference to 
-      <a
-        href="#section-1"
-      >
-        Section 1
-      </a>
-      .
-    </p>
-  </dt-article>
-  <dt-appendix>
+        .
+      </p>
+    </dt-article>
+    <dt-appendix>
+      <div
+        class="l-body"
+      />
+    </dt-appendix>
     <div
-      class="l-body"
+      id="footnote-hover-boxes-container"
     />
-  </dt-appendix>
-  <div
-    id="footnote-hover-boxes-container"
-  />
+  </div>
 </body>
 `;

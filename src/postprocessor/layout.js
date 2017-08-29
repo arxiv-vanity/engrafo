@@ -7,10 +7,7 @@ module.exports = function(dom) {
   html.removeAttribute("xml:lang");
 
   // Wrap whole thing in <dt-article>
-  let dtArticle = utils.nodeFromString(
-    dom,
-    '<dt-article></dt-article>'
-  );
+  let dtArticle = utils.nodeFromString(dom, '<dt-article></dt-article>');
   while (dom.body.firstChild) {
     dtArticle.appendChild(dom.body.firstChild);
   }

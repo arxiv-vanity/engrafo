@@ -2,502 +2,534 @@
 
 exports[`ICML commands are supported 1`] = `
 <body>
-  <dt-article>
-    <h1
-      class="title"
-    >
-      Paper Title
-    </h1>
-    <dt-byline>
-      <div
-        class="byline"
+  <div
+    class="engrafo-container"
+  >
+    <dt-article>
+      <h1
+        class="title"
       >
+        Paper Title
+      </h1>
+      <dt-byline>
         <div
-          class="authors"
+          class="byline"
         >
           <div
-            class="author"
+            class="authors"
           >
-            <span
+            <div
               class="author"
-              data-affiliation-abbrev="one"
             >
-              Author One
-              <sup>
-                1
-              </sup>
-            </span>
-            <span
-              class="author"
-              data-affiliation-abbrev="one"
-            >
-              Second Author
-              <sup>
-                1
-              </sup>
-              <sup>
-                2
-              </sup>
-            </span>
-            <span
-              class="affiliation"
-            >
-              <sup>
-                1
-              </sup>
-              First Affiliation
-            </span>
-            <span
-              class="affiliation"
-            >
-              <sup>
-                2
-              </sup>
-              Affiliation Two
-            </span>
+              <span
+                class="author"
+                data-affiliation-abbrev="one"
+              >
+                Author One
+                <sup>
+                  1
+                </sup>
+              </span>
+              <span
+                class="author"
+                data-affiliation-abbrev="one"
+              >
+                Second Author
+                <sup>
+                  1
+                </sup>
+                <sup>
+                  2
+                </sup>
+              </span>
+              <span
+                class="affiliation"
+              >
+                <sup>
+                  1
+                </sup>
+                First Affiliation
+              </span>
+              <span
+                class="affiliation"
+              >
+                <sup>
+                  2
+                </sup>
+                Affiliation Two
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-    </dt-byline>
-  </dt-article>
-  <dt-appendix>
+      </dt-byline>
+    </dt-article>
+    <dt-appendix>
+      <div
+        class="l-body"
+      />
+    </dt-appendix>
     <div
-      class="l-body"
+      id="footnote-hover-boxes-container"
     />
-  </dt-appendix>
-  <div
-    id="footnote-hover-boxes-container"
-  />
+  </div>
 </body>
 `;
 
 exports[`institute command is supported 1`] = `
 <body>
-  <dt-article>
-    <h1
-      class="title"
-    >
-      A Title
-    </h1>
-    <dt-byline>
-      <div
-        class="byline"
+  <div
+    class="engrafo-container"
+  >
+    <dt-article>
+      <h1
+        class="title"
       >
+        A Title
+      </h1>
+      <dt-byline>
         <div
-          class="authors"
+          class="byline"
         >
           <div
-            class="author"
+            class="authors"
           >
-            <span
-              data-affiliation-abbrev="1"
+            <div
+              class="author"
             >
-              Ekaterina Vylomova
-              <sup>
-                1
-              </sup>
-            </span>
-            <span
-              data-affiliation-abbrev="1"
-            >
-              Andrei Shcherbakov
-              <sup>
-                1
-              </sup>
-            </span>
-            <span
-              data-affiliation-abbrev="2"
-            >
-              Yuriy Philippovich
-              <sup>
-                2
-              </sup>
-            </span>
-            <span
-              data-affiliation-abbrev="3"
-            >
-              Galina Cherkasova
-              <sup>
-                3
-              </sup>
-            </span>
-            <span
-              class="affiliation"
-            >
-              <sup>
-                1
-              </sup>
-              The University of Melbourne, Melbourne, Australia,
-              <br />
-              <a
-                href="evylomova@gmail.com"
-                class="uri"
+              <span
+                data-affiliation-abbrev="1"
               >
-                evylomova@gmail.com
-              </a>
-              & 
-              <a
-                href="ultrasparc@yandex.ru"
-                class="uri"
+                Ekaterina Vylomova
+                <sup>
+                  1
+                </sup>
+              </span>
+              <span
+                data-affiliation-abbrev="1"
               >
-                ultrasparc@yandex.ru
-              </a>
-              , 
-            </span>
-            <span
-              class="affiliation"
-            >
-              <sup>
-                2
-              </sup>
-              Moscow Polytech, Moscow, Russia,
-              <br />
-              <a
-                href="Y_philippovich@mail.ru"
-                class="uri"
+                Andrei Shcherbakov
+                <sup>
+                  1
+                </sup>
+              </span>
+              <span
+                data-affiliation-abbrev="2"
               >
-                Y_philippovich@mail.ru
-              </a>
-            </span>
-            <span
-              class="affiliation"
-            >
-              <sup>
-                3
-              </sup>
-              Institute of the Science of Language, Moscow, Russia
-              <br />
-              <a
-                href="gacherk@mail.ru"
-                class="uri"
+                Yuriy Philippovich
+                <sup>
+                  2
+                </sup>
+              </span>
+              <span
+                data-affiliation-abbrev="3"
               >
-                gacherk@mail.ru
-              </a>
-            </span>
+                Galina Cherkasova
+                <sup>
+                  3
+                </sup>
+              </span>
+              <span
+                class="affiliation"
+              >
+                <sup>
+                  1
+                </sup>
+                The University of Melbourne, Melbourne, Australia,
+                <br />
+                <a
+                  href="evylomova@gmail.com"
+                  class="uri"
+                >
+                  evylomova@gmail.com
+                </a>
+                & 
+                <a
+                  href="ultrasparc@yandex.ru"
+                  class="uri"
+                >
+                  ultrasparc@yandex.ru
+                </a>
+                , 
+              </span>
+              <span
+                class="affiliation"
+              >
+                <sup>
+                  2
+                </sup>
+                Moscow Polytech, Moscow, Russia,
+                <br />
+                <a
+                  href="Y_philippovich@mail.ru"
+                  class="uri"
+                >
+                  Y_philippovich@mail.ru
+                </a>
+              </span>
+              <span
+                class="affiliation"
+              >
+                <sup>
+                  3
+                </sup>
+                Institute of the Science of Language, Moscow, Russia
+                <br />
+                <a
+                  href="gacherk@mail.ru"
+                  class="uri"
+                >
+                  gacherk@mail.ru
+                </a>
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-    </dt-byline>
-  </dt-article>
-  <dt-appendix>
+      </dt-byline>
+    </dt-article>
+    <dt-appendix>
+      <div
+        class="l-body"
+      />
+    </dt-appendix>
     <div
-      class="l-body"
+      id="footnote-hover-boxes-container"
     />
-  </dt-appendix>
-  <div
-    id="footnote-hover-boxes-container"
-  />
+  </div>
 </body>
 `;
 
 exports[`links get wrapped in anchors 1`] = `
 <body>
-  <dt-article>
-    <p>
-      http link: 
-      <a
-        href="http://link.co.uk/to#something"
-        class="uri"
-      >
-        http://link.co.uk/to#something
-      </a>
-    </p>
-    <p>
-      https link: 
-      <a
-        href="https://link.info?param"
-        class="uri"
-      >
-        https://link.info?param
-      </a>
-      url
-    </p>
-    <p>
-      link with trailing period: 
-      <a
-        href="https://example.com"
-        class="uri"
-      >
-        https://example.com
-      </a>
-      .
-    </p>
-    <p>
-      this should not make a link: foo.bar
-    </p>
-    <p>
-      this is a link without leading space: badlatex.
-      <a
-        href="http://example.com"
-        class="uri"
-      >
-        http://example.com
-      </a>
-    </p>
-    <p>
-      this is already a link: 
-      <a
-        href="http://example.com"
-      >
-        example.com
-      </a>
-    </p>
-  </dt-article>
-  <dt-appendix>
-    <div
-      class="l-body"
-    />
-  </dt-appendix>
   <div
-    id="footnote-hover-boxes-container"
-  />
+    class="engrafo-container"
+  >
+    <dt-article>
+      <p>
+        http link: 
+        <a
+          href="http://link.co.uk/to#something"
+          class="uri"
+        >
+          http://link.co.uk/to#something
+        </a>
+      </p>
+      <p>
+        https link: 
+        <a
+          href="https://link.info?param"
+          class="uri"
+        >
+          https://link.info?param
+        </a>
+        url
+      </p>
+      <p>
+        link with trailing period: 
+        <a
+          href="https://example.com"
+          class="uri"
+        >
+          https://example.com
+        </a>
+        .
+      </p>
+      <p>
+        this should not make a link: foo.bar
+      </p>
+      <p>
+        this is a link without leading space: badlatex.
+        <a
+          href="http://example.com"
+          class="uri"
+        >
+          http://example.com
+        </a>
+      </p>
+      <p>
+        this is already a link: 
+        <a
+          href="http://example.com"
+        >
+          example.com
+        </a>
+      </p>
+    </dt-article>
+    <dt-appendix>
+      <div
+        class="l-body"
+      />
+    </dt-appendix>
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
 </body>
 `;
 
 exports[`lists render correctly 1`] = `
 <body>
-  <dt-article>
-    <ul>
-      <li>
-        <p>
-          An unordered list
-        </p>
-      </li>
-      <li>
-        <p>
-          Second item
-        </p>
-      </li>
-    </ul>
-    <ol>
-      <li>
-        <p>
-          An ordered list
-        </p>
-      </li>
-      <li>
-        <p>
-          Second one.
-        </p>
-      </li>
-    </ol>
-    <ul>
-      <li>
-        <p>
-          A nested unordered list
-        </p>
-        <ul>
-          <li>
-            <p>
-              First nested item
-            </p>
-          </li>
-          <li>
-            <p>
-              Second nested item
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Second item
-        </p>
-      </li>
-    </ul>
-    <h2
-      id="section-1"
-    >
-      <span
-        class="section-number"
-      >
-        <a
-          href="#section-1"
-        >
-          1
-        </a>
-      </span>
-      A nested ordered list
-    </h2>
-    <ol>
-      <li>
-        <p>
-          First item
-        </p>
-        <ol>
-          <li>
-            <p>
-              First nested item
-            </p>
-          </li>
-          <li>
-            <p>
-              Second nested item
-            </p>
-          </li>
-        </ol>
-      </li>
-      <li>
-        <p>
-          Second item
-        </p>
-      </li>
-    </ol>
-  </dt-article>
-  <dt-appendix>
-    <div
-      class="l-body"
-    />
-  </dt-appendix>
   <div
-    id="footnote-hover-boxes-container"
-  />
+    class="engrafo-container"
+  >
+    <dt-article>
+      <ul>
+        <li>
+          <p>
+            An unordered list
+          </p>
+        </li>
+        <li>
+          <p>
+            Second item
+          </p>
+        </li>
+      </ul>
+      <ol>
+        <li>
+          <p>
+            An ordered list
+          </p>
+        </li>
+        <li>
+          <p>
+            Second one.
+          </p>
+        </li>
+      </ol>
+      <ul>
+        <li>
+          <p>
+            A nested unordered list
+          </p>
+          <ul>
+            <li>
+              <p>
+                First nested item
+              </p>
+            </li>
+            <li>
+              <p>
+                Second nested item
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            Second item
+          </p>
+        </li>
+      </ul>
+      <h2
+        id="section-1"
+      >
+        <span
+          class="section-number"
+        >
+          <a
+            href="#section-1"
+          >
+            1
+          </a>
+        </span>
+        A nested ordered list
+      </h2>
+      <ol>
+        <li>
+          <p>
+            First item
+          </p>
+          <ol>
+            <li>
+              <p>
+                First nested item
+              </p>
+            </li>
+            <li>
+              <p>
+                Second nested item
+              </p>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <p>
+            Second item
+          </p>
+        </li>
+      </ol>
+    </dt-article>
+    <dt-appendix>
+      <div
+        class="l-body"
+      />
+    </dt-appendix>
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
 </body>
 `;
 
 exports[`pdfoutput=1 is ignored 1`] = `
 <body>
-  <dt-article>
-    <p>
-      hello world
-    </p>
-  </dt-article>
-  <dt-appendix>
-    <div
-      class="l-body"
-    />
-  </dt-appendix>
   <div
-    id="footnote-hover-boxes-container"
-  />
+    class="engrafo-container"
+  >
+    <dt-article>
+      <p>
+        hello world
+      </p>
+    </dt-article>
+    <dt-appendix>
+      <div
+        class="l-body"
+      />
+    </dt-appendix>
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
 </body>
 `;
 
 exports[`pinforms3 TITLE, AUTHOR, AFF are supported 1`] = `
 <body>
-  <dt-article>
-    <h1
-      class="title"
-    >
-      The Title of the Paper
-    </h1>
-    <dt-byline>
-      <div
-        class="byline"
-      >
-        <div
-          class="authors"
-        >
-          
-        </div>
-      </div>
-    </dt-byline>
-    <div
-      class="authors"
-    >
-      <p>
-        <span>
-          <span
-            class="author"
-          >
-            <span>
-              Author Name
-            </span>
-          </span>
-          <span
-            class="affiliation"
-          >
-            <span>
-              Author Affiliation
-            </span>
-          </span>
-        </span>
-      </p>
-      <p>
-        hello world
-      </p>
-    </div>
-  </dt-article>
-  <dt-appendix>
-    <div
-      class="l-body"
-    />
-  </dt-appendix>
   <div
-    id="footnote-hover-boxes-container"
-  />
+    class="engrafo-container"
+  >
+    <dt-article>
+      <h1
+        class="title"
+      >
+        The Title of the Paper
+      </h1>
+      <dt-byline>
+        <div
+          class="byline"
+        >
+          <div
+            class="authors"
+          >
+            
+          </div>
+        </div>
+      </dt-byline>
+      <div
+        class="authors"
+      >
+        <p>
+          <span>
+            <span
+              class="author"
+            >
+              <span>
+                Author Name
+              </span>
+            </span>
+            <span
+              class="affiliation"
+            >
+              <span>
+                Author Affiliation
+              </span>
+            </span>
+          </span>
+        </p>
+        <p>
+          hello world
+        </p>
+      </div>
+    </dt-article>
+    <dt-appendix>
+      <div
+        class="l-body"
+      />
+    </dt-appendix>
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
 </body>
 `;
 
 exports[`text formatting renders correctly 1`] = `
 <body>
-  <dt-article>
-    <p>
-      This is 
-      <strong>
-        bold
-      </strong>
-      .
-    </p>
-    <p>
-      This is 
-      <em>
-        textit
-      </em>
-      .
-    </p>
-    <p>
-      This is 
-      <em>
-        emph
-      </em>
-      .
-    </p>
-    <p>
-      This is 
-      <a
-        href="https://www.example.com"
-      >
-        a link
-      </a>
-      .
-    </p>
-    <p>
-      This is 
-      <code>
-        fixed width
-      </code>
-      .
-    </p>
-  </dt-article>
-  <dt-appendix>
-    <div
-      class="l-body"
-    />
-  </dt-appendix>
   <div
-    id="footnote-hover-boxes-container"
-  />
+    class="engrafo-container"
+  >
+    <dt-article>
+      <p>
+        This is 
+        <strong>
+          bold
+        </strong>
+        .
+      </p>
+      <p>
+        This is 
+        <em>
+          textit
+        </em>
+        .
+      </p>
+      <p>
+        This is 
+        <em>
+          emph
+        </em>
+        .
+      </p>
+      <p>
+        This is 
+        <a
+          href="https://www.example.com"
+        >
+          a link
+        </a>
+        .
+      </p>
+      <p>
+        This is 
+        <code>
+          fixed width
+        </code>
+        .
+      </p>
+    </dt-article>
+    <dt-appendix>
+      <div
+        class="l-body"
+      />
+    </dt-appendix>
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
 </body>
 `;
 
 exports[`vskip is ignored 1`] = `
 <body>
-  <dt-article>
-    <p>
-      before
-    </p>
-    <p>
-      after
-    </p>
-  </dt-article>
-  <dt-appendix>
-    <div
-      class="l-body"
-    />
-  </dt-appendix>
   <div
-    id="footnote-hover-boxes-container"
-  />
+    class="engrafo-container"
+  >
+    <dt-article>
+      <p>
+        before
+      </p>
+      <p>
+        after
+      </p>
+    </dt-article>
+    <dt-appendix>
+      <div
+        class="l-body"
+      />
+    </dt-appendix>
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
 </body>
 `;

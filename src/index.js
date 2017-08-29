@@ -97,6 +97,7 @@ exports.postprocess = htmlString => {
   distill.components.typeset(dom, data);
   postprocessors.typeset(dom, data);
   distill.components.hoverBox(dom, data);
+  postprocessors.container(dom, data);
 
   return jsdom.serializeDocument(dom);
 };

@@ -2,127 +2,131 @@
 
 exports[`a 3-line inline bibliography renders correctly 1`] = `
 <body>
-  <dt-article>
-    <p>
-      Refer to 
-      <a
-        href="#cite-1"
-        class="engrafo-cite"
-        onclick="event.preventDefault()"
-      >
-        <span
-          data-hover-ref="dt-cite-hover-box-1"
-        >
-          [1]
-        </span>
-      </a>
-      then refer to 
-      <a
-        href="#cite-2"
-        class="engrafo-cite"
-        onclick="event.preventDefault()"
-      >
-        <span
-          data-hover-ref="dt-cite-hover-box-2"
-        >
-          [2]
-        </span>
-      </a>
-      but misspell 
-      <span
-        class="engrafo-cite unresolved"
-      >
-        [?]
-      </span>
-    </p>
-  </dt-article>
-  <dt-appendix>
-    <div
-      class="l-body"
-    >
-      <h3>
-        References
-      </h3>
-      <dt-bibliography>
-        <ol>
-          <li
-            id="cite-1"
-          >
-            <strong>
-              Convolutional networks can learn to generate affinity graphs for image segmentation.
-            </strong>
-            <br />
-            S. C. Turaga, J. F. Murray, V. Jain, F. Roth, M. Helmstaedter, K. Briggman, W. Denk, and H. S. Seung. 
-            <em>
-              Neural Comput.
-            </em>
-            , 22(2):511–538, Feb. 2010.
-          </li>
-          <li
-            id="cite-2"
-          >
-            <strong>
-              Segmentation fusion for connectomics.
-            </strong>
-            <br />
-            A. Vazquez-Reina, M. Gelbart, D. Huang, J. Lichtman, E. Miller, and H. Pfister. In 
-            <em>
-              ICCV
-            </em>
-            , 2011.
-          </li>
-          <li
-            id="cite-3"
-          >
-            <strong>
-              Image segmentation by size-dependent single linkage clustering of a watershed basin graph.
-            </strong>
-            <br />
-            A. Zlateski and H. S. Seung. 
-            <em>
-              CoRR
-            </em>
-            , abs/1505.00249, 2015.
-          </li>
-        </ol>
-      </dt-bibliography>
-    </div>
-  </dt-appendix>
   <div
-    id="footnote-hover-boxes-container"
-  />
-  <div
-    id="cite-hover-boxes-container"
+    class="engrafo-container"
   >
+    <dt-article>
+      <p>
+        Refer to 
+        <a
+          href="#cite-1"
+          class="engrafo-cite"
+          onclick="event.preventDefault()"
+        >
+          <span
+            data-hover-ref="dt-cite-hover-box-1"
+          >
+            [1]
+          </span>
+        </a>
+        then refer to 
+        <a
+          href="#cite-2"
+          class="engrafo-cite"
+          onclick="event.preventDefault()"
+        >
+          <span
+            data-hover-ref="dt-cite-hover-box-2"
+          >
+            [2]
+          </span>
+        </a>
+        but misspell 
+        <span
+          class="engrafo-cite unresolved"
+        >
+          [?]
+        </span>
+      </p>
+    </dt-article>
+    <dt-appendix>
+      <div
+        class="l-body"
+      >
+        <h3>
+          References
+        </h3>
+        <dt-bibliography>
+          <ol>
+            <li
+              id="cite-1"
+            >
+              <strong>
+                Convolutional networks can learn to generate affinity graphs for image segmentation.
+              </strong>
+              <br />
+              S. C. Turaga, J. F. Murray, V. Jain, F. Roth, M. Helmstaedter, K. Briggman, W. Denk, and H. S. Seung. 
+              <em>
+                Neural Comput.
+              </em>
+              , 22(2):511–538, Feb. 2010.
+            </li>
+            <li
+              id="cite-2"
+            >
+              <strong>
+                Segmentation fusion for connectomics.
+              </strong>
+              <br />
+              A. Vazquez-Reina, M. Gelbart, D. Huang, J. Lichtman, E. Miller, and H. Pfister. In 
+              <em>
+                ICCV
+              </em>
+              , 2011.
+            </li>
+            <li
+              id="cite-3"
+            >
+              <strong>
+                Image segmentation by size-dependent single linkage clustering of a watershed basin graph.
+              </strong>
+              <br />
+              A. Zlateski and H. S. Seung. 
+              <em>
+                CoRR
+              </em>
+              , abs/1505.00249, 2015.
+            </li>
+          </ol>
+        </dt-bibliography>
+      </div>
+    </dt-appendix>
     <div
-      style="display:none;"
-      class="dt-hover-box"
-      id="dt-cite-hover-box-1"
-    >
-      <strong>
-        Convolutional networks can learn to generate affinity graphs for image segmentation.
-      </strong>
-      <br />
-      S. C. Turaga, J. F. Murray, V. Jain, F. Roth, M. Helmstaedter, K. Briggman, W. Denk, and H. S. Seung. 
-      <em>
-        Neural Comput.
-      </em>
-      , 22(2):511–538, Feb. 2010.
-    </div>
+      id="footnote-hover-boxes-container"
+    />
     <div
-      style="display:none;"
-      class="dt-hover-box"
-      id="dt-cite-hover-box-2"
+      id="cite-hover-boxes-container"
     >
-      <strong>
-        Segmentation fusion for connectomics.
-      </strong>
-      <br />
-      A. Vazquez-Reina, M. Gelbart, D. Huang, J. Lichtman, E. Miller, and H. Pfister. In 
-      <em>
-        ICCV
-      </em>
-      , 2011.
+      <div
+        style="display:none;"
+        class="dt-hover-box"
+        id="dt-cite-hover-box-1"
+      >
+        <strong>
+          Convolutional networks can learn to generate affinity graphs for image segmentation.
+        </strong>
+        <br />
+        S. C. Turaga, J. F. Murray, V. Jain, F. Roth, M. Helmstaedter, K. Briggman, W. Denk, and H. S. Seung. 
+        <em>
+          Neural Comput.
+        </em>
+        , 22(2):511–538, Feb. 2010.
+      </div>
+      <div
+        style="display:none;"
+        class="dt-hover-box"
+        id="dt-cite-hover-box-2"
+      >
+        <strong>
+          Segmentation fusion for connectomics.
+        </strong>
+        <br />
+        A. Vazquez-Reina, M. Gelbart, D. Huang, J. Lichtman, E. Miller, and H. Pfister. In 
+        <em>
+          ICCV
+        </em>
+        , 2011.
+      </div>
     </div>
   </div>
 </body>
@@ -130,124 +134,128 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
 
 exports[`a basic bibliography renders correctly 1`] = `
 <body>
-  <dt-article>
-    <p>
-      Hello
-      <a
-        href="#cite-1"
-        class="engrafo-cite"
-        onclick="event.preventDefault()"
-      >
-        <span
-          data-hover-ref="dt-cite-hover-box-0"
+  <div
+    class="engrafo-container"
+  >
+    <dt-article>
+      <p>
+        Hello
+        <a
+          href="#cite-1"
+          class="engrafo-cite"
+          onclick="event.preventDefault()"
         >
-          [1]
-        </span>
-      </a>
-      World
-      <dt-fn>
-        <sup>
           <span
-            id="fn-1"
-            data-hover-ref="dt-fn-hover-box-0"
-            style="cursor:pointer"
+            data-hover-ref="dt-cite-hover-box-0"
           >
-            1
+            [1]
           </span>
-        </sup>
-      </dt-fn>
-    </p>
-  </dt-article>
-  <dt-appendix>
-    <div
-      class="l-body"
-    >
-      <h3>
-        Footnotes
-      </h3>
-      <dt-fn-list>
-        <ol>
-          <li>
-            Just checking the bibliography comes after footnotes.
-          </li>
-        </ol>
-      </dt-fn-list>
-      <h3>
-        References
-      </h3>
-      <dt-bibliography>
-        <ol>
-          <li
-            id="cite-1"
-          >
-            <strong>
-              Compositional morphology for word representations and language modelling.
-            </strong>
-            <br />
-            Joe Bloggs and Phil Jones. 2014. In 
-            <em>
-              Proceedings of ICML
-            </em>
-            .
-          </li>
-          <li
-            id="cite-2"
-          >
-            <strong>
-              Morphological word-embeddings.
-            </strong>
-            <br />
-            Ryan Cotterell and Hinrich Sch
-            <span>
-              ü
+        </a>
+        World
+        <dt-fn>
+          <sup>
+            <span
+              id="fn-1"
+              data-hover-ref="dt-fn-hover-box-0"
+              style="cursor:pointer"
+            >
+              1
             </span>
-            tze. 2015. In 
-            <em>
-              Proceedings of HLT-NAACL
-            </em>
-            .
-          </li>
-          <li
-            id="cite-3"
-          >
-            <strong>
-              Just a title, not a source.
-            </strong>
-            <br />
-            Foo and Bar. 2020.
-          </li>
-        </ol>
-      </dt-bibliography>
-    </div>
-  </dt-appendix>
-  <div
-    id="footnote-hover-boxes-container"
-  >
+          </sup>
+        </dt-fn>
+      </p>
+    </dt-article>
+    <dt-appendix>
+      <div
+        class="l-body"
+      >
+        <h3>
+          Footnotes
+        </h3>
+        <dt-fn-list>
+          <ol>
+            <li>
+              Just checking the bibliography comes after footnotes.
+            </li>
+          </ol>
+        </dt-fn-list>
+        <h3>
+          References
+        </h3>
+        <dt-bibliography>
+          <ol>
+            <li
+              id="cite-1"
+            >
+              <strong>
+                Compositional morphology for word representations and language modelling.
+              </strong>
+              <br />
+              Joe Bloggs and Phil Jones. 2014. In 
+              <em>
+                Proceedings of ICML
+              </em>
+              .
+            </li>
+            <li
+              id="cite-2"
+            >
+              <strong>
+                Morphological word-embeddings.
+              </strong>
+              <br />
+              Ryan Cotterell and Hinrich Sch
+              <span>
+                ü
+              </span>
+              tze. 2015. In 
+              <em>
+                Proceedings of HLT-NAACL
+              </em>
+              .
+            </li>
+            <li
+              id="cite-3"
+            >
+              <strong>
+                Just a title, not a source.
+              </strong>
+              <br />
+              Foo and Bar. 2020.
+            </li>
+          </ol>
+        </dt-bibliography>
+      </div>
+    </dt-appendix>
     <div
-      style="display:none;"
-      class="dt-hover-box"
-      id="dt-fn-hover-box-0"
+      id="footnote-hover-boxes-container"
     >
-      Just checking the bibliography comes after footnotes.
+      <div
+        style="display:none;"
+        class="dt-hover-box"
+        id="dt-fn-hover-box-0"
+      >
+        Just checking the bibliography comes after footnotes.
+      </div>
     </div>
-  </div>
-  <div
-    id="cite-hover-boxes-container"
-  >
     <div
-      style="display:none;"
-      class="dt-hover-box"
-      id="dt-cite-hover-box-0"
+      id="cite-hover-boxes-container"
     >
-      <strong>
-        Compositional morphology for word representations and language modelling.
-      </strong>
-      <br />
-      Joe Bloggs and Phil Jones. 2014. In 
-      <em>
-        Proceedings of ICML
-      </em>
-      .
+      <div
+        style="display:none;"
+        class="dt-hover-box"
+        id="dt-cite-hover-box-0"
+      >
+        <strong>
+          Compositional morphology for word representations and language modelling.
+        </strong>
+        <br />
+        Joe Bloggs and Phil Jones. 2014. In 
+        <em>
+          Proceedings of ICML
+        </em>
+        .
+      </div>
     </div>
   </div>
 </body>

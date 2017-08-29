@@ -2,6 +2,7 @@ module.exports = {
   authors: require("./authors"),
   bibliography: require("./bibliography"),
   code: require("./code"),
+  container: require("./container"),
   figures: require("./figures"),
   footnotes: require("./footnotes"),
   header: require("./header"),

@@ -10,6 +10,16 @@ dt-byline code {
   word-break: break-word;
   white-space: normal;
 }
+
+dt-byline .author > span {
+  margin-right: 5px;
+}
+
+@media (min-width: 1080px) {
+  dt-byline .affiliation {
+    display: inline !important;
+  }
+}
 `;
 
 module.exports = function(dom) {

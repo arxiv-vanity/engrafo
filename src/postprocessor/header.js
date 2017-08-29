@@ -31,4 +31,10 @@ module.exports = function(dom, data) {
   // Insert byline after title
   let dtByline = dom.createElement("dt-byline");
   title.parentNode.insertBefore(dtByline, title.nextSibling);
+
+  // Remove date
+  let date = dom.querySelector("dt-article > .date");
+  if (date) {
+    date.parentNode.removeChild(date);
+  }
 };

@@ -53,6 +53,8 @@ def main():
     ]:
         doc['blocks'] = walk(doc['blocks'], action, fmt, meta)
 
+    if 'data' in doc['meta']:
+        del doc['meta']['date']
 
     # Save filtered AST for debugging
     with open('pandoc-ast-filtered.json', 'w') as f:

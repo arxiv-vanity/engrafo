@@ -65,6 +65,9 @@ dt-article h3 {
 dt-article p {
   hyphens: auto;
   -webkit-hyphens: auto;
+
+  /* inline math sometimes is too big */
+  overflow-x: auto;
 }
 
 @media(min-width: 768px) {
@@ -72,6 +75,11 @@ dt-article p {
     hyphens: none;
     -webkit-hyphens: none;
   }
+}
+
+.engrafo-container code {
+  word-break: break-word;
+  white-space: normal;
 }
 `;
 

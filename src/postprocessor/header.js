@@ -14,8 +14,6 @@ module.exports = function(dom, data) {
     return;
   }
 
-  data.title = title.innerHTML;
-
   // Remove <strong> from title
   if (title.children.length && title.children[0].tagName === "STRONG") {
     utils.removeAndFlattenChildren(title.children[0]);
@@ -27,6 +25,14 @@ module.exports = function(dom, data) {
       title.removeChild(child);
     }
   });
+
+  let titleHTML = title.innerHTML;
+
+  // Clean up weird characters
+  titleHTML = titleHTML.replace('\u3000', '')
+
+  title.innerHTML = titleHTML;
+  data.title = titleHTML;
 
   // Insert byline after title
   let dtByline = dom.createElement("dt-byline");

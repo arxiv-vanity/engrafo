@@ -7,6 +7,7 @@ var tmp = require("tmp");
 var url = require("url");
 
 // Do everything to prepare a directory that is going to be rendered
+// TODO(bfirsh): refactor with async.waterfall() or similar
 exports.prepareRenderingDir = (inputPath, outputDir, callback) => {
   setUpOutputDir(outputDir, (err, outputDir) => {
     if (err) return callback(err);

@@ -8,6 +8,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "async": "^2.5.0",
     "distill-template": "git+https://github.com/bfirsh/template.git#engrafo",
     "fs-extra": "^4.0.1",
     "s3": "^4.4.0",

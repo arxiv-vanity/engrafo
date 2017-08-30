@@ -1,3 +1,4 @@
+var async = require("async");
 var childProcess = require("child_process");
 var distill = require("distill-template");
 var fs = require("fs-extra");
@@ -102,31 +103,51 @@ exports.postprocess = htmlString => {
   return jsdom.serializeDocument(dom);
 };
 
+// Do all processing on the file that Pandoc produces
+exports.processHTML = (htmlPath, pandocOnly, callback) => {
+  async.waterfall([
+    (callback) => {
+      fs.readFile(htmlPath, "utf8", callback);
+    },
+    (htmlString, callback) => {
+      if (pandocOnly) {
+        return callback(null, htmlString);
+      }
+      try {
+        htmlString = exports.postprocess(htmlString);
+      } catch(err) {
+        return callback(err);
+      }
+      callback(null, htmlString);
+    },
+    (htmlString, callback) => {
+      fs.writeFile(htmlPath, htmlString, callback);
+    }
+  ], callback);
+};
+
 // Render and postprocess a LaTeX file into outputDir (created if does not
 // exist). Calls callback with an error on failure or a path to an HTML file
 // on success.
 exports.render = ({inputPath, outputDir, pandocOnly}, callback) => {
-  input.prepareRenderingDir(inputPath, outputDir, (err, texPath) => {
-    if (err) return callback(err);
-    console.log("Rendering tex file", texPath);
-    exports.renderPandoc(texPath, pandocOnly, (err, htmlPath) => {
-      if (err) return callback(err, htmlPath);
-      fs.readFile(htmlPath, "utf8", (err, htmlString) => {
-        if (err) return callback(err, htmlPath);
-        if (!pandocOnly) {
-          try {
-            htmlString = exports.postprocess(htmlString);
-          } catch(err) {
-            return callback(err, htmlPath);
-          }
-        }
-        fs.writeFile(htmlPath, htmlString, err => {
-          if (err) return callback(err);
-          input.uploadOutput(texPath, outputDir, (err) => {
-            return callback(err, htmlPath);
-          });
-        });
-      });
-    });
+  var texPath, htmlPath;
+  async.waterfall([
+    (callback) => {
+      input.prepareRenderingDir(inputPath, outputDir, callback);
+    },
+    (_texPath, callback) => {
+      texPath = _texPath;
+      console.log("Rendering tex file", texPath);
+      exports.renderPandoc(texPath, pandocOnly, callback);
+    },
+    (_htmlPath, callback) => {
+      htmlPath = _htmlPath;
+      exports.processHTML(htmlPath, pandocOnly, callback);
+    },
+    (callback) => {
+      input.uploadOutput(texPath, outputDir, callback);
+    }
+  ], (err) => {
+    callback(err, htmlPath);
   });
 };

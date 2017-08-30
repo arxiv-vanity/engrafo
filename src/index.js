@@ -6,6 +6,7 @@ var jsdom = require("jsdom");
 var path = require("path");
 
 var input = require("./input");
+var math = require("./math");
 var postprocessors = require("./postprocessor");
 
 // Render a LaTeX document with Pandoc. Callback is called with error or
@@ -110,15 +111,17 @@ exports.processHTML = (htmlPath, pandocOnly, callback) => {
       fs.readFile(htmlPath, "utf8", callback);
     },
     (htmlString, callback) => {
-      if (pandocOnly) {
-        return callback(null, htmlString);
-      }
+      if (pandocOnly) { return callback(null, htmlString); }
       try {
         htmlString = exports.postprocess(htmlString);
       } catch(err) {
         return callback(err);
       }
       callback(null, htmlString);
+    },
+    (htmlString, callback) => {
+      if (pandocOnly) { return callback(null, htmlString); }
+      math.renderMath(htmlString, callback);
     },
     (htmlString, callback) => {
       fs.writeFile(htmlPath, htmlString, callback);

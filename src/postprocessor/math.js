@@ -34,35 +34,9 @@ module.exports = function(dom) {
     utils.replaceAndKeepChildren(div, figure);
   });
 
-  // Remove the Mathjax script that Pandoc puts in because it is not async and
-  // an old version
+  // Remove the Mathjax script because we're going server-side baby
   let scriptToRemove = dom.querySelector('script[src^="https://cdnjs.cloudflare.com/ajax/libs/mathjax/"]');
   if (scriptToRemove) {
     scriptToRemove.parentNode.removeChild(scriptToRemove);
   }
-
-  let mathjaxConfig = {
-    showProcessingMessages: false,
-    messageStyle: "none",
-    showMathMenu: false,
-    menuSettings: {
-      inTabOrder: false,
-    },
-    displayAlign: "left",
-    tex2jax: {
-      processRefs: false,
-      ignoreClass: "engrafo-container", // Ignore everything
-      processClass: "math" // Then just process math
-    },
-    CommonHTML: {
-      mtextFontInherit: true, // Use body font for text
-    }
-  };
-
-  let configScript = utils.nodeFromString(dom, '<script type="text/javascript"></script>');
-  configScript.appendChild(dom.createTextNode(`window.MathJax = ${JSON.stringify(mathjaxConfig)};`));
-  dom.head.appendChild(configScript);
-
-  dom.head.appendChild(utils.nodeFromString(dom, '<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full" async type="text/javascript"></script>'));
-
 };

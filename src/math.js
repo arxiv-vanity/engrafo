@@ -18,9 +18,16 @@ exports.renderMath = (htmlString, callback) => {
       mtextFontInherit: true // Use body font for text
     },
     TeX: {
-      Macros: {
-        // https://github.com/mathjax/MathJax/issues/1219
-        bm: ["{\\boldsymbol #1}",1],
+      Augment: {
+        Definitions: {macros: {
+          bm: 'myBoldSwitch'
+        }},
+        Parse: {prototype: {
+          // https://github.com/mathjax/MathJax/issues/1219
+          myBoldSwitch: function (name) {
+            this.stack.env.boldsymbol = true;
+          }
+        }}
       }
     }
   };

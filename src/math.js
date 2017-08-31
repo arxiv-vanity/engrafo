@@ -16,6 +16,12 @@ exports.renderMath = (htmlString, callback) => {
     },
     CommonHTML: {
       mtextFontInherit: true // Use body font for text
+    },
+    TeX: {
+      Macros: {
+        // https://github.com/mathjax/MathJax/issues/1219
+        bm: ["{\\boldsymbol #1}",1],
+      }
     }
   };
 

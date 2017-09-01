@@ -40,7 +40,7 @@ let css = `
   font-weight: normal;
 }
 
-.engrafo-metadata > .links {
+.engrafo-metadata .engrafo-metadata-custom {
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -55,7 +55,7 @@ let css = `
     padding-right: 30px;
     margin-right: 15px;
   }
-  .engrafo-metadata > .links {
+  .engrafo-metadata .engrafo-metadata-custom {
     flex: 1;
   }
 }
@@ -84,5 +84,5 @@ module.exports = function(dom) {
   });
 
   metadata.appendChild(authors);
-  metadata.appendChild(utils.nodeFromString(dom, '<div class="links"></div>'));
+  metadata.appendChild(utils.nodeFromString(dom, '<div class="engrafo-metadata-custom"></div>'));
 };

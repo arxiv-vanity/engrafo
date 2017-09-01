@@ -84,6 +84,15 @@ dt-article > blockquote {
   padding-left: 24px;
 }
 
+/* Some block-level styling stuff we get from Pandoc.
+TODO(bfirsh): make these inline elements instead. */
+.engrafo-container .emph {
+  font-style: italic;
+}
+.engrafo-container .textbf {
+  font-weight: bold;
+}
+
 /* Standard article bit alignment. Add more to this definition to add support
 in articles. */
 dt-article > blockquote,

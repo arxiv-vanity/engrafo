@@ -1,5 +1,4 @@
 module.exports = {
-  authors: require("./authors"),
   bibliography: require("./bibliography"),
   code: require("./code"),
   container: require("./container"),
@@ -9,6 +8,7 @@ module.exports = {
   headings: require("./headings"),
   layout: require("./layout"),
   math: require("./math"),
+  metadata: require("./metadata"),
   styles: require("./styles"),
   typeset: require("./typeset")
 };

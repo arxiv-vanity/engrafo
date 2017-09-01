@@ -6,6 +6,19 @@ exports[`\\def multiple simple arguments render correctly 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      <h1>
+        Untitled
+      </h1>
+      <div
+        class="engrafo-metadata"
+      >
+        <div
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
       <p>
         one one two two three three four four five five six six seven seven after
       </p>
@@ -28,6 +41,19 @@ exports[`\\def with control seq suffix renders correctly 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      <h1>
+        Untitled
+      </h1>
+      <div
+        class="engrafo-metadata"
+      >
+        <div
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
       <blockquote>
         <p>
           <span>
@@ -57,6 +83,19 @@ exports[`simple \\def without arguments render correctly 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      <h1>
+        Untitled
+      </h1>
+      <div
+        class="engrafo-metadata"
+      >
+        <div
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
       <p>
         bar
       </p>

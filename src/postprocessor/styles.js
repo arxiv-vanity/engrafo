@@ -37,6 +37,7 @@ dt-article h3 {
 
 dt-article h1 {
   font-size: 32px;
+  margin-bottom: 24px;
 }
 
 dt-article h2 {
@@ -85,7 +86,8 @@ dt-article > blockquote {
 
 /* Standard article bit alignment. Add more to this definition to add support
 in articles. */
-dt-article > blockquote {
+dt-article > blockquote,
+dt-article > .engrafo-metadata {
   width: auto;
   margin-left: 24px;
   margin-right: 24px;
@@ -93,14 +95,16 @@ dt-article > blockquote {
 }
 
 @media(min-width: 768px) {
-  dt-article > blockquote {
+  dt-article > blockquote,
+  dt-article > .engrafo-metadata {
     margin-left: 72px;
     margin-right: 72px;
   }
 }
 
 @media(min-width: 1080px) {
-  dt-article > blockquote {
+  dt-article > blockquote,
+  dt-article > .engrafo-metadata {
     margin-left: calc(50% - 984px / 2);
     width: 648px;
   }

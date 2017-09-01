@@ -11,57 +11,58 @@ exports[`ICML commands are supported 1`] = `
       >
         Paper Title
       </h1>
-      <dt-byline>
+      <div
+        class="engrafo-metadata"
+      >
         <div
-          class="byline"
+          class="authors"
         >
           <div
-            class="authors"
+            class="author"
           >
-            <div
+            <span
               class="author"
+              data-affiliation-abbrev="one"
             >
-              <span
-                class="author"
-                data-affiliation-abbrev="one"
-              >
-                Author One
-                <sup>
-                  1
-                </sup>
-              </span>
-              <span
-                class="author"
-                data-affiliation-abbrev="one"
-              >
-                Second Author
-                <sup>
-                  1
-                </sup>
-                <sup>
-                  2
-                </sup>
-              </span>
-              <span
-                class="affiliation"
-              >
-                <sup>
-                  1
-                </sup>
-                First Affiliation
-              </span>
-              <span
-                class="affiliation"
-              >
-                <sup>
-                  2
-                </sup>
-                Affiliation Two
-              </span>
-            </div>
+              Author One
+              <sup>
+                1
+              </sup>
+            </span>
+            <span
+              class="author"
+              data-affiliation-abbrev="one"
+            >
+              Second Author
+              <sup>
+                1
+              </sup>
+              <sup>
+                2
+              </sup>
+            </span>
+            <span
+              class="affiliation"
+            >
+              <sup>
+                1
+              </sup>
+              First Affiliation
+            </span>
+            <span
+              class="affiliation"
+            >
+              <sup>
+                2
+              </sup>
+              Affiliation Two
+            </span>
           </div>
         </div>
-      </dt-byline>
+        <div
+          class="links"
+        />
+      </div>
     </dt-article>
     <dt-appendix>
       <div
@@ -86,105 +87,107 @@ exports[`institute command is supported 1`] = `
       >
         A Title
       </h1>
-      <dt-byline>
+      <div
+        class="engrafo-metadata"
+      >
         <div
-          class="byline"
+          class="authors"
         >
           <div
-            class="authors"
+            class="author"
           >
-            <div
-              class="author"
+            <span
+              data-affiliation-abbrev="1"
             >
-              <span
-                data-affiliation-abbrev="1"
+              Ekaterina Vylomova
+              <sup>
+                1
+              </sup>
+            </span>
+            <span
+              data-affiliation-abbrev="1"
+            >
+              Andrei Shcherbakov
+              <sup>
+                1
+              </sup>
+            </span>
+            <span
+              data-affiliation-abbrev="2"
+            >
+              Yuriy Philippovich
+              <sup>
+                2
+              </sup>
+            </span>
+            <span
+              data-affiliation-abbrev="3"
+            >
+              Galina Cherkasova
+              <sup>
+                3
+              </sup>
+            </span>
+            <span
+              class="affiliation"
+            >
+              <sup>
+                1
+              </sup>
+              The University of Melbourne, Melbourne, Australia,
+            </span>
+            <span>
+              <a
+                href="evylomova@gmail.com"
+                class="uri"
               >
-                Ekaterina Vylomova
-                <sup>
-                  1
-                </sup>
-              </span>
-              <span
-                data-affiliation-abbrev="1"
+                evylomova@gmail.com
+              </a>
+              & 
+              <a
+                href="ultrasparc@yandex.ru"
+                class="uri"
               >
-                Andrei Shcherbakov
-                <sup>
-                  1
-                </sup>
-              </span>
-              <span
-                data-affiliation-abbrev="2"
+                ultrasparc@yandex.ru
+              </a>
+              , 
+            </span>
+            <span
+              class="affiliation"
+            >
+              <sup>
+                2
+              </sup>
+              Moscow Polytech, Moscow, Russia,
+              <br />
+              <a
+                href="Y_philippovich@mail.ru"
+                class="uri"
               >
-                Yuriy Philippovich
-                <sup>
-                  2
-                </sup>
-              </span>
-              <span
-                data-affiliation-abbrev="3"
+                Y_philippovich@mail.ru
+              </a>
+            </span>
+            <span
+              class="affiliation"
+            >
+              <sup>
+                3
+              </sup>
+              Institute of the Science of Language, Moscow, Russia
+              <br />
+              <a
+                href="gacherk@mail.ru"
+                class="uri"
               >
-                Galina Cherkasova
-                <sup>
-                  3
-                </sup>
-              </span>
-              <span
-                class="affiliation"
-              >
-                <sup>
-                  1
-                </sup>
-                The University of Melbourne, Melbourne, Australia,
-                <br />
-                <a
-                  href="evylomova@gmail.com"
-                  class="uri"
-                >
-                  evylomova@gmail.com
-                </a>
-                & 
-                <a
-                  href="ultrasparc@yandex.ru"
-                  class="uri"
-                >
-                  ultrasparc@yandex.ru
-                </a>
-                , 
-              </span>
-              <span
-                class="affiliation"
-              >
-                <sup>
-                  2
-                </sup>
-                Moscow Polytech, Moscow, Russia,
-                <br />
-                <a
-                  href="Y_philippovich@mail.ru"
-                  class="uri"
-                >
-                  Y_philippovich@mail.ru
-                </a>
-              </span>
-              <span
-                class="affiliation"
-              >
-                <sup>
-                  3
-                </sup>
-                Institute of the Science of Language, Moscow, Russia
-                <br />
-                <a
-                  href="gacherk@mail.ru"
-                  class="uri"
-                >
-                  gacherk@mail.ru
-                </a>
-              </span>
-            </div>
+                gacherk@mail.ru
+              </a>
+            </span>
           </div>
         </div>
-      </dt-byline>
+        <div
+          class="links"
+        />
+      </div>
     </dt-article>
     <dt-appendix>
       <div
@@ -204,6 +207,19 @@ exports[`links get wrapped in anchors 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      <h1>
+        Untitled
+      </h1>
+      <div
+        class="engrafo-metadata"
+      >
+        <div
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
       <p>
         http link: 
         <a
@@ -272,6 +288,19 @@ exports[`lists render correctly 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      <h1>
+        Untitled
+      </h1>
+      <div
+        class="engrafo-metadata"
+      >
+        <div
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
       <ul>
         <li>
           <p>
@@ -377,6 +406,19 @@ exports[`pdfoutput=1 is ignored 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      <h1>
+        Untitled
+      </h1>
+      <div
+        class="engrafo-metadata"
+      >
+        <div
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
       <p>
         hello world
       </p>
@@ -404,17 +446,16 @@ exports[`pinforms3 TITLE, AUTHOR, AFF are supported 1`] = `
       >
         The Title of the Paper
       </h1>
-      <dt-byline>
+      <div
+        class="engrafo-metadata"
+      >
         <div
-          class="byline"
-        >
-          <div
-            class="authors"
-          >
-            
-          </div>
-        </div>
-      </dt-byline>
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
       <div
         class="authors"
       >
@@ -459,6 +500,19 @@ exports[`text formatting renders correctly 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      <h1>
+        Untitled
+      </h1>
+      <div
+        class="engrafo-metadata"
+      >
+        <div
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
       <p>
         This is 
         <strong>
@@ -515,6 +569,19 @@ exports[`vskip is ignored 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      <h1>
+        Untitled
+      </h1>
+      <div
+        class="engrafo-metadata"
+      >
+        <div
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
       <p>
         before
       </p>

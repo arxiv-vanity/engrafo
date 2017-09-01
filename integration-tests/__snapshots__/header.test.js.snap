@@ -11,17 +11,16 @@ exports[`bold is stripped from header 1`] = `
       >
         Why would someone do this
       </h1>
-      <dt-byline>
+      <div
+        class="engrafo-metadata"
+      >
         <div
-          class="byline"
-        >
-          <div
-            class="authors"
-          >
-            
-          </div>
-        </div>
-      </dt-byline>
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
     </dt-article>
     <dt-appendix>
       <div

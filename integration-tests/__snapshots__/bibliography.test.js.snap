@@ -6,6 +6,19 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      <h1>
+        Untitled
+      </h1>
+      <div
+        class="engrafo-metadata"
+      >
+        <div
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
       <p>
         Refer to 
         <a
@@ -138,6 +151,19 @@ exports[`a basic bibliography renders correctly 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      <h1>
+        Untitled
+      </h1>
+      <div
+        class="engrafo-metadata"
+      >
+        <div
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
       <p>
         Hello
         <a

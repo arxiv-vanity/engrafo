@@ -6,6 +6,19 @@ exports[`images in figures render correctly 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      <h1>
+        Untitled
+      </h1>
+      <div
+        class="engrafo-metadata"
+      >
+        <div
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
       <figure
         id="figure-1"
       >

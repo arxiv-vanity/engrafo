@@ -11,30 +11,31 @@ exports[`authors render correctly 1`] = `
       >
         Hello
       </h1>
-      <dt-byline>
+      <div
+        class="engrafo-metadata"
+      >
         <div
-          class="byline"
+          class="authors"
         >
           <div
-            class="authors"
+            class="author"
           >
-            <div
-              class="author"
-            >
-              <span>
-                Joe Bloggs
-              </span>
-            </div>
-            <div
-              class="author"
-            >
-              <span>
-                Jane Smith
-              </span>
-            </div>
+            <span>
+              Joe Bloggs
+            </span>
+          </div>
+          <div
+            class="author"
+          >
+            <span>
+              Jane Smith
+            </span>
           </div>
         </div>
-      </dt-byline>
+        <div
+          class="links"
+        />
+      </div>
     </dt-article>
     <dt-appendix>
       <div
@@ -59,17 +60,16 @@ exports[`dates are not rendered 1`] = `
       >
         Hello
       </h1>
-      <dt-byline>
+      <div
+        class="engrafo-metadata"
+      >
         <div
-          class="byline"
-        >
-          <div
-            class="authors"
-          >
-            
-          </div>
-        </div>
-      </dt-byline>
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
     </dt-article>
     <dt-appendix>
       <div
@@ -94,34 +94,35 @@ exports[`footnotes in author render correctly 1`] = `
       >
         Hello
       </h1>
-      <dt-byline>
+      <div
+        class="engrafo-metadata"
+      >
         <div
-          class="byline"
+          class="authors"
         >
           <div
-            class="authors"
+            class="author"
           >
-            <div
-              class="author"
-            >
-              <span>
-                Joe Bloggs
-                <dt-fn>
-                  <sup>
-                    <span
-                      id="fn-1"
-                      data-hover-ref="dt-fn-hover-box-0"
-                      style="cursor:pointer"
-                    >
-                      1
-                    </span>
-                  </sup>
-                </dt-fn>
-              </span>
-            </div>
+            <span>
+              Joe Bloggs
+              <dt-fn>
+                <sup>
+                  <span
+                    id="fn-1"
+                    data-hover-ref="dt-fn-hover-box-0"
+                    style="cursor:pointer"
+                  >
+                    1
+                  </span>
+                </sup>
+              </dt-fn>
+            </span>
           </div>
         </div>
-      </dt-byline>
+        <div
+          class="links"
+        />
+      </div>
     </dt-article>
     <dt-appendix>
       <div
@@ -160,6 +161,19 @@ exports[`footnotes render correctly 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      <h1>
+        Untitled
+      </h1>
+      <div
+        class="engrafo-metadata"
+      >
+        <div
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
       <p>
         This is some text.
         <dt-fn>
@@ -248,6 +262,19 @@ exports[`paragraphs and line breaks render correctly 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      <h1>
+        Untitled
+      </h1>
+      <div
+        class="engrafo-metadata"
+      >
+        <div
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
       <p>
         This is the first paragraph.
       </p>
@@ -286,17 +313,16 @@ exports[`titles and headings render correctly 1`] = `
       >
         Headings Test
       </h1>
-      <dt-byline>
+      <div
+        class="engrafo-metadata"
+      >
         <div
-          class="byline"
-        >
-          <div
-            class="authors"
-          >
-            
-          </div>
-        </div>
-      </dt-byline>
+          class="authors"
+        />
+        <div
+          class="links"
+        />
+      </div>
       <h2
         id="section-1"
       >

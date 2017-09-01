@@ -9,9 +9,11 @@ module.exports = function(dom, data) {
 
   let title = dom.querySelector("h1");
 
-  // No title, bail out because there isn't much we can do here.
+  // Create title if one doesn't exist
   if (!title) {
-    return;
+    let dtArticle = dom.querySelector("dt-article");
+    title = utils.nodeFromString(dom, "<h1>Untitled</h1>");
+    dtArticle.insertBefore(title, dtArticle.firstChild);
   }
 
   // Remove <strong> from title
@@ -33,10 +35,6 @@ module.exports = function(dom, data) {
 
   title.innerHTML = titleHTML;
   data.title = titleHTML;
-
-  // Insert byline after title
-  let dtByline = dom.createElement("dt-byline");
-  title.parentNode.insertBefore(dtByline, title.nextSibling);
 
   // Remove date
   let date = dom.querySelector("dt-article > .date");

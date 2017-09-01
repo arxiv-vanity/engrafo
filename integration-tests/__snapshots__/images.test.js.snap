@@ -16,7 +16,7 @@ exports[`images in figures render correctly 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <figure

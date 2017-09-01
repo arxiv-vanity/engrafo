@@ -60,7 +60,7 @@ exports[`ICML commands are supported 1`] = `
           </div>
         </div>
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
     </dt-article>
@@ -185,7 +185,7 @@ exports[`institute command is supported 1`] = `
           </div>
         </div>
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
     </dt-article>
@@ -217,7 +217,7 @@ exports[`links get wrapped in anchors 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <p>
@@ -298,7 +298,7 @@ exports[`lists render correctly 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <ul>
@@ -416,7 +416,7 @@ exports[`pdfoutput=1 is ignored 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <p>
@@ -453,7 +453,7 @@ exports[`pinforms3 TITLE, AUTHOR, AFF are supported 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <div
@@ -510,7 +510,7 @@ exports[`text formatting renders correctly 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <p>
@@ -579,7 +579,7 @@ exports[`vskip is ignored 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <p>

@@ -18,7 +18,7 @@ exports[`bold is stripped from header 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
     </dt-article>

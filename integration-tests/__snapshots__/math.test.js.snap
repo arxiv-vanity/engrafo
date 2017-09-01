@@ -16,7 +16,7 @@ exports[`block math renders correctly 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <p />
@@ -240,7 +240,7 @@ exports[`inline math renders correctly 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <p>

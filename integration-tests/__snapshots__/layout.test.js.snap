@@ -33,7 +33,7 @@ exports[`authors render correctly 1`] = `
           </div>
         </div>
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
     </dt-article>
@@ -67,7 +67,7 @@ exports[`dates are not rendered 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
     </dt-article>
@@ -120,7 +120,7 @@ exports[`footnotes in author render correctly 1`] = `
           </div>
         </div>
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
     </dt-article>
@@ -171,7 +171,7 @@ exports[`footnotes render correctly 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <p>
@@ -272,7 +272,7 @@ exports[`paragraphs and line breaks render correctly 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <p>
@@ -320,7 +320,7 @@ exports[`titles and headings render correctly 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <h2

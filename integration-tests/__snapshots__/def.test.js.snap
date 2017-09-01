@@ -16,7 +16,7 @@ exports[`\\def multiple simple arguments render correctly 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <p>
@@ -51,7 +51,7 @@ exports[`\\def with control seq suffix renders correctly 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <blockquote>
@@ -93,7 +93,7 @@ exports[`simple \\def without arguments render correctly 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <p>

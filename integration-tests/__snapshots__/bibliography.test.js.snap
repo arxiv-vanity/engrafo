@@ -16,7 +16,7 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <p>
@@ -161,7 +161,7 @@ exports[`a basic bibliography renders correctly 1`] = `
           class="authors"
         />
         <div
-          class="links"
+          class="engrafo-metadata-custom"
         />
       </div>
       <p>

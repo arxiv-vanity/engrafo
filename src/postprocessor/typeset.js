@@ -1,8 +1,9 @@
 module.exports = function(dom) {
-  let headingEls = [].slice.call(dom.querySelectorAll('dt-article h1, dt-article h2, dt-article h3, dt-article h4'));
-headingEls.forEach(headingEl => {
-  preventWidows(dom, headingEl);
-});
+  // DISABLED: https://github.com/bfirsh/engrafo/issues/112
+  // let headingEls = [].slice.call(dom.querySelectorAll('dt-article h1, dt-article h2, dt-article h3, dt-article h4'));
+  // headingEls.forEach(headingEl => {
+  //   preventWidows(dom, headingEl);
+  // });
 };
 
 function preventWidows(dom, el) {

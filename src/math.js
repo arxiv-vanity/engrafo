@@ -18,6 +18,13 @@ exports.renderMath = (htmlString, callback) => {
       mtextFontInherit: true // Use body font for text
     },
     TeX: {
+      Macros: {
+        // This is used to make macros work in both normal and math mode, so
+        // just ignore
+        ensuremath: ['#1', 1],
+        // https://tex.stackexchange.com/questions/159289/more-basic-versions-of-prescript
+        prescript: ['{}^{#1}_{#2} #3', 3],
+      },
       Augment: {
         Definitions: {macros: {
           bm: 'myBoldSwitch'

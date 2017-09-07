@@ -311,7 +311,7 @@ exports[`titles and headings render correctly 1`] = `
       <h1
         class="title"
       >
-        Headings Test
+        Headings Test
       </h1>
       <div
         class="engrafo-metadata"
@@ -335,7 +335,7 @@ exports[`titles and headings render correctly 1`] = `
             1
           </a>
         </span>
-        Section Title
+        Section Title
       </h2>
       <h3
         id="section-1.1"
@@ -349,12 +349,12 @@ exports[`titles and headings render correctly 1`] = `
             1.1
           </a>
         </span>
-        Subsection Title
+        Subsection Title
       </h3>
       <h4
         id="subsubsection-title"
       >
-        Subsubsection Title
+        Subsubsection Title
       </h4>
       <p>
         <strong
@@ -376,13 +376,13 @@ exports[`titles and headings render correctly 1`] = `
             2
           </a>
         </span>
-        Another section
+        Another section
       </h2>
       <h2
         id="section-3"
         class="unnumbered"
       >
-        Unnumbered section
+        Unnumbered section
       </h2>
       <h2
         id="section-4"
@@ -396,7 +396,7 @@ exports[`titles and headings render correctly 1`] = `
             4
           </a>
         </span>
-        Another section
+        Another section
       </h2>
       <p>
         A reference to 

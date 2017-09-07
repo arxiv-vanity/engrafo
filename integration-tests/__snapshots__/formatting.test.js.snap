@@ -9,7 +9,7 @@ exports[`ICML commands are supported 1`] = `
       <h1
         class="title"
       >
-        Paper Title
+        Paper Title
       </h1>
       <div
         class="engrafo-metadata"
@@ -85,7 +85,7 @@ exports[`institute command is supported 1`] = `
       <h1
         class="title"
       >
-        A Title
+        A Title
       </h1>
       <div
         class="engrafo-metadata"
@@ -361,7 +361,7 @@ exports[`lists render correctly 1`] = `
             1
           </a>
         </span>
-        A nested ordered list
+        A nested ordered list
       </h2>
       <ol>
         <li>
@@ -444,7 +444,7 @@ exports[`pinforms3 TITLE, AUTHOR, AFF are supported 1`] = `
       <h1
         class="title"
       >
-        The Title of the Paper
+        The Title of the Paper
       </h1>
       <div
         class="engrafo-metadata"

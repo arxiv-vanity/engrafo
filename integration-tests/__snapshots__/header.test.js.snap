@@ -9,7 +9,7 @@ exports[`bold is stripped from header 1`] = `
       <h1
         class="title"
       >
-        Why would someone do this
+        Why would someone do this
       </h1>
       <div
         class="engrafo-metadata"

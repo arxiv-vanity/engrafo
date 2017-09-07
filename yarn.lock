@@ -419,6 +419,10 @@ chalk@^1.1.0, chalk@^1.1.3:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
+chownr@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.0.1.tgz#e2a75042a9551908bebd25b8523d5f9769d79181"
+
 ci-info@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.0.0.tgz#dc5285f2b4e251821683681c381c3388f46ec534"
@@ -2371,10 +2375,11 @@ symbol-tree@^3.2.1:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.2.tgz#ae27db38f660a7ae2e1c3b7d1bc290819b8519e6"
 
-tar@^3.1.11:
-  version "3.1.11"
-  resolved "https://registry.yarnpkg.com/tar/-/tar-3.1.11.tgz#5e2506344f17d0bed442c6ee9c2d226d3c905804"
+tar@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-4.0.1.tgz#3f5b2e5289db30c2abe4c960f43d0d9fff96aaf0"
   dependencies:
+    chownr "^1.0.1"
     minipass "^2.0.2"
     minizlib "^1.0.3"
     mkdirp "^0.5.0"

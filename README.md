@@ -11,7 +11,7 @@ Engrafo stands on a lot of other shoulders because parsing LaTeX is really hard.
 * Engrafo calls Pandoc to do a basic conversion of LaTeX to HTML, using [our own fork of Pandoc](https://github.com/andreasjansson/pandoc).
 * During the Pandoc conversion, a Pandoc filter written in Python (in `pandocfilter/`) does things like converting `tikzpicture` to SVG, inserting labels, inserting hyperlinks, etc.
 * After the Pandoc conversion, a few things from [Distill's template](https://github.com/distillpub/template) are run on the output to style it, create footnotes, create hover boxes, etc.
-* Intermingled with the Distill processing is some of Engrafo runs its own post-processing. Pandoc can only output a particular subset of HTML from its AST, so the post-processor improves various things. It also prepares it for Distill's processing and adds styling.
+* Intermingled with the Distill processing is some of Engrafo's own post-processing. Pandoc can only output a particular subset of HTML from its AST, so the post-processor improves various things. It also prepares it for Distill's processing and adds styling.
 
 The line between the Python Pandoc filter and the Node.js post-processing is pretty fuzzy at the moment. It is intended that we do as much as possible in Pandoc, then use the Node post-processor to rejig anything that Pandoc doesn't do as we like.
 

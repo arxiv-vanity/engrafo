@@ -9,6 +9,11 @@ let css = `
   font: 400 12px/1.55em -apple-system, BlinkMacSystemFont, "Roboto", Helvetica, sans-serif;
 }
 
+.engrafo-metadata p {
+  font: 400 12px/1.55em -apple-system, BlinkMacSystemFont, "Roboto", Helvetica, sans-serif;
+  margin-bottom: 12px;
+}
+
 .engrafo-metadata code {
   background: none;
   border: 0;
@@ -85,4 +90,14 @@ module.exports = function(dom) {
 
   metadata.appendChild(authors);
   metadata.appendChild(utils.nodeFromString(dom, '<div class="engrafo-metadata-custom"></div>'));
+
+  // HACK: If there is a footnote directly after the authors, put it after the authors.
+  // This is normally when a footnote without a mark is used for affiliation.
+  let p = metadata.nextElementSibling;
+  if (p && p.tagName == 'P' && p.children.length == 1 && p.children[0].className == 'engrafo-footnote') {
+    // Remove footnote
+    utils.removeAndFlattenChildren(p.childNodes[0]);
+    // Put after authors
+    authors.appendChild(p);
+  }
 };

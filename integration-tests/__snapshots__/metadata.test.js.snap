@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`footnotes after metadata are inlined inside metadata 1`] = `
+<body>
+  <div
+    class="engrafo-container"
+  >
+    <dt-article>
+      <h1
+        class="title"
+      >
+        Hello
+      </h1>
+      <div
+        class="engrafo-metadata"
+      >
+        <div
+          class="authors"
+        >
+          <div
+            class="author"
+          >
+            <span>
+              Joe Bloggs
+            </span>
+          </div>
+          <div
+            class="author"
+          >
+            <span>
+              Jane Smith
+            </span>
+          </div>
+          <p>
+            Some University
+          </p>
+        </div>
+        <div
+          class="engrafo-metadata-custom"
+        />
+      </div>
+    </dt-article>
+    <dt-appendix>
+      <div
+        class="l-body"
+      />
+    </dt-appendix>
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
+</body>
+`;

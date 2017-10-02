@@ -15,6 +15,10 @@ var css = `
     overflow-x: auto;
   }
 
+  dt-article figure img {
+    margin-bottom: 15px;
+  }
+
   @media (min-width: 1080px) {
     dt-article figure {
       overflow: visible;

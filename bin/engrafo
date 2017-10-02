@@ -18,7 +18,7 @@ program
   )
   .parse(process.argv);
 
-if (!process.argv.slice(2).length) {
+if (program.args.length != 1) {
   program.outputHelp();
   process.exit(1);
 }

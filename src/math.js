@@ -24,6 +24,8 @@ exports.renderMath = (htmlString, callback) => {
         ensuremath: ['#1', 1],
         // https://tex.stackexchange.com/questions/159289/more-basic-versions-of-prescript
         prescript: ['{}^{#1}_{#2} #3', 3],
+        // https://groups.google.com/forum/#!topic/mathjax-users/Z0YJVtiQHCY
+        lefteqn: ["\\rlap{\\displaystyle{#1}}",1],
       },
       Augment: {
         Definitions: {macros: {

@@ -1,7 +1,8 @@
 var async = require("async");
 var fs = require("fs-extra");
 var path = require("path");
-var s3 = require("s3");
+var uploader = require("s3-recursive-uploader");
+var AWS = require('aws-sdk');
 var tar = require("tar");
 var tmp = require("tmp");
 var url = require("url");
@@ -39,38 +40,27 @@ exports.prepareRenderingDir = (inputPath, outputDir, callback) => {
   });
 };
 
-var createS3Client = function() {
-  return s3.createClient({
-    s3Options: {
-      accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-      region: process.env.AWS_S3_REGION_NAME,
-    }
-  });
-};
-
 // If input dir is on S3, fetch it first
 var fetchInput = (texPath, callback) => {
   if (!texPath.startsWith("s3://")) {
     return callback(null, texPath);
   }
-  var client = createS3Client();
   tmp.dir((err, tmpDir) => {
     if (err) return callback(err);
     var s3url = url.parse(texPath);
     var localFile = path.join(tmpDir, path.basename(s3url.path));
     var params = {
-      localFile: localFile,
-      s3Params: {
-        Bucket: s3url.host,
-        Key: s3url.path.slice(1),
-      }
+      Bucket: s3url.host,
+      Key: s3url.path.slice(1),
     };
-    var downloader = client.downloadFile(params);
-    downloader.on("error", callback);
-    downloader.on("end", () => {
+    var s3 = new AWS.S3();
+    var readStream = s3.getObject(params).createReadStream();
+    readStream.on("error", callback);
+    readStream.on("end", () => {
       callback(null, localFile);
     });
+    var file = fs.createWriteStream(localFile);
+    readStream.pipe(file);
   });
 };
 
@@ -80,20 +70,22 @@ exports.uploadOutput = (renderedTexPath, outputDir, callback) => {
     return callback();
   }
   var renderedPath = path.dirname(renderedTexPath);
-  var client = createS3Client();
-  var s3url = url.parse(outputDir);
-  var params = {
-    localDir: renderedPath,
-    s3Params: {
-      Bucket: s3url.host,
-      Prefix: s3url.path.slice(1),
-    },
-  };
-  var uploader = client.uploadDir(params);
-  uploader.on("error", callback);
-  uploader.on("end", () => {
-    callback();
-  });
+
+  // Format outputDir into what s3-recursive-uploader expects
+  outputDir = outputDir.replace('s3://', '');
+  if (outputDir.slice('-1') != '/') {
+    outputDir += '/';
+  }
+  uploader({
+    source: renderedPath,
+    destination: outputDir,
+    ignoreHidden: false
+  })
+    .then((stats) => {
+      console.log(`Uploaded ${stats.count} files to s3://${outputDir}`);
+      callback();
+    })
+    .catch(callback);
 };
 
 // Set up a temporary directory if the output directory is on S3

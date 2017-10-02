@@ -26,6 +26,8 @@ exports.renderMath = (htmlString, callback) => {
         prescript: ['{}^{#1}_{#2} #3', 3],
         // https://groups.google.com/forum/#!topic/mathjax-users/Z0YJVtiQHCY
         lefteqn: ["\\rlap{\\displaystyle{#1}}",1],
+        // https://groups.google.com/forum/#!msg/mathjax-users/JC7L3lX54s4/poMq9iniAQAJ
+        textnormal: ['\\textrm{#1}', 1],
       },
       Augment: {
         Definitions: {macros: {

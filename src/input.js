@@ -49,6 +49,7 @@ var fetchInput = (texPath, callback) => {
     if (err) return callback(err);
     var s3url = url.parse(texPath);
     var localFile = path.join(tmpDir, path.basename(s3url.path));
+    console.log(`Downloading ${texPath} to ${localFile}...`);
     var params = {
       Bucket: s3url.host,
       Key: s3url.path.slice(1),

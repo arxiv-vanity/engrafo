@@ -28,6 +28,11 @@ exports.renderMath = (htmlString, callback) => {
         lefteqn: ["\\rlap{\\displaystyle{#1}}",1],
         // https://groups.google.com/forum/#!msg/mathjax-users/JC7L3lX54s4/poMq9iniAQAJ
         textnormal: ['\\textrm{#1}', 1],
+        // https://gist.github.com/uchida/4001035
+        bra: ["\\langle{#1}|", 1],
+        ket: ["|{#1}\\rangle", 1],
+        braket: ["\\langle{#1}\\rangle}", 1],
+        ketbra: ["\\ket{#1}\\bra{#2}", 2],
       },
       Augment: {
         Definitions: {macros: {

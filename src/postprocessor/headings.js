@@ -67,6 +67,7 @@ module.exports = function(dom) {
     span.appendChild(a);
   });
 
+  // Put <h5> and <h6> in front of next paragraph, if it exists.
   var paragraphHeadings = Array.from(dom.querySelectorAll("h5"));
   paragraphHeadings = paragraphHeadings.concat(dom.querySelectorAll("h6"));
   paragraphHeadings.forEach(heading => {

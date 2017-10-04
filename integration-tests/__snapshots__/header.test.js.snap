@@ -6,10 +6,13 @@ exports[`bold is stripped from header 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      
+
+
       <h1
         class="title"
       >
-        Why would someone do this
+         Why would someone do this
       </h1>
       <div
         class="engrafo-metadata"
@@ -21,11 +24,24 @@ exports[`bold is stripped from header 1`] = `
           class="engrafo-metadata-custom"
         />
       </div>
+      
+
+
+
+
+
     </dt-article>
     <dt-appendix>
+      
+
+      
+
+
       <div
         class="l-body"
       />
+      
+
     </dt-appendix>
     <div
       id="footnote-hover-boxes-container"

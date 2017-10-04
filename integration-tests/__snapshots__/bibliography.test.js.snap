@@ -19,11 +19,13 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
           class="engrafo-metadata-custom"
         />
       </div>
+      
+
       <p>
         Refer to 
         <a
-          href="#cite-1"
           class="engrafo-cite"
+          href="#cite-1"
           onclick="event.preventDefault()"
         >
           <span
@@ -32,10 +34,10 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
             [1]
           </span>
         </a>
-        then refer to 
+         then refer to 
         <a
-          href="#cite-2"
           class="engrafo-cite"
+          href="#cite-2"
           onclick="event.preventDefault()"
         >
           <span
@@ -44,15 +46,25 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
             [2]
           </span>
         </a>
-        but misspell 
+         but misspell 
         <span
           class="engrafo-cite unresolved"
         >
           [?]
         </span>
       </p>
+      
+
+
+
+
     </dt-article>
     <dt-appendix>
+      
+
+      
+
+
       <div
         class="l-body"
       >
@@ -103,6 +115,8 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
           </ol>
         </dt-bibliography>
       </div>
+      
+
     </dt-appendix>
     <div
       id="footnote-hover-boxes-container"
@@ -111,9 +125,9 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
       id="cite-hover-boxes-container"
     >
       <div
-        style="display:none;"
         class="dt-hover-box"
         id="dt-cite-hover-box-1"
+        style="display:none;"
       >
         <strong>
           Convolutional networks can learn to generate affinity graphs for image segmentation.
@@ -126,9 +140,9 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
         , 22(2):511–538, Feb. 2010.
       </div>
       <div
-        style="display:none;"
         class="dt-hover-box"
         id="dt-cite-hover-box-2"
+        style="display:none;"
       >
         <strong>
           Segmentation fusion for connectomics.
@@ -164,11 +178,13 @@ exports[`a basic bibliography renders correctly 1`] = `
           class="engrafo-metadata-custom"
         />
       </div>
+      
+
       <p>
         Hello
         <a
-          href="#cite-1"
           class="engrafo-cite"
+          href="#cite-1"
           onclick="event.preventDefault()"
         >
           <span
@@ -177,12 +193,12 @@ exports[`a basic bibliography renders correctly 1`] = `
             [1]
           </span>
         </a>
-        World
+         World
         <dt-fn>
           <sup>
             <span
-              id="fn-1"
               data-hover-ref="dt-fn-hover-box-0"
+              id="fn-1"
               style="cursor:pointer"
             >
               1
@@ -190,8 +206,18 @@ exports[`a basic bibliography renders correctly 1`] = `
           </sup>
         </dt-fn>
       </p>
+      
+
+
+
+
     </dt-article>
     <dt-appendix>
+      
+
+      
+
+
       <div
         class="l-body"
       >
@@ -252,14 +278,16 @@ exports[`a basic bibliography renders correctly 1`] = `
           </ol>
         </dt-bibliography>
       </div>
+      
+
     </dt-appendix>
     <div
       id="footnote-hover-boxes-container"
     >
       <div
-        style="display:none;"
         class="dt-hover-box"
         id="dt-fn-hover-box-0"
+        style="display:none;"
       >
         Just checking the bibliography comes after footnotes.
       </div>
@@ -268,9 +296,9 @@ exports[`a basic bibliography renders correctly 1`] = `
       id="cite-hover-boxes-container"
     >
       <div
-        style="display:none;"
         class="dt-hover-box"
         id="dt-cite-hover-box-0"
+        style="display:none;"
       >
         <strong>
           Compositional morphology for word representations and language modelling.

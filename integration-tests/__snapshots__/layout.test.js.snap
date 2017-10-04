@@ -6,6 +6,9 @@ exports[`authors render correctly 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      
+
+
       <h1
         class="title"
       >
@@ -36,11 +39,26 @@ exports[`authors render correctly 1`] = `
           class="engrafo-metadata-custom"
         />
       </div>
+      
+
+
+
+
+
+
+
     </dt-article>
     <dt-appendix>
+      
+
+      
+
+
       <div
         class="l-body"
       />
+      
+
     </dt-appendix>
     <div
       id="footnote-hover-boxes-container"
@@ -55,6 +73,9 @@ exports[`dates are not rendered 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      
+
+
       <h1
         class="title"
       >
@@ -70,11 +91,25 @@ exports[`dates are not rendered 1`] = `
           class="engrafo-metadata-custom"
         />
       </div>
+      
+
+
+
+
+
+
     </dt-article>
     <dt-appendix>
+      
+
+      
+
+
       <div
         class="l-body"
       />
+      
+
     </dt-appendix>
     <div
       id="footnote-hover-boxes-container"
@@ -89,6 +124,9 @@ exports[`footnotes in author render correctly 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      
+
+
       <h1
         class="title"
       >
@@ -108,8 +146,8 @@ exports[`footnotes in author render correctly 1`] = `
               <dt-fn>
                 <sup>
                   <span
-                    id="fn-1"
                     data-hover-ref="dt-fn-hover-box-0"
+                    id="fn-1"
                     style="cursor:pointer"
                   >
                     1
@@ -123,8 +161,20 @@ exports[`footnotes in author render correctly 1`] = `
           class="engrafo-metadata-custom"
         />
       </div>
+      
+
+
+
+
+
+
     </dt-article>
     <dt-appendix>
+      
+
+      
+
+
       <div
         class="l-body"
       >
@@ -139,14 +189,16 @@ exports[`footnotes in author render correctly 1`] = `
           </ol>
         </dt-fn-list>
       </div>
+      
+
     </dt-appendix>
     <div
       id="footnote-hover-boxes-container"
     >
       <div
-        style="display:none;"
         class="dt-hover-box"
         id="dt-fn-hover-box-0"
+        style="display:none;"
       >
         Equal contribution.
       </div>
@@ -174,25 +226,27 @@ exports[`footnotes render correctly 1`] = `
           class="engrafo-metadata-custom"
         />
       </div>
+      
+
       <p>
         This is some text.
         <dt-fn>
           <sup>
             <span
-              id="fn-1"
               data-hover-ref="dt-fn-hover-box-0"
+              id="fn-1"
               style="cursor:pointer"
             >
               1
             </span>
           </sup>
         </dt-fn>
-        This is some more text.
+         This is some more text.
         <dt-fn>
           <sup>
             <span
-              id="fn-2"
               data-hover-ref="dt-fn-hover-box-1"
+              id="fn-2"
               style="cursor:pointer"
             >
               2
@@ -200,8 +254,17 @@ exports[`footnotes render correctly 1`] = `
           </sup>
         </dt-fn>
       </p>
+      
+
+
+
     </dt-article>
     <dt-appendix>
+      
+
+      
+
+
       <div
         class="l-body"
       >
@@ -216,8 +279,11 @@ exports[`footnotes render correctly 1`] = `
             <li>
               And a footnote with a
               <br />
+              
+
               <br />
-              second paragraph! And some 
+              
+second paragraph! And some 
               <em>
                 formatting
               </em>
@@ -226,26 +292,31 @@ exports[`footnotes render correctly 1`] = `
           </ol>
         </dt-fn-list>
       </div>
+      
+
     </dt-appendix>
     <div
       id="footnote-hover-boxes-container"
     >
       <div
-        style="display:none;"
         class="dt-hover-box"
         id="dt-fn-hover-box-0"
+        style="display:none;"
       >
         This is a footnote.
       </div>
       <div
-        style="display:none;"
         class="dt-hover-box"
         id="dt-fn-hover-box-1"
+        style="display:none;"
       >
         And a footnote with a
         <br />
+        
+
         <br />
-        second paragraph! And some 
+        
+second paragraph! And some 
         <em>
           formatting
         </em>
@@ -275,25 +346,45 @@ exports[`paragraphs and line breaks render correctly 1`] = `
           class="engrafo-metadata-custom"
         />
       </div>
+      
+
       <p>
         This is the first paragraph.
       </p>
+      
+
       <p>
         This is the second paragraph.
       </p>
+      
+
       <p>
         This is a centered paragraph.
       </p>
+      
+
       <p>
         This is a
         <br />
-        line break.
+        
+line break.
       </p>
+      
+
+
+
     </dt-article>
     <dt-appendix>
+      
+
+      
+
+
       <div
         class="l-body"
       />
+      
+
     </dt-appendix>
     <div
       id="footnote-hover-boxes-container"
@@ -308,6 +399,9 @@ exports[`titles and headings render correctly 1`] = `
     class="engrafo-container"
   >
     <dt-article>
+      
+
+
       <h1
         class="title"
       >
@@ -323,6 +417,10 @@ exports[`titles and headings render correctly 1`] = `
           class="engrafo-metadata-custom"
         />
       </div>
+      
+
+
+
       <h2
         id="section-1"
       >
@@ -337,6 +435,8 @@ exports[`titles and headings render correctly 1`] = `
         </span>
         Section Title
       </h2>
+      
+
       <h3
         id="section-1.1"
       >
@@ -351,19 +451,26 @@ exports[`titles and headings render correctly 1`] = `
         </span>
         Subsection Title
       </h3>
+      
+
       <h4
         id="subsubsection-title"
       >
         Subsubsection Title
       </h4>
+      
+
+
       <p>
         <strong
           class="paragraph-heading"
         >
           Paragraph title
         </strong>
-        Hello.
+         Hello.
       </p>
+      
+
       <h2
         id="section-2"
       >
@@ -378,12 +485,16 @@ exports[`titles and headings render correctly 1`] = `
         </span>
         Another section
       </h2>
+      
+
       <h2
-        id="section-3"
         class="unnumbered"
+        id="section-3"
       >
         Unnumbered section
       </h2>
+      
+
       <h2
         id="section-4"
       >
@@ -398,6 +509,8 @@ exports[`titles and headings render correctly 1`] = `
         </span>
         Another section
       </h2>
+      
+
       <p>
         A reference to 
         <a
@@ -407,11 +520,22 @@ exports[`titles and headings render correctly 1`] = `
         </a>
         .
       </p>
+      
+
+
+
     </dt-article>
     <dt-appendix>
+      
+
+      
+
+
       <div
         class="l-body"
       />
+      
+
     </dt-appendix>
     <div
       id="footnote-hover-boxes-container"

@@ -19,18 +19,22 @@ exports[`images in figures render correctly 1`] = `
           class="engrafo-metadata-custom"
         />
       </div>
+      
+
       <figure
         id="figure-1"
       >
         <img
+          alt="Figure 1: Fig."
           src="fig.png"
           title="fig:"
-          alt="Figure 1: Fig."
         />
         <figcaption>
           Figure 1: Fig.
         </figcaption>
       </figure>
+      
+
       <p>
         See 
         <a
@@ -40,11 +44,22 @@ exports[`images in figures render correctly 1`] = `
         </a>
         .
       </p>
+      
+
+
+
     </dt-article>
     <dt-appendix>
+      
+
+      
+
+
       <div
         class="l-body"
       />
+      
+
     </dt-appendix>
     <div
       id="footnote-hover-boxes-container"

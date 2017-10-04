@@ -19,10 +19,16 @@ exports[`block math renders correctly 1`] = `
           class="engrafo-metadata-custom"
         />
       </div>
+      
+
       <p />
+      
+
       <figure
         id="equation-1"
       >
+        
+
         <span
           class="math display"
         >
@@ -33,23 +39,23 @@ exports[`block math renders correctly 1`] = `
               class="mjx-chtml MJXc-display"
             >
               <span
+                aria-label="e^{i\\\\pi}=-1
+    \\\\tag{1}"
                 class="mjx-math"
                 style="width: 100%;"
-                aria-label="e^{i\\pi}=-1
-                  \\tag{1}"
               >
                 <span
+                  aria-hidden="true"
                   class="mjx-mrow"
                   style="width: 100%;"
-                  aria-hidden="true"
                 >
                   <span
                     class="mjx-mtable"
                     style="width: 100%; min-width: 6.062em;"
                   >
                     <span
-                      style="width: 100%; text-align: left;"
                       class="mjx-box"
+                      style="width: 100%; text-align: left;"
                     >
                       <span
                         class="mjx-table"
@@ -166,8 +172,8 @@ exports[`block math renders correctly 1`] = `
                         style="height: 1.123em;"
                       >
                         <span
-                          id="mjx-eqn-1"
                           class="mjx-mtd"
+                          id="mjx-eqn-1"
                         >
                           <span
                             class="mjx-mrow"
@@ -201,21 +207,38 @@ exports[`block math renders correctly 1`] = `
             </span>
           </span>
         </span>
+        
+
       </figure>
+      
+
       <p />
+      
+
       <p>
         <a
           href="#equation-1"
         >
           Equation 1
         </a>
-        is some good math.
+         is some good math.
       </p>
+      
+
+
+
     </dt-article>
     <dt-appendix>
+      
+
+      
+
+
       <div
         class="l-body"
       />
+      
+
     </dt-appendix>
     <div
       id="footnote-hover-boxes-container"
@@ -243,6 +266,8 @@ exports[`inline math renders correctly 1`] = `
           class="engrafo-metadata-custom"
         />
       </div>
+      
+
       <p>
         Ooh look some lovely maths 
         <span
@@ -255,12 +280,12 @@ exports[`inline math renders correctly 1`] = `
               class="mjx-chtml"
             >
               <span
-                class="mjx-math"
                 aria-label="x^2 + y^2 = z^2"
+                class="mjx-math"
               >
                 <span
-                  class="mjx-mrow"
                   aria-hidden="true"
+                  class="mjx-mrow"
                 >
                   <span
                     class="mjx-msubsup"
@@ -391,13 +416,24 @@ exports[`inline math renders correctly 1`] = `
             </span>
           </span>
         </span>
-        oh yeah.
+         oh yeah.
       </p>
+      
+
+
+
     </dt-article>
     <dt-appendix>
+      
+
+      
+
+
       <div
         class="l-body"
       />
+      
+
     </dt-appendix>
     <div
       id="footnote-hover-boxes-container"

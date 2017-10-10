@@ -48,7 +48,7 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
         </a>
          but misspell 
         <span
-          class="engrafo-cite unresolved"
+          class="engrafo-cite engrafo-missing-cite"
         >
           [?]
         </span>

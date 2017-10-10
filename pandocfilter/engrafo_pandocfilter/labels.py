@@ -320,7 +320,7 @@ def replace_cite_references(key, val, fmt, meta):
                          ['#%s' % ref_id, ''])]
         # TODO: below doesn't work yet
         else:
-            return Span(['', ['engrafo-cite', 'unresolved'], []], [Str('[?]')])
+            return Span(['', ['engrafo-cite', 'engrafo-missing-cite'], []], [Str('[?]')])
 
 
 def match_ref(s):

@@ -6,6 +6,7 @@ let css = `
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 12px;
   padding-bottom: 12px;
+  margin-bottom: 24px;
   font: 400 12px/1.55em -apple-system, BlinkMacSystemFont, "Roboto", Helvetica, sans-serif;
 }
 

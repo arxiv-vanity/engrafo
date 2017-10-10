@@ -305,7 +305,8 @@ def replace_references(key, val, fmt, meta):
                     link_content.append(Str(ref_string))
                     new_objs += [Link(['', [], []], link_content,
                                       ['#%s' % ref_id, ''])]
-
+                else:
+                    new_objs += [Space(), Span(['', ['engrafo-missing-ref'], []], [Str('?')])]
             altered += new_objs
 
         return {'t': key, 'c': altered}

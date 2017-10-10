@@ -46,6 +46,17 @@ exports[`images in figures render correctly 1`] = `
       </p>
       
 
+      <p>
+        Ref which doesn’t exist  
+        <span
+          class="engrafo-missing-ref"
+        >
+          ?
+        </span>
+        .
+      </p>
+      
+
 
 
     </dt-article>

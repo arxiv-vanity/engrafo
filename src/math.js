@@ -18,6 +18,20 @@ exports.renderMath = (htmlString, callback) => {
       mtextFontInherit: true // Use body font for text
     },
     TeX: {
+      extensions: [
+        "autoload-all.js",
+        // Even though we've defined autoload-all, for some reason we need to
+        // define everything explicitly otherwise noUndefined doesn't work.
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "AMScd.js",
+        "cancel.js",
+        "color.js",
+        "extpfeil.js",
+        "mhchem.js",
+        // Don't fail completely if a macro is missing
+        "noUndefined.js",
+      ],
       Macros: {
         // This is used to make macros work in both normal and math mode, so
         // just ignore

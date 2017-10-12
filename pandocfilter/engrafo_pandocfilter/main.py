@@ -25,19 +25,6 @@ def main():
 
     for action in [
             wrap_urls_in_anchors,
-            replace_references,
-            replace_cite_references,
-            inline_footnotes,
-    ]:
-        if 'title' in doc['meta']:
-            doc['meta']['title'] = walk(doc['meta']['title'], action, fmt, meta)
-        if 'author' in doc['meta']:
-            doc['meta']['author'] = walk(doc['meta']['author'], action, fmt, meta)
-        if 'abstract' in doc['meta']:
-            doc['meta']['abstract'] = walk(doc['meta']['abstract'], action, fmt, meta)
-
-    for action in [
-            wrap_urls_in_anchors,
             replace_smallcaps,
             process_display_math,
             append_image_extensions,
@@ -54,6 +41,19 @@ def main():
             inline_footnotes,
     ]:
         doc['blocks'] = walk(doc['blocks'], action, fmt, meta)
+
+    for action in [
+            wrap_urls_in_anchors,
+            replace_references,
+            replace_cite_references,
+            inline_footnotes,
+    ]:
+        if 'title' in doc['meta']:
+            doc['meta']['title'] = walk(doc['meta']['title'], action, fmt, meta)
+        if 'author' in doc['meta']:
+            doc['meta']['author'] = walk(doc['meta']['author'], action, fmt, meta)
+        if 'abstract' in doc['meta']:
+            doc['meta']['abstract'] = walk(doc['meta']['abstract'], action, fmt, meta)
 
     if 'data' in doc['meta']:
         del doc['meta']['date']

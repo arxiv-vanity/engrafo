@@ -50,10 +50,37 @@ exports[`abstracts work 1`] = `
           Some abstract.
         </p>
         
+  
+        <p>
+          A reference to 
+          <a
+            href="#section-1"
+          >
+            Section 1
+          </a>
+          .
+        </p>
+        
 
       </div>
       
 
+
+      <h2
+        id="section-1"
+      >
+        <span
+          class="section-number"
+        >
+          <a
+            href="#section-1"
+          >
+            1
+          </a>
+        </span>
+        Section Title
+      </h2>
+      
 
       <p>
         Body text.

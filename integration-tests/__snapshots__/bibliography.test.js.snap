@@ -13,15 +13,26 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
       <h1>
         Untitled
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
-        />
+        >
+          
+    
+        </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 
@@ -180,15 +191,26 @@ exports[`a basic bibliography renders correctly 1`] = `
       <h1>
         Untitled
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
-        />
+        >
+          
+    
+        </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 

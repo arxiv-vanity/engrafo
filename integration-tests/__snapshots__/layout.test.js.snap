@@ -13,12 +13,18 @@ exports[`authors render correctly 1`] = `
       <h1>
         Hello
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
         >
+          
+      
           <div
             class="author"
           >
@@ -26,6 +32,8 @@ exports[`authors render correctly 1`] = `
               Joe Bloggs
             </span>
           </div>
+          
+      
           <div
             class="author"
           >
@@ -33,15 +41,24 @@ exports[`authors render correctly 1`] = `
               Jane Smith
             </span>
           </div>
+          
+    
         </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 
 
-
+      <p>
+        Body text.
+      </p>
+      
 
     </dt-article>
     
@@ -82,15 +99,26 @@ exports[`dates are not rendered 1`] = `
       <h1>
         Hello
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
-        />
+        >
+          
+    
+        </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 
@@ -139,12 +167,18 @@ exports[`footnotes in author render correctly 1`] = `
       <h1>
         Hello
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
         >
+          
+      
           <div
             class="author"
           >
@@ -163,14 +197,24 @@ exports[`footnotes in author render correctly 1`] = `
               </dt-fn>
             </span>
           </div>
+          
+    
         </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 
 
+      <p>
+        Body text.
+      </p>
+      
 
     </dt-article>
     
@@ -230,15 +274,26 @@ exports[`footnotes render correctly 1`] = `
       <h1>
         Untitled
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
-        />
+        >
+          
+    
+        </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 
@@ -358,15 +413,26 @@ exports[`paragraphs and line breaks render correctly 1`] = `
       <h1>
         Untitled
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
-        />
+        >
+          
+    
+        </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 
@@ -432,15 +498,26 @@ exports[`titles and headings render correctly 1`] = `
       <h1>
         Headings Test
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
-        />
+        >
+          
+    
+        </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 

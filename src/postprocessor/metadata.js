@@ -72,25 +72,13 @@ let css = `
 module.exports = function(dom) {
   utils.addStylesheet(dom, css);
 
-  // Insert metadata after title
-  let metadata = utils.nodeFromString(dom, '<div class="engrafo-metadata"></div>');
-  let title = dom.querySelector('h1');
-  title.parentNode.insertBefore(metadata, title.nextSibling);
+  let metadata = dom.querySelector('.engrafo-metadata');
+  let authors = metadata.querySelector('.authors');
 
-  let authors = utils.nodeFromString(dom, '<div class="authors"></div>');
-
-  Array.from(dom.querySelectorAll("p.author")).forEach(el => {
-    let div = utils.nodeFromString(dom, '<div class="author"></div>');
-    utils.replaceAndKeepChildren(el, div);
-
+  Array.from(authors.children).forEach(el => {
     // Replace each line inside each span (bit of a hack. hopefully it won't break.)
-    div.innerHTML = div.innerHTML.replace('<br>', '</span><span>');
-
-    authors.appendChild(div);
+    el.innerHTML = el.innerHTML.replace('<br>', '</span><span>');
   });
-
-  metadata.appendChild(authors);
-  metadata.appendChild(utils.nodeFromString(dom, '<div class="engrafo-metadata-custom"></div>'));
 
   // HACK: If there is a footnote directly after the authors, put it after the authors.
   // This is normally when a footnote without a mark is used for affiliation.

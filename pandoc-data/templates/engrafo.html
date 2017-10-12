@@ -50,9 +50,14 @@ $if(title)$
 $else$
 <h1>Untitled</h1>
 $endif$
-$for(author)$
-<p class="author">$author$</p>
-$endfor$
+<div class="engrafo-metadata">
+  <div class="authors">
+  $for(author)$
+    <div class="author">$author$</div>
+  $endfor$
+  </div>
+  <div class="engrafo-metadata-custom"></div>
+</div>
 $if(toc)$
 <nav id="$idprefix$TOC">
 $table-of-contents$

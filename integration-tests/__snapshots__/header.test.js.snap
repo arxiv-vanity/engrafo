@@ -13,15 +13,26 @@ exports[`bold is stripped from header 1`] = `
       <h1>
          Why would someone do this
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
-        />
+        >
+          
+    
+        </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 

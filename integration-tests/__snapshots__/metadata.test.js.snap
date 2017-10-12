@@ -13,12 +13,18 @@ exports[`footnotes after metadata are inlined inside metadata 1`] = `
       <h1>
         Hello
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
         >
+          
+      
           <div
             class="author"
           >
@@ -26,6 +32,8 @@ exports[`footnotes after metadata are inlined inside metadata 1`] = `
               Joe Bloggs
             </span>
           </div>
+          
+      
           <div
             class="author"
           >
@@ -33,17 +41,21 @@ exports[`footnotes after metadata are inlined inside metadata 1`] = `
               Jane Smith
             </span>
           </div>
+          
+    
           <p>
             Some University
           </p>
         </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
-
-
 
 
 

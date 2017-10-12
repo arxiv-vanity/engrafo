@@ -13,12 +13,18 @@ exports[`ICML commands are supported 1`] = `
       <h1>
         Paper Title
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
         >
+          
+      
           <div
             class="author"
           >
@@ -60,14 +66,24 @@ exports[`ICML commands are supported 1`] = `
               Affiliation Two
             </span>
           </div>
+          
+    
         </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 
 
+      <p>
+        Body text.
+      </p>
+      
 
     </dt-article>
     
@@ -108,12 +124,18 @@ exports[`institute command is supported 1`] = `
       <h1>
         A Title
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
         >
+          
+      
           <div
             class="author"
           >
@@ -212,14 +234,23 @@ exports[`institute command is supported 1`] = `
                
             </span>
           </div>
+          
+    
         </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 
-
+      <p>
+        Body text.
+      </p>
+      
 
     </dt-article>
     
@@ -260,15 +291,26 @@ exports[`links get wrapped in anchors 1`] = `
       <h1>
         Untitled
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
-        />
+        >
+          
+    
+        </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 
@@ -372,15 +414,26 @@ exports[`lists render correctly 1`] = `
       <h1>
         Untitled
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
-        />
+        >
+          
+    
+        </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 
@@ -559,15 +612,26 @@ exports[`pdfoutput=1 is ignored 1`] = `
       <h1>
         Untitled
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
-        />
+        >
+          
+    
+        </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 
@@ -615,15 +679,26 @@ exports[`pinforms3 TITLE, AUTHOR, AFF are supported 1`] = `
       <h1>
         The Title of the Paper
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
-        />
+        >
+          
+    
+        </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 
@@ -702,15 +777,26 @@ exports[`text formatting renders correctly 1`] = `
       <h1>
         Untitled
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
-        />
+        >
+          
+    
+        </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 
@@ -800,15 +886,26 @@ exports[`vskip is ignored 1`] = `
       <h1>
         Untitled
       </h1>
+      
+
       <div
         class="engrafo-metadata"
       >
+        
+  
         <div
           class="authors"
-        />
+        >
+          
+    
+        </div>
+        
+  
         <div
           class="engrafo-metadata-custom"
         />
+        
+
       </div>
       
 

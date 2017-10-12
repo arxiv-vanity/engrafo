@@ -77,8 +77,8 @@ exports.postprocess = htmlString => {
   if (!dtArticle) {
     throw new Error("Could not find <dt-article>");
   }
-  // Title is always present
-  if (dtArticle.children.length <= 1) {
+  // Title and metadata is always present
+  if (dtArticle.children.length <= 2) {
     throw new Error("Document is blank");
   }
 

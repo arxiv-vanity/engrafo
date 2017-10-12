@@ -1,6 +1,82 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`bold is stripped from header 1`] = `
+exports[`TITLES IN ALL CAPS are fixed 1`] = `
+<body>
+  <div
+    class="engrafo-container"
+  >
+    
+
+    <dt-article>
+      
+
+      <h1>
+        Why Am I Shouting
+      </h1>
+      
+
+      <div
+        class="engrafo-metadata"
+      >
+        
+  
+        <div
+          class="authors"
+        >
+          
+    
+        </div>
+        
+  
+        <div
+          class="engrafo-metadata-custom"
+        />
+        
+
+      </div>
+      
+
+      <div
+        class="engrafo-body"
+      >
+        
+
+
+        <p>
+          Hello.
+        </p>
+        
+
+      </div>
+      
+
+    </dt-article>
+    
+
+    <dt-appendix>
+      
+
+      
+
+
+      <div
+        class="l-body"
+      />
+      
+
+    </dt-appendix>
+    
+
+
+
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
+</body>
+`;
+
+exports[`bold is stripped from title 1`] = `
 <body>
   <div
     class="engrafo-container"

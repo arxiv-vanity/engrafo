@@ -274,7 +274,9 @@ def replace_references(key, val, fmt, meta):
                     and obj['c'][0] == 'latex'):
 
                 label = match_ref(obj['c'][1])
-                if label and label in label_map:
+                if not label:
+                    continue
+                if label in label_map:
                     ref_string, ref_id, prev_strings = label_map[label]
                     prev = val[i - 1] if i > 0 else None
                     prevprev = val[i - 2] if i > 1 else None

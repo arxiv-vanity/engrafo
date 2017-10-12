@@ -10,10 +10,7 @@ exports[`footnotes after metadata are inlined inside metadata 1`] = `
     <dt-article>
       
 
-
-      <h1
-        class="title"
-      >
+      <h1>
         Hello
       </h1>
       <div
@@ -45,7 +42,6 @@ exports[`footnotes after metadata are inlined inside metadata 1`] = `
         />
       </div>
       
-
 
 
 

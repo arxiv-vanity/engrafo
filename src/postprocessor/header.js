@@ -2,11 +2,6 @@ let utils = require("./utils");
 let yaml = require("js-yaml");
 
 module.exports = function(dom, data) {
-  // Get rid of <header>
-  Array.from(dom.querySelectorAll("header")).forEach(header => {
-    utils.removeAndFlattenChildren(header);
-  });
-
   let title = dom.querySelector("h1");
 
   // Create title if one doesn't exist
@@ -35,10 +30,4 @@ module.exports = function(dom, data) {
 
   title.innerHTML = titleHTML;
   data.title = titleHTML;
-
-  // Remove date
-  let date = dom.querySelector("dt-article > .date");
-  if (date) {
-    date.parentNode.removeChild(date);
-  }
 };

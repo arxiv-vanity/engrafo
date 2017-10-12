@@ -10,10 +10,7 @@ exports[`ICML commands are supported 1`] = `
     <dt-article>
       
 
-
-      <h1
-        class="title"
-      >
+      <h1>
         Paper Title
       </h1>
       <div
@@ -72,7 +69,6 @@ exports[`ICML commands are supported 1`] = `
 
 
 
-
     </dt-article>
     
 
@@ -109,10 +105,7 @@ exports[`institute command is supported 1`] = `
     <dt-article>
       
 
-
-      <h1
-        class="title"
-      >
+      <h1>
         A Title
       </h1>
       <div
@@ -225,7 +218,6 @@ exports[`institute command is supported 1`] = `
         />
       </div>
       
-
 
 
 
@@ -614,10 +606,7 @@ exports[`pinforms3 TITLE, AUTHOR, AFF are supported 1`] = `
     <dt-article>
       
 
-
-      <h1
-        class="title"
-      >
+      <h1>
         The Title of the Paper
       </h1>
       <div
@@ -631,7 +620,6 @@ exports[`pinforms3 TITLE, AUTHOR, AFF are supported 1`] = `
         />
       </div>
       
-
 
       <div
         class="authors"

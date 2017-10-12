@@ -10,10 +10,7 @@ exports[`authors render correctly 1`] = `
     <dt-article>
       
 
-
-      <h1
-        class="title"
-      >
+      <h1>
         Hello
       </h1>
       <div
@@ -42,7 +39,6 @@ exports[`authors render correctly 1`] = `
         />
       </div>
       
-
 
 
 
@@ -83,10 +79,7 @@ exports[`dates are not rendered 1`] = `
     <dt-article>
       
 
-
-      <h1
-        class="title"
-      >
+      <h1>
         Hello
       </h1>
       <div
@@ -100,8 +93,6 @@ exports[`dates are not rendered 1`] = `
         />
       </div>
       
-
-
 
 
     </dt-article>
@@ -140,10 +131,7 @@ exports[`footnotes in author render correctly 1`] = `
     <dt-article>
       
 
-
-      <h1
-        class="title"
-      >
+      <h1>
         Hello
       </h1>
       <div
@@ -176,7 +164,6 @@ exports[`footnotes in author render correctly 1`] = `
         />
       </div>
       
-
 
 
 
@@ -433,10 +420,7 @@ exports[`titles and headings render correctly 1`] = `
     <dt-article>
       
 
-
-      <h1
-        class="title"
-      >
+      <h1>
         Headings Test
       </h1>
       <div
@@ -450,7 +434,6 @@ exports[`titles and headings render correctly 1`] = `
         />
       </div>
       
-
 
 
       <h2

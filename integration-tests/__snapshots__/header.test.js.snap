@@ -10,10 +10,7 @@ exports[`bold is stripped from header 1`] = `
     <dt-article>
       
 
-
-      <h1
-        class="title"
-      >
+      <h1>
          Why would someone do this
       </h1>
       <div
@@ -27,7 +24,6 @@ exports[`bold is stripped from header 1`] = `
         />
       </div>
       
-
 
 
     </dt-article>

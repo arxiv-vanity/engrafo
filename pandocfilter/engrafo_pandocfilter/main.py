@@ -55,7 +55,7 @@ def main():
         if 'abstract' in doc['meta']:
             doc['meta']['abstract'] = walk(doc['meta']['abstract'], action, fmt, meta)
 
-    if 'data' in doc['meta']:
+    if 'date' in doc['meta']:
         del doc['meta']['date']
 
     # Save filtered AST for debugging

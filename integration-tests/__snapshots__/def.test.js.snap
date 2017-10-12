@@ -8,6 +8,8 @@ exports[`\\def multiple simple arguments render correctly 1`] = `
     
 
     <dt-article>
+      
+
       <h1>
         Untitled
       </h1>
@@ -62,6 +64,8 @@ exports[`\\def with control seq suffix renders correctly 1`] = `
     
 
     <dt-article>
+      
+
       <h1>
         Untitled
       </h1>
@@ -128,6 +132,8 @@ exports[`simple \\def without arguments render correctly 1`] = `
     
 
     <dt-article>
+      
+
       <h1>
         Untitled
       </h1>

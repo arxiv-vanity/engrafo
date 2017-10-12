@@ -95,6 +95,11 @@ exports[`dates are not rendered 1`] = `
       
 
 
+      <p>
+        Hello.
+      </p>
+      
+
     </dt-article>
     
 
@@ -220,6 +225,8 @@ exports[`footnotes render correctly 1`] = `
     
 
     <dt-article>
+      
+
       <h1>
         Untitled
       </h1>
@@ -346,6 +353,8 @@ exports[`paragraphs and line breaks render correctly 1`] = `
     
 
     <dt-article>
+      
+
       <h1>
         Untitled
       </h1>

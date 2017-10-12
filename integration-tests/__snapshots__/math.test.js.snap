@@ -8,6 +8,8 @@ exports[`block math renders correctly 1`] = `
     
 
     <dt-article>
+      
+
       <h1>
         Untitled
       </h1>
@@ -261,6 +263,8 @@ exports[`inline math renders correctly 1`] = `
     
 
     <dt-article>
+      
+
       <h1>
         Untitled
       </h1>

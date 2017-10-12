@@ -74,7 +74,11 @@ exports.postprocess = htmlString => {
 
   // Check there is actually a document to process
   var dtArticle = dom.querySelector('dt-article');
-  if (!dtArticle || dtArticle.children.length == 0) {
+  if (!dtArticle) {
+    throw new Error("Could not find <dt-article>");
+  }
+  // Title is always present
+  if (dtArticle.children.length <= 1) {
     throw new Error("Document is blank");
   }
 

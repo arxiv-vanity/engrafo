@@ -26,6 +26,11 @@ exports[`bold is stripped from header 1`] = `
       
 
 
+      <p>
+        Hello.
+      </p>
+      
+
     </dt-article>
     
 

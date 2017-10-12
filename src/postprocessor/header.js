@@ -4,13 +4,6 @@ let yaml = require("js-yaml");
 module.exports = function(dom, data) {
   let title = dom.querySelector("h1");
 
-  // Create title if one doesn't exist
-  if (!title) {
-    let dtArticle = dom.querySelector("dt-article");
-    title = utils.nodeFromString(dom, "<h1>Untitled</h1>");
-    dtArticle.insertBefore(title, dtArticle.firstChild);
-  }
-
   // Remove <strong> from title
   if (title.children.length && title.children[0].tagName === "STRONG") {
     utils.removeAndFlattenChildren(title.children[0]);

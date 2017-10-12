@@ -8,6 +8,8 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
     
 
     <dt-article>
+      
+
       <h1>
         Untitled
       </h1>
@@ -173,6 +175,8 @@ exports[`a basic bibliography renders correctly 1`] = `
     
 
     <dt-article>
+      
+
       <h1>
         Untitled
       </h1>

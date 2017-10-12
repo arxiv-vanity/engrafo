@@ -255,6 +255,8 @@ exports[`links get wrapped in anchors 1`] = `
     
 
     <dt-article>
+      
+
       <h1>
         Untitled
       </h1>
@@ -365,6 +367,8 @@ exports[`lists render correctly 1`] = `
     
 
     <dt-article>
+      
+
       <h1>
         Untitled
       </h1>
@@ -550,6 +554,8 @@ exports[`pdfoutput=1 is ignored 1`] = `
     
 
     <dt-article>
+      
+
       <h1>
         Untitled
       </h1>
@@ -691,6 +697,8 @@ exports[`text formatting renders correctly 1`] = `
     
 
     <dt-article>
+      
+
       <h1>
         Untitled
       </h1>
@@ -787,6 +795,8 @@ exports[`vskip is ignored 1`] = `
     
 
     <dt-article>
+      
+
       <h1>
         Untitled
       </h1>

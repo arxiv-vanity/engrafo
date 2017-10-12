@@ -33,6 +33,8 @@ def main():
             doc['meta']['title'] = walk(doc['meta']['title'], action, fmt, meta)
         if 'author' in doc['meta']:
             doc['meta']['author'] = walk(doc['meta']['author'], action, fmt, meta)
+        if 'abstract' in doc['meta']:
+            doc['meta']['abstract'] = walk(doc['meta']['abstract'], action, fmt, meta)
 
     for action in [
             wrap_urls_in_anchors,

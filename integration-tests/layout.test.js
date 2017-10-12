@@ -23,3 +23,7 @@ test("footnotes in author render correctly", done => {
 test("dates are not rendered", done => {
   utils.expectBodyToMatchSnapshot("layout/date.tex", done);
 })
+
+test("abstracts work", done => {
+  utils.expectBodyToMatchSnapshot("layout/abstract.tex", done);
+});

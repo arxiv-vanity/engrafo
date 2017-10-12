@@ -1,5 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`abstracts work 1`] = `
+<body>
+  <div
+    class="engrafo-container"
+  >
+    
+
+    <dt-article>
+      
+
+      <h1>
+        Hello
+      </h1>
+      
+
+      <div
+        class="engrafo-metadata"
+      >
+        
+  
+        <div
+          class="authors"
+        >
+          
+    
+        </div>
+        
+  
+        <div
+          class="engrafo-metadata-custom"
+        />
+        
+
+      </div>
+      
+
+      <div
+        class="engrafo-abstract"
+      >
+        
+  
+        <h2>
+          Abstract
+        </h2>
+        
+  
+        <p>
+          Some abstract.
+        </p>
+        
+
+      </div>
+      
+
+
+      <p>
+        Body text.
+      </p>
+      
+
+    </dt-article>
+    
+
+    <dt-appendix>
+      
+
+      
+
+
+      <div
+        class="l-body"
+      />
+      
+
+    </dt-appendix>
+    
+
+
+
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
+</body>
+`;
+
 exports[`authors render correctly 1`] = `
 <body>
   <div

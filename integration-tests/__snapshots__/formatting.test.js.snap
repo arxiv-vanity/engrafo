@@ -703,6 +703,24 @@ exports[`pinforms3 TITLE, AUTHOR, AFF are supported 1`] = `
       
 
       <div
+        class="engrafo-abstract"
+      >
+        
+  
+        <h2>
+          Abstract
+        </h2>
+        
+  
+        <p>
+          This is the abstract.
+        </p>
+        
+
+      </div>
+      
+
+      <div
         class="authors"
       >
         

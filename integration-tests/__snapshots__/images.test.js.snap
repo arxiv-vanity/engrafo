@@ -5,6 +5,8 @@ exports[`images in figures render correctly 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       <h1>
         Untitled
@@ -57,9 +59,9 @@ exports[`images in figures render correctly 1`] = `
       </p>
       
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -72,6 +74,10 @@ exports[`images in figures render correctly 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />

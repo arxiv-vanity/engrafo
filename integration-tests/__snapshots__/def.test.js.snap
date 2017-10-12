@@ -5,6 +5,8 @@ exports[`\\def multiple simple arguments render correctly 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       <h1>
         Untitled
@@ -26,9 +28,9 @@ exports[`\\def multiple simple arguments render correctly 1`] = `
       </p>
       
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -41,6 +43,10 @@ exports[`\\def multiple simple arguments render correctly 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />
@@ -53,6 +59,8 @@ exports[`\\def with control seq suffix renders correctly 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       <h1>
         Untitled
@@ -86,9 +94,9 @@ exports[`\\def with control seq suffix renders correctly 1`] = `
       </blockquote>
       
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -101,6 +109,10 @@ exports[`\\def with control seq suffix renders correctly 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />
@@ -113,6 +125,8 @@ exports[`simple \\def without arguments render correctly 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       <h1>
         Untitled
@@ -134,9 +148,9 @@ exports[`simple \\def without arguments render correctly 1`] = `
       </p>
       
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -149,6 +163,10 @@ exports[`simple \\def without arguments render correctly 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />

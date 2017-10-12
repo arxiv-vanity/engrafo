@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+<html lang="$lang$">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
@@ -41,6 +41,7 @@ $for(header-includes)$
 $endfor$
 </head>
 <body>
+<dt-article>
 $for(include-before)$
 $include-before$
 $endfor$
@@ -67,5 +68,7 @@ $body$
 $for(include-after)$
 $include-after$
 $endfor$
+</dt-article>
+<dt-appendix></dt-appendix>
 </body>
 </html>

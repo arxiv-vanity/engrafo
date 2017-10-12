@@ -5,6 +5,8 @@ exports[`block math renders correctly 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       <h1>
         Untitled
@@ -225,9 +227,9 @@ exports[`block math renders correctly 1`] = `
       </p>
       
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -240,6 +242,10 @@ exports[`block math renders correctly 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />
@@ -252,6 +258,8 @@ exports[`inline math renders correctly 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       <h1>
         Untitled
@@ -420,9 +428,9 @@ exports[`inline math renders correctly 1`] = `
       </p>
       
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -435,6 +443,10 @@ exports[`inline math renders correctly 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />

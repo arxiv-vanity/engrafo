@@ -73,7 +73,8 @@ exports.postprocess = htmlString => {
   });
 
   // Check there is actually a document to process
-  if (dom.body.children.length == 0) {
+  var dtArticle = dom.querySelector('dt-article');
+  if (!dtArticle || dtArticle.children.length == 0) {
     throw new Error("Document is blank");
   }
 

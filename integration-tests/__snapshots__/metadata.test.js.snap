@@ -5,6 +5,8 @@ exports[`footnotes after metadata are inlined inside metadata 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       
 
@@ -49,9 +51,9 @@ exports[`footnotes after metadata are inlined inside metadata 1`] = `
 
 
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -64,6 +66,10 @@ exports[`footnotes after metadata are inlined inside metadata 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />

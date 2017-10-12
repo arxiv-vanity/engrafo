@@ -5,6 +5,8 @@ exports[`basic tables render correctly 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       <h1>
         Untitled
@@ -164,9 +166,9 @@ exports[`basic tables render correctly 1`] = `
       </p>
       
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -179,6 +181,10 @@ exports[`basic tables render correctly 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />

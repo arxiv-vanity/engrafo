@@ -5,6 +5,8 @@ exports[`ICML commands are supported 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       
 
@@ -71,9 +73,9 @@ exports[`ICML commands are supported 1`] = `
 
 
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -86,6 +88,10 @@ exports[`ICML commands are supported 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />
@@ -98,6 +104,8 @@ exports[`institute command is supported 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       
 
@@ -221,9 +229,9 @@ exports[`institute command is supported 1`] = `
 
 
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -236,6 +244,10 @@ exports[`institute command is supported 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />
@@ -248,6 +260,8 @@ exports[`links get wrapped in anchors 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       <h1>
         Untitled
@@ -325,9 +339,9 @@ exports[`links get wrapped in anchors 1`] = `
       </p>
       
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -340,6 +354,10 @@ exports[`links get wrapped in anchors 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />
@@ -352,6 +370,8 @@ exports[`lists render correctly 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       <h1>
         Untitled
@@ -504,9 +524,9 @@ exports[`lists render correctly 1`] = `
       </ol>
       
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -519,6 +539,10 @@ exports[`lists render correctly 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />
@@ -531,6 +555,8 @@ exports[`pdfoutput=1 is ignored 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       <h1>
         Untitled
@@ -552,9 +578,9 @@ exports[`pdfoutput=1 is ignored 1`] = `
       </p>
       
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -567,6 +593,10 @@ exports[`pdfoutput=1 is ignored 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />
@@ -579,6 +609,8 @@ exports[`pinforms3 TITLE, AUTHOR, AFF are supported 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       
 
@@ -637,9 +669,9 @@ exports[`pinforms3 TITLE, AUTHOR, AFF are supported 1`] = `
       </div>
       
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -652,6 +684,10 @@ exports[`pinforms3 TITLE, AUTHOR, AFF are supported 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />
@@ -664,6 +700,8 @@ exports[`text formatting renders correctly 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       <h1>
         Untitled
@@ -727,9 +765,9 @@ exports[`text formatting renders correctly 1`] = `
       </p>
       
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -742,6 +780,10 @@ exports[`text formatting renders correctly 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />
@@ -754,6 +796,8 @@ exports[`vskip is ignored 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       <h1>
         Untitled
@@ -780,9 +824,9 @@ exports[`vskip is ignored 1`] = `
       </p>
       
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -795,6 +839,10 @@ exports[`vskip is ignored 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />

@@ -5,6 +5,8 @@ exports[`bold is stripped from header 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       
 
@@ -28,9 +30,9 @@ exports[`bold is stripped from header 1`] = `
 
 
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -43,6 +45,10 @@ exports[`bold is stripped from header 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />

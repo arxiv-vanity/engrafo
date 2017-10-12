@@ -5,6 +5,8 @@ exports[`authors render correctly 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       
 
@@ -45,9 +47,9 @@ exports[`authors render correctly 1`] = `
 
 
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -60,6 +62,10 @@ exports[`authors render correctly 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />
@@ -72,6 +78,8 @@ exports[`dates are not rendered 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       
 
@@ -96,9 +104,9 @@ exports[`dates are not rendered 1`] = `
 
 
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -111,6 +119,10 @@ exports[`dates are not rendered 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />
@@ -123,6 +135,8 @@ exports[`footnotes in author render correctly 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       
 
@@ -166,9 +180,9 @@ exports[`footnotes in author render correctly 1`] = `
 
 
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -192,6 +206,10 @@ exports[`footnotes in author render correctly 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     >
@@ -212,6 +230,8 @@ exports[`footnotes render correctly 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       <h1>
         Untitled
@@ -256,9 +276,9 @@ exports[`footnotes render correctly 1`] = `
       </p>
       
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -295,6 +315,10 @@ second paragraph! And some
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     >
@@ -332,6 +356,8 @@ exports[`paragraphs and line breaks render correctly 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       <h1>
         Untitled
@@ -371,9 +397,9 @@ line break.
       </p>
       
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -386,6 +412,10 @@ line break.
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />
@@ -398,6 +428,8 @@ exports[`titles and headings render correctly 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       
 
@@ -522,9 +554,9 @@ exports[`titles and headings render correctly 1`] = `
       </p>
       
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -537,6 +569,10 @@ exports[`titles and headings render correctly 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />

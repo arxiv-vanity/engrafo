@@ -5,6 +5,8 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       <h1>
         Untitled
@@ -56,9 +58,9 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
       
 
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -118,6 +120,10 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     />
@@ -164,6 +170,8 @@ exports[`a basic bibliography renders correctly 1`] = `
   <div
     class="engrafo-container"
   >
+    
+
     <dt-article>
       <h1>
         Untitled
@@ -209,9 +217,9 @@ exports[`a basic bibliography renders correctly 1`] = `
       
 
 
-
-
     </dt-article>
+    
+
     <dt-appendix>
       
 
@@ -281,6 +289,10 @@ exports[`a basic bibliography renders correctly 1`] = `
       
 
     </dt-appendix>
+    
+
+
+
     <div
       id="footnote-hover-boxes-container"
     >

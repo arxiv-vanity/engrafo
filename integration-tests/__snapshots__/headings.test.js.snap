@@ -42,6 +42,22 @@ exports[`TITLES IN ALL CAPS are fixed 1`] = `
         
 
 
+        <h2
+          id="section-1"
+        >
+          <span
+            class="section-number"
+          >
+            <a
+              href="#section-1"
+            >
+              1
+            </a>
+          </span>
+          Urgh Stop It
+        </h2>
+        
+
         <p>
           Hello.
         </p>

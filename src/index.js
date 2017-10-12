@@ -89,7 +89,6 @@ exports.postprocess = htmlString => {
   postprocessors.layout(dom, data);
   distill.components.html(dom, data);
   postprocessors.styles(dom, data);
-  postprocessors.header(dom, data);
   postprocessors.metadata(dom, data);
   postprocessors.code(dom, data);
   distill.components.code(dom, data);

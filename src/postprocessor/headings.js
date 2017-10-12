@@ -1,4 +1,5 @@
 let utils = require("./utils");
+let toTitleCase = require("titlecase");
 
 var css = `
 dt-article h2,
@@ -59,6 +60,39 @@ dt-article .paragraph-heading {
 module.exports = function(dom) {
   utils.addStylesheet(dom, css);
 
+  // Things to apply to all headings
+  let headings = dom.querySelectorAll("h1, h2, h3, h4, h5, h6");
+  Array.from(headings).forEach(heading => {
+    // Remove <strong>
+    if (heading.children.length && heading.children[0].tagName === "STRONG") {
+      utils.removeAndFlattenChildren(heading.children[0]);
+    }
+
+    // Remove new lines
+    Array.from(heading.children).forEach(child => {
+      if (child.tagName === "BR") {
+        heading.removeChild(child);
+      }
+    });
+
+    // We've removed a bunch of elements so text nodes might be fragmented
+    heading.normalize();
+
+    var textNodes = dom.createTreeWalker(heading, dom.defaultView.NodeFilter.SHOW_TEXT);
+    while (textNodes.nextNode()) {
+      let node = textNodes.currentNode;
+      // UPPER CASE HEADING ARGH
+      // FIXME: this will be a false positive if it's just an acronym in a tag
+      if (node.nodeValue == node.nodeValue.toUpperCase()) {
+        node.nodeValue = toTitleCase(node.nodeValue.toLowerCase());
+      }
+
+      // Clean up weird characters
+      node.nodeValue = node.nodeValue.replace('\u3000', '');
+    }
+  });
+
+  // Add section numnbers
   let sectionNumbers = dom.querySelectorAll(".section-number");
   Array.from(sectionNumbers).forEach(span => {
     let a = utils.nodeFromString(dom, '<a></a>');

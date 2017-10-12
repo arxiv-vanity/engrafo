@@ -65,26 +65,34 @@ exports[`abstracts work 1`] = `
       </div>
       
 
-
-      <h2
-        id="section-1"
+      <div
+        class="engrafo-body"
       >
-        <span
-          class="section-number"
-        >
-          <a
-            href="#section-1"
-          >
-            1
-          </a>
-        </span>
-        Section Title
-      </h2>
-      
+        
 
-      <p>
-        Body text.
-      </p>
+
+        <h2
+          id="section-1"
+        >
+          <span
+            class="section-number"
+          >
+            <a
+              href="#section-1"
+            >
+              1
+            </a>
+          </span>
+          Section Title
+        </h2>
+        
+
+        <p>
+          Body text.
+        </p>
+        
+
+      </div>
       
 
     </dt-article>
@@ -167,10 +175,18 @@ exports[`authors render correctly 1`] = `
       </div>
       
 
+      <div
+        class="engrafo-body"
+      >
+        
 
-      <p>
-        Body text.
-      </p>
+
+        <p>
+          Body text.
+        </p>
+        
+
+      </div>
       
 
     </dt-article>
@@ -235,10 +251,18 @@ exports[`dates are not rendered 1`] = `
       </div>
       
 
+      <div
+        class="engrafo-body"
+      >
+        
 
-      <p>
-        Hello.
-      </p>
+
+        <p>
+          Hello.
+        </p>
+        
+
+      </div>
       
 
     </dt-article>
@@ -323,10 +347,18 @@ exports[`footnotes in author render correctly 1`] = `
       </div>
       
 
+      <div
+        class="engrafo-body"
+      >
+        
 
-      <p>
-        Body text.
-      </p>
+
+        <p>
+          Body text.
+        </p>
+        
+
+      </div>
       
 
     </dt-article>
@@ -410,32 +442,40 @@ exports[`footnotes render correctly 1`] = `
       </div>
       
 
-      <p>
-        This is some text.
-        <dt-fn>
-          <sup>
-            <span
-              data-hover-ref="dt-fn-hover-box-0"
-              id="fn-1"
-              style="cursor:pointer"
-            >
-              1
-            </span>
-          </sup>
-        </dt-fn>
-         This is some more text.
-        <dt-fn>
-          <sup>
-            <span
-              data-hover-ref="dt-fn-hover-box-1"
-              id="fn-2"
-              style="cursor:pointer"
-            >
-              2
-            </span>
-          </sup>
-        </dt-fn>
-      </p>
+      <div
+        class="engrafo-body"
+      >
+        
+
+        <p>
+          This is some text.
+          <dt-fn>
+            <sup>
+              <span
+                data-hover-ref="dt-fn-hover-box-0"
+                id="fn-1"
+                style="cursor:pointer"
+              >
+                1
+              </span>
+            </sup>
+          </dt-fn>
+           This is some more text.
+          <dt-fn>
+            <sup>
+              <span
+                data-hover-ref="dt-fn-hover-box-1"
+                id="fn-2"
+                style="cursor:pointer"
+              >
+                2
+              </span>
+            </sup>
+          </dt-fn>
+        </p>
+        
+
+      </div>
       
 
     </dt-article>
@@ -549,27 +589,35 @@ exports[`paragraphs and line breaks render correctly 1`] = `
       </div>
       
 
-      <p>
-        This is the first paragraph.
-      </p>
-      
-
-      <p>
-        This is the second paragraph.
-      </p>
-      
-
-      <p>
-        This is a centered paragraph.
-      </p>
-      
-
-      <p>
-        This is a
-        <br />
+      <div
+        class="engrafo-body"
+      >
         
+
+        <p>
+          This is the first paragraph.
+        </p>
+        
+
+        <p>
+          This is the second paragraph.
+        </p>
+        
+
+        <p>
+          This is a centered paragraph.
+        </p>
+        
+
+        <p>
+          This is a
+          <br />
+          
 line break.
-      </p>
+        </p>
+        
+
+      </div>
       
 
     </dt-article>
@@ -634,106 +682,114 @@ exports[`titles and headings render correctly 1`] = `
       </div>
       
 
-
-      <h2
-        id="section-1"
+      <div
+        class="engrafo-body"
       >
-        <span
-          class="section-number"
+        
+
+
+        <h2
+          id="section-1"
         >
+          <span
+            class="section-number"
+          >
+            <a
+              href="#section-1"
+            >
+              1
+            </a>
+          </span>
+          Section Title
+        </h2>
+        
+
+        <h3
+          id="section-1.1"
+        >
+          <span
+            class="section-number"
+          >
+            <a
+              href="#section-1.1"
+            >
+              1.1
+            </a>
+          </span>
+          Subsection Title
+        </h3>
+        
+
+        <h4
+          id="subsubsection-title"
+        >
+          Subsubsection Title
+        </h4>
+        
+
+
+        <p>
+          <strong
+            class="paragraph-heading"
+          >
+            Paragraph title
+          </strong>
+           Hello.
+        </p>
+        
+
+        <h2
+          id="section-2"
+        >
+          <span
+            class="section-number"
+          >
+            <a
+              href="#section-2"
+            >
+              2
+            </a>
+          </span>
+          Another section
+        </h2>
+        
+
+        <h2
+          class="unnumbered"
+          id="section-3"
+        >
+          Unnumbered section
+        </h2>
+        
+
+        <h2
+          id="section-4"
+        >
+          <span
+            class="section-number"
+          >
+            <a
+              href="#section-4"
+            >
+              4
+            </a>
+          </span>
+          Another section
+        </h2>
+        
+
+        <p>
+          A reference to 
           <a
             href="#section-1"
           >
-            1
+            Section 1
           </a>
-        </span>
-        Section Title
-      </h2>
-      
+          .
+        </p>
+        
 
-      <h3
-        id="section-1.1"
-      >
-        <span
-          class="section-number"
-        >
-          <a
-            href="#section-1.1"
-          >
-            1.1
-          </a>
-        </span>
-        Subsection Title
-      </h3>
-      
-
-      <h4
-        id="subsubsection-title"
-      >
-        Subsubsection Title
-      </h4>
-      
-
-
-      <p>
-        <strong
-          class="paragraph-heading"
-        >
-          Paragraph title
-        </strong>
-         Hello.
-      </p>
-      
-
-      <h2
-        id="section-2"
-      >
-        <span
-          class="section-number"
-        >
-          <a
-            href="#section-2"
-          >
-            2
-          </a>
-        </span>
-        Another section
-      </h2>
-      
-
-      <h2
-        class="unnumbered"
-        id="section-3"
-      >
-        Unnumbered section
-      </h2>
-      
-
-      <h2
-        id="section-4"
-      >
-        <span
-          class="section-number"
-        >
-          <a
-            href="#section-4"
-          >
-            4
-          </a>
-        </span>
-        Another section
-      </h2>
-      
-
-      <p>
-        A reference to 
-        <a
-          href="#section-1"
-        >
-          Section 1
-        </a>
-        .
-      </p>
+      </div>
       
 
     </dt-article>

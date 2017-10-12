@@ -73,12 +73,8 @@ exports.postprocess = htmlString => {
   });
 
   // Check there is actually a document to process
-  var dtArticle = dom.querySelector('dt-article');
-  if (!dtArticle) {
-    throw new Error("Could not find <dt-article>");
-  }
-  // Title and metadata is always present
-  if (dtArticle.children.length <= 2) {
+  var body = dom.querySelector('.engrafo-body');
+  if (!body || body.children.length == 0) {
     throw new Error("Document is blank");
   }
 

@@ -36,10 +36,18 @@ exports[`bold is stripped from header 1`] = `
       </div>
       
 
+      <div
+        class="engrafo-body"
+      >
+        
 
-      <p>
-        Hello.
-      </p>
+
+        <p>
+          Hello.
+        </p>
+        
+
+      </div>
       
 
     </dt-article>

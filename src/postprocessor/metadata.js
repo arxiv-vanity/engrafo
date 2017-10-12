@@ -82,7 +82,7 @@ module.exports = function(dom) {
 
   // HACK: If there is a footnote directly after the authors, put it after the authors.
   // This is normally when a footnote without a mark is used for affiliation.
-  let p = metadata.nextElementSibling;
+  let p = dom.querySelector('.engrafo-body').children[0];
   if (p && p.tagName == 'P' && p.children.length == 1 && p.children[0].className == 'engrafo-footnote') {
     // Remove footnote
     utils.removeAndFlattenChildren(p.childNodes[0]);

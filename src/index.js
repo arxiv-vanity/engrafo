@@ -22,6 +22,10 @@ exports.renderPandoc = (texPath, pandocOnly, callback) => {
     "html5",
     "--standalone",
     "--mathjax",
+    "--data-dir",
+    "/app/pandoc-data",
+    "--template",
+    "engrafo.html",
   ];
 
   if (!pandocOnly) {

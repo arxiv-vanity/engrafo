@@ -239,13 +239,16 @@ def insert_cite_labels(key, val, fmt, meta):
 def make_explicit_figure_captions(key, val, fmt, meta):
     '''
     Lift image captions out from alt text to a span.
+
+    TODO: should this be combined with insert_figure_labels?
     '''
     if key == 'Image':
+        children = [Image(*val)]
         caption = val[1]
-        return Span(['', ['engrafo-figure'], []], [
-            Image(*val),
-            Span(['', ['engrafo-figcaption'], []], caption),
-        ])
+        # Pandoc sets alt text to "image" if there is none
+        if caption != [{u'c': u'image', u't': u'Str'}]:
+            children.append(Span(['', ['engrafo-figcaption'], []], caption))
+        return Span(['', ['engrafo-figure'], []], children)
 
 
 def replace_references(key, val, fmt, meta):

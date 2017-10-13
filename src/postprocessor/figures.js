@@ -58,6 +58,8 @@ module.exports = function(dom) {
     utils.replaceAndKeepChildren(span, figure);
 
     let caption = figure.querySelector(".engrafo-figcaption");
-    utils.replaceAndKeepChildren(caption, dom.createElement("figcaption"));
+    if (caption) {
+      utils.replaceAndKeepChildren(caption, dom.createElement("figcaption"));
+    }
   });
 };

@@ -105,3 +105,83 @@ exports[`images in figures render correctly 1`] = `
   </div>
 </body>
 `;
+
+exports[`plain images render correctly 1`] = `
+<body>
+  <div
+    class="engrafo-container"
+  >
+    
+
+    <dt-article>
+      
+
+      <h1>
+        Untitled
+      </h1>
+      
+
+      <div
+        class="engrafo-metadata"
+      >
+        
+  
+        <div
+          class="authors"
+        >
+          
+    
+        </div>
+        
+  
+        <div
+          class="engrafo-metadata-custom"
+        />
+        
+
+      </div>
+      
+
+      <div
+        class="engrafo-body"
+      >
+        
+
+        <figure
+          id=""
+        >
+          <img
+            alt="image"
+            src="fig.png"
+          />
+        </figure>
+        
+
+      </div>
+      
+
+    </dt-article>
+    
+
+    <dt-appendix>
+      
+
+      
+
+
+      <div
+        class="l-body"
+      />
+      
+
+    </dt-appendix>
+    
+
+
+
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
+</body>
+`;

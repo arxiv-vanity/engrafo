@@ -36,17 +36,9 @@ exports[`\\def multiple simple arguments render correctly 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
-      >
-        
-
-        <p>
-          one one two two three three four four five five six six seven seven after
-        </p>
-        
-
-      </div>
+      <p>
+        one one two two three three four four five five six six seven seven after
+      </p>
       
 
     </dt-article>
@@ -111,29 +103,21 @@ exports[`\\def with control seq suffix renders correctly 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
-      >
+      <blockquote>
         
 
-        <blockquote>
-          
-
-          <p>
-            <span>
-              hello
-            </span>
-             
-            <code>
-              world
-            </code>
-          </p>
-          
-
-        </blockquote>
+        <p>
+          <span>
+            hello
+          </span>
+           
+          <code>
+            world
+          </code>
+        </p>
         
 
-      </div>
+      </blockquote>
       
 
     </dt-article>
@@ -198,17 +182,9 @@ exports[`simple \\def without arguments render correctly 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
-      >
-        
-
-        <p>
-          bar
-        </p>
-        
-
-      </div>
+      <p>
+        bar
+      </p>
       
 
     </dt-article>

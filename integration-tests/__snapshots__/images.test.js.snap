@@ -36,48 +36,40 @@ exports[`images in figures render correctly 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
+      <figure
+        id="figure-1"
       >
-        
+        <img
+          alt="Figure 1: Fig."
+          src="fig.png"
+          title="fig:"
+        />
+        <figcaption>
+          Figure 1: Fig.
+        </figcaption>
+      </figure>
+      
 
-        <figure
-          id="figure-1"
+      <p>
+        See 
+        <a
+          href="#figure-1"
         >
-          <img
-            alt="Figure 1: Fig."
-            src="fig.png"
-            title="fig:"
-          />
-          <figcaption>
-            Figure 1: Fig.
-          </figcaption>
-        </figure>
-        
+          Figure 1
+        </a>
+        .
+      </p>
+      
 
-        <p>
-          See 
-          <a
-            href="#figure-1"
-          >
-            Figure 1
-          </a>
-          .
-        </p>
-        
-
-        <p>
-          Ref which doesn’t exist  
-          <span
-            class="engrafo-missing-ref"
-          >
-            ?
-          </span>
-          .
-        </p>
-        
-
-      </div>
+      <p>
+        Ref which doesn’t exist  
+        <span
+          class="engrafo-missing-ref"
+        >
+          ?
+        </span>
+        .
+      </p>
       
 
     </dt-article>
@@ -142,22 +134,14 @@ exports[`plain images render correctly 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
+      <figure
+        id=""
       >
-        
-
-        <figure
-          id=""
-        >
-          <img
-            alt="image"
-            src="fig.png"
-          />
-        </figure>
-        
-
-      </div>
+        <img
+          alt="image"
+          src="fig.png"
+        />
+      </figure>
       
 
     </dt-article>

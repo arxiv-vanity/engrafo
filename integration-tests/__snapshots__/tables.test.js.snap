@@ -36,155 +36,147 @@ exports[`basic tables render correctly 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
+      <figure
+        id="table-1"
       >
         
 
-        <figure
-          id="table-1"
+        <table>
+          
+
+          <caption>
+            Table 1: Some numbers.
+          </caption>
+          
+
+          <thead>
+            
+
+            <tr
+              class="header"
+            >
+              
+
+              <th
+                style="text-align: center;"
+              >
+                First column 
+              </th>
+              
+
+              <th
+                style="text-align: center;"
+              >
+                 Second column 
+              </th>
+              
+
+            </tr>
+            
+
+          </thead>
+          
+
+          <tbody>
+            
+
+            <tr
+              class="odd"
+            >
+              
+
+              <td
+                style="text-align: center;"
+              >
+                123 
+              </td>
+              
+
+              <td
+                style="text-align: center;"
+              >
+                 456 
+              </td>
+              
+
+            </tr>
+            
+
+            <tr
+              class="even"
+            >
+              
+
+              <td
+                style="text-align: center;"
+              >
+                234 
+              </td>
+              
+
+              <td
+                style="text-align: center;"
+              >
+                 567 
+              </td>
+              
+
+            </tr>
+            
+
+            <tr
+              class="odd"
+            >
+              
+
+              <td
+                style="text-align: center;"
+              >
+                567 
+              </td>
+              
+
+              <td
+                style="text-align: center;"
+              >
+                 890 
+              </td>
+              
+
+            </tr>
+            
+
+            <tr
+              class="even"
+            >
+              
+
+              <td
+                style="text-align: center;"
+              />
+              
+
+            </tr>
+            
+
+          </tbody>
+          
+
+        </table>
+        
+
+      </figure>
+      
+
+      <p>
+        Take a look at some cool data in 
+        <a
+          href="#table-1"
         >
-          
-
-          <table>
-            
-
-            <caption>
-              Table 1: Some numbers.
-            </caption>
-            
-
-            <thead>
-              
-
-              <tr
-                class="header"
-              >
-                
-
-                <th
-                  style="text-align: center;"
-                >
-                  First column 
-                </th>
-                
-
-                <th
-                  style="text-align: center;"
-                >
-                   Second column 
-                </th>
-                
-
-              </tr>
-              
-
-            </thead>
-            
-
-            <tbody>
-              
-
-              <tr
-                class="odd"
-              >
-                
-
-                <td
-                  style="text-align: center;"
-                >
-                  123 
-                </td>
-                
-
-                <td
-                  style="text-align: center;"
-                >
-                   456 
-                </td>
-                
-
-              </tr>
-              
-
-              <tr
-                class="even"
-              >
-                
-
-                <td
-                  style="text-align: center;"
-                >
-                  234 
-                </td>
-                
-
-                <td
-                  style="text-align: center;"
-                >
-                   567 
-                </td>
-                
-
-              </tr>
-              
-
-              <tr
-                class="odd"
-              >
-                
-
-                <td
-                  style="text-align: center;"
-                >
-                  567 
-                </td>
-                
-
-                <td
-                  style="text-align: center;"
-                >
-                   890 
-                </td>
-                
-
-              </tr>
-              
-
-              <tr
-                class="even"
-              >
-                
-
-                <td
-                  style="text-align: center;"
-                />
-                
-
-              </tr>
-              
-
-            </tbody>
-            
-
-          </table>
-          
-
-        </figure>
-        
-
-        <p>
-          Take a look at some cool data in 
-          <a
-            href="#table-1"
-          >
-            Table 1
-          </a>
-          .
-        </p>
-        
-
-      </div>
+          Table 1
+        </a>
+        .
+      </p>
       
 
     </dt-article>

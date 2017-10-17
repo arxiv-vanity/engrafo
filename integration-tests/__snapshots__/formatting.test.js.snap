@@ -79,18 +79,10 @@ exports[`ICML commands are supported 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
-      >
-        
 
-
-        <p>
-          Body text.
-        </p>
-        
-
-      </div>
+      <p>
+        Body text.
+      </p>
       
 
     </dt-article>
@@ -255,17 +247,9 @@ exports[`institute command is supported 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
-      >
-        
-
-        <p>
-          Body text.
-        </p>
-        
-
-      </div>
+      <p>
+        Body text.
+      </p>
       
 
     </dt-article>
@@ -330,73 +314,65 @@ exports[`links get wrapped in anchors 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
-      >
-        
+      <p>
+        http link: 
+        <a
+          class="uri"
+          href="http://link.co.uk/to#something"
+        >
+          http://link.co.uk/to#something
+        </a>
+      </p>
+      
 
-        <p>
-          http link: 
-          <a
-            class="uri"
-            href="http://link.co.uk/to#something"
-          >
-            http://link.co.uk/to#something
-          </a>
-        </p>
-        
+      <p>
+        https link: 
+        <a
+          class="uri"
+          href="https://link.info?param"
+        >
+          https://link.info?param
+        </a>
+         url
+      </p>
+      
 
-        <p>
-          https link: 
-          <a
-            class="uri"
-            href="https://link.info?param"
-          >
-            https://link.info?param
-          </a>
-           url
-        </p>
-        
+      <p>
+        link with trailing period: 
+        <a
+          class="uri"
+          href="https://example.com"
+        >
+          https://example.com
+        </a>
+        .
+      </p>
+      
 
-        <p>
-          link with trailing period: 
-          <a
-            class="uri"
-            href="https://example.com"
-          >
-            https://example.com
-          </a>
-          .
-        </p>
-        
+      <p>
+        this should not make a link: foo.bar
+      </p>
+      
 
-        <p>
-          this should not make a link: foo.bar
-        </p>
-        
+      <p>
+        this is a link without leading space: badlatex.
+        <a
+          class="uri"
+          href="http://example.com"
+        >
+          http://example.com
+        </a>
+      </p>
+      
 
-        <p>
-          this is a link without leading space: badlatex.
-          <a
-            class="uri"
-            href="http://example.com"
-          >
-            http://example.com
-          </a>
-        </p>
-        
-
-        <p>
-          this is already a link: 
-          <a
-            href="http://example.com"
-          >
-            example.com
-          </a>
-        </p>
-        
-
-      </div>
+      <p>
+        this is already a link: 
+        <a
+          href="http://example.com"
+        >
+          example.com
+        </a>
+      </p>
       
 
     </dt-article>
@@ -461,148 +437,140 @@ exports[`lists render correctly 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
+      <ul>
+        
+
+        <li>
+          <p>
+            An unordered list
+          </p>
+        </li>
+        
+
+        <li>
+          <p>
+            Second item
+          </p>
+        </li>
+        
+
+      </ul>
+      
+
+      <ol>
+        
+
+        <li>
+          <p>
+            An ordered list
+          </p>
+        </li>
+        
+
+        <li>
+          <p>
+            Second one.
+          </p>
+        </li>
+        
+
+      </ol>
+      
+
+      <ul>
+        
+
+        <li>
+          <p>
+            A nested unordered list
+          </p>
+          
+
+          <ul>
+            
+
+            <li>
+              <p>
+                First nested item
+              </p>
+            </li>
+            
+
+            <li>
+              <p>
+                Second nested item
+              </p>
+            </li>
+            
+
+          </ul>
+        </li>
+        
+
+        <li>
+          <p>
+            Second item
+          </p>
+        </li>
+        
+
+      </ul>
+      
+
+      <h2
+        id="section-1"
       >
-        
-
-        <ul>
-          
-
-          <li>
-            <p>
-              An unordered list
-            </p>
-          </li>
-          
-
-          <li>
-            <p>
-              Second item
-            </p>
-          </li>
-          
-
-        </ul>
-        
-
-        <ol>
-          
-
-          <li>
-            <p>
-              An ordered list
-            </p>
-          </li>
-          
-
-          <li>
-            <p>
-              Second one.
-            </p>
-          </li>
-          
-
-        </ol>
-        
-
-        <ul>
-          
-
-          <li>
-            <p>
-              A nested unordered list
-            </p>
-            
-
-            <ul>
-              
-
-              <li>
-                <p>
-                  First nested item
-                </p>
-              </li>
-              
-
-              <li>
-                <p>
-                  Second nested item
-                </p>
-              </li>
-              
-
-            </ul>
-          </li>
-          
-
-          <li>
-            <p>
-              Second item
-            </p>
-          </li>
-          
-
-        </ul>
-        
-
-        <h2
-          id="section-1"
+        <span
+          class="section-number"
         >
-          <span
-            class="section-number"
+          <a
+            href="#section-1"
           >
-            <a
-              href="#section-1"
-            >
-              1
-            </a>
-          </span>
-          A nested ordered list
-        </h2>
+            1
+          </a>
+        </span>
+        A nested ordered list
+      </h2>
+      
+
+      <ol>
         
 
-        <ol>
+        <li>
+          <p>
+            First item
+          </p>
           
 
-          <li>
-            <p>
-              First item
-            </p>
+          <ol>
             
 
-            <ol>
-              
+            <li>
+              <p>
+                First nested item
+              </p>
+            </li>
+            
 
-              <li>
-                <p>
-                  First nested item
-                </p>
-              </li>
-              
+            <li>
+              <p>
+                Second nested item
+              </p>
+            </li>
+            
 
-              <li>
-                <p>
-                  Second nested item
-                </p>
-              </li>
-              
-
-            </ol>
-          </li>
-          
-
-          <li>
-            <p>
-              Second item
-            </p>
-          </li>
-          
-
-        </ol>
+          </ol>
+        </li>
         
 
-      </div>
+        <li>
+          <p>
+            Second item
+          </p>
+        </li>
+        
+
+      </ol>
       
 
     </dt-article>
@@ -667,17 +635,9 @@ exports[`pdfoutput=1 is ignored 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
-      >
-        
-
-        <p>
-          hello world
-        </p>
-        
-
-      </div>
+      <p>
+        hello world
+      </p>
       
 
     </dt-article>
@@ -761,44 +721,36 @@ exports[`pinforms3 TITLE, AUTHOR, AFF are supported 1`] = `
       
 
       <div
-        class="engrafo-body"
+        class="authors"
       >
         
 
-        <div
-          class="authors"
-        >
-          
-
-          <p>
-            <span>
-               
-              <span
-                class="author"
-              >
-                <span>
-                  Author Name
-                </span>
-              </span>
-               
-              <span
-                class="affiliation"
-              >
-                <span>
-                  Author Affiliation
-                </span>
+        <p>
+          <span>
+             
+            <span
+              class="author"
+            >
+              <span>
+                Author Name
               </span>
             </span>
-          </p>
-          
+             
+            <span
+              class="affiliation"
+            >
+              <span>
+                Author Affiliation
+              </span>
+            </span>
+          </span>
+        </p>
+        
 
 
-          <p>
-            hello world
-          </p>
-          
-
-        </div>
+        <p>
+          hello world
+        </p>
         
 
       </div>
@@ -866,59 +818,51 @@ exports[`text formatting renders correctly 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
-      >
-        
+      <p>
+        This is 
+        <strong>
+          bold
+        </strong>
+        .
+      </p>
+      
 
-        <p>
-          This is 
-          <strong>
-            bold
-          </strong>
-          .
-        </p>
-        
+      <p>
+        This is 
+        <em>
+          textit
+        </em>
+        .
+      </p>
+      
 
-        <p>
-          This is 
-          <em>
-            textit
-          </em>
-          .
-        </p>
-        
+      <p>
+        This is 
+        <em>
+          emph
+        </em>
+        .
+      </p>
+      
 
-        <p>
-          This is 
-          <em>
-            emph
-          </em>
-          .
-        </p>
-        
+      <p>
+        This is 
+        <a
+          href="https://www.example.com"
+        >
+          a link
+        </a>
+        .
+      </p>
+      
 
-        <p>
-          This is 
-          <a
-            href="https://www.example.com"
-          >
-            a link
-          </a>
-          .
-        </p>
-        
-
-        <p>
-          This is 
-          <code>
-            fixed width
-          </code>
-          .
-        </p>
-        
-
-      </div>
+      <p>
+        This is 
+        <code>
+          fixed width
+        </code>
+        .
+      </p>
       
 
     </dt-article>
@@ -983,22 +927,14 @@ exports[`vskip is ignored 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
-      >
-        
+      <p>
+        before
+      </p>
+      
 
-        <p>
-          before
-        </p>
-        
-
-        <p>
-          after
-        </p>
-        
-
-      </div>
+      <p>
+        after
+      </p>
       
 
     </dt-article>

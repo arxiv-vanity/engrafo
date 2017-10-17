@@ -36,48 +36,40 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
-      >
-        
-
-        <p>
-          Refer to 
-          <a
-            class="engrafo-cite"
-            href="#cite-1"
-            onclick="event.preventDefault()"
-          >
-            <span
-              data-hover-ref="dt-cite-hover-box-1"
-            >
-              [1]
-            </span>
-          </a>
-           then refer to 
-          <a
-            class="engrafo-cite"
-            href="#cite-2"
-            onclick="event.preventDefault()"
-          >
-            <span
-              data-hover-ref="dt-cite-hover-box-2"
-            >
-              [2]
-            </span>
-          </a>
-           but misspell 
+      <p>
+        Refer to 
+        <a
+          class="engrafo-cite"
+          href="#cite-1"
+          onclick="event.preventDefault()"
+        >
           <span
-            class="engrafo-cite engrafo-missing-cite"
+            data-hover-ref="dt-cite-hover-box-1"
           >
-            [?]
+            [1]
           </span>
-        </p>
-        
-
-
-      </div>
+        </a>
+         then refer to 
+        <a
+          class="engrafo-cite"
+          href="#cite-2"
+          onclick="event.preventDefault()"
+        >
+          <span
+            data-hover-ref="dt-cite-hover-box-2"
+          >
+            [2]
+          </span>
+        </a>
+         but misspell 
+        <span
+          class="engrafo-cite engrafo-missing-cite"
+        >
+          [?]
+        </span>
+      </p>
       
+
 
     </dt-article>
     
@@ -222,42 +214,34 @@ exports[`a basic bibliography renders correctly 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
-      >
-        
-
-        <p>
-          Hello
-          <a
-            class="engrafo-cite"
-            href="#cite-1"
-            onclick="event.preventDefault()"
+      <p>
+        Hello
+        <a
+          class="engrafo-cite"
+          href="#cite-1"
+          onclick="event.preventDefault()"
+        >
+          <span
+            data-hover-ref="dt-cite-hover-box-0"
           >
+            [1]
+          </span>
+        </a>
+         World
+        <dt-fn>
+          <sup>
             <span
-              data-hover-ref="dt-cite-hover-box-0"
+              data-hover-ref="dt-fn-hover-box-0"
+              id="fn-1"
+              style="cursor:pointer"
             >
-              [1]
+              1
             </span>
-          </a>
-           World
-          <dt-fn>
-            <sup>
-              <span
-                data-hover-ref="dt-fn-hover-box-0"
-                id="fn-1"
-                style="cursor:pointer"
-              >
-                1
-              </span>
-            </sup>
-          </dt-fn>
-        </p>
-        
-
-
-      </div>
+          </sup>
+        </dt-fn>
+      </p>
       
+
 
     </dt-article>
     

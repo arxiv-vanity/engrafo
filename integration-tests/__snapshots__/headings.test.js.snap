@@ -36,34 +36,26 @@ exports[`TITLES IN ALL CAPS are fixed 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
+
+      <h2
+        id="section-1"
       >
-        
-
-
-        <h2
-          id="section-1"
+        <span
+          class="section-number"
         >
-          <span
-            class="section-number"
+          <a
+            href="#section-1"
           >
-            <a
-              href="#section-1"
-            >
-              1
-            </a>
-          </span>
-          Urgh Stop It
-        </h2>
-        
+            1
+          </a>
+        </span>
+        Urgh Stop It
+      </h2>
+      
 
-        <p>
-          Hello.
-        </p>
-        
-
-      </div>
+      <p>
+        Hello.
+      </p>
       
 
     </dt-article>
@@ -128,18 +120,10 @@ exports[`bold is stripped from title 1`] = `
       </div>
       
 
-      <div
-        class="engrafo-body"
-      >
-        
 
-
-        <p>
-          Hello.
-        </p>
-        
-
-      </div>
+      <p>
+        Hello.
+      </p>
       
 
     </dt-article>

@@ -16,16 +16,20 @@ For full usage, run `docker run arxiv-vanity/engrafo engrafo --help`.
 
 ## Design
 
-Engrafo stands on a lot of other shoulders because parsing LaTeX is really hard. The main thing is written in Node.js, but it calls lots of other things. Here is roughly how it works:
+We couldn't find a good LaTeX to HTML converter. But instead of building one from scratch, we decided to combine some components that were almost there and modify them to our needs.
 
-* Engrafo calls Pandoc to do a basic conversion of LaTeX to HTML, using [our own fork of Pandoc](https://github.com/andreasjansson/pandoc).
-* During the Pandoc conversion, a Pandoc filter written in Python (in `pandocfilter/`) does things like converting `tikzpicture` to SVG, inserting labels, inserting hyperlinks, etc.
-* After the Pandoc conversion, a few things from [Distill's template](https://github.com/distillpub/template) are run on the output to style it, create footnotes, create hover boxes, etc.
-* Intermingled with the Distill processing is some of Engrafo's own post-processing. Pandoc can only output a particular subset of HTML from its AST, so the post-processor improves various things. It also prepares it for Distill's processing and adds styling.
+The downside of this approach is a fair amount of shoe-horning, but the upside is (probably) less work, and it means we can contribute our improvements to each component back to the open-source academic community.
 
-The line between the Python Pandoc filter and the Node.js post-processing is pretty fuzzy at the moment. It is intended that we do as much as possible in Pandoc, then use the Node post-processor to rejig anything that Pandoc doesn't do as we like.
+Here is how it works:
 
-## Development environment
+* [Pandoc](http://pandoc.org/) does most of the heavy lifting, using [our own heavily-modified fork](https://github.com/andreasjansson/pandoc). It parses the LaTeX and outputs the basic HTML.
+* During the Pandoc conversion, a Pandoc filter (in `pandocfilter/`) converts `tikzpicture` to SVG, inserts labels, inserts hyperlinks, and various other things.
+* After the Pandoc conversion, we apply [Distill's template](https://github.com/distillpub/template) to style the output, make it responsive, create footnotes, and create hover boxes.
+* Some post-processors (in `src/postprocessors/`) do layout, additional styling, math rendering, bibliography rendering, and various other things. Pandoc can only output a particular subset of HTML from its AST, so the post-processors also rename and move around some elements.
+
+The line between the Pandoc filter and the post-processing is pretty fuzzy at the moment. If you're trying to find some logic as to where a bit of processing lives, there probably isn't any. The intention is that we do as much as possible in Pandoc, then use the post-processor to rejig anything that Pandoc can't easily do.
+
+## Development environment
 
 In development, you can build an image locally and use a shortcut script to run the image:
 

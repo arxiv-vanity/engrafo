@@ -38,15 +38,17 @@ You can also run a server that allows you to view papers from Arxiv in a browser
 
 And it will be available at [http://localhost:8010/](http://localhost:8010/).
 
-### Local Pandoc development
+### Working on Pandoc
 
-If you are working on Pandoc locally, continuously build the `pandoc` binary from your local `pandoc` folder:
+Engrafo uses a [custom version of Pandoc](https://github.com/arxiv-vanity/pandoc). If you are working on Pandoc locally, you can continuously build the `pandoc` binary and inject it into the Engrafo image.
+
+In your local Pandoc directory, run:
 
     $ ./docker-watch-build.sh
 
-This will build an executable in `pandoc/.stack-work/install/x86_64-linux/lts-8.16/8.0.2/bin/pandoc` (that is then symlinked to `~/.local/bin` in the container).
+This will build an executable in `pandoc/.stack-work/install/x86_64-linux/lts-8.16/8.0.2/bin/pandoc`.
 
-In another shell, in the `engrafo-pandoc` folder, start the server with
+In another shell, in the Engrafo directory, run:
 
     $ PANDOC_BINARY=/path/to/pandoc/.stack-work/install/x86_64-linux/lts-8.16/8.0.2/bin/pandoc script/server
 

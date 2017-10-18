@@ -58,15 +58,7 @@ Now, whenever you make a change to a Pandoc source file, the binary will build a
 
 ## Tests
 
-### Unit tests
-
-So far, only the Pandoc filters have unit tests:
-
-    $ script/test-pandocfilter
-
-### Running integration tests
-
-The integration tests in `integration-tests/` render small LaTeX files and ensure they produce a particular HTML output.
+Run the main test suite:
 
     $ script/test
 
@@ -78,7 +70,13 @@ Or individual tests by matching a string:
 
     $ script/test -t "titles and headings"
 
+There is also a test suite for the Pandoc filter:
+
+    $ script/test-pandocfilter
+
 ### Writing integration tests
+
+The integration tests in `integration-tests/` render small LaTeX files and ensure they produce a particular HTML output.
 
 The integration tests use [Jest's](http://facebook.github.io/jest/) snapshotting feature.
 

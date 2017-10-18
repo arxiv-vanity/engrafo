@@ -4,6 +4,16 @@
 
 Converts LaTeX documents into beautiful responsive web pages.
 
+## Usage
+
+The easiest way to run Engrafo is by using the Docker image. To convert `input/main.tex` into `output/index.html`, run:
+
+    $ docker run \
+      -v "$(pwd)":/workdir -w /workdir \
+      arxiv-vanity/engrafo engrafo -o output/ input/main.tex
+
+For full usage, run `docker run arxiv-vanity/engrafo engrafo --help`.
+
 ## Design
 
 Engrafo stands on a lot of other shoulders because parsing LaTeX is really hard. The main thing is written in Node.js, but it calls lots of other things. Here is roughly how it works:
@@ -15,19 +25,14 @@ Engrafo stands on a lot of other shoulders because parsing LaTeX is really hard.
 
 The line between the Python Pandoc filter and the Node.js post-processing is pretty fuzzy at the moment. It is intended that we do as much as possible in Pandoc, then use the Node post-processor to rejig anything that Pandoc doesn't do as we like.
 
-## Building Docker image
+## Development environment
+
+In development, you can build an image locally and use a shortcut script to run the image:
 
     $ script/build
+    $ script/engrafo -o output/ input/main.tex
 
-## Rendering a document
-
-    $ script/engrafo path/to/latex.tex
-
-## Run development server
-
-The development server allows you to view articles on Arxiv in a browser.
-
-Start it by running:
+You can also run a server that allows you to view papers from Arxiv in a browser. Start it by running:
 
     $ script/server
 

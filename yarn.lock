@@ -1857,17 +1857,17 @@ minimist@~0.0.1:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf"
 
-minipass@^2.0.0, minipass@^2.0.2:
+minipass@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-2.2.1.tgz#5ada97538b1027b4cf7213432428578cb564011f"
   dependencies:
     yallist "^3.0.0"
 
-minizlib@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-1.0.3.tgz#d5c1abf77be154619952e253336eccab9b2a32f5"
+minizlib@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-1.0.4.tgz#8ebb51dd8bbe40b0126b5633dbb36b284a2f523c"
   dependencies:
-    minipass "^2.0.0"
+    minipass "^2.2.1"
 
 mkdirp@0.5.1, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1:
   version "0.5.1"
@@ -2641,13 +2641,13 @@ tar@^2.2.1:
     fstream "^1.0.2"
     inherits "2"
 
-tar@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/tar/-/tar-4.0.1.tgz#3f5b2e5289db30c2abe4c960f43d0d9fff96aaf0"
+tar@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-4.0.2.tgz#e8e22bf3eec330e5c616d415a698395e294e8fad"
   dependencies:
     chownr "^1.0.1"
-    minipass "^2.0.2"
-    minizlib "^1.0.3"
+    minipass "^2.2.1"
+    minizlib "^1.0.4"
     mkdirp "^0.5.0"
     yallist "^3.0.2"
 

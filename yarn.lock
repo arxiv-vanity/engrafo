@@ -671,9 +671,9 @@ diff@^3.2.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/diff/-/diff-3.3.0.tgz#056695150d7aa93237ca7e378ac3b1682b7963b9"
 
-"distill-template@git+https://github.com/bfirsh/template.git#engrafo":
+"distill-template@git+https://github.com/arxiv-vanity/template.git#engrafo":
   version "1.1.0"
-  resolved "git+https://github.com/bfirsh/template.git#5fe06a820adce3500015ae22018688d0c1885848"
+  resolved "git+https://github.com/arxiv-vanity/template.git#5fe06a820adce3500015ae22018688d0c1885848"
   dependencies:
     bibtex-parse-js "^0.0.23"
     chai "^3.5.0"

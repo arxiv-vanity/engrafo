@@ -45,17 +45,15 @@ module.exports = function(dom) {
 
   // Make figures figures
   let figures = dom.querySelectorAll(".engrafo-figure");
-  Array.from(figures).forEach(span => {
-    // Pandoc gives us <p><span></span></p> so get rid of surrounding paragraph
-    let paragraph = span.parentNode;
-    paragraph.parentNode.insertBefore(span, paragraph);
-    if (paragraph.children.length === 0) {
-      paragraph.parentNode.removeChild(paragraph);
-    }
+  Array.from(figures).forEach(div => {
+    // Pandoc gives us <div class="engrafo-figure"><p>...</p></div>
+    // so get rid of paragraph
+    utils.removeAndFlattenChildren(div.children[0]);
 
     let figure = dom.createElement("figure");
-    figure.id = span.id;
-    utils.replaceAndKeepChildren(span, figure);
+    figure.id = div.id;
+    figure.className = "l-page";
+    utils.replaceAndKeepChildren(div, figure);
 
     let caption = figure.querySelector(".engrafo-figcaption");
     if (caption) {

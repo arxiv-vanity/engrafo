@@ -2,13 +2,14 @@
 import json
 import sys
 from pandocfilters import walk
+from .figures import make_figures
 from .footnotes import inline_footnotes
 from .images import (replace_pdf_images, replace_tikz_images,
                      append_image_extensions, replace_eps_images)
 from .labels import (process_display_math, insert_figure_labels,
                      insert_table_labels, insert_section_labels,
-                     make_explicit_figure_captions, replace_references,
-                     insert_cite_labels, replace_cite_references)
+                     replace_references, insert_cite_labels,
+                     replace_cite_references)
 from .links import wrap_urls_in_anchors
 from .math import replace_smallcaps
 
@@ -31,11 +32,11 @@ def main():
             replace_eps_images,
             replace_pdf_images,
             replace_tikz_images,
+            make_figures,
             insert_figure_labels,
             insert_table_labels,
             insert_section_labels,
             insert_cite_labels,
-            make_explicit_figure_captions,
             replace_references,
             replace_cite_references,
             inline_footnotes,

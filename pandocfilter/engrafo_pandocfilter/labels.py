@@ -31,39 +31,47 @@ def incr_latest_index(name):
 
 
 def insert_figure_labels(key, val, fmt, meta):
-    '''
+    """
     Insert "Figure 3: " style labels before figure captions
-    and wrap in span with id=figure-3 etc.
-    '''
-    if key == 'Image':
-        alt = val[1]
-        for i, obj in enumerate(alt):
-            if obj['t'] == 'Span':
-                span_val = obj['c'][0][2]
-                if (len(span_val) == 1
+    and add id to figure element. Assumes make_figures filter has been run.
+    """
+    if key != 'Div' or val[0][1] != ['engrafo-figure']:
+        return
+    # raise Exception(val)
+    div_children = val[1]
+    p = div_children[0]
+    img = p['c'][0]
+    if img['t'] != 'Image':
+        return
+    alt = img['c'][1]
+
+    for i, obj in enumerate(alt):
+        if obj['t'] == 'Span':
+            span_val = obj['c'][0][2]
+            if (len(span_val) == 1
                     and len(span_val[0]) == 2
-                        and span_val[0][0] == 'data-label'):
-                    label = span_val[0][1]
-                    index = incr_latest_index('figure')
-                    ref_index = 'figure-%d' % index
+                    and span_val[0][0] == 'data-label'):
+                label = span_val[0][1]
+                index = incr_latest_index('figure')
+                ref_index = 'figure-%d' % index
 
-                    label_map[label] = Label(
-                        ref_string='Figure %d' % index,
-                        ref_index=ref_index,
-                        prev_strings=['figure', 'fig.', 'fig'],
-                    )
+                label_map[label] = Label(
+                    ref_string='Figure %d' % index,
+                    ref_index=ref_index,
+                    prev_strings=['figure', 'fig.', 'fig'],
+                )
 
-                    span_index = i
-                    alt.pop(span_index)
-                    alt.insert(0, Str('Figure %d: ' % index))
+                # Set ID on div
+                val[0][0] = ref_index
 
-                    children = [
-                        Image(*val),
-                        Span(['', ['engrafo-figcaption'], []], alt)
-                    ]
+                span_index = i
+                alt.pop(span_index)
+                s = 'Figure %d' % index
+                if alt:
+                    s += ': '
+                alt.insert(0, Str(s))
 
-                    return Span([ref_index, ['engrafo-figure'], []], children)
-
+    return Div(*val)
 
 def insert_table_labels(key, val, fmt, meta):
     '''
@@ -234,21 +242,6 @@ def insert_cite_labels(key, val, fmt, meta):
         val[0][0] = 'cite-%d' % index
 
         return Div(*val)
-
-
-def make_explicit_figure_captions(key, val, fmt, meta):
-    '''
-    Lift image captions out from alt text to a span.
-
-    TODO: should this be combined with insert_figure_labels?
-    '''
-    if key == 'Image':
-        children = [Image(*val)]
-        caption = val[1]
-        # Pandoc sets alt text to "image" if there is none
-        if caption != [{u'c': u'image', u't': u'Str'}]:
-            children.append(Span(['', ['engrafo-figcaption'], []], caption))
-        return Span(['', ['engrafo-figure'], []], children)
 
 
 def replace_references(key, val, fmt, meta):

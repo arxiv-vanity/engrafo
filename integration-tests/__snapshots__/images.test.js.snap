@@ -39,6 +39,8 @@ exports[`images in figures render correctly 1`] = `
       <figure
         id="figure-1"
       >
+        
+
         <img
           alt="Figure 1: Fig."
           src="fig.png"
@@ -47,6 +49,8 @@ exports[`images in figures render correctly 1`] = `
         <figcaption>
           Figure 1: Fig.
         </figcaption>
+        
+
       </figure>
       
 
@@ -68,6 +72,102 @@ exports[`images in figures render correctly 1`] = `
         >
           ?
         </span>
+        .
+      </p>
+      
+
+    </dt-article>
+    
+
+    <dt-appendix>
+      
+
+      
+
+
+      <div
+        class="l-body"
+      />
+      
+
+    </dt-appendix>
+    
+
+
+
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
+</body>
+`;
+
+exports[`multiple images in figures render correctly 1`] = `
+<body>
+  <div
+    class="engrafo-container"
+  >
+    
+
+    <dt-article>
+      
+
+      <h1>
+        Untitled
+      </h1>
+      
+
+      <div
+        class="engrafo-metadata"
+      >
+        
+  
+        <div
+          class="authors"
+        >
+          
+    
+        </div>
+        
+  
+        <div
+          class="engrafo-metadata-custom"
+        />
+        
+
+      </div>
+      
+
+      <figure
+        id="figure-1"
+      >
+        
+
+        <img
+          alt="Figure 1: Fig."
+          src="fig.png"
+          title="fig:"
+        />
+        <img
+          alt="Fig."
+          src="fig2.png"
+          title="fig:"
+        />
+        <figcaption>
+          Figure 1: Fig.
+        </figcaption>
+        
+
+      </figure>
+      
+
+      <p>
+        See 
+        <a
+          href="#figure-1"
+        >
+          Figure 1
+        </a>
         .
       </p>
       
@@ -137,10 +237,14 @@ exports[`plain images render correctly 1`] = `
       <figure
         id=""
       >
+        
+
         <img
           alt="image"
           src="fig.png"
         />
+        
+
       </figure>
       
 

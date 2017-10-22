@@ -139,20 +139,29 @@ exports[`multiple images in figures render correctly 1`] = `
       
 
       <figure
+        class="l-page"
         id="figure-1"
       >
         
 
-        <img
-          alt="Figure 1: Fig."
-          src="fig.png"
-          title="fig:"
-        />
-        <img
-          alt="Fig."
-          src="fig2.png"
-          title="fig:"
-        />
+        <div
+          class="images"
+        >
+          <div>
+            <img
+              alt="Figure 1: Fig."
+              src="fig.png"
+              title="fig:"
+            />
+          </div>
+          <div>
+            <img
+              alt="Fig."
+              src="fig2.png"
+              title="fig:"
+            />
+          </div>
+        </div>
         <figcaption>
           Figure 1: Fig.
         </figcaption>

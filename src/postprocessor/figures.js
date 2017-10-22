@@ -23,6 +23,13 @@ var css = `
     dt-article figure {
       overflow: visible;
     }
+
+    dt-article figure .images {
+      display: flex;
+    }
+    dt-article figure .images > div {
+      margin-right: 15px;
+    }
   }
 `;
 
@@ -52,8 +59,19 @@ module.exports = function(dom) {
 
     let figure = dom.createElement("figure");
     figure.id = div.id;
-    figure.className = "l-page";
     utils.replaceAndKeepChildren(div, figure);
+
+    let images = figure.querySelectorAll('img');
+    if (images.length > 1) {
+      figure.className = "l-page";
+      let imagesDiv = utils.nodeFromString(dom, '<div class="images"></div>');
+      figure.insertBefore(imagesDiv, images[0]);
+      Array.from(images).forEach(img => {
+        imagesDiv.appendChild(img);
+        // Flexbox requires images to be in div
+        utils.wrapElement(img, dom.createElement('div'));
+      });
+    }
 
     let caption = figure.querySelector(".engrafo-figcaption");
     if (caption) {

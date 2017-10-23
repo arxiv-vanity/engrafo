@@ -58,15 +58,11 @@ In your local Pandoc directory, run:
 
     $ ./docker-watch-build.sh
 
-This will build an executable in `pandoc/.stack-work/install/x86_64-linux/lts-8.16/8.0.2/bin/pandoc`.
-
 In another shell, in the Engrafo directory, run:
 
-    $ PANDOC_BINARY=/path/to/pandoc/.stack-work/install/x86_64-linux/lts-8.16/8.0.2/bin/pandoc script/server
+    $ PANDOC_DIR=/path/to/local/pandoc/dir script/server
 
 Now, whenever you make a change to a Pandoc source file, the binary will build and will be visible in the Engrafo container.
-
-**Note:** This doesn't quite work as expected, probably due to Docker bugs. The watch script doesn't seem to pick up source changes, so you have to manually press enter to re-build. Then when it's built, the engrafo container can't find the mounted pandoc binary that was removed (it's not re-mounted when it's recreated) so you have to restart the engrafo container.
 
 ## Tests
 

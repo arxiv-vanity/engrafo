@@ -1,8 +1,8 @@
 #!/bin/bash
 ENGRAFO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 
-if [ ! -z "$PANDOC_BINARY" ]; then
-  PANDOC_VOLUME_FLAG="-v $PANDOC_BINARY/$PANDOC_FILE:/usr/local/bin/pandoc"
+if [ ! -z "$PANDOC_DIR" ]; then
+  PANDOC_VOLUME_FLAG="-v $PANDOC_DIR:/usr/src/pandoc"
 fi
 
 exec docker run \

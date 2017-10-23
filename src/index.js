@@ -41,7 +41,7 @@ exports.renderPandoc = (texPath, pandocOnly, callback) => {
     texFilename
   );
 
-  var pandoc = childProcess.spawn("/usr/local/bin/pandoc", args, {
+  var pandoc = childProcess.spawn("pandoc", args, {
     cwd: outputDir
   });
   var stdout = "";

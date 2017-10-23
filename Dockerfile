@@ -47,5 +47,7 @@ RUN yarn
 
 ENV PYTHONUNBUFFERED=1
 ENV PATH="/app/bin:${PATH}"
+# To make PANDOC_DIR work
+ENV PATH="/usr/src/pandoc/.stack-work/install/x86_64-linux/lts-8.16/8.0.2/bin:${PATH}"
 
 COPY . /app

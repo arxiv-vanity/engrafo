@@ -1,4 +1,4 @@
-FROM arxivvanity/pandoc@sha256:129bee00de43766a8f1a98f91c0b11460e4eb7609ca8795ea3913b5816eba42a as pandoc
+FROM arxivvanity/pandoc@sha256:26ca78b42315db131195dd2b25f9a29565299bb3482cbcad3f4ea1801e4b96a5 as pandoc
 FROM debian:stretch
 
 # Official CDN throws 503s

@@ -16,13 +16,13 @@ For full usage, run `docker run arxiv-vanity/engrafo engrafo --help`.
 
 ## Design
 
-We couldn't find a good LaTeX to HTML converter. But instead of building one from scratch, we decided to combine some components that were almost there and modify them to our needs.
+We couldn't find a good LaTeX to HTML converter. But instead of building one from scratch, we picked some components that solved part of the problem and modified them to our needs.
 
 The downside of this approach is a fair amount of shoe-horning, but the upside is (probably) less work, and it means we can contribute our improvements to each component back to the open-source academic community.
 
 Here is how it works:
 
-* [Pandoc](http://pandoc.org/) does most of the heavy lifting, using [our own heavily-modified fork](https://github.com/arxiv-vanity/pandoc). It parses the LaTeX and outputs the basic HTML.
+* [Pandoc](http://pandoc.org/) does most of the heavy lifting, using [our own fork](https://github.com/arxiv-vanity/pandoc). It parses the LaTeX and outputs the basic HTML.
 * During the Pandoc conversion, a Pandoc filter (in `pandocfilter/`) converts `tikzpicture` to SVG, inserts labels, inserts hyperlinks, and various other things.
 * After the Pandoc conversion, we apply [Distill's template](https://github.com/distillpub/template) to style the output, make it responsive, create footnotes, and create hover boxes.
 * Some post-processors (in `src/postprocessors/`) do layout, additional styling, math rendering, bibliography rendering, and various other things. Pandoc can only output a particular subset of HTML from its AST, so the post-processors also rename and move around some elements.

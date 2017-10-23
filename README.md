@@ -6,7 +6,7 @@ Converts LaTeX documents into beautiful responsive web pages.
 
 It turns this sort of thing:
 
-<img src="docs/screenshot-pdf.png" width="500">
+<img src="docs/screenshot-pdf.png" width="600">
 
 Into this:
 

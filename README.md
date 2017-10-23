@@ -4,6 +4,14 @@
 
 Converts LaTeX documents into beautiful responsive web pages.
 
+Turns this sort of thing:
+
+<img src="docs/screenshot-pdf.png" width="500">
+
+Into this:
+
+<img src="docs/screenshot-screens.png">
+
 ## Usage
 
 The easiest way to run Engrafo is by using the Docker image. To convert `input/main.tex` into `output/index.html`, run:

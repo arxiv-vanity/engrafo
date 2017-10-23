@@ -183,15 +183,13 @@ exports[`institute command is supported 1`] = `
               
 
               <a
-                class="uri"
-                href="evylomova@gmail.com"
+                href="http://evylomova@gmail.com"
               >
                 evylomova@gmail.com
               </a>
                & 
               <a
-                class="uri"
-                href="ultrasparc@yandex.ru"
+                href="http://ultrasparc@yandex.ru"
               >
                 ultrasparc@yandex.ru
               </a>
@@ -208,8 +206,7 @@ exports[`institute command is supported 1`] = `
               
 
               <a
-                class="uri"
-                href="Y_philippovich@mail.ru"
+                href="http://Y_philippovich@mail.ru"
               >
                 Y_philippovich@mail.ru
               </a>
@@ -226,8 +223,7 @@ exports[`institute command is supported 1`] = `
               
 
               <a
-                class="uri"
-                href="gacherk@mail.ru"
+                href="http://gacherk@mail.ru"
               >
                 gacherk@mail.ru
               </a>
@@ -367,6 +363,16 @@ exports[`links get wrapped in anchors 1`] = `
 
       <p>
         this is already a link: 
+        <a
+          href="http://example.com"
+        >
+          example.com
+        </a>
+      </p>
+      
+
+      <p>
+        this is a link without http: 
         <a
           href="http://example.com"
         >

@@ -10,7 +10,7 @@ from .labels import (process_display_math, insert_figure_labels,
                      insert_table_labels, insert_section_labels,
                      replace_references, insert_cite_labels,
                      replace_cite_references)
-from .links import wrap_urls_in_anchors
+from .links import add_http_to_links, wrap_urls_in_anchors
 from .math import replace_smallcaps
 
 
@@ -25,6 +25,7 @@ def main():
     fmt = 'latex'
 
     for action in [
+            add_http_to_links,
             wrap_urls_in_anchors,
             replace_smallcaps,
             process_display_math,
@@ -44,6 +45,7 @@ def main():
         doc['blocks'] = walk(doc['blocks'], action, fmt, meta)
 
     for action in [
+            add_http_to_links,
             wrap_urls_in_anchors,
             replace_references,
             replace_cite_references,

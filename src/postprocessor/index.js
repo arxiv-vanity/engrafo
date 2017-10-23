@@ -9,5 +9,6 @@ module.exports = {
   math: require("./math"),
   metadata: require("./metadata"),
   styles: require("./styles"),
+  tables: require("./tables"),
   typeset: require("./typeset")
 };

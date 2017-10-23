@@ -2,6 +2,6 @@ version: '2'
 services:
   engrafo:
     build:
-      image: bfirsh/engrafo
+      image: arxivvanity/engrafo
       dockerfile: Dockerfile
     cached: true

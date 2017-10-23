@@ -10,13 +10,13 @@
   service: engrafo
   type: push
   tag: master
-  image_name: bfirsh/engrafo
+  image_name: arxivvanity/engrafo
   encrypted_dockercfg_path: .codeship.dockercfg
   image_tag: "{{.CommitID}}"
 - name: "Push latest tag to Docker Hub"
   service: engrafo
   type: push
   tag: master
-  image_name: bfirsh/engrafo
+  image_name: arxivvanity/engrafo
   encrypted_dockercfg_path: .codeship.dockercfg
   image_tag: latest

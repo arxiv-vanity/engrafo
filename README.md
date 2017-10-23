@@ -4,7 +4,7 @@
 
 Converts LaTeX documents into beautiful responsive web pages.
 
-Turns this sort of thing:
+It turns this sort of thing:
 
 <img src="docs/screenshot-pdf.png" width="500">
 

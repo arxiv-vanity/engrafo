@@ -20,7 +20,7 @@ The easiest way to run Engrafo is by using the Docker image. To convert `input/m
       -v "$(pwd)":/workdir -w /workdir \
       arxivvanity/engrafo engrafo -o output/ input/main.tex
 
-For full usage, run `docker run arxiv-vanity/engrafo engrafo --help`.
+For full usage, run `docker run arxivvanity/engrafo engrafo --help`.
 
 ## Design
 

@@ -47,8 +47,9 @@ exports.renderMath = (htmlString, callback) => {
         ket: ["|{#1}\\rangle", 1],
         braket: ["\\langle{#1}\\rangle}", 1],
         ketbra: ["\\ket{#1}\\bra{#2}", 2],
-
         hdots: ["\\dots", 0],
+        dag: ["\\dagger", 0],
+        ddag: ["\\ddagger", 0],
       },
       Augment: {
         Definitions: {macros: {

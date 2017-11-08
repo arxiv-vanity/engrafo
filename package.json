@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "async": "^2.5.0",
-    "aws-sdk": "^2.127.0",
+    "aws-sdk": "^2.147.0",
     "distill-template": "git+https://github.com/arxiv-vanity/template.git#engrafo",
     "fs-extra": "^4.0.2",
     "mathjax-node-page": "^1.4.1",

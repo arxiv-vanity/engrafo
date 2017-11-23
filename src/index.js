@@ -66,21 +66,47 @@ exports.renderPandoc = (texPath, pandocOnly, callback) => {
   });
 };
 
+// render a document with latexml
+exports.renderPandoc = (texPath, pandocOnly, callback) => {
+  var outputDir = path.dirname(texPath);
+  var texFilename = path.basename(texPath);
+  var htmlPath = path.join(outputDir, "index.html");
+
+  var latexmlc = childProcess.spawn("latexmlc", [
+      "--dest", htmlPath,
+      "--format", "html5",
+      texPath
+    ], {
+    cwd: outputDir,
+    stdio: ['pipe', process.stdout, process.stderr]
+  });
+  latexmlc.on("error", callback);
+
+  latexmlc.on("close", code => {
+    if (code !== 0) {
+      callback(new Error(`latexmlc exited with status ${code}`));
+      return;
+    }
+    return callback(null, htmlPath);
+  });
+
+};
+
 // Run postprocessing against a string of HTML
 exports.postprocess = htmlString => {
   var dom = jsdom.jsdom(htmlString, {
     features: { ProcessExternalResources: false, FetchExternalResources: false }
   });
 
-  // Check there is actually a document to process
-  var dtArticle = dom.querySelector('dt-article');
-  if (!dtArticle) {
-    throw new Error("Could not find <dt-article>");
-  }
-  // Title and metadata is always present
-  if (dtArticle.children.length <= 2) {
-    throw new Error("Document is blank");
-  }
+  // // Check there is actually a document to process
+  // var dtArticle = dom.querySelector('dt-article');
+  // if (!dtArticle) {
+  //   throw new Error("Could not find <dt-article>");
+  // }
+  // // Title and metadata is always present
+  // if (dtArticle.children.length <= 2) {
+  //   throw new Error("Document is blank");
+  // }
 
   // Document state
   var data = {};
@@ -91,23 +117,23 @@ exports.postprocess = htmlString => {
   // Distill one so that we can massage the Pandoc output into the format
   // that Distill expects.
   postprocessors.layout(dom, data);
-  distill.components.html(dom, data);
-  postprocessors.styles(dom, data);
-  postprocessors.metadata(dom, data);
-  postprocessors.code(dom, data);
-  distill.components.code(dom, data);
-  postprocessors.figures(dom, data);
-  postprocessors.math(dom, data);
-  postprocessors.headings(dom, data);
-  postprocessors.footnotes(dom, data);
-  distill.components.footnote(dom, data);
-  postprocessors.bibliography(dom, data);
-  distill.components.appendix(dom, data);
-  distill.components.typeset(dom, data);
-  postprocessors.typeset(dom, data);
-  distill.components.hoverBox(dom, data);
-  postprocessors.tables(dom, data);
-  postprocessors.container(dom, data);
+  // distill.components.html(dom, data);
+  // postprocessors.styles(dom, data);
+  // postprocessors.metadata(dom, data);
+  // postprocessors.code(dom, data);
+  // distill.components.code(dom, data);
+  // postprocessors.figures(dom, data);
+  // postprocessors.math(dom, data);
+  // postprocessors.headings(dom, data);
+  // postprocessors.footnotes(dom, data);
+  // distill.components.footnote(dom, data);
+  // postprocessors.bibliography(dom, data);
+  // distill.components.appendix(dom, data);
+  // distill.components.typeset(dom, data);
+  // postprocessors.typeset(dom, data);
+  // distill.components.hoverBox(dom, data);
+  // postprocessors.tables(dom, data);
+  // postprocessors.container(dom, data);
 
   return jsdom.serializeDocument(dom);
 };
@@ -127,10 +153,10 @@ exports.processHTML = (htmlPath, pandocOnly, callback) => {
       }
       callback(null, htmlString);
     },
-    (htmlString, callback) => {
-      if (pandocOnly) { return callback(null, htmlString); }
-      math.renderMath(htmlString, callback);
-    },
+    // (htmlString, callback) => {
+    //   if (pandocOnly) { return callback(null, htmlString); }
+    //   math.renderMath(htmlString, callback);
+    // },
     (htmlString, callback) => {
       fs.writeFile(htmlPath, htmlString, callback);
     }

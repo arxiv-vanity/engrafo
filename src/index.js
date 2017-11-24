@@ -75,6 +75,8 @@ exports.renderPandoc = (texPath, pandocOnly, callback) => {
   var latexmlc = childProcess.spawn("latexmlc", [
       "--dest", htmlPath,
       "--format", "html5",
+      "--mathtex",
+      "--verbose",
       texPath
     ], {
     cwd: outputDir,
@@ -123,7 +125,7 @@ exports.postprocess = htmlString => {
   // postprocessors.code(dom, data);
   // distill.components.code(dom, data);
   postprocessors.figures(dom, data);
-  // postprocessors.math(dom, data);
+  postprocessors.math(dom, data);
   postprocessors.headings(dom, data);
   postprocessors.appendix(dom, data);
   postprocessors.footnotes(dom, data);
@@ -154,10 +156,10 @@ exports.processHTML = (htmlPath, pandocOnly, callback) => {
       }
       callback(null, htmlString);
     },
-    // (htmlString, callback) => {
-    //   if (pandocOnly) { return callback(null, htmlString); }
-    //   math.renderMath(htmlString, callback);
-    // },
+    (htmlString, callback) => {
+      if (pandocOnly) { return callback(null, htmlString); }
+      math.renderMath(htmlString, callback);
+    },
     (htmlString, callback) => {
       fs.writeFile(htmlPath, htmlString, callback);
     }

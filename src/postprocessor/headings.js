@@ -66,6 +66,11 @@ dt-article .paragraph-heading {
 module.exports = function(dom) {
   utils.addStylesheet(dom, css);
 
+  // Remove numbers from subsubsection (h4)
+  Array.from(dom.querySelectorAll(".ltx_tag_subsubsection")).forEach(tag => {
+    tag.parentNode.removeChild(tag);
+  });
+
   // Things to apply to all headings
   let headings = dom.querySelectorAll("h1, h2, h3, h4, h5, h6");
   Array.from(headings).forEach(heading => {

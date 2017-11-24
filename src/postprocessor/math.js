@@ -1,15 +1,15 @@
 let utils = require("./utils");
 
 var css = `
-dt-article figure .math.display {
-  display: block;
-  font-family: Georgia, serif;
+dt-article .ltx_equationgroup {
+  width: 100%;
 }
 
-@media (min-width: 768px) {
-  dt-article figure .math.display {
-    margin-left: 24px;
-  }
+dt-article table td.ltx_eqn_cell {
+  font-family: Georgia, serif;
+  font-size: inherit;
+  border: none;
+  padding: 0;
 }
 
 .engrafo-container .mjx-chtml[tabindex]:focus {
@@ -21,22 +21,14 @@ dt-article figure .math.display {
 module.exports = function(dom) {
   utils.addStylesheet(dom, css);
 
-  // Make math figures
-  let mathBlocks = dom.querySelectorAll(".engrafo-equation");
-  Array.from(mathBlocks).forEach(div => {
-    // Sometimes there is a <p> in there for some reason
-    if (div.children[0].tagName == 'P') {
-      utils.removeAndFlattenChildren(div.children[0]);
-    }
-
-    let figure = dom.createElement("figure");
-    figure.id = div.id;
-    utils.replaceAndKeepChildren(div, figure);
+  Array.from(dom.querySelectorAll(".ltx_equation .ltx_Math")).forEach(math => {
+    // Disambiguate display maths
+    math.className = "ltx_DisplayMath";
+    // Add markup so mathjax picks it up
+    math.innerHTML = `\\[ ${math.innerHTML} \\]`;
   });
 
-  // Remove the Mathjax script because we're going server-side baby
-  let scriptToRemove = dom.querySelector('script[src^="https://cdnjs.cloudflare.com/ajax/libs/mathjax/"]');
-  if (scriptToRemove) {
-    scriptToRemove.parentNode.removeChild(scriptToRemove);
-  }
+  Array.from(dom.querySelectorAll(".ltx_Math")).forEach(math => {
+    math.innerHTML = `\\(${math.innerHTML}\\)`;
+  })
 };

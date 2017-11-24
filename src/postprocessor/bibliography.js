@@ -29,28 +29,6 @@ figcaption .engrafo-cite {
 }
 `;
 
-function parseBibitem(el) {
-  // TODO(andreas): this isn't always the structure (e.g. 1707.08084v1)
-  // reformat to this consistent format in the filter.
-
-  var sourceEl = el.children[2];
-  if (sourceEl) {
-    // Flatten them paragraphs
-    Array.from(sourceEl.children).forEach(el => {
-      if (el.tagName == "P") {
-        utils.removeAndFlattenChildren(el);
-      }
-    });
-  }
-
-  return {
-    authors: el.children[0],
-    title: el.children[1],
-    source: sourceEl,
-    id: el.id
-  };
-}
-
 // From https://github.com/distillpub/template/blob/master/components/citation.js
 var appendCiteHoverDiv = (function() {
   var hover_n = 0;
@@ -68,7 +46,7 @@ var appendCiteHoverDiv = (function() {
 module.exports = function(dom) {
   utils.addStylesheet(dom, css);
 
-  var items = dom.querySelectorAll(".bibitem");
+  var items = Array.from(dom.querySelectorAll(".ltx_bibitem"));
   if (items.length === 0) return;
 
   // Container for hover boxes
@@ -78,29 +56,16 @@ module.exports = function(dom) {
       utils.nodeFromString(dom, `<div id="cite-hover-boxes-container"></div>`)
     );
 
-  var bibliography = Array.from(items).map(parseBibitem);
-
   var ol = dom.createElement("ol");
-  bibliography.forEach(item => {
-    var li = dom.createElement("li");
-    li.id = item.id;
-    if (item.title) {
-      var strong = dom.createElement("strong");
-      utils.moveChildren(item.title, strong);
-      li.appendChild(strong);
-      li.appendChild(dom.createElement("br"));
-    }
-    if (item.authors) {
-      utils.moveChildren(item.authors, li);
-    }
-    if (item.source) {
-      li.appendChild(dom.createTextNode(" "));
-      utils.moveChildren(item.source, li);
-    }
-    ol.appendChild(li);
+  items.forEach(item => {
+    // TODO maybe format this correctly so we don't have to rely on <ol>
+    // numbering
+    item.removeChild(item.querySelector(".ltx_bibtag"));
+    // TODO style bibliography items
+    ol.appendChild(item);
   });
 
-  var bibliographyEl = dom.querySelector(".bibliography");
+  var bibliographyEl = dom.querySelector(".ltx_bibliography");
   bibliographyEl.parentNode.removeChild(bibliographyEl);
 
   var dtBibliography = dom.createElement("dt-bibliography");

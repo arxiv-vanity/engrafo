@@ -117,23 +117,24 @@ exports.postprocess = htmlString => {
   // Distill one so that we can massage the Pandoc output into the format
   // that Distill expects.
   postprocessors.layout(dom, data);
-  // distill.components.html(dom, data);
-  // postprocessors.styles(dom, data);
-  // postprocessors.metadata(dom, data);
+  distill.components.html(dom, data);
+  postprocessors.styles(dom, data);
+  postprocessors.metadata(dom, data);
   // postprocessors.code(dom, data);
   // distill.components.code(dom, data);
-  // postprocessors.figures(dom, data);
+  postprocessors.figures(dom, data);
   // postprocessors.math(dom, data);
-  // postprocessors.headings(dom, data);
-  // postprocessors.footnotes(dom, data);
+  postprocessors.headings(dom, data);
+  postprocessors.appendix(dom, data);
+  postprocessors.footnotes(dom, data);
   // distill.components.footnote(dom, data);
-  // postprocessors.bibliography(dom, data);
-  // distill.components.appendix(dom, data);
-  // distill.components.typeset(dom, data);
-  // postprocessors.typeset(dom, data);
-  // distill.components.hoverBox(dom, data);
-  // postprocessors.tables(dom, data);
-  // postprocessors.container(dom, data);
+  postprocessors.bibliography(dom, data);
+  distill.components.appendix(dom, data);
+  distill.components.typeset(dom, data);
+  postprocessors.typeset(dom, data);
+  distill.components.hoverBox(dom, data);
+  postprocessors.tables(dom, data);
+  postprocessors.container(dom, data);
 
   return jsdom.serializeDocument(dom);
 };

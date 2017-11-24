@@ -18,7 +18,8 @@ dt-article h4 {
   }
 }
 
-dt-article .section-number {
+dt-article .ltx_tag_section,
+dt-article .ltx_tag_subsection {
   font-family: Baskerville, Georgia, serif;
   font-style: normal;
   color: rgba(0, 0, 0, 0.3);
@@ -29,24 +30,29 @@ dt-article .section-number {
   font-size: 0.9em;
 }
 
-dt-article .section-number a,
-dt-article .section-number a:active {
+dt-article .ltx_tag_section a,
+dt-article .ltx_tag_subsection a,
+dt-article .ltx_tag_section a:active,
+dt-article .ltx_tag_subsection a:active {
   border-bottom: none;
 }
 
-dt-article .section-number a:hover {
+dt-article .ltx_tag_section a:hover,
+dt-article .ltx_tag_subsection a:hover {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 @media(min-width: 768px) {
-  dt-article .section-number {
+  dt-article .ltx_tag_section,
+  dt-article .ltx_tag_subsection {
     right: unset;
     left: -170px;
   }
 }
 
 @media (min-width: 1080px) {
-  dt-article .section-number {
+  dt-article .ltx_tag_section,
+  dt-article .ltx_tag_subsection {
     right: unset;
     left: -180px;
   }
@@ -93,29 +99,30 @@ module.exports = function(dom) {
   });
 
   // Add section numnbers
-  let sectionNumbers = dom.querySelectorAll(".section-number");
+  let sectionNumbers = dom.querySelectorAll(".ltx_tag_section");
   Array.from(sectionNumbers).forEach(span => {
     let a = utils.nodeFromString(dom, '<a></a>');
-    a.href = "#" + span.parentNode.id;
+    a.href = "#" + span.parentNode.parentNode.id;
     utils.moveChildren(span, a);
     span.appendChild(a);
   });
 
   // Put <h5> and <h6> in front of next paragraph, if it exists.
-  var paragraphHeadings = Array.from(dom.querySelectorAll("h5"));
-  paragraphHeadings = paragraphHeadings.concat(dom.querySelectorAll("h6"));
-  paragraphHeadings.forEach(heading => {
-    var p = heading.nextElementSibling;
-    if (p && p.tagName == "P") {
-      // Put at start of <p>
-      p.insertBefore(dom.createTextNode(" "), p.firstChild);
-      p.insertBefore(heading, p.firstChild);
-      // Turn it into <strong>
-      var newHeading = utils.nodeFromString(
-        dom,
-        '<strong class="paragraph-heading"></strong>'
-      );
-      utils.replaceAndKeepChildren(heading, newHeading);
-    }
-  });
+  // TODO: still want this?
+  // var paragraphHeadings = Array.from(dom.querySelectorAll("h5"));
+  // paragraphHeadings = paragraphHeadings.concat(dom.querySelectorAll("h6"));
+  // paragraphHeadings.forEach(heading => {
+  //   var p = heading.nextElementSibling;
+  //   if (p && p.tagName == "P") {
+  //     // Put at start of <p>
+  //     p.insertBefore(dom.createTextNode(" "), p.firstChild);
+  //     p.insertBefore(heading, p.firstChild);
+  //     // Turn it into <strong>
+  //     var newHeading = utils.nodeFromString(
+  //       dom,
+  //       '<strong class="paragraph-heading"></strong>'
+  //     );
+  //     utils.replaceAndKeepChildren(heading, newHeading);
+  //   }
+  // });
 };

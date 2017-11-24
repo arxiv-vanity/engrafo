@@ -127,7 +127,7 @@ exports.postprocess = htmlString => {
   postprocessors.headings(dom, data);
   postprocessors.appendix(dom, data);
   postprocessors.footnotes(dom, data);
-  // distill.components.footnote(dom, data);
+  distill.components.footnote(dom, data);
   postprocessors.bibliography(dom, data);
   distill.components.appendix(dom, data);
   distill.components.typeset(dom, data);

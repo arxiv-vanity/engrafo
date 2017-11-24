@@ -140,6 +140,12 @@ dt-article > .engrafo-metadata {
     width: 648px;
   }
 }
+
+/* latexml stuff */
+.ltx_ERROR        { color:red; }
+.ltx_rdf          { display:none; }
+.ltx_missing      { color:red;}
+.ltx_nounicode    { color:red; }
 `;
 
 module.exports = function(dom) {

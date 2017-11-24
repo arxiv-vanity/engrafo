@@ -1,4 +1,5 @@
 module.exports = {
+  appendix: require("./appendix"),
   bibliography: require("./bibliography"),
   code: require("./code"),
   container: require("./container"),

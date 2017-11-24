@@ -72,21 +72,12 @@ let css = `
 module.exports = function(dom) {
   utils.addStylesheet(dom, css);
 
-  let metadata = dom.querySelector('.engrafo-metadata');
-  let authors = metadata.querySelector('.authors');
+  let metadata = utils.nodeFromString(dom, '<div class="engrafo-metadata"></div>');
+  let authors = dom.querySelector('.ltx_authors');
+  utils.wrapElement(authors, metadata);
 
-  Array.from(authors.children).forEach(el => {
-    // Replace each line inside each span (bit of a hack. hopefully it won't break.)
-    el.innerHTML = el.innerHTML.replace('<br>', '</span><span>');
-  });
-
-  // HACK: If there is a footnote directly after the authors, put it after the authors.
-  // This is normally when a footnote without a mark is used for affiliation.
-  let p = metadata.nextElementSibling;
-  if (p && p.tagName == 'P' && p.children.length == 1 && p.children[0].className == 'engrafo-footnote') {
-    // Remove footnote
-    utils.removeAndFlattenChildren(p.childNodes[0]);
-    // Put after authors
-    authors.appendChild(p);
-  }
+  // Array.from(authors.children).forEach(el => {
+  //   // Replace each line inside each span (bit of a hack. hopefully it won't break.)
+  //   el.innerHTML = el.innerHTML.replace('<br>', '</span><span>');
+  // });
 };

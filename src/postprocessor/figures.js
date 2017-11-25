@@ -16,6 +16,8 @@ var css = `
   }
 
   dt-article figure img {
+    width: 100%;
+    height: auto;
     margin-bottom: 15px;
   }
 

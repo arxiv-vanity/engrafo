@@ -2,10 +2,11 @@ let utils = require("./utils");
 
 // From https://github.com/distillpub/template/blob/master/components/citation.js
 let css = `
-.engrafo-cite {
+.ltx_cite {
   cursor: default;
   white-space: nowrap;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", Helvetica, sans-serif;
+  font-style: normal;
   font-size: 75%;
   color: hsla(206, 90%, 20%, 0.7);
   display: inline-block;
@@ -16,12 +17,12 @@ let css = `
   margin: 0 2px;
 }
 
-a.engrafo-cite,
-a.engrafo-cite:hover {
+.ltx_cite a,
+.ltx_cite a:hover {
   border-bottom: 0;
 }
 
-figcaption .engrafo-cite {
+figcaption .ltx_cite {
   font-size: 11px;
   font-weight: normal;
   top: -2px;
@@ -75,13 +76,21 @@ module.exports = function(dom) {
   dtAppendix.appendChild(utils.nodeFromString(dom, "<h3>References</h3>"));
   dtAppendix.appendChild(dtBibliography);
 
+  var bibItems = Array.from(ol.childNodes);
+
   // Add hover boxes to citations
-  Array.from(dom.querySelectorAll(".engrafo-cite")).forEach(a => {
-    var bibItem = dom.querySelector(a.getAttribute("href"));
+  Array.from(dom.querySelectorAll(".ltx_cite a")).forEach(a => {
+    // This could just be dom.querySelector(a.getAttribute("href")) but
+    // querySelector doesn't work if there are periods in the ID. Sigh.
+    var bibItem = dom.querySelector(`li[id='${a.getAttribute("href").slice(1)}']`);
     if (!bibItem) return;
+
+
     var refId = appendCiteHoverDiv(dom, bibItem.innerHTML);
-    var hoverSpan = utils.nodeFromString(dom, `<span data-hover-ref="${refId}"></span>`);
-    utils.moveChildren(a, hoverSpan);
+    var bibItemNumber = bibItems.indexOf(bibItem) + 1;
+    // Replace the text that latexml puts in citations with just a number
+    a.innerHTML = '';
+    var hoverSpan = utils.nodeFromString(dom, `<span data-hover-ref="${refId}">${bibItemNumber}</span>`);
     a.appendChild(hoverSpan);
     a.setAttribute("onclick", "event.preventDefault()");
   });

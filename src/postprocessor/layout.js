@@ -2,12 +2,13 @@ var utils = require("./utils");
 
 module.exports = function(dom) {
   // Remove all of latexml's style
-  Array.from(dom.querySelectorAll("link[rel='stylesheet']")).forEach(link => {
-    link.parentNode.removeChild(link);
-  });
+  utils.removeAll(dom.querySelectorAll("link[rel='stylesheet']"));
 
   // Remove container which we will replace with our own
   utils.removeAndFlattenChildren(dom.querySelector(".ltx_page_main"));
+
+  // Remove dates
+  utils.removeAll(dom.querySelectorAll(".ltx_date"))
 
   utils.replaceAndKeepChildren(
     dom.querySelector(".ltx_document"),
@@ -20,8 +21,5 @@ module.exports = function(dom) {
     dom.createElement('h2')
   );
 
-  var footer = dom.querySelector("footer");
-  if (footer) {
-    footer.parentNode.removeChild(footer);
-  }
+  utils.removeAll(dom.querySelector("footer"));
 };

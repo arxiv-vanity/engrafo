@@ -10,7 +10,7 @@ var math = require("./math");
 var postprocessors = require("./postprocessor");
 
 // render a document with latexml
-exports.renderLatexml = (texPath, pandocOnly, callback) => {
+exports.renderLatexml = (texPath, callback) => {
   var outputDir = path.dirname(texPath);
   var texFilename = path.basename(texPath);
   var htmlPath = path.join(outputDir, "index.html");
@@ -85,13 +85,12 @@ exports.postprocess = htmlString => {
 };
 
 // Do all processing on the file that Pandoc produces
-exports.processHTML = (htmlPath, pandocOnly, callback) => {
+exports.processHTML = (htmlPath, callback) => {
   async.waterfall([
     (callback) => {
       fs.readFile(htmlPath, "utf8", callback);
     },
     (htmlString, callback) => {
-      if (pandocOnly) { return callback(null, htmlString); }
       try {
         htmlString = exports.postprocess(htmlString);
       } catch(err) {
@@ -100,7 +99,6 @@ exports.processHTML = (htmlPath, pandocOnly, callback) => {
       callback(null, htmlString);
     },
     (htmlString, callback) => {
-      if (pandocOnly) { return callback(null, htmlString); }
       math.renderMath(htmlString, callback);
     },
     (htmlString, callback) => {
@@ -112,7 +110,11 @@ exports.processHTML = (htmlPath, pandocOnly, callback) => {
 // Render and postprocess a LaTeX file into outputDir (created if does not
 // exist). Calls callback with an error on failure or a path to an HTML file
 // on success.
-exports.render = ({inputPath, outputDir, pandocOnly}, callback) => {
+exports.render = ({inputPath, outputDir, postProcessing}, callback) => {
+  if (postProcessing === undefined) {
+    postProcessing = true;
+  }
+
   var texPath, htmlPath;
   async.waterfall([
     (callback) => {
@@ -121,11 +123,13 @@ exports.render = ({inputPath, outputDir, pandocOnly}, callback) => {
     (_texPath, callback) => {
       texPath = _texPath;
       console.log("Rendering tex file", texPath);
-      exports.renderLatexml(texPath, pandocOnly, callback);
+      exports.renderLatexml(texPath, callback);
     },
     (_htmlPath, callback) => {
       htmlPath = _htmlPath;
-      exports.processHTML(htmlPath, pandocOnly, callback);
+      if (postProcessing) {
+        exports.processHTML(htmlPath, callback);
+      }
     },
     (callback) => {
       input.uploadOutput(texPath, outputDir, callback);

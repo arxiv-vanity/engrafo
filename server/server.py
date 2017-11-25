@@ -40,7 +40,6 @@ PAPERS_PATH = 'papers'
 @app.route('/')
 def index():
     data = request.args.get('data', 'cached')
-    pandoc_only = 'pandoc_only' in request.args
     if data == 'live':
         text = requests.get('http://arxiv-sanity.com').text
     elif data == 'top':
@@ -67,8 +66,7 @@ def index():
     ])
     papers = [p for p in papers if p['pid'] not in known_non_parsing_papers]
 
-    return render_template(
-        'index.html', papers=papers, pandoc_only=pandoc_only)
+    return render_template('index.html', papers=papers)
 
 
 def _get_latex_path_from_output(output):
@@ -80,7 +78,7 @@ def _get_latex_path_from_output(output):
 
 @app.route('/html/<arxiv_id>/')
 def html(arxiv_id):
-    pandoc_only = 'pandoc_only' in request.args
+    no_post_processing = 'no_post_processing' in request.args
     folder = get_folder(arxiv_id)
     app.logger.info('%s: Using folder %s', arxiv_id, folder)
     if not os.path.exists(folder):
@@ -92,7 +90,7 @@ def html(arxiv_id):
     app.logger.info('%s: Converting to HTML', arxiv_id)
 
     try:
-        html_path, stdout, stderr = convert_latex_to_html(folder, pandoc_only=pandoc_only)
+        html_path, stdout, stderr = convert_latex_to_html(folder, no_post_processing=no_post_processing)
     except PandocError as e:
         return Response('''Engrafo failed to convert LaTeX (error code %d)
 
@@ -146,7 +144,7 @@ def extract_sources(folder):
         cwd=folder))
 
 
-def convert_latex_to_html(folder, pandoc_only=False):
+def convert_latex_to_html(folder, no_post_processing=False):
     timeout = 30
 
     html_path = os.path.join(folder, 'index.html')
@@ -157,8 +155,8 @@ def convert_latex_to_html(folder, pandoc_only=False):
         os.path.join(ENGRAFO_PATH, 'bin/engrafo'),
     ]
 
-    if pandoc_only:
-        cmd.append('--pandoc-only')
+    if no_post_processing:
+        cmd.append('--no-post-processing')
 
     cmd.append(folder)
 

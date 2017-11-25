@@ -13,8 +13,8 @@ program
     "Output directory (default: same as tex file)"
   )
   .option(
-    "--pandoc-only",
-    "Raw Pandoc output, without filters or postprocessors (for debugging)"
+    "--no-post-processing",
+    "Raw LaTeXML output, without filters or postprocessors (for debugging)"
   )
   .parse(process.argv);
 
@@ -31,7 +31,7 @@ var outputDir = program.output ||
 var options = {
   inputPath: inputPath,
   outputDir: outputDir,
-  pandocOnly: program.pandocOnly
+  postProcessing: program.postProcessing
 };
 
 engrafo.render(options, (err, htmlPath) => {

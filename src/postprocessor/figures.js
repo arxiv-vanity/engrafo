@@ -15,7 +15,8 @@ var css = `
     overflow-x: auto;
   }
 
-  dt-article figure img {
+  dt-article figure img,
+  dt-article figure table {
     width: 100%;
     height: auto;
     margin-bottom: 15px;

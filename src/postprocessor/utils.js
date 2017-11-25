@@ -12,6 +12,12 @@ exports.removeAndFlattenChildren = function(el) {
   el.parentNode.removeChild(el);
 };
 
+exports.removeAll = function(els) {
+  Array.from(els).forEach(el => {
+    el.parentNode.removeChild(el);
+  });
+};
+
 exports.addStylesheet = function(dom, css) {
   let style = dom.createElement("style");
   style.appendChild(dom.createTextNode(css));

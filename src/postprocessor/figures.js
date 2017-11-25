@@ -22,6 +22,15 @@ var css = `
     margin-bottom: 15px;
   }
 
+  dt-article table td.ltx_subfigure {
+    border: 0;
+    padding: 0 1rem 0 0;
+  }
+
+  dt-article .ltx_subfigure figure {
+    margin: 0;
+  }
+
   @media (min-width: 1080px) {
     dt-article figure {
       overflow: visible;
@@ -39,4 +48,9 @@ var css = `
 module.exports = function(dom) {
   utils.addStylesheet(dom, css);
 
+  Array.from(dom.querySelectorAll("figure")).forEach(figure => {
+    if (figure.querySelector(".ltx_subfigure")) {
+      figure.className += " l-page";
+    }
+  });
 };

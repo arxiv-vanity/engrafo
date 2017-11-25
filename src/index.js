@@ -9,65 +9,8 @@ var input = require("./input");
 var math = require("./math");
 var postprocessors = require("./postprocessor");
 
-// Render a LaTeX document with Pandoc. Callback is called with error or
-// path to directory with index.html in it.
-exports.renderPandoc = (texPath, pandocOnly, callback) => {
-  var outputDir = path.dirname(texPath);
-  var texFilename = path.basename(texPath);
-  var htmlPath = path.join(outputDir, "index.html");
-  var args = [
-    "--from",
-    "latex+raw_tex+latex_macros",
-    "--to",
-    "html5",
-    "--standalone",
-    "--mathjax",
-    "--data-dir",
-    "/app/pandoc-data",
-    "--template",
-    "engrafo.html",
-  ];
-
-  if (!pandocOnly) {
-    args.push(
-      "--filter",
-      "/app/pandocfilter/engrafo_pandocfilter.py"
-    );
-  }
-
-  args.push(
-    "--output",
-    "index.html",
-    texFilename
-  );
-
-  var pandoc = childProcess.spawn("pandoc", args, {
-    cwd: outputDir
-  });
-  var stdout = "";
-  var stderr = "";
-  pandoc.stdout.on("data", data => {
-    stdout += data.toString();
-  });
-  pandoc.stderr.on("data", data => {
-    stderr += data.toString();
-  });
-  pandoc.on("error", callback);
-  pandoc.on("close", code => {
-    if (code !== 0) {
-      callback(
-        new Error(
-          `pandoc exited with status ${code}\nstdout: ${stdout}\nstderr: ${stderr}`
-        )
-      );
-      return;
-    }
-    return callback(null, htmlPath);
-  });
-};
-
 // render a document with latexml
-exports.renderPandoc = (texPath, pandocOnly, callback) => {
+exports.renderLatexml = (texPath, pandocOnly, callback) => {
   var outputDir = path.dirname(texPath);
   var texFilename = path.basename(texPath);
   var htmlPath = path.join(outputDir, "index.html");
@@ -178,7 +121,7 @@ exports.render = ({inputPath, outputDir, pandocOnly}, callback) => {
     (_texPath, callback) => {
       texPath = _texPath;
       console.log("Rendering tex file", texPath);
-      exports.renderPandoc(texPath, pandocOnly, callback);
+      exports.renderLatexml(texPath, pandocOnly, callback);
     },
     (_htmlPath, callback) => {
       htmlPath = _htmlPath;

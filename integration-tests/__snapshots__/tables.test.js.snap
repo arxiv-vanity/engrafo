@@ -7,194 +7,201 @@ exports[`basic tables render correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
-        <div
-          class="authors"
+
+        <figure
+          class="ltx_table"
+          id="tab1"
         >
           
-    
+
+          <table
+            class="ltx_tabular ltx_guessed_headers ltx_align_middle"
+          >
+            
+
+            <tbody
+              class="ltx_tbody"
+            >
+              
+
+              <tr
+                class="ltx_tr"
+              >
+                
+
+                <th
+                  class="ltx_td ltx_align_center ltx_th ltx_th_row"
+                >
+                  
+
+                  <span
+                    class="ltx_ERROR undefined"
+                  >
+                    \\toprule
+                  </span>
+                  First column
+                </th>
+                
+
+                <td
+                  class="ltx_td ltx_align_center"
+                >
+                  Second column
+                </td>
+                
+
+              </tr>
+              
+
+              <tr
+                class="ltx_tr"
+              >
+                
+
+                <th
+                  class="ltx_td ltx_align_center ltx_th ltx_th_row"
+                >
+                  
+
+                  <span
+                    class="ltx_ERROR undefined"
+                  >
+                    \\toprule
+                  </span>
+                  123
+                </th>
+                
+
+                <td
+                  class="ltx_td ltx_align_center"
+                >
+                  456
+                </td>
+                
+
+              </tr>
+              
+
+              <tr
+                class="ltx_tr"
+              >
+                
+
+                <th
+                  class="ltx_td ltx_align_center ltx_th ltx_th_row"
+                >
+                  234
+                </th>
+                
+
+                <td
+                  class="ltx_td ltx_align_center"
+                >
+                  567
+                </td>
+                
+
+              </tr>
+              
+
+              <tr
+                class="ltx_tr"
+              >
+                
+
+                <th
+                  class="ltx_td ltx_align_center ltx_th ltx_th_row"
+                >
+                  567
+                </th>
+                
+
+                <td
+                  class="ltx_td ltx_align_center"
+                >
+                  890
+                </td>
+                
+
+              </tr>
+              
+
+            </tbody>
+            
+
+          </table>
+          
+
+          <figcaption
+            class="ltx_caption"
+          >
+            <span
+              class="ltx_tag ltx_tag_table"
+            >
+              Table 
+              <span
+                class="ltx_ERROR undefined"
+              >
+                \\thetable
+              </span>
+              : 
+            </span>
+            Some numbers.
+          </figcaption>
+          
+
+        </figure>
+        
+
+        <div
+          class="ltx_para"
+          id="p1"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            Take a look at some cool data in table 
+            <span
+              class="ltx_ref ltx_ref_self"
+            >
+              id1
+            </span>
+            .
+          </p>
+          
+
         </div>
         
-  
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
         <div
-          class="engrafo-metadata-custom"
+          class="l-body"
         />
         
 
-      </div>
-      
-
-      <figure
-        id="table-1"
-      >
-        
-
-        <table>
-          
-
-          <caption>
-            Table 1: Some numbers.
-          </caption>
-          
-
-          <thead>
-            
-
-            <tr
-              class="header"
-            >
-              
-
-              <th
-                style="text-align: center;"
-              >
-                First column 
-              </th>
-              
-
-              <th
-                style="text-align: center;"
-              >
-                 Second column 
-              </th>
-              
-
-            </tr>
-            
-
-          </thead>
-          
-
-          <tbody>
-            
-
-            <tr
-              class="odd"
-            >
-              
-
-              <td
-                style="text-align: center;"
-              >
-                123 
-              </td>
-              
-
-              <td
-                style="text-align: center;"
-              >
-                 456 
-              </td>
-              
-
-            </tr>
-            
-
-            <tr
-              class="even"
-            >
-              
-
-              <td
-                style="text-align: center;"
-              >
-                234 
-              </td>
-              
-
-              <td
-                style="text-align: center;"
-              >
-                 567 
-              </td>
-              
-
-            </tr>
-            
-
-            <tr
-              class="odd"
-            >
-              
-
-              <td
-                style="text-align: center;"
-              >
-                567 
-              </td>
-              
-
-              <td
-                style="text-align: center;"
-              >
-                 890 
-              </td>
-              
-
-            </tr>
-            
-
-            <tr
-              class="even"
-            >
-              
-
-              <td
-                style="text-align: center;"
-              />
-              
-
-            </tr>
-            
-
-          </tbody>
-          
-
-        </table>
-        
-
-      </figure>
-      
-
-      <p>
-        Take a look at some cool data in 
-        <a
-          href="#table-1"
-        >
-          Table 1
-        </a>
-        .
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 

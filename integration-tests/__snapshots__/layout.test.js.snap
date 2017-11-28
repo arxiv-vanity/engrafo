@@ -7,102 +7,137 @@ exports[`abstracts work 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Hello
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
-        <div
-          class="authors"
+
+        <h1
+          class="ltx_title ltx_title_document"
         >
-          
-    
+          Hello
+        </h1>
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="engrafo-metadata-custom"
+          />
         </div>
         
-  
+
+
         <div
-          class="engrafo-metadata-custom"
+          class="ltx_abstract"
+        >
+          
+
+          <h2>
+            Abstract
+          </h2>
+          
+
+          <p
+            class="ltx_p"
+          >
+            Some abstract.
+          </p>
+          
+
+          <p
+            class="ltx_p"
+          >
+            A reference to section 
+            <a
+              class="ltx_ref"
+              href="#-at-currentID"
+              title="\\\\thesection Section Title ‣ Hello"
+            >
+              <span
+                class="ltx_text ltx_ref_tag"
+              >
+                \\thesection
+              </span>
+            </a>
+            .
+          </p>
+          
+
+        </div>
+        
+
+        <section
+          class="ltx_section"
+          id="-at-currentID"
+        >
+          
+
+          <h2
+            class="ltx_title ltx_title_section"
+          >
+            
+
+            <span
+              class="ltx_tag ltx_tag_section"
+            >
+              <a
+                href="#-at-currentID"
+              >
+                <span
+                  class="ltx_ERROR undefined"
+                >
+                  \\thesection
+                </span>
+                 
+              </a>
+            </span>
+            Section Title
+          </h2>
+          
+
+
+          <div
+            class="ltx_para"
+            id="-at-currentID.p1"
+          >
+            
+
+            <p
+              class="ltx_p"
+            >
+              Body text.
+            </p>
+            
+
+          </div>
+          
+
+        </section>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
         />
         
 
-      </div>
-      
-
-      <div
-        class="engrafo-abstract"
-      >
-        
-  
-        <h2>
-          Abstract
-        </h2>
-        
-  
-        <p>
-          Some abstract.
-        </p>
-        
-  
-        <p>
-          A reference to 
-          <a
-            href="#section-1"
-          >
-            Section 1
-          </a>
-          .
-        </p>
-        
-
-      </div>
-      
-
-
-      <h2
-        id="section-1"
-      >
-        <span
-          class="section-number"
-        >
-          <a
-            href="#section-1"
-          >
-            1
-          </a>
-        </span>
-        Section Title
-      </h2>
-      
-
-      <p>
-        Body text.
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -120,75 +155,105 @@ exports[`authors render correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Hello
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
-        <div
-          class="authors"
+
+        <h1
+          class="ltx_title ltx_title_document"
         >
-          
-      
+          Hello
+        </h1>
+        <div
+          class="engrafo-metadata"
+        >
           <div
-            class="author"
+            class="ltx_authors"
           >
-            <span>
-              Joe Bloggs
+            
+
+            <span
+              class="ltx_creator ltx_role_author"
+            >
+              
+
+              <span
+                class="ltx_personname"
+              >
+                Joe Bloggs
+
+              </span>
             </span>
+            
+
+            <span
+              class="ltx_author_before"
+            >
+                
+            </span>
+            <span
+              class="ltx_creator ltx_role_author"
+            >
+              
+
+              <span
+                class="ltx_personname"
+              >
+                Jane Smith
+
+              </span>
+            </span>
+            
+
           </div>
-          
-      
           <div
-            class="author"
-          >
-            <span>
-              Jane Smith
-            </span>
-          </div>
-          
-    
+            class="engrafo-metadata-custom"
+          />
         </div>
         
-  
+
+
+
         <div
-          class="engrafo-metadata-custom"
+          class="ltx_para"
+          id="p1"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            Body text.
+          </p>
+          
+
+        </div>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
         />
         
 
-      </div>
-      
-
-
-      <p>
-        Body text.
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -206,57 +271,66 @@ exports[`dates are not rendered 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Hello
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
-        <div
-          class="authors"
+
+        <h1
+          class="ltx_title ltx_title_document"
         >
-          
-    
+          Hello
+        </h1>
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="engrafo-metadata-custom"
+          />
         </div>
         
-  
+
+
+
         <div
-          class="engrafo-metadata-custom"
+          class="ltx_para"
+          id="p1"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            Hello.
+          </p>
+          
+
+        </div>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
         />
         
 
-      </div>
-      
-
-
-      <p>
-        Hello.
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -274,88 +348,117 @@ exports[`footnotes in author render correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Hello
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
-        <div
-          class="authors"
+
+        <h1
+          class="ltx_title ltx_title_document"
         >
-          
-      
+          Hello
+        </h1>
+        <div
+          class="engrafo-metadata"
+        >
           <div
-            class="author"
+            class="ltx_authors"
           >
-            <span>
-              Joe Bloggs
-              <dt-fn>
-                <sup>
-                  <span
-                    data-hover-ref="dt-fn-hover-box-0"
-                    id="fn-1"
-                    style="cursor:pointer"
-                  >
-                    1
-                  </span>
-                </sup>
-              </dt-fn>
+            
+
+            <span
+              class="ltx_creator ltx_role_author"
+            >
+              
+
+              <span
+                class="ltx_personname"
+              >
+                Joe Bloggs
+                <span
+                  class="ltx_note ltx_role_footnote"
+                >
+                  <dt-fn>
+                    <sup>
+                      <span
+                        data-hover-ref="dt-fn-hover-box-0"
+                        id="fn-1"
+                        style="cursor:pointer"
+                      >
+                        1
+                      </span>
+                    </sup>
+                  </dt-fn>
+                </span>
+                
+
+              </span>
             </span>
+            
+
           </div>
-          
-    
+          <div
+            class="engrafo-metadata-custom"
+          />
         </div>
         
-  
+
+
+
         <div
-          class="engrafo-metadata-custom"
-        />
+          class="ltx_para"
+          id="p1"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            Body text.
+          </p>
+          
+
+        </div>
         
 
-      </div>
+      </dt-article>
       
 
+      <dt-appendix>
+        
 
-      <p>
-        Body text.
-      </p>
-      
+        
 
-    </dt-article>
+
+        <div
+          class="l-body"
+        >
+          <h3>
+            Footnotes
+          </h3>
+          <dt-fn-list>
+            <ol>
+              <li>
+                <span
+                  class="ltx_note_content"
+                >
+                  Equal contribution.
+                </span>
+              </li>
+            </ol>
+          </dt-fn-list>
+        </div>
+        
+
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      >
-        <h3>
-          Footnotes
-        </h3>
-        <dt-fn-list>
-          <ol>
-            <li>
-              Equal contribution.
-            </li>
-          </ol>
-        </dt-fn-list>
-      </div>
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -367,7 +470,11 @@ exports[`footnotes in author render correctly 1`] = `
         id="dt-fn-hover-box-0"
         style="display:none;"
       >
-        Equal contribution.
+        <span
+          class="ltx_note_content"
+        >
+          Equal contribution.
+        </span>
       </div>
     </div>
   </div>
@@ -381,103 +488,110 @@ exports[`footnotes render correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <p
+            class="ltx_p"
+          >
+            This is some text.
+            <span
+              class="ltx_note ltx_role_footnote"
+            >
+              <dt-fn>
+                <sup>
+                  <span
+                    data-hover-ref="dt-fn-hover-box-0"
+                    id="fn-1"
+                    style="cursor:pointer"
+                  >
+                    1
+                  </span>
+                </sup>
+              </dt-fn>
+            </span>
+             This is some more text.
+            <span
+              class="ltx_note ltx_role_footnote"
+            >
+              <dt-fn>
+                <sup>
+                  <span
+                    data-hover-ref="dt-fn-hover-box-1"
+                    id="fn-2"
+                    style="cursor:pointer"
+                  >
+                    2
+                  </span>
+                </sup>
+              </dt-fn>
+            </span>
+          </p>
+          
+
         </div>
         
-  
-        <div
-          class="engrafo-metadata-custom"
-        />
+
+      </dt-article>
+      
+
+      <dt-appendix>
         
 
-      </div>
-      
-
-      <p>
-        This is some text.
-        <dt-fn>
-          <sup>
-            <span
-              data-hover-ref="dt-fn-hover-box-0"
-              id="fn-1"
-              style="cursor:pointer"
-            >
-              1
-            </span>
-          </sup>
-        </dt-fn>
-         This is some more text.
-        <dt-fn>
-          <sup>
-            <span
-              data-hover-ref="dt-fn-hover-box-1"
-              id="fn-2"
-              style="cursor:pointer"
-            >
-              2
-            </span>
-          </sup>
-        </dt-fn>
-      </p>
-      
-
-    </dt-article>
-    
-
-    <dt-appendix>
-      
-
-      
+        
 
 
-      <div
-        class="l-body"
-      >
-        <h3>
-          Footnotes
-        </h3>
-        <dt-fn-list>
-          <ol>
-            <li>
-              This is a footnote.
-            </li>
-            <li>
-              And a footnote with a
-              <br />
-              
-
-              <br />
-              
+        <div
+          class="l-body"
+        >
+          <h3>
+            Footnotes
+          </h3>
+          <dt-fn-list>
+            <ol>
+              <li>
+                <span
+                  class="ltx_note_content"
+                >
+                  This is a footnote.
+                </span>
+              </li>
+              <li>
+                <span
+                  class="ltx_note_content"
+                >
+                  And a footnote with a
 second paragraph! And some 
-              <em>
-                formatting
-              </em>
-              .
-            </li>
-          </ol>
-        </dt-fn-list>
-      </div>
-      
+                  <em
+                    class="ltx_emph ltx_font_italic"
+                  >
+                    formatting
+                  </em>
+                  .
+                </span>
+              </li>
+            </ol>
+          </dt-fn-list>
+        </div>
+        
 
-    </dt-appendix>
+      </dt-appendix>
+    </div>
     
+
+
 
 
 
@@ -489,24 +603,29 @@ second paragraph! And some
         id="dt-fn-hover-box-0"
         style="display:none;"
       >
-        This is a footnote.
+        <span
+          class="ltx_note_content"
+        >
+          This is a footnote.
+        </span>
       </div>
       <div
         class="dt-hover-box"
         id="dt-fn-hover-box-1"
         style="display:none;"
       >
-        And a footnote with a
-        <br />
-        
-
-        <br />
-        
+        <span
+          class="ltx_note_content"
+        >
+          And a footnote with a
 second paragraph! And some 
-        <em>
-          formatting
-        </em>
-        .
+          <em
+            class="ltx_emph ltx_font_italic"
+          >
+            formatting
+          </em>
+          .
+        </span>
       </div>
     </div>
   </div>
@@ -520,74 +639,103 @@ exports[`paragraphs and line breaks render correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <p
+            class="ltx_p"
+          >
+            This is the first paragraph.
+          </p>
+          
+
         </div>
         
-  
+
         <div
-          class="engrafo-metadata-custom"
+          class="ltx_para"
+          id="p2"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            This is the second paragraph.
+          </p>
+          
+
+        </div>
+        
+
+        <div
+          class="ltx_para"
+          id="p3"
+        >
+          
+
+          <p
+            class="ltx_p ltx_align_center"
+          >
+            This is a centered paragraph.
+          </p>
+          
+
+        </div>
+        
+
+        <div
+          class="ltx_para"
+          id="p4"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            This is a
+
+            <br
+              class="ltx_break"
+            />
+            line break.
+          </p>
+          
+
+        </div>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
         />
         
 
-      </div>
-      
-
-      <p>
-        This is the first paragraph.
-      </p>
-      
-
-      <p>
-        This is the second paragraph.
-      </p>
-      
-
-      <p>
-        This is a centered paragraph.
-      </p>
-      
-
-      <p>
-        This is a
-        <br />
-        
-line break.
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -605,153 +753,273 @@ exports[`titles and headings render correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Headings Test
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
-        <div
-          class="authors"
+
+        <h1
+          class="ltx_title ltx_title_document"
         >
-          
-    
+          Headings Test
+        </h1>
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="engrafo-metadata-custom"
+          />
         </div>
         
-  
+
+
+        <section
+          class="ltx_section"
+          id="-at-currentID"
+        >
+          
+
+          <h2
+            class="ltx_title ltx_title_section"
+          >
+            
+
+            <span
+              class="ltx_tag ltx_tag_section"
+            >
+              <a
+                href="#-at-currentID"
+              >
+                <span
+                  class="ltx_ERROR undefined"
+                >
+                  \\thesection
+                </span>
+                 
+              </a>
+            </span>
+            Section Title
+          </h2>
+          
+
+
+          <section
+            class="ltx_subsection"
+            id="-at-currentIDa"
+          >
+            
+
+            <h3
+              class="ltx_title ltx_title_subsection"
+            >
+              
+
+              <span
+                class="ltx_tag ltx_tag_subsection"
+              >
+                <span
+                  class="ltx_ERROR undefined"
+                >
+                  \\thesubsection
+                </span>
+                 
+              </span>
+              Subsection Title
+            </h3>
+            
+
+
+            <section
+              class="ltx_subsubsection"
+              id="-at-currentIDb"
+            >
+              
+
+              <h4
+                class="ltx_title ltx_title_subsubsection"
+              >
+                
+Subsubsection Title
+              </h4>
+              
+
+
+              <section
+                class="ltx_paragraph"
+                id="theparagraph-at-ID"
+              >
+                
+
+                <h5
+                  class="ltx_title ltx_title_paragraph"
+                >
+                  Paragraph title
+                </h5>
+                
+
+
+                <div
+                  class="ltx_para"
+                  id="theparagraph-at-ID.p1"
+                >
+                  
+
+                  <p
+                    class="ltx_p"
+                  >
+                    Hello.
+                  </p>
+                  
+
+                </div>
+                
+
+              </section>
+              
+
+            </section>
+            
+
+          </section>
+          
+
+        </section>
+        
+
+        <section
+          class="ltx_section"
+          id="theparagraph-at-IDa"
+        >
+          
+
+          <h2
+            class="ltx_title ltx_title_section"
+          >
+            
+
+            <span
+              class="ltx_tag ltx_tag_section"
+            >
+              <a
+                href="#theparagraph-at-IDa"
+              >
+                <span
+                  class="ltx_ERROR undefined"
+                >
+                  \\thesection
+                </span>
+                 
+              </a>
+            </span>
+            Another section
+          </h2>
+          
+
+
+        </section>
+        
+
+        <section
+          class="ltx_section"
+          id="thesection-at-ID"
+        >
+          
+
+          <h2
+            class="ltx_title ltx_title_section"
+          >
+            Unnumbered section
+          </h2>
+          
+
+
+        </section>
+        
+
+        <section
+          class="ltx_section"
+          id="thesection-at-IDa"
+        >
+          
+
+          <h2
+            class="ltx_title ltx_title_section"
+          >
+            
+
+            <span
+              class="ltx_tag ltx_tag_section"
+            >
+              <a
+                href="#thesection-at-IDa"
+              >
+                <span
+                  class="ltx_ERROR undefined"
+                >
+                  \\thesection
+                </span>
+                 
+              </a>
+            </span>
+            Another section
+          </h2>
+          
+
+
+          <div
+            class="ltx_para"
+            id="thesection-at-IDa.p1"
+          >
+            
+
+            <p
+              class="ltx_p"
+            >
+              A reference to section 
+              <a
+                class="ltx_ref"
+                href="#-at-currentID"
+                title="\\\\thesection Section Title ‣ Headings Test"
+              >
+                <span
+                  class="ltx_text ltx_ref_tag"
+                >
+                  \\thesection
+                </span>
+              </a>
+              .
+            </p>
+            
+
+          </div>
+          
+
+        </section>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
         <div
-          class="engrafo-metadata-custom"
+          class="l-body"
         />
         
 
-      </div>
-      
-
-
-      <h2
-        id="section-1"
-      >
-        <span
-          class="section-number"
-        >
-          <a
-            href="#section-1"
-          >
-            1
-          </a>
-        </span>
-        Section Title
-      </h2>
-      
-
-      <h3
-        id="section-1.1"
-      >
-        <span
-          class="section-number"
-        >
-          <a
-            href="#section-1.1"
-          >
-            1.1
-          </a>
-        </span>
-        Subsection Title
-      </h3>
-      
-
-      <h4
-        id="subsubsection-title"
-      >
-        Subsubsection Title
-      </h4>
-      
-
-
-      <p>
-        <strong
-          class="paragraph-heading"
-        >
-          Paragraph title
-        </strong>
-         Hello.
-      </p>
-      
-
-      <h2
-        id="section-2"
-      >
-        <span
-          class="section-number"
-        >
-          <a
-            href="#section-2"
-          >
-            2
-          </a>
-        </span>
-        Another section
-      </h2>
-      
-
-      <h2
-        class="unnumbered"
-        id="section-3"
-      >
-        Unnumbered section
-      </h2>
-      
-
-      <h2
-        id="section-4"
-      >
-        <span
-          class="section-number"
-        >
-          <a
-            href="#section-4"
-          >
-            4
-          </a>
-        </span>
-        Another section
-      </h2>
-      
-
-      <p>
-        A reference to 
-        <a
-          href="#section-1"
-        >
-          Section 1
-        </a>
-        .
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 

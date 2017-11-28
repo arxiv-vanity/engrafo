@@ -7,73 +7,106 @@ exports[`TITLES IN ALL CAPS are fixed 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Why Am I Shouting
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
+        <span
+          class="ltx_ERROR undefined"
+        >
+          \\title
+        </span>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <p
+            class="ltx_p"
+          >
+            WHY AM I SHOUTING
+
+          </p>
+          
+
         </div>
         
-  
+
+        <section
+          class="ltx_section"
+          id="-at-currentID"
+        >
+          
+
+          <h2
+            class="ltx_title ltx_title_section"
+          >
+            
+
+            <span
+              class="ltx_tag ltx_tag_section"
+            >
+              <a
+                href="#-at-currentID"
+              >
+                <span
+                  class="ltx_ERROR undefined"
+                >
+                  \\thesection
+                </span>
+                 
+              </a>
+            </span>
+            Urgh Stop It
+          </h2>
+          
+
+
+          <div
+            class="ltx_para"
+            id="-at-currentID.p1"
+          >
+            
+
+            <p
+              class="ltx_p"
+            >
+              Hello.
+
+            </p>
+            
+
+          </div>
+          
+
+        </section>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
         <div
-          class="engrafo-metadata-custom"
+          class="l-body"
         />
         
 
-      </div>
-      
-
-
-      <h2
-        id="section-1"
-      >
-        <span
-          class="section-number"
-        >
-          <a
-            href="#section-1"
-          >
-            1
-          </a>
-        </span>
-        Urgh Stop It
-      </h2>
-      
-
-      <p>
-        Hello.
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -91,57 +124,65 @@ exports[`bold is stripped from title 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-         Why would someone do this
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
+        <span
+          class="ltx_ERROR undefined"
+        >
+          \\title
+        </span>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <p
+            class="ltx_p"
+          >
+            <span
+              class="ltx_text ltx_font_bold"
+              style="font-size:173%;"
+            >
+              Why would someone do this
+
+            </span>
+            
+
+Hello.
+
+          </p>
+          
+
         </div>
         
-  
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
         <div
-          class="engrafo-metadata-custom"
+          class="l-body"
         />
         
 
-      </div>
-      
-
-
-      <p>
-        Hello.
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 

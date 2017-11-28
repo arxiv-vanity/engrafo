@@ -7,91 +7,117 @@ exports[`images in figures render correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
+        <figure
+          class="ltx_figure"
+          id="fig1"
+        >
+          <span
+            class="ltx_ERROR undefined"
+          >
+            \\includegraphics
+          </span>
+          
+
+          <p
+            class="ltx_p"
+          >
+            [width=8cm]fig.png
+          </p>
+          
+
+          <figcaption
+            class="ltx_caption"
+          >
+            <span
+              class="ltx_tag ltx_tag_figure"
+            >
+              Figure 
+              <span
+                class="ltx_ERROR undefined"
+              >
+                \\thefigure
+              </span>
+              : 
+            </span>
+            Fig.
+          </figcaption>
+          
+
+        </figure>
+        
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <p
+            class="ltx_p"
+          >
+            See fig 
+            <span
+              class="ltx_ref ltx_ref_self"
+            >
+              id1
+            </span>
+            .
+          </p>
+          
+
         </div>
         
-  
+
         <div
-          class="engrafo-metadata-custom"
+          class="ltx_para"
+          id="p2"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            Ref which doesn’t exist 
+            <span
+              class="ltx_ref ltx_missing_label ltx_ref_self"
+            >
+              LABEL:fig:notexist
+            </span>
+            .
+          </p>
+          
+
+        </div>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
         />
         
 
-      </div>
-      
-
-      <figure
-        id="figure-1"
-      >
-        
-
-        <img
-          alt="Figure 1: Fig."
-          src="fig.png"
-          title="fig:"
-        />
-        <figcaption>
-          Figure 1: Fig.
-        </figcaption>
-        
-
-      </figure>
-      
-
-      <p>
-        See 
-        <a
-          href="#figure-1"
-        >
-          Figure 1
-        </a>
-        .
-      </p>
-      
-
-      <p>
-        Ref which doesn’t exist  
-        <span
-          class="engrafo-missing-ref"
-        >
-          ?
-        </span>
-        .
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -109,94 +135,102 @@ exports[`multiple images in figures render correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
+        <figure
+          class="ltx_figure"
+          id="fig1"
+        >
+          <span
+            class="ltx_ERROR undefined"
+          >
+            \\includegraphics
+          </span>
+          
+
+          <p
+            class="ltx_p"
+          >
+            [width=8cm]fig.png
+
+            <span
+              class="ltx_ERROR undefined"
+            >
+              \\includegraphics
+            </span>
+            [width=8cm]fig2.png
+          </p>
+          
+
+          <figcaption
+            class="ltx_caption"
+          >
+            <span
+              class="ltx_tag ltx_tag_figure"
+            >
+              Figure 
+              <span
+                class="ltx_ERROR undefined"
+              >
+                \\thefigure
+              </span>
+              : 
+            </span>
+            Fig.
+          </figcaption>
+          
+
+        </figure>
+        
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <p
+            class="ltx_p"
+          >
+            See fig 
+            <span
+              class="ltx_ref ltx_ref_self"
+            >
+              id1
+            </span>
+            .
+          </p>
+          
+
         </div>
         
-  
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
         <div
-          class="engrafo-metadata-custom"
+          class="l-body"
         />
         
 
-      </div>
-      
-
-      <figure
-        class="l-page"
-        id="figure-1"
-      >
-        
-
-        <div
-          class="images"
-        >
-          <div>
-            <img
-              alt="Figure 1: Fig."
-              src="fig.png"
-              title="fig:"
-            />
-          </div>
-          <div>
-            <img
-              alt="Fig."
-              src="fig2.png"
-              title="fig:"
-            />
-          </div>
-        </div>
-        <figcaption>
-          Figure 1: Fig.
-        </figcaption>
-        
-
-      </figure>
-      
-
-      <p>
-        See 
-        <a
-          href="#figure-1"
-        >
-          Figure 1
-        </a>
-        .
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -214,65 +248,55 @@ exports[`plain images render correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
+        <span
+          class="ltx_ERROR undefined"
+        >
+          \\includegraphics
+        </span>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <p
+            class="ltx_p"
+          >
+            []fig.png
+          </p>
+          
+
         </div>
         
-  
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
         <div
-          class="engrafo-metadata-custom"
+          class="l-body"
         />
         
 
-      </div>
-      
-
-      <figure
-        id=""
-      >
-        
-
-        <img
-          alt="image"
-          src="fig.png"
-        />
-        
-
-      </figure>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 

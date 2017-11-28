@@ -75,7 +75,9 @@ module.exports = function(dom) {
   // Put metadata in right place
   let metadata = utils.nodeFromString(dom, '<div class="engrafo-metadata"></div>');
   let h1 = dom.querySelector("h1");
-  h1.parentNode.insertBefore(metadata, h1.nextSibling);
+  if (h1) {
+    h1.parentNode.insertBefore(metadata, h1.nextSibling);
+  }
 
   let authors = dom.querySelector('.ltx_authors');
   if (authors) {

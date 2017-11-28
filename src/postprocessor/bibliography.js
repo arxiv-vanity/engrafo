@@ -94,4 +94,9 @@ module.exports = function(dom) {
     a.appendChild(hoverSpan);
     a.setAttribute("onclick", "event.preventDefault()");
   });
+
+  // Replace missing citations with [?]. Much neater.
+  Array.from(dom.querySelectorAll(".ltx_missing_citation")).forEach(el => {
+    el.innerHTML = "?";
+  });
 };

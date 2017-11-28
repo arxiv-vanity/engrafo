@@ -21,5 +21,5 @@ module.exports = function(dom) {
     utils.replaceAndKeepChildren(abstractTitle, dom.createElement('h2'));
   }
 
-  utils.removeAll(dom.querySelector("footer"));
+  utils.removeAll(dom.querySelectorAll(".ltx_page_footer"));
 };

@@ -14,5 +14,4 @@ server/github-access-token.txt
 # python
 *.egg
 *.egg-info
-engrafo_pandocfilter/build/
 *.pyc

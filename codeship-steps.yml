@@ -3,9 +3,6 @@
     - name: integration
       service: engrafo
       command: yarn test
-    - name: pandocfilter
-      service: engrafo
-      command: sh -c "cd pandocfilter && python -m unittest discover"
 - name: "Push Git commit tag to Docker Hub"
   service: engrafo
   type: push

@@ -1,4 +1,3 @@
-#FROM arxivvanity/pandoc@sha256:32bbe3d905b40029093e51f7fdef9c903e92f81e068d74efed203bf0ad39fa54 as pandoc
 FROM debian:stretch
 
 # Official CDN throws 503s
@@ -23,29 +22,18 @@ RUN apt-get update -qq && apt-get install -qy \
   python-pip \
   yarn
 
-
-# pandoc
-#COPY --from=pandoc /root/.local/bin/pandoc /usr/local/bin/pandoc
-
-# pandocfilter
-RUN mkdir -p /app/pandocfilter
 WORKDIR /app
-# COPY pandocfilter/requirements.txt /app/pandocfilter/
-# RUN pip install -r pandocfilter/requirements.txt
 
 # server
 COPY server/requirements.txt /app/server/
 RUN pip install -r server/requirements.txt
 
 # Node
-WORKDIR /app
 COPY package.json yarn.lock /app/
 RUN yarn
 
 ENV PYTHONUNBUFFERED=1
 ENV PATH="/app/bin:${PATH}"
-# To make PANDOC_DIR work
-ENV PATH="/usr/src/pandoc/.stack-work/install/x86_64-linux/lts-8.16/8.0.2/bin:${PATH}"
 
 # latexml
 RUN apt-get update -qq && apt-get install -qy \

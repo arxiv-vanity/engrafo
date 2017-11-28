@@ -71,7 +71,7 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
               <span
                 class="ltx_ref ltx_missing_citation ltx_ref_self"
               >
-                zlateskiS15_asdf
+                ?
               </span>
               ]
             </cite>

@@ -60,7 +60,7 @@ exports.postprocess = htmlString => {
   // Run all processing on document.
   //
   // Order is important -- typically the Engrafo processor comes before the
-  // Distill one so that we can massage the Pandoc output into the format
+  // Distill one so that we can massage the LaTeXML output into the format
   // that Distill expects.
   postprocessors.layout(dom, data);
   distill.components.html(dom, data);
@@ -85,7 +85,7 @@ exports.postprocess = htmlString => {
   return jsdom.serializeDocument(dom);
 };
 
-// Do all processing on the file that Pandoc produces
+// Do all processing on the file that LaTeXML produces
 exports.processHTML = (htmlPath, callback) => {
   async.waterfall([
     (callback) => {

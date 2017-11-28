@@ -1,16 +1,11 @@
 #!/bin/bash
 ENGRAFO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 
-if [ ! -z "$PANDOC_DIR" ]; then
-  PANDOC_VOLUME_FLAG="-v $PANDOC_DIR:/usr/src/pandoc"
-fi
-
 exec docker run \
     -v "$(pwd)":/workdir -w /workdir \
     -v "/app/node_modules" \
     -v "$ENGRAFO_DIR:/app" \
     --rm \
     -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_S3_REGION_NAME \
-    $PANDOC_VOLUME_FLAG \
     engrafo \
     engrafo "$@"

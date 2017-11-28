@@ -14,8 +14,4 @@
 # python
 *.egg
 *.egg-info
-/engrafo_pandocfilter/build/
 *.pyc
-
-/pandoc-ast-filtered.json
-/pandoc-ast.json

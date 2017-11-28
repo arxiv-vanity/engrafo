@@ -1,0 +1,8 @@
+use LaTeXML::Package;
+use strict;
+use warnings;
+
+# Ignore \includepdf
+DefMacro('\includepdf[]{}', '');
+
+1;

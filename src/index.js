@@ -20,6 +20,7 @@ exports.renderLatexml = (texPath, callback) => {
       "--format", "html5",
       "--mathtex",
       "--verbose",
+      "--preload", "latexml/engrafo.ltxml",
       texPath
     ], {
     // TODO: in tests, just dump output to console.log so jest can hide it
@@ -43,15 +44,15 @@ exports.postprocess = htmlString => {
     features: { ProcessExternalResources: false, FetchExternalResources: false }
   });
 
-  // // Check there is actually a document to process
-  // var dtArticle = dom.querySelector('dt-article');
-  // if (!dtArticle) {
-  //   throw new Error("Could not find <dt-article>");
-  // }
-  // // Title and metadata is always present
-  // if (dtArticle.children.length <= 2) {
-  //   throw new Error("Document is blank");
-  // }
+  // Check there is actually a document to process
+  var ltxDocument = dom.querySelector('.ltx_document');
+  if (!ltxDocument) {
+    throw new Error("Could not find .ltx_document");
+  }
+  // Title and metadata is always present
+  if (ltxDocument.children.length == 0) {
+    throw new Error("Document is blank");
+  }
 
   // Document state
   var data = {};

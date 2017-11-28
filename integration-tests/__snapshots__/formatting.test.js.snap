@@ -7,100 +7,50 @@ exports[`ICML commands are supported 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Paper Title
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-      
-          <div
-            class="author"
+
+          <p
+            class="ltx_p"
           >
-            <span
-              class="author"
-              data-affiliation-abbrev="one"
-            >
-              Author One
-              <sup>
-                1
-              </sup>
-            </span>
-            <span
-              class="author"
-              data-affiliation-abbrev="one"
-            >
-              Second Author
-              <sup>
-                1
-              </sup>
-              <sup>
-                2
-              </sup>
-            </span>
-            <span
-              class="affiliation"
-            >
-              <sup>
-                1
-              </sup>
-              First Affiliation
-            </span>
-            <span
-              class="affiliation"
-            >
-              <sup>
-                2
-              </sup>
-              Affiliation Two
-            </span>
-          </div>
+            Body text.
+          </p>
           
-    
+
         </div>
         
-  
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
         <div
-          class="engrafo-metadata-custom"
+          class="l-body"
         />
         
 
-      </div>
-      
-
-
-      <p>
-        Body text.
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -118,152 +68,227 @@ exports[`institute command is supported 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        A Title
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
-        <div
-          class="authors"
+
+        <h1
+          class="ltx_title ltx_title_document"
         >
-          
-      
+          A Title
+        </h1>
+        <div
+          class="engrafo-metadata"
+        >
           <div
-            class="author"
+            class="ltx_authors"
           >
+            
+
             <span
-              data-affiliation-abbrev="1"
+              class="ltx_creator ltx_role_author"
             >
-              Ekaterina Vylomova
-              <sup>
-                1
-              </sup>
+              
+
+              <span
+                class="ltx_personname"
+              >
+                Ekaterina Vylomova
+                <span
+                  class="ltx_ERROR undefined"
+                >
+                  \\inst
+                </span>
+                1 
+
+              </span>
+            </span>
+            
+
+            <span
+              class="ltx_author_before"
+            >
+                
             </span>
             <span
-              data-affiliation-abbrev="1"
+              class="ltx_creator ltx_role_author"
             >
-              Andrei Shcherbakov
-              <sup>
-                1
-              </sup>
+              
+
+              <span
+                class="ltx_personname"
+              >
+                Andrei Shcherbakov
+                <span
+                  class="ltx_ERROR undefined"
+                >
+                  \\inst
+                </span>
+                1 
+
+              </span>
+            </span>
+            
+
+            <span
+              class="ltx_author_before"
+            >
+                
             </span>
             <span
-              data-affiliation-abbrev="2"
+              class="ltx_creator ltx_role_author"
             >
-               Yuriy Philippovich
-              <sup>
-                2
-              </sup>
+              
+
+              <span
+                class="ltx_personname"
+              >
+                Yuriy Philippovich
+                <span
+                  class="ltx_ERROR undefined"
+                >
+                  \\inst
+                </span>
+                2 
+
+              </span>
+            </span>
+            
+
+            <span
+              class="ltx_author_before"
+            >
+                
             </span>
             <span
-              data-affiliation-abbrev="3"
+              class="ltx_creator ltx_role_author"
             >
-              Galina Cherkasova
-              <sup>
+              
+
+              <span
+                class="ltx_personname"
+              >
+                Galina Cherkasova
+                <span
+                  class="ltx_ERROR undefined"
+                >
+                  \\inst
+                </span>
                 3
-              </sup>
-            </span>
-            <span
-              class="affiliation"
-            >
-              <sup>
-                1
-              </sup>
-              The University of Melbourne, Melbourne, Australia,
-            </span>
-            <span>
-              
 
-              <a
-                href="http://evylomova@gmail.com"
-              >
-                evylomova@gmail.com
-              </a>
-               & 
-              <a
-                href="http://ultrasparc@yandex.ru"
-              >
-                ultrasparc@yandex.ru
-              </a>
-              , 
+              </span>
             </span>
-            <span
-              class="affiliation"
-            >
-              <sup>
-                2
-              </sup>
-               Moscow Polytech, Moscow, Russia,
-              <br />
-              
+            
 
-              <a
-                href="http://Y_philippovich@mail.ru"
-              >
-                Y_philippovich@mail.ru
-              </a>
-               
-            </span>
-            <span
-              class="affiliation"
-            >
-              <sup>
-                3
-              </sup>
-               Institute of the Science of Language, Moscow, Russia
-              <br />
-              
-
-              <a
-                href="http://gacherk@mail.ru"
-              >
-                gacherk@mail.ru
-              </a>
-               
-            </span>
           </div>
-          
-    
+          <div
+            class="engrafo-metadata-custom"
+          />
         </div>
         
-  
+
+
+        <span
+          class="ltx_ERROR undefined"
+        >
+          \\institute
+        </span>
+        
+
         <div
-          class="engrafo-metadata-custom"
+          class="ltx_para"
+          id="p1"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            The University of Melbourne, Melbourne, Australia,
+
+            <br
+              class="ltx_break"
+            />
+            <span
+              class="ltx_ERROR undefined"
+            >
+              \\email
+            </span>
+            evylomova@gmail.com & 
+            <span
+              class="ltx_ERROR undefined"
+            >
+              \\email
+            </span>
+            ultrasparc@yandex.ru,
+ and Moscow Polytech, Moscow, Russia,
+
+            <br
+              class="ltx_break"
+            />
+            <span
+              class="ltx_ERROR undefined"
+            >
+              \\email
+            </span>
+            Y_philippovich@mail.ru
+ and Institute of the Science of Language, Moscow, Russia
+
+            <br
+              class="ltx_break"
+            />
+            <span
+              class="ltx_ERROR undefined"
+            >
+              \\email
+            </span>
+            gacherk@mail.ru
+          </p>
+          
+
+        </div>
+        
+
+        <div
+          class="ltx_para"
+          id="p2"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            Body text.
+          </p>
+          
+
+        </div>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
         />
         
 
-      </div>
-      
-
-      <p>
-        Body text.
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -281,122 +306,158 @@ exports[`links get wrapped in anchors 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <p
+            class="ltx_p"
+          >
+            http link: http://link.co.uk/to#something
+          </p>
+          
+
         </div>
         
-  
+
         <div
-          class="engrafo-metadata-custom"
+          class="ltx_para"
+          id="p2"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            https link: https://link.info?param url
+          </p>
+          
+
+        </div>
+        
+
+        <div
+          class="ltx_para"
+          id="p3"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            link with trailing period: https://example.com.
+          </p>
+          
+
+        </div>
+        
+
+        <div
+          class="ltx_para"
+          id="p4"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            this should not make a link: foo.bar
+          </p>
+          
+
+        </div>
+        
+
+        <div
+          class="ltx_para"
+          id="p5"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            this is a link without leading space: badlatex.http://example.com
+          </p>
+          
+
+        </div>
+        
+
+        <div
+          class="ltx_para"
+          id="p6"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            this is already a link: 
+            <span
+              class="ltx_ERROR undefined"
+            >
+              \\href
+            </span>
+            http://example.comexample.com
+          </p>
+          
+
+        </div>
+        
+
+        <div
+          class="ltx_para"
+          id="p7"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            this is a link without http: 
+            <span
+              class="ltx_ERROR undefined"
+            >
+              \\href
+            </span>
+            example.comexample.com
+          </p>
+          
+
+        </div>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
         />
         
 
-      </div>
-      
-
-      <p>
-        http link: 
-        <a
-          class="uri"
-          href="http://link.co.uk/to#something"
-        >
-          http://link.co.uk/to#something
-        </a>
-      </p>
-      
-
-      <p>
-        https link: 
-        <a
-          class="uri"
-          href="https://link.info?param"
-        >
-          https://link.info?param
-        </a>
-         url
-      </p>
-      
-
-      <p>
-        link with trailing period: 
-        <a
-          class="uri"
-          href="https://example.com"
-        >
-          https://example.com
-        </a>
-        .
-      </p>
-      
-
-      <p>
-        this should not make a link: foo.bar
-      </p>
-      
-
-      <p>
-        this is a link without leading space: badlatex.
-        <a
-          class="uri"
-          href="http://example.com"
-        >
-          http://example.com
-        </a>
-      </p>
-      
-
-      <p>
-        this is already a link: 
-        <a
-          href="http://example.com"
-        >
-          example.com
-        </a>
-      </p>
-      
-
-      <p>
-        this is a link without http: 
-        <a
-          href="http://example.com"
-        >
-          example.com
-        </a>
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -414,187 +475,581 @@ exports[`lists render correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
-        </div>
-        
-  
-        <div
-          class="engrafo-metadata-custom"
-        />
-        
 
-      </div>
-      
-
-      <ul>
-        
-
-        <li>
-          <p>
-            An unordered list
-          </p>
-        </li>
-        
-
-        <li>
-          <p>
-            Second item
-          </p>
-        </li>
-        
-
-      </ul>
-      
-
-      <ol>
-        
-
-        <li>
-          <p>
-            An ordered list
-          </p>
-        </li>
-        
-
-        <li>
-          <p>
-            Second one.
-          </p>
-        </li>
-        
-
-      </ol>
-      
-
-      <ul>
-        
-
-        <li>
-          <p>
-            A nested unordered list
-          </p>
-          
-
-          <ul>
+          <ul
+            class="ltx_itemize"
+          >
             
 
-            <li>
-              <p>
-                First nested item
-              </p>
+            <li
+              class="ltx_item"
+              id=".i1"
+              style="list-style-type:none;"
+            >
+              
+
+              <span
+                class="ltx_tag ltx_tag_itemize"
+              >
+                •
+              </span>
+               
+
+              <div
+                class="ltx_para"
+                id=".i1.p1"
+              >
+                
+
+                <p
+                  class="ltx_p"
+                >
+                  An unordered list
+                </p>
+                
+
+              </div>
+              
+
             </li>
             
 
-            <li>
-              <p>
-                Second nested item
-              </p>
+            <li
+              class="ltx_item"
+              id=".i2"
+              style="list-style-type:none;"
+            >
+              
+
+              <span
+                class="ltx_tag ltx_tag_itemize"
+              >
+                •
+              </span>
+               
+
+              <div
+                class="ltx_para"
+                id=".i2.p1"
+              >
+                
+
+                <p
+                  class="ltx_p"
+                >
+                  Second item
+                </p>
+                
+
+              </div>
+              
+
             </li>
             
 
           </ul>
-        </li>
-        
-
-        <li>
-          <p>
-            Second item
-          </p>
-        </li>
-        
-
-      </ul>
-      
-
-      <h2
-        id="section-1"
-      >
-        <span
-          class="section-number"
-        >
-          <a
-            href="#section-1"
-          >
-            1
-          </a>
-        </span>
-        A nested ordered list
-      </h2>
-      
-
-      <ol>
-        
-
-        <li>
-          <p>
-            First item
-          </p>
           
 
-          <ol>
+        </div>
+        
+
+        <div
+          class="ltx_para"
+          id="p2"
+        >
+          
+
+          <ol
+            class="ltx_enumerate"
+          >
             
 
-            <li>
-              <p>
-                First nested item
-              </p>
+            <li
+              class="ltx_item"
+              style="list-style-type:none;"
+            >
+              
+
+              <span
+                class="ltx_tag ltx_tag_enumerate"
+              >
+                <span
+                  class="ltx_ERROR undefined"
+                >
+                  \\theenumi
+                </span>
+                .
+              </span>
+               
+
+              <div
+                class="ltx_para"
+                id="p2.p1"
+              >
+                
+
+                <p
+                  class="ltx_p"
+                >
+                  An ordered list
+                </p>
+                
+
+              </div>
+              
+
             </li>
             
 
-            <li>
-              <p>
-                Second nested item
-              </p>
+            <li
+              class="ltx_item"
+              style="list-style-type:none;"
+            >
+              
+
+              <span
+                class="ltx_tag ltx_tag_enumerate"
+              >
+                <span
+                  class="ltx_ERROR undefined"
+                >
+                  \\theenumi
+                </span>
+                .
+              </span>
+               
+
+              <div
+                class="ltx_para"
+                id="p2.p2"
+              >
+                
+
+                <p
+                  class="ltx_p"
+                >
+                  Second one.
+                </p>
+                
+
+              </div>
+              
+
             </li>
             
 
           </ol>
-        </li>
+          
+
+        </div>
         
 
-        <li>
-          <p>
-            Second item
-          </p>
-        </li>
+        <div
+          class="ltx_para"
+          id="p3"
+        >
+          
+
+          <ul
+            class="ltx_itemize"
+          >
+            
+
+            <li
+              class="ltx_item"
+              id=".i1a"
+              style="list-style-type:none;"
+            >
+              
+
+              <span
+                class="ltx_tag ltx_tag_itemize"
+              >
+                •
+              </span>
+               
+
+              <div
+                class="ltx_para"
+                id=".i1a.p1"
+              >
+                
+
+                <p
+                  class="ltx_p"
+                >
+                  A nested unordered list
+                </p>
+                
+
+                <ul
+                  class="ltx_itemize"
+                >
+                  
+
+                  <li
+                    class="ltx_item"
+                    id=".i1b"
+                    style="list-style-type:none;"
+                  >
+                    
+
+                    <span
+                      class="ltx_tag ltx_tag_itemize"
+                    >
+                      <span
+                        class="ltx_text ltx_font_bold"
+                      >
+                        –
+                      </span>
+                    </span>
+                     
+
+                    <div
+                      class="ltx_para"
+                      id=".i1b.p1"
+                    >
+                      
+
+                      <p
+                        class="ltx_p"
+                      >
+                        First nested item
+                      </p>
+                      
+
+                    </div>
+                    
+
+                  </li>
+                  
+
+                  <li
+                    class="ltx_item"
+                    id=".i2a"
+                    style="list-style-type:none;"
+                  >
+                    
+
+                    <span
+                      class="ltx_tag ltx_tag_itemize"
+                    >
+                      <span
+                        class="ltx_text ltx_font_bold"
+                      >
+                        –
+                      </span>
+                    </span>
+                     
+
+                    <div
+                      class="ltx_para"
+                      id=".i2a.p1"
+                    >
+                      
+
+                      <p
+                        class="ltx_p"
+                      >
+                        Second nested item
+                      </p>
+                      
+
+                    </div>
+                    
+
+                  </li>
+                  
+
+                </ul>
+                
+
+              </div>
+              
+
+            </li>
+            
+
+            <li
+              class="ltx_item"
+              id=".i2b"
+              style="list-style-type:none;"
+            >
+              
+
+              <span
+                class="ltx_tag ltx_tag_itemize"
+              >
+                •
+              </span>
+               
+
+              <div
+                class="ltx_para"
+                id=".i2b.p1"
+              >
+                
+
+                <p
+                  class="ltx_p"
+                >
+                  Second item
+                </p>
+                
+
+              </div>
+              
+
+            </li>
+            
+
+          </ul>
+          
+
+        </div>
         
 
-      </ol>
+        <section
+          class="ltx_section"
+          id=".i2c"
+        >
+          
+
+          <h2
+            class="ltx_title ltx_title_section"
+          >
+            
+
+            <span
+              class="ltx_tag ltx_tag_section"
+            >
+              <a
+                href="#.i2c"
+              >
+                <span
+                  class="ltx_ERROR undefined"
+                >
+                  \\thesection
+                </span>
+                 
+              </a>
+            </span>
+            A nested ordered list
+          </h2>
+          
+
+
+          <div
+            class="ltx_para"
+            id=".i2c.p1"
+          >
+            
+
+            <ol
+              class="ltx_enumerate"
+            >
+              
+
+              <li
+                class="ltx_item"
+                style="list-style-type:none;"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_enumerate"
+                >
+                  <span
+                    class="ltx_ERROR undefined"
+                  >
+                    \\theenumi
+                  </span>
+                  .
+                </span>
+                 
+
+                <div
+                  class="ltx_para"
+                  id=".i2c.p1.p1"
+                >
+                  
+
+                  <p
+                    class="ltx_p"
+                  >
+                    First item
+                  </p>
+                  
+
+                  <ol
+                    class="ltx_enumerate"
+                  >
+                    
+
+                    <li
+                      class="ltx_item"
+                      style="list-style-type:none;"
+                    >
+                      
+
+                      <span
+                        class="ltx_tag ltx_tag_enumerate"
+                      >
+                        (
+                        <span
+                          class="ltx_ERROR undefined"
+                        >
+                          \\theenumii
+                        </span>
+                        )
+                      </span>
+                       
+
+                      <div
+                        class="ltx_para"
+                        id=".i2c.p1.p1.p1"
+                      >
+                        
+
+                        <p
+                          class="ltx_p"
+                        >
+                          First nested item
+                        </p>
+                        
+
+                      </div>
+                      
+
+                    </li>
+                    
+
+                    <li
+                      class="ltx_item"
+                      style="list-style-type:none;"
+                    >
+                      
+
+                      <span
+                        class="ltx_tag ltx_tag_enumerate"
+                      >
+                        (
+                        <span
+                          class="ltx_ERROR undefined"
+                        >
+                          \\theenumii
+                        </span>
+                        )
+                      </span>
+                       
+
+                      <div
+                        class="ltx_para"
+                        id=".i2c.p1.p1.p2"
+                      >
+                        
+
+                        <p
+                          class="ltx_p"
+                        >
+                          Second nested item
+                        </p>
+                        
+
+                      </div>
+                      
+
+                    </li>
+                    
+
+                  </ol>
+                  
+
+                </div>
+                
+
+              </li>
+              
+
+              <li
+                class="ltx_item"
+                style="list-style-type:none;"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_enumerate"
+                >
+                  <span
+                    class="ltx_ERROR undefined"
+                  >
+                    \\theenumi
+                  </span>
+                  .
+                </span>
+                 
+
+                <div
+                  class="ltx_para"
+                  id=".i2c.p1.p2"
+                >
+                  
+
+                  <p
+                    class="ltx_p"
+                  >
+                    Second item
+                  </p>
+                  
+
+                </div>
+                
+
+              </li>
+              
+
+            </ol>
+            
+
+          </div>
+          
+
+        </section>
+        
+
+      </dt-article>
       
 
-    </dt-article>
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
+        />
+        
+
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -612,56 +1067,50 @@ exports[`pdfoutput=1 is ignored 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <p
+            class="ltx_p"
+          >
+            hello world
+          </p>
+          
+
         </div>
         
-  
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
         <div
-          class="engrafo-metadata-custom"
+          class="l-body"
         />
         
 
-      </div>
-      
-
-      <p>
-        hello world
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -679,105 +1128,129 @@ exports[`pinforms3 TITLE, AUTHOR, AFF are supported 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        The Title of the Paper
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
+        <span
+          class="ltx_ERROR undefined"
+        >
+          \\TITLE
+        </span>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <p
+            class="ltx_p"
+          >
+            The Title of the Paper
+          </p>
+          
+
         </div>
         
-  
+
+        <span
+          class="ltx_ERROR undefined"
+        >
+          \\ARTICLEAUTHORS
+        </span>
+        <span
+          class="ltx_ERROR undefined"
+        >
+          \\AUTHOR
+        </span>
+        
+
         <div
-          class="engrafo-metadata-custom"
+          class="ltx_para"
+          id="p2"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            Author Name
+
+            <span
+              class="ltx_ERROR undefined"
+            >
+              \\AFF
+            </span>
+            Author Affiliation
+          </p>
+          
+
+        </div>
+        
+
+        <span
+          class="ltx_ERROR undefined"
+        >
+          \\ABSTRACT
+        </span>
+        
+
+        <div
+          class="ltx_para"
+          id="p3"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            This is the abstract.
+          </p>
+          
+
+        </div>
+        
+
+        <div
+          class="ltx_para"
+          id="p4"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            hello world
+          </p>
+          
+
+        </div>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
         />
         
 
-      </div>
-      
-
-      <div
-        class="engrafo-abstract"
-      >
-        
-  
-        <h2>
-          Abstract
-        </h2>
-        
-  
-        <p>
-          This is the abstract.
-        </p>
-        
-
-      </div>
-      
-
-      <div
-        class="authors"
-      >
-        
-
-        <p>
-          <span>
-             
-            <span
-              class="author"
-            >
-              <span>
-                Author Name
-              </span>
-            </span>
-             
-            <span
-              class="affiliation"
-            >
-              <span>
-                Author Affiliation
-              </span>
-            </span>
-          </span>
-        </p>
-        
-
-
-        <p>
-          hello world
-        </p>
-        
-
-      </div>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -795,98 +1268,144 @@ exports[`text formatting renders correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <p
+            class="ltx_p"
+          >
+            This is 
+            <span
+              class="ltx_text ltx_font_bold"
+            >
+              bold
+            </span>
+            .
+          </p>
+          
+
         </div>
         
-  
+
         <div
-          class="engrafo-metadata-custom"
+          class="ltx_para"
+          id="p2"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            This is 
+            <span
+              class="ltx_text ltx_font_italic"
+            >
+              textit
+            </span>
+            .
+          </p>
+          
+
+        </div>
+        
+
+        <div
+          class="ltx_para"
+          id="p3"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            This is 
+            <em
+              class="ltx_emph ltx_font_italic"
+            >
+              emph
+            </em>
+            .
+          </p>
+          
+
+        </div>
+        
+
+        <div
+          class="ltx_para"
+          id="p4"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            This is 
+            <span
+              class="ltx_ERROR undefined"
+            >
+              \\href
+            </span>
+            https://www.example.coma link.
+          </p>
+          
+
+        </div>
+        
+
+        <div
+          class="ltx_para"
+          id="p5"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            This is 
+            <span
+              class="ltx_text ltx_font_typewriter"
+            >
+              fixed width
+            </span>
+            .
+          </p>
+          
+
+        </div>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
         />
         
 
-      </div>
-      
-
-      <p>
-        This is 
-        <strong>
-          bold
-        </strong>
-        .
-      </p>
-      
-
-      <p>
-        This is 
-        <em>
-          textit
-        </em>
-        .
-      </p>
-      
-
-      <p>
-        This is 
-        <em>
-          emph
-        </em>
-        .
-      </p>
-      
-
-      <p>
-        This is 
-        <a
-          href="https://www.example.com"
-        >
-          a link
-        </a>
-        .
-      </p>
-      
-
-      <p>
-        This is 
-        <code>
-          fixed width
-        </code>
-        .
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -904,61 +1423,66 @@ exports[`vskip is ignored 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <p
+            class="ltx_p"
+          >
+            before
+          </p>
+          
+
         </div>
         
-  
+
         <div
-          class="engrafo-metadata-custom"
+          class="ltx_para"
+          id="p2"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            after
+          </p>
+          
+
+        </div>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
         />
         
 
-      </div>
-      
-
-      <p>
-        before
-      </p>
-      
-
-      <p>
-        after
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 

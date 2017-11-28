@@ -7,255 +7,209 @@ exports[`block math renders correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
-        </div>
-        
-  
-        <div
-          class="engrafo-metadata-custom"
-        />
-        
 
-      </div>
-      
-
-      <p />
-      
-
-      <figure
-        id="equation-1"
-      >
-        
-
-        <span
-          class="math display"
-        >
-          <span
-            class="mjpage mjpage__block"
+          <table
+            class="ltx_equation ltx_eqn_table"
           >
-            <span
-              class="mjx-chtml MJXc-display"
-            >
-              <span
-                aria-label="e^{i\\\\pi}=-1
-    \\\\tag{1}"
-                class="mjx-math"
-                style="width: 100%;"
+            
+
+
+            <tbody>
+              <tr
+                class="ltx_equation ltx_eqn_row ltx_align_baseline"
               >
-                <span
-                  aria-hidden="true"
-                  class="mjx-mrow"
-                  style="width: 100%;"
+                
+
+                <td
+                  class="ltx_eqn_cell ltx_eqn_center_padleft"
+                />
+                
+
+                <td
+                  class="ltx_eqn_cell ltx_align_center"
                 >
                   <span
-                    class="mjx-mtable"
-                    style="width: 100%; min-width: 6.062em;"
+                    class="ltx_DisplayMath"
+                    id="p1.m1"
                   >
                     <span
-                      class="mjx-box"
-                      style="width: 100%; text-align: left;"
+                      class="mjpage mjpage__block"
                     >
                       <span
-                        class="mjx-table"
-                        style="display: inline-table; width: auto; vertical-align: -0.086em;"
+                        class="mjx-chtml MJXc-display"
+                        style="text-align: left;"
                       >
                         <span
-                          class="mjx-mlabeledtr"
-                          style="height: 1.123em;"
+                          aria-label=" e^{i\\\\pi}=-1 "
+                          class="mjx-math"
                         >
                           <span
-                            class="mjx-mtd"
-                            style="padding: 0px 0px 0px 0px; width: 3.762em;"
-                          >
-                            <span
-                              class="mjx-mrow"
-                              style="margin-top: -0.102em;"
-                            >
-                              <span
-                                class="mjx-msubsup"
-                              >
-                                <span
-                                  class="mjx-base"
-                                >
-                                  <span
-                                    class="mjx-mi"
-                                  >
-                                    <span
-                                      class="mjx-char MJXc-TeX-math-I"
-                                      style="padding-top: 0.225em; padding-bottom: 0.298em;"
-                                    >
-                                      e
-                                    </span>
-                                  </span>
-                                </span>
-                                <span
-                                  class="mjx-sup"
-                                  style="font-size: 70.7%; vertical-align: 0.584em; padding-left: 0px; padding-right: 0.071em;"
-                                >
-                                  <span
-                                    class="mjx-texatom"
-                                    style=""
-                                  >
-                                    <span
-                                      class="mjx-mrow"
-                                    >
-                                      <span
-                                        class="mjx-mi"
-                                      >
-                                        <span
-                                          class="mjx-char MJXc-TeX-math-I"
-                                          style="padding-top: 0.446em; padding-bottom: 0.298em;"
-                                        >
-                                          i
-                                        </span>
-                                      </span>
-                                      <span
-                                        class="mjx-mi"
-                                      >
-                                        <span
-                                          class="mjx-char MJXc-TeX-math-I"
-                                          style="padding-top: 0.225em; padding-bottom: 0.298em; padding-right: 0.003em;"
-                                        >
-                                          π
-                                        </span>
-                                      </span>
-                                    </span>
-                                  </span>
-                                </span>
-                              </span>
-                              <span
-                                class="mjx-mo MJXc-space3"
-                              >
-                                <span
-                                  class="mjx-char MJXc-TeX-main-R"
-                                  style="padding-top: 0.077em; padding-bottom: 0.298em;"
-                                >
-                                  =
-                                </span>
-                              </span>
-                              <span
-                                class="mjx-mo MJXc-space3"
-                              >
-                                <span
-                                  class="mjx-char MJXc-TeX-main-R"
-                                  style="padding-top: 0.298em; padding-bottom: 0.446em;"
-                                >
-                                  −
-                                </span>
-                              </span>
-                              <span
-                                class="mjx-mn"
-                              >
-                                <span
-                                  class="mjx-char MJXc-TeX-main-R"
-                                  style="padding-top: 0.372em; padding-bottom: 0.372em;"
-                                >
-                                  1
-                                </span>
-                              </span>
-                              <span
-                                class="mjx-strut"
-                              />
-                            </span>
-                          </span>
-                        </span>
-                      </span>
-                    </span>
-                    <span
-                      class="mjx-itable"
-                      style="vertical-align: top; margin-left: -1.5em;"
-                    >
-                      <span
-                        class="mjx-label"
-                        style="height: 1.123em;"
-                      >
-                        <span
-                          class="mjx-mtd"
-                          id="mjx-eqn-1"
-                        >
-                          <span
+                            aria-hidden="true"
                             class="mjx-mrow"
-                            style="margin-top: -0.102em;"
                           >
                             <span
-                              class="mjx-mtext"
+                              class="mjx-msubsup"
                             >
                               <span
-                                class="mjx-char"
-                                style="padding-top: 0.519em; padding-bottom: 0.225em;"
+                                class="mjx-base"
                               >
                                 <span
-                                  class="mjx-charbox MJXc-font-inherit"
-                                  style="font-size: 100%; padding-bottom: 0.3em; width: 1.5em;"
+                                  class="mjx-mi"
                                 >
-                                  (1)
+                                  <span
+                                    class="mjx-char MJXc-TeX-math-I"
+                                    style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                                  >
+                                    e
+                                  </span>
+                                </span>
+                              </span>
+                              <span
+                                class="mjx-sup"
+                                style="font-size: 70.7%; vertical-align: 0.584em; padding-left: 0px; padding-right: 0.071em;"
+                              >
+                                <span
+                                  class="mjx-texatom"
+                                  style=""
+                                >
+                                  <span
+                                    class="mjx-mrow"
+                                  >
+                                    <span
+                                      class="mjx-mi"
+                                    >
+                                      <span
+                                        class="mjx-char MJXc-TeX-math-I"
+                                        style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                                      >
+                                        i
+                                      </span>
+                                    </span>
+                                    <span
+                                      class="mjx-mi"
+                                    >
+                                      <span
+                                        class="mjx-char MJXc-TeX-math-I"
+                                        style="padding-top: 0.225em; padding-bottom: 0.298em; padding-right: 0.003em;"
+                                      >
+                                        π
+                                      </span>
+                                    </span>
+                                  </span>
                                 </span>
                               </span>
                             </span>
                             <span
-                              class="mjx-strut"
-                            />
+                              class="mjx-mo MJXc-space3"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-main-R"
+                                style="padding-top: 0.077em; padding-bottom: 0.298em;"
+                              >
+                                =
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mo MJXc-space3"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-main-R"
+                                style="padding-top: 0.298em; padding-bottom: 0.446em;"
+                              >
+                                −
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mn"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-main-R"
+                                style="padding-top: 0.372em; padding-bottom: 0.372em;"
+                              >
+                                1
+                              </span>
+                            </span>
                           </span>
                         </span>
                       </span>
                     </span>
                   </span>
-                </span>
-              </span>
+                </td>
+                
+
+                <td
+                  class="ltx_eqn_cell ltx_eqn_center_padright"
+                />
+                
+
+                <td
+                  class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"
+                  rowspan="1"
+                >
+                  <span
+                    class="ltx_tag ltx_tag_equation ltx_align_right"
+                  >
+                    (\\theequation)
+                  </span>
+                </td>
+                
+
+              </tr>
+              
+
+            </tbody>
+          </table>
+          
+
+          <p
+            class="ltx_p"
+          >
+            Equation 
+            <span
+              class="ltx_ref ltx_ref_self"
+            >
+              id1
             </span>
-          </span>
-        </span>
+             is some good math.
+          </p>
+          
+
+        </div>
         
 
-      </figure>
+      </dt-article>
       
 
-      <p />
-      
+      <dt-appendix>
+        
 
-      <p>
-        <a
-          href="#equation-1"
-        >
-          Equation 1
-        </a>
-         is some good math.
-      </p>
-      
+        
 
-    </dt-article>
+
+        <div
+          class="l-body"
+        />
+        
+
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -273,174 +227,189 @@ exports[`inline math renders correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
-        </div>
-        
-  
-        <div
-          class="engrafo-metadata-custom"
-        />
-        
 
-      </div>
-      
-
-      <p>
-        Ooh look some lovely maths 
-        <span
-          class="math inline"
-        >
-          <span
-            class="mjpage"
+          <p
+            class="ltx_p"
           >
+            Ooh look some lovely maths 
             <span
-              class="mjx-chtml"
+              class="ltx_Math"
+              id="p1.m1"
             >
               <span
-                aria-label="x^2 + y^2 = z^2"
-                class="mjx-math"
+                class="mjpage"
               >
                 <span
-                  aria-hidden="true"
-                  class="mjx-mrow"
+                  class="mjx-chtml"
                 >
                   <span
-                    class="mjx-msubsup"
+                    aria-label="x^{2}+y^{2}=z^{2}"
+                    class="mjx-math"
                   >
                     <span
-                      class="mjx-base"
+                      aria-hidden="true"
+                      class="mjx-mrow"
                     >
                       <span
-                        class="mjx-mi"
+                        class="mjx-msubsup"
                       >
                         <span
-                          class="mjx-char MJXc-TeX-math-I"
-                          style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                          class="mjx-base"
                         >
-                          x
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              x
+                            </span>
+                          </span>
+                        </span>
+                        <span
+                          class="mjx-sup"
+                          style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"
+                        >
+                          <span
+                            class="mjx-texatom"
+                            style=""
+                          >
+                            <span
+                              class="mjx-mrow"
+                            >
+                              <span
+                                class="mjx-mn"
+                              >
+                                <span
+                                  class="mjx-char MJXc-TeX-main-R"
+                                  style="padding-top: 0.372em; padding-bottom: 0.372em;"
+                                >
+                                  2
+                                </span>
+                              </span>
+                            </span>
+                          </span>
                         </span>
                       </span>
-                    </span>
-                    <span
-                      class="mjx-sup"
-                      style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"
-                    >
                       <span
-                        class="mjx-mn"
-                        style=""
+                        class="mjx-mo MJXc-space2"
                       >
                         <span
                           class="mjx-char MJXc-TeX-main-R"
-                          style="padding-top: 0.372em; padding-bottom: 0.372em;"
+                          style="padding-top: 0.298em; padding-bottom: 0.446em;"
                         >
-                          2
+                          +
                         </span>
                       </span>
-                    </span>
-                  </span>
-                  <span
-                    class="mjx-mo MJXc-space2"
-                  >
-                    <span
-                      class="mjx-char MJXc-TeX-main-R"
-                      style="padding-top: 0.298em; padding-bottom: 0.446em;"
-                    >
-                      +
-                    </span>
-                  </span>
-                  <span
-                    class="mjx-msubsup MJXc-space2"
-                  >
-                    <span
-                      class="mjx-base"
-                      style="margin-right: -0.006em;"
-                    >
                       <span
-                        class="mjx-mi"
+                        class="mjx-msubsup MJXc-space2"
                       >
                         <span
-                          class="mjx-char MJXc-TeX-math-I"
-                          style="padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.006em;"
+                          class="mjx-base"
+                          style="margin-right: -0.006em;"
                         >
-                          y
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.006em;"
+                            >
+                              y
+                            </span>
+                          </span>
                         </span>
-                      </span>
-                    </span>
-                    <span
-                      class="mjx-sup"
-                      style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.082em; padding-right: 0.071em;"
-                    >
-                      <span
-                        class="mjx-mn"
-                        style=""
-                      >
                         <span
-                          class="mjx-char MJXc-TeX-main-R"
-                          style="padding-top: 0.372em; padding-bottom: 0.372em;"
+                          class="mjx-sup"
+                          style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.082em; padding-right: 0.071em;"
                         >
-                          2
+                          <span
+                            class="mjx-texatom"
+                            style=""
+                          >
+                            <span
+                              class="mjx-mrow"
+                            >
+                              <span
+                                class="mjx-mn"
+                              >
+                                <span
+                                  class="mjx-char MJXc-TeX-main-R"
+                                  style="padding-top: 0.372em; padding-bottom: 0.372em;"
+                                >
+                                  2
+                                </span>
+                              </span>
+                            </span>
+                          </span>
                         </span>
                       </span>
-                    </span>
-                  </span>
-                  <span
-                    class="mjx-mo MJXc-space3"
-                  >
-                    <span
-                      class="mjx-char MJXc-TeX-main-R"
-                      style="padding-top: 0.077em; padding-bottom: 0.298em;"
-                    >
-                      =
-                    </span>
-                  </span>
-                  <span
-                    class="mjx-msubsup MJXc-space3"
-                  >
-                    <span
-                      class="mjx-base"
-                      style="margin-right: -0.003em;"
-                    >
                       <span
-                        class="mjx-mi"
-                      >
-                        <span
-                          class="mjx-char MJXc-TeX-math-I"
-                          style="padding-top: 0.225em; padding-bottom: 0.298em; padding-right: 0.003em;"
-                        >
-                          z
-                        </span>
-                      </span>
-                    </span>
-                    <span
-                      class="mjx-sup"
-                      style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.076em; padding-right: 0.071em;"
-                    >
-                      <span
-                        class="mjx-mn"
-                        style=""
+                        class="mjx-mo MJXc-space3"
                       >
                         <span
                           class="mjx-char MJXc-TeX-main-R"
-                          style="padding-top: 0.372em; padding-bottom: 0.372em;"
+                          style="padding-top: 0.077em; padding-bottom: 0.298em;"
                         >
-                          2
+                          =
+                        </span>
+                      </span>
+                      <span
+                        class="mjx-msubsup MJXc-space3"
+                      >
+                        <span
+                          class="mjx-base"
+                          style="margin-right: -0.003em;"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em; padding-right: 0.003em;"
+                            >
+                              z
+                            </span>
+                          </span>
+                        </span>
+                        <span
+                          class="mjx-sup"
+                          style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.076em; padding-right: 0.071em;"
+                        >
+                          <span
+                            class="mjx-texatom"
+                            style=""
+                          >
+                            <span
+                              class="mjx-mrow"
+                            >
+                              <span
+                                class="mjx-mn"
+                              >
+                                <span
+                                  class="mjx-char MJXc-TeX-main-R"
+                                  style="padding-top: 0.372em; padding-bottom: 0.372em;"
+                                >
+                                  2
+                                </span>
+                              </span>
+                            </span>
+                          </span>
                         </span>
                       </span>
                     </span>
@@ -448,28 +417,32 @@ exports[`inline math renders correctly 1`] = `
                 </span>
               </span>
             </span>
-          </span>
-        </span>
-         oh yeah.
-      </p>
+             oh yeah.
+          </p>
+          
+
+        </div>
+        
+
+      </dt-article>
       
 
-    </dt-article>
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
+        />
+        
+
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 

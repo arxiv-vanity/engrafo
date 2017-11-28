@@ -7,56 +7,67 @@ exports[`\\def multiple simple arguments render correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <p
+            class="ltx_p"
+          >
+            [#3]#4.#5#6#7one #1 two #2 three #3 four #4 five #5 six #6 seven #7
+          </p>
+          
+
         </div>
         
-  
+
         <div
-          class="engrafo-metadata-custom"
+          class="ltx_para"
+          id="p2"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            ne two[three]four.five sixseven after
+
+          </p>
+          
+
+        </div>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
         />
         
 
-      </div>
-      
-
-      <p>
-        one one two two three three four four five five six six seven seven after
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -74,68 +85,67 @@ exports[`\\def with control seq suffix renders correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <blockquote
+            class="ltx_quote"
+          >
+            
+
+            <p
+              class="ltx_p"
+            >
+              <span
+                class="ltx_text ltx_font_bold"
+              >
+                hello 
+              </span>
+              <span
+                class="ltx_text ltx_font_typewriter"
+              >
+                world
+              </span>
+            </p>
+            
+
+          </blockquote>
+          
+
         </div>
         
-  
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
         <div
-          class="engrafo-metadata-custom"
+          class="l-body"
         />
         
 
-      </div>
-      
-
-      <blockquote>
-        
-
-        <p>
-          <span>
-            hello
-          </span>
-           
-          <code>
-            world
-          </code>
-        </p>
-        
-
-      </blockquote>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -153,56 +163,50 @@ exports[`simple \\def without arguments render correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <p
+            class="ltx_p"
+          >
+            bar
+          </p>
+          
+
         </div>
         
-  
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
         <div
-          class="engrafo-metadata-custom"
+          class="l-body"
         />
         
 
-      </div>
-      
-
-      <p>
-        bar
-      </p>
-      
-
-    </dt-article>
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      />
-      
-
-    </dt-appendix>
-    
 
 
 

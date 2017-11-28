@@ -7,133 +7,235 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <p
+            class="ltx_p"
+          >
+            Refer to 
+            <cite
+              class="ltx_cite ltx_citemacro_cite"
+            >
+              [
+              <a
+                class="ltx_ref"
+                href="#bib.bib1"
+                onclick="event.preventDefault()"
+                title=""
+              >
+                <span
+                  data-hover-ref="dt-cite-hover-box-1"
+                >
+                  1
+                </span>
+              </a>
+              ]
+            </cite>
+             then refer to 
+            <cite
+              class="ltx_cite ltx_citemacro_cite"
+            >
+              [
+              <a
+                class="ltx_ref"
+                href="#bib.bib2"
+                onclick="event.preventDefault()"
+                title=""
+              >
+                <span
+                  data-hover-ref="dt-cite-hover-box-2"
+                >
+                  2
+                </span>
+              </a>
+              ]
+            </cite>
+             but misspell 
+            <cite
+              class="ltx_cite ltx_citemacro_cite"
+            >
+              [
+              <span
+                class="ltx_ref ltx_missing_citation ltx_ref_self"
+              >
+                zlateskiS15_asdf
+              </span>
+              ]
+            </cite>
+          </p>
+          
+
         </div>
         
-  
-        <div
-          class="engrafo-metadata-custom"
-        />
+
+
+      </dt-article>
+      
+
+      <dt-appendix>
         
 
-      </div>
-      
-
-      <p>
-        Refer to 
-        <a
-          class="engrafo-cite"
-          href="#cite-1"
-          onclick="event.preventDefault()"
-        >
-          <span
-            data-hover-ref="dt-cite-hover-box-1"
-          >
-            [1]
-          </span>
-        </a>
-         then refer to 
-        <a
-          class="engrafo-cite"
-          href="#cite-2"
-          onclick="event.preventDefault()"
-        >
-          <span
-            data-hover-ref="dt-cite-hover-box-2"
-          >
-            [2]
-          </span>
-        </a>
-         but misspell 
-        <span
-          class="engrafo-cite engrafo-missing-cite"
-        >
-          [?]
-        </span>
-      </p>
-      
+        
 
 
-    </dt-article>
+        <div
+          class="l-body"
+        >
+          <h3>
+            References
+          </h3>
+          <dt-bibliography>
+            <ol>
+              <li
+                class="ltx_bibitem"
+                id="bib.bib1"
+              >
+                
+
+
+                <span
+                  class="ltx_bibblock"
+                >
+                  
+S. C. Turaga, J. F. Murray, V. Jain, F. Roth, M. Helmstaedter, K. Briggman,
+W. Denk, and H. S. Seung.
+
+
+                </span>
+                
+
+                <span
+                  class="ltx_bibblock"
+                >
+                  Convolutional networks can learn to generate affinity graphs for
+image segmentation.
+
+
+                </span>
+                
+
+                <span
+                  class="ltx_bibblock"
+                >
+                  <span
+                    class="ltx_text ltx_font_italic"
+                  >
+                    Neural Comput.
+                  </span>
+                  , 22(2):511–538, Feb. 2010.
+
+
+                </span>
+                
+
+              </li>
+              <li
+                class="ltx_bibitem"
+                id="bib.bib2"
+              >
+                
+
+
+                <span
+                  class="ltx_bibblock"
+                >
+                  
+A. Vazquez-Reina, M. Gelbart, D. Huang, J. Lichtman, E. Miller, and H. Pfister.
+
+
+                </span>
+                
+
+                <span
+                  class="ltx_bibblock"
+                >
+                  Segmentation fusion for connectomics.
+
+
+                </span>
+                
+
+                <span
+                  class="ltx_bibblock"
+                >
+                  In 
+                  <span
+                    class="ltx_text ltx_font_italic"
+                  >
+                    ICCV
+                  </span>
+                  , 2011.
+
+
+                </span>
+                
+
+              </li>
+              <li
+                class="ltx_bibitem"
+                id="bib.bib3"
+              >
+                
+
+
+                <span
+                  class="ltx_bibblock"
+                >
+                  
+A. Zlateski and H. S. Seung.
+
+
+                </span>
+                
+
+                <span
+                  class="ltx_bibblock"
+                >
+                  Image segmentation by size-dependent single linkage clustering of a
+watershed basin graph.
+
+
+                </span>
+                
+
+                <span
+                  class="ltx_bibblock"
+                >
+                  <span
+                    class="ltx_text ltx_font_italic"
+                  >
+                    CoRR
+                  </span>
+                  , abs/1505.00249, 2015.
+
+
+                </span>
+                
+
+              </li>
+            </ol>
+          </dt-bibliography>
+        </div>
+        
+
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      >
-        <h3>
-          References
-        </h3>
-        <dt-bibliography>
-          <ol>
-            <li
-              id="cite-1"
-            >
-              <strong>
-                Convolutional networks can learn to generate affinity graphs for image segmentation.
-              </strong>
-              <br />
-              S. C. Turaga, J. F. Murray, V. Jain, F. Roth, M. Helmstaedter, K. Briggman, W. Denk, and H. S. Seung. 
-              <em>
-                Neural Comput.
-              </em>
-              , 22(2):511–538, Feb. 2010.
-            </li>
-            <li
-              id="cite-2"
-            >
-              <strong>
-                Segmentation fusion for connectomics.
-              </strong>
-              <br />
-              A. Vazquez-Reina, M. Gelbart, D. Huang, J. Lichtman, E. Miller, and H. Pfister. In 
-              <em>
-                ICCV
-              </em>
-              , 2011.
-            </li>
-            <li
-              id="cite-3"
-            >
-              <strong>
-                Image segmentation by size-dependent single linkage clustering of a watershed basin graph.
-              </strong>
-              <br />
-              A. Zlateski and H. S. Seung. 
-              <em>
-                CoRR
-              </em>
-              , abs/1505.00249, 2015.
-            </li>
-          </ol>
-        </dt-bibliography>
-      </div>
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -148,30 +250,87 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
         id="dt-cite-hover-box-1"
         style="display:none;"
       >
-        <strong>
-          Convolutional networks can learn to generate affinity graphs for image segmentation.
-        </strong>
-        <br />
-        S. C. Turaga, J. F. Murray, V. Jain, F. Roth, M. Helmstaedter, K. Briggman, W. Denk, and H. S. Seung. 
-        <em>
-          Neural Comput.
-        </em>
-        , 22(2):511–538, Feb. 2010.
+        
+
+
+        <span
+          class="ltx_bibblock"
+        >
+          
+S. C. Turaga, J. F. Murray, V. Jain, F. Roth, M. Helmstaedter, K. Briggman,
+W. Denk, and H. S. Seung.
+
+
+        </span>
+        
+
+        <span
+          class="ltx_bibblock"
+        >
+          Convolutional networks can learn to generate affinity graphs for
+image segmentation.
+
+
+        </span>
+        
+
+        <span
+          class="ltx_bibblock"
+        >
+          <span
+            class="ltx_text ltx_font_italic"
+          >
+            Neural Comput.
+          </span>
+          , 22(2):511–538, Feb. 2010.
+
+
+        </span>
+        
+
       </div>
       <div
         class="dt-hover-box"
         id="dt-cite-hover-box-2"
         style="display:none;"
       >
-        <strong>
+        
+
+
+        <span
+          class="ltx_bibblock"
+        >
+          
+A. Vazquez-Reina, M. Gelbart, D. Huang, J. Lichtman, E. Miller, and H. Pfister.
+
+
+        </span>
+        
+
+        <span
+          class="ltx_bibblock"
+        >
           Segmentation fusion for connectomics.
-        </strong>
-        <br />
-        A. Vazquez-Reina, M. Gelbart, D. Huang, J. Lichtman, E. Miller, and H. Pfister. In 
-        <em>
-          ICCV
-        </em>
-        , 2011.
+
+
+        </span>
+        
+
+        <span
+          class="ltx_bibblock"
+        >
+          In 
+          <span
+            class="ltx_text ltx_font_italic"
+          >
+            ICCV
+          </span>
+          , 2011.
+
+
+        </span>
+        
+
       </div>
     </div>
   </div>
@@ -185,137 +344,218 @@ exports[`a basic bibliography renders correctly 1`] = `
   >
     
 
-    <dt-article>
+
+    <div
+      class="ltx_page_content"
+    >
       
 
-      <h1>
-        Untitled
-      </h1>
-      
-
-      <div
-        class="engrafo-metadata"
-      >
+      <dt-article>
         
-  
+
         <div
-          class="authors"
+          class="ltx_para"
+          id="p1"
         >
           
-    
+
+          <p
+            class="ltx_p"
+          >
+            Hello
+            <cite
+              class="ltx_cite ltx_citemacro_cite"
+            >
+              [
+              <a
+                class="ltx_ref"
+                href="#bib.bibx1"
+                onclick="event.preventDefault()"
+                title=""
+              >
+                <span
+                  data-hover-ref="dt-cite-hover-box-0"
+                >
+                  1
+                </span>
+              </a>
+              ]
+            </cite>
+             World
+            <span
+              class="ltx_note ltx_role_footnote"
+            >
+              <dt-fn>
+                <sup>
+                  <span
+                    data-hover-ref="dt-fn-hover-box-0"
+                    id="fn-1"
+                    style="cursor:pointer"
+                  >
+                    1
+                  </span>
+                </sup>
+              </dt-fn>
+            </span>
+          </p>
+          
+
         </div>
         
-  
-        <div
-          class="engrafo-metadata-custom"
-        />
+
+
+      </dt-article>
+      
+
+      <dt-appendix>
         
 
-      </div>
-      
+        
 
-      <p>
-        Hello
-        <a
-          class="engrafo-cite"
-          href="#cite-1"
-          onclick="event.preventDefault()"
+
+        <div
+          class="l-body"
         >
-          <span
-            data-hover-ref="dt-cite-hover-box-0"
-          >
-            [1]
-          </span>
-        </a>
-         World
-        <dt-fn>
-          <sup>
-            <span
-              data-hover-ref="dt-fn-hover-box-0"
-              id="fn-1"
-              style="cursor:pointer"
-            >
-              1
-            </span>
-          </sup>
-        </dt-fn>
-      </p>
-      
+          <h3>
+            Footnotes
+          </h3>
+          <dt-fn-list>
+            <ol>
+              <li>
+                <span
+                  class="ltx_note_content"
+                >
+                  Just checking the bibliography comes after footnotes.
+                </span>
+              </li>
+            </ol>
+          </dt-fn-list>
+          <h3>
+            References
+          </h3>
+          <dt-bibliography>
+            <ol>
+              <li
+                class="ltx_bibitem"
+                id="bib.bibx1"
+              >
+                
 
 
-    </dt-article>
+                <span
+                  class="ltx_bibblock"
+                >
+                  
+Joe Bloggs and Phil Jones. 2014.
+
+
+                </span>
+                
+
+                <span
+                  class="ltx_bibblock"
+                >
+                  Compositional morphology for word representations and language modelling.
+
+
+                </span>
+                
+
+                <span
+                  class="ltx_bibblock"
+                >
+                  In 
+                  <em
+                    class="ltx_emph ltx_font_italic"
+                  >
+                    Proceedings of ICML
+                  </em>
+                  .
+
+
+                </span>
+                
+
+              </li>
+              <li
+                class="ltx_bibitem"
+                id="bib.bibx2"
+              >
+                
+
+
+                <span
+                  class="ltx_bibblock"
+                >
+                  
+Ryan Cotterell and Hinrich Schütze. 2015.
+
+
+                </span>
+                
+
+                <span
+                  class="ltx_bibblock"
+                >
+                  Morphological word-embeddings.
+
+
+                </span>
+                
+
+                <span
+                  class="ltx_bibblock"
+                >
+                  In 
+                  <em
+                    class="ltx_emph ltx_font_italic"
+                  >
+                    Proceedings of HLT-NAACL
+                  </em>
+                  .
+
+
+                </span>
+                
+
+              </li>
+              <li
+                class="ltx_bibitem"
+                id="bib.bibx3"
+              >
+                
+
+
+                <span
+                  class="ltx_bibblock"
+                >
+                  
+Foo and Bar. 2020.
+
+
+                </span>
+                
+
+                <span
+                  class="ltx_bibblock"
+                >
+                  Just a title, not a source.
+
+
+                </span>
+                
+
+              </li>
+            </ol>
+          </dt-bibliography>
+        </div>
+        
+
+      </dt-appendix>
+    </div>
     
 
-    <dt-appendix>
-      
 
-      
-
-
-      <div
-        class="l-body"
-      >
-        <h3>
-          Footnotes
-        </h3>
-        <dt-fn-list>
-          <ol>
-            <li>
-              Just checking the bibliography comes after footnotes.
-            </li>
-          </ol>
-        </dt-fn-list>
-        <h3>
-          References
-        </h3>
-        <dt-bibliography>
-          <ol>
-            <li
-              id="cite-1"
-            >
-              <strong>
-                Compositional morphology for word representations and language modelling.
-              </strong>
-              <br />
-              Joe Bloggs and Phil Jones. 2014. In 
-              <em>
-                Proceedings of ICML
-              </em>
-              .
-            </li>
-            <li
-              id="cite-2"
-            >
-              <strong>
-                Morphological word-embeddings.
-              </strong>
-              <br />
-              Ryan Cotterell and Hinrich Sch
-              <span>
-                ü
-              </span>
-              tze. 2015. In 
-              <em>
-                Proceedings of HLT-NAACL
-              </em>
-              .
-            </li>
-            <li
-              id="cite-3"
-            >
-              <strong>
-                Just a title, not a source.
-              </strong>
-              <br />
-              Foo and Bar. 2020.
-            </li>
-          </ol>
-        </dt-bibliography>
-      </div>
-      
-
-    </dt-appendix>
-    
 
 
 
@@ -327,7 +567,11 @@ exports[`a basic bibliography renders correctly 1`] = `
         id="dt-fn-hover-box-0"
         style="display:none;"
       >
-        Just checking the bibliography comes after footnotes.
+        <span
+          class="ltx_note_content"
+        >
+          Just checking the bibliography comes after footnotes.
+        </span>
       </div>
     </div>
     <div
@@ -338,15 +582,43 @@ exports[`a basic bibliography renders correctly 1`] = `
         id="dt-cite-hover-box-0"
         style="display:none;"
       >
-        <strong>
+        
+
+
+        <span
+          class="ltx_bibblock"
+        >
+          
+Joe Bloggs and Phil Jones. 2014.
+
+
+        </span>
+        
+
+        <span
+          class="ltx_bibblock"
+        >
           Compositional morphology for word representations and language modelling.
-        </strong>
-        <br />
-        Joe Bloggs and Phil Jones. 2014. In 
-        <em>
-          Proceedings of ICML
-        </em>
-        .
+
+
+        </span>
+        
+
+        <span
+          class="ltx_bibblock"
+        >
+          In 
+          <em
+            class="ltx_emph ltx_font_italic"
+          >
+            Proceedings of ICML
+          </em>
+          .
+
+
+        </span>
+        
+
       </div>
     </div>
   </div>

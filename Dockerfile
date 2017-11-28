@@ -8,10 +8,7 @@ RUN sed -i 's/deb.debian.org/mirrors.kernel.org/g' /etc/apt/sources.list
 RUN apt-get update -qq && apt-get install -qy \
   curl \
   gnupg2 \
-  libgmp10 \
-  pdf2svg \
-  texlive \
-  texlive-latex-extra
+  texlive-full
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -

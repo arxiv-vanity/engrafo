@@ -22,7 +22,7 @@ exports.renderLatexml = (texPath, callback) => {
       "--verbose",
       texPath
     ], {
-    cwd: outputDir,
+    // TODO: in tests, just dump output to console.log so jest can hide it
     stdio: ['pipe', process.stdout, process.stderr]
   });
   latexmlc.on("error", callback);

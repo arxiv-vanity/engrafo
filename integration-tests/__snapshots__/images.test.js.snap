@@ -18,20 +18,16 @@ exports[`images in figures render correctly 1`] = `
 
         <figure
           class="ltx_figure"
-          id="fig1"
+          id="S0.F1"
         >
-          <span
-            class="ltx_ERROR undefined"
-          >
-            \\includegraphics
-          </span>
-          
-
-          <p
-            class="ltx_p"
-          >
-            [width=8cm]fig.png
-          </p>
+          <img
+            alt=""
+            class="ltx_graphics"
+            height="301"
+            id="S0.F1.g1"
+            src="x1.png"
+            width="284"
+          />
           
 
           <figcaption
@@ -40,13 +36,7 @@ exports[`images in figures render correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_figure"
             >
-              Figure 
-              <span
-                class="ltx_ERROR undefined"
-              >
-                \\thefigure
-              </span>
-              : 
+              Figure 1: 
             </span>
             Fig.
           </figcaption>
@@ -65,11 +55,17 @@ exports[`images in figures render correctly 1`] = `
             class="ltx_p"
           >
             See fig 
-            <span
-              class="ltx_ref ltx_ref_self"
+            <a
+              class="ltx_ref"
+              href="#S0.F1"
+              title="Figure 1"
             >
-              id1
-            </span>
+              <span
+                class="ltx_text ltx_ref_tag"
+              >
+                1
+              </span>
+            </a>
             .
           </p>
           
@@ -146,27 +142,50 @@ exports[`multiple images in figures render correctly 1`] = `
 
         <figure
           class="ltx_figure"
-          id="fig1"
+          id="S0.F1"
         >
-          <span
-            class="ltx_ERROR undefined"
-          >
-            \\includegraphics
-          </span>
           
 
-          <p
-            class="ltx_p"
+          <table
+            style="width:100%;"
           >
-            [width=8cm]fig.png
+            
 
-            <span
-              class="ltx_ERROR undefined"
-            >
-              \\includegraphics
-            </span>
-            [width=8cm]fig2.png
-          </p>
+            <tbody>
+              <tr>
+                
+
+                <td
+                  class="ltx_subgraphics"
+                >
+                  <img
+                    alt=""
+                    class="ltx_graphics"
+                    height="301"
+                    id="S0.F1.g1"
+                    src="x1.png"
+                    width="284"
+                  />
+                </td>
+                
+
+                <td
+                  class="ltx_subgraphics"
+                >
+                  <img
+                    alt=""
+                    class="ltx_graphics"
+                    id="S0.F1.g2"
+                    src="fig2.png"
+                  />
+                </td>
+                
+
+              </tr>
+              
+
+            </tbody>
+          </table>
           
 
           <figcaption
@@ -175,13 +194,7 @@ exports[`multiple images in figures render correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_figure"
             >
-              Figure 
-              <span
-                class="ltx_ERROR undefined"
-              >
-                \\thefigure
-              </span>
-              : 
+              Figure 1: 
             </span>
             Fig.
           </figcaption>
@@ -200,11 +213,17 @@ exports[`multiple images in figures render correctly 1`] = `
             class="ltx_p"
           >
             See fig 
-            <span
-              class="ltx_ref ltx_ref_self"
+            <a
+              class="ltx_ref"
+              href="#S0.F1"
+              title="Figure 1"
             >
-              id1
-            </span>
+              <span
+                class="ltx_text ltx_ref_tag"
+              >
+                1
+              </span>
+            </a>
             .
           </p>
           
@@ -255,11 +274,6 @@ exports[`plain images render correctly 1`] = `
       
 
       <dt-article>
-        <span
-          class="ltx_ERROR undefined"
-        >
-          \\includegraphics
-        </span>
         
 
         <div
@@ -268,11 +282,14 @@ exports[`plain images render correctly 1`] = `
         >
           
 
-          <p
-            class="ltx_p"
-          >
-            []fig.png
-          </p>
+          <img
+            alt=""
+            class="ltx_graphics"
+            height="318"
+            id="p1.g1"
+            src="x1.png"
+            width="300"
+          />
           
 
         </div>

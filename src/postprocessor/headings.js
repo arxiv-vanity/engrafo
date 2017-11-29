@@ -74,10 +74,9 @@ module.exports = function(dom) {
   // Things to apply to all headings
   let headings = dom.querySelectorAll("h1, h2, h3, h4, h5, h6");
   Array.from(headings).forEach(heading => {
-    // Remove <strong>
-    if (heading.children.length && heading.children[0].tagName === "STRONG") {
-      utils.removeAndFlattenChildren(heading.children[0]);
-    }
+    // Remove .ltx_font_bold and weird styles
+    heading.className = heading.className.replace("ltx_font_bold", "");
+    heading.removeAttribute("style");
 
     // Remove new lines
     Array.from(heading.children).forEach(child => {

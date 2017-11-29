@@ -36,7 +36,9 @@ exports[`abstracts work 1`] = `
         >
           
 
-          <h2>
+          <h2
+            class=""
+          >
             Abstract
           </h2>
           
@@ -54,13 +56,13 @@ exports[`abstracts work 1`] = `
             A reference to section 
             <a
               class="ltx_ref"
-              href="#-at-currentID"
-              title="\\\\thesection Section Title ‣ Hello"
+              href="#S1"
+              title="1 Section Title ‣ Hello"
             >
               <span
                 class="ltx_text ltx_ref_tag"
               >
-                \\thesection
+                1
               </span>
             </a>
             .
@@ -72,7 +74,7 @@ exports[`abstracts work 1`] = `
 
         <section
           class="ltx_section"
-          id="-at-currentID"
+          id="S1"
         >
           
 
@@ -85,14 +87,9 @@ exports[`abstracts work 1`] = `
               class="ltx_tag ltx_tag_section"
             >
               <a
-                href="#-at-currentID"
+                href="#S1"
               >
-                <span
-                  class="ltx_ERROR undefined"
-                >
-                  \\thesection
-                </span>
-                 
+                1 
               </a>
             </span>
             Section Title
@@ -102,7 +99,7 @@ exports[`abstracts work 1`] = `
 
           <div
             class="ltx_para"
-            id="-at-currentID.p1"
+            id="S1.p1"
           >
             
 
@@ -779,7 +776,7 @@ exports[`titles and headings render correctly 1`] = `
 
         <section
           class="ltx_section"
-          id="-at-currentID"
+          id="S1"
         >
           
 
@@ -792,14 +789,9 @@ exports[`titles and headings render correctly 1`] = `
               class="ltx_tag ltx_tag_section"
             >
               <a
-                href="#-at-currentID"
+                href="#S1"
               >
-                <span
-                  class="ltx_ERROR undefined"
-                >
-                  \\thesection
-                </span>
-                 
+                1 
               </a>
             </span>
             Section Title
@@ -809,7 +801,7 @@ exports[`titles and headings render correctly 1`] = `
 
           <section
             class="ltx_subsection"
-            id="-at-currentIDa"
+            id="S1.SS1"
           >
             
 
@@ -821,12 +813,7 @@ exports[`titles and headings render correctly 1`] = `
               <span
                 class="ltx_tag ltx_tag_subsection"
               >
-                <span
-                  class="ltx_ERROR undefined"
-                >
-                  \\thesubsection
-                </span>
-                 
+                1.1 
               </span>
               Subsection Title
             </h3>
@@ -835,7 +822,7 @@ exports[`titles and headings render correctly 1`] = `
 
             <section
               class="ltx_subsubsection"
-              id="-at-currentIDb"
+              id="S1.SS1.SSS1"
             >
               
 
@@ -850,7 +837,7 @@ Subsubsection Title
 
               <section
                 class="ltx_paragraph"
-                id="theparagraph-at-ID"
+                id="S1.SS1.SSS1.Px1"
               >
                 
 
@@ -864,7 +851,7 @@ Subsubsection Title
 
                 <div
                   class="ltx_para"
-                  id="theparagraph-at-ID.p1"
+                  id="S1.SS1.SSS1.Px1.p1"
                 >
                   
 
@@ -892,7 +879,7 @@ Subsubsection Title
 
         <section
           class="ltx_section"
-          id="theparagraph-at-IDa"
+          id="S2"
         >
           
 
@@ -905,14 +892,9 @@ Subsubsection Title
               class="ltx_tag ltx_tag_section"
             >
               <a
-                href="#theparagraph-at-IDa"
+                href="#S2"
               >
-                <span
-                  class="ltx_ERROR undefined"
-                >
-                  \\thesection
-                </span>
-                 
+                2 
               </a>
             </span>
             Another section
@@ -925,7 +907,7 @@ Subsubsection Title
 
         <section
           class="ltx_section"
-          id="thesection-at-ID"
+          id="Sx1"
         >
           
 
@@ -942,7 +924,7 @@ Subsubsection Title
 
         <section
           class="ltx_section"
-          id="thesection-at-IDa"
+          id="S3"
         >
           
 
@@ -955,14 +937,9 @@ Subsubsection Title
               class="ltx_tag ltx_tag_section"
             >
               <a
-                href="#thesection-at-IDa"
+                href="#S3"
               >
-                <span
-                  class="ltx_ERROR undefined"
-                >
-                  \\thesection
-                </span>
-                 
+                3 
               </a>
             </span>
             Another section
@@ -972,7 +949,7 @@ Subsubsection Title
 
           <div
             class="ltx_para"
-            id="thesection-at-IDa.p1"
+            id="S3.p1"
           >
             
 
@@ -982,13 +959,13 @@ Subsubsection Title
               A reference to section 
               <a
                 class="ltx_ref"
-                href="#-at-currentID"
-                title="\\\\thesection Section Title ‣ Headings Test"
+                href="#S1"
+                title="1 Section Title ‣ Headings Test"
               >
                 <span
                   class="ltx_text ltx_ref_tag"
                 >
-                  \\thesection
+                  1
                 </span>
               </a>
               .

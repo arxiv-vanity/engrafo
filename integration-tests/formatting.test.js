@@ -20,7 +20,8 @@ test("\pdfoutput=1 is ignored", done => {
   utils.expectBodyToMatchSnapshot("formatting/pdfoutput.tex", done);
 });
 
-test("pinforms3 TITLE, AUTHOR, AFF are supported", done => {
+// FIXME: needs latexml bindings. which papers is this in?
+test.skip("pinforms3 TITLE, AUTHOR, AFF are supported", done => {
   utils.expectBodyToMatchSnapshot("formatting/pinforms3.tex", done);
 });
 

@@ -24,10 +24,12 @@ test("pinforms3 TITLE, AUTHOR, AFF are supported", done => {
   utils.expectBodyToMatchSnapshot("formatting/pinforms3.tex", done);
 });
 
-test("ICML commands are supported", done => {
+// FIXME: needs latexml bindings
+test.skip("ICML commands are supported", done => {
   utils.expectBodyToMatchSnapshot("formatting/icml.tex", done);
 });
 
-test("\institute command is supported", done => {
+// FIXME: needs latexml bindings for \inst - where is this from?
+test.skip("\institute command is supported", done => {
   utils.expectBodyToMatchSnapshot("formatting/institute.tex", done);
 });

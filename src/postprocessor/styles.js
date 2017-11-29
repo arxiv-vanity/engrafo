@@ -151,6 +151,7 @@ dt-article > .engrafo-metadata {
 .ltx_font_bold { font-weight: bolder; }
 .ltx_font_italic { font-style: italic; }
 .ltx_font_typewriter { font-family: monospace; }
+.ltx_align_center { text-align: center; }
 `;
 
 module.exports = function(dom) {

@@ -147,7 +147,10 @@ dt-article > .engrafo-metadata {
 .ltx_missing      { color:red;}
 .ltx_nounicode    { color:red; }
 
+/* TODO: just use the correct HTML elements if possible */
 .ltx_font_bold { font-weight: bolder; }
+.ltx_font_italic { font-style: italic; }
+.ltx_font_typewriter { font-family: monospace; }
 `;
 
 module.exports = function(dom) {

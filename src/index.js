@@ -20,7 +20,7 @@ exports.renderLatexml = (texPath, callback) => {
       "--format", "html5",
       "--mathtex",
       "--verbose",
-      "--preload", "latexml/engrafo.ltxml",
+      "--preload", "/app/latexml/engrafo.ltxml",
       texPath
     ], {
     // TODO: in tests, just dump output to console.log so jest can hide it

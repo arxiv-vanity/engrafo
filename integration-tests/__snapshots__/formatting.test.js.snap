@@ -199,16 +199,9 @@ exports[`lists render correctly 1`] = `
             <li
               class="ltx_item"
               id=".i1"
-              style="list-style-type:none;"
             >
               
-
-              <span
-                class="ltx_tag ltx_tag_itemize"
-              >
-                •
-              </span>
-               
+ 
 
               <div
                 class="ltx_para"
@@ -232,16 +225,9 @@ exports[`lists render correctly 1`] = `
             <li
               class="ltx_item"
               id=".i2"
-              style="list-style-type:none;"
             >
               
-
-              <span
-                class="ltx_tag ltx_tag_itemize"
-              >
-                •
-              </span>
-               
+ 
 
               <div
                 class="ltx_para"
@@ -281,21 +267,9 @@ exports[`lists render correctly 1`] = `
 
             <li
               class="ltx_item"
-              style="list-style-type:none;"
             >
               
-
-              <span
-                class="ltx_tag ltx_tag_enumerate"
-              >
-                <span
-                  class="ltx_ERROR undefined"
-                >
-                  \\theenumi
-                </span>
-                .
-              </span>
-               
+ 
 
               <div
                 class="ltx_para"
@@ -318,21 +292,9 @@ exports[`lists render correctly 1`] = `
 
             <li
               class="ltx_item"
-              style="list-style-type:none;"
             >
               
-
-              <span
-                class="ltx_tag ltx_tag_enumerate"
-              >
-                <span
-                  class="ltx_ERROR undefined"
-                >
-                  \\theenumi
-                </span>
-                .
-              </span>
-               
+ 
 
               <div
                 class="ltx_para"
@@ -373,16 +335,9 @@ exports[`lists render correctly 1`] = `
             <li
               class="ltx_item"
               id=".i1a"
-              style="list-style-type:none;"
             >
               
-
-              <span
-                class="ltx_tag ltx_tag_itemize"
-              >
-                •
-              </span>
-               
+ 
 
               <div
                 class="ltx_para"
@@ -405,20 +360,9 @@ exports[`lists render correctly 1`] = `
                   <li
                     class="ltx_item"
                     id=".i1b"
-                    style="list-style-type:none;"
                   >
                     
-
-                    <span
-                      class="ltx_tag ltx_tag_itemize"
-                    >
-                      <span
-                        class="ltx_text ltx_font_bold"
-                      >
-                        –
-                      </span>
-                    </span>
-                     
+ 
 
                     <div
                       class="ltx_para"
@@ -442,20 +386,9 @@ exports[`lists render correctly 1`] = `
                   <li
                     class="ltx_item"
                     id=".i2a"
-                    style="list-style-type:none;"
                   >
                     
-
-                    <span
-                      class="ltx_tag ltx_tag_itemize"
-                    >
-                      <span
-                        class="ltx_text ltx_font_bold"
-                      >
-                        –
-                      </span>
-                    </span>
-                     
+ 
 
                     <div
                       class="ltx_para"
@@ -488,16 +421,9 @@ exports[`lists render correctly 1`] = `
             <li
               class="ltx_item"
               id=".i2b"
-              style="list-style-type:none;"
             >
               
-
-              <span
-                class="ltx_tag ltx_tag_itemize"
-              >
-                •
-              </span>
-               
+ 
 
               <div
                 class="ltx_para"
@@ -567,21 +493,9 @@ exports[`lists render correctly 1`] = `
 
               <li
                 class="ltx_item"
-                style="list-style-type:none;"
               >
                 
-
-                <span
-                  class="ltx_tag ltx_tag_enumerate"
-                >
-                  <span
-                    class="ltx_ERROR undefined"
-                  >
-                    \\theenumi
-                  </span>
-                  .
-                </span>
-                 
+ 
 
                 <div
                   class="ltx_para"
@@ -603,22 +517,9 @@ exports[`lists render correctly 1`] = `
 
                     <li
                       class="ltx_item"
-                      style="list-style-type:none;"
                     >
                       
-
-                      <span
-                        class="ltx_tag ltx_tag_enumerate"
-                      >
-                        (
-                        <span
-                          class="ltx_ERROR undefined"
-                        >
-                          \\theenumii
-                        </span>
-                        )
-                      </span>
-                       
+ 
 
                       <div
                         class="ltx_para"
@@ -641,22 +542,9 @@ exports[`lists render correctly 1`] = `
 
                     <li
                       class="ltx_item"
-                      style="list-style-type:none;"
                     >
                       
-
-                      <span
-                        class="ltx_tag ltx_tag_enumerate"
-                      >
-                        (
-                        <span
-                          class="ltx_ERROR undefined"
-                        >
-                          \\theenumii
-                        </span>
-                        )
-                      </span>
-                       
+ 
 
                       <div
                         class="ltx_para"
@@ -688,21 +576,9 @@ exports[`lists render correctly 1`] = `
 
               <li
                 class="ltx_item"
-                style="list-style-type:none;"
               >
                 
-
-                <span
-                  class="ltx_tag ltx_tag_enumerate"
-                >
-                  <span
-                    class="ltx_ERROR undefined"
-                  >
-                    \\theenumi
-                  </span>
-                  .
-                </span>
-                 
+ 
 
                 <div
                   class="ltx_para"

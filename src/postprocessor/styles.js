@@ -146,6 +146,8 @@ dt-article > .engrafo-metadata {
 .ltx_rdf          { display:none; }
 .ltx_missing      { color:red;}
 .ltx_nounicode    { color:red; }
+
+.ltx_font_bold { font-weight: bolder; }
 `;
 
 module.exports = function(dom) {

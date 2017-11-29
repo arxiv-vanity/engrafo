@@ -145,13 +145,9 @@ def extract_sources(folder):
 
 
 def convert_latex_to_html(folder, no_post_processing=False):
-    timeout = 30
-
     html_path = os.path.join(folder, 'index.html')
 
     cmd = [
-        'timeout',
-        '%d' % timeout,
         os.path.join(ENGRAFO_PATH, 'bin/engrafo'),
     ]
 

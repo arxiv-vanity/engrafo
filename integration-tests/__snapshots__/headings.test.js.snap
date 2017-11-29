@@ -14,33 +14,26 @@ exports[`TITLES IN ALL CAPS are fixed 1`] = `
       
 
       <dt-article>
-        <span
-          class="ltx_ERROR undefined"
-        >
-          \\title
-        </span>
         
 
-        <div
-          class="ltx_para"
-          id="p1"
+        <h1
+          class="ltx_title ltx_title_document"
         >
-          
-
-          <p
-            class="ltx_p"
-          >
-            WHY AM I SHOUTING
-
-          </p>
-          
-
+          Why Am I Shouting
+        </h1>
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="engrafo-metadata-custom"
+          />
         </div>
         
 
+
         <section
           class="ltx_section"
-          id="-at-currentID"
+          id="S1"
         >
           
 
@@ -53,14 +46,9 @@ exports[`TITLES IN ALL CAPS are fixed 1`] = `
               class="ltx_tag ltx_tag_section"
             >
               <a
-                href="#-at-currentID"
+                href="#S1"
               >
-                <span
-                  class="ltx_ERROR undefined"
-                >
-                  \\thesection
-                </span>
-                 
+                1 
               </a>
             </span>
             Urgh Stop It
@@ -70,7 +58,7 @@ exports[`TITLES IN ALL CAPS are fixed 1`] = `
 
           <div
             class="ltx_para"
-            id="-at-currentID.p1"
+            id="S1.p1"
           >
             
 
@@ -78,7 +66,6 @@ exports[`TITLES IN ALL CAPS are fixed 1`] = `
               class="ltx_p"
             >
               Hello.
-
             </p>
             
 
@@ -131,12 +118,23 @@ exports[`bold is stripped from title 1`] = `
       
 
       <dt-article>
-        <span
-          class="ltx_ERROR undefined"
-        >
-          \\title
-        </span>
         
+
+        <h1
+          class="ltx_title  ltx_title_document"
+        >
+          Why would someone do this
+
+        </h1>
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="engrafo-metadata-custom"
+          />
+        </div>
+        
+
 
         <div
           class="ltx_para"
@@ -147,17 +145,7 @@ exports[`bold is stripped from title 1`] = `
           <p
             class="ltx_p"
           >
-            <span
-              class="ltx_text ltx_font_bold"
-              style="font-size:173%;"
-            >
-              Why would someone do this
-
-            </span>
-            
-
-Hello.
-
+            Hello.
           </p>
           
 

@@ -41,7 +41,7 @@ RUN apt-get update -qq && apt-get install -qy \
   libio-string-perl libjson-xs-perl libtext-unidecode-perl \
   libparse-recdescent-perl liburi-perl libuuid-tiny-perl libwww-perl \
   libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl  \
-  imagemagick libimage-magick-perl
+  imagemagick libimage-magick-perl perl-doc
 RUN mkdir -p /usr/src/latexml
 WORKDIR /usr/src/latexml
 RUN curl -L https://github.com/brucemiller/LaTeXML/tarball/1fe47cc6a0925c621ca31c911cb0c07dfcaa0ef6 | tar --strip-components 1 -zxf -

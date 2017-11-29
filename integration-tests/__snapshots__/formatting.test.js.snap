@@ -106,12 +106,13 @@ exports[`links get wrapped in anchors 1`] = `
             class="ltx_p"
           >
             this is already a link: 
-            <span
-              class="ltx_ERROR undefined"
+            <a
+              class="ltx_ref ltx_href"
+              href="http://example.com"
+              title=""
             >
-              \\href
-            </span>
-            http://example.comexample.com
+              example.com
+            </a>
           </p>
           
 
@@ -128,12 +129,13 @@ exports[`links get wrapped in anchors 1`] = `
             class="ltx_p"
           >
             this is a link without http: 
-            <span
-              class="ltx_ERROR undefined"
+            <a
+              class="ltx_ref ltx_href"
+              href="example.com"
+              title=""
             >
-              \\href
-            </span>
-            example.comexample.com
+              example.com
+            </a>
           </p>
           
 
@@ -783,28 +785,6 @@ exports[`text formatting renders correctly 1`] = `
         <div
           class="ltx_para"
           id="p4"
-        >
-          
-
-          <p
-            class="ltx_p"
-          >
-            This is 
-            <span
-              class="ltx_ERROR undefined"
-            >
-              \\href
-            </span>
-            https://www.example.coma link.
-          </p>
-          
-
-        </div>
-        
-
-        <div
-          class="ltx_para"
-          id="p5"
         >
           
 

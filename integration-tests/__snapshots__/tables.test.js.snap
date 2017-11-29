@@ -18,12 +18,12 @@ exports[`basic tables render correctly 1`] = `
 
         <figure
           class="ltx_table"
-          id="tab1"
+          id="S0.T1"
         >
           
 
           <table
-            class="ltx_tabular ltx_guessed_headers ltx_align_middle"
+            class="ltx_tabular ltx_align_middle"
           >
             
 
@@ -37,24 +37,24 @@ exports[`basic tables render correctly 1`] = `
               >
                 
 
-                <th
-                  class="ltx_td ltx_align_center ltx_th ltx_th_row"
+                <td
+                  class="ltx_td ltx_align_center"
                 >
-                  
-
-                  <span
-                    class="ltx_ERROR undefined"
-                  >
-                    \\toprule
-                  </span>
-                  First column
-                </th>
+                  cell1
+                </td>
                 
 
                 <td
                   class="ltx_td ltx_align_center"
                 >
-                  Second column
+                  cell2
+                </td>
+                
+
+                <td
+                  class="ltx_td ltx_align_center"
+                >
+                  cell3
                 </td>
                 
 
@@ -66,24 +66,24 @@ exports[`basic tables render correctly 1`] = `
               >
                 
 
-                <th
-                  class="ltx_td ltx_align_center ltx_th ltx_th_row"
+                <td
+                  class="ltx_td ltx_align_center"
                 >
-                  
-
-                  <span
-                    class="ltx_ERROR undefined"
-                  >
-                    \\toprule
-                  </span>
-                  123
-                </th>
+                  cell4
+                </td>
                 
 
                 <td
                   class="ltx_td ltx_align_center"
                 >
-                  456
+                  cell5
+                </td>
+                
+
+                <td
+                  class="ltx_td ltx_align_center"
+                >
+                  cell6
                 </td>
                 
 
@@ -95,39 +95,24 @@ exports[`basic tables render correctly 1`] = `
               >
                 
 
-                <th
-                  class="ltx_td ltx_align_center ltx_th ltx_th_row"
-                >
-                  234
-                </th>
-                
-
                 <td
                   class="ltx_td ltx_align_center"
                 >
-                  567
+                  cell7
                 </td>
                 
 
-              </tr>
-              
-
-              <tr
-                class="ltx_tr"
-              >
-                
-
-                <th
-                  class="ltx_td ltx_align_center ltx_th ltx_th_row"
+                <td
+                  class="ltx_td ltx_align_center"
                 >
-                  567
-                </th>
+                  cell8
+                </td>
                 
 
                 <td
                   class="ltx_td ltx_align_center"
                 >
-                  890
+                  cell9
                 </td>
                 
 
@@ -146,13 +131,7 @@ exports[`basic tables render correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_table"
             >
-              Table 
-              <span
-                class="ltx_ERROR undefined"
-              >
-                \\thetable
-              </span>
-              : 
+              Table 1: 
             </span>
             Some numbers.
           </figcaption>
@@ -171,11 +150,17 @@ exports[`basic tables render correctly 1`] = `
             class="ltx_p"
           >
             Take a look at some cool data in table 
-            <span
-              class="ltx_ref ltx_ref_self"
+            <a
+              class="ltx_ref"
+              href="#S0.T1"
+              title="Table 1"
             >
-              id1
-            </span>
+              <span
+                class="ltx_text ltx_ref_tag"
+              >
+                1
+              </span>
+            </a>
             .
           </p>
           

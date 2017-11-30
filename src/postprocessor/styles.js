@@ -155,7 +155,10 @@ dt-article > .engrafo-metadata {
 /* TODO: just use the correct HTML elements if possible */
 .ltx_font_bold { font-weight: bolder; }
 .ltx_font_italic { font-style: italic; }
-.ltx_font_typewriter { font-family: monospace; }
+.ltx_font_typewriter {
+  font-family: monospace;
+  font-size: 0.9em;
+}
 .ltx_align_center { text-align: center; }
 `;
 

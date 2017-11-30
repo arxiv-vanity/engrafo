@@ -21,6 +21,7 @@ exports.renderLatexml = (texPath, callback) => {
       "--mathtex",
       "--verbose",
       "--preload", "/app/latexml/engrafo.ltxml",
+      "--preload", "/usr/src/latexml/lib/LaTeXML/Package/hyperref.sty.ltxml",
       texPath
     ], {
     // TODO: in tests, just dump output to console.log so jest can hide it

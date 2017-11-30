@@ -160,6 +160,20 @@ dt-article > .engrafo-metadata {
   font-size: 0.9em;
 }
 .ltx_align_center { text-align: center; }
+
+/*======================================================================
+ Borders and such */
+.ltx_tabular { display:inline-table; border-collapse:collapse; }
+.ltx_tabular.ltx_centering { display:table; }
+.ltx_thead,
+.ltx_tfoot,
+.ltx_tbody   { display:table-row-group; }
+.ltx_tr      { display:table-row; }
+.ltx_td,
+.ltx_th      { display:table-cell; }
+
+.ltx_td { font-size: 15px; }
+
 `;
 
 module.exports = function(dom) {

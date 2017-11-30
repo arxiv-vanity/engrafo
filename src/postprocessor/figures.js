@@ -17,7 +17,8 @@ var css = `
 
   dt-article figure img,
   dt-article figure table,
-  dt-article figure .ltx_listing {
+  dt-article figure .ltx_listing,
+  dt-article figure .ltx_tabular {
     width: 100%;
     height: auto;
     margin-bottom: 15px;

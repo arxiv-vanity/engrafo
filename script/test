@@ -12,4 +12,4 @@ exec docker run \
     --rm \
     -it \
     engrafo \
-    node_modules/.bin/jest "$@"
+    node_modules/.bin/jest --silent "$@"

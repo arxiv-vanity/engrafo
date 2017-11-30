@@ -4,6 +4,7 @@ var distill = require("distill-template");
 var fs = require("fs-extra");
 var jsdom = require("jsdom");
 var path = require("path");
+var readline = require("readline");
 
 var input = require("./input");
 var math = require("./math");
@@ -24,10 +25,13 @@ exports.renderLatexml = (texPath, callback) => {
       "--preload", "/usr/src/latexml/lib/LaTeXML/Package/hyperref.sty.ltxml",
       texPath
     ], {
-    // TODO: in tests, just dump output to console.log so jest can hide it
-    stdio: ['pipe', process.stdout, process.stderr]
   });
   latexmlc.on("error", callback);
+
+  var stdoutReadline = readline.createInterface({input: latexmlc.stdout});
+  stdoutReadline.on("line", console.log);
+  var stderrReadline = readline.createInterface({input: latexmlc.stderr});
+  stderrReadline.on("line", console.error);
 
   latexmlc.on("close", code => {
     if (code !== 0) {

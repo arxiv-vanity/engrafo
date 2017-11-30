@@ -8,7 +8,6 @@ let css = `
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", Helvetica, sans-serif;
   font-style: normal;
   font-size: 75%;
-  color: hsla(206, 90%, 20%, 0.7);
   display: inline-block;
   line-height: 1.1em;
   text-align: center;
@@ -19,6 +18,7 @@ let css = `
 
 .ltx_cite a,
 .ltx_cite a:hover {
+  color: hsla(206, 90%, 20%, 0.7);
   border-bottom: 0;
 }
 
@@ -88,10 +88,8 @@ module.exports = function(dom) {
 
     var refId = appendCiteHoverDiv(dom, bibItem.innerHTML);
     var bibItemNumber = bibItems.indexOf(bibItem) + 1;
-    // Replace the text that latexml puts in citations with just a number
-    a.innerHTML = '';
-    var hoverSpan = utils.nodeFromString(dom, `<span data-hover-ref="${refId}">${bibItemNumber}</span>`);
-    a.appendChild(hoverSpan);
+    var hoverSpan = utils.nodeFromString(dom, `<span data-hover-ref="${refId}"></span>`);
+    utils.wrapElement(a, hoverSpan);
     a.setAttribute("onclick", "event.preventDefault()");
   });
 

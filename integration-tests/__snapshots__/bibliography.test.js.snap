@@ -30,18 +30,18 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
               class="ltx_cite ltx_citemacro_cite"
             >
               [
-              <a
-                class="ltx_ref"
-                href="#bib.bib1"
-                onclick="event.preventDefault()"
-                title=""
+              <span
+                data-hover-ref="dt-cite-hover-box-1"
               >
-                <span
-                  data-hover-ref="dt-cite-hover-box-1"
+                <a
+                  class="ltx_ref"
+                  href="#bib.bib1"
+                  onclick="event.preventDefault()"
+                  title=""
                 >
                   1
-                </span>
-              </a>
+                </a>
+              </span>
               ]
             </cite>
              then refer to 
@@ -49,18 +49,18 @@ exports[`a 3-line inline bibliography renders correctly 1`] = `
               class="ltx_cite ltx_citemacro_cite"
             >
               [
-              <a
-                class="ltx_ref"
-                href="#bib.bib2"
-                onclick="event.preventDefault()"
-                title=""
+              <span
+                data-hover-ref="dt-cite-hover-box-2"
               >
-                <span
-                  data-hover-ref="dt-cite-hover-box-2"
+                <a
+                  class="ltx_ref"
+                  href="#bib.bib2"
+                  onclick="event.preventDefault()"
+                  title=""
                 >
                   2
-                </span>
-              </a>
+                </a>
+              </span>
               ]
             </cite>
              but misspell 
@@ -367,18 +367,18 @@ exports[`a basic bibliography renders correctly 1`] = `
               class="ltx_cite ltx_citemacro_cite"
             >
               [
-              <a
-                class="ltx_ref"
-                href="#bib.bibx1"
-                onclick="event.preventDefault()"
-                title=""
+              <span
+                data-hover-ref="dt-cite-hover-box-0"
               >
-                <span
-                  data-hover-ref="dt-cite-hover-box-0"
+                <a
+                  class="ltx_ref"
+                  href="#bib.bibx1"
+                  onclick="event.preventDefault()"
+                  title=""
                 >
-                  1
-                </span>
-              </a>
+                  Bloggs and Jones(2014)
+                </a>
+              </span>
               ]
             </cite>
              World

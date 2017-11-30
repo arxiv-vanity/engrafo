@@ -105,6 +105,11 @@ dt-article > h6 {
   font-size: inherit;
 }
 
+/* latexml makes heavy use of <section> so remove the margin that distill adds */
+dt-article section {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 /* Standard article bit alignment. Add more to this definition to add support
 in articles. */

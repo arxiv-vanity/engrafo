@@ -376,21 +376,17 @@ exports[`footnotes in author render correctly 1`] = `
                 class="ltx_personname"
               >
                 Joe Bloggs
-                <span
-                  class="ltx_note ltx_role_footnote"
-                >
-                  <dt-fn>
-                    <sup>
-                      <span
-                        data-hover-ref="dt-fn-hover-box-0"
-                        id="fn-1"
-                        style="cursor:pointer"
-                      >
-                        1
-                      </span>
-                    </sup>
-                  </dt-fn>
-                </span>
+                <dt-fn>
+                  <sup>
+                    <span
+                      data-hover-ref="dt-fn-hover-box-0"
+                      id="fn-1"
+                      style="cursor:pointer"
+                    >
+                      1
+                    </span>
+                  </sup>
+                </dt-fn>
                 
 
               </span>
@@ -441,9 +437,13 @@ exports[`footnotes in author render correctly 1`] = `
             <ol>
               <li>
                 <span
-                  class="ltx_note_content"
+                  class="ltx_note_outer"
                 >
-                  Equal contribution.
+                  <span
+                    class="ltx_note_content"
+                  >
+                    Equal contribution.
+                  </span>
                 </span>
               </li>
             </ol>
@@ -468,9 +468,13 @@ exports[`footnotes in author render correctly 1`] = `
         style="display:none;"
       >
         <span
-          class="ltx_note_content"
+          class="ltx_note_outer"
         >
-          Equal contribution.
+          <span
+            class="ltx_note_content"
+          >
+            Equal contribution.
+          </span>
         </span>
       </div>
     </div>
@@ -504,37 +508,29 @@ exports[`footnotes render correctly 1`] = `
             class="ltx_p"
           >
             This is some text.
-            <span
-              class="ltx_note ltx_role_footnote"
-            >
-              <dt-fn>
-                <sup>
-                  <span
-                    data-hover-ref="dt-fn-hover-box-0"
-                    id="fn-1"
-                    style="cursor:pointer"
-                  >
-                    1
-                  </span>
-                </sup>
-              </dt-fn>
-            </span>
+            <dt-fn>
+              <sup>
+                <span
+                  data-hover-ref="dt-fn-hover-box-0"
+                  id="fn-1"
+                  style="cursor:pointer"
+                >
+                  1
+                </span>
+              </sup>
+            </dt-fn>
              This is some more text.
-            <span
-              class="ltx_note ltx_role_footnote"
-            >
-              <dt-fn>
-                <sup>
-                  <span
-                    data-hover-ref="dt-fn-hover-box-1"
-                    id="fn-2"
-                    style="cursor:pointer"
-                  >
-                    2
-                  </span>
-                </sup>
-              </dt-fn>
-            </span>
+            <dt-fn>
+              <sup>
+                <span
+                  data-hover-ref="dt-fn-hover-box-1"
+                  id="fn-2"
+                  style="cursor:pointer"
+                >
+                  2
+                </span>
+              </sup>
+            </dt-fn>
           </p>
           
 
@@ -560,23 +556,31 @@ exports[`footnotes render correctly 1`] = `
             <ol>
               <li>
                 <span
-                  class="ltx_note_content"
+                  class="ltx_note_outer"
                 >
-                  This is a footnote.
+                  <span
+                    class="ltx_note_content"
+                  >
+                    This is a footnote.
+                  </span>
                 </span>
               </li>
               <li>
                 <span
-                  class="ltx_note_content"
+                  class="ltx_note_outer"
                 >
-                  And a footnote with a
-second paragraph! And some 
-                  <em
-                    class="ltx_emph ltx_font_italic"
+                  <span
+                    class="ltx_note_content"
                   >
-                    formatting
-                  </em>
-                  .
+                    And a footnote with a
+second paragraph! And some 
+                    <em
+                      class="ltx_emph ltx_font_italic"
+                    >
+                      formatting
+                    </em>
+                    .
+                  </span>
                 </span>
               </li>
             </ol>
@@ -601,9 +605,13 @@ second paragraph! And some
         style="display:none;"
       >
         <span
-          class="ltx_note_content"
+          class="ltx_note_outer"
         >
-          This is a footnote.
+          <span
+            class="ltx_note_content"
+          >
+            This is a footnote.
+          </span>
         </span>
       </div>
       <div
@@ -612,16 +620,20 @@ second paragraph! And some
         style="display:none;"
       >
         <span
-          class="ltx_note_content"
+          class="ltx_note_outer"
         >
-          And a footnote with a
-second paragraph! And some 
-          <em
-            class="ltx_emph ltx_font_italic"
+          <span
+            class="ltx_note_content"
           >
-            formatting
-          </em>
-          .
+            And a footnote with a
+second paragraph! And some 
+            <em
+              class="ltx_emph ltx_font_italic"
+            >
+              formatting
+            </em>
+            .
+          </span>
         </span>
       </div>
     </div>

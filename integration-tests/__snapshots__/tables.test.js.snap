@@ -168,6 +168,71 @@ exports[`basic tables render correctly 1`] = `
         </div>
         
 
+        <figure
+          class="ltx_table"
+          id="S0.T2"
+        >
+          
+
+
+          <table
+            class="ltx_tabular ltx_align_middle"
+          >
+            
+
+            <tbody
+              class="ltx_tbody"
+            >
+              
+
+              <tr
+                class="ltx_tr"
+              >
+                
+
+                <td
+                  class="ltx_td ltx_align_center"
+                >
+                  cell7
+                </td>
+                
+
+                <td
+                  class="ltx_td ltx_align_center"
+                >
+                  cell8
+                </td>
+                
+
+                <td
+                  class="ltx_td ltx_align_center"
+                >
+                  cell9
+                </td>
+                
+
+              </tr>
+              
+
+            </tbody>
+            
+
+          </table>
+          
+
+          <figcaption
+            class="ltx_caption"
+          >
+            <span
+              class="ltx_tag ltx_tag_table"
+            >
+              Table 2: 
+            </span>
+            Caption at the top is put at the bottom.
+          </figcaption>
+        </figure>
+        
+
       </dt-article>
       
 

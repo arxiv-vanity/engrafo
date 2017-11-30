@@ -382,21 +382,17 @@ exports[`a basic bibliography renders correctly 1`] = `
               ]
             </cite>
              World
-            <span
-              class="ltx_note ltx_role_footnote"
-            >
-              <dt-fn>
-                <sup>
-                  <span
-                    data-hover-ref="dt-fn-hover-box-0"
-                    id="fn-1"
-                    style="cursor:pointer"
-                  >
-                    1
-                  </span>
-                </sup>
-              </dt-fn>
-            </span>
+            <dt-fn>
+              <sup>
+                <span
+                  data-hover-ref="dt-fn-hover-box-0"
+                  id="fn-1"
+                  style="cursor:pointer"
+                >
+                  1
+                </span>
+              </sup>
+            </dt-fn>
           </p>
           
 
@@ -423,9 +419,13 @@ exports[`a basic bibliography renders correctly 1`] = `
             <ol>
               <li>
                 <span
-                  class="ltx_note_content"
+                  class="ltx_note_outer"
                 >
-                  Just checking the bibliography comes after footnotes.
+                  <span
+                    class="ltx_note_content"
+                  >
+                    Just checking the bibliography comes after footnotes.
+                  </span>
                 </span>
               </li>
             </ol>
@@ -568,9 +568,13 @@ Foo and Bar. 2020.
         style="display:none;"
       >
         <span
-          class="ltx_note_content"
+          class="ltx_note_outer"
         >
-          Just checking the bibliography comes after footnotes.
+          <span
+            class="ltx_note_content"
+          >
+            Just checking the bibliography comes after footnotes.
+          </span>
         </span>
       </div>
     </div>

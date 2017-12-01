@@ -160,6 +160,11 @@ dt-article > .engrafo-metadata {
   font-size: 0.9em;
 }
 .ltx_align_center { text-align: center; }
+.ltx_align_right    { text-align:right; }
+.ltx_align_top      { vertical-align:top; }
+.ltx_align_bottom   { vertical-align:bottom; }
+.ltx_align_middle   { vertical-align:middle; }
+.ltx_align_baseline { vertical-align:baseline; }
 
 /*======================================================================
  Borders and such */

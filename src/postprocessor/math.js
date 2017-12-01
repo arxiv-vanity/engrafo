@@ -1,7 +1,8 @@
 let utils = require("./utils");
 
 var css = `
-dt-article .ltx_equationgroup {
+dt-article .ltx_equationgroup,
+dt-article .ltx_equation {
   width: 100%;
 }
 

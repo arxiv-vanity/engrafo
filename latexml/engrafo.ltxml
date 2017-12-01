@@ -5,4 +5,17 @@ use warnings;
 # Ignore \includepdf
 DefMacro('\includepdf[]{}', '');
 
+# Seems to be in acmart.cls
+DefMacro('\institution{}', '\newline #1');
+
+# sigchi.cls
+DefMacro('\alignauthor', '');
+DefMacro('\affaddr{}', '#1');
+
+# IEEEtran.cls
+DefMacro('\IEEEauthorblockN{}', '\textbf{#1}');
+DefMacro('\IEEEauthorblockA{}', '#1');
+DefMacro('\IEEEmembership{}', '#1');
+DefMacro('\IEEEauthorrefmark{}', '\textsuperscript{\footnotesize #1}}');
+
 1;

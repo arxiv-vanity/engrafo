@@ -192,7 +192,7 @@ module.exports = function(dom) {
   utils.addStylesheet(dom, css);
 
   // Remove weird styling from places we don't want it
-  Array.from(dom.querySelectorAll("figcaption, .ltx_bibblock .ltx_text")).forEach(el => {
+  Array.from(dom.querySelectorAll("figcaption, .ltx_bibblock .ltx_text, .ltx_caption .ltx_text")).forEach(el => {
     el.removeAttribute("style");
   });
 };

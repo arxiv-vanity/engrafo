@@ -161,7 +161,7 @@ exports[`links get wrapped in anchors 1`] = `
             this is a link without http: 
             <a
               class="ltx_ref ltx_href"
-              href="example.com"
+              href="http://example.com"
               title=""
             >
               example.com

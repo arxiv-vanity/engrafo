@@ -86,6 +86,7 @@ exports.postprocess = htmlString => {
   distill.components.hoverBox(dom, data);
   postprocessors.tables(dom, data);
   postprocessors.lists(dom, data);
+  postprocessors.links(dom, data);
   postprocessors.container(dom, data);
 
   return jsdom.serializeDocument(dom);

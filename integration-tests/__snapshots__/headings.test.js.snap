@@ -202,12 +202,6 @@ Subsubsection Title
               >
                 
 
-                <h5
-                  class="ltx_title ltx_title_paragraph"
-                >
-                  Paragraph title
-                </h5>
-                
 
 
                 <div
@@ -219,7 +213,12 @@ Subsubsection Title
                   <p
                     class="ltx_p"
                   >
-                    Hello.
+                    <strong
+                      class="paragraph-heading"
+                    >
+                      Paragraph title
+                    </strong>
+                     Hello.
                   </p>
                   
 

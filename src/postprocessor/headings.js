@@ -112,21 +112,22 @@ module.exports = function(dom) {
   });
 
   // Put <h5> and <h6> in front of next paragraph, if it exists.
-  // TODO: still want this?
-  // var paragraphHeadings = Array.from(dom.querySelectorAll("h5"));
-  // paragraphHeadings = paragraphHeadings.concat(dom.querySelectorAll("h6"));
-  // paragraphHeadings.forEach(heading => {
-  //   var p = heading.nextElementSibling;
-  //   if (p && p.tagName == "P") {
-  //     // Put at start of <p>
-  //     p.insertBefore(dom.createTextNode(" "), p.firstChild);
-  //     p.insertBefore(heading, p.firstChild);
-  //     // Turn it into <strong>
-  //     var newHeading = utils.nodeFromString(
-  //       dom,
-  //       '<strong class="paragraph-heading"></strong>'
-  //     );
-  //     utils.replaceAndKeepChildren(heading, newHeading);
-  //   }
-  // });
+  var paragraphHeadings = Array.from(dom.querySelectorAll("h5"));
+  paragraphHeadings = paragraphHeadings.concat(dom.querySelectorAll("h6"));
+  paragraphHeadings.forEach(heading => {
+    var div = heading.nextElementSibling;
+    if (!div) return;
+    var p = div.children[0];
+    if (p && p.tagName == "P") {
+      // Put at start of <p>
+      p.insertBefore(dom.createTextNode(" "), p.firstChild);
+      p.insertBefore(heading, p.firstChild);
+      // Turn it into <strong>
+      var newHeading = utils.nodeFromString(
+        dom,
+        '<strong class="paragraph-heading"></strong>'
+      );
+      utils.replaceAndKeepChildren(heading, newHeading);
+    }
+  });
 };

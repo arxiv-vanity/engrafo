@@ -93,16 +93,13 @@ TODO(bfirsh): make these inline elements instead. */
   font-weight: bold;
 }
 
-.engrafo-container dt {
+.engrafo-container dt,
+.engrafo-container dd {
   font-family: Georgia, serif;
-  font-weight: bold;
 }
 
-dt-article > h5,
-dt-article > h6 {
-  font-family: Georgia, serif;
+.engrafo-container dt {
   font-weight: bold;
-  font-size: inherit;
 }
 
 /* latexml makes heavy use of <section> so remove the margin that distill adds */
@@ -113,11 +110,9 @@ dt-article section {
 
 /* Standard article bit alignment. Add more to this definition to add support
 in articles. */
-dt-article > blockquote,
-dt-article > dl,
-dt-article > h5,
-dt-article > h6,
-dt-article > .engrafo-metadata {
+dt-article blockquote,
+dt-article dl,
+dt-article .engrafo-metadata {
   width: auto;
   margin-left: 24px;
   margin-right: 24px;

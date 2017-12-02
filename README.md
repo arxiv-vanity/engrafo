@@ -30,12 +30,9 @@ The downside of this approach is a fair amount of shoe-horning, but the upside i
 
 Here is how it works:
 
-* [Pandoc](http://pandoc.org/) does most of the heavy lifting, using [our own fork](https://github.com/arxiv-vanity/pandoc). It parses the LaTeX and outputs the basic HTML.
-* During the Pandoc conversion, a Pandoc filter (in `pandocfilter/`) converts `tikzpicture` to SVG, inserts labels, inserts hyperlinks, and various other things.
-* After the Pandoc conversion, we apply [Distill's template](https://github.com/distillpub/template) to style the output, make it responsive, create footnotes, and create hover boxes.
-* Some post-processors (in `src/postprocessors/`) do layout, additional styling, math rendering, bibliography rendering, and various other things. Pandoc can only output a particular subset of HTML from its AST, so the post-processors also rename and move around some elements.
-
-The line between the Pandoc filter and the post-processing is pretty fuzzy at the moment. If you're trying to find some logic as to where a bit of processing lives, there probably isn't any. The intention is that we do as much as possible in Pandoc, then use the post-processor to rejig anything that Pandoc can't easily do.
+* [LaTeXML](http://dlmf.nist.gov/LaTeXML/) does most of the heavy lifting. It parses the LaTeX, outputs the basic HTML, converts images, etc.
+* [Distill's template](https://github.com/distillpub/template) is applied to style the output, make it responsive, create footnotes, and create hover boxes.
+* Intermingled with Distill's processing, some post-processors (in `src/postprocessors/`) do layout, additional styling, math rendering, bibliography rendering, and various other things. They also rearrange the HTML output from LaTeXML to make it suitable for Distill's template.
 
 ## Development environment
 
@@ -50,20 +47,6 @@ You can also run a server that allows you to view papers from Arxiv in a browser
 
 And it will be available at [http://localhost:8010/](http://localhost:8010/).
 
-### Working on Pandoc
-
-Engrafo uses a [custom version of Pandoc](https://github.com/arxiv-vanity/pandoc). If you are working on Pandoc locally, you can continuously build the `pandoc` binary and inject it into the Engrafo image.
-
-In your local Pandoc directory, run:
-
-    $ ./docker-watch-build.sh
-
-In another shell, in the Engrafo directory, run:
-
-    $ PANDOC_DIR=/path/to/local/pandoc/dir script/server
-
-Now, whenever you make a change to a Pandoc source file, the binary will build and will be visible in the Engrafo container.
-
 ## Tests
 
 Run the main test suite:
@@ -77,10 +60,6 @@ You can run entire suites:
 Or individual tests by matching a string:
 
     $ script/test -t "titles and headings"
-
-There is also a test suite for the Pandoc filter:
-
-    $ script/test-pandocfilter
 
 ### Writing integration tests
 

@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic listings render correctly 1`] = `
+<body>
+  <div
+    class="engrafo-container"
+  >
+    
+
+
+    <div
+      class="ltx_page_content"
+    >
+      
+
+      <dt-article>
+        
+
+        <div
+          class="ltx_para"
+          id="p1"
+        >
+          
+
+          <div
+            class="ltx_listing ltx_lstlisting ltx_listing"
+          >
+            
+
+
+            <div
+              class="ltx_listingline"
+            >
+              
+
+              <span
+                class="ltx_text ltx_lst_identifier"
+              >
+                print
+              </span>
+              (”
+              <span
+                class="ltx_text ltx_lst_identifier"
+              >
+                hello
+              </span>
+              ”)
+
+            </div>
+            
+
+            <div
+              class="ltx_listingline"
+            >
+              
+
+              <span
+                class="ltx_text ltx_lst_identifier"
+              >
+                print
+              </span>
+              (”
+              <span
+                class="ltx_text ltx_lst_identifier"
+              >
+                world
+              </span>
+              ”)
+
+            </div>
+            
+
+            <div
+              class="ltx_listingline"
+            >
+              
+
+              <span
+                class="ltx_text ltx_lst_identifier"
+              >
+                if
+              </span>
+              <span
+                class="ltx_text ltx_lst_space"
+              >
+                 
+              </span>
+              <span
+                class="ltx_text ltx_lst_identifier"
+              >
+                True
+              </span>
+              :
+
+            </div>
+            
+
+            <div
+              class="ltx_listingline"
+            >
+              
+
+              <span
+                class="ltx_text ltx_lst_space"
+              >
+                  
+              </span>
+              <span
+                class="ltx_text ltx_lst_identifier"
+              >
+                print
+              </span>
+              (”
+              <span
+                class="ltx_text ltx_lst_identifier"
+              >
+                indents
+              </span>
+              <span
+                class="ltx_text ltx_lst_space"
+              >
+                 
+              </span>
+              <span
+                class="ltx_text ltx_lst_identifier"
+              >
+                work
+              </span>
+              ”)
+
+            </div>
+            
+
+          </div>
+          
+
+        </div>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
+        />
+        
+
+      </dt-appendix>
+    </div>
+    
+
+
+
+
+
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
+</body>
+`;

@@ -53,4 +53,4 @@ exports.nodeFromString = function(dom, str) {
 exports.wrapElement = function(innerEl, outerEl) {
   innerEl.parentNode.insertBefore(outerEl, innerEl);
   outerEl.appendChild(innerEl);
-}
+};

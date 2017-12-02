@@ -15,16 +15,6 @@ let css = `
   margin-bottom: 12px;
 }
 
-.engrafo-metadata code {
-  background: none;
-  border: 0;
-  padding: 0;
-  font-size: inherit;
-  color: inherit;
-  word-break: break-word;
-  white-space: normal;
-}
-
 .engrafo-metadata:first-line {
   font-weight: bold;
 }

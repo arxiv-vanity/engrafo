@@ -75,22 +75,8 @@ dt-article p {
   }
 }
 
-.engrafo-container code {
-  word-break: break-word;
-  white-space: normal;
-}
-
-dt-article > blockquote {
+dt-article blockquote {
   padding-left: 24px;
-}
-
-/* Some block-level styling stuff we get from Pandoc.
-TODO(bfirsh): make these inline elements instead. */
-.engrafo-container .emph {
-  font-style: italic;
-}
-.engrafo-container .textbf {
-  font-weight: bold;
 }
 
 .engrafo-container dt,
@@ -120,22 +106,18 @@ dt-article .engrafo-metadata {
 }
 
 @media(min-width: 768px) {
-  dt-article > blockquote,
-  dt-article > dl,
-  dt-article > h5,
-  dt-article > h6,
-  dt-article > .engrafo-metadata {
+  dt-article blockquote,
+  dt-article dl,
+  dt-article .engrafo-metadata {
     margin-left: 72px;
     margin-right: 72px;
   }
 }
 
 @media(min-width: 1080px) {
-  dt-article > blockquote,
-  dt-article > dl,
-  dt-article > h5,
-  dt-article > h6,
-  dt-article > .engrafo-metadata {
+  dt-article blockquote,
+  dt-article dl,
+  dt-article .engrafo-metadata {
     margin-left: calc(50% - 984px / 2);
     width: 648px;
   }

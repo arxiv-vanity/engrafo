@@ -22,6 +22,19 @@ RUN apt-get update -qq && apt-get install -qy \
   python-pip \
   yarn
 
+# latexml
+RUN apt-get update -qq && apt-get install -qy \
+  libarchive-zip-perl libfile-which-perl libimage-size-perl  \
+  libio-string-perl libjson-xs-perl libtext-unidecode-perl \
+  libparse-recdescent-perl liburi-perl libuuid-tiny-perl libwww-perl \
+  libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl  \
+  imagemagick libimage-magick-perl perl-doc
+RUN mkdir -p /usr/src/latexml
+WORKDIR /usr/src/latexml
+RUN curl -L https://github.com/brucemiller/LaTeXML/tarball/1fe47cc6a0925c621ca31c911cb0c07dfcaa0ef6 | tar --strip-components 1 -zxf -
+RUN perl Makefile.PL; make; make install
+
+RUN mkdir -p /app
 WORKDIR /app
 
 # server
@@ -34,18 +47,5 @@ RUN yarn
 
 ENV PYTHONUNBUFFERED=1
 ENV PATH="/app/bin:${PATH}"
-
-# latexml
-RUN apt-get update -qq && apt-get install -qy \
-  libarchive-zip-perl libfile-which-perl libimage-size-perl  \
-  libio-string-perl libjson-xs-perl libtext-unidecode-perl \
-  libparse-recdescent-perl liburi-perl libuuid-tiny-perl libwww-perl \
-  libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl  \
-  imagemagick libimage-magick-perl perl-doc
-RUN mkdir -p /usr/src/latexml
-WORKDIR /usr/src/latexml
-RUN curl -L https://github.com/brucemiller/LaTeXML/tarball/1fe47cc6a0925c621ca31c911cb0c07dfcaa0ef6 | tar --strip-components 1 -zxf -
-RUN perl Makefile.PL; make; make install
-WORKDIR /app
 
 COPY . /app

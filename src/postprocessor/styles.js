@@ -190,4 +190,9 @@ module.exports = function(dom) {
 
   utils.addStylesheet(dom, layout + article + code + print);
   utils.addStylesheet(dom, css);
+
+  // Remove weird styling from places we don't want it
+  Array.from(dom.querySelectorAll("figcaption, .ltx_bibblock .ltx_text")).forEach(el => {
+    el.removeAttribute("style");
+  });
 };

@@ -7,6 +7,7 @@ module.exports = {
   footnotes: require("./footnotes"),
   headings: require("./headings"),
   layout: require("./layout"),
+  links: require("./links"),
   lists: require("./lists"),
   math: require("./math"),
   metadata: require("./metadata"),

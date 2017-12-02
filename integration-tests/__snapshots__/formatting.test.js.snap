@@ -25,7 +25,14 @@ exports[`links get wrapped in anchors 1`] = `
           <p
             class="ltx_p"
           >
-            http link: http://link.co.uk/to#something
+            <span>
+              http link: 
+              <a
+                href="http://link.co.uk/to#something"
+              >
+                http://link.co.uk/to#something
+              </a>
+            </span>
           </p>
           
 
@@ -41,7 +48,15 @@ exports[`links get wrapped in anchors 1`] = `
           <p
             class="ltx_p"
           >
-            https link: https://link.info?param url
+            <span>
+              https link: 
+              <a
+                href="https://link.info?param"
+              >
+                https://link.info?param
+              </a>
+               url
+            </span>
           </p>
           
 
@@ -57,7 +72,15 @@ exports[`links get wrapped in anchors 1`] = `
           <p
             class="ltx_p"
           >
-            link with trailing period: https://example.com.
+            <span>
+              link with trailing period: 
+              <a
+                href="https://example.com."
+              >
+                https://example.com.
+              </a>
+               (FIXME: known failure)
+            </span>
           </p>
           
 
@@ -89,7 +112,14 @@ exports[`links get wrapped in anchors 1`] = `
           <p
             class="ltx_p"
           >
-            this is a link without leading space: badlatex.http://example.com
+            <span>
+              this is a link without leading space: badlatex.
+              <a
+                href="http://example.com"
+              >
+                http://example.com
+              </a>
+            </span>
           </p>
           
 

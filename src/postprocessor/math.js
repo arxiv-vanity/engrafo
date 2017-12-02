@@ -17,6 +17,41 @@ dt-article table td.ltx_eqn_cell {
   outline: none;
   display: inline-block;
 }
+
+/* On mobile, make inline math word wrap. This isn't ideal, but it's a lot better than the page being too wide */
+dt-article .ltx_Math .mjx-chtml {
+  white-space: normal;
+}
+@media (min-width: 768px) {
+  dt-article .ltx_Math .mjx-chtml {
+    white-space: nowrap;
+  }
+}
+
+/* make tables fixed width so they don't cause mobile to scroll right.
+Ideally this would be done with flexbox or whatever, but let's deal with
+the tables that latexml gives us for now */
+@media (max-width: 767px) {
+  table.ltx_equation,
+  table.ltx_equation tr {
+    table-layout: fixed;
+  }
+
+  .ltx_eqn_cell {
+    overflow-x: scroll;
+  }
+
+  .ltx_eqn_eqno {
+    width: 50px;
+  }
+
+  /* Don't do the weird padding to center equations because this breaks mobile */
+  .ltx_eqn_center_padleft,
+  .ltx_eqn_center_padright {
+    display: none;
+  }
+}
+
 `;
 
 module.exports = function(dom) {
@@ -31,5 +66,5 @@ module.exports = function(dom) {
 
   Array.from(dom.querySelectorAll(".ltx_Math")).forEach(math => {
     math.innerHTML = `\\(${math.innerHTML}\\)`;
-  })
+  });
 };

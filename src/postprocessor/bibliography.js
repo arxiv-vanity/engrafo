@@ -4,7 +4,8 @@ let utils = require("./utils");
 let css = `
 .ltx_cite {
   cursor: default;
-  white-space: nowrap;
+  /* TODO: maybe put this back when citations are shorter?
+  white-space: nowrap; */
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", Helvetica, sans-serif;
   font-style: normal;
   font-size: 75%;

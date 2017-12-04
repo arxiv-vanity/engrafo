@@ -14,6 +14,16 @@ exports[`links get wrapped in anchors 1`] = `
       
 
       <dt-article>
+        <h1
+          class=""
+        />
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="engrafo-metadata-custom"
+          />
+        </div>
         
 
         <div
@@ -215,6 +225,16 @@ exports[`lists render correctly 1`] = `
       
 
       <dt-article>
+        <h1
+          class=""
+        />
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="engrafo-metadata-custom"
+          />
+        </div>
         
 
         <div
@@ -683,6 +703,16 @@ exports[`pdfoutput=1 is ignored 1`] = `
       
 
       <dt-article>
+        <h1
+          class=""
+        />
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="engrafo-metadata-custom"
+          />
+        </div>
         
 
         <div
@@ -744,6 +774,16 @@ exports[`text formatting renders correctly 1`] = `
       
 
       <dt-article>
+        <h1
+          class=""
+        />
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="engrafo-metadata-custom"
+          />
+        </div>
         
 
         <div
@@ -877,6 +917,16 @@ exports[`vskip is ignored 1`] = `
       
 
       <dt-article>
+        <h1
+          class=""
+        />
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="engrafo-metadata-custom"
+          />
+        </div>
         
 
         <div

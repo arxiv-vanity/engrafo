@@ -496,6 +496,16 @@ exports[`footnotes render correctly 1`] = `
       
 
       <dt-article>
+        <h1
+          class=""
+        />
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="engrafo-metadata-custom"
+          />
+        </div>
         
 
         <div
@@ -655,6 +665,16 @@ exports[`paragraphs and line breaks render correctly 1`] = `
       
 
       <dt-article>
+        <h1
+          class=""
+        />
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="engrafo-metadata-custom"
+          />
+        </div>
         
 
         <div

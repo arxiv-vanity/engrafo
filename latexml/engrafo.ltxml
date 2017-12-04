@@ -18,4 +18,8 @@ DefMacro('\IEEEauthorblockA{}', '#1');
 DefMacro('\IEEEmembership{}', '#1');
 DefMacro('\IEEEauthorrefmark{}', '\textsuperscript{\footnotesize #1}}');
 
+# icml2017.sty
+DefMacro('\icmltitle{}', '\title{#1}');
+DefMacro('\icmltitlerunning{}', '\title{#1}');
+
 1;

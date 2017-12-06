@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "async": "^2.6.0",
-    "aws-sdk": "^2.127.0",
+    "aws-sdk": "^2.164.0",
     "distill-template": "git+https://github.com/arxiv-vanity/template.git#engrafo",
     "fs-extra": "^4.0.3",
     "linkify-urls": "^1.4.0",

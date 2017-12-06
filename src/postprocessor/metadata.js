@@ -15,6 +15,10 @@ let css = `
   margin-bottom: 12px;
 }
 
+.engrafo-metadata .ltx_authors {
+  margin-bottom: 12px;
+}
+
 .engrafo-metadata:first-line {
   font-weight: bold;
 }

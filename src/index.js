@@ -20,6 +20,7 @@ exports.renderLatexml = (texPath, callback) => {
       "--dest", htmlPath,
       "--format", "html5",
       "--mathtex",
+      "--svg",
       "--verbose",
       "--preload", "/app/latexml/engrafo.ltxml",
       "--preload", "/usr/src/latexml/lib/LaTeXML/Package/hyperref.sty.ltxml",

@@ -50,6 +50,12 @@ the tables that latexml gives us for now */
   .ltx_eqn_center_padright {
     display: none;
   }
+
+  /* Another hack to attempt to stop equations scrolling. This desperately
+  needs a proper fix. */
+  .ltx_equationgroup_container {
+    overflow-x: scroll;
+  }
 }
 
 `;
@@ -62,6 +68,13 @@ module.exports = function(dom) {
     math.className = "ltx_DisplayMath";
     // Add markup so mathjax picks it up
     math.innerHTML = `\\[ ${math.innerHTML} \\]`;
+  });
+
+
+  Array.from(dom.querySelectorAll(".ltx_equationgroup")).forEach(math => {
+    // These are sometimes not figures so add class to parent so we can make
+    // it scroll on overflow
+    math.parentNode.className += " ltx_equationgroup_container";
   });
 
   Array.from(dom.querySelectorAll(".ltx_Math")).forEach(math => {

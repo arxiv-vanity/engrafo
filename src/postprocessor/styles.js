@@ -124,7 +124,10 @@ dt-article .engrafo-metadata {
 }
 
 /* latexml stuff */
-.ltx_ERROR        { color:red; }
+.ltx_ERROR        {
+  color:red;
+  overflow-wrap: break-word;
+}
 .ltx_rdf          { display:none; }
 .ltx_missing      { color:red;}
 .ltx_nounicode    { color:red; }

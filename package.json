@@ -15,7 +15,7 @@
     "linkify-urls": "^1.4.0",
     "mathjax-node-page": "^1.4.1",
     "s3-recursive-uploader": "^0.3.0",
-    "tar": "^4.1.1",
+    "tar": "^4.2.0",
     "titlecase": "^1.1.2"
   },
   "devDependencies": {

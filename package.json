@@ -19,7 +19,7 @@
     "titlecase": "^1.1.2"
   },
   "devDependencies": {
-    "jest": "^22.0.3",
+    "jest": "^22.0.4",
     "tmp": "^0.0.33"
   }
 }

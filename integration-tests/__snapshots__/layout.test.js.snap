@@ -710,13 +710,13 @@ exports[`paragraphs and line breaks render correctly 1`] = `
         
 
         <div
-          class="ltx_para"
+          class="ltx_para ltx_centering"
           id="p3"
         >
           
 
           <p
-            class="ltx_p ltx_align_center"
+            class="ltx_p"
           >
             This is a centered paragraph.
           </p>

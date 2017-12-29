@@ -31,7 +31,7 @@ RUN apt-get update -qq && apt-get install -qy \
   imagemagick libimage-magick-perl perl-doc
 RUN mkdir -p /usr/src/latexml
 WORKDIR /usr/src/latexml
-ENV LATEXML_COMMIT=790392444fd532ba86f34b06866ba769c477774f
+ENV LATEXML_COMMIT=e14e9f07d5fca8a124953ddb04a9abaeb65a618e
 RUN curl -L https://github.com/brucemiller/LaTeXML/tarball/$LATEXML_COMMIT | tar --strip-components 1 -zxf -
 RUN perl Makefile.PL; make; make install
 

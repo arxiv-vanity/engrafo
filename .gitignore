@@ -3,6 +3,7 @@
 
 # node
 /node_modules
+/yarn-error.log
 
 # arxiv-sanity-sanity prototype
 /server/papers

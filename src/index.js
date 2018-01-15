@@ -6,7 +6,7 @@ var jsdom = require("jsdom");
 var path = require("path");
 var readline = require("readline");
 
-var input = require("./input");
+var io = require("./io");
 var math = require("./math");
 var postprocessors = require("./postprocessor");
 
@@ -21,9 +21,7 @@ var unlinkIfExists = function(path) {
 };
 
 // render a document with latexml
-exports.renderLatexml = (texPath, callback) => {
-  var outputDir = path.dirname(texPath);
-  var texFilename = path.basename(texPath);
+exports.renderLatexml = (texPath, outputDir, callback) => {
   var htmlPath = path.join(outputDir, "index.html");
 
   var latexmlc = childProcess.spawn("latexmlc", [
@@ -36,6 +34,7 @@ exports.renderLatexml = (texPath, callback) => {
       "--preload", "/usr/src/latexml/lib/LaTeXML/Package/hyperref.sty.ltxml",
       texPath
     ], {
+      cwd: path.dirname(texPath)
   });
   latexmlc.on("error", callback);
 
@@ -134,29 +133,43 @@ exports.processHTML = (htmlPath, callback) => {
 // Render and postprocess a LaTeX file into outputDir (created if does not
 // exist). Calls callback with an error on failure or a path to an HTML file
 // on success.
-exports.render = ({inputPath, outputDir, postProcessing}, callback) => {
+exports.render = ({input, output, postProcessing}, callback) => {
   if (postProcessing === undefined) {
     postProcessing = true;
   }
 
-  var texPath, htmlPath;
+  var texPath, outputDir, htmlPath;
   async.waterfall([
     (callback) => {
-      input.prepareRenderingDir(inputPath, outputDir, callback);
+      io.prepareInputDirectory(input, callback);
+    },
+    (inputDir, callback) => {
+      io.pickLatexFile(inputDir, callback);
     },
     (_texPath, callback) => {
       texPath = _texPath;
-      console.log("Rendering tex file", texPath);
-      exports.renderLatexml(texPath, callback);
+
+      io.prepareOutputDirectory(output, callback);
+    },
+    (_outputDir, callback) => {
+      outputDir = _outputDir;
+      console.log(`Rendering tex file ${texPath} to ${outputDir}`);
+      exports.renderLatexml(texPath, outputDir, callback);
     },
     (_htmlPath, callback) => {
       htmlPath = _htmlPath;
       if (postProcessing) {
         exports.processHTML(htmlPath, callback);
+      } else {
+        callback();
       }
     },
     (callback) => {
-      input.uploadOutput(texPath, outputDir, callback);
+      if (output.startsWith('s3://')) {
+        io.uploadOutputToS3(outputDir, output, callback);
+      } else {
+        callback();
+      }
     }
   ], (err) => {
     callback(err, htmlPath);

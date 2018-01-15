@@ -4,12 +4,12 @@ var jsdom = require("jsdom");
 var path = require("path");
 var tmp = require("tmp");
 
-exports.renderToDom = (inputPath, callback) => {
-  inputPath = path.join(__dirname, inputPath);
+exports.renderToDom = (input, callback) => {
+  input = path.join(__dirname, input);
 
-  tmp.dir({unsafeCleanup: true}, (err, outputDir, cleanupCallback) => {
+  tmp.dir({unsafeCleanup: true}, (err, output, cleanupCallback) => {
     if (err) return callback(err);
-    engrafo.render({inputPath: inputPath, outputDir: outputDir}, (err, htmlPath) => {
+    engrafo.render({input: input, output: output}, (err, htmlPath) => {
       if (err) {
         cleanupCallback();
         return callback(err);

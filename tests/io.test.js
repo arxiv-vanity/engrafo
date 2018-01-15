@@ -2,83 +2,51 @@ var fs = require("fs");
 var path = require("path");
 var tar = require("tar");
 var tmp = require("tmp");
-var input = require("../src/input");
+var io = require("../src/io");
 
-describe("prepareRenderingDir", () => {
+describe("prepareInputDirectory", () => {
   beforeEach(done => {
     tmp.dir({ unsafeCleanup: true }, (err, dir, cleanup) => {
-      this.inputDir = dir;
-      this.inputCleanup = cleanup;
-      tmp.dir({ unsafeCleanup: true }, (err, dir, cleanup) => {
-        this.outputDir = dir;
-        this.outputCleanup = cleanup;
-        done();
-      });
+      this.dir = dir;
+      this.cleanup = cleanup;
+      done();
     });
   });
   afterEach(() => {
-    this.inputCleanup();
-    this.outputCleanup();
-  });
-
-  it("copies input when specifying a file", done => {
-    fs.writeFileSync(path.join(this.inputDir, "main.tex"), "");
-    fs.writeFileSync(path.join(this.inputDir, "cool.gif"), "");
-    var texPath = path.join(this.inputDir, "main.tex");
-    input.prepareRenderingDir(texPath, this.outputDir, (err, outputTexPath) => {
-      if (err) throw err;
-      expect(outputTexPath).toBe(path.join(this.outputDir, "main.tex"));
-      expect(fs.lstatSync(outputTexPath).isFile()).toBe(true);
-      expect(fs.lstatSync(path.join(this.outputDir, "cool.gif")).isFile()).toBe(true);
-      done();
-    });
-  });
-
-  it("copies input and chooses a .tex file when specifying a directory", done => {
-    fs.writeFileSync(path.join(this.inputDir, "main.tex"), "");
-    fs.writeFileSync(path.join(this.inputDir, "nope.tex"), "");
-    fs.writeFileSync(path.join(this.inputDir, "cool.gif"), "");
-    input.prepareRenderingDir(this.inputDir, this.outputDir, (err, outputTexPath) => {
-      if (err) throw err;
-      expect(outputTexPath).toBe(path.join(this.outputDir, "main.tex"));
-      expect(fs.lstatSync(outputTexPath).isFile()).toBe(true);
-      expect(fs.lstatSync(path.join(this.outputDir, "cool.gif")).isFile()).toBe(true);
-      done();
-    });
-  });
-
-  it("creates the output directory if it does not exist", done => {
-    fs.writeFileSync(path.join(this.inputDir, "main.tex"), "");
-    var outputDir = path.join(this.outputDir, "doesnotexist");
-    input.prepareRenderingDir(this.inputDir, outputDir, (err, outputTexPath) => {
-      if (err) throw err;
-      expect(fs.lstatSync(outputDir).isDirectory()).toBe(true);
-      expect(outputTexPath).toBe(path.join(outputDir, "main.tex"));
-      done();
-    });
+    this.cleanup();
   });
 
   it("extracts tarballs", done => {
-    fs.writeFileSync(path.join(this.inputDir, "main.tex"), "");
-    var tarball = path.join(this.inputDir, 'tarball.tar.gz');
-    tar.c({gzip: true, file: tarball, strict: true, sync: true, cwd: this.inputDir}, ["main.tex"]);
-    input.prepareRenderingDir(tarball, this.outputDir, (err, outputTexPath) => {
+    fs.writeFileSync(path.join(this.dir, "main.tex"), "");
+    var tarball = path.join(this.dir, 'tarball.tar.gz');
+    tar.c({gzip: true, file: tarball, strict: true, sync: true, cwd: this.dir}, ["main.tex"]);
+    fs.unlinkSync(path.join(this.dir, "main.tex"));
+    io.prepareInputDirectory(tarball, (err, inputPath) => {
       if (err) throw err;
-      expect(outputTexPath).toBe(path.join(this.outputDir, "main.tex"));
-      expect(fs.lstatSync(outputTexPath).isFile()).toBe(true);
+      var texFile = path.join(inputPath, "main.tex");
+      expect(fs.lstatSync(texFile).isFile()).toBe(true);
       done();
     });
   });
+});
 
-  it("extracts tarballs into a directory that doesn't exist", done => {
-    fs.writeFileSync(path.join(this.inputDir, "main.tex"), "");
-    var tarball = path.join(this.inputDir, 'tarball.tar.gz');
-    var outputDir = path.join(this.outputDir, "does/not/exist");
-    tar.c({gzip: true, file: tarball, strict: true, sync: true, cwd: this.inputDir}, ["main.tex"]);
-    input.prepareRenderingDir(tarball, outputDir, (err, outputTexPath) => {
+describe("prepareOutputDirectory", () => {
+  beforeEach(done => {
+    tmp.dir({ unsafeCleanup: true }, (err, dir, cleanup) => {
+      this.dir = dir;
+      this.cleanup = cleanup;
+      done();
+    });
+  });
+  afterEach(() => {
+    this.cleanup();
+  });
+
+  it("creates the output directory if it does not exist", done => {
+    var outputDir = path.join(this.dir, "doesnotexist");
+    io.prepareOutputDirectory(outputDir, (err, _) => {
       if (err) throw err;
-      expect(outputTexPath).toBe(path.join(outputDir, "main.tex"));
-      expect(fs.lstatSync(outputTexPath).isFile()).toBe(true);
+      expect(fs.lstatSync(outputDir).isDirectory()).toBe(true);
       done();
     });
   });
@@ -99,9 +67,9 @@ describe("pickLatexFile", () => {
     fs.writeFileSync(path.join(this.dir, "ms.tex"), "");
     fs.writeFileSync(path.join(this.dir, "nope.tex"), "");
     fs.writeFileSync(path.join(this.dir, "cool.gif"), "");
-    input.pickLatexFile(this.dir, (err, filename) => {
+    io.pickLatexFile(this.dir, (err, filename) => {
       if (err) throw err;
-      expect(filename).toBe("ms.tex");
+      expect(path.basename(filename)).toBe("ms.tex");
       done();
     });
   });
@@ -109,9 +77,9 @@ describe("pickLatexFile", () => {
     fs.writeFileSync(path.join(this.dir, "main.tex"), "");
     fs.writeFileSync(path.join(this.dir, "nope.tex"), "");
     fs.writeFileSync(path.join(this.dir, "cool.gif"), "");
-    input.pickLatexFile(this.dir, (err, filename) => {
+    io.pickLatexFile(this.dir, (err, filename) => {
       if (err) throw err;
-      expect(filename).toBe("main.tex");
+      expect(path.basename(filename)).toBe("main.tex");
       done();
     });
   });
@@ -119,9 +87,9 @@ describe("pickLatexFile", () => {
     fs.writeFileSync(path.join(this.dir, "wibble.tex"), "");
     fs.writeFileSync(path.join(this.dir, "cool.gif"), "");
     fs.writeFileSync(path.join(this.dir, "rad.jpg"), "");
-    input.pickLatexFile(this.dir, (err, filename) => {
+    io.pickLatexFile(this.dir, (err, filename) => {
       if (err) throw err;
-      expect(filename).toBe("wibble.tex");
+      expect(path.basename(filename)).toBe("wibble.tex");
       done();
     });
   });
@@ -130,9 +98,9 @@ describe("pickLatexFile", () => {
     fs.writeFileSync(path.join(this.dir, "correct.tex"), "\\documentclass[12pt, letterpaper]{article}");
     fs.writeFileSync(path.join(this.dir, "cool.gif"), "");
     fs.writeFileSync(path.join(this.dir, "rad.jpg"), "");
-    input.pickLatexFile(this.dir, (err, filename) => {
+    io.pickLatexFile(this.dir, (err, filename) => {
       if (err) throw err;
-      expect(filename).toBe("correct.tex");
+      expect(path.basename(filename)).toBe("correct.tex");
       done();
     });
   });
@@ -142,16 +110,16 @@ describe("pickLatexFile", () => {
     fs.writeFileSync(path.join(this.dir, "correct.bbl"), "");
     fs.writeFileSync(path.join(this.dir, "cool.gif"), "");
     fs.writeFileSync(path.join(this.dir, "rad.jpg"), "");
-    input.pickLatexFile(this.dir, (err, filename) => {
+    io.pickLatexFile(this.dir, (err, filename) => {
       if (err) throw err;
-      expect(filename).toBe("correct.tex");
+      expect(path.basename(filename)).toBe("correct.tex");
       done();
     });
   });
   it("fails if there aren't any tex files", done => {
     fs.writeFileSync(path.join(this.dir, "cool.gif"), "");
     fs.writeFileSync(path.join(this.dir, "rad.jpg"), "");
-    input.pickLatexFile(this.dir, (err, filename) => {
+    io.pickLatexFile(this.dir, (err, filename) => {
       expect(err.toString()).toContain("No .tex files found");
       done();
     });
@@ -161,7 +129,7 @@ describe("pickLatexFile", () => {
     fs.writeFileSync(path.join(this.dir, "nope.tex"), "");
     fs.writeFileSync(path.join(this.dir, "cool.gif"), "");
     fs.writeFileSync(path.join(this.dir, "rad.jpg"), "");
-    input.pickLatexFile(this.dir, (err, filename) => {
+    io.pickLatexFile(this.dir, (err, filename) => {
       expect(err.toString()).toContain("No .tex files with \\documentclass found");
       done();
     });
@@ -173,7 +141,7 @@ describe("pickLatexFile", () => {
     fs.writeFileSync(path.join(this.dir, "correct.bbl"), "");
     fs.writeFileSync(path.join(this.dir, "cool.gif"), "");
     fs.writeFileSync(path.join(this.dir, "rad.jpg"), "");
-    input.pickLatexFile(this.dir, (err, filename) => {
+    io.pickLatexFile(this.dir, (err, filename) => {
       expect(err.toString()).toContain("Ambiguous LaTeX path");
       done();
     });

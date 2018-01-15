@@ -35,7 +35,7 @@ exports[`images in figures render correctly 1`] = `
             class="ltx_graphics"
             height="301"
             id="S0.F1.g1"
-            src="x1.png"
+            src="fig.png"
             width="284"
           />
           
@@ -183,7 +183,7 @@ exports[`multiple images in figures render correctly 1`] = `
                     class="ltx_graphics"
                     height="301"
                     id="S0.F1.g1"
-                    src="x1.png"
+                    src="fig.png"
                     width="284"
                   />
                 </td>
@@ -317,7 +317,7 @@ exports[`plain images render correctly 1`] = `
             class="ltx_graphics"
             height="318"
             id="p1.g1"
-            src="x1.png"
+            src="fig.png"
             width="300"
           />
           

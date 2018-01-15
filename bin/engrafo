@@ -23,14 +23,14 @@ if (program.args.length != 1) {
   process.exit(1);
 }
 
-var inputPath = program.args[0];
-var outputDir = program.output ||
-    (fs.lstatSync(inputPath).isDirectory()
-     ? inputPath : path.dirname(inputPath));
+var input = program.args[0];
+var output = program.output ||
+    (fs.lstatSync(input).isDirectory()
+     ? input : path.dirname(input));
 
 var options = {
-  inputPath: inputPath,
-  outputDir: outputDir,
+  input: input,
+  output: output,
   postProcessing: program.postProcessing
 };
 

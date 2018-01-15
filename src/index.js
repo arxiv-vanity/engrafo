@@ -10,6 +10,16 @@ var input = require("./input");
 var math = require("./math");
 var postprocessors = require("./postprocessor");
 
+var unlinkIfExists = function(path) {
+  try {
+    fs.unlinkSync(path);
+  } catch(err) {
+    if (err.code !== 'ENOENT') {
+      throw err;
+    }
+  }
+};
+
 // render a document with latexml
 exports.renderLatexml = (texPath, callback) => {
   var outputDir = path.dirname(texPath);
@@ -39,6 +49,12 @@ exports.renderLatexml = (texPath, callback) => {
       callback(new Error(`latexmlc exited with status ${code}`));
       return;
     }
+
+    // HACK: Clean up stuff we don't want
+    unlinkIfExists(path.join(outputDir, "LaTeXML.cache"));
+    unlinkIfExists(path.join(outputDir, "LaTeXML.css"));
+    unlinkIfExists(path.join(outputDir, "ltx-article.css"));
+
     return callback(null, htmlPath);
   });
 

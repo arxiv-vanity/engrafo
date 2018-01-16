@@ -53,6 +53,7 @@ exports.renderLatexml = (texPath, outputDir, callback) => {
     unlinkIfExists(path.join(outputDir, "LaTeXML.cache"));
     unlinkIfExists(path.join(outputDir, "LaTeXML.css"));
     unlinkIfExists(path.join(outputDir, "ltx-article.css"));
+    unlinkIfExists(path.join(outputDir, "ltx-listings.css"));
 
     return callback(null, htmlPath);
   });

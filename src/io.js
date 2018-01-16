@@ -20,7 +20,7 @@ exports.prepareInputDirectory = (givenPath, callback) => {
     },
     (inputPath, callback) => {
       // Untar tarball, if required
-      if (inputPath.endsWith(".tar.gz")) {
+      if (inputPath.endsWith(".gz")) {
         extractTarballToTmpdir(inputPath, callback);
       } else {
         callback(null, inputPath);

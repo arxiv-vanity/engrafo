@@ -1,6 +1,6 @@
+var childProcess = require("child_process");
 var fs = require("fs");
 var path = require("path");
-var tar = require("tar");
 var tmp = require("tmp");
 var io = require("../src/io");
 
@@ -18,10 +18,26 @@ describe("prepareInputDirectory", () => {
 
   it("extracts tarballs", done => {
     fs.writeFileSync(path.join(this.dir, "main.tex"), "");
-    var tarball = path.join(this.dir, 'tarball.tar.gz');
-    tar.c({gzip: true, file: tarball, strict: true, sync: true, cwd: this.dir}, ["main.tex"]);
+    var tarball = path.join(this.dir, 'tarball.gz');
+    childProcess.execSync(`tar -czf "${tarball}" main.tex`, {cwd: this.dir});
     fs.unlinkSync(path.join(this.dir, "main.tex"));
     io.prepareInputDirectory(tarball, (err, inputPath) => {
+      if (err) throw err;
+      var texFile = path.join(inputPath, "main.tex");
+      expect(fs.lstatSync(texFile).isFile()).toBe(true);
+      done();
+    });
+  });
+
+  it("extracts gzipped tex files", done => {
+    // Create .gz file with tex file in it
+    var inputFile = path.join(this.dir, "1607.06499");
+    fs.writeFileSync(inputFile, "\\documentclass{article}");
+    childProcess.execSync(`gzip "${inputFile}"`);
+    inputFile = `${inputFile}.gz`;
+    expect(fs.lstatSync(inputFile).isFile()).toBe(true);
+
+    io.prepareInputDirectory(inputFile, (err, inputPath) => {
       if (err) throw err;
       var texFile = path.join(inputPath, "main.tex");
       expect(fs.lstatSync(texFile).isFile()).toBe(true);

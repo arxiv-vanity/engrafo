@@ -1,9 +1,9 @@
 var async = require("async");
+var childProcess = require("child_process");
 var fs = require("fs-extra");
 var path = require("path");
 var uploader = require("s3-recursive-uploader");
 var AWS = require('aws-sdk');
-var tar = require("tar");
 var tmp = require("tmp");
 var url = require("url");
 
@@ -21,7 +21,7 @@ exports.prepareInputDirectory = (givenPath, callback) => {
     (inputPath, callback) => {
       // Untar tarball, if required
       if (inputPath.endsWith(".gz")) {
-        extractTarballToTmpdir(inputPath, callback);
+        extractGzipToTmpdir(inputPath, callback);
       } else {
         callback(null, inputPath);
       }
@@ -72,7 +72,7 @@ var fetchInputFromS3 = (s3Url, callback) => {
   });
 };
 
-var extractTarballToTmpdir = (tarballPath, callback) => {
+var extractGzipToTmpdir = (gzipPath, callback) => {
   var tmpDir;
   async.waterfall([
     (callback) => {
@@ -80,7 +80,18 @@ var extractTarballToTmpdir = (tarballPath, callback) => {
     },
     (_tmpDir, _, callback) => {
       tmpDir = _tmpDir;
-      tar.extract({file: tarballPath, cwd: tmpDir, strict: true}, callback);
+      childProcess.exec(`gunzip ${gzipPath}`, (err) => callback(err));
+    },
+    (callback) => {
+      var gunzippedPath = gzipPath.replace(/\.gz$/, "");
+      childProcess.exec(`tar -xf "${gunzippedPath}"`, {cwd: tmpDir}, (err, stdout, stderr) => {
+        if (err && stderr.toString().indexOf("tar: This does not look like a tar archive") !== -1) {
+          console.log("Input file is gzipped but not a tarball, assuming it is a .tex file");
+          fs.rename(gunzippedPath, path.join(tmpDir, "main.tex"), callback);
+        } else {
+          callback(err);
+        }
+      });
     }
   ], (err) => {
     callback(err, tmpDir);

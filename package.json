@@ -12,7 +12,7 @@
     "aws-sdk": "^2.127.0",
     "distill-template": "git+https://github.com/arxiv-vanity/template.git#engrafo",
     "fs-extra": "^5.0.0",
-    "linkify-urls": "^1.5.0",
+    "linkify-urls": "^1.6.0",
     "mathjax-node-page": "^1.4.1",
     "s3-recursive-uploader": "^0.3.0",
     "titlecase": "^1.1.2"

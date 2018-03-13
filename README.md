@@ -63,7 +63,7 @@ Or individual tests by matching a string:
 
 ### Writing integration tests
 
-The integration tests in `integration-tests/` render small LaTeX files and ensure they produce a particular HTML output.
+The integration tests in `integration-tests/` render small LaTeX files and ensure they produce a particular HTML output. They also compare a screenshot of the output with a known good screenshot.
 
 The integration tests use [Jest's](http://facebook.github.io/jest/) snapshotting feature.
 

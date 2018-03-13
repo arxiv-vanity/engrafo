@@ -1,8 +1,18 @@
-var engrafo = require("../src");
-var fs = require("fs");
-var jsdom = require("jsdom");
-var path = require("path");
-var tmp = require("tmp");
+const engrafo = require("../src");
+const fs = require("fs");
+const { configureToMatchImageSnapshot } = require('jest-image-snapshot');
+const jsdom = require("jsdom");
+const path = require("path");
+const puppeteer = require('puppeteer');
+const tmp = require("tmp");
+
+const toMatchImageSnapshot = configureToMatchImageSnapshot({
+  customDiffConfig: {
+    threshold: 0.01,
+  },
+  noColors: true,
+});
+expect.extend({ toMatchImageSnapshot });
 
 exports.renderToDom = (input, callback) => {
   input = path.join(__dirname, input);
@@ -25,18 +35,25 @@ exports.renderToDom = (input, callback) => {
             FetchExternalResources: false
           }
         });
-        callback(null, cleanupCallback, document);
+        callback(null, cleanupCallback, htmlPath, document);
       });
     });
   });
 };
 
-exports.expectBodyToMatchSnapshot = (inputPath, done) => {
-  exports.renderToDom(inputPath, (err, cleanupCallback, document) => {
+exports.expectBodyToMatchSnapshot = async (inputPath, done) => {
+  exports.renderToDom(inputPath, async (err, cleanupCallback, htmlPath, document) => {
     if (err) throw err;
     removeDescendantsWithTagName(document.body, "script");
     removeDescendantsWithTagName(document.body, "style");
     expect(document.body).toMatchSnapshot();
+
+    await page.goto(`file://${htmlPath}`);
+    const screenshot = await page.screenshot({
+      fullPage: true
+    });
+    expect(screenshot).toMatchImageSnapshot();
+
     cleanupCallback();
     done();
   });

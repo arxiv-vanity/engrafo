@@ -11,5 +11,6 @@ exec docker run \
     $PANDOC_VOLUME_FLAG \
     --rm \
     -it \
+    --cap-add=SYS_ADMIN \
     engrafo \
     node_modules/.bin/jest --silent "$@"

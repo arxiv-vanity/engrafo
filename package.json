@@ -19,6 +19,9 @@
   },
   "devDependencies": {
     "jest": "^22.4.2",
+    "jest-image-snapshot": "^2.3.0",
+    "jest-puppeteer-preset": "^2.0.1",
+    "puppeteer": "^1.1.1",
     "tmp": "^0.0.33"
   }
 }

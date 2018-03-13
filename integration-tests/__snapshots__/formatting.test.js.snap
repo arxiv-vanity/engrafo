@@ -245,19 +245,20 @@ exports[`lists render correctly 1`] = `
 
           <ul
             class="ltx_itemize"
+            id="I1"
           >
             
 
             <li
               class="ltx_item"
-              id=".i1"
+              id="I1.i1"
             >
               
  
 
               <div
                 class="ltx_para"
-                id=".i1.p1"
+                id="I1.i1.p1"
               >
                 
 
@@ -276,14 +277,14 @@ exports[`lists render correctly 1`] = `
 
             <li
               class="ltx_item"
-              id=".i2"
+              id="I1.i2"
             >
               
  
 
               <div
                 class="ltx_para"
-                id=".i2.p1"
+                id="I1.i2.p1"
               >
                 
 
@@ -314,18 +315,20 @@ exports[`lists render correctly 1`] = `
 
           <ol
             class="ltx_enumerate"
+            id="I2"
           >
             
 
             <li
               class="ltx_item"
+              id="I2.i1"
             >
               
  
 
               <div
                 class="ltx_para"
-                id="p2.p1"
+                id="I2.i1.p1"
               >
                 
 
@@ -344,13 +347,14 @@ exports[`lists render correctly 1`] = `
 
             <li
               class="ltx_item"
+              id="I2.i2"
             >
               
  
 
               <div
                 class="ltx_para"
-                id="p2.p2"
+                id="I2.i2.p1"
               >
                 
 
@@ -381,19 +385,20 @@ exports[`lists render correctly 1`] = `
 
           <ul
             class="ltx_itemize"
+            id="I3"
           >
             
 
             <li
               class="ltx_item"
-              id=".i1a"
+              id="I3.i1"
             >
               
  
 
               <div
                 class="ltx_para"
-                id=".i1a.p1"
+                id="I3.i1.p1"
               >
                 
 
@@ -406,19 +411,20 @@ exports[`lists render correctly 1`] = `
 
                 <ul
                   class="ltx_itemize"
+                  id="I3.I1"
                 >
                   
 
                   <li
                     class="ltx_item"
-                    id=".i1b"
+                    id="I3.I1.i1"
                   >
                     
  
 
                     <div
                       class="ltx_para"
-                      id=".i1b.p1"
+                      id="I3.I1.i1.p1"
                     >
                       
 
@@ -437,14 +443,14 @@ exports[`lists render correctly 1`] = `
 
                   <li
                     class="ltx_item"
-                    id=".i2a"
+                    id="I3.I1.i2"
                   >
                     
  
 
                     <div
                       class="ltx_para"
-                      id=".i2a.p1"
+                      id="I3.I1.i2.p1"
                     >
                       
 
@@ -472,14 +478,14 @@ exports[`lists render correctly 1`] = `
 
             <li
               class="ltx_item"
-              id=".i2b"
+              id="I3.i2"
             >
               
  
 
               <div
                 class="ltx_para"
-                id=".i2b.p1"
+                id="I3.i2.p1"
               >
                 
 
@@ -504,7 +510,7 @@ exports[`lists render correctly 1`] = `
 
         <section
           class="ltx_section"
-          id=".i2c"
+          id="S1"
         >
           
 
@@ -517,14 +523,9 @@ exports[`lists render correctly 1`] = `
               class="ltx_tag ltx_tag_section"
             >
               <a
-                href="#.i2c"
+                href="#S1"
               >
-                <span
-                  class="ltx_ERROR undefined"
-                >
-                  \\thesection
-                </span>
-                 
+                1 
               </a>
             </span>
             A nested ordered list
@@ -534,24 +535,26 @@ exports[`lists render correctly 1`] = `
 
           <div
             class="ltx_para"
-            id=".i2c.p1"
+            id="S1.p1"
           >
             
 
             <ol
               class="ltx_enumerate"
+              id="I4"
             >
               
 
               <li
                 class="ltx_item"
+                id="I4.i1"
               >
                 
  
 
                 <div
                   class="ltx_para"
-                  id=".i2c.p1.p1"
+                  id="I4.i1.p1"
                 >
                   
 
@@ -559,23 +562,26 @@ exports[`lists render correctly 1`] = `
                     class="ltx_p"
                   >
                     First item
+
                   </p>
                   
 
                   <ol
                     class="ltx_enumerate"
+                    id="I4.I1"
                   >
                     
 
                     <li
                       class="ltx_item"
+                      id="I4.I1.i1"
                     >
                       
  
 
                       <div
                         class="ltx_para"
-                        id=".i2c.p1.p1.p1"
+                        id="I4.I1.i1.p1"
                       >
                         
 
@@ -594,13 +600,14 @@ exports[`lists render correctly 1`] = `
 
                     <li
                       class="ltx_item"
+                      id="I4.I1.i2"
                     >
                       
  
 
                       <div
                         class="ltx_para"
-                        id=".i2c.p1.p1.p2"
+                        id="I4.I1.i2.p1"
                       >
                         
 
@@ -628,13 +635,14 @@ exports[`lists render correctly 1`] = `
 
               <li
                 class="ltx_item"
+                id="I4.i2"
               >
                 
  
 
                 <div
                   class="ltx_para"
-                  id=".i2c.p1.p2"
+                  id="I4.i2.p1"
                 >
                   
 

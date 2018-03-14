@@ -352,11 +352,11 @@ subsubsection
                 class="ltx_p"
               >
                 This is 
-                <em
-                  class="ltx_emph ltx_font_italic"
+                <span
+                  class="ltx_text ltx_emph ltx_font_italic"
                 >
                   emph
-                </em>
+                </span>
                  
 
                 <br
@@ -1696,6 +1696,7 @@ listing command
 
               <div
                 class="ltx_listingline"
+                id="lstnumberx1"
               >
                 
 
@@ -1758,6 +1759,7 @@ listing command
 
               <div
                 class="ltx_listingline"
+                id="lstnumberx2"
               >
                 
 
@@ -1778,6 +1780,7 @@ listing command
 
               <div
                 class="ltx_listingline"
+                id="lstnumberx3"
               >
                 
 
@@ -1820,6 +1823,7 @@ listing command
 
               <div
                 class="ltx_listingline"
+                id="lstnumberx4"
               >
                 
 
@@ -1840,6 +1844,7 @@ listing command
 
               <div
                 class="ltx_listingline"
+                id="lstnumberx5"
               >
                 
 
@@ -1878,6 +1883,7 @@ listing command
 
               <div
                 class="ltx_listingline"
+                id="lstnumberx6"
               >
                 
 
@@ -1950,20 +1956,20 @@ listing command
 
             <ul
               class="ltx_itemize"
-              id="I1"
+              id="S6.I1"
             >
               
 
               <li
                 class="ltx_item"
-                id="I1.i1"
+                id="S6.I1.i1"
               >
                 
  
 
                 <div
                   class="ltx_para"
-                  id="I1.i1.p1"
+                  id="S6.I1.i1.p1"
                 >
                   
 
@@ -1982,14 +1988,14 @@ listing command
 
               <li
                 class="ltx_item"
-                id="I1.i2"
+                id="S6.I1.i2"
               >
                 
  
 
                 <div
                   class="ltx_para"
-                  id="I1.i2.p1"
+                  id="S6.I1.i2.p1"
                 >
                   
 
@@ -2020,20 +2026,20 @@ listing command
 
             <ol
               class="ltx_enumerate"
-              id="I2"
+              id="S6.I2"
             >
               
 
               <li
                 class="ltx_item"
-                id="I2.i1"
+                id="S6.I2.i1"
               >
                 
  
 
                 <div
                   class="ltx_para"
-                  id="I2.i1.p1"
+                  id="S6.I2.i1.p1"
                 >
                   
 
@@ -2052,14 +2058,14 @@ listing command
 
               <li
                 class="ltx_item"
-                id="I2.i2"
+                id="S6.I2.i2"
               >
                 
  
 
                 <div
                   class="ltx_para"
-                  id="I2.i2.p1"
+                  id="S6.I2.i2.p1"
                 >
                   
 
@@ -2090,20 +2096,20 @@ listing command
 
             <ul
               class="ltx_itemize"
-              id="I3"
+              id="S6.I3"
             >
               
 
               <li
                 class="ltx_item"
-                id="I3.i1"
+                id="S6.I3.i1"
               >
                 
  
 
                 <div
                   class="ltx_para"
-                  id="I3.i1.p1"
+                  id="S6.I3.i1.p1"
                 >
                   
 
@@ -2116,20 +2122,20 @@ listing command
 
                   <ul
                     class="ltx_itemize"
-                    id="I3.I1"
+                    id="S6.I3.I1"
                   >
                     
 
                     <li
                       class="ltx_item"
-                      id="I3.I1.i1"
+                      id="S6.I3.i1.i1"
                     >
                       
  
 
                       <div
                         class="ltx_para"
-                        id="I3.I1.i1.p1"
+                        id="S6.I3.i1.i1.p1"
                       >
                         
 
@@ -2148,14 +2154,14 @@ listing command
 
                     <li
                       class="ltx_item"
-                      id="I3.I1.i2"
+                      id="S6.I3.i1.i2"
                     >
                       
  
 
                       <div
                         class="ltx_para"
-                        id="I3.I1.i2.p1"
+                        id="S6.I3.i1.i2.p1"
                       >
                         
 
@@ -2184,14 +2190,14 @@ listing command
 
               <li
                 class="ltx_item"
-                id="I3.i2"
+                id="S6.I3.i2"
               >
                 
  
 
                 <div
                   class="ltx_para"
-                  id="I3.i2.p1"
+                  id="S6.I3.i2.p1"
                 >
                   
 
@@ -2243,20 +2249,20 @@ listing command
 
               <ol
                 class="ltx_enumerate"
-                id="I4"
+                id="S6.I4"
               >
                 
 
                 <li
                   class="ltx_item"
-                  id="I4.i1"
+                  id="S6.I4.i1"
                 >
                   
  
 
                   <div
                     class="ltx_para"
-                    id="I4.i1.p1"
+                    id="S6.I4.i1.p1"
                   >
                     
 
@@ -2269,20 +2275,20 @@ listing command
 
                     <ol
                       class="ltx_enumerate"
-                      id="I4.I1"
+                      id="S6.I4.I1"
                     >
                       
 
                       <li
                         class="ltx_item"
-                        id="I4.I1.i1"
+                        id="S6.I4.i1.i1"
                       >
                         
  
 
                         <div
                           class="ltx_para"
-                          id="I4.I1.i1.p1"
+                          id="S6.I4.i1.i1.p1"
                         >
                           
 
@@ -2301,14 +2307,14 @@ listing command
 
                       <li
                         class="ltx_item"
-                        id="I4.I1.i2"
+                        id="S6.I4.i1.i2"
                       >
                         
  
 
                         <div
                           class="ltx_para"
-                          id="I4.I1.i2.p1"
+                          id="S6.I4.i1.i2.p1"
                         >
                           
 
@@ -2336,14 +2342,14 @@ listing command
 
                 <li
                   class="ltx_item"
-                  id="I4.i2"
+                  id="S6.I4.i2"
                 >
                   
  
 
                   <div
                     class="ltx_para"
-                    id="I4.i2.p1"
+                    id="S6.I4.i2.p1"
                   >
                     
 
@@ -5295,7 +5301,7 @@ throughout the evening.
                 <span
                   class="ltx_tag ltx_tag_table"
                 >
-                  Table 1: 
+                  Table 1: 
                 </span>
                 Some numbers.
               </figcaption>
@@ -5390,7 +5396,7 @@ throughout the evening.
                 <span
                   class="ltx_tag ltx_tag_table"
                 >
-                  Table 2: 
+                  Table 2: 
                 </span>
                 Caption at the top is put at the bottom.
               </figcaption>
@@ -5512,7 +5518,7 @@ throughout the evening.
                 <span
                   class="ltx_tag ltx_tag_figure"
                 >
-                  Figure 1: 
+                  Figure 1: 
                 </span>
                 Fig.
               </figcaption>
@@ -5649,7 +5655,7 @@ throughout the evening.
                 <span
                   class="ltx_tag ltx_tag_figure"
                 >
-                  Figure 2: 
+                  Figure 2: 
                 </span>
                 Fig.
               </figcaption>
@@ -6335,11 +6341,11 @@ throughout the evening.
                   >
                     And a footnote with a
 second paragraph! And some 
-                    <em
-                      class="ltx_emph ltx_font_italic"
+                    <span
+                      class="ltx_text ltx_emph ltx_font_italic"
                     >
                       formatting
-                    </em>
+                    </span>
                     .
                   </span>
                 </span>
@@ -6522,11 +6528,11 @@ watershed basin graph.
           >
             And a footnote with a
 second paragraph! And some 
-            <em
-              class="ltx_emph ltx_font_italic"
+            <span
+              class="ltx_text ltx_emph ltx_font_italic"
             >
               formatting
-            </em>
+            </span>
             .
           </span>
         </span>
@@ -6887,11 +6893,11 @@ $ & % # { and }.
             >
               In printing, text is usually emphasized with an
 
-              <em
-                class="ltx_emph ltx_font_italic"
+              <span
+                class="ltx_text ltx_emph ltx_font_italic"
               >
                 italic
-              </em>
+              </span>
               
 type style.
             </p>
@@ -6907,7 +6913,7 @@ type style.
             
 
             <p
-              class="ltx_p"
+              class="ltx_p ltx_emph"
             >
               <span
                 class="ltx_text ltx_font_italic"
@@ -6915,11 +6921,11 @@ type style.
                 A long segment of text can also be emphasized
 in this way. Text within such a segment can be
 given 
-                <em
-                  class="ltx_emph ltx_font_upright"
-                >
-                  additional
-                </em>
+              </span>
+              additional
+              <span
+                class="ltx_text ltx_font_italic"
+              >
                  emphasis.
 
               </span>
@@ -6945,11 +6951,11 @@ This may be at a space, as between the “Mr.” and
 “Mr. Jones”, or within a word—especially when the word is a
 symbol like
 
-              <em
-                class="ltx_emph ltx_font_italic"
+              <span
+                class="ltx_text ltx_emph ltx_font_italic"
               >
                 itemnum
-              </em>
+              </span>
               
 that makes little sense when hyphenated across
 lines.
@@ -7701,11 +7707,11 @@ is just as dull as the first paragraph.
             >
               Another frequently-displayed structure is a list.
 The following is an example of an 
-              <em
-                class="ltx_emph ltx_font_italic"
+              <span
+                class="ltx_text ltx_emph ltx_font_italic"
               >
                 itemized
-              </em>
+              </span>
               
 list.
             </p>
@@ -7713,20 +7719,20 @@ list.
 
             <ul
               class="ltx_itemize"
-              id="I1"
+              id="S2.I1"
             >
               
 
               <li
                 class="ltx_item"
-                id="I1.i1"
+                id="S2.I1.i1"
               >
                 
  
 
                 <div
                   class="ltx_para"
-                  id="I1.i1.p1"
+                  id="S2.I1.i1.p1"
                 >
                   
 
@@ -7748,14 +7754,14 @@ mark is used.
 
               <li
                 class="ltx_item"
-                id="I1.i2"
+                id="S2.I1.i2"
               >
                 
  
 
                 <div
                   class="ltx_para"
-                  id="I1.i2.p1"
+                  id="S2.I1.i2.p1"
                 >
                   
 
@@ -7765,31 +7771,31 @@ mark is used.
                     This is the second item of the list. It
 contains another list nested inside it. The inner
 list is an 
-                    <em
-                      class="ltx_emph ltx_font_italic"
+                    <span
+                      class="ltx_text ltx_emph ltx_font_italic"
                     >
                       enumerated
-                    </em>
+                    </span>
                      list.
                   </p>
                   
 
                   <ol
                     class="ltx_enumerate"
-                    id="I1.I1"
+                    id="S2.I2"
                   >
                     
 
                     <li
                       class="ltx_item"
-                      id="I1.I1.i1"
+                      id="S2.I2.i1"
                     >
                       
  
 
                       <div
                         class="ltx_para"
-                        id="I1.I1.i1.p1"
+                        id="S2.I2.i1.p1"
                       >
                         
 
@@ -7809,14 +7815,14 @@ list that is nested within the itemized list.
 
                     <li
                       class="ltx_item"
-                      id="I1.I1.i2"
+                      id="S2.I2.i2"
                     >
                       
  
 
                       <div
                         class="ltx_para"
-                        id="I1.I1.i2.p1"
+                        id="S2.I2.i2.p1"
                       >
                         
 
@@ -7855,14 +7861,14 @@ part of the item.
 
               <li
                 class="ltx_item"
-                id="I1.i3"
+                id="S2.I2.i3"
               >
                 
  
 
                 <div
                   class="ltx_para"
-                  id="I1.i3.p1"
+                  id="S2.I2.i3.p1"
                 >
                   
 
@@ -7924,11 +7930,11 @@ For instead of making
                 />
                 
 Them do 
-                <em
-                  class="ltx_emph ltx_font_italic"
+                <span
+                  class="ltx_text ltx_emph ltx_font_italic"
                 >
                   all
-                </em>
+                </span>
                  line breaking, 
 
                 <br
@@ -8494,11 +8500,11 @@ Single quotes are typed like this: ‘single-quoted text’.
               class="ltx_p"
             >
               Emphasized text is typed like this: 
-              <em
-                class="ltx_emph ltx_font_italic"
+              <span
+                class="ltx_text ltx_emph ltx_font_italic"
               >
                 this is emphasized
-              </em>
+              </span>
               .
 Bold text is typed like this: 
               <span

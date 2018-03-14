@@ -53,7 +53,7 @@ RUN curl -sSL https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key ad
 
 RUN mkdir -p /usr/src/latexml
 WORKDIR /usr/src/latexml
-ENV LATEXML_COMMIT=e14e9f07d5fca8a124953ddb04a9abaeb65a618e
+ENV LATEXML_COMMIT=d33e9a32d18407fa9488857d4100b532b1548884
 RUN curl -L https://github.com/brucemiller/LaTeXML/tarball/$LATEXML_COMMIT | tar --strip-components 1 -zxf -
 RUN perl Makefile.PL; make; make install
 

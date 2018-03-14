@@ -62,7 +62,7 @@ module.exports = function(dom) {
   items.forEach(item => {
     // TODO maybe format this correctly so we don't have to rely on <ol>
     // numbering
-    item.removeChild(item.querySelector(".ltx_bibtag"));
+    item.removeChild(item.querySelector(".ltx_tag_bibitem"));
     // TODO style bibliography items
     ol.appendChild(item);
   });

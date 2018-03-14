@@ -9,7 +9,7 @@ module.exports = function(dom) {
   }
 
   // Distill does all numbering for us, so remove latexml generated stuff
-  var noteMarks = dom.querySelectorAll(".ltx_note_mark");
+  var noteMarks = dom.querySelectorAll(".ltx_tag_note, .ltx_note_mark");
   Array.from(noteMarks).forEach(noteMark => {
     noteMark.parentNode.removeChild(noteMark);
   });

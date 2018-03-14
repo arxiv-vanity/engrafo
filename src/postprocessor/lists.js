@@ -6,7 +6,6 @@ module.exports = function(dom) {
     // Remove list-style-type:none;
     li.removeAttribute("style");
     // ... and the fake bullet
-    utils.removeAll(li.querySelectorAll(".ltx_tag_enumerate"));
-    utils.removeAll(li.querySelectorAll(".ltx_tag_itemize"));
+    utils.removeAll(li.querySelectorAll(".ltx_tag_item"));
   });
 };

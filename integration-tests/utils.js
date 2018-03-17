@@ -8,7 +8,7 @@ const tmp = require("tmp");
 
 const toMatchImageSnapshot = configureToMatchImageSnapshot({
   customDiffConfig: {
-    threshold: 0.01,
+    threshold: 0.05,
   },
   noColors: true,
 });

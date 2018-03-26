@@ -990,9 +990,9 @@ expand-tilde@^1.2.2:
   dependencies:
     os-homedir "^1.0.1"
 
-expect-puppeteer@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/expect-puppeteer/-/expect-puppeteer-2.0.1.tgz#a9cc53b50d507fdea5748489ce03dbb760b321d8"
+expect-puppeteer@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/expect-puppeteer/-/expect-puppeteer-2.2.1.tgz#093d5bd106d05180d08b0e077c1c365d8b2fccf7"
 
 expect@^22.4.3:
   version "22.4.3"
@@ -1856,11 +1856,11 @@ jest-mock@^22.4.3:
   version "22.4.3"
   resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-22.4.3.tgz#f63ba2f07a1511772cdc7979733397df770aabc7"
 
-jest-puppeteer-preset@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/jest-puppeteer-preset/-/jest-puppeteer-preset-2.0.1.tgz#7067525922a033179226f8878eb927b54ccd96f6"
+jest-puppeteer-preset@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/jest-puppeteer-preset/-/jest-puppeteer-preset-2.2.1.tgz#0872d0012a68691e435a5f8e421f55310a4fdab6"
   dependencies:
-    expect-puppeteer "^2.0.1"
+    expect-puppeteer "^2.2.1"
     jest-environment-puppeteer "^2.0.0"
 
 jest-regex-util@^22.4.3:

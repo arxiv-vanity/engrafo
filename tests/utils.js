@@ -41,7 +41,7 @@ exports.renderToDom = (input, callback) => {
   });
 };
 
-exports.expectBodyToMatchSnapshot = async (inputPath, done) => {
+exports.expectToMatchSnapshot = async (inputPath, done) => {
   exports.renderToDom(inputPath, async (err, cleanupCallback, htmlPath, document) => {
     if (err) throw err;
     removeDescendantsWithTagName(document.body, "script");

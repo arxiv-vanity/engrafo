@@ -18,4 +18,4 @@
 *.pyc
 
 # integration test output
-integration-tests/__image_snapshots__/__diff_output__
+tests/__image_snapshots__/__diff_output__

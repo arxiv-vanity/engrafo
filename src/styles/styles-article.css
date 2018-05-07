@@ -1,0 +1,293 @@
+dt-article {
+  display: block;
+  color: rgba(0, 0, 0, 0.8);
+  font: 17px/1.55em -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  padding-bottom: 72px;
+  background: white;
+}
+
+@media(min-width: 1024px) {
+  dt-article {
+    font-size: 20px;
+  }
+}
+
+/* H1 */
+
+dt-article h1 {
+  margin-top: 18px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1em;
+  font-family: HoeflerText-Regular, Cochin, Georgia, serif;
+}
+@media(min-width: 768px) {
+  dt-article h1 {
+    font-size: 46px;
+    margin-top: 48px;
+    margin-bottom: 12px;
+  }
+}
+
+@media(min-width: 1080px) {
+  .centered h1 {
+    text-align: center;
+  }
+
+  dt-article h1 {
+    font-size: 50px;
+    letter-spacing: -0.02em;
+  }
+
+  dt-article > h1:first-of-type,
+  dt-article section > h1:first-of-type {
+    margin-top: 80px;
+  }
+}
+
+
+@media(min-width: 1200px) {
+  dt-article h1 {
+    font-size: 56px;
+  }
+
+  dt-article > h1:first-of-type {
+    margin-top: 100px;
+  }
+}
+
+/* H2 */
+
+dt-article h2 {
+  font-family: HoeflerText-Regular, Cochin, Georgia, serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.25em;
+  margin-top: 36px;
+  margin-bottom: 24px;
+}
+
+@media(min-width: 1024px) {
+  dt-article h2 {
+    margin-top: 48px;
+    font-size: 30px;
+  }
+}
+
+dt-article h1 + h2 {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.4em;
+  margin-top: 8px;
+  font-style: normal;
+}
+
+
+@media(min-width: 1080px) {
+  .centered h1 + h2 {
+    text-align: center;
+  }
+  dt-article h1 + h2 {
+    margin-top: 12px;
+    font-size: 24px;
+  }
+}
+
+/* H3 */
+
+dt-article h3 {
+  font-family: HoeflerText-Regular, Georgia, serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4em;
+  margin-top: 36px;
+  margin-bottom: 18px;
+  font-style: italic;
+}
+
+dt-article h1 + h3 {
+  margin-top: 48px;
+}
+
+@media(min-width: 1024px) {
+  dt-article h3 {
+    font-size: 26px;
+  }
+}
+
+/* H4 */
+
+dt-article h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+dt-article a {
+  color: inherit;
+}
+
+dt-article p,
+dt-article ul,
+dt-article ol {
+  margin-bottom: 24px;
+  font-family: Georgia, serif;
+}
+
+dt-article p b,
+dt-article ul b,
+dt-article ol b {
+  -webkit-font-smoothing: antialiased;
+}
+
+dt-article a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+
+dt-article a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+dt-article .link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+dt-article ul,
+dt-article ol {
+  padding-left: 24px;
+}
+
+dt-article li {
+  margin-bottom: 24px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+dt-article pre {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+
+dt-article hr {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+dt-article section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* Tables */
+
+dt-article table {
+  border-collapse: collapse;
+}
+
+dt-article table th {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+dt-article table td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+dt-article table th,
+dt-article table td {
+  font-size: 15px;
+  padding: 2px 0;
+}
+
+dt-article table caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+  caption-side: bottom;
+  margin-top: 24px;
+  text-align: left;
+}
+
+@media(min-width: 1024px) {
+  dt-article table caption {
+    font-size: 13px;
+  }
+}
+
+/* Figure */
+
+dt-article figure {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media(min-width: 1024px) {
+  dt-article figure {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+}
+
+dt-article figure img,
+dt-article figure table {
+  width: 100%;
+}
+
+dt-article figure svg text,
+dt-article figure svg tspan {
+}
+
+dt-article figure figcaption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+@media(min-width: 1024px) {
+  dt-article figure figcaption {
+    font-size: 13px;
+  }
+}
+
+dt-article figure.external img {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+dt-article figure figcaption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+dt-article span.equation-mimic {
+  font-family: georgia;
+  font-size: 115%;
+  font-style: italic;
+}
+
+dt-article figure figcaption b {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+dt-article > dt-code,
+dt-article section > dt-code  {
+  display: block;
+}
+
+dt-article .citation {
+  color: #668;
+  cursor: pointer;
+}
+
+dt-include {
+  width: auto;
+  display: block;
+}

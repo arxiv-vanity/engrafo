@@ -162,11 +162,11 @@ dt-article .engrafo-metadata {
 `;
 
 module.exports = function(dom) {
-  var distillPath = path.join(__dirname, "../../node_modules/distill-template/");
-  var layout = fs.readFileSync(path.join(distillPath, "components/styles-layout.css"));
-  var article = fs.readFileSync(path.join(distillPath, "components/styles-article.css"));
-  var code = fs.readFileSync(path.join(distillPath, "components/styles-code.css"));
-  var print = fs.readFileSync(path.join(distillPath, "components/styles-print.css"));
+  const stylesPath = path.join(__dirname, "../styles");
+  const layout = fs.readFileSync(path.join(stylesPath, "styles-layout.css"));
+  const article = fs.readFileSync(path.join(stylesPath, "styles-article.css"));
+  const code = fs.readFileSync(path.join(stylesPath, "styles-code.css"));
+  const print = fs.readFileSync(path.join(stylesPath, "styles-print.css"));
 
   utils.addStylesheet(dom, layout + article + code + print);
   utils.addStylesheet(dom, css);

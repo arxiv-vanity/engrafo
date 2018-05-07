@@ -1,0 +1,20 @@
+
+@media print {
+  @page {
+    size: 8in 11in;
+  }
+  html {
+  }
+  p, code {
+    page-break-inside: avoid;
+  }
+  h2, h3 {
+    page-break-after: avoid;
+  }
+  dt-header {
+    visibility: hidden;
+  }
+  dt-footer {
+    display: none!important;
+  }
+}

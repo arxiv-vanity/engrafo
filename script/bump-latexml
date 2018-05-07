@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+LATEXML_COMMIT=$(git ls-remote git://github.com/brucemiller/LaTeXML.git refs/heads/master | cut -f 1)
+echo "Updating LATEXML_COMMIT to $LATEXML_COMMIT"
+sed -i '' -E "s/LATEXML_COMMIT=.+$/LATEXML_COMMIT=${LATEXML_COMMIT}/" Dockerfile

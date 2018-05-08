@@ -12,14 +12,26 @@ dt-article {
   }
 }
 
+dt-appendix,
+.dt-hover-box {
+  font: 400 14px/1.55em -apple-system, BlinkMacSystemFont, "Roboto", Helvetica, sans-serif;
+}
+
+@media (min-width: 1024px) {
+  dt-appendix,
+  .dt-hover-box {
+    font-size: 17px;
+  }
+}
+
 /* H1 */
 
 dt-article h1 {
   margin-top: 18px;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 1em;
-  font-family: HoeflerText-Regular, Cochin, Georgia, serif;
+  font-family: Baskerville, Georgia, serif;
 }
 @media(min-width: 768px) {
   dt-article h1 {
@@ -56,12 +68,16 @@ dt-article h1 {
   }
 }
 
+dt-article h1 {
+  margin-bottom: 24px;
+}
+
 /* H2 */
 
 dt-article h2 {
-  font-family: HoeflerText-Regular, Cochin, Georgia, serif;
+  font-family: Baskerville, Georgia, serif;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 28px;
   line-height: 1.25em;
   margin-top: 36px;
   margin-bottom: 24px;
@@ -70,7 +86,7 @@ dt-article h2 {
 @media(min-width: 1024px) {
   dt-article h2 {
     margin-top: 48px;
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 
@@ -96,9 +112,9 @@ dt-article h1 + h2 {
 /* H3 */
 
 dt-article h3 {
-  font-family: HoeflerText-Regular, Georgia, serif;
+  font-family: Baskerville, Georgia, serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.4em;
   margin-top: 36px;
   margin-bottom: 18px;
@@ -111,7 +127,7 @@ dt-article h1 + h3 {
 
 @media(min-width: 1024px) {
   dt-article h3 {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 
@@ -127,12 +143,38 @@ dt-article h4 {
 dt-article a {
   color: inherit;
 }
+/* Slice off long URLs because they mess up the mobile design */
+/* TODO: consolidate into single container class */
+dt-article a,
+dt-appendix a,
+.dt-hover-box a {
+  word-break: break-word;
+}
 
 dt-article p,
 dt-article ul,
 dt-article ol {
   margin-bottom: 24px;
   font-family: Georgia, serif;
+}
+
+/* Hypenate only on mobile. The screen is small enough that the right hand
+side is very jagged otherwise. We don't justify because web browser
+justification + hypenation sucks and creates inconsistent word spacing. */
+dt-article p {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+@media(min-width: 768px) {
+  dt-article p {
+    hyphens: none;
+    -webkit-hyphens: none;
+  }
+}
+
+dt-article blockquote {
+  padding-left: 24px;
 }
 
 dt-article p b,
@@ -175,11 +217,6 @@ dt-article pre {
 dt-article hr {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-dt-article section {
   margin-top: 60px;
   margin-bottom: 60px;
 }
@@ -291,3 +328,48 @@ dt-include {
   width: auto;
   display: block;
 }
+
+dt-article dt,
+dt-article dd {
+  font-family: Georgia, serif;
+}
+
+dt-article dt {
+  font-weight: bold;
+}
+
+/* latexml stuff */
+.ltx_ERROR        {
+  color:red;
+  overflow-wrap: break-word;
+}
+.ltx_rdf          { display:none; }
+.ltx_missing      { color:red;}
+.ltx_nounicode    { color:red; }
+
+/* TODO: just use the correct HTML elements if possible */
+.ltx_font_bold { font-weight: bolder; }
+.ltx_font_italic { font-style: italic; }
+.ltx_font_typewriter {
+  font-family: monospace;
+  font-size: 0.9em;
+}
+.ltx_align_center { text-align: center; }
+.ltx_align_right    { text-align:right; }
+.ltx_align_top      { vertical-align:top; }
+.ltx_align_bottom   { vertical-align:bottom; }
+.ltx_align_middle   { vertical-align:middle; }
+.ltx_align_baseline { vertical-align:baseline; }
+
+/*======================================================================
+ Borders and such */
+.ltx_tabular { display:inline-table; border-collapse:collapse; }
+.ltx_tabular.ltx_centering { display:table; }
+.ltx_thead,
+.ltx_tfoot,
+.ltx_tbody   { display:table-row-group; }
+.ltx_tr      { display:table-row; }
+.ltx_td,
+.ltx_th      { display:table-cell; }
+
+.ltx_td { font-size: 15px; }

@@ -673,10 +673,11 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-create-html-element@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/create-html-element/-/create-html-element-1.0.0.tgz#df8863932dc60565ca5b71b0b7b2b3d91f10438f"
+create-html-element@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/create-html-element/-/create-html-element-2.0.0.tgz#0f51aaff7952b83d36428f01e6b3f263d3c0f328"
   dependencies:
+    escape-goat "^1.3.0"
     html-tags "^2.0.0"
     stringify-attributes "^1.0.0"
 
@@ -887,7 +888,7 @@ es6-promisify@^5.0.0:
   dependencies:
     es6-promise "^4.0.3"
 
-escape-goat@^1.1.0:
+escape-goat@^1.1.0, escape-goat@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/escape-goat/-/escape-goat-1.3.0.tgz#bf3ee8ad1e488fbba404b084b2e4a55e09231c64"
 
@@ -1491,10 +1492,6 @@ invariant@^2.2.0:
 invert-kv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
-
-ip-regex@^1.0.1:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/ip-regex/-/ip-regex-1.0.3.tgz#dc589076f659f419c222039a33316f1c7387effd"
 
 is-arrayish@^0.2.1:
   version "0.2.1"
@@ -2159,12 +2156,11 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-linkify-urls@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/linkify-urls/-/linkify-urls-1.6.0.tgz#c1648768bf18a7b78c298868936bf3d757e010bd"
+linkify-urls@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/linkify-urls/-/linkify-urls-2.0.0.tgz#b34c2e1bfd68799128092f55c2e0236303b6ea5d"
   dependencies:
-    create-html-element "^1.0.0"
-    url-regex "^4.0.0"
+    create-html-element "^2.0.0"
 
 load-json-file@^1.0.0:
   version "1.1.0"
@@ -3437,10 +3433,6 @@ titlecase@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/titlecase/-/titlecase-1.1.2.tgz#78113d1108086b8326331a3247dea8f5a49ea853"
 
-tlds@^1.187.0:
-  version "1.199.0"
-  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.199.0.tgz#a4fc8c3058216488a80aaaebb427925007e55217"
-
 tmp@^0.0.33:
   version "0.0.33"
   resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
@@ -3529,13 +3521,6 @@ uid-number@^0.0.6:
 universalify@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.1.tgz#fa71badd4437af4c148841e3b3b165f9e9e590b7"
-
-url-regex@^4.0.0:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/url-regex/-/url-regex-4.1.1.tgz#a5617b22e15e26dac57ce74c3f52088bcdfec995"
-  dependencies:
-    ip-regex "^1.0.1"
-    tlds "^1.187.0"
 
 url@0.10.3:
   version "0.10.3"

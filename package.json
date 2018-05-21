@@ -18,7 +18,7 @@
     "titlecase": "^1.1.2"
   },
   "devDependencies": {
-    "jest": "^22.4.3",
+    "jest": "^22.4.4",
     "jest-image-snapshot": "^2.4.1",
     "jest-puppeteer-preset": "^3.0.1",
     "puppeteer": "^1.4.0",

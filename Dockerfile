@@ -8,7 +8,7 @@ RUN sed -i 's/deb.debian.org/mirrors.kernel.org/g' /etc/apt/sources.list
 # Change logs here: https://packages.debian.org/buster/texlive
 RUN apt-get update -qq && apt-get install -qy texlive-full=2018.20180505*
 
-# Node.js and Python dependencies
+# Node.js dependencies
 RUN apt-get update -qq && apt-get install -qy curl gnupg2
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
@@ -17,8 +17,6 @@ RUN apt-get update -qq && apt-get install -qy \
   ca-certificates \
   nodejs=8.11.3* \
   git-core \
-  python \
-  python-pip \
   yarn=1.7.0*
 
 # latexml dependencies
@@ -27,7 +25,7 @@ RUN apt-get update -qq && apt-get install -qy \
   libio-string-perl libjson-xs-perl libtext-unidecode-perl \
   libparse-recdescent-perl liburi-perl libuuid-tiny-perl libwww-perl \
   libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl  \
-  imagemagick libimage-magick-perl perl-doc
+  imagemagick libimage-magick-perl perl-doc build-essential
 
 # Google Chrome for Puppeteer
 # https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -60,10 +58,6 @@ RUN mkdir -p /app /node_modules
 RUN chown engrafo:engrafo /app /node_modules
 WORKDIR /app
 
-# server
-COPY server/requirements.txt /app/server/
-RUN pip install -r server/requirements.txt
-
 # Run user as non privileged.
 USER engrafo
 
@@ -75,7 +69,6 @@ COPY package.json yarn.lock /
 RUN cd /; yarn install --pure-lockfile
 ENV PATH /node_modules/.bin:$PATH
 
-ENV PYTHONUNBUFFERED=1
 ENV PATH="/app/bin:${PATH}"
 
 COPY . /app

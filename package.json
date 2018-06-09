@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "aws-sdk": "^2.295.0",
-    "distill-template": "git+https://github.com/arxiv-vanity/template.git#engrafo",
     "express": "^4.16.3",
     "fs-extra": "^7.0.0",
     "linkify-urls": "^2.0.0",

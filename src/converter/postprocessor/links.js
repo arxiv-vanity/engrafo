@@ -1,12 +1,11 @@
 let linkifyUrls = require("linkify-urls");
-let utils = require("./utils");
 
 module.exports = function(dom) {
   var window = dom.defaultView;
 
   // Linkify plain text URLs
   var walker = dom.createTreeWalker(
-    dom.querySelector("dt-article"),
+    dom.querySelector(".ltx_page_main"),
     window.NodeFilter.SHOW_TEXT,
     {
       acceptNode: function(node) {

@@ -1,4 +1,3 @@
-const distill = require("distill-template");
 const fs = require("fs-extra");
 const jsdom = require("jsdom");
 
@@ -13,44 +12,11 @@ function postprocess(htmlString) {
     features: { ProcessExternalResources: false, FetchExternalResources: false }
   });
 
-  // Check there is actually a document to process
-  var ltxDocument = dom.querySelector(".ltx_document");
-  if (!ltxDocument) {
-    throw new Error("Could not find .ltx_document");
-  }
-  // Title and metadata is always present
-  if (ltxDocument.children.length == 0) {
-    throw new Error("Document is blank");
-  }
-
-  // Document state
-  var data = {};
-
   // Run all processing on document.
-  //
-  // Order is important -- typically the Engrafo processor comes before the
-  // Distill one so that we can massage the LaTeXML output into the format
-  // that Distill expects.
-  postprocessors.layout(dom, data);
-  distill.components.html(dom, data);
-  postprocessors.styles(dom, data);
-  postprocessors.metadata(dom, data);
-  postprocessors.code(dom, data);
-  postprocessors.figures(dom, data);
-  postprocessors.math(dom, data);
-  postprocessors.headings(dom, data);
-  postprocessors.appendix(dom, data);
-  postprocessors.footnotes(dom, data);
-  distill.components.footnote(dom, data);
-  postprocessors.bibliography(dom, data);
-  distill.components.appendix(dom, data);
-  distill.components.typeset(dom, data);
-  postprocessors.typeset(dom, data);
-  distill.components.hoverBox(dom, data);
-  postprocessors.tables(dom, data);
-  postprocessors.lists(dom, data);
-  postprocessors.links(dom, data);
-  postprocessors.container(dom, data);
+  postprocessors.figures(dom);
+  postprocessors.headings(dom);
+  postprocessors.links(dom);
+  postprocessors.math(dom);
 
   return jsdom.serializeDocument(dom);
 }

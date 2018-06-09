@@ -5,17 +5,5 @@
 /node_modules
 /yarn-error.log
 
-# arxiv-sanity-sanity prototype
-/server/papers
-/server/github-access-token.txt
-
-# emacs
-*_flymake.py
-
-# python
-*.egg
-*.egg-info
-*.pyc
-
 # integration test output
 tests/__image_snapshots__/__diff_output__

@@ -2,18 +2,21 @@
 
 exports[`aa.tex renders correctly 1`] = `
 <body>
+  
+
   <div
-    class="engrafo-container"
+    class="ltx_page_main"
   >
     
-
 
     <div
       class="ltx_page_content"
     >
       
 
-      <dt-article>
+      <article
+        class="ltx_document ltx_authors_1line"
+      >
         
 
         <h1
@@ -21,33 +24,6 @@ exports[`aa.tex renders correctly 1`] = `
         >
           Sections test
         </h1>
-        <div
-          class="engrafo-metadata"
-        >
-          <div
-            class="ltx_authors"
-          >
-            
-
-            <span
-              class="ltx_creator ltx_role_author"
-            >
-              
-
-              <span
-                class="ltx_personname"
-              >
-                Carl Capybara
-
-              </span>
-            </span>
-            
-
-          </div>
-          <div
-            class="engrafo-metadata-custom"
-          />
-        </div>
         
 
         <div
@@ -58,6 +34,27 @@ exports[`aa.tex renders correctly 1`] = `
         </div>
         
 
+        <div
+          class="ltx_authors"
+        >
+          
+
+          <span
+            class="ltx_creator ltx_role_author"
+          >
+            
+
+            <span
+              class="ltx_personname"
+            >
+              Carl Capybara
+
+            </span>
+          </span>
+          
+
+        </div>
+        
 
 
         <div
@@ -75,59 +72,61 @@ exports[`aa.tex renders correctly 1`] = `
         </div>
         
 
-      </dt-article>
+      </article>
       
 
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
-        />
-        
-
-      </dt-appendix>
     </div>
     
 
+    <footer
+      class="ltx_page_footer"
+    >
+      
 
+      <div
+        class="ltx_page_logo"
+      >
+        Generated  by 
+        <a
+          href="http://dlmf.nist.gov/LaTeXML/"
+        >
+          LaTeXML 
+          <img
+            alt="[LOGO]"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="
+          />
+        </a>
+        
 
+      </div>
+    </footer>
+    
 
-
-    <div
-      id="footnote-hover-boxes-container"
-    />
   </div>
+  
+
+
+
 </body>
 `;
 
 exports[`algorithm.tex renders correctly 1`] = `
 <body>
+  
+
   <div
-    class="engrafo-container"
+    class="ltx_page_main"
   >
     
-
 
     <div
       class="ltx_page_content"
     >
       
 
-      <dt-article>
-        <h1
-          class=""
-        />
-        <div
-          class="engrafo-metadata"
-        >
-          <div
-            class="engrafo-metadata-custom"
-          />
-        </div>
+      <article
+        class="ltx_document"
+      >
         
 
         <section
@@ -144,11 +143,7 @@ exports[`algorithm.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S1"
-              >
-                1 
-              </a>
+              1 
             </span>
             Algorithms
           </h2>
@@ -3085,6 +3080,7 @@ exports[`algorithm.tex renders correctly 1`] = `
 
             <figcaption
               class="ltx_caption"
+              style="font-size:80%;"
             >
               <span
                 class="ltx_tag ltx_tag_float"
@@ -3106,59 +3102,61 @@ exports[`algorithm.tex renders correctly 1`] = `
         </section>
         
 
-      </dt-article>
+      </article>
       
 
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
-        />
-        
-
-      </dt-appendix>
     </div>
     
 
+    <footer
+      class="ltx_page_footer"
+    >
+      
 
+      <div
+        class="ltx_page_logo"
+      >
+        Generated  by 
+        <a
+          href="http://dlmf.nist.gov/LaTeXML/"
+        >
+          LaTeXML 
+          <img
+            alt="[LOGO]"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="
+          />
+        </a>
+        
 
+      </div>
+    </footer>
+    
 
-
-    <div
-      id="footnote-hover-boxes-container"
-    />
   </div>
+  
+
+
+
 </body>
 `;
 
 exports[`citations.tex renders correctly 1`] = `
 <body>
+  
+
   <div
-    class="engrafo-container"
+    class="ltx_page_main"
   >
     
-
 
     <div
       class="ltx_page_content"
     >
       
 
-      <dt-article>
-        <h1
-          class=""
-        />
-        <div
-          class="engrafo-metadata"
-        >
-          <div
-            class="engrafo-metadata-custom"
-          />
-        </div>
+      <article
+        class="ltx_document"
+      >
         
 
         <div
@@ -3175,18 +3173,13 @@ exports[`citations.tex renders correctly 1`] = `
               class="ltx_cite ltx_citemacro_cite"
             >
               [
-              <span
-                data-hover-ref="dt-cite-hover-box-0"
+              <a
+                class="ltx_ref"
+                href="#bib.bib1"
+                title=""
               >
-                <a
-                  class="ltx_ref"
-                  href="#bib.bib1"
-                  onclick="event.preventDefault()"
-                  title=""
-                >
-                  1
-                </a>
-              </span>
+                1
+              </a>
               ]
             </cite>
              then refer to 
@@ -3194,18 +3187,13 @@ exports[`citations.tex renders correctly 1`] = `
               class="ltx_cite ltx_citemacro_cite"
             >
               [
-              <span
-                data-hover-ref="dt-cite-hover-box-1"
+              <a
+                class="ltx_ref"
+                href="#bib.bib2"
+                title=""
               >
-                <a
-                  class="ltx_ref"
-                  href="#bib.bib2"
-                  onclick="event.preventDefault()"
-                  title=""
-                >
-                  2
-                </a>
-              </span>
+                2
+              </a>
               ]
             </cite>
              but misspell 
@@ -3216,7 +3204,7 @@ exports[`citations.tex renders correctly 1`] = `
               <span
                 class="ltx_ref ltx_missing_citation ltx_ref_self"
               >
-                ?
+                zlateskiS15_asdf
               </span>
               ]
             </cite>
@@ -3226,286 +3214,237 @@ exports[`citations.tex renders correctly 1`] = `
         </div>
         
 
-
-      </dt-article>
-      
-
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
+        <section
+          class="ltx_bibliography"
+          id="bib"
         >
-          <h3>
+          
+
+          <h2
+            class="ltx_title ltx_title_bibliography"
+          >
             References
-          </h3>
-          <dt-bibliography>
-            <ol>
-              <li
-                class="ltx_bibitem"
-                id="bib.bib1"
+          </h2>
+          
+
+
+          <ul
+            class="ltx_biblist"
+          >
+            
+
+            <li
+              class="ltx_bibitem"
+              id="bib.bib1"
+            >
+              
+
+              <span
+                class="ltx_tag ltx_tag_bibitem"
+              >
+                [1]
+              </span>
+              
+
+              <span
+                class="ltx_bibblock"
               >
                 
-
-
-                <span
-                  class="ltx_bibblock"
-                >
-                  
 S. C. Turaga, J. F. Murray, V. Jain, F. Roth, M. Helmstaedter, K. Briggman,
 W. Denk, and H. S. Seung.
 
 
-                </span>
-                
+              </span>
+              
 
-                <span
-                  class="ltx_bibblock"
-                >
-                  Convolutional networks can learn to generate affinity graphs for
+              <span
+                class="ltx_bibblock"
+              >
+                Convolutional networks can learn to generate affinity graphs for
 image segmentation.
 
 
-                </span>
-                
+              </span>
+              
 
+              <span
+                class="ltx_bibblock"
+              >
                 <span
-                  class="ltx_bibblock"
+                  class="ltx_text ltx_font_italic"
                 >
-                  <span
-                    class="ltx_text ltx_font_italic"
-                  >
-                    Neural Comput.
-                  </span>
-                  , 22(2):511–538, Feb. 2010.
-
-
+                  Neural Comput.
                 </span>
-                
+                , 22(2):511–538, Feb. 2010.
 
-              </li>
-              <li
-                class="ltx_bibitem"
-                id="bib.bib2"
+
+              </span>
+              
+
+            </li>
+            
+
+            <li
+              class="ltx_bibitem"
+              id="bib.bib2"
+            >
+              
+
+              <span
+                class="ltx_tag ltx_tag_bibitem"
+              >
+                [2]
+              </span>
+              
+
+              <span
+                class="ltx_bibblock"
               >
                 
-
-
-                <span
-                  class="ltx_bibblock"
-                >
-                  
 A. Vazquez-Reina, M. Gelbart, D. Huang, J. Lichtman, E. Miller, and H. Pfister.
 
 
-                </span>
-                
+              </span>
+              
 
+              <span
+                class="ltx_bibblock"
+              >
+                Segmentation fusion for connectomics.
+
+
+              </span>
+              
+
+              <span
+                class="ltx_bibblock"
+              >
+                In 
                 <span
-                  class="ltx_bibblock"
+                  class="ltx_text ltx_font_italic"
                 >
-                  Segmentation fusion for connectomics.
-
-
+                  ICCV
                 </span>
-                
-
-                <span
-                  class="ltx_bibblock"
-                >
-                  In 
-                  <span
-                    class="ltx_text ltx_font_italic"
-                  >
-                    ICCV
-                  </span>
-                  , 2011.
+                , 2011.
 
 
-                </span>
-                
+              </span>
+              
 
-              </li>
-              <li
-                class="ltx_bibitem"
-                id="bib.bib3"
+            </li>
+            
+
+            <li
+              class="ltx_bibitem"
+              id="bib.bib3"
+            >
+              
+
+              <span
+                class="ltx_tag ltx_tag_bibitem"
+              >
+                [3]
+              </span>
+              
+
+              <span
+                class="ltx_bibblock"
               >
                 
-
-
-                <span
-                  class="ltx_bibblock"
-                >
-                  
 A. Zlateski and H. S. Seung.
 
 
-                </span>
-                
+              </span>
+              
 
-                <span
-                  class="ltx_bibblock"
-                >
-                  Image segmentation by size-dependent single linkage clustering of a
+              <span
+                class="ltx_bibblock"
+              >
+                Image segmentation by size-dependent single linkage clustering of a
 watershed basin graph.
 
 
-                </span>
-                
+              </span>
+              
 
+              <span
+                class="ltx_bibblock"
+              >
                 <span
-                  class="ltx_bibblock"
+                  class="ltx_text ltx_font_italic"
                 >
-                  <span
-                    class="ltx_text ltx_font_italic"
-                  >
-                    CoRR
-                  </span>
-                  , abs/1505.00249, 2015.
-
-
+                  CoRR
                 </span>
-                
+                , abs/1505.00249, 2015.
 
-              </li>
-            </ol>
-          </dt-bibliography>
-        </div>
+
+              </span>
+              
+
+            </li>
+            
+
+          </ul>
+          
+
+        </section>
         
 
-      </dt-appendix>
+      </article>
+      
+
     </div>
     
 
-
-
-
-
-    <div
-      id="footnote-hover-boxes-container"
-    />
-    <div
-      id="cite-hover-boxes-container"
+    <footer
+      class="ltx_page_footer"
     >
+      
+
       <div
-        class="dt-hover-box"
-        id="dt-cite-hover-box-0"
-        style="display:none;"
+        class="ltx_page_logo"
       >
-        
-
-
-        <span
-          class="ltx_bibblock"
+        Generated  by 
+        <a
+          href="http://dlmf.nist.gov/LaTeXML/"
         >
-          
-S. C. Turaga, J. F. Murray, V. Jain, F. Roth, M. Helmstaedter, K. Briggman,
-W. Denk, and H. S. Seung.
-
-
-        </span>
-        
-
-        <span
-          class="ltx_bibblock"
-        >
-          Convolutional networks can learn to generate affinity graphs for
-image segmentation.
-
-
-        </span>
-        
-
-        <span
-          class="ltx_bibblock"
-        >
-          <span
-            class="ltx_text ltx_font_italic"
-          >
-            Neural Comput.
-          </span>
-          , 22(2):511–538, Feb. 2010.
-
-
-        </span>
+          LaTeXML 
+          <img
+            alt="[LOGO]"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="
+          />
+        </a>
         
 
       </div>
-      <div
-        class="dt-hover-box"
-        id="dt-cite-hover-box-1"
-        style="display:none;"
-      >
-        
+    </footer>
+    
 
-
-        <span
-          class="ltx_bibblock"
-        >
-          
-A. Vazquez-Reina, M. Gelbart, D. Huang, J. Lichtman, E. Miller, and H. Pfister.
-
-
-        </span>
-        
-
-        <span
-          class="ltx_bibblock"
-        >
-          Segmentation fusion for connectomics.
-
-
-        </span>
-        
-
-        <span
-          class="ltx_bibblock"
-        >
-          In 
-          <span
-            class="ltx_text ltx_font_italic"
-          >
-            ICCV
-          </span>
-          , 2011.
-
-
-        </span>
-        
-
-      </div>
-    </div>
   </div>
+  
+
+
+
 </body>
 `;
 
 exports[`figures.tex renders correctly 1`] = `
 <body>
+  
+
   <div
-    class="engrafo-container"
+    class="ltx_page_main"
   >
     
-
 
     <div
       class="ltx_page_content"
     >
       
 
-      <dt-article>
-        <h1
-          class=""
-        />
-        <div
-          class="engrafo-metadata"
-        >
-          <div
-            class="engrafo-metadata-custom"
-          />
-        </div>
+      <article
+        class="ltx_document"
+      >
         
 
         <section
@@ -3522,11 +3461,7 @@ exports[`figures.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S1"
-              >
-                1 
-              </a>
+              1 
             </span>
             Plain includeimage
           </h2>
@@ -3569,11 +3504,7 @@ exports[`figures.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S2"
-              >
-                2 
-              </a>
+              2 
             </span>
             Single image
           </h2>
@@ -3779,59 +3710,61 @@ exports[`figures.tex renders correctly 1`] = `
         </section>
         
 
-      </dt-article>
+      </article>
       
 
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
-        />
-        
-
-      </dt-appendix>
     </div>
     
 
+    <footer
+      class="ltx_page_footer"
+    >
+      
 
+      <div
+        class="ltx_page_logo"
+      >
+        Generated  by 
+        <a
+          href="http://dlmf.nist.gov/LaTeXML/"
+        >
+          LaTeXML 
+          <img
+            alt="[LOGO]"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="
+          />
+        </a>
+        
 
+      </div>
+    </footer>
+    
 
-
-    <div
-      id="footnote-hover-boxes-container"
-    />
   </div>
+  
+
+
+
 </body>
 `;
 
 exports[`footnotes.tex renders correctly 1`] = `
 <body>
+  
+
   <div
-    class="engrafo-container"
+    class="ltx_page_main"
   >
     
-
 
     <div
       class="ltx_page_content"
     >
       
 
-      <dt-article>
-        <h1
-          class=""
-        />
-        <div
-          class="engrafo-metadata"
-        >
-          <div
-            class="engrafo-metadata-custom"
-          />
-        </div>
+      <article
+        class="ltx_document"
+      >
         
 
         <div
@@ -3844,153 +3777,133 @@ exports[`footnotes.tex renders correctly 1`] = `
             class="ltx_p"
           >
             This is some text.
-            <dt-fn>
-              <sup>
-                <span
-                  data-hover-ref="dt-fn-hover-box-0"
-                  id="fn-1"
-                  style="cursor:pointer"
-                >
-                  1
-                </span>
+            <span
+              class="ltx_note ltx_role_footnote"
+              id="footnote1"
+            >
+              <sup
+                class="ltx_note_mark"
+              >
+                1
               </sup>
-            </dt-fn>
+              <span
+                class="ltx_note_outer"
+              >
+                <span
+                  class="ltx_note_content"
+                >
+                  <sup
+                    class="ltx_note_mark"
+                  >
+                    1
+                  </sup>
+                  <span
+                    class="ltx_tag ltx_tag_note"
+                  >
+                    1
+                  </span>
+                  This is a footnote.
+                </span>
+              </span>
+            </span>
              This is some more text.
-            <dt-fn>
-              <sup>
-                <span
-                  data-hover-ref="dt-fn-hover-box-1"
-                  id="fn-2"
-                  style="cursor:pointer"
-                >
-                  2
-                </span>
+            <span
+              class="ltx_note ltx_role_footnote"
+              id="footnote2"
+            >
+              <sup
+                class="ltx_note_mark"
+              >
+                2
               </sup>
-            </dt-fn>
+              <span
+                class="ltx_note_outer"
+              >
+                <span
+                  class="ltx_note_content"
+                >
+                  <sup
+                    class="ltx_note_mark"
+                  >
+                    2
+                  </sup>
+                  <span
+                    class="ltx_tag ltx_tag_note"
+                  >
+                    2
+                  </span>
+                  And a footnote with a
+second paragraph! And some 
+                  <span
+                    class="ltx_text ltx_emph ltx_font_italic"
+                  >
+                    formatting
+                  </span>
+                  .
+                </span>
+              </span>
+            </span>
           </p>
           
 
         </div>
         
 
-      </dt-article>
+      </article>
       
 
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
-        >
-          <h3>
-            Footnotes
-          </h3>
-          <dt-fn-list>
-            <ol>
-              <li>
-                <span
-                  class="ltx_note_outer"
-                >
-                  <span
-                    class="ltx_note_content"
-                  >
-                    This is a footnote.
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span
-                  class="ltx_note_outer"
-                >
-                  <span
-                    class="ltx_note_content"
-                  >
-                    And a footnote with a
-second paragraph! And some 
-                    <span
-                      class="ltx_text ltx_emph ltx_font_italic"
-                    >
-                      formatting
-                    </span>
-                    .
-                  </span>
-                </span>
-              </li>
-            </ol>
-          </dt-fn-list>
-        </div>
-        
-
-      </dt-appendix>
     </div>
     
 
-
-
-
-
-    <div
-      id="footnote-hover-boxes-container"
+    <footer
+      class="ltx_page_footer"
     >
+      
+
       <div
-        class="dt-hover-box"
-        id="dt-fn-hover-box-0"
-        style="display:none;"
+        class="ltx_page_logo"
       >
-        <span
-          class="ltx_note_outer"
+        Generated  by 
+        <a
+          href="http://dlmf.nist.gov/LaTeXML/"
         >
-          <span
-            class="ltx_note_content"
-          >
-            This is a footnote.
-          </span>
-        </span>
+          LaTeXML 
+          <img
+            alt="[LOGO]"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="
+          />
+        </a>
+        
+
       </div>
-      <div
-        class="dt-hover-box"
-        id="dt-fn-hover-box-1"
-        style="display:none;"
-      >
-        <span
-          class="ltx_note_outer"
-        >
-          <span
-            class="ltx_note_content"
-          >
-            And a footnote with a
-second paragraph! And some 
-            <span
-              class="ltx_text ltx_emph ltx_font_italic"
-            >
-              formatting
-            </span>
-            .
-          </span>
-        </span>
-      </div>
-    </div>
+    </footer>
+    
+
   </div>
+  
+
+
+
 </body>
 `;
 
 exports[`headings.tex renders correctly 1`] = `
 <body>
+  
+
   <div
-    class="engrafo-container"
+    class="ltx_page_main"
   >
     
-
 
     <div
       class="ltx_page_content"
     >
       
 
-      <dt-article>
+      <article
+        class="ltx_document ltx_authors_1line"
+      >
         
 
         <h1
@@ -3998,62 +3911,62 @@ exports[`headings.tex renders correctly 1`] = `
         >
           Sections test
         </h1>
+        
+
         <div
-          class="engrafo-metadata"
+          class="ltx_authors"
         >
-          <div
-            class="ltx_authors"
+          
+
+          <span
+            class="ltx_creator ltx_role_author"
           >
             
 
             <span
-              class="ltx_creator ltx_role_author"
+              class="ltx_personname"
             >
-              
+              Carl Capybara 
 
-              <span
-                class="ltx_personname"
-              >
-                Carl Capybara 
-
-              </span>
-              <span
-                class="ltx_author_notes"
-              >
-                <span>
-                  A thanks block
-                </span>
+            </span>
+            <span
+              class="ltx_author_notes"
+            >
+              <span>
+                A thanks block
               </span>
             </span>
+          </span>
+          
+
+          <span
+            class="ltx_author_before"
+          >
+              
+          </span>
+          <span
+            class="ltx_creator ltx_role_author"
+          >
             
 
             <span
-              class="ltx_author_before"
+              class="ltx_personname"
             >
-                
+              Walter Wombat
+
             </span>
-            <span
-              class="ltx_creator ltx_role_author"
-            >
-              
+          </span>
+          
 
-              <span
-                class="ltx_personname"
-              >
-                Walter Wombat
-
-              </span>
-            </span>
-            
-
-          </div>
-          <div
-            class="engrafo-metadata-custom"
-          />
         </div>
         
 
-
+        <div
+          class="ltx_date ltx_role_creation"
+        >
+          March 2018
+        </div>
+        
 
 
         <div
@@ -4061,11 +3974,11 @@ exports[`headings.tex renders correctly 1`] = `
         >
           
 
-          <h2
-            class=""
+          <h6
+            class="ltx_title ltx_title_abstract"
           >
             Abstract
-          </h2>
+          </h6>
           
 
           <p
@@ -4092,11 +4005,7 @@ exports[`headings.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S1"
-              >
-                1 
-              </a>
+              1 
             </span>
             Sections
           </h2>
@@ -4167,7 +4076,13 @@ exports[`headings.tex renders correctly 1`] = `
                 class="ltx_title ltx_title_subsubsection"
               >
                 
-Subsubsection
+
+                <span
+                  class="ltx_tag ltx_tag_subsubsection"
+                >
+                  1.1.1 
+                </span>
+                Subsubsection
               </h4>
               
 
@@ -4194,6 +4109,12 @@ Subsubsection
               >
                 
 
+                <h5
+                  class="ltx_title ltx_title_paragraph"
+                >
+                  Paragraph heading
+                </h5>
+                
 
 
                 <div
@@ -4205,12 +4126,7 @@ Subsubsection
                   <p
                     class="ltx_p"
                   >
-                    <strong
-                      class="paragraph-heading"
-                    >
-                      Paragraph heading
-                    </strong>
-                     Really rather a long paragraph to demonstrate the fact that when you put a paragraph heading in front of a paragraph it is all on the same line.
+                    Really rather a long paragraph to demonstrate the fact that when you put a paragraph heading in front of a paragraph it is all on the same line.
 
                   </p>
                   
@@ -4287,59 +4203,61 @@ Subsubsection
         </section>
         
 
-      </dt-article>
+      </article>
       
 
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
-        />
-        
-
-      </dt-appendix>
     </div>
     
 
+    <footer
+      class="ltx_page_footer"
+    >
+      
 
+      <div
+        class="ltx_page_logo"
+      >
+        Generated  by 
+        <a
+          href="http://dlmf.nist.gov/LaTeXML/"
+        >
+          LaTeXML 
+          <img
+            alt="[LOGO]"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="
+          />
+        </a>
+        
 
+      </div>
+    </footer>
+    
 
-
-    <div
-      id="footnote-hover-boxes-container"
-    />
   </div>
+  
+
+
+
 </body>
 `;
 
 exports[`listings.tex renders correctly 1`] = `
 <body>
+  
+
   <div
-    class="engrafo-container"
+    class="ltx_page_main"
   >
     
-
 
     <div
       class="ltx_page_content"
     >
       
 
-      <dt-article>
-        <h1
-          class=""
-        />
-        <div
-          class="engrafo-metadata"
-        >
-          <div
-            class="engrafo-metadata-custom"
-          />
-        </div>
+      <article
+        class="ltx_document"
+      >
         
 
         <section
@@ -4356,11 +4274,7 @@ exports[`listings.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S1"
-              >
-                1 
-              </a>
+              1 
             </span>
             Listings
           </h2>
@@ -4385,6 +4299,16 @@ exports[`listings.tex renders correctly 1`] = `
             >
               
 
+              <div
+                class="ltx_listing_data"
+              >
+                <a
+                  href="http://data:text/plain;base64,Zm9yIGk6PW1heGludCB0byAwIGRvCmJlZ2luCnsgZG8gbm90aGluZyB9CmVuZDsKV3JpdGUoJ0Nhc2UgaW5zZW5zaXRpdmUgJyk7CldyaXRlKCdQYXNjYWwga2V5d29yZHMuJyk7"
+                >
+                  ⬇
+                </a>
+              </div>
+              
 
               <div
                 class="ltx_listingline"
@@ -4592,59 +4516,61 @@ exports[`listings.tex renders correctly 1`] = `
         </section>
         
 
-      </dt-article>
+      </article>
       
 
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
-        />
-        
-
-      </dt-appendix>
     </div>
     
 
+    <footer
+      class="ltx_page_footer"
+    >
+      
 
+      <div
+        class="ltx_page_logo"
+      >
+        Generated  by 
+        <a
+          href="http://dlmf.nist.gov/LaTeXML/"
+        >
+          LaTeXML 
+          <img
+            alt="[LOGO]"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="
+          />
+        </a>
+        
 
+      </div>
+    </footer>
+    
 
-
-    <div
-      id="footnote-hover-boxes-container"
-    />
   </div>
+  
+
+
+
 </body>
 `;
 
 exports[`lists.tex renders correctly 1`] = `
 <body>
+  
+
   <div
-    class="engrafo-container"
+    class="ltx_page_main"
   >
     
-
 
     <div
       class="ltx_page_content"
     >
       
 
-      <dt-article>
-        <h1
-          class=""
-        />
-        <div
-          class="engrafo-metadata"
-        >
-          <div
-            class="engrafo-metadata-custom"
-          />
-        </div>
+      <article
+        class="ltx_document"
+      >
         
 
         <div
@@ -4662,9 +4588,16 @@ exports[`lists.tex renders correctly 1`] = `
             <li
               class="ltx_item"
               id="S0.I1.i1"
+              style="list-style-type:none;"
             >
               
- 
+
+              <span
+                class="ltx_tag ltx_tag_item"
+              >
+                •
+              </span>
+               
 
               <div
                 class="ltx_para"
@@ -4688,9 +4621,16 @@ exports[`lists.tex renders correctly 1`] = `
             <li
               class="ltx_item"
               id="S0.I1.i2"
+              style="list-style-type:none;"
             >
               
- 
+
+              <span
+                class="ltx_tag ltx_tag_item"
+              >
+                •
+              </span>
+               
 
               <div
                 class="ltx_para"
@@ -4732,9 +4672,16 @@ exports[`lists.tex renders correctly 1`] = `
             <li
               class="ltx_item"
               id="S0.I2.i1"
+              style="list-style-type:none;"
             >
               
- 
+
+              <span
+                class="ltx_tag ltx_tag_item"
+              >
+                1.
+              </span>
+               
 
               <div
                 class="ltx_para"
@@ -4758,9 +4705,16 @@ exports[`lists.tex renders correctly 1`] = `
             <li
               class="ltx_item"
               id="S0.I2.i2"
+              style="list-style-type:none;"
             >
               
- 
+
+              <span
+                class="ltx_tag ltx_tag_item"
+              >
+                2.
+              </span>
+               
 
               <div
                 class="ltx_para"
@@ -4802,9 +4756,16 @@ exports[`lists.tex renders correctly 1`] = `
             <li
               class="ltx_item"
               id="S0.I3.i1"
+              style="list-style-type:none;"
             >
               
- 
+
+              <span
+                class="ltx_tag ltx_tag_item"
+              >
+                •
+              </span>
+               
 
               <div
                 class="ltx_para"
@@ -4828,9 +4789,20 @@ exports[`lists.tex renders correctly 1`] = `
                   <li
                     class="ltx_item"
                     id="S0.I3.i1.i1"
+                    style="list-style-type:none;"
                   >
                     
- 
+
+                    <span
+                      class="ltx_tag ltx_tag_item"
+                    >
+                      <span
+                        class="ltx_text ltx_font_bold"
+                      >
+                        –
+                      </span>
+                    </span>
+                     
 
                     <div
                       class="ltx_para"
@@ -4854,9 +4826,20 @@ exports[`lists.tex renders correctly 1`] = `
                   <li
                     class="ltx_item"
                     id="S0.I3.i1.i2"
+                    style="list-style-type:none;"
                   >
                     
- 
+
+                    <span
+                      class="ltx_tag ltx_tag_item"
+                    >
+                      <span
+                        class="ltx_text ltx_font_bold"
+                      >
+                        –
+                      </span>
+                    </span>
+                     
 
                     <div
                       class="ltx_para"
@@ -4889,9 +4872,16 @@ exports[`lists.tex renders correctly 1`] = `
             <li
               class="ltx_item"
               id="S0.I3.i2"
+              style="list-style-type:none;"
             >
               
- 
+
+              <span
+                class="ltx_tag ltx_tag_item"
+              >
+                •
+              </span>
+               
 
               <div
                 class="ltx_para"
@@ -4932,11 +4922,7 @@ exports[`lists.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S1"
-              >
-                1 
-              </a>
+              1 
             </span>
             A nested ordered list
           </h2>
@@ -4958,9 +4944,16 @@ exports[`lists.tex renders correctly 1`] = `
               <li
                 class="ltx_item"
                 id="S1.I1.i1"
+                style="list-style-type:none;"
               >
                 
- 
+
+                <span
+                  class="ltx_tag ltx_tag_item"
+                >
+                  1.
+                </span>
+                 
 
                 <div
                   class="ltx_para"
@@ -4985,9 +4978,16 @@ exports[`lists.tex renders correctly 1`] = `
                     <li
                       class="ltx_item"
                       id="S1.I1.i1.i1"
+                      style="list-style-type:none;"
                     >
                       
- 
+
+                      <span
+                        class="ltx_tag ltx_tag_item"
+                      >
+                        (a)
+                      </span>
+                       
 
                       <div
                         class="ltx_para"
@@ -5011,9 +5011,16 @@ exports[`lists.tex renders correctly 1`] = `
                     <li
                       class="ltx_item"
                       id="S1.I1.i1.i2"
+                      style="list-style-type:none;"
                     >
                       
- 
+
+                      <span
+                        class="ltx_tag ltx_tag_item"
+                      >
+                        (b)
+                      </span>
+                       
 
                       <div
                         class="ltx_para"
@@ -5046,9 +5053,16 @@ exports[`lists.tex renders correctly 1`] = `
               <li
                 class="ltx_item"
                 id="S1.I1.i2"
+                style="list-style-type:none;"
               >
                 
- 
+
+                <span
+                  class="ltx_tag ltx_tag_item"
+                >
+                  2.
+                </span>
+                 
 
                 <div
                   class="ltx_para"
@@ -5078,59 +5092,61 @@ exports[`lists.tex renders correctly 1`] = `
         </section>
         
 
-      </dt-article>
+      </article>
       
 
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
-        />
-        
-
-      </dt-appendix>
     </div>
     
 
+    <footer
+      class="ltx_page_footer"
+    >
+      
 
+      <div
+        class="ltx_page_logo"
+      >
+        Generated  by 
+        <a
+          href="http://dlmf.nist.gov/LaTeXML/"
+        >
+          LaTeXML 
+          <img
+            alt="[LOGO]"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="
+          />
+        </a>
+        
 
+      </div>
+    </footer>
+    
 
-
-    <div
-      id="footnote-hover-boxes-container"
-    />
   </div>
+  
+
+
+
 </body>
 `;
 
 exports[`math.tex renders correctly 1`] = `
 <body>
+  
+
   <div
-    class="engrafo-container"
+    class="ltx_page_main"
   >
     
-
 
     <div
       class="ltx_page_content"
     >
       
 
-      <dt-article>
-        <h1
-          class=""
-        />
-        <div
-          class="engrafo-metadata"
-        >
-          <div
-            class="engrafo-metadata-custom"
-          />
-        </div>
+      <article
+        class="ltx_document"
+      >
         
 
         <section
@@ -5147,11 +5163,7 @@ exports[`math.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S1"
-              >
-                1 
-              </a>
+              1 
             </span>
             Block
           </h2>
@@ -5357,11 +5369,7 @@ exports[`math.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S2"
-              >
-                2 
-              </a>
+              2 
             </span>
             Inline
           </h2>
@@ -5558,59 +5566,61 @@ exports[`math.tex renders correctly 1`] = `
         </section>
         
 
-      </dt-article>
+      </article>
       
 
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
-        />
-        
-
-      </dt-appendix>
     </div>
     
 
+    <footer
+      class="ltx_page_footer"
+    >
+      
 
+      <div
+        class="ltx_page_logo"
+      >
+        Generated  by 
+        <a
+          href="http://dlmf.nist.gov/LaTeXML/"
+        >
+          LaTeXML 
+          <img
+            alt="[LOGO]"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="
+          />
+        </a>
+        
 
+      </div>
+    </footer>
+    
 
-
-    <div
-      id="footnote-hover-boxes-container"
-    />
   </div>
+  
+
+
+
 </body>
 `;
 
 exports[`paragraph.tex renders correctly 1`] = `
 <body>
+  
+
   <div
-    class="engrafo-container"
+    class="ltx_page_main"
   >
     
-
 
     <div
       class="ltx_page_content"
     >
       
 
-      <dt-article>
-        <h1
-          class=""
-        />
-        <div
-          class="engrafo-metadata"
-        >
-          <div
-            class="engrafo-metadata-custom"
-          />
-        </div>
+      <article
+        class="ltx_document"
+      >
         
 
         <section
@@ -5627,11 +5637,7 @@ exports[`paragraph.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S1"
-              >
-                1 
-              </a>
+              1 
             </span>
             Justification
           </h2>
@@ -5703,11 +5709,7 @@ exports[`paragraph.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S2"
-              >
-                2 
-              </a>
+              2 
             </span>
             Indentation
           </h2>
@@ -5747,11 +5749,7 @@ exports[`paragraph.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S3"
-              >
-                3 
-              </a>
+              3 
             </span>
             indentfirst package
           </h2>
@@ -5791,11 +5789,7 @@ exports[`paragraph.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S4"
-              >
-                4 
-              </a>
+              4 
             </span>
             parskip package
           </h2>
@@ -5835,11 +5829,7 @@ exports[`paragraph.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S5"
-              >
-                5 
-              </a>
+              5 
             </span>
             Verbatim
           </h2>
@@ -5892,49 +5882,61 @@ exports[`paragraph.tex renders correctly 1`] = `
         </section>
         
 
-      </dt-article>
+      </article>
       
 
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
-        />
-        
-
-      </dt-appendix>
     </div>
     
 
+    <footer
+      class="ltx_page_footer"
+    >
+      
 
+      <div
+        class="ltx_page_logo"
+      >
+        Generated  by 
+        <a
+          href="http://dlmf.nist.gov/LaTeXML/"
+        >
+          LaTeXML 
+          <img
+            alt="[LOGO]"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="
+          />
+        </a>
+        
 
+      </div>
+    </footer>
+    
 
-
-    <div
-      id="footnote-hover-boxes-container"
-    />
   </div>
+  
+
+
+
 </body>
 `;
 
 exports[`sample2e.tex renders correctly 1`] = `
 <body>
+  
+
   <div
-    class="engrafo-container"
+    class="ltx_page_main"
   >
     
-
 
     <div
       class="ltx_page_content"
     >
       
 
-      <dt-article>
+      <article
+        class="ltx_document ltx_authors_1line"
+      >
         
 
         <h1
@@ -5942,36 +5944,36 @@ exports[`sample2e.tex renders correctly 1`] = `
         >
           An Example Document
         </h1>
+        
+
         <div
-          class="engrafo-metadata"
+          class="ltx_authors"
         >
-          <div
-            class="ltx_authors"
+          
+
+          <span
+            class="ltx_creator ltx_role_author"
           >
             
 
             <span
-              class="ltx_creator ltx_role_author"
+              class="ltx_personname"
             >
-              
+              Leslie Lamport
 
-              <span
-                class="ltx_personname"
-              >
-                Leslie Lamport
-
-              </span>
             </span>
-            
+          </span>
+          
 
-          </div>
-          <div
-            class="engrafo-metadata-custom"
-          />
         </div>
         
 
-
+        <div
+          class="ltx_date ltx_role_creation"
+        >
+          January 21, 1994
+        </div>
+        
 
 
         <div
@@ -6006,11 +6008,7 @@ produce a simple document of your own.
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S1"
-              >
-                1 
-              </a>
+              1 
             </span>
             Ordinary Text
           </h2>
@@ -6263,17 +6261,35 @@ lines.
               class="ltx_p"
             >
               Footnotes
-              <dt-fn>
-                <sup>
-                  <span
-                    data-hover-ref="dt-fn-hover-box-0"
-                    id="fn-1"
-                    style="cursor:pointer"
-                  >
-                    1
-                  </span>
+              <span
+                class="ltx_note ltx_role_footnote"
+                id="footnote1"
+              >
+                <sup
+                  class="ltx_note_mark"
+                >
+                  1
                 </sup>
-              </dt-fn>
+                <span
+                  class="ltx_note_outer"
+                >
+                  <span
+                    class="ltx_note_content"
+                  >
+                    <sup
+                      class="ltx_note_mark"
+                    >
+                      1
+                    </sup>
+                    <span
+                      class="ltx_tag ltx_tag_note"
+                    >
+                      1
+                    </span>
+                    This is an example of a footnote.
+                  </span>
+                </span>
+              </span>
               
 pose no problem.
             </p>
@@ -6916,11 +6932,7 @@ symbol, and it should be typed as one.
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S2"
-              >
-                2 
-              </a>
+              2 
             </span>
             Displayed Text
           </h2>
@@ -7014,9 +7026,16 @@ list.
               <li
                 class="ltx_item"
                 id="S2.I1.i1"
+                style="list-style-type:none;"
               >
                 
- 
+
+                <span
+                  class="ltx_tag ltx_tag_item"
+                >
+                  •
+                </span>
+                 
 
                 <div
                   class="ltx_para"
@@ -7043,9 +7062,16 @@ mark is used.
               <li
                 class="ltx_item"
                 id="S2.I1.i2"
+                style="list-style-type:none;"
               >
                 
- 
+
+                <span
+                  class="ltx_tag ltx_tag_item"
+                >
+                  •
+                </span>
+                 
 
                 <div
                   class="ltx_para"
@@ -7077,9 +7103,16 @@ list is an
                     <li
                       class="ltx_item"
                       id="S2.I2.i1"
+                      style="list-style-type:none;"
                     >
                       
- 
+
+                      <span
+                        class="ltx_tag ltx_tag_item"
+                      >
+                        1.
+                      </span>
+                       
 
                       <div
                         class="ltx_para"
@@ -7104,9 +7137,16 @@ list that is nested within the itemized list.
                     <li
                       class="ltx_item"
                       id="S2.I2.i2"
+                      style="list-style-type:none;"
                     >
                       
- 
+
+                      <span
+                        class="ltx_tag ltx_tag_item"
+                      >
+                        2.
+                      </span>
+                       
 
                       <div
                         class="ltx_para"
@@ -7150,9 +7190,16 @@ part of the item.
               <li
                 class="ltx_item"
                 id="S2.I2.i3"
+                style="list-style-type:none;"
               >
                 
- 
+
+                <span
+                  class="ltx_tag ltx_tag_item"
+                >
+                  •
+                </span>
+                 
 
                 <div
                   class="ltx_para"
@@ -7611,94 +7658,61 @@ nor make one a paragraph by itself.
         </section>
         
 
-      </dt-article>
+      </article>
       
 
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
-        >
-          <h3>
-            Footnotes
-          </h3>
-          <dt-fn-list>
-            <ol>
-              <li>
-                <span
-                  class="ltx_note_outer"
-                >
-                  <span
-                    class="ltx_note_content"
-                  >
-                    This is an example of a footnote.
-                  </span>
-                </span>
-              </li>
-            </ol>
-          </dt-fn-list>
-        </div>
-        
-
-      </dt-appendix>
     </div>
     
 
-
-
-
-
-    <div
-      id="footnote-hover-boxes-container"
+    <footer
+      class="ltx_page_footer"
     >
+      
+
       <div
-        class="dt-hover-box"
-        id="dt-fn-hover-box-0"
-        style="display:none;"
+        class="ltx_page_logo"
       >
-        <span
-          class="ltx_note_outer"
+        Generated  by 
+        <a
+          href="http://dlmf.nist.gov/LaTeXML/"
         >
-          <span
-            class="ltx_note_content"
-          >
-            This is an example of a footnote.
-          </span>
-        </span>
+          LaTeXML 
+          <img
+            alt="[LOGO]"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="
+          />
+        </a>
+        
+
       </div>
-    </div>
+    </footer>
+    
+
   </div>
+  
+
+
+
 </body>
 `;
 
 exports[`small2e.tex renders correctly 1`] = `
 <body>
+  
+
   <div
-    class="engrafo-container"
+    class="ltx_page_main"
   >
     
-
 
     <div
       class="ltx_page_content"
     >
       
 
-      <dt-article>
-        <h1
-          class=""
-        />
-        <div
-          class="engrafo-metadata"
-        >
-          <div
-            class="engrafo-metadata-custom"
-          />
-        </div>
+      <article
+        class="ltx_document"
+      >
         
 
         <section
@@ -7715,11 +7729,7 @@ exports[`small2e.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S1"
-              >
-                1 
-              </a>
+              1 
             </span>
             Simple Text
           </h2>
@@ -7871,59 +7881,61 @@ The manual tells how to make other symbols.
         </section>
         
 
-      </dt-article>
+      </article>
       
 
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
-        />
-        
-
-      </dt-appendix>
     </div>
     
 
+    <footer
+      class="ltx_page_footer"
+    >
+      
 
+      <div
+        class="ltx_page_logo"
+      >
+        Generated  by 
+        <a
+          href="http://dlmf.nist.gov/LaTeXML/"
+        >
+          LaTeXML 
+          <img
+            alt="[LOGO]"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="
+          />
+        </a>
+        
 
+      </div>
+    </footer>
+    
 
-
-    <div
-      id="footnote-hover-boxes-container"
-    />
   </div>
+  
+
+
+
 </body>
 `;
 
 exports[`tables.tex renders correctly 1`] = `
 <body>
+  
+
   <div
-    class="engrafo-container"
+    class="ltx_page_main"
   >
     
-
 
     <div
       class="ltx_page_content"
     >
       
 
-      <dt-article>
-        <h1
-          class=""
-        />
-        <div
-          class="engrafo-metadata"
-        >
-          <div
-            class="engrafo-metadata-custom"
-          />
-        </div>
+      <article
+        class="ltx_document"
+      >
         
 
         <section
@@ -7940,11 +7952,7 @@ exports[`tables.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S1"
-              >
-                1 
-              </a>
+              1 
             </span>
             Basic
           </h2>
@@ -8080,11 +8088,7 @@ exports[`tables.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S2"
-              >
-                2 
-              </a>
+              2 
             </span>
             Vertical lines
           </h2>
@@ -8220,11 +8224,7 @@ exports[`tables.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S3"
-              >
-                3 
-              </a>
+              3 
             </span>
             Horizontal lines at top and bottom
           </h2>
@@ -8360,11 +8360,7 @@ exports[`tables.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S4"
-              >
-                4 
-              </a>
+              4 
             </span>
             Lines between every row
           </h2>
@@ -8629,11 +8625,7 @@ exports[`tables.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S5"
-              >
-                5 
-              </a>
+              5 
             </span>
             Text column with width
           </h2>
@@ -8843,11 +8835,7 @@ throughout the evening.
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S6"
-              >
-                6 
-              </a>
+              6 
             </span>
             Defining multiple columns
           </h2>
@@ -9224,11 +9212,7 @@ throughout the evening.
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S7"
-              >
-                7 
-              </a>
+              7 
             </span>
             Rows spanning multiple columns
           </h2>
@@ -9543,11 +9527,7 @@ throughout the evening.
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S8"
-              >
-                8 
-              </a>
+              8 
             </span>
             Columns spanning multiple rows
           </h2>
@@ -10345,11 +10325,7 @@ throughout the evening.
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S9"
-              >
-                9 
-              </a>
+              9 
             </span>
             Table with width
           </h2>
@@ -10471,11 +10447,7 @@ throughout the evening.
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S10"
-              >
-                10 
-              </a>
+              10 
             </span>
             tabularx
           </h2>
@@ -10597,11 +10569,7 @@ throughout the evening.
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S11"
-              >
-                11 
-              </a>
+              11 
             </span>
             tabulary
           </h2>
@@ -10746,11 +10714,7 @@ throughout the evening.
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S12"
-              >
-                12 
-              </a>
+              12 
             </span>
             Captions and references
           </h2>
@@ -10977,59 +10941,61 @@ throughout the evening.
         </section>
         
 
-      </dt-article>
+      </article>
       
 
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
-        />
-        
-
-      </dt-appendix>
     </div>
     
 
+    <footer
+      class="ltx_page_footer"
+    >
+      
 
+      <div
+        class="ltx_page_logo"
+      >
+        Generated  by 
+        <a
+          href="http://dlmf.nist.gov/LaTeXML/"
+        >
+          LaTeXML 
+          <img
+            alt="[LOGO]"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="
+          />
+        </a>
+        
 
+      </div>
+    </footer>
+    
 
-
-    <div
-      id="footnote-hover-boxes-container"
-    />
   </div>
+  
+
+
+
 </body>
 `;
 
 exports[`text.tex renders correctly 1`] = `
 <body>
+  
+
   <div
-    class="engrafo-container"
+    class="ltx_page_main"
   >
     
-
 
     <div
       class="ltx_page_content"
     >
       
 
-      <dt-article>
-        <h1
-          class=""
-        />
-        <div
-          class="engrafo-metadata"
-        >
-          <div
-            class="engrafo-metadata-custom"
-          />
-        </div>
+      <article
+        class="ltx_document"
+      >
         
 
         <section
@@ -11046,11 +11012,7 @@ exports[`text.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S1"
-              >
-                1 
-              </a>
+              1 
             </span>
             Fonts
           </h2>
@@ -11192,11 +11154,7 @@ exports[`text.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S2"
-              >
-                2 
-              </a>
+              2 
             </span>
             ulem package
           </h2>
@@ -11257,11 +11215,7 @@ exports[`text.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S3"
-              >
-                3 
-              </a>
+              3 
             </span>
             Sizing
           </h2>
@@ -11404,11 +11358,7 @@ exports[`text.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S4"
-              >
-                4 
-              </a>
+              4 
             </span>
             Colors
           </h2>
@@ -11475,11 +11425,7 @@ exports[`text.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S5"
-              >
-                5 
-              </a>
+              5 
             </span>
             Spacing
           </h2>
@@ -11569,11 +11515,7 @@ exports[`text.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S6"
-              >
-                6 
-              </a>
+              6 
             </span>
             Quotes
           </h2>
@@ -11648,11 +11590,7 @@ exports[`text.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S7"
-              >
-                7 
-              </a>
+              7 
             </span>
             Super/subscript
           </h2>
@@ -11709,11 +11647,7 @@ exports[`text.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S8"
-              >
-                8 
-              </a>
+              8 
             </span>
             Dashes and hypens
           </h2>
@@ -11879,11 +11813,7 @@ exports[`text.tex renders correctly 1`] = `
             <span
               class="ltx_tag ltx_tag_section"
             >
-              <a
-                href="#S9"
-              >
-                9 
-              </a>
+              9 
             </span>
             Ellipsis
           </h2>
@@ -11914,59 +11844,61 @@ exports[`text.tex renders correctly 1`] = `
         </section>
         
 
-      </dt-article>
+      </article>
       
 
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
-        />
-        
-
-      </dt-appendix>
     </div>
     
 
+    <footer
+      class="ltx_page_footer"
+    >
+      
 
+      <div
+        class="ltx_page_logo"
+      >
+        Generated  by 
+        <a
+          href="http://dlmf.nist.gov/LaTeXML/"
+        >
+          LaTeXML 
+          <img
+            alt="[LOGO]"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="
+          />
+        </a>
+        
 
+      </div>
+    </footer>
+    
 
-
-    <div
-      id="footnote-hover-boxes-container"
-    />
   </div>
+  
+
+
+
 </body>
 `;
 
 exports[`urls.tex renders correctly 1`] = `
 <body>
+  
+
   <div
-    class="engrafo-container"
+    class="ltx_page_main"
   >
     
-
 
     <div
       class="ltx_page_content"
     >
       
 
-      <dt-article>
-        <h1
-          class=""
-        />
-        <div
-          class="engrafo-metadata"
-        >
-          <div
-            class="engrafo-metadata-custom"
-          />
-        </div>
+      <article
+        class="ltx_document"
+      >
         
 
         <div
@@ -12080,31 +12012,40 @@ exports[`urls.tex renders correctly 1`] = `
         </div>
         
 
-      </dt-article>
+      </article>
       
 
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
-        />
-        
-
-      </dt-appendix>
     </div>
     
 
+    <footer
+      class="ltx_page_footer"
+    >
+      
 
+      <div
+        class="ltx_page_logo"
+      >
+        Generated  by 
+        <a
+          href="http://dlmf.nist.gov/LaTeXML/"
+        >
+          LaTeXML 
+          <img
+            alt="[LOGO]"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="
+          />
+        </a>
+        
 
+      </div>
+    </footer>
+    
 
-
-    <div
-      id="footnote-hover-boxes-container"
-    />
   </div>
+  
+
+
+
 </body>
 `;

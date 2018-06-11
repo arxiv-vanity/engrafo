@@ -11,6 +11,7 @@
   "dependencies": {
     "aws-sdk": "^2.127.0",
     "distill-template": "git+https://github.com/arxiv-vanity/template.git#engrafo",
+    "express": "^4.16.3",
     "fs-extra": "^6.0.1",
     "linkify-urls": "^2.0.0",
     "mathjax-node-page": "^2.0.0",
@@ -22,7 +23,10 @@
     "jest": "^23.2.0",
     "jest-image-snapshot": "^2.4.3",
     "jest-puppeteer": "^3.2.1",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.8.1",
     "prettier": "^1.13.7",
-    "puppeteer": "^1.5.0"
+    "puppeteer": "^1.5.0",
+    "tmp": "^0.0.33"
   }
 }

@@ -7,3 +7,7 @@
 
 # integration test output
 tests/__image_snapshots__/__diff_output__
+
+# parcel
+.cache
+dist

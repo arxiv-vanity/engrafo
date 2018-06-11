@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+var server = require("../src/converter/server");
+var path = require("path");
+var fs = require("fs");
+var program = require("commander");
+
+program
+  .version("0.0.1")
+  .usage("[options] <tex file>")
+  .parse(process.argv);
+
+if (program.args.length != 1) {
+  program.outputHelp();
+  process.exit(1);
+}
+
+server.start(program.args[0]);

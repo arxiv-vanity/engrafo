@@ -5,8 +5,10 @@ exec docker run \
     --init \
     -v "$ENGRAFO_DIR:/app" \
     -w /app \
-    -p 8010:8010 \
-    -w /app/server/ \
+    -p 8000:8000 \
+    -p 8001:8001 \
     --rm \
+    -it \
+    --entrypoint node \
     engrafo \
-    python server.py
+    bin/engrafo-server "$@"

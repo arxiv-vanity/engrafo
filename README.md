@@ -26,16 +26,16 @@ For full usage, run `docker run arxivvanity/engrafo engrafo --help`.
 
 ## Development environment
 
-In development, you can build an image locally and use a shortcut script to run the image:
+In development, you can build an image locally and use a script to run the image:
 
     $ script/build
-    $ script/engrafo -o output/ input/main.tex
+    $ script/engrafo -o output/ tests/documents/sample2e.tex
 
-You can also run a server that allows you to view papers from Arxiv in a browser. Start it by running:
+You can also run a server for developing CSS. It renders a file then runs a server that will automatically reload the CSS when you change it. Start it by running:
 
-    $ script/server
+    $ script/server tests/documents/sample2e.tex
 
-And it will be available at [http://localhost:8010/](http://localhost:8010/).
+And it will be available at [http://localhost:8000/](http://localhost:8000/).
 
 ## Tests
 

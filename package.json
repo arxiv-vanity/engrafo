@@ -15,7 +15,8 @@
     "linkify-urls": "^2.0.0",
     "mathjax-node-page": "^2.0.0",
     "s3-recursive-uploader": "^0.3.0",
-    "titlecase": "^1.1.2"
+    "titlecase": "^1.1.2",
+    "tmp-promise": "^1.0.4"
   },
   "devDependencies": {
     "jest": "^23.1.0",

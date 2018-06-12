@@ -5,6 +5,7 @@ var fs = require("fs-extra");
 var jsdom = require("jsdom");
 var path = require("path");
 var readline = require("readline");
+var util = require("util");
 
 var io = require("./io");
 var math = require("./math");
@@ -176,3 +177,6 @@ exports.render = ({input, output, postProcessing}, callback) => {
     callback(err, htmlPath);
   });
 };
+
+// TODO: actually convert this to async/await
+exports.render = util.promisify(exports.render);

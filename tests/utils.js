@@ -1,66 +1,53 @@
+const util = require("util");
 const engrafo = require("../src");
-const fs = require("fs");
-const { configureToMatchImageSnapshot } = require('jest-image-snapshot');
+const readFile = util.promisify(require("fs").readFile);
+const { configureToMatchImageSnapshot } = require("jest-image-snapshot");
 const jsdom = require("jsdom");
 const path = require("path");
-const puppeteer = require('puppeteer');
-const tmp = require("tmp");
+const puppeteer = require("puppeteer");
+const tmp = require("tmp-promise");
 
 const toMatchImageSnapshot = configureToMatchImageSnapshot({
   customDiffConfig: {
-    threshold: 0.05,
+    threshold: 0.05
   },
-  noColors: true,
+  noColors: true
 });
 expect.extend({ toMatchImageSnapshot });
 
-exports.renderToDom = (input, callback) => {
+exports.renderToDom = async (input, callback) => {
   input = path.join(__dirname, input);
 
-  tmp.dir({unsafeCleanup: true}, (err, output, cleanupCallback) => {
-    if (err) return callback(err);
-    engrafo.render({input: input, output: output}, (err, htmlPath) => {
-      if (err) {
-        cleanupCallback();
-        return callback(err);
-      }
-      fs.readFile(htmlPath, "utf-8", (err, htmlString) => {
-        if (err) {
-          cleanupCallback();
-          return callback(err);
-        }
-        var document = jsdom.jsdom(htmlString, {
-          features: {
-            ProcessExternalResources: false,
-            FetchExternalResources: false
-          }
-        });
-        callback(null, cleanupCallback, htmlPath, document);
-      });
-    });
+  const tmpDir = await tmp.dir({ unsafeCleanup: true });
+  const output = tmpDir.path;
+
+  const htmlPath = await engrafo.render({ input: input, output: tmpDir.path });
+  const htmlString = await readFile(htmlPath, "utf-8");
+  const document = jsdom.jsdom(htmlString, {
+    features: {
+      ProcessExternalResources: false,
+      FetchExternalResources: false
+    }
   });
+  return { htmlPath, document };
 };
 
-exports.expectToMatchSnapshot = async (inputPath, done) => {
-  exports.renderToDom(inputPath, async (err, cleanupCallback, htmlPath, document) => {
-    if (err) throw err;
-    removeDescendantsWithTagName(document.body, "script");
-    removeDescendantsWithTagName(document.body, "style");
-    expect(document.body).toMatchSnapshot();
+exports.expectToMatchSnapshot = async inputPath => {
+  const { htmlPath, document } = await exports.renderToDom(inputPath);
 
-    await page.goto(`file://${htmlPath}`);
-    const screenshot = await page.screenshot({
-      fullPage: true
-    });
-    expect(screenshot).toMatchImageSnapshot();
+  removeDescendantsWithTagName(document.body, "script");
+  removeDescendantsWithTagName(document.body, "style");
+  expect(document.body).toMatchSnapshot();
 
-    cleanupCallback();
-    done();
+  await page.goto(`file://${htmlPath}`);
+  const screenshot = await page.screenshot({
+    fullPage: true
   });
+  expect(screenshot).toMatchImageSnapshot();
 };
 
-var removeDescendantsWithTagName = (element, tagName) => {
+function removeDescendantsWithTagName(element, tagName) {
   Array.from(element.getElementsByTagName(tagName)).forEach(el => {
     el.parentNode.removeChild(el);
   });
-};
+}

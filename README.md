@@ -92,3 +92,9 @@ Now, run the test passing the `-u` option to write out a snapshot of what is ren
 Check the output looks correct in `integration-tests/__snapshots__/formatting.test.js.snap`. You can re-run that command without the `-u` option to ensure the test passes.
 
 The test will fail if the output changes in the future. If the change is expected, then you can simply re-run the test with `-u` to overwrite the snapshot and fix the test.
+
+## Sponsors
+
+Thanks to our generous sponsors for supporting the development of Arxiv Vanity! [Sponsor us to get your logo here.](https://www.patreon.com/arxivvanity)
+
+[<img src="docs/sponsor-yld.png" alt="YLD" width="250" />](https://www.yld.io/)

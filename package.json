@@ -5,6 +5,7 @@
   "author": "Andreas Jansson & Ben Firshman",
   "license": "Apache-2.0",
   "scripts": {
+    "prettier": "prettier --write {src,tests}/**/*.js",
     "test": "jest"
   },
   "dependencies": {
@@ -22,6 +23,7 @@
     "jest": "^23.1.0",
     "jest-image-snapshot": "^2.4.3",
     "jest-puppeteer-preset": "^3.0.1",
+    "prettier": "^1.13.5",
     "puppeteer": "^1.5.0",
     "tmp": "^0.0.33"
   }

@@ -5,5 +5,3 @@ services:
       image: arxivvanity/engrafo
       dockerfile: Dockerfile
     cached: true
-    volumes:
-     - /app/integration-tests/__image_snapshots__/__diff_output__

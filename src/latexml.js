@@ -2,6 +2,7 @@ const childProcess = require("child_process");
 const fs = require("fs-extra");
 const path = require("path");
 const readline = require("readline");
+const util = require("util");
 
 function unlinkIfExists(path) {
   try {
@@ -14,7 +15,7 @@ function unlinkIfExists(path) {
 }
 
 // render a document with latexml
-exports.render = (texPath, outputDir, callback) => {
+function render(texPath, outputDir, callback) {
   var htmlPath = path.join(outputDir, "index.html");
 
   var latexmlc = childProcess.spawn("latexmlc", [
@@ -48,5 +49,8 @@ exports.render = (texPath, outputDir, callback) => {
 
     return callback(null, htmlPath);
   });
+}
 
+module.exports = {
+  render: util.promisify(render)
 };

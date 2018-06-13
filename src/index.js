@@ -1,8 +1,6 @@
-const async = require("async");
 const distill = require("distill-template");
 const fs = require("fs-extra");
 const jsdom = require("jsdom");
-const util = require("util");
 
 const io = require("./io");
 const latexml = require("./latexml");
@@ -58,73 +56,37 @@ exports.postprocess = htmlString => {
 };
 
 // Do all processing on the file that LaTeXML produces
-exports.processHTML = (htmlPath, callback) => {
-  async.waterfall([
-    (callback) => {
-      fs.readFile(htmlPath, "utf8", callback);
-    },
-    (htmlString, callback) => {
-      try {
-        htmlString = exports.postprocess(htmlString);
-      } catch(err) {
-        return callback(err);
-      }
-      callback(null, htmlString);
-    },
-    (htmlString, callback) => {
-      math.renderMath(htmlString, callback);
-    },
-    (htmlString, callback) => {
-      fs.writeFile(htmlPath, htmlString, callback);
-    }
-  ], callback);
-};
+async function processHTML(htmlPath) {
+  let htmlString = await fs.readFile(htmlPath, "utf8");
+  htmlString = exports.postprocess(htmlString);
+  htmlString = await math.renderMath(htmlString);
+  await fs.writeFile(htmlPath, htmlString);
+}
 
 // Render and postprocess a LaTeX file into outputDir (created if does not
 // exist). Calls callback with an error on failure or a path to an HTML file
 // on success.
-exports.render = ({input, output, postProcessing}, callback) => {
+async function render({input, output, postProcessing}) {
   if (postProcessing === undefined) {
     postProcessing = true;
   }
 
-  var texPath, outputDir, htmlPath;
-  async.waterfall([
-    (callback) => {
-      io.prepareInputDirectory(input, callback);
-    },
-    (inputDir, callback) => {
-      io.pickLatexFile(inputDir, callback);
-    },
-    (_texPath, callback) => {
-      texPath = _texPath;
+  const inputDir = await io.prepareInputDirectory(input);
+  const texPath = await io.pickLatexFile(inputDir);
+  const outputDir = await io.prepareOutputDirectory(output);
 
-      io.prepareOutputDirectory(output, callback);
-    },
-    (_outputDir, callback) => {
-      outputDir = _outputDir;
-      console.log(`Rendering tex file ${texPath} to ${outputDir}`);
-      latexml.render(texPath, outputDir, callback);
-    },
-    (_htmlPath, callback) => {
-      htmlPath = _htmlPath;
-      if (postProcessing) {
-        exports.processHTML(htmlPath, callback);
-      } else {
-        callback();
-      }
-    },
-    (callback) => {
-      if (output.startsWith('s3://')) {
-        io.uploadOutputToS3(outputDir, output, callback);
-      } else {
-        callback();
-      }
-    }
-  ], (err) => {
-    callback(err, htmlPath);
-  });
+  console.log(`Rendering tex file ${texPath} to ${outputDir}`);
+  const htmlPath = await latexml.render(texPath, outputDir);
+
+  await processHTML(htmlPath);
+
+  if (output.startsWith('s3://')) {
+    await io.uploadOutputToS3(outputDir, output);
+  }
+
+  return htmlPath;
+}
+
+module.exports = {
+  render: render,
 };
-
-// TODO: actually convert this to async/await
-exports.render = util.promisify(exports.render);

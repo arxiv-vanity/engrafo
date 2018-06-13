@@ -1,11 +1,11 @@
-var async = require("async");
-var childProcess = require("child_process");
-var fs = require("fs-extra");
-var path = require("path");
-var uploader = require("s3-recursive-uploader");
-var AWS = require('aws-sdk');
-var tmp = require("tmp");
-var url = require("url");
+const async = require("async");
+const childProcess = require("child_process");
+const fs = require("fs-extra");
+const path = require("path");
+const uploader = require("s3-recursive-uploader");
+const AWS = require('aws-sdk');
+const tmp = require("tmp");
+const url = require("url");
 
 // Turn a given input path or URL into an actual input path on disk
 exports.prepareInputDirectory = (givenPath, callback) => {

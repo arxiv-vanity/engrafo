@@ -4,7 +4,6 @@ const readFile = util.promisify(require("fs").readFile);
 const { configureToMatchImageSnapshot } = require("jest-image-snapshot");
 const jsdom = require("jsdom");
 const path = require("path");
-const puppeteer = require("puppeteer");
 const tmp = require("tmp-promise");
 
 const toMatchImageSnapshot = configureToMatchImageSnapshot({
@@ -15,11 +14,10 @@ const toMatchImageSnapshot = configureToMatchImageSnapshot({
 });
 expect.extend({ toMatchImageSnapshot });
 
-exports.renderToDom = async (input, callback) => {
+exports.renderToDom = async input => {
   input = path.join(__dirname, input);
 
   const tmpDir = await tmp.dir({ unsafeCleanup: true });
-  const output = tmpDir.path;
 
   const htmlPath = await engrafo.render({ input: input, output: tmpDir.path });
   const htmlString = await readFile(htmlPath, "utf-8");

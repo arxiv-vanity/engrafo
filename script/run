@@ -6,5 +6,6 @@ exec docker run \
     -w /app \
     --rm \
     -it \
+    --cap-add=SYS_ADMIN \
     engrafo \
     "$@"

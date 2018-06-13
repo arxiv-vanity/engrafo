@@ -8,7 +8,7 @@ const tmp = require("tmp");
 const url = require("url");
 
 // Turn a given input path or URL into an actual input path on disk
-exports.prepareInputDirectory = (givenPath, callback) => {
+function prepareInputDirectory (givenPath, callback) {
   async.waterfall([
     (callback) => {
       // Fetch input from S3 if required
@@ -30,9 +30,9 @@ exports.prepareInputDirectory = (givenPath, callback) => {
       callback(null, normalizeDirectory(inputPath));
     }
   ], callback);
-};
+}
 
-exports.prepareOutputDirectory = (outputDir, callback) => {
+function prepareOutputDirectory(outputDir, callback) {
   // Create temp output dir if uploading to S3
   if (outputDir.startsWith("s3://")) {
     tmp.dir((err, tmpdir, cleanup) => {
@@ -47,7 +47,7 @@ exports.prepareOutputDirectory = (outputDir, callback) => {
       callback(null, normalizeDirectory(outputDir));
     });
   }
-};
+}
 
 
 // Fetch a tarball from S3 to use as input
@@ -100,7 +100,7 @@ var extractGzipToTmpdir = (gzipPath, callback) => {
 
 
 // Upload rendered directory to S3 if need be
-exports.uploadOutputToS3 = (renderedPath, outputDir, callback) => {
+function uploadOutputToS3 (renderedPath, outputDir, callback) {
   // Format outputDir into what s3-recursive-uploader expects
   outputDir = outputDir.replace('s3://', '');
   if (outputDir.slice('-1') != '/') {
@@ -116,17 +116,17 @@ exports.uploadOutputToS3 = (renderedPath, outputDir, callback) => {
       callback();
     })
     .catch(callback);
-};
+}
 
 var normalizeDirectory = dir => {
   if (dir.slice(-1) == "/") {
     dir = dir.slice(0, -1);
   }
   return path.resolve(path.normalize(dir));
-};
+}
 
 // Pick a main .tex file from a directory
-exports.pickLatexFile = (dir, callback) => {
+function pickLatexFile (dir, callback) {
   if (dir.endsWith(".tex")) {
     return callback(null, dir);
   }
@@ -172,4 +172,11 @@ exports.pickLatexFile = (dir, callback) => {
       });
     });
   });
+}
+
+module.exports = {
+  prepareInputDirectory: prepareInputDirectory,
+  prepareOutputDirectory: prepareOutputDirectory,
+  uploadOutputToS3: uploadOutputToS3,
+  pickLatexFile: pickLatexFile,
 };

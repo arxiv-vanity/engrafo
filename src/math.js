@@ -60,7 +60,7 @@ function renderMath(htmlString) {
         Parse: {
           prototype: {
             // https://github.com/mathjax/MathJax/issues/1219
-            myBoldSwitch: function(name) {
+            myBoldSwitch: function() {
               this.stack.env.boldsymbol = true;
             }
           }

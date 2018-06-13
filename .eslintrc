@@ -1,0 +1,16 @@
+{
+  "extends": ["eslint:recommended"],
+  "env": {
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "globals": {
+    page: true,
+    browser: true
+  },
+  "parserOptions": { "ecmaVersion": 2017 },
+  "rules": {
+    "no-console": "off"
+  }
+}

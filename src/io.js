@@ -9,6 +9,7 @@ const url = require("url");
 const util = require("util");
 
 // Turn a given input path or URL into an actual input path on disk
+// TODO: make async
 function prepareInputDirectory(givenPath, callback) {
   async.waterfall(
     [
@@ -36,6 +37,7 @@ function prepareInputDirectory(givenPath, callback) {
   );
 }
 
+// TODO: make async
 function prepareOutputDirectory(outputDir, callback) {
   // Create temp output dir if uploading to S3
   if (outputDir.startsWith("s3://")) {
@@ -53,6 +55,7 @@ function prepareOutputDirectory(outputDir, callback) {
 }
 
 // Fetch a tarball from S3 to use as input
+// TODO: make async
 var fetchInputFromS3 = (s3Url, callback) => {
   tmp.dir((err, tmpDir) => {
     if (err) return callback(err);
@@ -141,71 +144,58 @@ var normalizeDirectory = dir => {
 };
 
 // Pick a main .tex file from a directory
-function pickLatexFile(dir, callback) {
+async function pickLatexFile(dir) {
   if (dir.endsWith(".tex")) {
-    return callback(null, dir);
+    return dir;
   }
-  fs.readdir(dir, (err, files) => {
-    if (err) return callback(err);
-    if (files.includes("ms.tex")) {
-      return callback(null, path.join(dir, "ms.tex"));
+  const files = await fs.readdir(dir);
+  if (files.includes("ms.tex")) {
+    return path.join(dir, "ms.tex");
+  }
+  if (files.includes("main.tex")) {
+    return path.join(dir, "main.tex");
+  }
+  const texPaths = files.filter(f => f.endsWith(".tex"));
+  if (texPaths.length === 0) {
+    throw new Error("No .tex files found");
+  }
+  if (texPaths.length === 1) {
+    return path.join(dir, texPaths[0]);
+  }
+  let docCandidates = [];
+  for (let p of texPaths) {
+    let data = await fs.readFile(path.join(dir, p));
+    if (data && data.includes("\\documentclass")) {
+      docCandidates.push(p);
     }
-    if (files.includes("main.tex")) {
-      return callback(null, path.join(dir, "main.tex"));
+  }
+  if (docCandidates.length === 0) {
+    throw new Error("No .tex files with \\documentclass found");
+  }
+
+  if (docCandidates.length === 1) {
+    return path.join(dir, docCandidates[0]);
+  }
+
+  let bblCandidates = [];
+  for (let p of docCandidates) {
+    let bbl = p.replace(".tex", ".bbl");
+    if (await fs.pathExists(path.join(dir, bbl))) {
+      bblCandidates.push(p);
     }
-    var texPaths = files.filter(f => f.endsWith(".tex"));
-    if (texPaths.length === 0) {
-      return callback(new Error("No .tex files found"));
-    }
-    if (texPaths.length === 1) {
-      return callback(null, path.join(dir, texPaths[0]));
-    }
-    async.filter(
-      texPaths,
-      (filename, filtercb) => {
-        fs.readFile(path.join(dir, filename), (err, data) => {
-          return filtercb(err, data && data.indexOf("\\documentclass") !== -1);
-        });
-      },
-      (err, candidates) => {
-        if (err) return callback(err);
-        if (candidates.length === 0) {
-          return callback(
-            new Error("No .tex files with \\documentclass found")
-          );
-        }
-        if (candidates.length === 1) {
-          return callback(null, path.join(dir, candidates[0]));
-        }
-        // Find .tex files with a corresponding .bib file
-        async.filter(
-          candidates,
-          (filename, filtercb) => {
-            var bibFilename = filename.replace(".tex", ".bbl");
-            fs.stat(path.join(dir, bibFilename), err => {
-              filtercb(null, err === null);
-            });
-          },
-          (err, candidates) => {
-            if (err) return callback(err);
-            if (candidates.length === 1) {
-              return callback(null, path.join(dir, candidates[0]));
-            }
-            callback(
-              new Error(
-                `Ambiguous LaTeX path (${candidates.length} candidates)`
-              )
-            );
-          }
-        );
-      }
+  }
+
+  if (bblCandidates.length > 1) {
+    throw new Error(
+      `Ambiguous LaTeX path (${bblCandidates.length} candidates)`
     );
-  });
+  }
+  return bblCandidates[0];
 }
 
 module.exports = {
   prepareInputDirectory: util.promisify(prepareInputDirectory),
   prepareOutputDirectory: util.promisify(prepareOutputDirectory),
   uploadOutputToS3: util.promisify(uploadOutputToS3),
-  pickLatexFile: util.promisify(pickLatexFile)
+  pickLatexFile: pickLatexFile
 };

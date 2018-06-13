@@ -57,8 +57,8 @@ ENV LATEXML_COMMIT=d33e9a32d18407fa9488857d4100b532b1548884
 RUN curl -L https://github.com/brucemiller/LaTeXML/tarball/$LATEXML_COMMIT | tar --strip-components 1 -zxf -
 RUN perl Makefile.PL; make; make install
 
-RUN mkdir -p /app
-RUN chown engrafo:engrafo /app
+RUN mkdir -p /app /node_modules
+RUN chown engrafo:engrafo /app /node_modules
 WORKDIR /app
 
 # server
@@ -69,8 +69,12 @@ RUN pip install -r server/requirements.txt
 USER engrafo
 
 # Node
-COPY package.json yarn.lock /app/
-RUN yarn
+COPY package.json yarn.lock /
+# HACK: Install node_modules one directory up so they are not overwritten
+# in development. The other workaround is using a volume for node_modules,
+# but is really slow and hard to update.
+RUN cd /; yarn install --pure-lockfile
+ENV PATH /node_modules/.bin:$PATH
 
 ENV PYTHONUNBUFFERED=1
 ENV PATH="/app/bin:${PATH}"

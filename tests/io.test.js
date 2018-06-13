@@ -1,8 +1,8 @@
-var childProcess = require("child_process");
-var fs = require("fs");
-var path = require("path");
-var tmp = require("tmp");
-var io = require("../src/io");
+const childProcess = require("child_process");
+const fs = require("fs");
+const path = require("path");
+const tmp = require("tmp");
+const io = require("../src/io");
 
 describe("prepareInputDirectory", () => {
   beforeEach(done => {

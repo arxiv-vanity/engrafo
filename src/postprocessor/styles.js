@@ -162,7 +162,7 @@ dt-article .engrafo-metadata {
 `;
 
 module.exports = function(dom) {
-  var distillPath = path.join(__dirname, "../../node_modules/distill-template/");
+  var distillPath = "/node_modules/distill-template/";
   var layout = fs.readFileSync(path.join(distillPath, "components/styles-layout.css"));
   var article = fs.readFileSync(path.join(distillPath, "components/styles-article.css"));
   var code = fs.readFileSync(path.join(distillPath, "components/styles-code.css"));

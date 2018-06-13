@@ -30,18 +30,18 @@ function renderMath(htmlString) {
         "extpfeil.js",
         "mhchem.js",
         // Don't fail completely if a macro is missing
-        "noUndefined.js",
+        "noUndefined.js"
       ],
       Macros: {
         // This is used to make macros work in both normal and math mode, so
         // just ignore
-        ensuremath: ['#1', 1],
+        ensuremath: ["#1", 1],
         // https://tex.stackexchange.com/questions/159289/more-basic-versions-of-prescript
-        prescript: ['{}^{#1}_{#2} #3', 3],
+        prescript: ["{}^{#1}_{#2} #3", 3],
         // https://groups.google.com/forum/#!topic/mathjax-users/Z0YJVtiQHCY
-        lefteqn: ["\\rlap{\\displaystyle{#1}}",1],
+        lefteqn: ["\\rlap{\\displaystyle{#1}}", 1],
         // https://groups.google.com/forum/#!msg/mathjax-users/JC7L3lX54s4/poMq9iniAQAJ
-        textnormal: ['\\textrm{#1}', 1],
+        textnormal: ["\\textrm{#1}", 1],
         // https://gist.github.com/uchida/4001035
         bra: ["\\langle{#1}|", 1],
         ket: ["|{#1}\\rangle", 1],
@@ -49,25 +49,30 @@ function renderMath(htmlString) {
         ketbra: ["\\ket{#1}\\bra{#2}", 2],
         hdots: ["\\dots", 0],
         dag: ["\\dagger", 0],
-        ddag: ["\\ddagger", 0],
+        ddag: ["\\ddagger", 0]
       },
       Augment: {
-        Definitions: {macros: {
-          bm: 'myBoldSwitch'
-        }},
-        Parse: {prototype: {
-          // https://github.com/mathjax/MathJax/issues/1219
-          myBoldSwitch: function (name) {
-            this.stack.env.boldsymbol = true;
+        Definitions: {
+          macros: {
+            bm: "myBoldSwitch"
           }
-        }}
+        },
+        Parse: {
+          prototype: {
+            // https://github.com/mathjax/MathJax/issues/1219
+            myBoldSwitch: function(name) {
+              this.stack.env.boldsymbol = true;
+            }
+          }
+        }
       }
     }
   };
 
   let pageConfig = {
     format: ["TeX"],
-    fontURL: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS',
+    fontURL:
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS",
     MathJax: mathjaxConfig
   };
 
@@ -76,11 +81,11 @@ function renderMath(htmlString) {
     css: true
   };
 
-  return new Promise((resolve) => {
+  return new Promise(resolve => {
     mjpage(htmlString, pageConfig, mjnodeConfig, resolve);
   });
 }
 
 module.exports = {
   renderMath: renderMath
-}
+};

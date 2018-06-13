@@ -88,7 +88,10 @@ module.exports = function(dom) {
     // We've removed a bunch of elements so text nodes might be fragmented
     heading.normalize();
 
-    var textNodes = dom.createTreeWalker(heading, dom.defaultView.NodeFilter.SHOW_TEXT);
+    var textNodes = dom.createTreeWalker(
+      heading,
+      dom.defaultView.NodeFilter.SHOW_TEXT
+    );
     while (textNodes.nextNode()) {
       let node = textNodes.currentNode;
       // UPPER CASE HEADING ARGH
@@ -98,14 +101,14 @@ module.exports = function(dom) {
       }
 
       // Clean up weird characters
-      node.nodeValue = node.nodeValue.replace('\u3000', '');
+      node.nodeValue = node.nodeValue.replace("\u3000", "");
     }
   });
 
   // Add section numnbers
   let sectionNumbers = dom.querySelectorAll(".ltx_tag_section");
   Array.from(sectionNumbers).forEach(span => {
-    let a = utils.nodeFromString(dom, '<a></a>');
+    let a = utils.nodeFromString(dom, "<a></a>");
     a.href = "#" + span.parentNode.parentNode.id;
     utils.moveChildren(span, a);
     span.appendChild(a);

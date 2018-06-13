@@ -38,16 +38,20 @@ module.exports = function(dom) {
   }
 
   nodesToReplace.forEach(obj => {
-    var replacementNode = dom.createElement('span');
+    var replacementNode = dom.createElement("span");
     replacementNode.innerHTML = obj.replacement;
     obj.node.parentNode.replaceChild(replacementNode, obj.node);
   });
 
   // Add http:// to URLs which don't have it
-  Array.from(dom.querySelectorAll('a')).forEach(a => {
-    var href = a.getAttribute('href');
-    if (!href.startsWith('http://') && !href.startsWith('https://') && !href.startsWith('#')) {
-      a.setAttribute('href', 'http://' + href);
+  Array.from(dom.querySelectorAll("a")).forEach(a => {
+    var href = a.getAttribute("href");
+    if (
+      !href.startsWith("http://") &&
+      !href.startsWith("https://") &&
+      !href.startsWith("#")
+    ) {
+      a.setAttribute("href", "http://" + href);
     }
   });
 };

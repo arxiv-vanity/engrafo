@@ -163,16 +163,28 @@ dt-article .engrafo-metadata {
 
 module.exports = function(dom) {
   var distillPath = "/node_modules/distill-template/";
-  var layout = fs.readFileSync(path.join(distillPath, "components/styles-layout.css"));
-  var article = fs.readFileSync(path.join(distillPath, "components/styles-article.css"));
-  var code = fs.readFileSync(path.join(distillPath, "components/styles-code.css"));
-  var print = fs.readFileSync(path.join(distillPath, "components/styles-print.css"));
+  var layout = fs.readFileSync(
+    path.join(distillPath, "components/styles-layout.css")
+  );
+  var article = fs.readFileSync(
+    path.join(distillPath, "components/styles-article.css")
+  );
+  var code = fs.readFileSync(
+    path.join(distillPath, "components/styles-code.css")
+  );
+  var print = fs.readFileSync(
+    path.join(distillPath, "components/styles-print.css")
+  );
 
   utils.addStylesheet(dom, layout + article + code + print);
   utils.addStylesheet(dom, css);
 
   // Remove weird styling from places we don't want it
-  Array.from(dom.querySelectorAll("figcaption, .ltx_bibblock .ltx_text, .ltx_caption .ltx_text")).forEach(el => {
+  Array.from(
+    dom.querySelectorAll(
+      "figcaption, .ltx_bibblock .ltx_text, .ltx_caption .ltx_text"
+    )
+  ).forEach(el => {
     el.removeAttribute("style");
   });
 };

@@ -83,13 +83,17 @@ module.exports = function(dom) {
   Array.from(dom.querySelectorAll(".ltx_cite a")).forEach(a => {
     // This could just be dom.querySelector(a.getAttribute("href")) but
     // querySelector doesn't work if there are periods in the ID. Sigh.
-    var bibItem = dom.querySelector(`li[id='${a.getAttribute("href").slice(1)}']`);
+    var bibItem = dom.querySelector(
+      `li[id='${a.getAttribute("href").slice(1)}']`
+    );
     if (!bibItem) return;
-
 
     var refId = appendCiteHoverDiv(dom, bibItem.innerHTML);
     var bibItemNumber = bibItems.indexOf(bibItem) + 1;
-    var hoverSpan = utils.nodeFromString(dom, `<span data-hover-ref="${refId}"></span>`);
+    var hoverSpan = utils.nodeFromString(
+      dom,
+      `<span data-hover-ref="${refId}"></span>`
+    );
     utils.wrapElement(a, hoverSpan);
     a.setAttribute("onclick", "event.preventDefault()");
   });

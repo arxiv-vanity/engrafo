@@ -14,7 +14,7 @@ exports.postprocess = htmlString => {
   });
 
   // Check there is actually a document to process
-  var ltxDocument = dom.querySelector('.ltx_document');
+  var ltxDocument = dom.querySelector(".ltx_document");
   if (!ltxDocument) {
     throw new Error("Could not find .ltx_document");
   }
@@ -66,7 +66,7 @@ async function processHTML(htmlPath) {
 // Render and postprocess a LaTeX file into outputDir (created if does not
 // exist). Calls callback with an error on failure or a path to an HTML file
 // on success.
-async function render({input, output, postProcessing}) {
+async function render({ input, output, postProcessing }) {
   if (postProcessing === undefined) {
     postProcessing = true;
   }
@@ -80,7 +80,7 @@ async function render({input, output, postProcessing}) {
 
   await processHTML(htmlPath);
 
-  if (output.startsWith('s3://')) {
+  if (output.startsWith("s3://")) {
     await io.uploadOutputToS3(outputDir, output);
   }
 
@@ -88,5 +88,5 @@ async function render({input, output, postProcessing}) {
 }
 
 module.exports = {
-  render: render,
+  render: render
 };

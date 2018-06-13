@@ -70,7 +70,6 @@ module.exports = function(dom) {
     math.innerHTML = `\\[ ${math.innerHTML} \\]`;
   });
 
-
   Array.from(dom.querySelectorAll(".ltx_equationgroup")).forEach(math => {
     // These are sometimes not figures so add class to parent so we can make
     // it scroll on overflow

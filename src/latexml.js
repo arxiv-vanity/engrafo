@@ -7,8 +7,8 @@ const util = require("util");
 function unlinkIfExists(path) {
   try {
     fs.unlinkSync(path);
-  } catch(err) {
-    if (err.code !== 'ENOENT') {
+  } catch (err) {
+    if (err.code !== "ENOENT") {
       throw err;
     }
   }
@@ -18,24 +18,32 @@ function unlinkIfExists(path) {
 function render(texPath, outputDir, callback) {
   var htmlPath = path.join(outputDir, "index.html");
 
-  var latexmlc = childProcess.spawn("latexmlc", [
-      "--dest", htmlPath,
-      "--format", "html5",
+  var latexmlc = childProcess.spawn(
+    "latexmlc",
+    [
+      "--dest",
+      htmlPath,
+      "--format",
+      "html5",
       "--nodefaultresources",
       "--mathtex",
       "--svg",
       "--verbose",
-      "--preload", "/app/latexml/engrafo.ltxml",
-      "--preload", "/usr/src/latexml/lib/LaTeXML/Package/hyperref.sty.ltxml",
+      "--preload",
+      "/app/latexml/engrafo.ltxml",
+      "--preload",
+      "/usr/src/latexml/lib/LaTeXML/Package/hyperref.sty.ltxml",
       texPath
-    ], {
+    ],
+    {
       cwd: path.dirname(texPath)
-  });
+    }
+  );
   latexmlc.on("error", callback);
 
-  var stdoutReadline = readline.createInterface({input: latexmlc.stdout});
+  var stdoutReadline = readline.createInterface({ input: latexmlc.stdout });
   stdoutReadline.on("line", console.log);
-  var stderrReadline = readline.createInterface({input: latexmlc.stderr});
+  var stderrReadline = readline.createInterface({ input: latexmlc.stderr });
   stderrReadline.on("line", console.error);
 
   latexmlc.on("close", code => {

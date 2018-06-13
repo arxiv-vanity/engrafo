@@ -32,18 +32,23 @@ module.exports = function(dom) {
   utils.addStylesheet(dom, css);
 
   // Put metadata in right place
-  let metadata = utils.nodeFromString(dom, '<div class="engrafo-metadata"></div>');
+  let metadata = utils.nodeFromString(
+    dom,
+    '<div class="engrafo-metadata"></div>'
+  );
   let h1 = dom.querySelector("h1");
   if (h1) {
     h1.parentNode.insertBefore(metadata, h1.nextSibling);
   }
 
-  let authors = dom.querySelector('.ltx_authors');
+  let authors = dom.querySelector(".ltx_authors");
   if (authors) {
     metadata.appendChild(authors);
   }
 
-  metadata.appendChild(utils.nodeFromString(dom, '<div class="engrafo-metadata-custom"></div>'));
+  metadata.appendChild(
+    utils.nodeFromString(dom, '<div class="engrafo-metadata-custom"></div>')
+  );
 
   // Array.from(authors.children).forEach(el => {
   //   // Replace each line inside each span (bit of a hack. hopefully it won't break.)

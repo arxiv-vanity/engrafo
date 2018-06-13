@@ -1,13 +1,13 @@
-var async = require("async");
-var distill = require("distill-template");
-var fs = require("fs-extra");
-var jsdom = require("jsdom");
-var util = require("util");
+const async = require("async");
+const distill = require("distill-template");
+const fs = require("fs-extra");
+const jsdom = require("jsdom");
+const util = require("util");
 
-var io = require("./io");
-var latexml = require("./latexml");
-var math = require("./math");
-var postprocessors = require("./postprocessor");
+const io = require("./io");
+const latexml = require("./latexml");
+const math = require("./math");
+const postprocessors = require("./postprocessor");
 
 // Run postprocessing against a string of HTML
 exports.postprocess = htmlString => {

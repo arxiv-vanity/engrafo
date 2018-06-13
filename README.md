@@ -93,6 +93,18 @@ Check the output looks correct in `integration-tests/__snapshots__/formatting.te
 
 The test will fail if the output changes in the future. If the change is expected, then you can simply re-run the test with `-u` to overwrite the snapshot and fix the test.
 
+## Installing new yarn packages
+
+All the Node dependencies are inside the Docker container, which makes managing dependencies a bit unusual. To add a new dependency, use `script/yarn` and rebuild the image:
+
+    $ script/yarn add leftpad
+    $ script/build
+
+Similarly,
+
+    $ script/yarn remove leftpad
+    $ script/build
+
 ## Sponsors
 
 Thanks to our generous sponsors for supporting the development of Arxiv Vanity! [Sponsor us to get your logo here.](https://www.patreon.com/arxivvanity)

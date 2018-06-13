@@ -1,14 +1,9 @@
 #!/bin/bash
 ENGRAFO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 
-if [ ! -z "$PANDOC_BINARY" ]; then
-  PANDOC_VOLUME_FLAG="-v $PANDOC_BINARY/$PANDOC_FILE:/usr/local/bin/pandoc"
-fi
-
 exec docker run \
     -v "/app/node_modules" \
     -v "$ENGRAFO_DIR:/app" \
-    $PANDOC_VOLUME_FLAG \
     --rm \
     -it \
     --cap-add=SYS_ADMIN \

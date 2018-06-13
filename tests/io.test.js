@@ -18,8 +18,8 @@ describe("prepareInputDirectory", () => {
 
   it("extracts tarballs", async () => {
     fs.writeFileSync(path.join(this.dir, "main.tex"), "");
-    var tarball = path.join(this.dir, 'tarball.gz');
-    childProcess.execSync(`tar -czf "${tarball}" main.tex`, {cwd: this.dir});
+    var tarball = path.join(this.dir, "tarball.gz");
+    childProcess.execSync(`tar -czf "${tarball}" main.tex`, { cwd: this.dir });
     fs.unlinkSync(path.join(this.dir, "main.tex"));
     const inputPath = await io.prepareInputDirectory(tarball);
     var texFile = path.join(inputPath, "main.tex");
@@ -92,16 +92,28 @@ describe("pickLatexFile", () => {
     expect(path.basename(filename)).toBe("wibble.tex");
   });
   it("chooses the only tex file with \\documentclass if there are several", async () => {
-    fs.writeFileSync(path.join(this.dir, "wibble.tex"), "not the tex you are looking for");
-    fs.writeFileSync(path.join(this.dir, "correct.tex"), "\\documentclass[12pt, letterpaper]{article}");
+    fs.writeFileSync(
+      path.join(this.dir, "wibble.tex"),
+      "not the tex you are looking for"
+    );
+    fs.writeFileSync(
+      path.join(this.dir, "correct.tex"),
+      "\\documentclass[12pt, letterpaper]{article}"
+    );
     fs.writeFileSync(path.join(this.dir, "cool.gif"), "");
     fs.writeFileSync(path.join(this.dir, "rad.jpg"), "");
     const filename = await io.pickLatexFile(this.dir);
     expect(path.basename(filename)).toBe("correct.tex");
   });
   it("chooses the only tex file with \\documentclass and a .bbl file if there are several", async () => {
-    fs.writeFileSync(path.join(this.dir, "wibble.tex"), "\\documentclass[12pt, letterpaper]{article}");
-    fs.writeFileSync(path.join(this.dir, "correct.tex"), "\\documentclass[12pt, letterpaper]{article}");
+    fs.writeFileSync(
+      path.join(this.dir, "wibble.tex"),
+      "\\documentclass[12pt, letterpaper]{article}"
+    );
+    fs.writeFileSync(
+      path.join(this.dir, "correct.tex"),
+      "\\documentclass[12pt, letterpaper]{article}"
+    );
     fs.writeFileSync(path.join(this.dir, "correct.bbl"), "");
     fs.writeFileSync(path.join(this.dir, "cool.gif"), "");
     fs.writeFileSync(path.join(this.dir, "rad.jpg"), "");
@@ -111,22 +123,34 @@ describe("pickLatexFile", () => {
   it("fails if there aren't any tex files", async () => {
     fs.writeFileSync(path.join(this.dir, "cool.gif"), "");
     fs.writeFileSync(path.join(this.dir, "rad.jpg"), "");
-    await expect(io.pickLatexFile(this.dir)).rejects.toThrowError("No .tex files found");
+    await expect(io.pickLatexFile(this.dir)).rejects.toThrowError(
+      "No .tex files found"
+    );
   });
   it("fails if there aren't any tex files with \\documentclass", async () => {
     fs.writeFileSync(path.join(this.dir, "wibble.tex"), "");
     fs.writeFileSync(path.join(this.dir, "nope.tex"), "");
     fs.writeFileSync(path.join(this.dir, "cool.gif"), "");
     fs.writeFileSync(path.join(this.dir, "rad.jpg"), "");
-    await expect(io.pickLatexFile(this.dir)).rejects.toThrowError("No .tex files with \\documentclass found");
+    await expect(io.pickLatexFile(this.dir)).rejects.toThrowError(
+      "No .tex files with \\documentclass found"
+    );
   });
   it("fails if there are several candidates with .bbl files", async () => {
-    fs.writeFileSync(path.join(this.dir, "wibble.tex"), "\\documentclass[12pt, letterpaper]{article}");
+    fs.writeFileSync(
+      path.join(this.dir, "wibble.tex"),
+      "\\documentclass[12pt, letterpaper]{article}"
+    );
     fs.writeFileSync(path.join(this.dir, "wibble.bbl"), "");
-    fs.writeFileSync(path.join(this.dir, "correct.tex"), "\\documentclass[12pt, letterpaper]{article}");
+    fs.writeFileSync(
+      path.join(this.dir, "correct.tex"),
+      "\\documentclass[12pt, letterpaper]{article}"
+    );
     fs.writeFileSync(path.join(this.dir, "correct.bbl"), "");
     fs.writeFileSync(path.join(this.dir, "cool.gif"), "");
     fs.writeFileSync(path.join(this.dir, "rad.jpg"), "");
-    await expect(io.pickLatexFile(this.dir)).rejects.toThrowError("Ambiguous LaTeX path");
+    await expect(io.pickLatexFile(this.dir)).rejects.toThrowError(
+      "Ambiguous LaTeX path"
+    );
   });
 });

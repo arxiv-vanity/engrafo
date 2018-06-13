@@ -24,5 +24,5 @@ module.exports = function(dom) {
   utils.addStylesheet(dom, css);
 
   // Remove download link
-  utils.removeAll(dom.querySelectorAll('.ltx_listing_data'));
+  utils.removeAll(dom.querySelectorAll(".ltx_listing_data"));
 };

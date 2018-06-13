@@ -12,7 +12,7 @@ function preventWidows(dom, el) {
     dom.defaultView.NodeFilter.SHOW_TEXT
   );
   // Wind to end
-  while(textNodes.nextNode()) {}
+  while (textNodes.nextNode()) {}
   // Step backwards through nodes
   do {
     var n = textNodes.currentNode;
@@ -22,5 +22,5 @@ function preventWidows(dom, el) {
       n.nodeValue = text.substr(0, i) + "\u00A0" + text.substr(i + 1);
       break;
     }
-  } while(textNodes.previousNode());
+  } while (textNodes.previousNode());
 }

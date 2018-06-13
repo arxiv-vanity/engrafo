@@ -6,6 +6,7 @@ const uploader = require("s3-recursive-uploader");
 const AWS = require('aws-sdk');
 const tmp = require("tmp");
 const url = require("url");
+const util = require("util");
 
 // Turn a given input path or URL into an actual input path on disk
 function prepareInputDirectory (givenPath, callback) {
@@ -175,8 +176,8 @@ function pickLatexFile (dir, callback) {
 }
 
 module.exports = {
-  prepareInputDirectory: prepareInputDirectory,
-  prepareOutputDirectory: prepareOutputDirectory,
-  uploadOutputToS3: uploadOutputToS3,
-  pickLatexFile: pickLatexFile,
+  prepareInputDirectory: util.promisify(prepareInputDirectory),
+  prepareOutputDirectory: util.promisify(prepareOutputDirectory),
+  uploadOutputToS3: util.promisify(uploadOutputToS3),
+  pickLatexFile: util.promisify(pickLatexFile),
 };

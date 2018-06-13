@@ -20,6 +20,7 @@ exports.render = (texPath, outputDir, callback) => {
   var latexmlc = childProcess.spawn("latexmlc", [
       "--dest", htmlPath,
       "--format", "html5",
+      "--nodefaultresources",
       "--mathtex",
       "--svg",
       "--verbose",
@@ -44,9 +45,6 @@ exports.render = (texPath, outputDir, callback) => {
 
     // HACK: Clean up stuff we don't want
     unlinkIfExists(path.join(outputDir, "LaTeXML.cache"));
-    unlinkIfExists(path.join(outputDir, "LaTeXML.css"));
-    unlinkIfExists(path.join(outputDir, "ltx-article.css"));
-    unlinkIfExists(path.join(outputDir, "ltx-listings.css"));
 
     return callback(null, htmlPath);
   });

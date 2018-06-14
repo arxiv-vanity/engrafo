@@ -1,4 +1,5 @@
-FROM debian:stretch
+# Version from https://hub.docker.com/_/debian/
+FROM debian:testing-20180426
 
 # Official CDN throws 503s
 RUN sed -i 's/deb.debian.org/mirrors.kernel.org/g' /etc/apt/sources.list
@@ -45,7 +46,7 @@ RUN apt-get update && apt-get install -yq libgconf-2-4
 RUN curl -sSL https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
     && sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' \
     && apt-get update -qq \
-    && apt-get install -yq google-chrome-unstable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst ttf-freefont --no-install-recommends \
+    && apt-get install -yq google-chrome-unstable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /src/*.deb
 

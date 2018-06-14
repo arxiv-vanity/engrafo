@@ -37,11 +37,16 @@ exports.expectToMatchSnapshot = async inputPath => {
   removeDescendantsWithTagName(document.body, "style");
   expect(document.body).toMatchSnapshot();
 
-  await page.goto(`file://${htmlPath}`);
-  const screenshot = await page.screenshot({
-    fullPage: true
-  });
-  expect(screenshot).toMatchImageSnapshot();
+  const localPage = await browser.newPage();
+  try {
+    await localPage.goto(`file://${htmlPath}`, { waitUntil: "networkidle0" });
+    const screenshot = await localPage.screenshot({
+      fullPage: true
+    });
+    expect(screenshot).toMatchImageSnapshot();
+  } finally {
+    localPage.close();
+  }
 };
 
 function removeDescendantsWithTagName(element, tagName) {

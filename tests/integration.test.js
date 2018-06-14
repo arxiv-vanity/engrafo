@@ -1,5 +1,8 @@
 const utils = require("./utils");
 
+// TODO: scope this to just integration tests
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
+
 test("titles and sections render correctly", async () => {
   await utils.expectToMatchSnapshot("documents/sections.tex");
 });
@@ -40,13 +43,9 @@ test("citations render correctly", async () => {
   await utils.expectToMatchSnapshot("documents/citations.tex");
 });
 
-test(
-  "sample2e.tex sample document renders correctly",
-  async () => {
-    await utils.expectToMatchSnapshot("documents/sample2e.tex");
-  },
-  10000
-);
+test("sample2e.tex sample document renders correctly", async () => {
+  await utils.expectToMatchSnapshot("documents/sample2e.tex");
+});
 
 test("small2e.tex sample document renders correctly", async () => {
   await utils.expectToMatchSnapshot("documents/small2e.tex");

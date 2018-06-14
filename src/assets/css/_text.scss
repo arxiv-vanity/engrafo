@@ -1,0 +1,59 @@
+// TODO: should we allow this?
+.ltx_font_serif {
+}
+.ltx_font_sansserif {
+}
+
+.ltx_font_typewriter {
+  font-family: monospace;
+}
+// monospace URLs look stupid
+.ltx_url.ltx_font_typewriter {
+  font-family: inherit;
+}
+
+.ltx_font_bold {
+  font-weight: bold;
+}
+.ltx_font_medium {
+  font-weight: normal;
+}
+.ltx_font_italic {
+  font-style: italic;
+  font-variant: normal;
+}
+.ltx_font_upright {
+  font-style: normal;
+  font-variant: normal;
+}
+.ltx_font_slanted {
+  font-style: oblique;
+  font-variant: normal;
+}
+.ltx_font_smallcaps {
+  font-variant: small-caps;
+  font-style: normal;
+}
+.ltx_font_oldstyle {
+  font-variant: oldstyle-nums; /* experimental css3 ? Doesn't seem to work!*/
+  font-style: normal;
+  -moz-font-feature-settings: "onum";
+  -ms-font-feature-settings: "onum";
+  -webkit-font-feature-settings: "onum";
+  font-variant-numeric: oldstyle-nums;
+}
+.ltx_font_mathcaligraphic {
+  font-family: "Lucida Calligraphy", "Zapf Chancery", "URW Chancery L";
+}
+.ltx_cite {
+  font-style: normal;
+}
+
+.ltx_red {
+  color: red;
+}
+
+.ltx_verbatim {
+  font-size: 0.8;
+  color: rgba(0, 0, 0, 0.6);
+}

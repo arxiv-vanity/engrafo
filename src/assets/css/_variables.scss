@@ -1,0 +1,10 @@
+$headingFontFamily: Baskerville, Georgia, serif;
+$bodyFontFamily: Georgia, serif;
+$systemFontFamily: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+
+$primaryTextColor: rgba(0, 0, 0, 0.8);
+$secondaryTextColor: rgba(0, 0, 0, 0.5);
+
+// Don't use alpha, because borders mix together
+$borderColor: lighten(black, 90%);
+$lightBorderColor: lighten(black, 95%);

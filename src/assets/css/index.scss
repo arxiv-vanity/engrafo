@@ -1,0 +1,122 @@
+@import "./variables";
+@import "./fonts";
+
+// TODO: don't set any global styles
+body {
+  margin: 0;
+}
+
+// Contain everything inside .ltx_page_main
+.ltx_page_main {
+  @import "./figures";
+  @import "./headings";
+  @import "./layout";
+  @import "./listings";
+  @import "./tables";
+  @import "./text";
+
+  @extend %body-font;
+  color: $primaryTextColor;
+  padding-bottom: 72px;
+  background: white;
+
+  a {
+    color: inherit;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 1px solid $primaryTextColor;
+    }
+  }
+
+  .ltx_page_content {
+    margin-bottom: 4rem;
+  }
+
+  .ltx_authors,
+  .ltx_date,
+  .ltx_keywords,
+  .ltx_title_keywords {
+    @extend %system-font-small;
+
+    font-weight: 400;
+  }
+
+  .ltx_title_keywords {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .ltx_authors {
+    margin-bottom: 1rem;
+
+    .ltx_personname {
+      font-weight: bold;
+    }
+
+    // No spaces between authors
+    .ltx_author_before {
+      display: none;
+    }
+
+    .ltx_creator,
+    .ltx_author_after,
+    .ltx_author_notes .ltx_contact {
+      display: block;
+    }
+  }
+
+  .ltx_date {
+    color: $secondaryTextColor;
+  }
+
+  .ltx_p {
+    margin-bottom: 24px;
+  }
+
+  .ltx_page_footer {
+    @extend %system-font-small;
+    color: $secondaryTextColor;
+    font-weight: 400;
+  }
+  .ltx_indent {
+    margin-left: 2rem;
+  }
+
+  .ltx_align_left {
+    text-align: left;
+  }
+  .ltx_align_right {
+    text-align: right;
+  }
+  .ltx_align_center {
+    text-align: center;
+  }
+  .ltx_align_justify {
+    text-align: justify;
+  }
+  .ltx_align_top {
+    vertical-align: top;
+  }
+  .ltx_align_bottom {
+    vertical-align: bottom;
+  }
+  .ltx_align_middle {
+    vertical-align: middle;
+  }
+  .ltx_align_baseline {
+    vertical-align: baseline;
+  }
+
+  /* LaTeXML system stuff */
+  .ltx_ERROR,
+  .ltx_missing,
+  .ltx_nounicode {
+    @extend %system-font;
+    color: red;
+  }
+  .ltx_rdf {
+    display: none;
+  }
+}

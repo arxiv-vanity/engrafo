@@ -1,0 +1,23 @@
+@import "./fonts";
+
+.ltx_figure,
+.ltx_table {
+  margin: 1rem 0;
+
+  max-width: 100%;
+  overflow-x: auto;
+
+  @media (min-width: 1024px) {
+    margin: 2rem 0;
+  }
+}
+
+.ltx_caption {
+  @extend %system-font-small;
+
+  color: rgba(0, 0, 0, 0.6);
+
+  a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}

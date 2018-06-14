@@ -14,10 +14,8 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 RUN apt-get update -qq && apt-get install -qy \
   ca-certificates \
-  curl \
   nodejs=8.11.3* \
   git-core \
-  gnupg2 \
   python \
   python-pip \
   yarn=1.7.0*

@@ -1,0 +1,201 @@
+\documentclass{article}
+\usepackage{multirow}
+\usepackage{tabulary}
+\usepackage{tabularx}
+\begin{document}
+  % https://en.wikibooks.org/wiki/LaTeX/Tables
+
+  \subsection{Basic}
+
+  \begin{tabular}{ l c r }
+    1 & 2 & 3 \\
+    4 & 5 & 6 \\
+    7 & 8 & 9 \\
+  \end{tabular}
+
+  \subsection{Vertical lines}
+
+  \begin{tabular}{ l | c | r }
+    1 & 2 & 3 \\
+    4 & 5 & 6 \\
+    7 & 8 & 9 \\
+  \end{tabular}
+
+  \subsection{Horizontal lines at top and bottom}
+
+  \begin{tabular}{ l | c | r }
+    \hline
+    1 & 2 & 3 \\
+    4 & 5 & 6 \\
+    7 & 8 & 9 \\
+    \hline
+  \end{tabular}
+
+  \subsection{Lines between every row}
+
+  \begin{center}
+    \begin{tabular}{ l | c | r }
+      \hline
+      1 & 2 & 3 \\ \hline
+      4 & 5 & 6 \\ \hline
+      7 & 8 & 9 \\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  \begin{tabular}{|r|l|}
+    \hline
+    7C0 & hexadecimal \\
+    3700 & octal \\ \cline{2-2}
+    11111000000 & binary \\
+    \hline \hline
+    1984 & decimal \\
+    \hline
+  \end{tabular}
+
+  \subsection{Text column with width}
+
+  \begin{center}
+    \begin{tabular}{ | l | l | l | p{5cm} |}
+      \hline
+      Day & Min Temp & Max Temp & Summary \\ \hline
+      Monday & 11C & 22C & A clear day with lots of sunshine.
+      However, the strong breeze will bring down the temperatures. \\ \hline
+      Tuesday & 9C & 19C & Cloudy with rain, across many northern regions. Clear spells
+      across most of Scotland and Northern Ireland,
+      but rain reaching the far northwest. \\ \hline
+      Wednesday & 10C & 21C & Rain will still linger for the morning.
+      Conditions will improve by early afternoon and continue
+      throughout the evening. \\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  \subsection{Defining multiple columns}
+
+  \begin{tabular}{l*{6}{c}r}
+    Team              & P & W & D & L & F  & A & Pts \\
+    \hline
+    Manchester United & 6 & 4 & 0 & 2 & 10 & 5 & 12  \\
+    Celtic            & 6 & 3 & 0 & 3 &  8 & 9 &  9  \\
+    Benfica           & 6 & 2 & 1 & 3 &  7 & 8 &  7  \\
+    FC Copenhagen     & 6 & 2 & 1 & 3 &  5 & 8 &  7  \\
+  \end{tabular}
+
+  \subsection{Rows spanning multiple columns}
+
+  \begin{tabular}{ |l|l| }
+    \hline
+    \multicolumn{2}{|c|}{Team sheet} \\
+    \hline
+    GK & Paul Robinson \\
+    LB & Lucas Radebe \\
+    DC & Michael Duberry \\
+    DC & Dominic Matteo \\
+    RB & Dider Domi \\
+    MC & David Batty \\
+    MC & Eirik Bakke \\
+    MC & Jody Morris \\
+    FW & Jamie McMaster \\
+    ST & Alan Smith \\
+    ST & Mark Viduka \\
+    \hline
+  \end{tabular}
+
+  \subsection{Columns spanning multiple rows}
+
+  \begin{tabular}{ |l|l|l| }
+    \hline
+    \multicolumn{3}{ |c| }{Team sheet} \\
+    \hline
+    Goalkeeper & GK & Paul Robinson \\ \hline
+    \multirow{4}{*}{Defenders} & LB & Lucas Radebe \\
+     & DC & Michael Duburry \\
+     & DC & Dominic Matteo \\
+     & RB & Didier Domi \\ \hline
+    \multirow{3}{*}{Midfielders} & MC & David Batty \\
+     & MC & Eirik Bakke \\
+     & MC & Jody Morris \\ \hline
+    Forward & FW & Jamie McMaster \\ \hline
+    \multirow{2}{*}{Strikers} & ST & Alan Smith \\
+     & ST & Mark Viduka \\
+    \hline
+  \end{tabular}
+
+  \begin{tabular}{cc|c|c|c|c|l}
+    \cline{3-6}
+    & & \multicolumn{4}{ c| }{Primes} \\ \cline{3-6}
+    & & 2 & 3 & 5 & 7 \\ \cline{1-6}
+    \multicolumn{1}{ |c  }{\multirow{2}{*}{Powers} } &
+    \multicolumn{1}{ |c| }{504} & 3 & 2 & 0 & 1 &     \\ \cline{2-6}
+    \multicolumn{1}{ |c  }{}                        &
+    \multicolumn{1}{ |c| }{540} & 2 & 3 & 1 & 0 &     \\ \cline{1-6}
+    \multicolumn{1}{ |c  }{\multirow{2}{*}{Powers} } &
+    \multicolumn{1}{ |c| }{gcd} & 2 & 2 & 0 & 0 & min \\ \cline{2-6}
+    \multicolumn{1}{ |c  }{}                        &
+    \multicolumn{1}{ |c| }{lcm} & 3 & 3 & 1 & 1 & max \\ \cline{1-6}
+  \end{tabular}
+
+  \begin{tabular}{ r|c|c| }
+    \multicolumn{1}{r}{}
+     &  \multicolumn{1}{c}{noninteractive}
+     & \multicolumn{1}{c}{interactive} \\
+    \cline{2-3}
+    massively multiple & Library & University \\
+    \cline{2-3}
+    one-to-one & Book & Tutor \\
+    \cline{2-3}
+  \end{tabular}
+
+  \subsection{Table with width}
+
+  \begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill} } | c | c | c | r | }
+    \hline
+    label 1 & label 2 & label 3 & label 4 \\
+    \hline
+    item 1  & item 2  & item 3  & item 4  \\
+    \hline
+  \end{tabular*}
+
+  \subsection{tabularx}
+
+  \begin{tabularx}{\textwidth}{ |X|X|X|X| }
+    \hline
+    label 1 & label 2 & label 3 & label 4 \\
+    \hline
+    item 1  & item 2  & item 3  & item 4  \\
+    \hline
+  \end{tabularx}
+
+  \subsection{tabulary}
+
+  \begin{center}
+    \begin{tabulary}{0.7\textwidth}{LCL}
+      Short sentences      & \#  & Long sentences                                                 \\
+      \hline
+      This is short.       & 173 & This is much loooooooonger, because there are many more words.  \\
+      This is not shorter. & 317 & This is still loooooooonger, because there are many more words. \\
+    \end{tabulary}
+  \end{center}
+
+  \subsection{Captions and references}
+
+  \begin{table}[h]
+    \begin{tabular}{ c c c }
+       cell1 & cell2 & cell3 \\
+       cell4 & cell5 & cell6 \\
+       cell7 & cell8 & cell9
+    \end{tabular}
+    \caption{Some numbers.}
+    \label{table:1}
+  \end{table}
+
+  Take a look at some cool data in table \ref{table:1}.
+
+  \begin{table}[h]
+    \caption{Caption at the top is put at the bottom.}
+    \begin{tabular}{ c c c }
+       cell7 & cell8 & cell9
+    \end{tabular}
+  \end{table}
+\end{document}

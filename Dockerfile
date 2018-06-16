@@ -47,3 +47,6 @@ RUN yarn install --pure-lockfile && yarn cache clean
 ENV PATH="/app/bin:/app/node_modules/.bin:${PATH}"
 
 COPY . /app
+
+# Build production CSS and JS
+RUN yarn run build

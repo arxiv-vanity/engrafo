@@ -18,6 +18,7 @@ function createChildProcess({ htmlPath, texPath, outputDir }) {
   const latexmlArgs = [
     "--format", "html5",
     "--nodefaultresources",
+    "--css", "/app/dist/index.css",
     "--mathtex",
     "--svg",
     "--verbose",

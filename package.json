@@ -5,6 +5,7 @@
   "author": "Andreas Jansson & Ben Firshman",
   "license": "Apache-2.0",
   "scripts": {
+    "build": "parcel build src/assets/css/index.scss",
     "convert": "LATEXML_DOCKER=true bin/engrafo",
     "prettier": "prettier --write \"{src,tests}/**/*.js\"",
     "prettier-check": "prettier-check \"{src,tests}/**/*.js\"",

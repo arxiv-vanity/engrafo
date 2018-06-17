@@ -11,6 +11,10 @@ async function main(argv) {
       "--no-post-processing",
       "Raw LaTeXML output, without filters or postprocessors (for debugging)"
     )
+    .option(
+      "--css <path>",
+      "URL or path to external CSS to use instead of the default CSS. If passed, the defaut CSS is not copied to the output directory."
+    )
     .parse(argv);
 
   const input = program.args[0];
@@ -24,7 +28,8 @@ async function main(argv) {
   const options = {
     input: input,
     output: output,
-    postProcessing: program.postProcessing
+    postProcessing: program.postProcessing,
+    externalCSS: program.css
   };
 
   const htmlPath = await converter.render(options);

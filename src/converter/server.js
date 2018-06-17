@@ -8,7 +8,10 @@ module.exports.start = async input => {
   const tmpDir = await tmp.dir({ dir: "/tmp" });
   const htmlPath = await render({
     input: input,
-    output: tmpDir.path
+    output: tmpDir.path,
+    // This absolute filesystem path will be passed unmodified through
+    // to the parcel bundler, which will compile the SCSS
+    externalCSS: path.join(__dirname, "../assets/css/index.scss")
   });
 
   console.log("💅  Starting server at http://localhost:8000");

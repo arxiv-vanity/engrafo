@@ -13,12 +13,11 @@ function unlinkIfExists(path) {
   }
 }
 
-function createChildProcess({ htmlPath, texPath, outputDir }) {
+function createChildProcess({ cssPath, htmlPath, texPath, outputDir }) {
   // prettier-ignore
   const latexmlArgs = [
     "--format", "html5",
     "--nodefaultresources",
-    "--css", "/app/dist/index.css",
     "--mathtex",
     "--svg",
     "--verbose",
@@ -26,6 +25,10 @@ function createChildProcess({ htmlPath, texPath, outputDir }) {
     "--preload", "/app/latexml/engrafo.ltxml",
     "--preload", "/usr/src/latexml/lib/LaTeXML/Package/hyperref.sty.ltxml",
   ];
+
+  if (cssPath) {
+    latexmlArgs.push("--css", cssPath);
+  }
 
   latexmlArgs.push(path.basename(texPath));
 
@@ -55,14 +58,19 @@ function createChildProcess({ htmlPath, texPath, outputDir }) {
 }
 
 // render a document with latexml
-function render({ texPath, outputDir }) {
+function render({ texPath, outputDir, cssPath }) {
   const htmlPath = path.join(outputDir, "index.html");
 
-  const latexmlc = createChildProcess({ texPath, outputDir, htmlPath });
+  const latexmlc = createChildProcess({
+    texPath,
+    outputDir,
+    htmlPath,
+    cssPath
+  });
 
-  var stdoutReadline = readline.createInterface({ input: latexmlc.stdout });
+  const stdoutReadline = readline.createInterface({ input: latexmlc.stdout });
   stdoutReadline.on("line", console.log);
-  var stderrReadline = readline.createInterface({ input: latexmlc.stderr });
+  const stderrReadline = readline.createInterface({ input: latexmlc.stderr });
   stderrReadline.on("line", console.error);
 
   return new Promise((resolve, reject) => {

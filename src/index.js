@@ -76,7 +76,7 @@ async function render({ input, output, postProcessing }) {
   const outputDir = await io.prepareOutputDirectory(output);
 
   console.log(`Rendering tex file ${texPath} to ${outputDir}`);
-  const htmlPath = await latexml.render(texPath, outputDir);
+  const htmlPath = await latexml.render({ texPath, outputDir });
 
   await processHTML(htmlPath);
 

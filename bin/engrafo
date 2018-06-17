@@ -8,10 +8,7 @@ var program = require("commander");
 program
   .version("0.0.1")
   .usage("[options] <tex file>")
-  .option(
-    "-o, --output <dir>",
-    "Output directory (default: same as tex file)"
-  )
+  .option("-o, --output <dir>", "Output directory (default: same as tex file)")
   .option(
     "--no-post-processing",
     "Raw LaTeXML output, without filters or postprocessors (for debugging)"
@@ -24,9 +21,9 @@ if (program.args.length != 1) {
 }
 
 var input = program.args[0];
-var output = program.output ||
-    (fs.lstatSync(input).isDirectory()
-     ? input : path.dirname(input));
+var output =
+  program.output ||
+  (fs.lstatSync(input).isDirectory() ? input : path.dirname(input));
 
 var options = {
   input: input,
@@ -34,11 +31,14 @@ var options = {
   postProcessing: program.postProcessing
 };
 
-engrafo.render(options).then(htmlPath => {
-  console.log("💃  Document successfully rendered to", htmlPath);
-  // S3 library sometimes causes Node not to quit
-  process.exit(0);
-}).catch(err => {
-  console.error("Engrafo rendering failed:", err);
-  process.exit(1);
-});
+engrafo
+  .render(options)
+  .then(htmlPath => {
+    console.log("💃  Document successfully rendered to", htmlPath);
+    // S3 library sometimes causes Node not to quit
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error("Engrafo rendering failed:", err);
+    process.exit(1);
+  });

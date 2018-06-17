@@ -2,7 +2,6 @@ const childProcess = require("child_process");
 const fs = require("fs-extra");
 const path = require("path");
 const readline = require("readline");
-const util = require("util");
 
 function unlinkIfExists(path) {
   try {
@@ -15,7 +14,7 @@ function unlinkIfExists(path) {
 }
 
 // render a document with latexml
-function render(texPath, outputDir, callback) {
+function render({ texPath, outputDir }) {
   var htmlPath = path.join(outputDir, "index.html");
 
   var latexmlc = childProcess.spawn(
@@ -39,26 +38,27 @@ function render(texPath, outputDir, callback) {
       cwd: path.dirname(texPath)
     }
   );
-  latexmlc.on("error", callback);
 
   var stdoutReadline = readline.createInterface({ input: latexmlc.stdout });
   stdoutReadline.on("line", console.log);
   var stderrReadline = readline.createInterface({ input: latexmlc.stderr });
   stderrReadline.on("line", console.error);
 
-  latexmlc.on("close", code => {
-    if (code !== 0) {
-      callback(new Error(`latexmlc exited with status ${code}`));
-      return;
-    }
+  return new Promise((resolve, reject) => {
+    latexmlc.on("error", reject);
+    latexmlc.on("close", code => {
+      if (code !== 0) {
+        return reject(new Error(`latexmlc exited with status ${code}`));
+      }
 
-    // HACK: Clean up stuff we don't want
-    unlinkIfExists(path.join(outputDir, "LaTeXML.cache"));
+      // HACK: Clean up stuff we don't want
+      unlinkIfExists(path.join(outputDir, "LaTeXML.cache"));
 
-    return callback(null, htmlPath);
+      return resolve(htmlPath);
+    });
   });
 }
 
 module.exports = {
-  render: util.promisify(render)
+  render: render
 };

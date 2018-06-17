@@ -2,6 +2,7 @@
 ENGRAFO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 
 exec docker run \
+    --init \
     -v "$ENGRAFO_DIR:/app" \
     -w /app \
     --rm \

@@ -1284,6 +1284,61 @@ listing command
         </div>
         
 
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
+        />
+        
+
+      </dt-appendix>
+    </div>
+    
+
+
+
+
+
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
+</body>
+`;
+
+exports[`lists render correctly 1`] = `
+<body>
+  <div
+    class="engrafo-container"
+  >
+    
+
+
+    <div
+      class="ltx_page_content"
+    >
+      
+
+      <dt-article>
+        <h1
+          class=""
+        />
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="engrafo-metadata-custom"
+          />
+        </div>
+        
+
         <section
           class="ltx_section"
           id="S1"

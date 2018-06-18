@@ -23,6 +23,10 @@ test("listings render correctly", async () => {
   await utils.expectToMatchSnapshot("documents/listings.tex");
 });
 
+test("lists render correctly", async () => {
+  await utils.expectToMatchSnapshot("documents/lists.tex");
+});
+
 test("tables render correctly", async () => {
   await utils.expectToMatchSnapshot("documents/tables.tex");
 });

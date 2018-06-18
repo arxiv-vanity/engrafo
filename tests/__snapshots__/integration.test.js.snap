@@ -4588,16 +4588,8 @@ exports[`lists.tex renders correctly 1`] = `
             <li
               class="ltx_item"
               id="S0.I1.i1"
-              style="list-style-type:none;"
             >
               
-
-              <span
-                class="ltx_tag ltx_tag_item"
-              >
-                •
-              </span>
-               
 
               <div
                 class="ltx_para"
@@ -4621,16 +4613,8 @@ exports[`lists.tex renders correctly 1`] = `
             <li
               class="ltx_item"
               id="S0.I1.i2"
-              style="list-style-type:none;"
             >
               
-
-              <span
-                class="ltx_tag ltx_tag_item"
-              >
-                •
-              </span>
-               
 
               <div
                 class="ltx_para"
@@ -4672,16 +4656,8 @@ exports[`lists.tex renders correctly 1`] = `
             <li
               class="ltx_item"
               id="S0.I2.i1"
-              style="list-style-type:none;"
             >
               
-
-              <span
-                class="ltx_tag ltx_tag_item"
-              >
-                1.
-              </span>
-               
 
               <div
                 class="ltx_para"
@@ -4705,16 +4681,8 @@ exports[`lists.tex renders correctly 1`] = `
             <li
               class="ltx_item"
               id="S0.I2.i2"
-              style="list-style-type:none;"
             >
               
-
-              <span
-                class="ltx_tag ltx_tag_item"
-              >
-                2.
-              </span>
-               
 
               <div
                 class="ltx_para"
@@ -4756,16 +4724,8 @@ exports[`lists.tex renders correctly 1`] = `
             <li
               class="ltx_item"
               id="S0.I3.i1"
-              style="list-style-type:none;"
             >
               
-
-              <span
-                class="ltx_tag ltx_tag_item"
-              >
-                •
-              </span>
-               
 
               <div
                 class="ltx_para"
@@ -4789,20 +4749,8 @@ exports[`lists.tex renders correctly 1`] = `
                   <li
                     class="ltx_item"
                     id="S0.I3.i1.i1"
-                    style="list-style-type:none;"
                   >
                     
-
-                    <span
-                      class="ltx_tag ltx_tag_item"
-                    >
-                      <span
-                        class="ltx_text ltx_font_bold"
-                      >
-                        –
-                      </span>
-                    </span>
-                     
 
                     <div
                       class="ltx_para"
@@ -4826,20 +4774,8 @@ exports[`lists.tex renders correctly 1`] = `
                   <li
                     class="ltx_item"
                     id="S0.I3.i1.i2"
-                    style="list-style-type:none;"
                   >
                     
-
-                    <span
-                      class="ltx_tag ltx_tag_item"
-                    >
-                      <span
-                        class="ltx_text ltx_font_bold"
-                      >
-                        –
-                      </span>
-                    </span>
-                     
 
                     <div
                       class="ltx_para"
@@ -4872,16 +4808,8 @@ exports[`lists.tex renders correctly 1`] = `
             <li
               class="ltx_item"
               id="S0.I3.i2"
-              style="list-style-type:none;"
             >
               
-
-              <span
-                class="ltx_tag ltx_tag_item"
-              >
-                •
-              </span>
-               
 
               <div
                 class="ltx_para"
@@ -4944,16 +4872,8 @@ exports[`lists.tex renders correctly 1`] = `
               <li
                 class="ltx_item"
                 id="S1.I1.i1"
-                style="list-style-type:none;"
               >
                 
-
-                <span
-                  class="ltx_tag ltx_tag_item"
-                >
-                  1.
-                </span>
-                 
 
                 <div
                   class="ltx_para"
@@ -4978,16 +4898,8 @@ exports[`lists.tex renders correctly 1`] = `
                     <li
                       class="ltx_item"
                       id="S1.I1.i1.i1"
-                      style="list-style-type:none;"
                     >
                       
-
-                      <span
-                        class="ltx_tag ltx_tag_item"
-                      >
-                        (a)
-                      </span>
-                       
 
                       <div
                         class="ltx_para"
@@ -5011,16 +4923,8 @@ exports[`lists.tex renders correctly 1`] = `
                     <li
                       class="ltx_item"
                       id="S1.I1.i1.i2"
-                      style="list-style-type:none;"
                     >
                       
-
-                      <span
-                        class="ltx_tag ltx_tag_item"
-                      >
-                        (b)
-                      </span>
-                       
 
                       <div
                         class="ltx_para"
@@ -5053,16 +4957,8 @@ exports[`lists.tex renders correctly 1`] = `
               <li
                 class="ltx_item"
                 id="S1.I1.i2"
-                style="list-style-type:none;"
               >
                 
-
-                <span
-                  class="ltx_tag ltx_tag_item"
-                >
-                  2.
-                </span>
-                 
 
                 <div
                   class="ltx_para"
@@ -7026,16 +6922,8 @@ list.
               <li
                 class="ltx_item"
                 id="S2.I1.i1"
-                style="list-style-type:none;"
               >
                 
-
-                <span
-                  class="ltx_tag ltx_tag_item"
-                >
-                  •
-                </span>
-                 
 
                 <div
                   class="ltx_para"
@@ -7062,16 +6950,8 @@ mark is used.
               <li
                 class="ltx_item"
                 id="S2.I1.i2"
-                style="list-style-type:none;"
               >
                 
-
-                <span
-                  class="ltx_tag ltx_tag_item"
-                >
-                  •
-                </span>
-                 
 
                 <div
                   class="ltx_para"
@@ -7103,16 +6983,8 @@ list is an
                     <li
                       class="ltx_item"
                       id="S2.I2.i1"
-                      style="list-style-type:none;"
                     >
                       
-
-                      <span
-                        class="ltx_tag ltx_tag_item"
-                      >
-                        1.
-                      </span>
-                       
 
                       <div
                         class="ltx_para"
@@ -7137,16 +7009,8 @@ list that is nested within the itemized list.
                     <li
                       class="ltx_item"
                       id="S2.I2.i2"
-                      style="list-style-type:none;"
                     >
                       
-
-                      <span
-                        class="ltx_tag ltx_tag_item"
-                      >
-                        2.
-                      </span>
-                       
 
                       <div
                         class="ltx_para"
@@ -7190,16 +7054,8 @@ part of the item.
               <li
                 class="ltx_item"
                 id="S2.I2.i3"
-                style="list-style-type:none;"
               >
                 
-
-                <span
-                  class="ltx_tag ltx_tag_item"
-                >
-                  •
-                </span>
-                 
 
                 <div
                   class="ltx_para"

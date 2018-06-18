@@ -30,6 +30,7 @@ function createChildProcess({
     "--timestamp", "0",
     "--preload", "/app/latexml/engrafo.ltxml",
     "--preload", "/usr/src/latexml/lib/LaTeXML/Package/hyperref.sty.ltxml",
+    "--xsltparameter", "SIMPLIFY_HTML:true"
   ];
 
   if (cssPath) {

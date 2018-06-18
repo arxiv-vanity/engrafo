@@ -540,20 +540,24 @@ exports[`figures render correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS1"
+          class="ltx_section"
+          id="S1"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.1 
+              <a
+                href="#S1"
+              >
+                1 
+              </a>
             </span>
             Plain includeimage
           </h2>
@@ -562,7 +566,7 @@ exports[`figures render correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS1.p1"
+            id="S1.p1"
           >
             
 
@@ -570,7 +574,7 @@ exports[`figures render correctly 1`] = `
               alt=""
               class="ltx_graphics"
               height="318"
-              id="S0.SS1.p1.g1"
+              id="S1.p1.g1"
               src="fig.png"
               width="300"
             />
@@ -583,20 +587,24 @@ exports[`figures render correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS2"
+          class="ltx_section"
+          id="S2"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.2 
+              <a
+                href="#S2"
+              >
+                2 
+              </a>
             </span>
             Single image
           </h2>
@@ -605,13 +613,13 @@ exports[`figures render correctly 1`] = `
 
           <figure
             class="ltx_figure"
-            id="S0.F1"
+            id="S2.F1"
           >
             <img
               alt=""
               class="ltx_graphics"
               height="301"
-              id="S0.F1.g1"
+              id="S2.F1.g1"
               src="fig.png"
               width="284"
             />
@@ -634,7 +642,7 @@ exports[`figures render correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS2.p1"
+            id="S2.p1"
           >
             
 
@@ -644,8 +652,8 @@ exports[`figures render correctly 1`] = `
               See fig 
               <a
                 class="ltx_ref"
-                href="#S0.F2"
-                title="Figure 2 ‣ 0.3 Multiple images"
+                href="#S2.F2"
+                title="Figure 2 ‣ 2.1 Multiple images ‣ 2 Single image"
               >
                 <span
                   class="ltx_text ltx_ref_tag"
@@ -662,7 +670,7 @@ exports[`figures render correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS2.p2"
+            id="S2.p2"
           >
             
 
@@ -682,121 +690,121 @@ exports[`figures render correctly 1`] = `
           </div>
           
 
-        </section>
-        
-
-        <section
-          class="ltx_subsection"
-          id="S0.SS3"
-        >
-          
-
-          <h2
-            class="ltx_title ltx_title_subsection"
+          <section
+            class="ltx_subsection"
+            id="S2.SS1"
           >
             
 
-            <span
-              class="ltx_tag ltx_tag_subsection"
-            >
-              0.3 
-            </span>
-            Multiple images
-          </h2>
-          
-
-
-          <figure
-            class="ltx_figure"
-            id="S0.F2"
-          >
-            
-
-            <table
-              style="width:100%;"
+            <h3
+              class="ltx_title ltx_title_subsection"
             >
               
 
-              <tbody>
-                <tr>
-                  
+              <span
+                class="ltx_tag ltx_tag_subsection"
+              >
+                2.1 
+              </span>
+              Multiple images
+            </h3>
+            
 
-                  <td
-                    class="ltx_subgraphics"
-                  >
-                    <img
-                      alt=""
-                      class="ltx_graphics"
-                      height="301"
-                      id="S0.F2.g1"
-                      src="fig.png"
-                      width="284"
-                    />
-                  </td>
-                  
 
-                  <td
-                    class="ltx_subgraphics"
-                  >
-                    <img
-                      alt=""
-                      class="ltx_graphics"
-                      height="301"
-                      id="S0.F2.g2"
-                      src="fig.png"
-                      width="284"
-                    />
-                  </td>
-                  
+            <figure
+              class="ltx_figure"
+              id="S2.F2"
+            >
+              
 
-                </tr>
+              <table
+                style="width:100%;"
+              >
                 
 
-              </tbody>
-            </table>
-            
+                <tbody>
+                  <tr>
+                    
 
-            <figcaption
-              class="ltx_caption"
-            >
-              <span
-                class="ltx_tag ltx_tag_figure"
-              >
-                Figure 2: 
-              </span>
-              Fig.
-            </figcaption>
-            
+                    <td
+                      class="ltx_subgraphics"
+                    >
+                      <img
+                        alt=""
+                        class="ltx_graphics"
+                        height="301"
+                        id="S2.F2.g1"
+                        src="fig.png"
+                        width="284"
+                      />
+                    </td>
+                    
 
-          </figure>
-          
+                    <td
+                      class="ltx_subgraphics"
+                    >
+                      <img
+                        alt=""
+                        class="ltx_graphics"
+                        height="301"
+                        id="S2.F2.g2"
+                        src="fig.png"
+                        width="284"
+                      />
+                    </td>
+                    
 
-          <div
-            class="ltx_para"
-            id="S0.SS3.p1"
-          >
-            
+                  </tr>
+                  
 
-            <p
-              class="ltx_p"
-            >
-              See fig 
-              <a
-                class="ltx_ref"
-                href="#S0.F2"
-                title="Figure 2 ‣ 0.3 Multiple images"
+                </tbody>
+              </table>
+              
+
+              <figcaption
+                class="ltx_caption"
               >
                 <span
-                  class="ltx_text ltx_ref_tag"
+                  class="ltx_tag ltx_tag_figure"
                 >
-                  2
+                  Figure 2: 
                 </span>
-              </a>
-              .
-            </p>
+                Fig.
+              </figcaption>
+              
+
+            </figure>
             
 
-          </div>
+            <div
+              class="ltx_para"
+              id="S2.SS1.p1"
+            >
+              
+
+              <p
+                class="ltx_p"
+              >
+                See fig 
+                <a
+                  class="ltx_ref"
+                  href="#S2.F2"
+                  title="Figure 2 ‣ 2.1 Multiple images ‣ 2 Single image"
+                >
+                  <span
+                    class="ltx_text ltx_ref_tag"
+                  >
+                    2
+                  </span>
+                </a>
+                .
+              </p>
+              
+
+            </div>
+            
+
+          </section>
           
 
         </section>
@@ -1319,6 +1327,277 @@ exports[`lists render correctly 1`] = `
         </div>
         
 
+        <div
+          class="ltx_para"
+          id="p1"
+        >
+          
+
+          <ul
+            class="ltx_itemize"
+            id="S0.I1"
+          >
+            
+
+            <li
+              class="ltx_item"
+              id="S0.I1.i1"
+            >
+              
+ 
+
+              <div
+                class="ltx_para"
+                id="S0.I1.i1.p1"
+              >
+                
+
+                <p
+                  class="ltx_p"
+                >
+                  An unordered list
+                </p>
+                
+
+              </div>
+              
+
+            </li>
+            
+
+            <li
+              class="ltx_item"
+              id="S0.I1.i2"
+            >
+              
+ 
+
+              <div
+                class="ltx_para"
+                id="S0.I1.i2.p1"
+              >
+                
+
+                <p
+                  class="ltx_p"
+                >
+                  Second item
+                </p>
+                
+
+              </div>
+              
+
+            </li>
+            
+
+          </ul>
+          
+
+        </div>
+        
+
+        <div
+          class="ltx_para"
+          id="p2"
+        >
+          
+
+          <ol
+            class="ltx_enumerate"
+            id="S0.I2"
+          >
+            
+
+            <li
+              class="ltx_item"
+              id="S0.I2.i1"
+            >
+              
+ 
+
+              <div
+                class="ltx_para"
+                id="S0.I2.i1.p1"
+              >
+                
+
+                <p
+                  class="ltx_p"
+                >
+                  An ordered list
+                </p>
+                
+
+              </div>
+              
+
+            </li>
+            
+
+            <li
+              class="ltx_item"
+              id="S0.I2.i2"
+            >
+              
+ 
+
+              <div
+                class="ltx_para"
+                id="S0.I2.i2.p1"
+              >
+                
+
+                <p
+                  class="ltx_p"
+                >
+                  Second one.
+                </p>
+                
+
+              </div>
+              
+
+            </li>
+            
+
+          </ol>
+          
+
+        </div>
+        
+
+        <div
+          class="ltx_para"
+          id="p3"
+        >
+          
+
+          <ul
+            class="ltx_itemize"
+            id="S0.I3"
+          >
+            
+
+            <li
+              class="ltx_item"
+              id="S0.I3.i1"
+            >
+              
+ 
+
+              <div
+                class="ltx_para"
+                id="S0.I3.i1.p1"
+              >
+                
+
+                <p
+                  class="ltx_p"
+                >
+                  A nested unordered list
+                </p>
+                
+
+                <ul
+                  class="ltx_itemize"
+                  id="S0.I3.I1"
+                >
+                  
+
+                  <li
+                    class="ltx_item"
+                    id="S0.I3.i1.i1"
+                  >
+                    
+ 
+
+                    <div
+                      class="ltx_para"
+                      id="S0.I3.i1.i1.p1"
+                    >
+                      
+
+                      <p
+                        class="ltx_p"
+                      >
+                        First nested item
+                      </p>
+                      
+
+                    </div>
+                    
+
+                  </li>
+                  
+
+                  <li
+                    class="ltx_item"
+                    id="S0.I3.i1.i2"
+                  >
+                    
+ 
+
+                    <div
+                      class="ltx_para"
+                      id="S0.I3.i1.i2.p1"
+                    >
+                      
+
+                      <p
+                        class="ltx_p"
+                      >
+                        Second nested item
+                      </p>
+                      
+
+                    </div>
+                    
+
+                  </li>
+                  
+
+                </ul>
+                
+
+              </div>
+              
+
+            </li>
+            
+
+            <li
+              class="ltx_item"
+              id="S0.I3.i2"
+            >
+              
+ 
+
+              <div
+                class="ltx_para"
+                id="S0.I3.i2.p1"
+              >
+                
+
+                <p
+                  class="ltx_p"
+                >
+                  Second item
+                </p>
+                
+
+              </div>
+              
+
+            </li>
+            
+
+          </ul>
+          
+
+        </div>
+        
+
         <section
           class="ltx_section"
           id="S1"
@@ -1339,7 +1618,7 @@ exports[`lists render correctly 1`] = `
                 1 
               </a>
             </span>
-            Lists
+            A nested ordered list
           </h2>
           
 
@@ -1350,8 +1629,8 @@ exports[`lists render correctly 1`] = `
           >
             
 
-            <ul
-              class="ltx_itemize"
+            <ol
+              class="ltx_enumerate"
               id="S1.I1"
             >
               
@@ -1372,8 +1651,70 @@ exports[`lists render correctly 1`] = `
                   <p
                     class="ltx_p"
                   >
-                    An unordered list
+                    First item
+
                   </p>
+                  
+
+                  <ol
+                    class="ltx_enumerate"
+                    id="S1.I1.I1"
+                  >
+                    
+
+                    <li
+                      class="ltx_item"
+                      id="S1.I1.i1.i1"
+                    >
+                      
+ 
+
+                      <div
+                        class="ltx_para"
+                        id="S1.I1.i1.i1.p1"
+                      >
+                        
+
+                        <p
+                          class="ltx_p"
+                        >
+                          First nested item
+                        </p>
+                        
+
+                      </div>
+                      
+
+                    </li>
+                    
+
+                    <li
+                      class="ltx_item"
+                      id="S1.I1.i1.i2"
+                    >
+                      
+ 
+
+                      <div
+                        class="ltx_para"
+                        id="S1.I1.i1.i2.p1"
+                      >
+                        
+
+                        <p
+                          class="ltx_p"
+                        >
+                          Second nested item
+                        </p>
+                        
+
+                      </div>
+                      
+
+                    </li>
+                    
+
+                  </ol>
                   
 
                 </div>
@@ -1408,366 +1749,10 @@ exports[`lists render correctly 1`] = `
               </li>
               
 
-            </ul>
-            
-
-          </div>
-          
-
-          <div
-            class="ltx_para"
-            id="S1.p2"
-          >
-            
-
-            <ol
-              class="ltx_enumerate"
-              id="S1.I2"
-            >
-              
-
-              <li
-                class="ltx_item"
-                id="S1.I2.i1"
-              >
-                
- 
-
-                <div
-                  class="ltx_para"
-                  id="S1.I2.i1.p1"
-                >
-                  
-
-                  <p
-                    class="ltx_p"
-                  >
-                    An ordered list
-                  </p>
-                  
-
-                </div>
-                
-
-              </li>
-              
-
-              <li
-                class="ltx_item"
-                id="S1.I2.i2"
-              >
-                
- 
-
-                <div
-                  class="ltx_para"
-                  id="S1.I2.i2.p1"
-                >
-                  
-
-                  <p
-                    class="ltx_p"
-                  >
-                    Second one.
-                  </p>
-                  
-
-                </div>
-                
-
-              </li>
-              
-
             </ol>
             
 
           </div>
-          
-
-          <div
-            class="ltx_para"
-            id="S1.p3"
-          >
-            
-
-            <ul
-              class="ltx_itemize"
-              id="S1.I3"
-            >
-              
-
-              <li
-                class="ltx_item"
-                id="S1.I3.i1"
-              >
-                
- 
-
-                <div
-                  class="ltx_para"
-                  id="S1.I3.i1.p1"
-                >
-                  
-
-                  <p
-                    class="ltx_p"
-                  >
-                    A nested unordered list
-                  </p>
-                  
-
-                  <ul
-                    class="ltx_itemize"
-                    id="S1.I3.I1"
-                  >
-                    
-
-                    <li
-                      class="ltx_item"
-                      id="S1.I3.i1.i1"
-                    >
-                      
- 
-
-                      <div
-                        class="ltx_para"
-                        id="S1.I3.i1.i1.p1"
-                      >
-                        
-
-                        <p
-                          class="ltx_p"
-                        >
-                          First nested item
-                        </p>
-                        
-
-                      </div>
-                      
-
-                    </li>
-                    
-
-                    <li
-                      class="ltx_item"
-                      id="S1.I3.i1.i2"
-                    >
-                      
- 
-
-                      <div
-                        class="ltx_para"
-                        id="S1.I3.i1.i2.p1"
-                      >
-                        
-
-                        <p
-                          class="ltx_p"
-                        >
-                          Second nested item
-                        </p>
-                        
-
-                      </div>
-                      
-
-                    </li>
-                    
-
-                  </ul>
-                  
-
-                </div>
-                
-
-              </li>
-              
-
-              <li
-                class="ltx_item"
-                id="S1.I3.i2"
-              >
-                
- 
-
-                <div
-                  class="ltx_para"
-                  id="S1.I3.i2.p1"
-                >
-                  
-
-                  <p
-                    class="ltx_p"
-                  >
-                    Second item
-                  </p>
-                  
-
-                </div>
-                
-
-              </li>
-              
-
-            </ul>
-            
-
-          </div>
-          
-
-          <section
-            class="ltx_subsection"
-            id="S1.SS1"
-          >
-            
-
-            <h3
-              class="ltx_title ltx_title_subsection"
-            >
-              
-
-              <span
-                class="ltx_tag ltx_tag_subsection"
-              >
-                1.1 
-              </span>
-              A nested ordered list
-            </h3>
-            
-
-
-            <div
-              class="ltx_para"
-              id="S1.SS1.p1"
-            >
-              
-
-              <ol
-                class="ltx_enumerate"
-                id="S1.I4"
-              >
-                
-
-                <li
-                  class="ltx_item"
-                  id="S1.I4.i1"
-                >
-                  
- 
-
-                  <div
-                    class="ltx_para"
-                    id="S1.I4.i1.p1"
-                  >
-                    
-
-                    <p
-                      class="ltx_p"
-                    >
-                      First item
-                    </p>
-                    
-
-                    <ol
-                      class="ltx_enumerate"
-                      id="S1.I4.I1"
-                    >
-                      
-
-                      <li
-                        class="ltx_item"
-                        id="S1.I4.i1.i1"
-                      >
-                        
- 
-
-                        <div
-                          class="ltx_para"
-                          id="S1.I4.i1.i1.p1"
-                        >
-                          
-
-                          <p
-                            class="ltx_p"
-                          >
-                            First nested item
-                          </p>
-                          
-
-                        </div>
-                        
-
-                      </li>
-                      
-
-                      <li
-                        class="ltx_item"
-                        id="S1.I4.i1.i2"
-                      >
-                        
- 
-
-                        <div
-                          class="ltx_para"
-                          id="S1.I4.i1.i2.p1"
-                        >
-                          
-
-                          <p
-                            class="ltx_p"
-                          >
-                            Second nested item
-                          </p>
-                          
-
-                        </div>
-                        
-
-                      </li>
-                      
-
-                    </ol>
-                    
-
-                  </div>
-                  
-
-                </li>
-                
-
-                <li
-                  class="ltx_item"
-                  id="S1.I4.i2"
-                >
-                  
- 
-
-                  <div
-                    class="ltx_para"
-                    id="S1.I4.i2.p1"
-                  >
-                    
-
-                    <p
-                      class="ltx_p"
-                    >
-                      Second item
-                    </p>
-                    
-
-                  </div>
-                  
-
-                </li>
-                
-
-              </ol>
-              
-
-            </div>
-            
-
-          </section>
           
 
         </section>
@@ -1829,20 +1814,24 @@ exports[`math renders correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS1"
+          class="ltx_section"
+          id="S1"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.1 
+              <a
+                href="#S1"
+              >
+                1 
+              </a>
             </span>
             Block
           </h2>
@@ -1851,13 +1840,13 @@ exports[`math renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS1.p1"
+            id="S1.p1"
           >
             
 
             <table
               class="ltx_equation ltx_eqn_table"
-              id="S0.E1"
+              id="S1.E1"
             >
               
 
@@ -1878,7 +1867,7 @@ exports[`math renders correctly 1`] = `
                   >
                     <span
                       class="ltx_DisplayMath"
-                      id="S0.E1.m1"
+                      id="S1.E1.m1"
                     >
                       <span
                         class="mjpage mjpage__block"
@@ -2015,8 +2004,8 @@ exports[`math renders correctly 1`] = `
               Equation 
               <a
                 class="ltx_ref"
-                href="#S0.E1"
-                title="(1) ‣ 0.1 Block"
+                href="#S1.E1"
+                title="(1) ‣ 1 Block"
               >
                 <span
                   class="ltx_text ltx_ref_tag"
@@ -2035,20 +2024,24 @@ exports[`math renders correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS2"
+          class="ltx_section"
+          id="S2"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.2 
+              <a
+                href="#S2"
+              >
+                2 
+              </a>
             </span>
             Inline
           </h2>
@@ -2057,7 +2050,7 @@ exports[`math renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS2.p1"
+            id="S2.p1"
           >
             
 
@@ -2067,7 +2060,7 @@ exports[`math renders correctly 1`] = `
               some lovely maths 
               <span
                 class="ltx_Math"
-                id="S0.SS2.p1.m1"
+                id="S2.p1.m1"
               >
                 <span
                   class="mjpage"
@@ -2301,20 +2294,24 @@ exports[`paragraph formatting renders correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS1"
+          class="ltx_section"
+          id="S1"
         >
           
 
           <h2
-            class="ltx_title ltx_align_left ltx_align_right ltx_centering ltx_title_subsection"
+            class="ltx_title ltx_align_left ltx_align_right ltx_centering ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.1 
+              <a
+                href="#S1"
+              >
+                1 
+              </a>
             </span>
             Justification
           </h2>
@@ -2323,7 +2320,7 @@ exports[`paragraph formatting renders correctly 1`] = `
 
           <div
             class="ltx_para ltx_align_left ltx_align_right ltx_align_center"
-            id="S0.SS1.p1"
+            id="S1.p1"
           >
             
 
@@ -2339,7 +2336,7 @@ exports[`paragraph formatting renders correctly 1`] = `
 
           <div
             class="ltx_para ltx_align_left ltx_align_right ltx_align_center"
-            id="S0.SS1.p2"
+            id="S1.p2"
           >
             
 
@@ -2355,7 +2352,7 @@ exports[`paragraph formatting renders correctly 1`] = `
 
           <div
             class="ltx_para ltx_align_right ltx_align_center"
-            id="S0.SS1.p3"
+            id="S1.p3"
           >
             
 
@@ -2371,7 +2368,7 @@ exports[`paragraph formatting renders correctly 1`] = `
 
           <div
             class="ltx_para ltx_align_right ltx_align_center"
-            id="S0.SS1.p4"
+            id="S1.p4"
           >
             
 
@@ -2387,7 +2384,7 @@ exports[`paragraph formatting renders correctly 1`] = `
 
           <div
             class="ltx_para ltx_align_center"
-            id="S0.SS1.p5"
+            id="S1.p5"
           >
             
 
@@ -2403,7 +2400,7 @@ exports[`paragraph formatting renders correctly 1`] = `
 
           <div
             class="ltx_para ltx_align_center"
-            id="S0.SS1.p6"
+            id="S1.p6"
           >
             
 
@@ -2421,20 +2418,24 @@ exports[`paragraph formatting renders correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS2"
+          class="ltx_section"
+          id="S2"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.2 
+              <a
+                href="#S2"
+              >
+                2 
+              </a>
             </span>
             Indentation
           </h2>
@@ -2443,7 +2444,7 @@ exports[`paragraph formatting renders correctly 1`] = `
 
           <div
             class="ltx_para ltx_indent"
-            id="S0.SS2.p1"
+            id="S2.p1"
           >
             
 
@@ -2461,20 +2462,24 @@ exports[`paragraph formatting renders correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS3"
+          class="ltx_section"
+          id="S3"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.3 
+              <a
+                href="#S3"
+              >
+                3 
+              </a>
             </span>
             indentfirst package
           </h2>
@@ -2483,7 +2488,7 @@ exports[`paragraph formatting renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS3.p1"
+            id="S3.p1"
           >
             
 
@@ -2501,20 +2506,24 @@ exports[`paragraph formatting renders correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS4"
+          class="ltx_section"
+          id="S4"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.4 
+              <a
+                href="#S4"
+              >
+                4 
+              </a>
             </span>
             parskip package
           </h2>
@@ -2523,7 +2532,7 @@ exports[`paragraph formatting renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS4.p1"
+            id="S4.p1"
           >
             
 
@@ -2541,20 +2550,24 @@ exports[`paragraph formatting renders correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS5"
+          class="ltx_section"
+          id="S5"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.5 
+              <a
+                href="#S5"
+              >
+                5 
+              </a>
             </span>
             Verbatim
           </h2>
@@ -2563,7 +2576,7 @@ exports[`paragraph formatting renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS5.p1"
+            id="S5.p1"
           >
             
 
@@ -2584,7 +2597,7 @@ exports[`paragraph formatting renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS5.p2"
+            id="S5.p2"
           >
             
 
@@ -4640,20 +4653,24 @@ exports[`tables render correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS1"
+          class="ltx_section"
+          id="S1"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.1 
+              <a
+                href="#S1"
+              >
+                1 
+              </a>
             </span>
             Basic
           </h2>
@@ -4662,7 +4679,7 @@ exports[`tables render correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS1.p1"
+            id="S1.p1"
           >
             
 
@@ -4776,20 +4793,24 @@ exports[`tables render correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS2"
+          class="ltx_section"
+          id="S2"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.2 
+              <a
+                href="#S2"
+              >
+                2 
+              </a>
             </span>
             Vertical lines
           </h2>
@@ -4798,7 +4819,7 @@ exports[`tables render correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS2.p1"
+            id="S2.p1"
           >
             
 
@@ -4912,20 +4933,24 @@ exports[`tables render correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS3"
+          class="ltx_section"
+          id="S3"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.3 
+              <a
+                href="#S3"
+              >
+                3 
+              </a>
             </span>
             Horizontal lines at top and bottom
           </h2>
@@ -4934,7 +4959,7 @@ exports[`tables render correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS3.p1"
+            id="S3.p1"
           >
             
 
@@ -5048,20 +5073,24 @@ exports[`tables render correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS4"
+          class="ltx_section"
+          id="S4"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.4 
+              <a
+                href="#S4"
+              >
+                4 
+              </a>
             </span>
             Lines between every row
           </h2>
@@ -5070,7 +5099,7 @@ exports[`tables render correctly 1`] = `
 
           <div
             class="ltx_para ltx_align_center"
-            id="S0.SS4.p1"
+            id="S4.p1"
           >
             
 
@@ -5190,7 +5219,7 @@ exports[`tables render correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS4.p2"
+            id="S4.p2"
           >
             
 
@@ -5313,20 +5342,24 @@ exports[`tables render correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS5"
+          class="ltx_section"
+          id="S5"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.5 
+              <a
+                href="#S5"
+              >
+                5 
+              </a>
             </span>
             Text column with width
           </h2>
@@ -5335,7 +5368,7 @@ exports[`tables render correctly 1`] = `
 
           <div
             class="ltx_para ltx_align_center"
-            id="S0.SS5.p1"
+            id="S5.p1"
           >
             
 
@@ -5523,20 +5556,24 @@ throughout the evening.
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS6"
+          class="ltx_section"
+          id="S6"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.6 
+              <a
+                href="#S6"
+              >
+                6 
+              </a>
             </span>
             Defining multiple columns
           </h2>
@@ -5545,7 +5582,7 @@ throughout the evening.
 
           <div
             class="ltx_para"
-            id="S0.SS6.p1"
+            id="S6.p1"
           >
             
 
@@ -5900,20 +5937,24 @@ throughout the evening.
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS7"
+          class="ltx_section"
+          id="S7"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.7 
+              <a
+                href="#S7"
+              >
+                7 
+              </a>
             </span>
             Rows spanning multiple columns
           </h2>
@@ -5922,7 +5963,7 @@ throughout the evening.
 
           <div
             class="ltx_para"
-            id="S0.SS7.p1"
+            id="S7.p1"
           >
             
 
@@ -6215,20 +6256,24 @@ throughout the evening.
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS8"
+          class="ltx_section"
+          id="S8"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.8 
+              <a
+                href="#S8"
+              >
+                8 
+              </a>
             </span>
             Columns spanning multiple rows
           </h2>
@@ -6237,7 +6282,7 @@ throughout the evening.
 
           <div
             class="ltx_para"
-            id="S0.SS8.p1"
+            id="S8.p1"
           >
             
 
@@ -6566,7 +6611,7 @@ throughout the evening.
 
           <div
             class="ltx_para"
-            id="S0.SS8.p2"
+            id="S8.p2"
           >
             
 
@@ -6893,7 +6938,7 @@ throughout the evening.
 
           <div
             class="ltx_para"
-            id="S0.SS8.p3"
+            id="S8.p3"
           >
             
 
@@ -7013,20 +7058,24 @@ throughout the evening.
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS9"
+          class="ltx_section"
+          id="S9"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.9 
+              <a
+                href="#S9"
+              >
+                9 
+              </a>
             </span>
             Table with width
           </h2>
@@ -7035,7 +7084,7 @@ throughout the evening.
 
           <div
             class="ltx_para"
-            id="S0.SS9.p1"
+            id="S9.p1"
           >
             
 
@@ -7135,20 +7184,24 @@ throughout the evening.
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS10"
+          class="ltx_section"
+          id="S10"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.10 
+              <a
+                href="#S10"
+              >
+                10 
+              </a>
             </span>
             tabularx
           </h2>
@@ -7157,7 +7210,7 @@ throughout the evening.
 
           <div
             class="ltx_para"
-            id="S0.SS10.p1"
+            id="S10.p1"
           >
             
 
@@ -7257,20 +7310,24 @@ throughout the evening.
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS11"
+          class="ltx_section"
+          id="S11"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.11 
+              <a
+                href="#S11"
+              >
+                11 
+              </a>
             </span>
             tabulary
           </h2>
@@ -7279,7 +7336,7 @@ throughout the evening.
 
           <div
             class="ltx_para ltx_align_center"
-            id="S0.SS11.p1"
+            id="S11.p1"
           >
             
 
@@ -7402,20 +7459,24 @@ throughout the evening.
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS12"
+          class="ltx_section"
+          id="S12"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.12 
+              <a
+                href="#S12"
+              >
+                12 
+              </a>
             </span>
             Captions and references
           </h2>
@@ -7424,7 +7485,7 @@ throughout the evening.
 
           <figure
             class="ltx_table"
-            id="S0.T1"
+            id="S12.T1"
           >
             
 
@@ -7548,7 +7609,7 @@ throughout the evening.
 
           <div
             class="ltx_para"
-            id="S0.SS12.p1"
+            id="S12.p1"
           >
             
 
@@ -7558,8 +7619,8 @@ throughout the evening.
               Take a look at some cool data in table 
               <a
                 class="ltx_ref"
-                href="#S0.T1"
-                title="Table 1 ‣ 0.12 Captions and references"
+                href="#S12.T1"
+                title="Table 1 ‣ 12 Captions and references"
               >
                 <span
                   class="ltx_text ltx_ref_tag"
@@ -7576,7 +7637,7 @@ throughout the evening.
 
           <figure
             class="ltx_table"
-            id="S0.T2"
+            id="S12.T2"
           >
             
 
@@ -7698,20 +7759,24 @@ exports[`text renders correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS1"
+          class="ltx_section"
+          id="S1"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.1 
+              <a
+                href="#S1"
+              >
+                1 
+              </a>
             </span>
             Fonts
           </h2>
@@ -7720,7 +7785,7 @@ exports[`text renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS1.p1"
+            id="S1.p1"
           >
             
 
@@ -7840,20 +7905,24 @@ exports[`text renders correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS2"
+          class="ltx_section"
+          id="S2"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.2 
+              <a
+                href="#S2"
+              >
+                2 
+              </a>
             </span>
             ulem package
           </h2>
@@ -7862,7 +7931,7 @@ exports[`text renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS2.p1"
+            id="S2.p1"
           >
             
 
@@ -7901,20 +7970,24 @@ exports[`text renders correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS3"
+          class="ltx_section"
+          id="S3"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.3 
+              <a
+                href="#S3"
+              >
+                3 
+              </a>
             </span>
             Sizing
           </h2>
@@ -7923,7 +7996,7 @@ exports[`text renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS3.p1"
+            id="S3.p1"
           >
             
 
@@ -8044,20 +8117,24 @@ exports[`text renders correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS4"
+          class="ltx_section"
+          id="S4"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.4 
+              <a
+                href="#S4"
+              >
+                4 
+              </a>
             </span>
             Colors
           </h2>
@@ -8066,7 +8143,7 @@ exports[`text renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS4.p1"
+            id="S4.p1"
           >
             
 
@@ -8088,7 +8165,7 @@ exports[`text renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS4.p2"
+            id="S4.p2"
           >
             
 
@@ -8111,20 +8188,24 @@ exports[`text renders correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS5"
+          class="ltx_section"
+          id="S5"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.5 
+              <a
+                href="#S5"
+              >
+                5 
+              </a>
             </span>
             Spacing
           </h2>
@@ -8133,7 +8214,7 @@ exports[`text renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS5.p1"
+            id="S5.p1"
           >
             
 
@@ -8149,7 +8230,7 @@ exports[`text renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS5.p2"
+            id="S5.p2"
           >
             
 
@@ -8173,7 +8254,7 @@ exports[`text renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS5.p3"
+            id="S5.p3"
           >
             
 
@@ -8201,20 +8282,24 @@ exports[`text renders correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS6"
+          class="ltx_section"
+          id="S6"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.6 
+              <a
+                href="#S6"
+              >
+                6 
+              </a>
             </span>
             Quotes
           </h2>
@@ -8223,7 +8308,7 @@ exports[`text renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS6.p1"
+            id="S6.p1"
           >
             
 
@@ -8276,20 +8361,24 @@ exports[`text renders correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS7"
+          class="ltx_section"
+          id="S7"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.7 
+              <a
+                href="#S7"
+              >
+                7 
+              </a>
             </span>
             Super/subscript
           </h2>
@@ -8298,7 +8387,7 @@ exports[`text renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS7.p1"
+            id="S7.p1"
           >
             
 
@@ -8333,20 +8422,24 @@ exports[`text renders correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS8"
+          class="ltx_section"
+          id="S8"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.8 
+              <a
+                href="#S8"
+              >
+                8 
+              </a>
             </span>
             Dashes and hypens
           </h2>
@@ -8355,7 +8448,7 @@ exports[`text renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS8.p1"
+            id="S8.p1"
           >
             
 
@@ -8380,7 +8473,7 @@ exports[`text renders correctly 1`] = `
               Minus sign: 
               <span
                 class="ltx_Math"
-                id="S0.SS8.p1.m1"
+                id="S8.p1.m1"
               >
                 <span
                   class="mjpage"
@@ -8414,7 +8507,7 @@ exports[`text renders correctly 1`] = `
               , 
               <span
                 class="ltx_Math"
-                id="S0.SS8.p1.m2"
+                id="S8.p1.m2"
               >
                 <span
                   class="mjpage"
@@ -8448,7 +8541,7 @@ exports[`text renders correctly 1`] = `
                and 
               <span
                 class="ltx_Math"
-                id="S0.SS8.p1.m3"
+                id="S8.p1.m3"
               >
                 <span
                   class="mjpage"
@@ -8499,20 +8592,24 @@ exports[`text renders correctly 1`] = `
         
 
         <section
-          class="ltx_subsection"
-          id="S0.SS9"
+          class="ltx_section"
+          id="S9"
         >
           
 
           <h2
-            class="ltx_title ltx_title_subsection"
+            class="ltx_title ltx_title_section"
           >
             
 
             <span
-              class="ltx_tag ltx_tag_subsection"
+              class="ltx_tag ltx_tag_section"
             >
-              0.9 
+              <a
+                href="#S9"
+              >
+                9 
+              </a>
             </span>
             Ellipsis
           </h2>
@@ -8521,7 +8618,7 @@ exports[`text renders correctly 1`] = `
 
           <div
             class="ltx_para"
-            id="S0.SS9.p1"
+            id="S9.p1"
           >
             
 

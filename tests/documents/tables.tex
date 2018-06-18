@@ -5,7 +5,7 @@
 \begin{document}
   % https://en.wikibooks.org/wiki/LaTeX/Tables
 
-  \subsection{Basic}
+  \section{Basic}
 
   \begin{tabular}{ l c r }
     1 & 2 & 3 \\
@@ -13,7 +13,7 @@
     7 & 8 & 9 \\
   \end{tabular}
 
-  \subsection{Vertical lines}
+  \section{Vertical lines}
 
   \begin{tabular}{ l | c | r }
     1 & 2 & 3 \\
@@ -21,7 +21,7 @@
     7 & 8 & 9 \\
   \end{tabular}
 
-  \subsection{Horizontal lines at top and bottom}
+  \section{Horizontal lines at top and bottom}
 
   \begin{tabular}{ l | c | r }
     \hline
@@ -31,7 +31,7 @@
     \hline
   \end{tabular}
 
-  \subsection{Lines between every row}
+  \section{Lines between every row}
 
   \begin{center}
     \begin{tabular}{ l | c | r }
@@ -53,7 +53,7 @@
     \hline
   \end{tabular}
 
-  \subsection{Text column with width}
+  \section{Text column with width}
 
   \begin{center}
     \begin{tabular}{ | l | l | l | p{5cm} |}
@@ -71,7 +71,7 @@
     \end{tabular}
   \end{center}
 
-  \subsection{Defining multiple columns}
+  \section{Defining multiple columns}
 
   \begin{tabular}{l*{6}{c}r}
     Team              & P & W & D & L & F  & A & Pts \\
@@ -82,7 +82,7 @@
     FC Copenhagen     & 6 & 2 & 1 & 3 &  5 & 8 &  7  \\
   \end{tabular}
 
-  \subsection{Rows spanning multiple columns}
+  \section{Rows spanning multiple columns}
 
   \begin{tabular}{ |l|l| }
     \hline
@@ -102,7 +102,7 @@
     \hline
   \end{tabular}
 
-  \subsection{Columns spanning multiple rows}
+  \section{Columns spanning multiple rows}
 
   \begin{tabular}{ |l|l|l| }
     \hline
@@ -147,7 +147,7 @@
     \cline{2-3}
   \end{tabular}
 
-  \subsection{Table with width}
+  \section{Table with width}
 
   \begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill} } | c | c | c | r | }
     \hline
@@ -157,7 +157,7 @@
     \hline
   \end{tabular*}
 
-  \subsection{tabularx}
+  \section{tabularx}
 
   \begin{tabularx}{\textwidth}{ |X|X|X|X| }
     \hline
@@ -167,7 +167,7 @@
     \hline
   \end{tabularx}
 
-  \subsection{tabulary}
+  \section{tabulary}
 
   \begin{center}
     \begin{tabulary}{0.7\textwidth}{LCL}
@@ -178,7 +178,7 @@
     \end{tabulary}
   \end{center}
 
-  \subsection{Captions and references}
+  \section{Captions and references}
 
   \begin{table}[h]
     \begin{tabular}{ c c c }

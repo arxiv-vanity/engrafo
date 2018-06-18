@@ -3977,6 +3977,328 @@ second paragraph! And some
 </body>
 `;
 
+exports[`headings.tex renders correctly 1`] = `
+<body>
+  <div
+    class="engrafo-container"
+  >
+    
+
+
+    <div
+      class="ltx_page_content"
+    >
+      
+
+      <dt-article>
+        
+
+        <h1
+          class="ltx_title ltx_title_document"
+        >
+          Sections test
+        </h1>
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="ltx_authors"
+          >
+            
+
+            <span
+              class="ltx_creator ltx_role_author"
+            >
+              
+
+              <span
+                class="ltx_personname"
+              >
+                Carl Capybara 
+
+              </span>
+              <span
+                class="ltx_author_notes"
+              >
+                <span>
+                  A thanks block
+                </span>
+              </span>
+            </span>
+            
+
+            <span
+              class="ltx_author_before"
+            >
+                
+            </span>
+            <span
+              class="ltx_creator ltx_role_author"
+            >
+              
+
+              <span
+                class="ltx_personname"
+              >
+                Walter Wombat
+
+              </span>
+            </span>
+            
+
+          </div>
+          <div
+            class="engrafo-metadata-custom"
+          />
+        </div>
+        
+
+
+
+
+        <div
+          class="ltx_abstract"
+        >
+          
+
+          <h2
+            class=""
+          >
+            Abstract
+          </h2>
+          
+
+          <p
+            class="ltx_p"
+          >
+            A test of titles, abstracts, and sections.
+          </p>
+          
+
+        </div>
+        
+
+        <section
+          class="ltx_section"
+          id="S1"
+        >
+          
+
+          <h2
+            class="ltx_title ltx_title_section"
+          >
+            
+
+            <span
+              class="ltx_tag ltx_tag_section"
+            >
+              <a
+                href="#S1"
+              >
+                1 
+              </a>
+            </span>
+            Sections
+          </h2>
+          
+
+
+          <section
+            class="ltx_subsection"
+            id="S1.SS1"
+          >
+            
+
+            <h3
+              class="ltx_title ltx_title_subsection"
+            >
+              
+
+              <span
+                class="ltx_tag ltx_tag_subsection"
+              >
+                1.1 
+              </span>
+              subsection
+            </h3>
+            
+
+
+            <div
+              class="ltx_para"
+              id="S1.SS1.p1"
+            >
+              
+
+              <p
+                class="ltx_p"
+              >
+                Some content to ensure spacing is correct.
+              </p>
+              
+
+            </div>
+            
+
+          </section>
+          
+
+          <section
+            class="ltx_subsection"
+            id="S1.SSx1"
+          >
+            
+
+            <h3
+              class="ltx_title ltx_title_subsection"
+            >
+              subsection without counter
+            </h3>
+            
+
+
+            <section
+              class="ltx_subsubsection"
+              id="S1.SSx1.SSS1"
+            >
+              
+
+              <h4
+                class="ltx_title ltx_title_subsubsection"
+              >
+                
+subsubsection
+              </h4>
+              
+
+
+              <section
+                class="ltx_paragraph"
+                id="S1.SSx1.SSS1.Px1"
+              >
+                
+
+
+
+                <div
+                  class="ltx_para"
+                  id="S1.SSx1.SSS1.Px1.p1"
+                >
+                  
+
+                  <p
+                    class="ltx_p"
+                  >
+                    <strong
+                      class="paragraph-heading"
+                    >
+                      paragraph
+                    </strong>
+                     Some text.
+                  </p>
+                  
+
+                </div>
+                
+
+                <section
+                  class="ltx_subparagraph"
+                  id="S1.SSx1.SSS1.Px1.SPx1"
+                >
+                  
+
+                  <h6
+                    class="ltx_title ltx_title_subparagraph"
+                  >
+                    subparagraph
+                  </h6>
+                  
+
+
+                  <div
+                    class="ltx_para"
+                    id="S1.SSx1.SSS1.Px1.SPx1.p1"
+                  >
+                    
+
+                    <p
+                      class="ltx_p"
+                    >
+                      Some text.
+                    </p>
+                    
+
+                  </div>
+                  
+
+                </section>
+                
+
+              </section>
+              
+
+            </section>
+            
+
+          </section>
+          
+
+          <section
+            class="ltx_subsection"
+            id="S1.SS2"
+          >
+            
+
+            <h3
+              class="ltx_title ltx_title_subsection"
+            >
+              
+
+              <span
+                class="ltx_tag ltx_tag_subsection"
+              >
+                1.2 
+              </span>
+              A Heading in All Caps Should Be Converted to Title Case
+            </h3>
+            
+
+
+          </section>
+          
+
+        </section>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
+        />
+        
+
+      </dt-appendix>
+    </div>
+    
+
+
+
+
+
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
+</body>
+`;
+
 exports[`listings.tex renders correctly 1`] = `
 <body>
   <div
@@ -7366,328 +7688,6 @@ nor make one a paragraph by itself.
         </span>
       </div>
     </div>
-  </div>
-</body>
-`;
-
-exports[`sections.tex renders correctly 1`] = `
-<body>
-  <div
-    class="engrafo-container"
-  >
-    
-
-
-    <div
-      class="ltx_page_content"
-    >
-      
-
-      <dt-article>
-        
-
-        <h1
-          class="ltx_title ltx_title_document"
-        >
-          Sections test
-        </h1>
-        <div
-          class="engrafo-metadata"
-        >
-          <div
-            class="ltx_authors"
-          >
-            
-
-            <span
-              class="ltx_creator ltx_role_author"
-            >
-              
-
-              <span
-                class="ltx_personname"
-              >
-                Carl Capybara 
-
-              </span>
-              <span
-                class="ltx_author_notes"
-              >
-                <span>
-                  A thanks block
-                </span>
-              </span>
-            </span>
-            
-
-            <span
-              class="ltx_author_before"
-            >
-                
-            </span>
-            <span
-              class="ltx_creator ltx_role_author"
-            >
-              
-
-              <span
-                class="ltx_personname"
-              >
-                Walter Wombat
-
-              </span>
-            </span>
-            
-
-          </div>
-          <div
-            class="engrafo-metadata-custom"
-          />
-        </div>
-        
-
-
-
-
-        <div
-          class="ltx_abstract"
-        >
-          
-
-          <h2
-            class=""
-          >
-            Abstract
-          </h2>
-          
-
-          <p
-            class="ltx_p"
-          >
-            A test of titles, abstracts, and sections.
-          </p>
-          
-
-        </div>
-        
-
-        <section
-          class="ltx_section"
-          id="S1"
-        >
-          
-
-          <h2
-            class="ltx_title ltx_title_section"
-          >
-            
-
-            <span
-              class="ltx_tag ltx_tag_section"
-            >
-              <a
-                href="#S1"
-              >
-                1 
-              </a>
-            </span>
-            Sections
-          </h2>
-          
-
-
-          <section
-            class="ltx_subsection"
-            id="S1.SS1"
-          >
-            
-
-            <h3
-              class="ltx_title ltx_title_subsection"
-            >
-              
-
-              <span
-                class="ltx_tag ltx_tag_subsection"
-              >
-                1.1 
-              </span>
-              subsection
-            </h3>
-            
-
-
-            <div
-              class="ltx_para"
-              id="S1.SS1.p1"
-            >
-              
-
-              <p
-                class="ltx_p"
-              >
-                Some content to ensure spacing is correct.
-              </p>
-              
-
-            </div>
-            
-
-          </section>
-          
-
-          <section
-            class="ltx_subsection"
-            id="S1.SSx1"
-          >
-            
-
-            <h3
-              class="ltx_title ltx_title_subsection"
-            >
-              subsection without counter
-            </h3>
-            
-
-
-            <section
-              class="ltx_subsubsection"
-              id="S1.SSx1.SSS1"
-            >
-              
-
-              <h4
-                class="ltx_title ltx_title_subsubsection"
-              >
-                
-subsubsection
-              </h4>
-              
-
-
-              <section
-                class="ltx_paragraph"
-                id="S1.SSx1.SSS1.Px1"
-              >
-                
-
-
-
-                <div
-                  class="ltx_para"
-                  id="S1.SSx1.SSS1.Px1.p1"
-                >
-                  
-
-                  <p
-                    class="ltx_p"
-                  >
-                    <strong
-                      class="paragraph-heading"
-                    >
-                      paragraph
-                    </strong>
-                     Some text.
-                  </p>
-                  
-
-                </div>
-                
-
-                <section
-                  class="ltx_subparagraph"
-                  id="S1.SSx1.SSS1.Px1.SPx1"
-                >
-                  
-
-                  <h6
-                    class="ltx_title ltx_title_subparagraph"
-                  >
-                    subparagraph
-                  </h6>
-                  
-
-
-                  <div
-                    class="ltx_para"
-                    id="S1.SSx1.SSS1.Px1.SPx1.p1"
-                  >
-                    
-
-                    <p
-                      class="ltx_p"
-                    >
-                      Some text.
-                    </p>
-                    
-
-                  </div>
-                  
-
-                </section>
-                
-
-              </section>
-              
-
-            </section>
-            
-
-          </section>
-          
-
-          <section
-            class="ltx_subsection"
-            id="S1.SS2"
-          >
-            
-
-            <h3
-              class="ltx_title ltx_title_subsection"
-            >
-              
-
-              <span
-                class="ltx_tag ltx_tag_subsection"
-              >
-                1.2 
-              </span>
-              A Heading in All Caps Should Be Converted to Title Case
-            </h3>
-            
-
-
-          </section>
-          
-
-        </section>
-        
-
-      </dt-article>
-      
-
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
-        />
-        
-
-      </dt-appendix>
-    </div>
-    
-
-
-
-
-
-    <div
-      id="footnote-hover-boxes-container"
-    />
   </div>
 </body>
 `;

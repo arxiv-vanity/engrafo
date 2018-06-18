@@ -1022,33 +1022,11 @@ exports[`listings render correctly 1`] = `
             class="engrafo-metadata-custom"
           />
         </div>
-        <span
-          class="ltx_ERROR undefined"
-        >
-          {listing}
-        </span>
         
 
         <div
           class="ltx_para"
           id="p1"
-        >
-          
-
-          <p
-            class="ltx_p"
-          >
-            [step]first line
-listing command
-          </p>
-          
-
-        </div>
-        
-
-        <div
-          class="ltx_para"
-          id="p2"
         >
           
 

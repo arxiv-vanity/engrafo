@@ -2,6 +2,7 @@
   "extends": ["eslint:recommended"],
   "env": {
     "node": true,
+    "jasmine": true,
     "jest": true,
     "es6": true
   },

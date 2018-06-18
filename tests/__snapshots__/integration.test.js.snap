@@ -741,8 +741,10 @@ exports[`figures render correctly 1`] = `
                     <img
                       alt=""
                       class="ltx_graphics"
+                      height="301"
                       id="S0.F2.g2"
-                      src="fig2.png"
+                      src="fig.png"
+                      width="284"
                     />
                   </td>
                   

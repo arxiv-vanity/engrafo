@@ -2320,7 +2320,7 @@ exports[`paragraph formatting renders correctly 1`] = `
 
 
           <div
-            class="ltx_para ltx_align_left ltx_align_right ltx_centering"
+            class="ltx_para ltx_align_left ltx_align_right ltx_align_center"
             id="S0.SS1.p1"
           >
             
@@ -2336,7 +2336,7 @@ exports[`paragraph formatting renders correctly 1`] = `
           
 
           <div
-            class="ltx_para ltx_align_left ltx_align_right ltx_centering"
+            class="ltx_para ltx_align_left ltx_align_right ltx_align_center"
             id="S0.SS1.p2"
           >
             
@@ -2352,7 +2352,7 @@ exports[`paragraph formatting renders correctly 1`] = `
           
 
           <div
-            class="ltx_para ltx_align_right ltx_centering"
+            class="ltx_para ltx_align_right ltx_align_center"
             id="S0.SS1.p3"
           >
             
@@ -2368,7 +2368,7 @@ exports[`paragraph formatting renders correctly 1`] = `
           
 
           <div
-            class="ltx_para ltx_align_right ltx_centering"
+            class="ltx_para ltx_align_right ltx_align_center"
             id="S0.SS1.p4"
           >
             
@@ -2384,7 +2384,7 @@ exports[`paragraph formatting renders correctly 1`] = `
           
 
           <div
-            class="ltx_para ltx_centering"
+            class="ltx_para ltx_align_center"
             id="S0.SS1.p5"
           >
             
@@ -2400,7 +2400,7 @@ exports[`paragraph formatting renders correctly 1`] = `
           
 
           <div
-            class="ltx_para ltx_centering"
+            class="ltx_para ltx_align_center"
             id="S0.SS1.p6"
           >
             
@@ -5067,7 +5067,7 @@ exports[`tables render correctly 1`] = `
 
 
           <div
-            class="ltx_para ltx_centering"
+            class="ltx_para ltx_align_center"
             id="S0.SS4.p1"
           >
             
@@ -5332,7 +5332,7 @@ exports[`tables render correctly 1`] = `
 
 
           <div
-            class="ltx_para ltx_centering"
+            class="ltx_para ltx_align_center"
             id="S0.SS5.p1"
           >
             
@@ -7276,7 +7276,7 @@ throughout the evening.
 
 
           <div
-            class="ltx_para ltx_centering"
+            class="ltx_para ltx_align_center"
             id="S0.SS11.p1"
           >
             

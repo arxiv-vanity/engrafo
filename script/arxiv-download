@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+
+if [ -z "$1" ];then
+  echo "Downloads paper sources from Arxiv"
+  echo "Usage: script/arxiv-download <arxiv-id>"
+  exit 1
+fi
+
+ARXIV_ID=$1
+OUTPUT_DIR="local/arxiv/$ARXIV_ID/"
+mkdir -p "$OUTPUT_DIR"
+cd "$OUTPUT_DIR"
+curl "https://arxiv.org/e-print/$ARXIV_ID" | tar xz
+
+echo "Downloaded $ARXIV_ID into $OUTPUT_DIR"

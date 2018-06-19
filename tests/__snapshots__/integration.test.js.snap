@@ -5620,7 +5620,7 @@ exports[`paragraph.tex renders correctly 1`] = `
           
 
           <h2
-            class="ltx_title ltx_align_left ltx_align_right ltx_centering ltx_title_section"
+            class="ltx_title ltx_title_section"
           >
             
 
@@ -5639,7 +5639,7 @@ exports[`paragraph.tex renders correctly 1`] = `
 
 
           <div
-            class="ltx_para ltx_align_left ltx_align_right ltx_align_center"
+            class="ltx_para ltx_align_left"
             id="S1.p1"
           >
             
@@ -5655,24 +5655,8 @@ exports[`paragraph.tex renders correctly 1`] = `
           
 
           <div
-            class="ltx_para ltx_align_left ltx_align_right ltx_align_center"
+            class="ltx_para ltx_align_right"
             id="S1.p2"
-          >
-            
-
-            <p
-              class="ltx_p"
-            >
-              Some text ragged right.
-            </p>
-            
-
-          </div>
-          
-
-          <div
-            class="ltx_para ltx_align_right ltx_align_center"
-            id="S1.p3"
           >
             
 
@@ -5687,40 +5671,8 @@ exports[`paragraph.tex renders correctly 1`] = `
           
 
           <div
-            class="ltx_para ltx_align_right ltx_align_center"
-            id="S1.p4"
-          >
-            
-
-            <p
-              class="ltx_p"
-            >
-              Some text ragged left.
-            </p>
-            
-
-          </div>
-          
-
-          <div
             class="ltx_para ltx_align_center"
-            id="S1.p5"
-          >
-            
-
-            <p
-              class="ltx_p"
-            >
-              Some text centered.
-            </p>
-            
-
-          </div>
-          
-
-          <div
-            class="ltx_para ltx_align_center"
-            id="S1.p6"
+            id="S1.p3"
           >
             
 

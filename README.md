@@ -2,7 +2,9 @@
 
 [ ![Codeship Status for bfirsh/engrafo](https://app.codeship.com/projects/df36a360-5b2c-0135-2a70-66335668a83b/status?branch=master)](https://app.codeship.com/projects/237445)
 
-Converts LaTeX documents into beautiful responsive web pages.
+Engrafo converts LaTeX documents into beautiful responsive web pages using [LaTeXML](https://dlmf.nist.gov/LaTeXML/).
+
+It is a set of stylesheets and scripts for LaTeXML output. It makes the design responsive so you can read it on phones, and adds various interactive bits like footnote tooltips.
 
 It turns this sort of thing:
 
@@ -21,18 +23,6 @@ The easiest way to run Engrafo is by using the Docker image. To convert `input/m
       arxivvanity/engrafo engrafo -o output/ input/main.tex
 
 For full usage, run `docker run arxivvanity/engrafo engrafo --help`.
-
-## Design
-
-We couldn't find a good LaTeX to HTML converter. But instead of building one from scratch, we picked some components that solved part of the problem and modified them to our needs.
-
-The downside of this approach is a fair amount of shoe-horning, but the upside is (probably) less work, and it means we can contribute our improvements to each component back to the open-source academic community.
-
-Here is how it works:
-
-* [LaTeXML](http://dlmf.nist.gov/LaTeXML/) does most of the heavy lifting. It parses the LaTeX, outputs the basic HTML, converts images, etc.
-* [Distill's template](https://github.com/distillpub/template) is applied to style the output, make it responsive, create footnotes, and create hover boxes.
-* Intermingled with Distill's processing, some post-processors (in `src/postprocessors/`) do layout, additional styling, math rendering, bibliography rendering, and various other things. They also rearrange the HTML output from LaTeXML to make it suitable for Distill's template.
 
 ## Development environment
 

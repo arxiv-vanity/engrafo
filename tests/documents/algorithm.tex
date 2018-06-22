@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[ruled,vlined]{algorithm2e}
+\begin{document}
+  \section{Algorithms}
+
+  % from https://www.arxiv-vanity.com/papers/1712.01208/
+
+  Given an index configuration, which specifies the number of stages and the number of models per stage as an array of sizes, the end-to-end training for hybrid indexes is done as shown in Algorithm~\ref{alg:hybrid}
+
+  \begin{algorithm}
+  \footnotesize
+  \LinesNumbered
+  \AlgoDisplayBlockMarkers\SetAlgoBlockMarkers{}{}%
+  \SetAlgoNoEnd
+      \SetAlgoLined
+      \KwIn{int threshold, int stages[], NN\_complexity}
+      \KwData{record data[], Model index[][]}
+      \KwResult{trained index }
+      $M$ = stages.size\;
+      tmp\_records[][]\;
+      tmp\_records[1][1] = all\_data\;
+      \For{$i\leftarrow 1$ \KwTo $M$}{
+         \For{$j\leftarrow 1$ \KwTo $stages[i]$}{
+              index[i][j] = new NN trained on tmp\_records[$i$][$j$]\;
+              \If{$i < M$}{
+                  \For{$r\in$ tmp\_records[$i$][$j$]}{
+                      $p$ = index[i][j]$(r.key)$ / stages[$i+1$]\;
+                      tmp\_records[$i+1$][$p$].add($r$)\;
+                  }
+              }
+          }
+      }
+      \For{$j\leftarrow 1$ \KwTo $index[M].size$}{
+          index[$M$][$j$].calc\_err(tmp\_records[$M$][$j$])\;
+          \If{$index[M][j].max\_abs\_err > threshold$}{
+              index[$M$][$j$] = new \btree trained on tmp\_records[$M$][$j$]\;
+          }
+      }
+      \Return index\;
+  \caption{Hybrid End-To-End Training}
+  \label{alg:hybrid}
+
+  \end{algorithm}
+\end{document}

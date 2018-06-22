@@ -1,12 +1,34 @@
 const childProcess = require("child_process");
 const fs = require("fs");
 const path = require("path");
+const uploader = require("s3-recursive-uploader");
 const tmp = require("tmp-promise");
 const io = require("../src/io");
+
+const mockGetObject = jest.fn();
+
+jest.mock("aws-sdk", () => {
+  return {
+    S3: jest.fn().mockImplementation(() => ({
+      getObject: mockGetObject
+    }))
+  };
+});
+
+jest.mock("s3-recursive-uploader");
+
+function makeTarball(p) {
+  fs.writeFileSync(path.join(p, "main.tex"), "");
+  const tarball = path.join(p, "tarball.gz");
+  childProcess.execSync(`tar -czf "${tarball}" main.tex`, { cwd: p });
+  fs.unlinkSync(path.join(p, "main.tex"));
+  return tarball;
+}
 
 describe("prepareInputDirectory", () => {
   let dir;
   beforeEach(async () => {
+    mockGetObject.mockReset();
     dir = await tmp.dir({ unsafeCleanup: true });
   });
   afterEach(() => {
@@ -14,10 +36,7 @@ describe("prepareInputDirectory", () => {
   });
 
   it("extracts tarballs", async () => {
-    fs.writeFileSync(path.join(dir.path, "main.tex"), "");
-    var tarball = path.join(dir.path, "tarball.gz");
-    childProcess.execSync(`tar -czf "${tarball}" main.tex`, { cwd: dir.path });
-    fs.unlinkSync(path.join(dir.path, "main.tex"));
+    const tarball = makeTarball(dir.path);
     const inputPath = await io.prepareInputDirectory(tarball);
     var texFile = path.join(inputPath, "main.tex");
     expect(fs.lstatSync(texFile).isFile()).toBe(true);
@@ -32,6 +51,22 @@ describe("prepareInputDirectory", () => {
     expect(fs.lstatSync(inputFile).isFile()).toBe(true);
 
     const inputPath = await io.prepareInputDirectory(inputFile);
+    var texFile = path.join(inputPath, "main.tex");
+    expect(fs.lstatSync(texFile).isFile()).toBe(true);
+  });
+
+  it("fetches tarballs from S3", async () => {
+    const tarball = makeTarball(dir.path);
+    mockGetObject.mockReturnValueOnce({
+      createReadStream: () => fs.createReadStream(tarball)
+    });
+    const inputPath = await io.prepareInputDirectory(
+      "s3://bucket/foobar.tar.gz"
+    );
+    expect(mockGetObject).toHaveBeenCalledWith({
+      Bucket: "bucket",
+      Key: "foobar.tar.gz"
+    });
     var texFile = path.join(inputPath, "main.tex");
     expect(fs.lstatSync(texFile).isFile()).toBe(true);
   });
@@ -143,5 +178,28 @@ describe("pickLatexFile", () => {
     await expect(io.pickLatexFile(dir.path)).rejects.toThrowError(
       "Ambiguous LaTeX path"
     );
+  });
+});
+
+describe("uploadOutputToS3", () => {
+  let dir;
+  beforeEach(async () => {
+    uploader.mockReset();
+    dir = await tmp.dir({ unsafeCleanup: true });
+  });
+  afterEach(() => {
+    dir.cleanup();
+  });
+
+  it("uploads files to S3", async () => {
+    uploader.mockReturnValueOnce(Promise.resolve({ count: 2 }));
+    fs.writeFileSync(path.join(dir.path, "index.html"), "");
+    fs.writeFileSync(path.join(dir.path, "cool.gif"), "");
+    await io.uploadOutputToS3(dir.path, "s3://bucket/output/");
+    expect(uploader).toHaveBeenCalledWith({
+      destination: "bucket/output/",
+      ignoreHidden: false,
+      source: dir.path
+    });
   });
 });

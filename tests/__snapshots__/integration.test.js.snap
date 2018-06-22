@@ -104,6 +104,3037 @@ exports[`aa.tex renders correctly 1`] = `
 </body>
 `;
 
+exports[`algorithm.tex renders correctly 1`] = `
+<body>
+  <div
+    class="engrafo-container"
+  >
+    
+
+
+    <div
+      class="ltx_page_content"
+    >
+      
+
+      <dt-article>
+        <h1
+          class=""
+        />
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="engrafo-metadata-custom"
+          />
+        </div>
+        
+
+        <section
+          class="ltx_section"
+          id="S1"
+        >
+          
+
+          <h2
+            class="ltx_title ltx_title_section"
+          >
+            
+
+            <span
+              class="ltx_tag ltx_tag_section"
+            >
+              <a
+                href="#S1"
+              >
+                1 
+              </a>
+            </span>
+            Algorithms
+          </h2>
+          
+
+
+          <div
+            class="ltx_para"
+            id="S1.p1"
+          >
+            
+
+            <p
+              class="ltx_p"
+            >
+              Given an index configuration, which specifies the number of stages and the number of models per stage as an array of sizes, the end-to-end training for hybrid indexes is done as shown in Algorithm 
+              <a
+                class="ltx_ref"
+                href="#algorithm1"
+                title="Algorithm 1 ‣ 1 Algorithms"
+              >
+                <span
+                  class="ltx_text ltx_ref_tag"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    1
+                  </span>
+                </span>
+              </a>
+            </p>
+            
+
+          </div>
+          
+
+          <figure
+            class="ltx_float"
+            id="algorithm1"
+          >
+            
+
+            <div
+              class="ltx_listing ltx_lst_numbers_left ltx_listing"
+            >
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  <span
+                    class="ltx_text ltx_font_bold"
+                  >
+                    Input:
+                  </span>
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  int threshold, int stages[], NN_complexity
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  <span
+                    class="ltx_text ltx_font_bold"
+                  >
+                    Data:
+                  </span>
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  record data[], Model index[][]
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  <span
+                    class="ltx_text ltx_font_bold"
+                  >
+                    Result:
+                  </span>
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  trained index 
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    1
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m1"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="M"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.081em;"
+                            >
+                              M
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   = stages.size;
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    2
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   tmp_records[][];
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    3
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   tmp_records[1][1] = all_data;
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    4
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text ltx_font_bold"
+                  style="font-size:80%;"
+                >
+                  for
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m2"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="i\\\\leftarrow 1"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                            >
+                              i
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mo MJXc-space3"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.225em; padding-bottom: 0.372em;"
+                            >
+                              ←
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mn MJXc-space3"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.372em; padding-bottom: 0.372em;"
+                            >
+                              1
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text ltx_font_italic"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text ltx_font_bold"
+                  style="font-size:80%;"
+                >
+                  to
+                </span>
+                <span
+                  class="ltx_text ltx_emph ltx_font_italic"
+                  style="font-size:80%;"
+                >
+                   
+                  <span
+                    class="ltx_Math"
+                    id="algorithm1.m3"
+                  >
+                    <span
+                      class="mjpage"
+                    >
+                      <span
+                        class="mjx-chtml"
+                      >
+                        <span
+                          aria-label="M"
+                          class="mjx-math"
+                        >
+                          <span
+                            aria-hidden="true"
+                            class="mjx-mrow"
+                          >
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.081em;"
+                              >
+                                M
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text ltx_font_bold"
+                  style="font-size:80%;"
+                >
+                  do
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    5
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                    
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                      
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text ltx_font_bold"
+                  style="font-size:80%;"
+                >
+                  for
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m4"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="j\\\\leftarrow 1"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.519em;"
+                            >
+                              j
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mo MJXc-space3"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.225em; padding-bottom: 0.372em;"
+                            >
+                              ←
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mn MJXc-space3"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.372em; padding-bottom: 0.372em;"
+                            >
+                              1
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text ltx_font_italic"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text ltx_font_bold"
+                  style="font-size:80%;"
+                >
+                  to
+                </span>
+                <span
+                  class="ltx_text ltx_emph ltx_font_italic"
+                  style="font-size:80%;"
+                >
+                   
+                  <span
+                    class="ltx_Math"
+                    id="algorithm1.m5"
+                  >
+                    <span
+                      class="mjpage"
+                    >
+                      <span
+                        class="mjx-chtml"
+                      >
+                        <span
+                          aria-label="stages[i]"
+                          class="mjx-math"
+                        >
+                          <span
+                            aria-hidden="true"
+                            class="mjx-mrow"
+                          >
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                              >
+                                s
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.372em; padding-bottom: 0.298em;"
+                              >
+                                t
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                              >
+                                a
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.003em;"
+                              >
+                                g
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                              >
+                                e
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                              >
+                                s
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mo"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-main-R"
+                                style="padding-top: 0.446em; padding-bottom: 0.593em;"
+                              >
+                                [
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                              >
+                                i
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mo"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-main-R"
+                                style="padding-top: 0.446em; padding-bottom: 0.593em;"
+                              >
+                                ]
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text ltx_font_bold"
+                  style="font-size:80%;"
+                >
+                  do
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    6
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                    
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                        
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                      
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   index[i][j] = new NN trained on tmp_records[
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m6"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="i"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                            >
+                              i
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  ][
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m7"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="j"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.519em;"
+                            >
+                              j
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  ];
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline ltx_emph"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    7
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                    
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                        
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                      
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text ltx_font_bold"
+                  style="font-size:80%;"
+                >
+                  if
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m8"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="i<M"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                            >
+                              i
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mo MJXc-space3"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.225em; padding-bottom: 0.372em;"
+                            >
+                              &lt;
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi MJXc-space3"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.081em;"
+                            >
+                              M
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text ltx_font_bold"
+                  style="font-size:80%;"
+                >
+                  then
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    8
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                    
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                        
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                        
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                      
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text ltx_font_bold"
+                  style="font-size:80%;"
+                >
+                  for
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m9"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="r\\\\in"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              r
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mo MJXc-space3"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.225em; padding-bottom: 0.372em;"
+                            >
+                              ∈
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text ltx_emph ltx_font_italic"
+                  style="font-size:80%;"
+                >
+                   tmp_records[
+                  <span
+                    class="ltx_Math"
+                    id="algorithm1.m10"
+                  >
+                    <span
+                      class="mjpage"
+                    >
+                      <span
+                        class="mjx-chtml"
+                      >
+                        <span
+                          aria-label="i"
+                          class="mjx-math"
+                        >
+                          <span
+                            aria-hidden="true"
+                            class="mjx-mrow"
+                          >
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                              >
+                                i
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  ][
+                  <span
+                    class="ltx_Math"
+                    id="algorithm1.m11"
+                  >
+                    <span
+                      class="mjpage"
+                    >
+                      <span
+                        class="mjx-chtml"
+                      >
+                        <span
+                          aria-label="j"
+                          class="mjx-math"
+                        >
+                          <span
+                            aria-hidden="true"
+                            class="mjx-mrow"
+                          >
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.446em; padding-bottom: 0.519em;"
+                              >
+                                j
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  ]
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text ltx_font_bold"
+                  style="font-size:80%;"
+                >
+                  do
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    9
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                    
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                        
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                        
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                        
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                      
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m12"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="p"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.446em;"
+                            >
+                              p
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   = index[i][j]
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m13"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="(r.key)"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mo"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.446em; padding-bottom: 0.593em;"
+                            >
+                              (
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              r
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mo"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="margin-top: -0.144em; padding-bottom: 0.372em;"
+                            >
+                              .
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi MJXc-space1"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                            >
+                              k
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              e
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.006em;"
+                            >
+                              y
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mo"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.446em; padding-bottom: 0.593em;"
+                            >
+                              )
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   / stages[
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m14"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="i+1"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                            >
+                              i
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mo MJXc-space2"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.298em; padding-bottom: 0.446em;"
+                            >
+                              +
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mn MJXc-space2"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.372em; padding-bottom: 0.372em;"
+                            >
+                              1
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  ];
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    10
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                    
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                        
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                        
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                        
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                      
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   tmp_records[
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m15"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="i+1"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                            >
+                              i
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mo MJXc-space2"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.298em; padding-bottom: 0.446em;"
+                            >
+                              +
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mn MJXc-space2"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.372em; padding-bottom: 0.372em;"
+                            >
+                              1
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  ][
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m16"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="p"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.446em;"
+                            >
+                              p
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  ].add(
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m17"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="r"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              r
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  );
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    11
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                    
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                        
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                        
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                        
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                      
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    12
+                  </span>
+                </span>
+                <span
+                  class="ltx_text ltx_font_bold"
+                  style="font-size:80%;"
+                >
+                  for
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m18"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="j\\\\leftarrow 1"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.519em;"
+                            >
+                              j
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mo MJXc-space3"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.225em; padding-bottom: 0.372em;"
+                            >
+                              ←
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mn MJXc-space3"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.372em; padding-bottom: 0.372em;"
+                            >
+                              1
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text ltx_font_italic"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text ltx_font_bold"
+                  style="font-size:80%;"
+                >
+                  to
+                </span>
+                <span
+                  class="ltx_text ltx_emph ltx_font_italic"
+                  style="font-size:80%;"
+                >
+                   
+                  <span
+                    class="ltx_Math"
+                    id="algorithm1.m19"
+                  >
+                    <span
+                      class="mjpage"
+                    >
+                      <span
+                        class="mjx-chtml"
+                      >
+                        <span
+                          aria-label="index[M].size"
+                          class="mjx-math"
+                        >
+                          <span
+                            aria-hidden="true"
+                            class="mjx-mrow"
+                          >
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                              >
+                                i
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                              >
+                                n
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;"
+                              >
+                                d
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                              >
+                                e
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                              >
+                                x
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mo"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-main-R"
+                                style="padding-top: 0.446em; padding-bottom: 0.593em;"
+                              >
+                                [
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.081em;"
+                              >
+                                M
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mo"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-main-R"
+                                style="padding-top: 0.446em; padding-bottom: 0.593em;"
+                              >
+                                ]
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mo"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-main-R"
+                                style="margin-top: -0.144em; padding-bottom: 0.372em;"
+                              >
+                                .
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mi MJXc-space1"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                              >
+                                s
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                              >
+                                i
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.225em; padding-bottom: 0.298em; padding-right: 0.003em;"
+                              >
+                                z
+                              </span>
+                            </span>
+                            <span
+                              class="mjx-mi"
+                            >
+                              <span
+                                class="mjx-char MJXc-TeX-math-I"
+                                style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                              >
+                                e
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text ltx_font_bold"
+                  style="font-size:80%;"
+                >
+                  do
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    13
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                    
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                      
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   index[
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m20"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="M"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.081em;"
+                            >
+                              M
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  ][
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m21"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="j"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.519em;"
+                            >
+                              j
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  ].calc_err(tmp_records[
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m22"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="M"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.081em;"
+                            >
+                              M
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  ][
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m23"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="j"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.519em;"
+                            >
+                              j
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  ]);
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline ltx_emph"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    14
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                    
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                      
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text ltx_font_bold"
+                  style="font-size:80%;"
+                >
+                  if
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m24"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="index[M][j].max\\\\_abs\\\\_err>threshold"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                            >
+                              i
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              n
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;"
+                            >
+                              d
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              e
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              x
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mo"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.446em; padding-bottom: 0.593em;"
+                            >
+                              [
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.081em;"
+                            >
+                              M
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mo"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.446em; padding-bottom: 0.593em;"
+                            >
+                              ]
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mo"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.446em; padding-bottom: 0.593em;"
+                            >
+                              [
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.519em;"
+                            >
+                              j
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mo"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.446em; padding-bottom: 0.593em;"
+                            >
+                              ]
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mo"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="margin-top: -0.144em; padding-bottom: 0.372em;"
+                            >
+                              .
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi MJXc-space1"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              m
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              a
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              x
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="margin-top: -0.291em; padding-bottom: 0.372em;"
+                            >
+                              _
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              a
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                            >
+                              b
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              s
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="margin-top: -0.291em; padding-bottom: 0.372em;"
+                            >
+                              _
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              e
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              r
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              r
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mo MJXc-space3"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-main-R"
+                              style="padding-top: 0.225em; padding-bottom: 0.372em;"
+                            >
+                              &gt;
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi MJXc-space3"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.372em; padding-bottom: 0.298em;"
+                            >
+                              t
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                            >
+                              h
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              r
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              e
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              s
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                            >
+                              h
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                            >
+                              o
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                            >
+                              l
+                            </span>
+                          </span>
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;"
+                            >
+                              d
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text ltx_font_bold"
+                  style="font-size:80%;"
+                >
+                  then
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    15
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                    
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                        
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                      
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   index[
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m25"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="M"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.081em;"
+                            >
+                              M
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  ][
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m26"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="j"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.519em;"
+                            >
+                              j
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  ] = new 
+                </span>
+                <span
+                  class="ltx_ERROR undefined"
+                >
+                  \\btree
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  trained on tmp_records[
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m27"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="M"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.081em;"
+                            >
+                              M
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  ][
+                </span>
+                <span
+                  class="ltx_Math"
+                  id="algorithm1.m28"
+                >
+                  <span
+                    class="mjpage"
+                  >
+                    <span
+                      class="mjx-chtml"
+                    >
+                      <span
+                        aria-label="j"
+                        class="mjx-math"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="mjx-mrow"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.519em;"
+                            >
+                              j
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                  ];
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    16
+                  </span>
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                    
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                        
+                </span>
+                <span
+                  class="ltx_rule"
+                  style="width:1px;height:100%;background:black;display:inline-block;"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                      
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_tag ltx_tag_listingline"
+                >
+                  <span
+                    class="ltx_text"
+                    style="font-size:80%;"
+                  >
+                    17
+                  </span>
+                </span>
+                <span
+                  class="ltx_text ltx_font_bold"
+                  style="font-size:80%;"
+                >
+                  return
+                </span>
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                   index;
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+              >
+                
+
+                <span
+                  class="ltx_text"
+                  style="font-size:80%;"
+                >
+                    
+                </span>
+                
+
+              </div>
+              
+
+            </div>
+            
+
+            <figcaption
+              class="ltx_caption"
+            >
+              <span
+                class="ltx_tag ltx_tag_float"
+              >
+                <span
+                  class="ltx_text ltx_font_bold"
+                >
+                  Algorithm 1
+                </span>
+                 
+              </span>
+              Hybrid End-To-End Training
+            </figcaption>
+            
+
+          </figure>
+          
+
+        </section>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
+        />
+        
+
+      </dt-appendix>
+    </div>
+    
+
+
+
+
+
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
+</body>
+`;
+
 exports[`citations.tex renders correctly 1`] = `
 <body>
   <div

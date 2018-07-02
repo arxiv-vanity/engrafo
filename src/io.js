@@ -1,121 +1,91 @@
-const async = require("async");
 const childProcess = require("child_process");
 const fs = require("fs-extra");
 const path = require("path");
 const uploader = require("s3-recursive-uploader");
 const AWS = require("aws-sdk");
-const tmp = require("tmp");
+const tmp = require("tmp-promise");
 const url = require("url");
 const util = require("util");
 
+const exec = util.promisify(childProcess.exec);
+
 // Turn a given input path or URL into an actual input path on disk
-// TODO: make async
-function prepareInputDirectory(givenPath, callback) {
-  async.waterfall(
-    [
-      callback => {
-        // Fetch input from S3 if required
-        if (givenPath.startsWith("s3://")) {
-          fetchInputFromS3(givenPath, callback);
-        } else {
-          callback(null, givenPath);
-        }
-      },
-      (inputPath, callback) => {
-        // Untar tarball, if required
-        if (inputPath.endsWith(".gz")) {
-          extractGzipToTmpdir(inputPath, callback);
-        } else {
-          callback(null, inputPath);
-        }
-      },
-      (inputPath, callback) => {
-        callback(null, normalizeDirectory(inputPath));
-      }
-    ],
-    callback
-  );
+async function prepareInputDirectory(givenPath) {
+  let inputPath = givenPath;
+
+  // Fetch input from S3 if required
+  if (givenPath.startsWith("s3://")) {
+    inputPath = await fetchInputFromS3(inputPath);
+  }
+
+  // Untar tarball, if required
+  if (inputPath.endsWith(".gz")) {
+    inputPath = await extractGzipToTmpdir(inputPath);
+  }
+
+  return normalizeDirectory(inputPath);
 }
 
-// TODO: make async
-function prepareOutputDirectory(outputDir, callback) {
+async function prepareOutputDirectory(outputDir) {
   // Create temp output dir if uploading to S3
   if (outputDir.startsWith("s3://")) {
-    tmp.dir((err, tmpdir, cleanup) => {
-      // Passing the cleanup callback often means it gets called accidentally
-      callback(err, tmpdir);
-    });
+    const tmpdir = await tmp.dir();
+    return tmpdir.path;
   } else {
     // Create output directory if it doesn't exist
-    fs.ensureDir(outputDir, err => {
-      if (err) return callback(err);
-      callback(null, normalizeDirectory(outputDir));
-    });
+    await fs.ensureDir(outputDir);
+    return normalizeDirectory(outputDir);
   }
 }
 
 // Fetch a tarball from S3 to use as input
-// TODO: make async
-var fetchInputFromS3 = (s3Url, callback) => {
-  tmp.dir((err, tmpDir) => {
-    if (err) return callback(err);
-    var s3url = url.parse(s3Url);
-    var localFile = path.join(tmpDir, path.basename(s3url.path));
-    console.log(`Downloading ${s3Url} to ${localFile}...`);
-    var params = {
-      Bucket: s3url.host,
-      Key: s3url.path.slice(1)
-    };
-    var s3 = new AWS.S3();
-    var readStream = s3.getObject(params).createReadStream();
-    readStream.on("error", callback);
-    readStream.on("end", () => {
-      callback(null, localFile);
-    });
-    var file = fs.createWriteStream(localFile);
+async function fetchInputFromS3(s3URL) {
+  const tmpDir = await tmp.dir();
+  const parsedS3URL = url.parse(s3URL);
+  const localFile = path.join(tmpDir.path, path.basename(parsedS3URL.path));
+  console.log(`Downloading ${s3URL} to ${localFile}...`);
+
+  const params = {
+    Bucket: parsedS3URL.host,
+    Key: parsedS3URL.path.slice(1)
+  };
+  const s3 = new AWS.S3();
+  const readStream = s3.getObject(params).createReadStream();
+  await new Promise((resolve, reject) => {
+    readStream.on("error", reject);
+    readStream.on("end", resolve);
+    const file = fs.createWriteStream(localFile);
     readStream.pipe(file);
   });
-};
+  return localFile;
+}
 
-var extractGzipToTmpdir = (gzipPath, callback) => {
-  var tmpDir;
-  async.waterfall(
-    [
-      callback => {
-        tmp.dir(callback);
-      },
-      (_tmpDir, _, callback) => {
-        tmpDir = _tmpDir;
-        childProcess.exec(`gunzip ${gzipPath}`, err => callback(err));
-      },
-      callback => {
-        var gunzippedPath = gzipPath.replace(/\.gz$/, "");
-        childProcess.exec(
-          `tar -xf "${gunzippedPath}"`,
-          { cwd: tmpDir },
-          (err, stdout, stderr) => {
-            if (
-              err &&
-              stderr
-                .toString()
-                .indexOf("tar: This does not look like a tar archive") !== -1
-            ) {
-              console.log(
-                "Input file is gzipped but not a tarball, assuming it is a .tex file"
-              );
-              fs.rename(gunzippedPath, path.join(tmpDir, "main.tex"), callback);
-            } else {
-              callback(err);
-            }
-          }
-        );
-      }
-    ],
-    err => {
-      callback(err, tmpDir);
+async function extractGzipToTmpdir(gzipPath) {
+  const tmpDir = await tmp.dir();
+  // TODO: this will delete the existing file. don't do that.
+  await exec(`gunzip ${gzipPath}`);
+  const gunzippedPath = gzipPath.replace(/\.gz$/, "");
+  try {
+    await exec(`tar -xf "${gunzippedPath}"`, {
+      cwd: tmpDir.path
+    });
+  } catch (err) {
+    if (
+      err.stderr &&
+      err.stderr
+        .toString()
+        .indexOf("tar: This does not look like a tar archive") !== -1
+    ) {
+      console.log(
+        "Input file is gzipped but not a tarball, assuming it is a .tex file"
+      );
+      await fs.rename(gunzippedPath, path.join(tmpDir.path, "main.tex"));
+    } else {
+      throw err;
     }
-  );
-};
+  }
+  return tmpDir.path;
+}
 
 // Upload rendered directory to S3 if need be
 async function uploadOutputToS3(renderedPath, outputDir) {
@@ -132,12 +102,12 @@ async function uploadOutputToS3(renderedPath, outputDir) {
   console.log(`Uploaded ${stats.count} files to s3://${outputDir}`);
 }
 
-var normalizeDirectory = dir => {
+function normalizeDirectory(dir) {
   if (dir.slice(-1) == "/") {
     dir = dir.slice(0, -1);
   }
   return path.resolve(path.normalize(dir));
-};
+}
 
 // Pick a main .tex file from a directory
 async function pickLatexFile(dir) {
@@ -190,8 +160,8 @@ async function pickLatexFile(dir) {
 }
 
 module.exports = {
-  prepareInputDirectory: util.promisify(prepareInputDirectory),
-  prepareOutputDirectory: util.promisify(prepareOutputDirectory),
+  prepareInputDirectory: prepareInputDirectory,
+  prepareOutputDirectory: prepareOutputDirectory,
   uploadOutputToS3: uploadOutputToS3,
   pickLatexFile: pickLatexFile
 };

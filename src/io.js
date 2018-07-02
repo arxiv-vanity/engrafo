@@ -118,22 +118,18 @@ var extractGzipToTmpdir = (gzipPath, callback) => {
 };
 
 // Upload rendered directory to S3 if need be
-function uploadOutputToS3(renderedPath, outputDir, callback) {
+async function uploadOutputToS3(renderedPath, outputDir) {
   // Format outputDir into what s3-recursive-uploader expects
   outputDir = outputDir.replace("s3://", "");
   if (outputDir.slice("-1") != "/") {
     outputDir += "/";
   }
-  uploader({
+  const stats = await uploader({
     source: renderedPath,
     destination: outputDir,
     ignoreHidden: false
-  })
-    .then(stats => {
-      console.log(`Uploaded ${stats.count} files to s3://${outputDir}`);
-      callback();
-    })
-    .catch(callback);
+  });
+  console.log(`Uploaded ${stats.count} files to s3://${outputDir}`);
 }
 
 var normalizeDirectory = dir => {
@@ -196,6 +192,6 @@ async function pickLatexFile(dir) {
 module.exports = {
   prepareInputDirectory: util.promisify(prepareInputDirectory),
   prepareOutputDirectory: util.promisify(prepareOutputDirectory),
-  uploadOutputToS3: util.promisify(uploadOutputToS3),
+  uploadOutputToS3: uploadOutputToS3,
   pickLatexFile: pickLatexFile
 };

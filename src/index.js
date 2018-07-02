@@ -8,7 +8,7 @@ const math = require("./math");
 const postprocessors = require("./postprocessor");
 
 // Run postprocessing against a string of HTML
-exports.postprocess = htmlString => {
+function postprocess(htmlString) {
   var dom = jsdom.jsdom(htmlString, {
     features: { ProcessExternalResources: false, FetchExternalResources: false }
   });
@@ -53,12 +53,12 @@ exports.postprocess = htmlString => {
   postprocessors.container(dom, data);
 
   return jsdom.serializeDocument(dom);
-};
+}
 
 // Do all processing on the file that LaTeXML produces
 async function processHTML(htmlPath) {
   let htmlString = await fs.readFile(htmlPath, "utf8");
-  htmlString = exports.postprocess(htmlString);
+  htmlString = postprocess(htmlString);
   htmlString = await math.renderMath(htmlString);
   await fs.writeFile(htmlPath, htmlString);
 }

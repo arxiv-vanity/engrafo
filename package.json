@@ -9,7 +9,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "async": "^2.6.1",
     "aws-sdk": "^2.127.0",
     "distill-template": "git+https://github.com/arxiv-vanity/template.git#engrafo",
     "fs-extra": "^6.0.1",
@@ -24,7 +23,6 @@
     "jest-image-snapshot": "^2.4.3",
     "jest-puppeteer": "^3.2.1",
     "prettier": "^1.13.7",
-    "puppeteer": "^1.5.0",
-    "tmp": "^0.0.33"
+    "puppeteer": "^1.5.0"
   }
 }

@@ -1,56 +1,56 @@
-const utils = require("./utils");
+const { spawn } = require("child_process");
+const path = require("path");
+const tmp = require("tmp-promise");
+const { testDocuments, renderToDom } = require("./utils");
 
-// TODO: scope this to just integration tests
-jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
+let percySnapshots = [],
+  outputDir;
 
-test("titles and sections render correctly", async () => {
-  await utils.expectToMatchSnapshot("documents/sections.tex");
+beforeAll(async () => {
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = 20000;
+  outputDir = await tmp.dir({ unsafeCleanup: true, dir: "/tmp" });
 });
 
-test("text renders correctly", async () => {
-  await utils.expectToMatchSnapshot("documents/text.tex");
+afterAll(async () => {
+  if (process.env.PERCY_TOKEN) {
+    const percy = spawn("percy", ["snapshot", outputDir.path]);
+    percy.stdout.on("data", d => console.log(d.toString()));
+    percy.stderr.on("data", d => console.error(d.toString()));
+    await new Promise((resolve, reject) => {
+      percy.on("close", code => {
+        if (code === 0) {
+          resolve();
+        } else {
+          reject(new Error(`percy exited with code ${code}`));
+        }
+      });
+    });
+  } else {
+    console.log("No, PERCY_TOKEN envvar, skipping percy test");
+  }
+  outputDir.cleanup();
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000;
 });
 
-test("paragraph formatting renders correctly", async () => {
-  await utils.expectToMatchSnapshot("documents/paragraph.tex");
-});
+function removeDescendantsWithTagName(element, tagName) {
+  Array.from(element.getElementsByTagName(tagName)).forEach(el => {
+    el.parentNode.removeChild(el);
+  });
+}
 
-test("URLS render correctly", async () => {
-  await utils.expectToMatchSnapshot("documents/urls.tex");
-});
+for (let { documentName, documentPath } of testDocuments()) {
+  test(`${documentName} renders correctly`, async () => {
+    const outputPath = path.join(outputDir.path, path.parse(documentName).name);
+    // await fs.mkdirs(outputPath);
+    const { htmlString, document } = await renderToDom(
+      documentPath,
+      outputPath
+    );
 
-test("listings render correctly", async () => {
-  await utils.expectToMatchSnapshot("documents/listings.tex");
-});
+    removeDescendantsWithTagName(document.body, "script");
+    removeDescendantsWithTagName(document.body, "style");
+    expect(document.body).toMatchSnapshot();
 
-test("lists render correctly", async () => {
-  await utils.expectToMatchSnapshot("documents/lists.tex");
-});
-
-test("tables render correctly", async () => {
-  await utils.expectToMatchSnapshot("documents/tables.tex");
-});
-
-test("figures render correctly", async () => {
-  await utils.expectToMatchSnapshot("documents/figures.tex");
-});
-
-test("math renders correctly", async () => {
-  await utils.expectToMatchSnapshot("documents/math.tex");
-});
-
-test("footnotes render correctly", async () => {
-  await utils.expectToMatchSnapshot("documents/footnotes.tex");
-});
-
-test("citations render correctly", async () => {
-  await utils.expectToMatchSnapshot("documents/citations.tex");
-});
-
-test("sample2e.tex sample document renders correctly", async () => {
-  await utils.expectToMatchSnapshot("documents/sample2e.tex");
-});
-
-test("small2e.tex sample document renders correctly", async () => {
-  await utils.expectToMatchSnapshot("documents/small2e.tex");
-});
+    percySnapshots.push({ documentName, htmlString });
+  });
+}

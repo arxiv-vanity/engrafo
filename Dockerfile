@@ -27,27 +27,6 @@ RUN apt-get update -qq && apt-get install -qy \
   libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl  \
   imagemagick libimage-magick-perl perl-doc build-essential
 
-# Google Chrome for Puppeteer
-# https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
-
-# Make user so that Chrome can run
-RUN groupadd -r engrafo && useradd -r -g engrafo -G audio,video engrafo \
-    && mkdir -p /home/engrafo/Downloads \
-    && chown -R engrafo:engrafo /home/engrafo
-
-# See https://crbug.com/795759
-RUN apt-get update && apt-get install -yq libgconf-2-4
-
-# Install latest chrome dev package.
-# Note: This Chrome is not actually used, it just installs the necessary libs
-# to make Puppeteer's bundled version of Chromium work.
-RUN curl -sSL https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
-    && sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' \
-    && apt-get update -qq \
-    && apt-get install -yq google-chrome-unstable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf --no-install-recommends \
-    && rm -rf /var/lib/apt/lists/* \
-    && rm -rf /src/*.deb
-
 RUN mkdir -p /usr/src/latexml
 WORKDIR /usr/src/latexml
 ENV LATEXML_COMMIT=601362316f7166c00960ebd9fb806f4b1bf3a233
@@ -55,8 +34,11 @@ RUN curl -L https://github.com/brucemiller/LaTeXML/tarball/$LATEXML_COMMIT | tar
 RUN perl Makefile.PL; make; make install
 
 RUN mkdir -p /app /node_modules
-RUN chown engrafo:engrafo /app /node_modules
 WORKDIR /app
+
+# Percy dependencies
+RUN apt-get update -qq && apt-get install -qy rubygems
+RUN gem install percy-cli
 
 # Node
 COPY package.json yarn.lock /
@@ -67,9 +49,5 @@ RUN cd /; yarn install --pure-lockfile
 ENV PATH /node_modules/.bin:$PATH
 
 ENV PATH="/app/bin:${PATH}"
-
-# Run user as non privileged.
-USER engrafo
-
 
 COPY . /app

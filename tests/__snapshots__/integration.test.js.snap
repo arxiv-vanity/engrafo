@@ -1,172 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`URLS render correctly 1`] = `
-<body>
-  <div
-    class="engrafo-container"
-  >
-    
-
-
-    <div
-      class="ltx_page_content"
-    >
-      
-
-      <dt-article>
-        <h1
-          class=""
-        />
-        <div
-          class="engrafo-metadata"
-        >
-          <div
-            class="engrafo-metadata-custom"
-          />
-        </div>
-        
-
-        <div
-          class="ltx_para"
-          id="p1"
-        >
-          
-
-          <p
-            class="ltx_p"
-          >
-            <span>
-              http link: 
-              <a
-                href="http://link.co.uk/to#something"
-              >
-                http://link.co.uk/to#something
-              </a>
-               
-
-            </span>
-            <br
-              class="ltx_break"
-            />
-            <span>
-              https link: 
-              <a
-                href="https://link.info?param"
-              >
-                https://link.info?param
-              </a>
-               url 
-
-            </span>
-            <br
-              class="ltx_break"
-            />
-            <span>
-              link with trailing period: 
-              <a
-                href="https://example.com."
-              >
-                https://example.com.
-              </a>
-               (FIXME: known failure) 
-
-            </span>
-            <br
-              class="ltx_break"
-            />
-            this should not make a link: foo.bar 
-
-            <br
-              class="ltx_break"
-            />
-            <span>
-              this is a link without leading space: badlatex.
-              <a
-                href="http://example.com"
-              >
-                http://example.com
-              </a>
-               
-
-            </span>
-            <br
-              class="ltx_break"
-            />
-            this is already a link with href: 
-            <a
-              class="ltx_ref ltx_href"
-              href="http://example.com"
-              title=""
-            >
-              example.com
-            </a>
-             
-
-            <br
-              class="ltx_break"
-            />
-            this is a link without http: 
-            <a
-              class="ltx_ref ltx_href"
-              href="http://example.com"
-              title=""
-            >
-              example.com
-            </a>
-             
-
-            <br
-              class="ltx_break"
-            />
-            this is already a link with url: 
-            <a
-              class="ltx_ref ltx_url ltx_font_typewriter"
-              href="http://example.com"
-              title=""
-            >
-              http://example.com
-            </a>
-             
-
-            <br
-              class="ltx_break"
-            />
-          </p>
-          
-
-        </div>
-        
-
-      </dt-article>
-      
-
-      <dt-appendix>
-        
-
-        
-
-
-        <div
-          class="l-body"
-        />
-        
-
-      </dt-appendix>
-    </div>
-    
-
-
-
-
-
-    <div
-      id="footnote-hover-boxes-container"
-    />
-  </div>
-</body>
-`;
-
-exports[`citations render correctly 1`] = `
+exports[`citations.tex renders correctly 1`] = `
 <body>
   <div
     class="engrafo-container"
@@ -513,7 +347,7 @@ A. Vazquez-Reina, M. Gelbart, D. Huang, J. Lichtman, E. Miller, and H. Pfi
 </body>
 `;
 
-exports[`figures render correctly 1`] = `
+exports[`figures.tex renders correctly 1`] = `
 <body>
   <div
     class="engrafo-container"
@@ -839,7 +673,7 @@ exports[`figures render correctly 1`] = `
 </body>
 `;
 
-exports[`footnotes render correctly 1`] = `
+exports[`footnotes.tex renders correctly 1`] = `
 <body>
   <div
     class="engrafo-container"
@@ -1008,7 +842,7 @@ second paragraph! And some
 </body>
 `;
 
-exports[`listings render correctly 1`] = `
+exports[`listings.tex renders correctly 1`] = `
 <body>
   <div
     class="engrafo-container"
@@ -1301,7 +1135,7 @@ exports[`listings render correctly 1`] = `
 </body>
 `;
 
-exports[`lists render correctly 1`] = `
+exports[`lists.tex renders correctly 1`] = `
 <body>
   <div
     class="engrafo-container"
@@ -1787,7 +1621,7 @@ exports[`lists render correctly 1`] = `
 </body>
 `;
 
-exports[`math renders correctly 1`] = `
+exports[`math.tex renders correctly 1`] = `
 <body>
   <div
     class="engrafo-container"
@@ -2267,7 +2101,7 @@ exports[`math renders correctly 1`] = `
 </body>
 `;
 
-exports[`paragraph formatting renders correctly 1`] = `
+exports[`paragraph.tex renders correctly 1`] = `
 <body>
   <div
     class="engrafo-container"
@@ -2647,7 +2481,7 @@ exports[`paragraph formatting renders correctly 1`] = `
 </body>
 `;
 
-exports[`sample2e.tex sample document renders correctly 1`] = `
+exports[`sample2e.tex renders correctly 1`] = `
 <body>
   <div
     class="engrafo-container"
@@ -4401,7 +4235,329 @@ nor make one a paragraph by itself.
 </body>
 `;
 
-exports[`small2e.tex sample document renders correctly 1`] = `
+exports[`sections.tex renders correctly 1`] = `
+<body>
+  <div
+    class="engrafo-container"
+  >
+    
+
+
+    <div
+      class="ltx_page_content"
+    >
+      
+
+      <dt-article>
+        
+
+        <h1
+          class="ltx_title ltx_title_document"
+        >
+          Sections test
+        </h1>
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="ltx_authors"
+          >
+            
+
+            <span
+              class="ltx_creator ltx_role_author"
+            >
+              
+
+              <span
+                class="ltx_personname"
+              >
+                Carl Capybara 
+
+              </span>
+              <span
+                class="ltx_author_notes"
+              >
+                <span>
+                  A thanks block
+                </span>
+              </span>
+            </span>
+            
+
+            <span
+              class="ltx_author_before"
+            >
+                
+            </span>
+            <span
+              class="ltx_creator ltx_role_author"
+            >
+              
+
+              <span
+                class="ltx_personname"
+              >
+                Walter Wombat
+
+              </span>
+            </span>
+            
+
+          </div>
+          <div
+            class="engrafo-metadata-custom"
+          />
+        </div>
+        
+
+
+
+
+        <div
+          class="ltx_abstract"
+        >
+          
+
+          <h2
+            class=""
+          >
+            Abstract
+          </h2>
+          
+
+          <p
+            class="ltx_p"
+          >
+            A test of titles, abstracts, and sections.
+          </p>
+          
+
+        </div>
+        
+
+        <section
+          class="ltx_section"
+          id="S1"
+        >
+          
+
+          <h2
+            class="ltx_title ltx_title_section"
+          >
+            
+
+            <span
+              class="ltx_tag ltx_tag_section"
+            >
+              <a
+                href="#S1"
+              >
+                1 
+              </a>
+            </span>
+            Sections
+          </h2>
+          
+
+
+          <section
+            class="ltx_subsection"
+            id="S1.SS1"
+          >
+            
+
+            <h3
+              class="ltx_title ltx_title_subsection"
+            >
+              
+
+              <span
+                class="ltx_tag ltx_tag_subsection"
+              >
+                1.1 
+              </span>
+              subsection
+            </h3>
+            
+
+
+            <div
+              class="ltx_para"
+              id="S1.SS1.p1"
+            >
+              
+
+              <p
+                class="ltx_p"
+              >
+                Some content to ensure spacing is correct.
+              </p>
+              
+
+            </div>
+            
+
+          </section>
+          
+
+          <section
+            class="ltx_subsection"
+            id="S1.SSx1"
+          >
+            
+
+            <h3
+              class="ltx_title ltx_title_subsection"
+            >
+              subsection without counter
+            </h3>
+            
+
+
+            <section
+              class="ltx_subsubsection"
+              id="S1.SSx1.SSS1"
+            >
+              
+
+              <h4
+                class="ltx_title ltx_title_subsubsection"
+              >
+                
+subsubsection
+              </h4>
+              
+
+
+              <section
+                class="ltx_paragraph"
+                id="S1.SSx1.SSS1.Px1"
+              >
+                
+
+
+
+                <div
+                  class="ltx_para"
+                  id="S1.SSx1.SSS1.Px1.p1"
+                >
+                  
+
+                  <p
+                    class="ltx_p"
+                  >
+                    <strong
+                      class="paragraph-heading"
+                    >
+                      paragraph
+                    </strong>
+                     Some text.
+                  </p>
+                  
+
+                </div>
+                
+
+                <section
+                  class="ltx_subparagraph"
+                  id="S1.SSx1.SSS1.Px1.SPx1"
+                >
+                  
+
+                  <h6
+                    class="ltx_title ltx_title_subparagraph"
+                  >
+                    subparagraph
+                  </h6>
+                  
+
+
+                  <div
+                    class="ltx_para"
+                    id="S1.SSx1.SSS1.Px1.SPx1.p1"
+                  >
+                    
+
+                    <p
+                      class="ltx_p"
+                    >
+                      Some text.
+                    </p>
+                    
+
+                  </div>
+                  
+
+                </section>
+                
+
+              </section>
+              
+
+            </section>
+            
+
+          </section>
+          
+
+          <section
+            class="ltx_subsection"
+            id="S1.SS2"
+          >
+            
+
+            <h3
+              class="ltx_title ltx_title_subsection"
+            >
+              
+
+              <span
+                class="ltx_tag ltx_tag_subsection"
+              >
+                1.2 
+              </span>
+              A Heading in All Caps Should Be Converted to Title Case
+            </h3>
+            
+
+
+          </section>
+          
+
+        </section>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
+        />
+        
+
+      </dt-appendix>
+    </div>
+    
+
+
+
+
+
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
+</body>
+`;
+
+exports[`small2e.tex renders correctly 1`] = `
 <body>
   <div
     class="engrafo-container"
@@ -4626,7 +4782,7 @@ The manual tells how to make other symbols.
 </body>
 `;
 
-exports[`tables render correctly 1`] = `
+exports[`tables.tex renders correctly 1`] = `
 <body>
   <div
     class="engrafo-container"
@@ -7732,7 +7888,7 @@ throughout the evening.
 </body>
 `;
 
-exports[`text renders correctly 1`] = `
+exports[`text.tex renders correctly 1`] = `
 <body>
   <div
     class="engrafo-container"
@@ -8669,7 +8825,7 @@ exports[`text renders correctly 1`] = `
 </body>
 `;
 
-exports[`titles and sections render correctly 1`] = `
+exports[`urls.tex renders correctly 1`] = `
 <body>
   <div
     class="engrafo-container"
@@ -8683,283 +8839,127 @@ exports[`titles and sections render correctly 1`] = `
       
 
       <dt-article>
-        
-
         <h1
-          class="ltx_title ltx_title_document"
-        >
-          Sections test
-        </h1>
+          class=""
+        />
         <div
           class="engrafo-metadata"
         >
-          <div
-            class="ltx_authors"
-          >
-            
-
-            <span
-              class="ltx_creator ltx_role_author"
-            >
-              
-
-              <span
-                class="ltx_personname"
-              >
-                Carl Capybara 
-
-              </span>
-              <span
-                class="ltx_author_notes"
-              >
-                <span>
-                  A thanks block
-                </span>
-              </span>
-            </span>
-            
-
-            <span
-              class="ltx_author_before"
-            >
-                
-            </span>
-            <span
-              class="ltx_creator ltx_role_author"
-            >
-              
-
-              <span
-                class="ltx_personname"
-              >
-                Walter Wombat
-
-              </span>
-            </span>
-            
-
-          </div>
           <div
             class="engrafo-metadata-custom"
           />
         </div>
         
 
-
-
-
         <div
-          class="ltx_abstract"
+          class="ltx_para"
+          id="p1"
         >
-          
-
-          <h2
-            class=""
-          >
-            Abstract
-          </h2>
           
 
           <p
             class="ltx_p"
           >
-            A test of titles, abstracts, and sections.
+            <span>
+              http link: 
+              <a
+                href="http://link.co.uk/to#something"
+              >
+                http://link.co.uk/to#something
+              </a>
+               
+
+            </span>
+            <br
+              class="ltx_break"
+            />
+            <span>
+              https link: 
+              <a
+                href="https://link.info?param"
+              >
+                https://link.info?param
+              </a>
+               url 
+
+            </span>
+            <br
+              class="ltx_break"
+            />
+            <span>
+              link with trailing period: 
+              <a
+                href="https://example.com."
+              >
+                https://example.com.
+              </a>
+               (FIXME: known failure) 
+
+            </span>
+            <br
+              class="ltx_break"
+            />
+            this should not make a link: foo.bar 
+
+            <br
+              class="ltx_break"
+            />
+            <span>
+              this is a link without leading space: badlatex.
+              <a
+                href="http://example.com"
+              >
+                http://example.com
+              </a>
+               
+
+            </span>
+            <br
+              class="ltx_break"
+            />
+            this is already a link with href: 
+            <a
+              class="ltx_ref ltx_href"
+              href="http://example.com"
+              title=""
+            >
+              example.com
+            </a>
+             
+
+            <br
+              class="ltx_break"
+            />
+            this is a link without http: 
+            <a
+              class="ltx_ref ltx_href"
+              href="http://example.com"
+              title=""
+            >
+              example.com
+            </a>
+             
+
+            <br
+              class="ltx_break"
+            />
+            this is already a link with url: 
+            <a
+              class="ltx_ref ltx_url ltx_font_typewriter"
+              href="http://example.com"
+              title=""
+            >
+              http://example.com
+            </a>
+             
+
+            <br
+              class="ltx_break"
+            />
           </p>
           
 
         </div>
-        
-
-        <section
-          class="ltx_section"
-          id="S1"
-        >
-          
-
-          <h2
-            class="ltx_title ltx_title_section"
-          >
-            
-
-            <span
-              class="ltx_tag ltx_tag_section"
-            >
-              <a
-                href="#S1"
-              >
-                1 
-              </a>
-            </span>
-            Sections
-          </h2>
-          
-
-
-          <section
-            class="ltx_subsection"
-            id="S1.SS1"
-          >
-            
-
-            <h3
-              class="ltx_title ltx_title_subsection"
-            >
-              
-
-              <span
-                class="ltx_tag ltx_tag_subsection"
-              >
-                1.1 
-              </span>
-              subsection
-            </h3>
-            
-
-
-            <div
-              class="ltx_para"
-              id="S1.SS1.p1"
-            >
-              
-
-              <p
-                class="ltx_p"
-              >
-                Some content to ensure spacing is correct.
-              </p>
-              
-
-            </div>
-            
-
-          </section>
-          
-
-          <section
-            class="ltx_subsection"
-            id="S1.SSx1"
-          >
-            
-
-            <h3
-              class="ltx_title ltx_title_subsection"
-            >
-              subsection without counter
-            </h3>
-            
-
-
-            <section
-              class="ltx_subsubsection"
-              id="S1.SSx1.SSS1"
-            >
-              
-
-              <h4
-                class="ltx_title ltx_title_subsubsection"
-              >
-                
-subsubsection
-              </h4>
-              
-
-
-              <section
-                class="ltx_paragraph"
-                id="S1.SSx1.SSS1.Px1"
-              >
-                
-
-
-
-                <div
-                  class="ltx_para"
-                  id="S1.SSx1.SSS1.Px1.p1"
-                >
-                  
-
-                  <p
-                    class="ltx_p"
-                  >
-                    <strong
-                      class="paragraph-heading"
-                    >
-                      paragraph
-                    </strong>
-                     Some text.
-                  </p>
-                  
-
-                </div>
-                
-
-                <section
-                  class="ltx_subparagraph"
-                  id="S1.SSx1.SSS1.Px1.SPx1"
-                >
-                  
-
-                  <h6
-                    class="ltx_title ltx_title_subparagraph"
-                  >
-                    subparagraph
-                  </h6>
-                  
-
-
-                  <div
-                    class="ltx_para"
-                    id="S1.SSx1.SSS1.Px1.SPx1.p1"
-                  >
-                    
-
-                    <p
-                      class="ltx_p"
-                    >
-                      Some text.
-                    </p>
-                    
-
-                  </div>
-                  
-
-                </section>
-                
-
-              </section>
-              
-
-            </section>
-            
-
-          </section>
-          
-
-          <section
-            class="ltx_subsection"
-            id="S1.SS2"
-          >
-            
-
-            <h3
-              class="ltx_title ltx_title_subsection"
-            >
-              
-
-              <span
-                class="ltx_tag ltx_tag_subsection"
-              >
-                1.2 
-              </span>
-              A Heading in All Caps Should Be Converted to Title Case
-            </h3>
-            
-
-
-          </section>
-          
-
-        </section>
         
 
       </dt-article>

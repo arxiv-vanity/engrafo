@@ -1,5 +1,5 @@
 const util = require("util");
-const engrafo = require("../src");
+const converter = require("../src/converter");
 const readFile = util.promisify(require("fs").readFile);
 const { configureToMatchImageSnapshot } = require("jest-image-snapshot");
 const jsdom = require("jsdom");
@@ -19,7 +19,10 @@ exports.renderToDom = async input => {
 
   const tmpDir = await tmp.dir({ unsafeCleanup: true });
 
-  const htmlPath = await engrafo.render({ input: input, output: tmpDir.path });
+  const htmlPath = await converter.render({
+    input: input,
+    output: tmpDir.path
+  });
   const htmlString = await readFile(htmlPath, "utf-8");
   const document = jsdom.jsdom(htmlString, {
     features: {

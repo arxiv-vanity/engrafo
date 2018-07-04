@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var engrafo = require("../src");
+var converter = require("../src/converter");
 var path = require("path");
 var fs = require("fs");
 var program = require("commander");
@@ -31,7 +31,7 @@ var options = {
   postProcessing: program.postProcessing
 };
 
-engrafo
+converter
   .render(options)
   .then(htmlPath => {
     console.log("💃  Document successfully rendered to", htmlPath);

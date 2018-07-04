@@ -13,7 +13,13 @@ function unlinkIfExists(path) {
   }
 }
 
-function createChildProcess({ cssPath, htmlPath, texPath, outputDir }) {
+function createChildProcess({
+  cssPath,
+  javaScriptPath,
+  htmlPath,
+  texPath,
+  outputDir
+}) {
   // prettier-ignore
   const latexmlArgs = [
     "--format", "html5",
@@ -28,6 +34,10 @@ function createChildProcess({ cssPath, htmlPath, texPath, outputDir }) {
 
   if (cssPath) {
     latexmlArgs.push("--css", cssPath);
+  }
+
+  if (javaScriptPath) {
+    latexmlArgs.push("--javascript", javaScriptPath);
   }
 
   latexmlArgs.push(path.basename(texPath));
@@ -58,14 +68,15 @@ function createChildProcess({ cssPath, htmlPath, texPath, outputDir }) {
 }
 
 // render a document with latexml
-function render({ texPath, outputDir, cssPath }) {
+function render({ texPath, outputDir, cssPath, javaScriptPath }) {
   const htmlPath = path.join(outputDir, "index.html");
 
   const latexmlc = createChildProcess({
     texPath,
     outputDir,
     htmlPath,
-    cssPath
+    cssPath,
+    javaScriptPath
   });
 
   const stdoutReadline = readline.createInterface({ input: latexmlc.stdout });

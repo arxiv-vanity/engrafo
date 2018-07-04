@@ -15,6 +15,10 @@ async function main(argv) {
       "--css <path>",
       "URL or path to external CSS to use instead of the default CSS. If passed, the defaut CSS is not copied to the output directory."
     )
+    .option(
+      "--javascript <path>",
+      "URL or path to external JavaScript to use instead of the default JS. If not passed, the default JS is not copied to the output directory."
+    )
     .parse(argv);
 
   const input = program.args[0];
@@ -29,7 +33,8 @@ async function main(argv) {
     input: input,
     output: output,
     postProcessing: program.postProcessing,
-    externalCSS: program.css
+    externalCSS: program.css,
+    externalJavaScript: program.javascript
   };
 
   const htmlPath = await converter.render(options);

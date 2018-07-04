@@ -58,9 +58,6 @@ RUN mkdir -p /app /node_modules
 RUN chown engrafo:engrafo /app /node_modules
 WORKDIR /app
 
-# Run user as non privileged.
-USER engrafo
-
 # Node
 COPY package.json yarn.lock /
 # HACK: Install node_modules one directory up so they are not overwritten
@@ -70,5 +67,9 @@ RUN cd /; yarn install --pure-lockfile
 ENV PATH /node_modules/.bin:$PATH
 
 ENV PATH="/app/bin:${PATH}"
+
+# Run user as non privileged.
+USER engrafo
+
 
 COPY . /app

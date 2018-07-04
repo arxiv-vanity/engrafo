@@ -32,7 +32,7 @@ First, install [Node](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/en/
 
 The LaTeXML and LaTeX toolchain runs inside Docker. [Install Docker](https://docs.docker.com/install/) and build the Docker image:
 
-    $ script/build
+    $ script/docker-build
 
 You can convert documents with `yarn run convert`:
 

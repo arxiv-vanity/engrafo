@@ -1,3 +1,1 @@
-module.exports = {
-  "preset": "jest-puppeteer"
-};
+module.exports = {};

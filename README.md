@@ -53,21 +53,21 @@ Or individual tests by matching a string:
 
 ### Writing integration tests
 
-The integration tests in `integration-tests/` render small LaTeX files and ensure they produce a particular HTML output. They also compare a screenshot of the output with a known good screenshot.
+The integration tests in `tests/integration.test.js` render small LaTeX files and ensure they produce a particular HTML output. They also compare a screenshot of the output with a known good screenshot.
 
 The integration tests use [Jest's](http://facebook.github.io/jest/) snapshotting feature.
 
 Each test renders a LaTeX file and ensures it matches a snapshot. If it does not match, Jest prints a pretty diff and gives you the option to automatically fix the test.
 
-First, write a test case describing in plain text what you are testing. For example, in `integration-tests/formatting.test.js`:
+First, write a test case describing in plain text what you are testing. For example, in `tests/integration.test.js`:
 
 ```javascript
 test("bold text renders correctly", done => {
-  utils.expectBodyToMatchSnapshot("formatting/bold.tex", done);
+  utils.expectBodyToMatchSnapshot("documents/bold.tex", done);
 });
 ```
 
-Then, write `integration-tests/formatting/bold.tex`:
+Then, write `tests/documents/bold.tex`:
 
 ```latex
 \begin{document}
@@ -79,7 +79,7 @@ Now, run the test passing the `-u` option to write out a snapshot of what is ren
 
     $ script/test -t "bold text renders correctly" -u
 
-Check the output looks correct in `integration-tests/__snapshots__/formatting.test.js.snap`. You can re-run that command without the `-u` option to ensure the test passes.
+Check the output looks correct in `tests/__snapshots__/integration.test.js.snap`. You can re-run that command without the `-u` option to ensure the test passes.
 
 The test will fail if the output changes in the future. If the change is expected, then you can simply re-run the test with `-u` to overwrite the snapshot and fix the test.
 

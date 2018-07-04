@@ -5,8 +5,10 @@
   "author": "Andreas Jansson & Ben Firshman",
   "license": "Apache-2.0",
   "scripts": {
+    "convert": "LATEXML_DOCKER=true bin/engrafo",
     "prettier": "prettier --write {src,tests}/**/*.js",
-    "test": "jest"
+    "server": "LATEXML_DOCKER=true bin/engrafo-server",
+    "test": "LATEXML_DOCKER=true jest"
   },
   "dependencies": {
     "aws-sdk": "^2.127.0",

@@ -1,8 +1,8 @@
 - type: parallel
   steps:
-    - name: integration
+    - name: tests
       service: engrafo
-      command: yarn test
+      command: jest
 - name: "Push Git commit tag to Docker Hub"
   service: engrafo
   type: push

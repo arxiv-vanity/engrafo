@@ -17,7 +17,7 @@ expect.extend({ toMatchImageSnapshot });
 exports.renderToDom = async input => {
   input = path.join(__dirname, input);
 
-  const tmpDir = await tmp.dir({ unsafeCleanup: true });
+  const tmpDir = await tmp.dir({ unsafeCleanup: true, dir: "/tmp" });
 
   const htmlPath = await converter.render({
     input: input,

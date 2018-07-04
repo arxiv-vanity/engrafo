@@ -26,30 +26,31 @@ For full usage, run `docker run arxivvanity/engrafo engrafo --help`.
 
 ## Development environment
 
-In development, you can build an image locally and use a script to run the image:
+First, install [Node](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/en/docs/install#mac-stable). Then, install the Node dependencies:
+
+    $ yarn
+
+The LaTeXML and LaTeX toolchain runs inside Docker. [Install Docker](https://docs.docker.com/install/) and build the Docker image:
 
     $ script/build
-    $ script/engrafo -o output/ tests/documents/sample2e.tex
 
-You can also run a server for developing CSS. It renders a file then runs a server that will automatically reload the CSS when you change it. Start it by running:
+You can convert documents with `yarn run convert`:
 
-    $ script/server tests/documents/sample2e.tex
-
-And it will be available at [http://localhost:8000/](http://localhost:8000/).
+    $ yarn run convert -o output/ tests/documents/sample2e.tex
 
 ## Tests
 
 Run the main test suite:
 
-    $ script/test
+    $ yarn test
 
-You can run entire suites:
+You can run particular suites:
 
-    $ script/test integration-tests/images.test.js
+    $ yarn test tests/integration.test.js
 
-Or individual tests by matching a string:
+Or particular tests by matching a string:
 
-    $ script/test -t "titles and headings"
+    $ yarn test -t "titles and headings"
 
 ### Writing integration tests
 
@@ -77,23 +78,11 @@ Then, write `tests/documents/bold.tex`:
 
 Now, run the test passing the `-u` option to write out a snapshot of what is rendered:
 
-    $ script/test -t "bold text renders correctly" -u
+    $ yarn test -t "bold text renders correctly" -u
 
 Check the output looks correct in `tests/__snapshots__/integration.test.js.snap`. You can re-run that command without the `-u` option to ensure the test passes.
 
 The test will fail if the output changes in the future. If the change is expected, then you can simply re-run the test with `-u` to overwrite the snapshot and fix the test.
-
-## Installing new yarn packages
-
-All the Node dependencies are inside the Docker container, which makes managing dependencies a bit unusual. To add a new dependency, use `script/yarn` and rebuild the image:
-
-    $ script/yarn add leftpad
-    $ script/build
-
-Similarly,
-
-    $ script/yarn remove leftpad
-    $ script/build
 
 ## Sponsors
 

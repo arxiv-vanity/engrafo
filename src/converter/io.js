@@ -70,16 +70,19 @@ async function extractGzipToTmpdir(gzipPath) {
       cwd: tmpDir.path
     });
   } catch (err) {
-    if (
-      err.stderr &&
-      err.stderr
-        .toString()
-        .indexOf("tar: This does not look like a tar archive") !== -1
-    ) {
-      console.log(
-        "Input file is gzipped but not a tarball, assuming it is a .tex file"
-      );
-      await fs.rename(gunzippedPath, path.join(tmpDir.path, "main.tex"));
+    if (err.stderr) {
+      const errorMessage = err.stderr.toString();
+      if (
+        // Linux
+        errorMessage.includes("tar: This does not look like a tar archive") ||
+        // OS X
+        errorMessage.includes("tar: Unrecognized archive format")
+      ) {
+        console.log(
+          "Input file is gzipped but not a tarball, assuming it is a .tex file"
+        );
+        await fs.rename(gunzippedPath, path.join(tmpDir.path, "main.tex"));
+      }
     } else {
       throw err;
     }

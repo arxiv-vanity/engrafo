@@ -13,31 +13,51 @@ function unlinkIfExists(path) {
   }
 }
 
+function createChildProcess({ htmlPath, texPath, outputDir }) {
+  // prettier-ignore
+  const latexmlArgs = [
+    "--format", "html5",
+    "--nodefaultresources",
+    "--mathtex",
+    "--svg",
+    "--verbose",
+    "--timestamp", "0",
+    "--preload", "/app/latexml/engrafo.ltxml",
+    "--preload", "/usr/src/latexml/lib/LaTeXML/Package/hyperref.sty.ltxml",
+  ];
+
+  latexmlArgs.push(path.basename(texPath));
+
+  if (process.env.LATEXML_DOCKER) {
+    // prettier-ignore
+    const dockerArgs = [
+      "run",
+      "--init",
+      "-v", `${path.dirname(texPath)}:/input`,
+      "-v", `${outputDir}:/output`,
+      "-w", "/input",
+      "--rm",
+      "engrafo",
+    ];
+
+    latexmlArgs.push("--dest", "/output/index.html");
+
+    const args = dockerArgs.concat(["latexmlc"], latexmlArgs);
+    return childProcess.spawn("docker", args);
+  }
+
+  latexmlArgs.push("--dest", htmlPath);
+
+  return childProcess.spawn("latexmlc", latexmlArgs, {
+    cwd: path.dirname(texPath)
+  });
+}
+
 // render a document with latexml
 function render({ texPath, outputDir }) {
-  var htmlPath = path.join(outputDir, "index.html");
+  const htmlPath = path.join(outputDir, "index.html");
 
-  var latexmlc = childProcess.spawn(
-    "latexmlc",
-    [
-      "--dest",
-      htmlPath,
-      "--format",
-      "html5",
-      "--nodefaultresources",
-      "--mathtex",
-      "--svg",
-      "--verbose",
-      "--preload",
-      "/app/latexml/engrafo.ltxml",
-      "--preload",
-      "/usr/src/latexml/lib/LaTeXML/Package/hyperref.sty.ltxml",
-      texPath
-    ],
-    {
-      cwd: path.dirname(texPath)
-    }
-  );
+  const latexmlc = createChildProcess({ texPath, outputDir, htmlPath });
 
   var stdoutReadline = readline.createInterface({ input: latexmlc.stdout });
   stdoutReadline.on("line", console.log);

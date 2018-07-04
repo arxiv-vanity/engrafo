@@ -1,4 +1,0 @@
-#!/bin/sh
-exec script/run yarn --modules-folder=/node_modules "$@"
-
-# TODO: commit container that just run so we don't have to build image again

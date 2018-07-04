@@ -33,7 +33,13 @@ async function processHTML(htmlPath, options) {
 // Render and postprocess a LaTeX file into outputDir (created if does not
 // exist). Calls callback with an error on failure or a path to an HTML file
 // on success.
-async function render({ input, output, postProcessing, externalCSS }) {
+async function render({
+  input,
+  output,
+  postProcessing,
+  externalCSS,
+  externalJavaScript
+}) {
   if (postProcessing === undefined) {
     postProcessing = true;
   }
@@ -47,11 +53,19 @@ async function render({ input, output, postProcessing, externalCSS }) {
   // Otherwise, link directly to the built asset. Absolute path, assuming
   // latexml is always run in Docker.
   const cssPath = externalCSS ? null : "/app/dist/css/index.css";
+  const javaScriptPath = externalJavaScript
+    ? null
+    : "/app/dist/javascript/index.js";
 
   console.log(`Rendering tex file ${texPath} to ${outputDir}`);
-  const htmlPath = await latexml.render({ texPath, outputDir, cssPath });
+  const htmlPath = await latexml.render({
+    texPath,
+    outputDir,
+    cssPath,
+    javaScriptPath
+  });
 
-  await processHTML(htmlPath, { externalCSS });
+  await processHTML(htmlPath, { externalCSS, externalJavaScript });
 
   if (output.startsWith("s3://")) {
     await io.uploadOutputToS3(outputDir, output);

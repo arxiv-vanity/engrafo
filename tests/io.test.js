@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const uploader = require("s3-recursive-uploader");
 const tmp = require("tmp-promise");
-const io = require("../src/io");
+const io = require("../src/converter/io");
 
 const mockGetObject = jest.fn();
 

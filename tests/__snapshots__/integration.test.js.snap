@@ -4342,242 +4342,254 @@ exports[`listings.tex renders correctly 1`] = `
         </div>
         
 
-        <div
-          class="ltx_para"
-          id="p1"
+        <section
+          class="ltx_section"
+          id="S1"
         >
           
 
-          <div
-            class="ltx_listing ltx_lst_language_Pascal ltx_lstlisting ltx_listing"
+          <h2
+            class="ltx_title ltx_title_section"
           >
             
 
-
-            <div
-              class="ltx_listingline"
-              id="lstnumberx1"
+            <span
+              class="ltx_tag ltx_tag_section"
             >
-              
+              <a
+                href="#S1"
+              >
+                1 
+              </a>
+            </span>
+            Listings
+          </h2>
+          
 
-              <span
-                class="ltx_text ltx_lst_space"
-              >
-                  
-              </span>
-              <span
-                class="ltx_text ltx_lst_keyword ltx_font_bold"
-              >
-                for
-              </span>
-              <span
-                class="ltx_text ltx_lst_space"
-              >
-                 
-              </span>
-              <span
-                class="ltx_text ltx_lst_identifier"
-              >
-                i
-              </span>
-              :=
-              <span
-                class="ltx_text ltx_lst_keyword ltx_font_bold"
-              >
-                maxint
-              </span>
-              <span
-                class="ltx_text ltx_lst_space"
-              >
-                 
-              </span>
-              <span
-                class="ltx_text ltx_lst_keyword ltx_font_bold"
-              >
-                to
-              </span>
-              <span
-                class="ltx_text ltx_lst_space"
-              >
-                 
-              </span>
-              0
-              <span
-                class="ltx_text ltx_lst_space"
-              >
-                 
-              </span>
-              <span
-                class="ltx_text ltx_lst_keyword ltx_font_bold"
-              >
-                do
-              </span>
-              
 
-            </div>
+          <div
+            class="ltx_para"
+            id="S1.p1"
+          >
+            
+
+            <p
+              class="ltx_p"
+            >
+              Some text before.
+            </p>
             
 
             <div
-              class="ltx_listingline"
-              id="lstnumberx2"
+              class="ltx_listing ltx_lst_language_Pascal ltx_lstlisting ltx_listing"
             >
               
 
-              <span
-                class="ltx_text ltx_lst_space"
-              >
-                  
-              </span>
-              <span
-                class="ltx_text ltx_lst_keyword ltx_font_bold"
-              >
-                begin
-              </span>
-              
 
-            </div>
-            
-
-            <div
-              class="ltx_listingline"
-              id="lstnumberx3"
-            >
-              
-
-              <span
-                class="ltx_text ltx_lst_space"
+              <div
+                class="ltx_listingline"
+                id="lstnumberx1"
               >
-                  
-              </span>
-              <span
-                class="ltx_text ltx_lst_comment"
-              >
-                {
+                
+
                 <span
-                  class="ltx_text ltx_lst_space ltx_font_italic"
+                  class="ltx_text ltx_lst_keyword ltx_font_bold"
+                >
+                  for
+                </span>
+                <span
+                  class="ltx_text ltx_lst_space"
                 >
                    
                 </span>
                 <span
-                  class="ltx_text ltx_font_italic"
+                  class="ltx_text ltx_lst_identifier"
+                >
+                  i
+                </span>
+                :=
+                <span
+                  class="ltx_text ltx_lst_keyword ltx_font_bold"
+                >
+                  maxint
+                </span>
+                <span
+                  class="ltx_text ltx_lst_space"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text ltx_lst_keyword ltx_font_bold"
+                >
+                  to
+                </span>
+                <span
+                  class="ltx_text ltx_lst_space"
+                >
+                   
+                </span>
+                0
+                <span
+                  class="ltx_text ltx_lst_space"
+                >
+                   
+                </span>
+                <span
+                  class="ltx_text ltx_lst_keyword ltx_font_bold"
                 >
                   do
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+                id="lstnumberx2"
+              >
+                
+
+                <span
+                  class="ltx_text ltx_lst_keyword ltx_font_bold"
+                >
+                  begin
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+                id="lstnumberx3"
+              >
+                
+
+                <span
+                  class="ltx_text ltx_lst_comment"
+                >
+                  {
                   <span
-                    class="ltx_text ltx_lst_space"
+                    class="ltx_text ltx_lst_space ltx_font_italic"
                   >
                      
                   </span>
-                  nothing
+                  <span
+                    class="ltx_text ltx_font_italic"
+                  >
+                    do
+                    <span
+                      class="ltx_text ltx_lst_space"
+                    >
+                       
+                    </span>
+                    nothing
+                    <span
+                      class="ltx_text ltx_lst_space"
+                    >
+                       
+                    </span>
+                  </span>
+                  }
+                </span>
+                
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+                id="lstnumberx4"
+              >
+                
+
+                <span
+                  class="ltx_text ltx_lst_keyword ltx_font_bold"
+                >
+                  end
+                </span>
+                ;
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+                id="lstnumberx5"
+              >
+                
+
+                <span
+                  class="ltx_text ltx_lst_keyword ltx_font_bold"
+                >
+                  Write
+                </span>
+                (
+                <span
+                  class="ltx_text ltx_lst_string"
+                >
+                  ’Case
                   <span
                     class="ltx_text ltx_lst_space"
                   >
-                     
+                    ␣
                   </span>
+                  insensitive
+                  <span
+                    class="ltx_text ltx_lst_space"
+                  >
+                    ␣
+                  </span>
+                  ’
                 </span>
-                }
-              </span>
+                );
+
+              </div>
+              
+
+              <div
+                class="ltx_listingline"
+                id="lstnumberx6"
+              >
+                
+
+                <span
+                  class="ltx_text ltx_lst_keyword ltx_font_bold"
+                >
+                  Write
+                </span>
+                (
+                <span
+                  class="ltx_text ltx_lst_string"
+                >
+                  ’Pascal
+                  <span
+                    class="ltx_text ltx_lst_space"
+                  >
+                    ␣
+                  </span>
+                  keywords.’
+                </span>
+                );
+
+              </div>
               
 
             </div>
             
 
-            <div
-              class="ltx_listingline"
-              id="lstnumberx4"
+            <p
+              class="ltx_p"
             >
-              
-
-              <span
-                class="ltx_text ltx_lst_space"
-              >
-                  
-              </span>
-              <span
-                class="ltx_text ltx_lst_keyword ltx_font_bold"
-              >
-                end
-              </span>
-              ;
-
-            </div>
-            
-
-            <div
-              class="ltx_listingline"
-              id="lstnumberx5"
-            >
-              
-
-              <span
-                class="ltx_text ltx_lst_space"
-              >
-                  
-              </span>
-              <span
-                class="ltx_text ltx_lst_keyword ltx_font_bold"
-              >
-                Write
-              </span>
-              (
-              <span
-                class="ltx_text ltx_lst_string"
-              >
-                ’Case
-                <span
-                  class="ltx_text ltx_lst_space"
-                >
-                  ␣
-                </span>
-                insensitive
-                <span
-                  class="ltx_text ltx_lst_space"
-                >
-                  ␣
-                </span>
-                ’
-              </span>
-              );
-
-            </div>
-            
-
-            <div
-              class="ltx_listingline"
-              id="lstnumberx6"
-            >
-              
-
-              <span
-                class="ltx_text ltx_lst_space"
-              >
-                  
-              </span>
-              <span
-                class="ltx_text ltx_lst_keyword ltx_font_bold"
-              >
-                Write
-              </span>
-              (
-              <span
-                class="ltx_text ltx_lst_string"
-              >
-                ’Pascal
-                <span
-                  class="ltx_text ltx_lst_space"
-                >
-                  ␣
-                </span>
-                keywords.’
-              </span>
-              );
-
-            </div>
+              Some text after.
+            </p>
             
 
           </div>
           
 
-        </div>
+        </section>
         
 
       </dt-article>

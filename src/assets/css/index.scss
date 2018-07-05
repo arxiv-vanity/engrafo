@@ -8,6 +8,7 @@ body {
 
 // Contain everything inside .ltx_page_main
 .ltx_page_main {
+  @import "./citations";
   @import "./figures";
   @import "./headings";
   @import "./layout";

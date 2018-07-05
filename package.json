@@ -24,7 +24,7 @@
   "devDependencies": {
     "jest": "^23.3.0",
     "node-sass": "^4.9.0",
-    "parcel-bundler": "^1.8.1",
+    "parcel-bundler": "^1.9.4",
     "prettier": "^1.13.7"
   }
 }

@@ -1,8 +1,6 @@
-const util = require("util");
 const converter = require("../src/converter");
-const readFile = util.promisify(require("fs").readFile);
-const jsdom = require("jsdom");
 const fs = require("fs-extra");
+const jsdom = require("jsdom");
 const path = require("path");
 
 function testDocuments() {
@@ -19,7 +17,7 @@ async function renderToDom(input, output) {
     input: input,
     output: output
   });
-  const htmlString = await readFile(htmlPath, "utf-8");
+  const htmlString = await fs.readFile(htmlPath, "utf-8");
   const document = jsdom.jsdom(htmlString, {
     features: {
       ProcessExternalResources: false,

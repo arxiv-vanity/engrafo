@@ -89,3 +89,7 @@ The test will fail if the output changes in the future. If the change is expecte
 Thanks to our generous sponsors for supporting the development of Arxiv Vanity! [Sponsor us to get your logo here.](https://www.patreon.com/arxivvanity)
 
 [<img src="docs/sponsor-yld.png" alt="YLD" width="250" />](https://www.yld.io/)
+
+Tested by:
+
+[<img src="docs/sponsor-percy.png" alt="Percy" width="350" />](https://percy.io/)

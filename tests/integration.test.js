@@ -7,7 +7,6 @@ let percySnapshots = [],
   outputDir;
 
 beforeAll(async () => {
-  jasmine.DEFAULT_TIMEOUT_INTERVAL = 20000;
   outputDir = await tmp.dir({ unsafeCleanup: true, dir: "/tmp" });
 });
 
@@ -29,8 +28,7 @@ afterAll(async () => {
     console.log("No, PERCY_TOKEN envvar, skipping percy test");
   }
   outputDir.cleanup();
-  jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000;
-});
+}, 20000); // long timeout to wait for Percy
 
 function removeDescendants(element, selector) {
   Array.from(element.querySelectorAll(selector)).forEach(el => {

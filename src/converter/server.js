@@ -5,7 +5,7 @@ const path = require("path");
 const tmp = require("tmp-promise");
 
 module.exports.start = async input => {
-  const tmpDir = await tmp.dir();
+  const tmpDir = await tmp.dir({ dir: "/tmp" });
   const htmlPath = await render({
     input: input,
     output: tmpDir.path

@@ -22,7 +22,7 @@
     "tmp-promise": "^1.0.4"
   },
   "devDependencies": {
-    "jest": "^23.2.0",
+    "jest": "^23.3.0",
     "jest-image-snapshot": "^2.4.3",
     "jest-puppeteer": "^3.2.1",
     "node-sass": "^4.9.0",

@@ -32,8 +32,8 @@ afterAll(async () => {
   jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000;
 });
 
-function removeDescendantsWithTagName(element, tagName) {
-  Array.from(element.getElementsByTagName(tagName)).forEach(el => {
+function removeDescendants(element, selector) {
+  Array.from(element.querySelectorAll(selector)).forEach(el => {
     el.parentNode.removeChild(el);
   });
 }
@@ -47,8 +47,8 @@ for (let { documentName, documentPath } of testDocuments()) {
       outputPath
     );
 
-    removeDescendantsWithTagName(document.body, "script");
-    removeDescendantsWithTagName(document.body, "style");
+    removeDescendants(document.body, "script");
+    removeDescendants(document.body, "style");
     expect(document.body).toMatchSnapshot();
 
     percySnapshots.push({ documentName, htmlString });

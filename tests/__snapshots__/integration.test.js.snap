@@ -5876,11 +5876,13 @@ exports[`paragraph.tex renders correctly 1`] = `
             <p
               class="ltx_p"
             >
+              The 
               <code
                 class="ltx_verbatim ltx_font_typewriter"
               >
                 verb command
               </code>
+               can be used to make text within a paragraph monospace.
             </p>
             
 

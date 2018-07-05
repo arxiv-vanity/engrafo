@@ -1,0 +1,24 @@
+sudo: required
+services:
+- docker
+before_install:
+- docker pull arxivvanity/engrafo:latest
+- docker build -t arxivvanity/engrafo:latest -t arxivvanity/engrafo:${TRAVIS_COMMIT}
+  --cache-from arxivvanity/engrafo:latest .
+script:
+# pass all of the envvars for percy
+- docker run -e PERCY_TOKEN -e PERCY_PROJECT -e TRAVIS_BUILD_ID -e TRAVIS_COMMIT -e TRAVIS_PULL_REQUEST_BRANCH -e TRAVIS_BRANCH -e TRAVIS_REPO_SLUG -e TRAVIS_PULL_REQUEST -e TRAVIS_BUILD_NUMBER arxivvanity/engrafo jest
+deploy:
+  provider: script
+  script:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker push arxivvanity/engrafo:latest
+  - docker push arxivvanity/engrafo:${TRAVIS_COMMIT}
+  on:
+    branch: master
+env:
+  global:
+  # DOCKER_USERNAME
+  - secure: "g1Y+cZLqPQ4HZRd22yJH15eivNkYvdP+wjlB9P3ZlZnRaJ/I2bK8bOh/IJPvKJ1ciMwHHcVt/sB9upgbpP+XRqLNTee7jRA3j4qIF1mobkJK63Lawfbv242arTttBK/eXWhmf+QQiyBTGMj+tu/l3LRVY1hizg+j48UpkjRR5kSmuhRA/IVUeTJXpW0Y32+q/zc3xhSLJp7vdhYwiJbFnFKG1Er2MkxJ0GpQonyAyDHCo/XsNPGHciB7VR+mKx4oQoluGPJAQyW1m6MmRlrQw+ddsUS+zuThmQcWzjXwr6BHon4VbiyO+OjTfdguuZlAoKS48MAAwaHvrogoB6oRPJcBgxFmLlJCIp0en+5+V8H7+SlWCftOORs5Uyr0h3SAR0sGyEO5epd1PZ+A9ZfTb/0OGcy5o0pbtjtiOirF1pDboTdCOpzsgvF19ArkrnZzloENpgk/vVDebmoJ8I75Uep1KBP2kNJHabaq+LbpLwypXjd3iGq0BQ6ga8GIbPzZt8Kc0xO7uamtazFoOGi6ZRv1sjLJ0IjATOv8o+Wu/LJ1W8++GdLdQAesiRx8E1rSK9vZofGrUfSq0Nlx1Lq/oqkrDHH0twXldhmcpjOyqKfBr8K020rweCYEwHJnHKPgS6E5IPXrcXIYQhqicC2ctbos/oHwSbvIsejD8PQIpUE="
+  # DOCKER_PASSWORD
+  - secure: "Xpe7sLCrNSLoZaxlMFfMWpaR6PVaFw8j1ddQD2LulA8u70Cdjrz57b5AdpYXd0o3XBRuiD51XddoEilKSmmEm7eym7DEsItqt88wRJUvDGbIH20kdBdiaHuvlIkbbd/D+yJBUpF8wxNZaC7H7wvIQjOLTW1n2EOMHGTZLkrsQyZ4sAM6qQ3b3l9YIwK/0YoDnQAIc7makWaac+Y/KKqFUXr6NwFLY+z0Ky965ZGmkHsDHioW7k2ySnaM6xdPHxJFodwsb3bQquO05RNnBNLPLs5eT3HA4CVSErQszg75NKUyrWff+3PpFFz2/8396LB8FebVVlNe4va7pGvHyTRGUCQV3eET8R9HX/WcpEyZwoJ8EOBIrAXnLhgkJcgnD1NMvFPQMbPwfDN+PbhUMSEpG3vHojV0R3LkvnlQv++EaUh7Io5as0lf6vlbFEQVeX4HAVZNNnxwBPums0GyU0Bm6/nhqsS/kEv3iff98RZangeF4d06TdUOdcoGGjg1SobgZp2w7MChvDiJ1T+Y6kbaW1YRlURiIP6Da9E2AoU1GWjY49M7isLZO6RCRbPRicy0X5nc4t8RjU9CihHy1nfr3SkRofCw5cOjvuGhBXd5tw4gIIXuTNcKOtPmW0+eGn2GEjPhWJ3WWV/5LVNRpNJWR7NTJCR3b6WYmhrDsec6rPM="

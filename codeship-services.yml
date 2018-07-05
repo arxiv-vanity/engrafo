@@ -1,8 +1,0 @@
-version: '2'
-services:
-  engrafo:
-    build:
-      image: arxivvanity/engrafo
-      dockerfile: Dockerfile
-    cached: true
-    encrypted_env_file: .codeship.env.encrypted

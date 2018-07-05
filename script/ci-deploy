@@ -1,0 +1,5 @@
+#!/bin/bash
+set -ex
+echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+docker push arxivvanity/engrafo:latest
+docker push arxivvanity/engrafo:${TRAVIS_COMMIT}

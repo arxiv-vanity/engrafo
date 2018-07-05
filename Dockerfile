@@ -30,8 +30,10 @@ RUN apt-get update -qq && apt-get install -qy \
 RUN mkdir -p /usr/src/latexml
 WORKDIR /usr/src/latexml
 ENV LATEXML_COMMIT=fb71c30ff7674fc62441ce6187a98240d19e279a
-RUN curl -L https://github.com/brucemiller/LaTeXML/tarball/$LATEXML_COMMIT | tar --strip-components 1 -zxf -
-RUN perl Makefile.PL; make; make install
+RUN curl -L https://github.com/brucemiller/LaTeXML/tarball/$LATEXML_COMMIT | tar --strip-components 1 -zxf - \
+    && perl Makefile.PL \
+    && make \
+    && make install
 
 RUN mkdir -p /app /node_modules
 WORKDIR /app

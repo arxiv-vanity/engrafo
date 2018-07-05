@@ -45,7 +45,7 @@ COPY package.json yarn.lock /
 # HACK: Install node_modules one directory up so they are not overwritten
 # in development. The other workaround is using a volume for node_modules,
 # but is really slow and hard to update.
-RUN cd /; yarn install --pure-lockfile
+RUN cd / && yarn install --pure-lockfile && yarn cache clean
 ENV PATH /node_modules/.bin:$PATH
 
 ENV PATH="/app/bin:${PATH}"

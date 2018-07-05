@@ -1,5 +1,109 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`aa.tex renders correctly 1`] = `
+<body>
+  <div
+    class="engrafo-container"
+  >
+    
+
+
+    <div
+      class="ltx_page_content"
+    >
+      
+
+      <dt-article>
+        
+
+        <h1
+          class="ltx_title ltx_title_document"
+        >
+          Sections test
+        </h1>
+        <div
+          class="engrafo-metadata"
+        >
+          <div
+            class="ltx_authors"
+          >
+            
+
+            <span
+              class="ltx_creator ltx_role_author"
+            >
+              
+
+              <span
+                class="ltx_personname"
+              >
+                Carl Capybara
+
+              </span>
+            </span>
+            
+
+          </div>
+          <div
+            class="engrafo-metadata-custom"
+          />
+        </div>
+        
+
+        <div
+          class="ltx_subtitle"
+        >
+          This is a subtitle
+
+        </div>
+        
+
+
+
+        <div
+          class="ltx_keywords"
+        >
+          
+
+          <h6
+            class="ltx_title ltx_title_keywords"
+          >
+            Key Words.:
+          </h6>
+          galaxies: bulges – galaxies: elliptical and lenticular, cD – galaxies: evolution – galaxies: formation – galaxies: interactions – galaxies: structure
+
+        </div>
+        
+
+      </dt-article>
+      
+
+      <dt-appendix>
+        
+
+        
+
+
+        <div
+          class="l-body"
+        />
+        
+
+      </dt-appendix>
+    </div>
+    
+
+
+
+
+
+    <div
+      id="footnote-hover-boxes-container"
+    />
+  </div>
+</body>
+`;
+
 exports[`citations.tex renders correctly 1`] = `
 <body>
   <div

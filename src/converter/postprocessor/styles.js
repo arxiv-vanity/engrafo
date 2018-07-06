@@ -162,11 +162,10 @@ dt-article .engrafo-metadata {
 `;
 
 module.exports = function(dom) {
-  var distillPath = "/node_modules/distill-template/";
-  // HACK: make this work outside docker
-  if (process.env.LATEXML_DOCKER) {
-    distillPath = "node_modules/distill-template/";
-  }
+  var distillPath = path.join(
+    __dirname,
+    "../../../node_modules/distill-template/"
+  );
   var layout = fs.readFileSync(
     path.join(distillPath, "components/styles-layout.css")
   );

@@ -6,10 +6,9 @@ const path = require("path");
 function testDocuments() {
   const documentsPath = path.join(__dirname, "documents");
   const documents = fs.readdirSync(documentsPath);
-  return documents.filter(name => name.match(/\.tex$/)).map(name => ({
-    documentName: name,
-    documentPath: path.join(documentsPath, name)
-  }));
+  return documents
+    .filter(name => name.match(/\.tex$/))
+    .map(name => [name, path.join(documentsPath, name)]);
 }
 
 async function renderToDom(input, output) {

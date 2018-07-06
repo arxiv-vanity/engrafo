@@ -17,6 +17,7 @@ afterAll(async () => {
     percy.stdout.on("data", d => console.log(d.toString()));
     percy.stderr.on("data", d => console.error(d.toString()));
     await new Promise((resolve, reject) => {
+      percy.on("error", reject);
       percy.on("close", code => {
         if (code === 0) {
           resolve();

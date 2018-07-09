@@ -11,6 +11,7 @@ tests/__image_snapshots__/__diff_output__
 # parcel
 .cache
 dist
+.tmp
 
 # codeship
 .codeship.aes

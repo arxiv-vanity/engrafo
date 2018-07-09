@@ -1,31 +1,27 @@
 #!/usr/bin/env node
 
-var converter = require("../src/converter");
-var path = require("path");
-var fs = require("fs");
-var program = require("commander");
+const converter = require("../src/converter");
+const program = require("commander");
 
 program
   .version("0.0.1")
-  .usage("[options] <tex file>")
-  .option("-o, --output <dir>", "Output directory (default: same as tex file)")
+  .usage("[options] <tex file or directory> <output directory>")
+  .option("-o, --output <dir>", "(deprecated) Output directory")
   .option(
     "--no-post-processing",
     "Raw LaTeXML output, without filters or postprocessors (for debugging)"
   )
   .parse(process.argv);
 
-if (program.args.length != 1) {
+const input = program.args[0];
+const output = program.args[1] || program.output;
+
+if (!input || !output) {
   program.outputHelp();
   process.exit(1);
 }
 
-var input = program.args[0];
-var output =
-  program.output ||
-  (fs.lstatSync(input).isDirectory() ? input : path.dirname(input));
-
-var options = {
+const options = {
   input: input,
   output: output,
   postProcessing: program.postProcessing

@@ -1,39 +1,39 @@
 #!/usr/bin/env node
-
 const converter = require("../src/converter");
 const program = require("commander");
 
-program
-  .version("0.0.1")
-  .usage("[options] <tex file or directory> <output directory>")
-  .option("-o, --output <dir>", "(deprecated) Output directory")
-  .option(
-    "--no-post-processing",
-    "Raw LaTeXML output, without filters or postprocessors (for debugging)"
-  )
-  .parse(process.argv);
+async function main(argv) {
+  program
+    .version("0.0.1")
+    .usage("[options] <tex file or directory> <output directory>")
+    .option("-o, --output <dir>", "(deprecated) Output directory")
+    .option(
+      "--no-post-processing",
+      "Raw LaTeXML output, without filters or postprocessors (for debugging)"
+    )
+    .parse(argv);
 
-const input = program.args[0];
-const output = program.args[1] || program.output;
+  const input = program.args[0];
+  const output = program.args[1] || program.output;
 
-if (!input || !output) {
-  program.outputHelp();
-  process.exit(1);
+  if (!input || !output) {
+    program.outputHelp();
+    return 1;
+  }
+
+  const options = {
+    input: input,
+    output: output,
+    postProcessing: program.postProcessing
+  };
+
+  const htmlPath = await converter.render(options);
+  console.log("💃  Document successfully rendered to", htmlPath);
+  return 0;
 }
 
-const options = {
-  input: input,
-  output: output,
-  postProcessing: program.postProcessing
-};
-
-converter
-  .render(options)
-  .then(htmlPath => {
-    console.log("💃  Document successfully rendered to", htmlPath);
-    // S3 library sometimes causes Node not to quit
-    process.exit(0);
-  })
+main(process.argv)
+  .then(exitCode => process.exit(exitCode))
   .catch(err => {
     console.error("Engrafo rendering failed:", err);
     process.exit(1);

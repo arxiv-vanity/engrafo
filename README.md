@@ -18,7 +18,7 @@ The easiest way to run Engrafo is by using the Docker image. To convert `input/m
 
     $ docker run \
       -v "$(pwd)":/workdir -w /workdir \
-      arxivvanity/engrafo engrafo -o output/ input/main.tex
+      arxivvanity/engrafo engrafo input/main.tex output/
 
 For full usage, run `docker run arxivvanity/engrafo engrafo --help`.
 
@@ -34,7 +34,11 @@ The LaTeXML and LaTeX toolchain runs inside Docker. [Install Docker](https://doc
 
 You can convert documents with `yarn run convert`:
 
-    $ yarn run convert -o output/ tests/documents/sample2e.tex
+    $ yarn run convert tests/documents/sample2e.tex output/
+
+There is also a development server, which is useful for developing CSS and JavaScript. When you make changes to the JavaScript or CSS, it will automatically update in the browser:
+
+    $ yarn run server tests/documents/sample2e.tex
 
 ## Tests
 

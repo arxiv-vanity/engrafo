@@ -1,18 +1,25 @@
 const Bundler = require("parcel-bundler");
+const fs = require("fs-extra");
 const app = require("express")();
 const render = require("./index").render;
 const path = require("path");
 const tmp = require("tmp-promise");
 
 module.exports.start = async input => {
-  const tmpDir = await tmp.dir({ dir: "/tmp" });
+  // tmp dir needs to be within the project directory so Parcel can resolve
+  // assets.
+  // TODO: cleanup tmpdir
+  const tmpDirDir = path.join(__dirname, "../../.tmp");
+  await fs.ensureDir(tmpDirDir);
+  const tmpDir = await tmp.dir({ dir: tmpDirDir });
   const htmlPath = await render({
     input: input,
     output: tmpDir.path,
-    // This absolute filesystem path will be passed unmodified through
-    // to the parcel bundler, which will compile the SCSS
-    externalCSS: path.join(__dirname, "../assets/css/index.scss"),
-    externalJavaScript: path.join(__dirname, "../assets/javascript/index.js")
+    // This path will be passed unmodified through .to the parcel bundler,
+    // which will compile the SCSS. "~" is Parcel shorthand for the project
+    // root.
+    externalCSS: "../../src/assets/css/index.scss",
+    externalJavaScript: "../../src/assets/javascript/index.js"
   });
 
   console.log("💅  Starting server at http://localhost:8000");

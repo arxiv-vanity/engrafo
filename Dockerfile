@@ -1,5 +1,5 @@
 # Version from https://hub.docker.com/_/debian/
-FROM debian:testing-20180625
+FROM debian:testing-20180716
 
 # Official CDN throws 503s
 RUN sed -i 's/deb.debian.org/mirrors.kernel.org/g' /etc/apt/sources.list

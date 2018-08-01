@@ -25,6 +25,6 @@
     "jest": "^23.4.2",
     "node-sass": "^4.9.1",
     "parcel-bundler": "^1.9.7",
-    "prettier": "^1.13.7"
+    "prettier": "^1.14.0"
   }
 }

@@ -11,7 +11,7 @@
     "test": "LATEXML_DOCKER=true jest"
   },
   "dependencies": {
-    "aws-sdk": "^2.127.0",
+    "aws-sdk": "^2.286.2",
     "distill-template": "git+https://github.com/arxiv-vanity/template.git#engrafo",
     "express": "^4.16.3",
     "fs-extra": "^7.0.0",

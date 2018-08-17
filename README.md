@@ -86,6 +86,12 @@ Check the output looks correct in `tests/__snapshots__/integration.test.js.snap`
 
 The test will fail if the output changes in the future. If the change is expected, then you can simply re-run the test with `-u` to overwrite the snapshot and fix the test.
 
+## Code style
+
+All code must be formatted with [Prettier](https://prettier.io/). To automatically format the code, run:
+
+    $ yarn run prettier
+
 ## Sponsors
 
 Thanks to our generous sponsors for supporting the development of Arxiv Vanity! [Sponsor us to get your logo here.](https://www.patreon.com/arxivvanity)

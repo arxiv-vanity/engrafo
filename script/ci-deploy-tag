@@ -1,0 +1,5 @@
+#!/bin/bash
+set -ex
+echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+docker tag arxivvanity/engrafo:latest arxivvanity/engrafo:${TRAVIS_TAG}
+docker push arxivvanity/engrafo:${TRAVIS_TAG}

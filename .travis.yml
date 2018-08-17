@@ -9,10 +9,14 @@ script:
 # pass all of the envvars for percy
 - docker run -e PERCY_TOKEN -e PERCY_PROJECT -e TRAVIS_BUILD_ID -e TRAVIS_COMMIT -e TRAVIS_PULL_REQUEST_BRANCH -e TRAVIS_BRANCH -e TRAVIS_REPO_SLUG -e TRAVIS_PULL_REQUEST -e TRAVIS_BUILD_NUMBER arxivvanity/engrafo jest
 deploy:
-  provider: script
-  script: script/ci-deploy
-  on:
-    branch: master
+  - provider: script
+    script: script/ci-deploy-master
+    on:
+      branch: master
+  - provider: script
+    script: script/ci-deploy-tag
+    on:
+      tags: true
 env:
   global:
   # DOCKER_USERNAME

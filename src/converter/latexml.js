@@ -50,6 +50,7 @@ function createChildProcess({
       "--init",
       "-v", `${path.dirname(texPath)}:/input`,
       "-v", `${outputDir}:/output`,
+      "-v", `${path.join(__dirname, "../../")}:/app`,
       "-w", "/input",
       "--rm",
       "engrafo",

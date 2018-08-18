@@ -7,7 +7,7 @@ before_install:
   --cache-from arxivvanity/engrafo:latest .
 script:
 # pass all of the envvars for percy
-- docker run -e PERCY_TOKEN -e PERCY_PROJECT -e TRAVIS_BUILD_ID -e TRAVIS_COMMIT -e TRAVIS_PULL_REQUEST_BRANCH -e TRAVIS_BRANCH -e TRAVIS_REPO_SLUG -e TRAVIS_PULL_REQUEST -e TRAVIS_BUILD_NUMBER arxivvanity/engrafo yarn test
+- docker run -e PERCY_TOKEN -e PERCY_PROJECT -e TRAVIS_BUILD_ID -e TRAVIS_COMMIT -e TRAVIS_PULL_REQUEST_BRANCH -e TRAVIS_BRANCH -e TRAVIS_REPO_SLUG -e TRAVIS_PULL_REQUEST -e TRAVIS_BUILD_NUMBER arxivvanity/engrafo yarn test-inside-docker
 deploy:
   - provider: script
     script: script/ci-deploy-master

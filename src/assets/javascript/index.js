@@ -1,2 +1,2 @@
-const citations = require("./citations");
-citations.render();
+import main from "./main";
+main(document.querySelector(".ltx_page_main"));

@@ -1,15 +1,15 @@
-const tippy = require("tippy.js");
+import tippy from "tippy.js";
 
-function render() {
-  const refs = document.querySelectorAll(".ltx_ref");
+export default function render(el) {
+  const refs = el.querySelectorAll(".ltx_ref");
   for (let ref of refs) {
     const href = ref.getAttribute("href");
     if (!href) {
       continue;
     }
-    // This could just be dom.querySelector(a.getAttribute("href")) but
-    // querySelector doesn't work if there are periods in the ID. Sigh.
-    const bibItem = document.getElementById(href.slice(1));
+    // This could just be dom.querySelector(href) but that doesn't work if
+    // there are periods in the ID. Sigh.
+    const bibItem = el.querySelector(`*[id='${href.slice(1)}']`);
     if (!bibItem) {
       continue;
     }
@@ -29,7 +29,3 @@ function render() {
     theme: "engrafo"
   });
 }
-
-module.exports = {
-  render: render
-};

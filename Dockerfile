@@ -6,7 +6,7 @@ RUN sed -i 's/deb.debian.org/mirrors.kernel.org/g' /etc/apt/sources.list
 
 # LaTeX stuff first, because it's enormous and doesn't change much
 # Change logs here: https://packages.debian.org/buster/texlive
-RUN apt-get update -qq && apt-get install -qy texlive-full=2018.20180505*
+RUN apt-get update -qq && apt-get install -qy texlive-full=2018.20180725*
 
 RUN apt-get update -qq && apt-get install -qy curl gnupg2 \
     && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \

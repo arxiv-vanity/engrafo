@@ -33,12 +33,6 @@ afterAll(async () => {
   jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000;
 }, 20000); // long timeout to wait for Percy
 
-function removeDescendants(element, selector) {
-  Array.from(element.querySelectorAll(selector)).forEach(el => {
-    el.parentNode.removeChild(el);
-  });
-}
-
 test.each(testDocuments())(
   "%s renders correctly",
   async (documentName, documentPath) => {
@@ -49,9 +43,7 @@ test.each(testDocuments())(
       outputPath
     );
 
-    removeDescendants(document.body, "script");
-    removeDescendants(document.body, "style");
-    expect(document.body).toMatchSnapshot();
+    expect(document.querySelector(".ltx_page_main")).toMatchSnapshot();
 
     percySnapshots.push({ documentName, htmlString });
   }

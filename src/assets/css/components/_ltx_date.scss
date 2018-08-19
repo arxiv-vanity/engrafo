@@ -1,0 +1,8 @@
+@import "../fonts";
+
+.ltx_date {
+  @include font-body();
+
+  font-style: italic;
+  margin-bottom: 1em;
+}

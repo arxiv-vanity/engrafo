@@ -1,3 +1,5 @@
+@import "../fonts";
+
 // TODO: should we allow this?
 .ltx_font_serif {
 }
@@ -5,11 +7,7 @@
 }
 
 .ltx_font_typewriter {
-  font-family: monospace;
-}
-// monospace URLs look stupid
-.ltx_url.ltx_font_typewriter {
-  font-family: inherit;
+  font-family: $fontFamilyMonospace;
 }
 
 .ltx_font_bold {
@@ -44,13 +42,4 @@
 }
 .ltx_font_mathcaligraphic {
   font-family: "Lucida Calligraphy", "Zapf Chancery", "URW Chancery L";
-}
-
-.ltx_red {
-  color: red;
-}
-
-.ltx_verbatim {
-  font-size: 0.8;
-  color: rgba(0, 0, 0, 0.6);
 }

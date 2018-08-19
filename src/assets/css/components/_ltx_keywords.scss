@@ -1,0 +1,12 @@
+@import "../fonts";
+
+.ltx_keywords {
+  .ltx_title_keywords {
+    @include font-body();
+
+    font-weight: bold;
+    margin: 0;
+  }
+
+  @include font-body();
+}

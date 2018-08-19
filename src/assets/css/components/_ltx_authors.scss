@@ -1,0 +1,22 @@
+@import "../fonts";
+
+.ltx_authors {
+  @include font-body();
+
+  margin-bottom: 1em;
+
+  .ltx_personname {
+    font-weight: bold;
+  }
+
+  // No spaces between authors
+  .ltx_author_before {
+    display: none;
+  }
+
+  .ltx_creator,
+  .ltx_author_after,
+  .ltx_author_notes .ltx_contact {
+    display: block;
+  }
+}

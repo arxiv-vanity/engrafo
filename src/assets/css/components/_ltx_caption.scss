@@ -1,0 +1,6 @@
+@import "../fonts";
+
+.ltx_caption {
+  @include font-body();
+  font-style: italic;
+}

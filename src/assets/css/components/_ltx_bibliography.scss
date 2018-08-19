@@ -1,0 +1,34 @@
+@import "../fonts";
+@import "../media";
+
+.ltx_bibliography {
+  margin: 4em 0;
+  grid-column: page;
+
+  .ltx_title_bibliography {
+    @include font-heading();
+
+    margin: 0 0 2em 0;
+  }
+
+  .ltx_biblist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @include media(">=desktop") {
+      column-count: 2;
+    }
+  }
+
+  .ltx_bibitem {
+    @include font-body();
+
+    padding: 0 2em;
+    margin: 0 0 2em 0;
+
+    .ltx_tag_bibitem + .ltx_bibblock {
+      font-style: italic;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.ltx_itemize {
+  margin: 2em 0;
+  padding-left: 2.5em;
+
+  & > .ltx_item {
+    padding-left: 0.5em;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../fonts";
+
+.ltx_title_subsubsection {
+  @include font-body();
+
+  font-weight: bold;
+  margin: 0 0 1em 0;
+
+  // No section numbers
+  .ltx_tag_subsubsection {
+    display: none;
+  }
+}

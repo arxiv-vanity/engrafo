@@ -1,0 +1,13 @@
+a {
+  color: #7c7ec1;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  // monospace URLs look stupid
+  &.ltx_font_typewriter {
+    font-family: inherit;
+  }
+}

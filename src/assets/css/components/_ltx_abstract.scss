@@ -1,0 +1,13 @@
+@import "../fonts";
+
+.ltx_abstract {
+  border: 1px solid #666;
+  padding: 1.5em;
+  margin-bottom: 2em;
+
+  .ltx_title_abstract {
+    @include font-heading();
+
+    margin: 0 0 1em 0;
+  }
+}

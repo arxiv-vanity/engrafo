@@ -1,0 +1,9 @@
+@import "../media";
+
+.ltx_section {
+  margin: 2em 0;
+
+  @include media(">=tablet") {
+    margin: 4em 0;
+  }
+}

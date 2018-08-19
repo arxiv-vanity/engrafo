@@ -1,0 +1,32 @@
+@import "../fonts";
+
+.ltx_note {
+  position: relative;
+
+  .ltx_note_outer {
+    @include font-sans();
+
+    float: right;
+    clear: right;
+    position: relative;
+    width: 200px;
+    margin-right: -216px;
+    margin-top: -1em;
+    padding: 2em 0;
+    text-indent: 0;
+
+    .ltx_note_mark {
+      display: none;
+    }
+
+    .ltx_tag {
+      display: block;
+    }
+
+    display: none;
+
+    @include media(">=desktop") {
+      display: block;
+    }
+  }
+}

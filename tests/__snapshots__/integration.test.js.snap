@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`aa.tex renders correctly 1`] = `
+exports[`aa.tex 1`] = `
 <div
   class="ltx_page_main"
 >
@@ -102,7 +102,7 @@ exports[`aa.tex renders correctly 1`] = `
 </div>
 `;
 
-exports[`algorithm.tex renders correctly 1`] = `
+exports[`algorithm.tex 1`] = `
 <div
   class="ltx_page_main"
 >
@@ -3124,7 +3124,7 @@ exports[`algorithm.tex renders correctly 1`] = `
 </div>
 `;
 
-exports[`citations.tex renders correctly 1`] = `
+exports[`citations.tex 1`] = `
 <div
   class="ltx_page_main"
 >
@@ -3404,7 +3404,7 @@ watershed basin graph.
 </div>
 `;
 
-exports[`figures.tex renders correctly 1`] = `
+exports[`figures.tex 1`] = `
 <div
   class="ltx_page_main"
 >
@@ -3716,7 +3716,7 @@ exports[`figures.tex renders correctly 1`] = `
 </div>
 `;
 
-exports[`footnotes.tex renders correctly 1`] = `
+exports[`footnotes.tex 1`] = `
 <div
   class="ltx_page_main"
 >
@@ -3847,7 +3847,7 @@ second paragraph! And some
 </div>
 `;
 
-exports[`headings.tex renders correctly 1`] = `
+exports[`headings.tex 1`] = `
 <div
   class="ltx_page_main"
 >
@@ -4193,7 +4193,7 @@ exports[`headings.tex renders correctly 1`] = `
 </div>
 `;
 
-exports[`listings.tex renders correctly 1`] = `
+exports[`listings.tex 1`] = `
 <div
   class="ltx_page_main"
 >
@@ -4498,7 +4498,7 @@ exports[`listings.tex renders correctly 1`] = `
 </div>
 `;
 
-exports[`lists.tex renders correctly 1`] = `
+exports[`lists.tex 1`] = `
 <div
   class="ltx_page_main"
 >
@@ -4962,7 +4962,7 @@ exports[`lists.tex renders correctly 1`] = `
 </div>
 `;
 
-exports[`math.tex renders correctly 1`] = `
+exports[`math.tex 1`] = `
 <div
   class="ltx_page_main"
 >
@@ -5428,7 +5428,7 @@ exports[`math.tex renders correctly 1`] = `
 </div>
 `;
 
-exports[`paragraph.tex renders correctly 1`] = `
+exports[`paragraph.tex 1`] = `
 <div
   class="ltx_page_main"
 >
@@ -5736,7 +5736,7 @@ exports[`paragraph.tex renders correctly 1`] = `
 </div>
 `;
 
-exports[`sample2e.tex renders correctly 1`] = `
+exports[`sample2e.tex 1`] = `
 <div
   class="ltx_page_main"
 >
@@ -7464,7 +7464,7 @@ nor make one a paragraph by itself.
 </div>
 `;
 
-exports[`small2e.tex renders correctly 1`] = `
+exports[`small2e.tex 1`] = `
 <div
   class="ltx_page_main"
 >
@@ -7679,7 +7679,7 @@ The manual tells how to make other symbols.
 </div>
 `;
 
-exports[`tables.tex renders correctly 1`] = `
+exports[`tables.tex 1`] = `
 <div
   class="ltx_page_main"
 >
@@ -10731,7 +10731,7 @@ throughout the evening.
 </div>
 `;
 
-exports[`text.tex renders correctly 1`] = `
+exports[`text.tex 1`] = `
 <div
   class="ltx_page_main"
 >
@@ -11626,7 +11626,7 @@ exports[`text.tex renders correctly 1`] = `
 </div>
 `;
 
-exports[`urls.tex renders correctly 1`] = `
+exports[`urls.tex 1`] = `
 <div
   class="ltx_page_main"
 >

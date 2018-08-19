@@ -33,18 +33,12 @@ afterAll(async () => {
   jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000;
 }, 20000); // long timeout to wait for Percy
 
-test.each(testDocuments())(
-  "%s renders correctly",
-  async (documentName, documentPath) => {
-    const outputPath = path.join(outputDir.path, path.parse(documentName).name);
-    // await fs.mkdirs(outputPath);
-    const { htmlString, document } = await renderToDom(
-      documentPath,
-      outputPath
-    );
+test.each(testDocuments())("%s", async (documentName, documentPath) => {
+  const outputPath = path.join(outputDir.path, path.parse(documentName).name);
+  // await fs.mkdirs(outputPath);
+  const { htmlString, document } = await renderToDom(documentPath, outputPath);
 
-    expect(document.querySelector(".ltx_page_main")).toMatchSnapshot();
+  expect(document.querySelector(".ltx_page_main")).toMatchSnapshot();
 
-    percySnapshots.push({ documentName, htmlString });
-  }
-);
+  percySnapshots.push({ documentName, htmlString });
+});

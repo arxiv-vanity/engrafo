@@ -28,7 +28,21 @@ First, install [Node](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/en/
 
     $ yarn
 
-The LaTeXML and LaTeX toolchain runs inside Docker. [Install Docker](https://docs.docker.com/install/) and build the Docker image:
+### Frontend development
+
+For developing the CSS and frontend JavaScript, there are a bunch of pre-rendered documents you can use to work with. This means you don't need to install any LaTeX or Docker stuff.
+
+Run this command:
+
+    $ yarn run storybook
+
+Then, all the documents will be available as a Storybook at [http://localhost:6006](http://localhost:6006). Any chances you make to the CSS and JS in `src/assets/` will be automatically updated in the Storybook.
+
+### Converting documents
+
+The LaTeXML and LaTeX toolchain runs inside Docker. If you want to work on the code that actually converts documents, you will need to install Docker.
+
+[Install Docker](https://docs.docker.com/install/) and build the Docker image:
 
     $ script/docker-build
 

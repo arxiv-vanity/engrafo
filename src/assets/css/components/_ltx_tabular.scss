@@ -1,0 +1,106 @@
+@import "../colors";
+@import "../fonts";
+
+.ltx_tabular {
+  @include font-sans();
+
+  border-collapse: collapse;
+
+  margin: 2em 0;
+
+  .ltx_td,
+  .ltx_th {
+    padding: 0.3em 0.8em;
+
+    @media (min-width: 768px) {
+      padding: 0.5em 0.8em;
+    }
+
+    // Don't let anything justify a table cell because it looks like ass
+    &.ltx_align_justify {
+      text-align: left;
+    }
+  }
+
+  // Normal borders
+  .ltx_border_t {
+    border-top: 1px solid $borderColor;
+  }
+  .ltx_border_r {
+    border-right: 1px solid $borderColor;
+  }
+  .ltx_border_b {
+    border-bottom: 1px solid $borderColor;
+  }
+  .ltx_border_l {
+    border-left: 1px solid $borderColor;
+  }
+
+  // Double borders
+  // For now, make these just the same as normal borders.
+  .ltx_border_tt {
+    border-top: 1px solid $borderColor;
+  }
+  .ltx_border_rr {
+    border-right: 1px solid $borderColor;
+  }
+  .ltx_border_bb {
+    border-bottom: 1px solid $borderColor;
+  }
+  .ltx_border_ll {
+    border-left: 1px solid $borderColor;
+  }
+
+  // Light borders
+  .ltx_border_T {
+    border-top: 1px solid $lightBorderColor;
+  }
+  .ltx_border_R {
+    border-right: 1px solid $lightBorderColor;
+  }
+  .ltx_border_B {
+    border-bottom: 1px solid $lightBorderColor;
+  }
+  .ltx_border_L {
+    border-left: 1px solid $lightBorderColor;
+  }
+
+  // Framing
+  // TODO: test this
+  .ltx_framed {
+    border: 1px solid $borderColor;
+  }
+  .ltx_framed_rectangle {
+    border-style: solid;
+    border-width: 1px;
+  }
+  .ltx_framed_top {
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
+  .ltx_framed_left {
+    border-left-style: solid;
+    border-left-width: 1px;
+  }
+  .ltx_framed_right {
+    border-right-style: solid;
+    border-right-width: 1px;
+  }
+  .ltx_framed_bottom,
+  .ltx_framed_underline {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  }
+  .ltx_framed_topbottom {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  }
+  .ltx_framed_leftright {
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+  }
+}

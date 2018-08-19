@@ -1,24 +1,12 @@
-.ltx_cite {
-  @extend %system-font;
-
-  font-style: normal;
-  text-align: center;
-  position: relative;
-  top: -2px;
-  margin: 0 2px;
-  color: $linkColor;
-
-  a.ltx_ref,
-  a.ltx_ref:hover {
-    border-bottom: 0;
-  }
-}
+@import "./colors";
+@import "./fonts";
 
 .tippy-tooltip.engrafo-theme {
-  @extend %system-font;
+  @include font-sans();
 
-  background-color: $secondaryBackground;
-  border: 1px solid $borderColor;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0;
   color: #333;
 
   .tippy-arrow {

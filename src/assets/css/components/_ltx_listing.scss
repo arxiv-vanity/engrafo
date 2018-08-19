@@ -1,10 +1,11 @@
+@import "../fonts";
+
 .ltx_listing {
-  font-size: 0.8em;
-  border-left: 3px solid rgba(0, 0, 0, 0.05);
-  padding: 0 0 0 24px;
-  color: rgba(0, 0, 0, 0.6);
-  font-family: monospace;
-  margin: 2rem 0;
+  @include font-monospace();
+
+  grid-column: page;
+  padding-left: 3em;
+  margin: 4rem 0;
 
   // Remove download button. It's much easier to copy and paste
   .ltx_listing_data {
@@ -15,18 +16,18 @@
     white-space: nowrap;
     min-height: 1em;
   }
-  .ltx_lst_numbers_left .ltx_listingline .ltx_tag {
+  &.ltx_lst_numbers_left .ltx_listingline .ltx_tag {
     background-color: transparent;
-    margin-left: -3em;
+    margin-left: -4em;
     width: 2.5em;
     position: absolute;
     text-align: right;
   }
-  .ltx_lst_numbers_right .ltx_listingline .ltx_tag {
+  &.ltx_lst_numbers_right .ltx_listingline .ltx_tag {
     background-color: transparent;
     width: 2.5em;
     position: absolute;
-    right: 3em;
+    right: 4em;
     text-align: right;
   }
 }

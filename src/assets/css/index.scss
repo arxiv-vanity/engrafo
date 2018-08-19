@@ -1,6 +1,3 @@
-@import "./variables";
-@import "./fonts";
-
 // TODO: don't set any global styles
 body {
   margin: 0;
@@ -8,116 +5,43 @@ body {
 
 // Contain everything inside .ltx_page_main
 .ltx_page_main {
-  @import "./citations";
-  @import "./figures";
-  @import "./headings";
-  @import "./layout";
-  @import "./listings";
-  @import "./tables";
-  @import "./text";
+  // .ltx_document is the root element for most of the document, containing the grid layout
+  @import "./components/ltx_document";
 
-  @extend %body-font;
-  color: $primaryTextColor;
-  padding-bottom: 72px;
-  background: white;
-
-  a {
-    color: inherit;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-    text-decoration: none;
-
-    &:hover {
-      border-bottom: 1px solid $primaryTextColor;
-    }
-  }
-
-  .ltx_page_content {
-    margin-bottom: 4rem;
-  }
-
-  .ltx_authors,
-  .ltx_date,
-  .ltx_keywords,
-  .ltx_title_keywords {
-    @extend %system-font-small;
-
-    font-weight: 400;
-  }
-
-  .ltx_title_keywords {
-    margin: 0;
-    font-weight: bold;
-  }
-
-  .ltx_authors {
-    margin-bottom: 1rem;
-
-    .ltx_personname {
-      font-weight: bold;
-    }
-
-    // No spaces between authors
-    .ltx_author_before {
-      display: none;
-    }
-
-    .ltx_creator,
-    .ltx_author_after,
-    .ltx_author_notes .ltx_contact {
-      display: block;
-    }
-  }
-
-  .ltx_date {
-    color: $secondaryTextColor;
-  }
-
-  .ltx_p {
-    margin-bottom: 24px;
-  }
-
-  .ltx_page_footer {
-    @extend %system-font-small;
-    color: $secondaryTextColor;
-    font-weight: 400;
-  }
-  .ltx_indent {
-    margin-left: 2rem;
-  }
-
-  .ltx_align_left {
-    text-align: left;
-  }
-  .ltx_align_right {
-    text-align: right;
-  }
-  .ltx_align_center {
-    text-align: center;
-  }
-  .ltx_align_justify {
-    text-align: justify;
-  }
-  .ltx_align_top {
-    vertical-align: top;
-  }
-  .ltx_align_bottom {
-    vertical-align: bottom;
-  }
-  .ltx_align_middle {
-    vertical-align: middle;
-  }
-  .ltx_align_baseline {
-    vertical-align: baseline;
-  }
-
-  /* LaTeXML system stuff */
-  .ltx_ERROR,
-  .ltx_missing,
-  .ltx_nounicode {
-    @extend %system-font;
-    color: red;
-  }
-  .ltx_rdf {
-    display: none;
-  }
+  @import "./components/link";
+  @import "./components/ltx_abstract";
+  @import "./components/ltx_align";
+  @import "./components/ltx_authors";
+  @import "./components/ltx_bibliography";
+  @import "./components/ltx_caption";
+  @import "./components/ltx_cite";
+  @import "./components/ltx_date";
+  @import "./components/ltx_equation";
+  @import "./components/ltx_enumerate";
+  @import "./components/ltx_figure";
+  @import "./components/ltx_float";
+  @import "./components/ltx_font";
+  @import "./components/ltx_indent";
+  @import "./components/ltx_itemize";
+  @import "./components/ltx_keywords";
+  @import "./components/ltx_listing";
+  @import "./components/ltx_note";
+  @import "./components/ltx_page_footer";
+  @import "./components/ltx_para";
+  @import "./components/ltx_quote";
+  @import "./components/ltx_red";
+  @import "./components/ltx_section";
+  @import "./components/ltx_subsection";
+  @import "./components/ltx_table";
+  @import "./components/ltx_tabular";
+  @import "./components/ltx_title_document";
+  @import "./components/ltx_title_paragraph";
+  @import "./components/ltx_title_section";
+  @import "./components/ltx_title_subparagraph";
+  @import "./components/ltx_title_subsection";
+  @import "./components/ltx_title_subsubsection";
+  @import "./components/ltx_verbatim";
 }
+
+// Tippy tooltips get appended to <body>
+@import "./tippy";

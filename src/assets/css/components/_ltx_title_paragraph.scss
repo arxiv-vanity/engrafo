@@ -1,0 +1,12 @@
+@import "../fonts";
+
+// Bold, same size as body text, but in-line with the text. Like:
+// *Some heading.* A paragraph following it.
+.ltx_title_paragraph {
+  @include font-body();
+  font-weight: bold;
+  margin: 0;
+  // 0.75em is around the size of two spaces.
+  margin-right: 0.75em;
+  float: left;
+}

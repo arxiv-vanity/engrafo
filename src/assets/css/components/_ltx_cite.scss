@@ -1,0 +1,19 @@
+@import "../colors";
+@import "../fonts";
+
+// TODO: finish
+.ltx_cite {
+  @include font-sans();
+
+  font-style: normal;
+  text-align: center;
+  position: relative;
+  top: -2px;
+  margin: 0 2px;
+  // color: $linkColor;
+
+  a.ltx_ref,
+  a.ltx_ref:hover {
+    border-bottom: 0;
+  }
+}

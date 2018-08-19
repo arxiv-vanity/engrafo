@@ -1,0 +1,12 @@
+@import "../fonts";
+
+.ltx_title_subsection {
+  @include font-heading-small();
+
+  margin-bottom: 1.5em;
+
+  .ltx_tag_subsection {
+    display: inline-block;
+    min-width: 50px;
+  }
+}

@@ -1,0 +1,17 @@
+.ltx_para {
+  @include font-body();
+
+  .ltx_p {
+    margin: 0;
+  }
+
+  // * {
+  //   text-indent: 0;
+  // }
+}
+
+// This doesn't quite work right - sometimes things in previous .ltx_para
+// are not text, but a quote or equation or figure or something like that.
+.ltx_para + .ltx_para > .ltx_p {
+  text-indent: 2em;
+}

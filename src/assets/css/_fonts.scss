@@ -1,29 +1,83 @@
-%body-font {
-  font-family: $bodyFontFamily;
-  font-size: 17px;
-  line-height: 1.55em;
+@import "./media";
 
-  @media (min-width: 768px) {
-    font-size: 20px;
+$fontFamilyComputerModern: "CMUSerif-Roman", Georgia, serif;
+$fontFamilyHelvetica: "Helvetica Neue", Helvetica, sans-serif;
+$fontFamilyMonospace: "CMUTypewriter-Light", monospace;
+
+// !important is used everywhere to stop inline styles from changing the font size
+
+@mixin font-body() {
+  font-family: $fontFamilyComputerModern;
+  font-size: 16px !important;
+  line-height: 1.5;
+
+  @include media(">=tablet", "<desktop") {
+    font-size: 18px !important;
+  }
+
+  @include media(">=desktop") {
+    font-size: 24px !important;
   }
 }
 
-%system-font {
-  font-family: $systemFontFamily;
-  font-size: 14px;
-  line-height: 1.55em;
+@mixin font-monospace() {
+  font-family: $fontFamilyMonospace;
 
-  @media (min-width: 768px) {
-    font-size: 15px;
+  font-size: 14px !important;
+  line-height: 1.5;
+
+  @include media(">=tablet", "<desktop") {
+    font-size: 16px !important;
+  }
+
+  @include media(">=desktop") {
+    font-size: 22px !important;
   }
 }
 
-%system-font-small {
-  font-family: $systemFontFamily;
-  font-size: 12px;
-  line-height: 1.55em;
+@mixin font-heading() {
+  font-family: $fontFamilyHelvetica;
 
-  @media (min-width: 768px) {
-    font-size: 13px;
+  font-size: 14px !important;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @include media(">=tablet", "<desktop") {
+    font-size: 18px !important;
+  }
+
+  @include media(">=desktop") {
+    font-size: 20px !important;
+  }
+}
+
+@mixin font-heading-small() {
+  @include font-heading();
+
+  font-size: 12px !important;
+
+  @include media(">=tablet", "<desktop") {
+    font-size: 14px !important;
+  }
+
+  @include media(">=desktop") {
+    font-size: 16px !important;
+  }
+}
+
+@mixin font-sans() {
+  font-family: $fontFamilyHelvetica;
+  font-size: 12px !important;
+
+  @include media(">=tablet", "<desktop") {
+    font-size: 14px !important;
+  }
+
+  @include media(">=desktop") {
+    font-size: 16px !important;
   }
 }

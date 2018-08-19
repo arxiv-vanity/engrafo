@@ -1,9 +1,6 @@
 # Version from https://hub.docker.com/_/debian/
 FROM debian:testing-20180716
 
-# Official CDN throws 503s
-RUN sed -i 's/deb.debian.org/mirrors.kernel.org/g' /etc/apt/sources.list
-
 # LaTeX stuff first, because it's enormous and doesn't change much
 # Change logs here: https://packages.debian.org/buster/texlive
 RUN apt-get update -qq && apt-get install -qy texlive-full=2018.20180725*

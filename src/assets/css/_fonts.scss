@@ -1,8 +1,72 @@
 @import "./media";
 
-$fontFamilyComputerModern: "CMUSerif-Roman", Georgia, serif;
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("https://cdn.rawgit.com/dominictarr/computer-modern/ec5980c3/serif/cmunrm.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("https://cdn.rawgit.com/dominictarr/computer-modern/ec5980c3/serif/cmunbx.woff")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("https://cdn.rawgit.com/dominictarr/computer-modern/ec5980c3/serif/cmunti.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("https://cdn.rawgit.com/dominictarr/computer-modern/ec5980c3/serif/cmunbi.woff")
+    format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Computer Modern Typewriter";
+  src: url("https://cdn.rawgit.com/dominictarr/computer-modern/ec5980c3/typewriter/cmuntt.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Computer Modern Typewriter";
+  src: url("https://cdn.rawgit.com/dominictarr/computer-modern/ec5980c3/typewriter/cmuntb.woff")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Computer Modern Typewriter";
+  src: url("https://cdn.rawgit.com/dominictarr/computer-modern/ec5980c3/typewriter/cmunit.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Computer Modern Typewriter";
+  src: url("https://cdn.rawgit.com/dominictarr/computer-modern/ec5980c3/typewriter/cmuntx.woff")
+    format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+$fontFamilyComputerModern: "Computer Modern Serif", Georgia, serif;
 $fontFamilyHelvetica: "Helvetica Neue", Helvetica, sans-serif;
-$fontFamilyMonospace: "CMUTypewriter-Light", monospace;
+$fontFamilyMonospace: "Computer Modern Typewriter", monospace;
 
 // !important is used everywhere to stop inline styles from changing the font size
 

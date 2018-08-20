@@ -1,7 +1,7 @@
 import tippy from "tippy.js";
 
 export default function render(el) {
-  const refs = el.querySelectorAll(".ltx_ref");
+  const refs = el.querySelectorAll(".ltx_cite .ltx_ref");
   for (let ref of refs) {
     const href = ref.getAttribute("href");
     if (!href) {

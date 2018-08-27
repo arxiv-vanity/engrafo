@@ -1,7 +1,6 @@
 #!/bin/bash
 ENGRAFO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 
-script/run yarn build
 exec docker run \
     --init \
     -v "$ENGRAFO_DIR:/app" \

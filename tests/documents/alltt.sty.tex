@@ -1,0 +1,39 @@
+% from LaTeXML's tests
+\documentclass{article}
+\usepackage{alltt}
+\begin{document}
+
+     Spacing
+\begin{alltt}
+Word
+  Word
+    Word
+  Word
+Word
+\end{alltt}
+     OK
+
+Funny Characters
+\begin{alltt}
+a  b $ c & d # e ^ f _ g % h ~ i
+\end{alltt}
+
+With math?
+\begin{alltt}
+a+b \begin{math}a+b\end{math} a+b
+\end{alltt}
+
+Blank lines
+\begin{alltt}
+Word
+
+  Word
+
+    Word
+
+  Word
+
+Word
+\end{alltt}
+
+\end{document}

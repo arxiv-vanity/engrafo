@@ -41,6 +41,7 @@ storiesOf("Packages", module)
   .add("aa", createStory("aa.tex 1"))
   .add("acronym.sty", createStory("acronym.sty.tex 1"))
   .add("algorithm2e", createStory("algorithm.tex 1"))
+  .add("alltt.sty", createStory("alltt.sty.tex 1"))
   .add("listings", createStory("listings.tex 1"));
 
 storiesOf("Complete documents")

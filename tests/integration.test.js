@@ -38,7 +38,7 @@ test.each(testDocuments())("%s", async (documentName, documentPath) => {
   // await fs.mkdirs(outputPath);
   const { htmlString, document } = await renderToDom(documentPath, outputPath);
 
-  expect(document.querySelector(".ltx_page_main")).toMatchSnapshot();
+  expect(document.querySelector(".ltx_page_main").outerHTML).toMatchSnapshot();
 
   percySnapshots.push({ documentName, htmlString });
 });

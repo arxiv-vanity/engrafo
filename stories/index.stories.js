@@ -7,9 +7,18 @@ import * as snapshots from "../tests/__snapshots__/integration.test.js.snap";
 import "../src/assets/css/index.scss";
 import main from "../src/assets/javascript/main";
 
-function createStory(html) {
+function createStory(snapshotName) {
   return () => {
     const container = document.createElement("div");
+    let html = snapshots[snapshotName];
+    // Jest puts strings inside a quote inside the snapshot. Good grief.
+    // First, remove starting and end quote
+    html = html
+      .trim()
+      .replace(/^"/, "")
+      .replace(/"$/, "");
+    // Then remove all the backslashed quotes
+    html = html.replace(/\\"/g, '"');
     container.innerHTML = html;
     main(container);
     return container;
@@ -17,23 +26,23 @@ function createStory(html) {
 }
 
 storiesOf("Basic functionality")
-  .add("Citations", createStory(snapshots[`citations.tex 1`]))
-  .add("Figures", createStory(snapshots[`figures.tex 1`]))
-  .add("Footnotes", createStory(snapshots[`footnotes.tex 1`]))
-  .add("Headings", createStory(snapshots[`headings.tex 1`]))
-  .add("Lists", createStory(snapshots[`lists.tex 1`]))
-  .add("Math", createStory(snapshots[`math.tex 1`]))
-  .add("Paragraph styles", createStory(snapshots[`paragraph.tex 1`]))
-  .add("Tables", createStory(snapshots[`tables.tex 1`]))
-  .add("Text styles", createStory(snapshots[`text.tex 1`]))
-  .add("URLs", createStory(snapshots[`urls.tex 1`]));
+  .add("Citations", createStory("citations.tex 1"))
+  .add("Figures", createStory("figures.tex 1"))
+  .add("Footnotes", createStory("footnotes.tex 1"))
+  .add("Headings", createStory("headings.tex 1"))
+  .add("Lists", createStory("lists.tex 1"))
+  .add("Math", createStory("math.tex 1"))
+  .add("Paragraph styles", createStory("paragraph.tex 1"))
+  .add("Tables", createStory("tables.tex 1"))
+  .add("Text styles", createStory("text.tex 1"))
+  .add("URLs", createStory("urls.tex 1"));
 
 storiesOf("Packages", module)
-  .add("aa", createStory(snapshots[`aa.tex 1`]))
-  .add("acronym.sty", createStory(snapshots[`acronym.sty.tex 1`]))
-  .add("algorithm2e", createStory(snapshots[`algorithm.tex 1`]))
-  .add("listings", createStory(snapshots[`listings.tex 1`]));
+  .add("aa", createStory("aa.tex 1"))
+  .add("acronym.sty", createStory("acronym.sty.tex 1"))
+  .add("algorithm2e", createStory("algorithm.tex 1"))
+  .add("listings", createStory("listings.tex 1"));
 
 storiesOf("Complete documents")
-  .add("sample2e", createStory(snapshots[`sample2e.tex 1`]))
-  .add("small2e", createStory(snapshots[`small2e.tex 1`]));
+  .add("sample2e", createStory("sample2e.tex 1"))
+  .add("small2e", createStory("small2e.tex 1"));

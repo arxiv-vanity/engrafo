@@ -30,6 +30,7 @@ storiesOf("Basic functionality")
 
 storiesOf("Packages", module)
   .add("aa", createStory(snapshots[`aa.tex 1`]))
+  .add("acronym.sty", createStory(snapshots[`acronym.sty.tex 1`]))
   .add("algorithm2e", createStory(snapshots[`algorithm.tex 1`]))
   .add("listings", createStory(snapshots[`listings.tex 1`]));
 

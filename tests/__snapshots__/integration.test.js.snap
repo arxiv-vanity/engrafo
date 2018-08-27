@@ -102,6 +102,1635 @@ exports[`aa.tex 1`] = `
 </div>
 `;
 
+exports[`acronym.sty.tex 1`] = `
+<div
+  class="ltx_page_main"
+>
+  
+
+  <div
+    class="ltx_page_content"
+  >
+    
+
+    <article
+      class="ltx_document"
+    >
+      
+
+      <section
+        class="ltx_section"
+        id="S1"
+      >
+        
+
+        <h2
+          class="ltx_title ltx_title_section"
+        >
+          
+
+          <span
+            class="ltx_tag ltx_tag_section"
+          >
+            1 
+          </span>
+          Intro
+        </h2>
+        
+
+
+        <div
+          class="ltx_para"
+          id="S1.p1"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            In the early nineties, 
+            <a
+              href="#id2"
+            >
+              <abbr
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id2"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_short"
+                >
+                  GSM
+                </span>
+              </abbr>
+            </a>
+             was deployed in many European
+countries.  
+            <a
+              href="#id2"
+            >
+              <span
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id2"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_long"
+                >
+                  Global System for Mobile communication
+                </span>
+              </span>
+            </a>
+             (
+            <a
+              href="#id2"
+            >
+              <abbr
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id2"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_short"
+                >
+                  GSM
+                </span>
+              </abbr>
+            </a>
+            ) offered for the first time international
+roaming for mobile subscribers. The 
+            <a
+              href="#id2"
+            >
+              <abbr
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id2"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_short"
+                >
+                  GSM
+                </span>
+              </abbr>
+            </a>
+            ’s use of  
+            <a
+              href="#id6"
+            >
+              <span
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id6"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_long"
+                >
+                  Time Division Multiple Access
+                </span>
+              </span>
+            </a>
+             (
+            <a
+              href="#id6"
+            >
+              <abbr
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id6"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_short"
+                >
+                  TDMA
+                </span>
+              </abbr>
+            </a>
+            ) as
+its communication standard was debated at length. And every now
+and then there are big discussion whether  
+            <a
+              href="#id1"
+            >
+              <span
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id1"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_long"
+                >
+                  Code Division Multiple Access
+                </span>
+              </span>
+            </a>
+             (
+            <a
+              href="#id1"
+            >
+              <abbr
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id1"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_short"
+                >
+                  CDMA
+                </span>
+              </abbr>
+            </a>
+            ) should have
+been chosen over 
+            <a
+              href="#id6"
+            >
+              <abbr
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id6"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_short"
+                >
+                  TDMA
+                </span>
+              </abbr>
+            </a>
+            .
+          </p>
+          
+
+        </div>
+        
+
+      </section>
+      
+
+      <section
+        class="ltx_section"
+        id="S2"
+      >
+        
+
+        <h2
+          class="ltx_title ltx_title_section"
+        >
+          
+
+          <span
+            class="ltx_tag ltx_tag_section"
+          >
+            2 
+          </span>
+          Furthermore
+        </h2>
+        
+
+
+        <div
+          class="ltx_para"
+          id="S2.p1"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            The reader could have forgotten all the nice acronyms, so we repeat the
+meaning again.
+          </p>
+          
+
+        </div>
+        
+
+        <div
+          class="ltx_para"
+          id="S2.p2"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            If you want to know more about  
+            <a
+              href="#id2"
+            >
+              <span
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id2"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_long"
+                >
+                  Global System for Mobile communication
+                </span>
+              </span>
+            </a>
+             (
+            <a
+              href="#id2"
+            >
+              <abbr
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id2"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_short"
+                >
+                  GSM
+                </span>
+              </abbr>
+            </a>
+            ),  
+            <a
+              href="#id6"
+            >
+              <span
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id6"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_long"
+                >
+                  Time Division Multiple Access
+                </span>
+              </span>
+            </a>
+             (
+            <a
+              href="#id6"
+            >
+              <abbr
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id6"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_short"
+                >
+                  TDMA
+                </span>
+              </abbr>
+            </a>
+            ),  
+            <a
+              href="#id1"
+            >
+              <span
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id1"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_long"
+                >
+                  Code Division Multiple Access
+                </span>
+              </span>
+            </a>
+             (
+            <a
+              href="#id1"
+            >
+              <abbr
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id1"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_short"
+                >
+                  CDMA
+                </span>
+              </abbr>
+            </a>
+            )
+and other acronyms, just read a book about mobile communication. Just
+to mention it: There is another  
+            <a
+              href="#id7"
+            >
+              <span
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id7"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_long"
+                >
+                  Used Acronym
+                </span>
+              </span>
+            </a>
+             (
+            <a
+              href="#id7"
+            >
+              <abbr
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id7"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_short"
+                >
+                  UA
+                </span>
+              </abbr>
+            </a>
+            ), just for testing purposes!
+          </p>
+          
+
+        </div>
+        
+
+        <figure
+          class="ltx_figure"
+          id="S2.F1"
+        >
+          
+
+          <p
+            class="ltx_p"
+          >
+            Figure
+          </p>
+          
+
+          <figcaption
+            class="ltx_caption"
+          >
+            <span
+              class="ltx_tag ltx_tag_figure"
+            >
+              Figure 1: 
+            </span>
+            A float also admits references like 
+            <a
+              href="#id2"
+            >
+              <abbr
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id2"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_short"
+                >
+                  GSM
+                </span>
+              </abbr>
+            </a>
+             or  
+            <a
+              href="#id1"
+            >
+              <span
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id1"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_long"
+                >
+                  Code Division Multiple Access
+                </span>
+              </span>
+            </a>
+             (
+            <a
+              href="#id1"
+            >
+              <abbr
+                class="ltx_glossaryref ltx_role_acronym"
+                href="#id1"
+                title=""
+              >
+                <span
+                  class="ltx_text ltx_glossary_short"
+                >
+                  CDMA
+                </span>
+              </abbr>
+            </a>
+            ).
+          </figcaption>
+          
+
+        </figure>
+        
+
+        <section
+          class="ltx_subsection"
+          id="S2.SS1"
+        >
+          
+
+          <h3
+            class="ltx_title ltx_title_subsection"
+          >
+            
+
+            <span
+              class="ltx_tag ltx_tag_subsection"
+            >
+              2.1 
+            </span>
+            Some chemistry and physics
+          </h3>
+          
+
+
+          <div
+            class="ltx_para"
+            id="S2.SS1.p1"
+          >
+            
+
+            <p
+              class="ltx_p"
+            >
+              <a
+                href="#id4"
+              >
+                <span
+                  class="ltx_glossaryref ltx_role_acronym"
+                  href="#id4"
+                  title=""
+                >
+                  <span
+                    class="ltx_text ltx_glossary_long"
+                  >
+                    Nicotinamide Adenine Dinucleotide
+                  </span>
+                </span>
+              </a>
+               (
+              <a
+                href="#id4"
+              >
+                <abbr
+                  class="ltx_glossaryref ltx_role_acronym"
+                  href="#id4"
+                  title=""
+                >
+                  <span
+                    class="ltx_text ltx_glossary_short"
+                  >
+                    NAD
+                    <sup
+                      class="ltx_sup"
+                    >
+                      +
+                    </sup>
+                  </span>
+                </abbr>
+              </a>
+              ) is a major electron acceptor in the oxidation
+of fuel molecules. The reactive part of 
+              <a
+                href="#id4"
+              >
+                <abbr
+                  class="ltx_glossaryref ltx_role_acronym"
+                  href="#id4"
+                  title=""
+                >
+                  <span
+                    class="ltx_text ltx_glossary_short"
+                  >
+                    NAD
+                    <sup
+                      class="ltx_sup"
+                    >
+                      +
+                    </sup>
+                  </span>
+                </abbr>
+              </a>
+               is its nictinamide
+ring, a pyridine derivate.
+            </p>
+            
+
+          </div>
+          
+
+          <div
+            class="ltx_para"
+            id="S2.SS1.p2"
+          >
+            
+
+            <p
+              class="ltx_p"
+            >
+              One mol consists of 
+              <a
+                href="#id3"
+              >
+                <abbr
+                  class="ltx_glossaryref ltx_role_acronym"
+                  href="#id3"
+                  title=""
+                >
+                  <span
+                    class="ltx_text ltx_glossary_short"
+                  >
+                    <span
+                      class="ltx_Math"
+                    >
+                      <span
+                        class="mjpage"
+                      >
+                        <span
+                          class="mjx-chtml"
+                        >
+                          <span
+                            aria-label="N_{\\\\mathrm{A}}"
+                            class="mjx-math"
+                          >
+                            <span
+                              aria-hidden="true"
+                              class="mjx-mrow"
+                            >
+                              <span
+                                class="mjx-msubsup"
+                              >
+                                <span
+                                  class="mjx-base"
+                                  style="margin-right: -0.085em;"
+                                >
+                                  <span
+                                    class="mjx-mi"
+                                  >
+                                    <span
+                                      class="mjx-char MJXc-TeX-math-I"
+                                      style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.085em;"
+                                    >
+                                      N
+                                    </span>
+                                  </span>
+                                </span>
+                                <span
+                                  class="mjx-sub"
+                                  style="font-size: 70.7%; vertical-align: -0.241em; padding-right: 0.071em;"
+                                >
+                                  <span
+                                    class="mjx-texatom"
+                                    style=""
+                                  >
+                                    <span
+                                      class="mjx-mrow"
+                                    >
+                                      <span
+                                        class="mjx-texatom"
+                                      >
+                                        <span
+                                          class="mjx-mrow"
+                                        >
+                                          <span
+                                            class="mjx-mi"
+                                          >
+                                            <span
+                                              class="mjx-char MJXc-TeX-main-R"
+                                              style="padding-top: 0.446em; padding-bottom: 0.372em;"
+                                            >
+                                              A
+                                            </span>
+                                          </span>
+                                        </span>
+                                      </span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </abbr>
+              </a>
+               atoms or molecules. There is a relation
+between the constant of Boltzmann and the 
+              <a
+                href="#id3"
+              >
+                <span
+                  class="ltx_glossaryref ltx_role_acronym"
+                  href="#id3"
+                  title=""
+                >
+                  <span
+                    class="ltx_text ltx_glossary_long"
+                  >
+                    Number of Avogadro
+                  </span>
+                </span>
+              </a>
+              :
+            </p>
+            
+
+            <table
+              class="ltx_equation ltx_eqn_table"
+              id="S2.E1"
+            >
+              
+
+
+              <tbody>
+                <tr
+                  class="ltx_equation ltx_eqn_row ltx_align_baseline"
+                >
+                  
+
+                  <td
+                    class="ltx_eqn_cell ltx_eqn_center_padleft"
+                  />
+                  
+
+                  <td
+                    class="ltx_eqn_cell ltx_align_center"
+                  >
+                    <span
+                      class="ltx_DisplayMath"
+                      id="S2.E1.m1"
+                    >
+                      <span
+                        class="mjpage mjpage__block"
+                      >
+                        <span
+                          class="mjx-chtml MJXc-display"
+                          style="text-align: left;"
+                        >
+                          <span
+                            aria-label=" k=R/\\\\AC@acs{NA} "
+                            class="mjx-math"
+                          >
+                            <span
+                              aria-hidden="true"
+                              class="mjx-mrow"
+                            >
+                              <span
+                                class="mjx-mi"
+                              >
+                                <span
+                                  class="mjx-char MJXc-TeX-math-I"
+                                  style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                                >
+                                  k
+                                </span>
+                              </span>
+                              <span
+                                class="mjx-mo MJXc-space3"
+                              >
+                                <span
+                                  class="mjx-char MJXc-TeX-main-R"
+                                  style="padding-top: 0.077em; padding-bottom: 0.298em;"
+                                >
+                                  =
+                                </span>
+                              </span>
+                              <span
+                                class="mjx-mi MJXc-space3"
+                              >
+                                <span
+                                  class="mjx-char MJXc-TeX-math-I"
+                                  style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                                >
+                                  R
+                                </span>
+                              </span>
+                              <span
+                                class="mjx-texatom"
+                              >
+                                <span
+                                  class="mjx-mrow"
+                                >
+                                  <span
+                                    class="mjx-mo"
+                                  >
+                                    <span
+                                      class="mjx-char MJXc-TeX-main-R"
+                                      style="padding-top: 0.446em; padding-bottom: 0.593em;"
+                                    >
+                                      /
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span
+                                class="mjx-mtext"
+                                style="color: red;"
+                              >
+                                <span
+                                  class="mjx-char"
+                                  style="padding-top: 0.519em; padding-bottom: 0.225em;"
+                                >
+                                  <span
+                                    class="mjx-charbox MJXc-font-inherit"
+                                    style="font-size: 100%; padding-bottom: 0.3em; width: 1.5em;"
+                                  >
+                                    \\AC
+                                  </span>
+                                </span>
+                              </span>
+                              <span
+                                class="mjx-texatom"
+                              >
+                                <span
+                                  class="mjx-mrow"
+                                >
+                                  <span
+                                    class="mjx-mo"
+                                  >
+                                    <span
+                                      class="mjx-char MJXc-TeX-main-R"
+                                      style="padding-top: 0.446em; padding-bottom: 0.372em;"
+                                    >
+                                      @
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span
+                                class="mjx-mi"
+                              >
+                                <span
+                                  class="mjx-char MJXc-TeX-math-I"
+                                  style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                                >
+                                  a
+                                </span>
+                              </span>
+                              <span
+                                class="mjx-mi"
+                              >
+                                <span
+                                  class="mjx-char MJXc-TeX-math-I"
+                                  style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                                >
+                                  c
+                                </span>
+                              </span>
+                              <span
+                                class="mjx-mi"
+                              >
+                                <span
+                                  class="mjx-char MJXc-TeX-math-I"
+                                  style="padding-top: 0.225em; padding-bottom: 0.298em;"
+                                >
+                                  s
+                                </span>
+                              </span>
+                              <span
+                                class="mjx-texatom"
+                              >
+                                <span
+                                  class="mjx-mrow"
+                                >
+                                  <span
+                                    class="mjx-mi"
+                                  >
+                                    <span
+                                      class="mjx-char MJXc-TeX-math-I"
+                                      style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.085em;"
+                                    >
+                                      N
+                                    </span>
+                                  </span>
+                                  <span
+                                    class="mjx-mi"
+                                  >
+                                    <span
+                                      class="mjx-char MJXc-TeX-math-I"
+                                      style="padding-top: 0.519em; padding-bottom: 0.298em;"
+                                    >
+                                      A
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </td>
+                  
+
+                  <td
+                    class="ltx_eqn_cell ltx_eqn_center_padright"
+                  />
+                  
+
+                  <td
+                    class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"
+                    rowspan="1"
+                  >
+                    <span
+                      class="ltx_tag ltx_tag_equation ltx_align_right"
+                    >
+                      (1)
+                    </span>
+                  </td>
+                  
+
+                </tr>
+                
+
+              </tbody>
+            </table>
+            
+
+          </div>
+          
+
+          <div
+            class="ltx_para"
+            id="S2.SS1.p3"
+          >
+            
+
+            <p
+              class="ltx_p"
+            >
+              <a
+                href="#id8"
+              >
+                <span
+                  class="ltx_glossaryref ltx_role_acronym"
+                  href="#id8"
+                  title=""
+                >
+                  <span
+                    class="ltx_text ltx_glossary_long"
+                  >
+                    Liquid Oxygen
+                  </span>
+                </span>
+              </a>
+              /
+              <a
+                href="#id9"
+              >
+                <span
+                  class="ltx_glossaryref ltx_role_acronym"
+                  href="#id9"
+                  title=""
+                >
+                  <span
+                    class="ltx_text ltx_glossary_long"
+                  >
+                    Liquid Hydrogen
+                  </span>
+                </span>
+              </a>
+               (
+              <a
+                href="#id8"
+              >
+                <abbr
+                  class="ltx_glossaryref ltx_role_acronym"
+                  href="#id8"
+                  title=""
+                >
+                  <span
+                    class="ltx_text ltx_glossary_short"
+                  >
+                    <span
+                      class="ltx_Math"
+                    >
+                      <span
+                        class="mjpage"
+                      >
+                        <span
+                          class="mjx-chtml"
+                        >
+                          <span
+                            aria-label="LOX"
+                            class="mjx-math"
+                          >
+                            <span
+                              aria-hidden="true"
+                              class="mjx-mrow"
+                            >
+                              <span
+                                class="mjx-mi"
+                              >
+                                <span
+                                  class="mjx-char MJXc-TeX-math-I"
+                                  style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                                >
+                                  L
+                                </span>
+                              </span>
+                              <span
+                                class="mjx-mi"
+                              >
+                                <span
+                                  class="mjx-char MJXc-TeX-math-I"
+                                  style="padding-top: 0.519em; padding-bottom: 0.298em;"
+                                >
+                                  O
+                                </span>
+                              </span>
+                              <span
+                                class="mjx-mi"
+                              >
+                                <span
+                                  class="mjx-char MJXc-TeX-math-I"
+                                  style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.024em;"
+                                >
+                                  X
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </abbr>
+              </a>
+              /
+              <a
+                href="#id9"
+              >
+                <abbr
+                  class="ltx_glossaryref ltx_role_acronym"
+                  href="#id9"
+                  title=""
+                >
+                  <span
+                    class="ltx_text ltx_glossary_short"
+                  >
+                    <span
+                      class="ltx_Math"
+                    >
+                      <span
+                        class="mjpage"
+                      >
+                        <span
+                          class="mjx-chtml"
+                        >
+                          <span
+                            aria-label="LH_{2}"
+                            class="mjx-math"
+                          >
+                            <span
+                              aria-hidden="true"
+                              class="mjx-mrow"
+                            >
+                              <span
+                                class="mjx-mi"
+                              >
+                                <span
+                                  class="mjx-char MJXc-TeX-math-I"
+                                  style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                                >
+                                  L
+                                </span>
+                              </span>
+                              <span
+                                class="mjx-msubsup"
+                              >
+                                <span
+                                  class="mjx-base"
+                                  style="margin-right: -0.057em;"
+                                >
+                                  <span
+                                    class="mjx-mi"
+                                  >
+                                    <span
+                                      class="mjx-char MJXc-TeX-math-I"
+                                      style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.057em;"
+                                    >
+                                      H
+                                    </span>
+                                  </span>
+                                </span>
+                                <span
+                                  class="mjx-sub"
+                                  style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"
+                                >
+                                  <span
+                                    class="mjx-texatom"
+                                    style=""
+                                  >
+                                    <span
+                                      class="mjx-mrow"
+                                    >
+                                      <span
+                                        class="mjx-mn"
+                                      >
+                                        <span
+                                          class="mjx-char MJXc-TeX-main-R"
+                                          style="padding-top: 0.372em; padding-bottom: 0.372em;"
+                                        >
+                                          2
+                                        </span>
+                                      </span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </abbr>
+              </a>
+              )
+            </p>
+            
+
+          </div>
+          
+
+        </section>
+        
+
+        <section
+          class="ltx_subsection"
+          id="S2.SS2"
+        >
+          
+
+          <h3
+            class="ltx_title ltx_title_subsection"
+          >
+            
+
+            <span
+              class="ltx_tag ltx_tag_subsection"
+            >
+              2.2 
+            </span>
+            Some testing fundamentals
+          </h3>
+          
+
+
+          <div
+            class="ltx_para"
+            id="S2.SS2.p1"
+          >
+            
+
+            <p
+              class="ltx_p"
+            >
+              When testing 
+              <a
+                href="#id10"
+              >
+                <span
+                  class="ltx_glossaryref ltx_role_acronym"
+                  href="#id10"
+                  title=""
+                >
+                  <span
+                    class="ltx_text ltx_glossary_long-plural"
+                  >
+                    Integrated Circuits
+                  </span>
+                </span>
+              </a>
+              , one typically wants to identify functional
+blocks to be tested separately. The latter are commonly indicated as
+
+              <a
+                href="#id11"
+              >
+                <span
+                  class="ltx_glossaryref ltx_role_acronym"
+                  href="#id11"
+                  title=""
+                >
+                  <span
+                    class="ltx_text ltx_glossary_long-plural"
+                  >
+                    Blocks Under Test
+                  </span>
+                </span>
+              </a>
+              . To test a 
+              <a
+                href="#id11"
+              >
+                <abbr
+                  class="ltx_glossaryref ltx_role_acronym"
+                  href="#id11"
+                  title=""
+                >
+                  <span
+                    class="ltx_text ltx_glossary_short"
+                  >
+                    BUT
+                  </span>
+                </abbr>
+              </a>
+               requires defining a testing strategy…
+            </p>
+            
+
+          </div>
+          
+
+        </section>
+        
+
+      </section>
+      
+
+      <section
+        class="ltx_section"
+        id="S3"
+      >
+        
+
+        <h2
+          class="ltx_title ltx_title_section"
+        >
+          
+
+          <span
+            class="ltx_tag ltx_tag_section"
+          >
+            3 
+          </span>
+          Acronyms
+        </h2>
+        
+
+
+      </section>
+      
+
+      <section
+        class="ltx_glossary ltx_acronym ltx_role_acronym"
+      >
+        
+
+        <dl
+          class="ltx_glossarylist"
+        >
+          
+
+          <dt
+            class="ltx_glossaryentry ltx_role_acronym"
+            id="id1"
+          >
+            CDMA
+          </dt>
+          
+
+          <dd>
+            Code Division Multiple Access
+          </dd>
+          
+
+          <dt
+            class="ltx_glossaryentry ltx_role_acronym"
+            id="id2"
+          >
+            GSM
+          </dt>
+          
+
+          <dd>
+            Global System for Mobile communication
+          </dd>
+          
+
+          <dt
+            class="ltx_glossaryentry ltx_role_acronym"
+            id="id3"
+          >
+            <span
+              class="ltx_Math"
+              id="m1"
+            >
+              <span
+                class="mjpage"
+              >
+                <span
+                  class="mjx-chtml"
+                >
+                  <span
+                    aria-label="N_{\\\\mathrm{A}}"
+                    class="mjx-math"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="mjx-mrow"
+                    >
+                      <span
+                        class="mjx-msubsup"
+                      >
+                        <span
+                          class="mjx-base"
+                          style="margin-right: -0.085em;"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.085em;"
+                            >
+                              N
+                            </span>
+                          </span>
+                        </span>
+                        <span
+                          class="mjx-sub"
+                          style="font-size: 70.7%; vertical-align: -0.241em; padding-right: 0.071em;"
+                        >
+                          <span
+                            class="mjx-texatom"
+                            style=""
+                          >
+                            <span
+                              class="mjx-mrow"
+                            >
+                              <span
+                                class="mjx-texatom"
+                              >
+                                <span
+                                  class="mjx-mrow"
+                                >
+                                  <span
+                                    class="mjx-mi"
+                                  >
+                                    <span
+                                      class="mjx-char MJXc-TeX-main-R"
+                                      style="padding-top: 0.446em; padding-bottom: 0.372em;"
+                                    >
+                                      A
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </dt>
+          
+
+          <dd>
+            Number of Avogadro (see §
+            <a
+              class="ltx_ref"
+              href="#S2.SS1"
+              title="2.1 Some chemistry and physics ‣ 2 Furthermore"
+            >
+              <span
+                class="ltx_text ltx_ref_tag"
+              >
+                2.1
+              </span>
+            </a>
+            )
+          </dd>
+          
+
+          <dt
+            class="ltx_glossaryentry ltx_role_acronym"
+            id="id4"
+          >
+            NAD
+            <sup
+              class="ltx_sup"
+            >
+              +
+            </sup>
+            
+
+          </dt>
+          
+
+          <dd>
+            Nicotinamide Adenine Dinucleotide
+          </dd>
+          
+
+          <dt
+            class="ltx_glossaryentry ltx_role_acronym"
+            id="id5"
+          >
+            NUA
+          </dt>
+          
+
+          <dd>
+            Not Used Acronym
+          </dd>
+          
+
+          <dt
+            class="ltx_glossaryentry ltx_role_acronym"
+            id="id6"
+          >
+            TDMA
+          </dt>
+          
+
+          <dd>
+            Time Division Multiple Access
+          </dd>
+          
+
+          <dt
+            class="ltx_glossaryentry ltx_role_acronym"
+            id="id7"
+          >
+            UA
+          </dt>
+          
+
+          <dd>
+            Used Acronym
+          </dd>
+          
+
+          <dt
+            class="ltx_glossaryentry ltx_role_acronym"
+            id="id8"
+          >
+            <span
+              class="ltx_Math"
+              id="m3"
+            >
+              <span
+                class="mjpage"
+              >
+                <span
+                  class="mjx-chtml"
+                >
+                  <span
+                    aria-label="LOX"
+                    class="mjx-math"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="mjx-mrow"
+                    >
+                      <span
+                        class="mjx-mi"
+                      >
+                        <span
+                          class="mjx-char MJXc-TeX-math-I"
+                          style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                        >
+                          L
+                        </span>
+                      </span>
+                      <span
+                        class="mjx-mi"
+                      >
+                        <span
+                          class="mjx-char MJXc-TeX-math-I"
+                          style="padding-top: 0.519em; padding-bottom: 0.298em;"
+                        >
+                          O
+                        </span>
+                      </span>
+                      <span
+                        class="mjx-mi"
+                      >
+                        <span
+                          class="mjx-char MJXc-TeX-math-I"
+                          style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.024em;"
+                        >
+                          X
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </dt>
+          
+
+          <dd>
+            Liquid Oxygen
+          </dd>
+          
+
+          <dt
+            class="ltx_glossaryentry ltx_role_acronym"
+            id="id9"
+          >
+            <span
+              class="ltx_Math"
+              id="m5"
+            >
+              <span
+                class="mjpage"
+              >
+                <span
+                  class="mjx-chtml"
+                >
+                  <span
+                    aria-label="LH_{2}"
+                    class="mjx-math"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="mjx-mrow"
+                    >
+                      <span
+                        class="mjx-mi"
+                      >
+                        <span
+                          class="mjx-char MJXc-TeX-math-I"
+                          style="padding-top: 0.446em; padding-bottom: 0.298em;"
+                        >
+                          L
+                        </span>
+                      </span>
+                      <span
+                        class="mjx-msubsup"
+                      >
+                        <span
+                          class="mjx-base"
+                          style="margin-right: -0.057em;"
+                        >
+                          <span
+                            class="mjx-mi"
+                          >
+                            <span
+                              class="mjx-char MJXc-TeX-math-I"
+                              style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.057em;"
+                            >
+                              H
+                            </span>
+                          </span>
+                        </span>
+                        <span
+                          class="mjx-sub"
+                          style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"
+                        >
+                          <span
+                            class="mjx-texatom"
+                            style=""
+                          >
+                            <span
+                              class="mjx-mrow"
+                            >
+                              <span
+                                class="mjx-mn"
+                              >
+                                <span
+                                  class="mjx-char MJXc-TeX-main-R"
+                                  style="padding-top: 0.372em; padding-bottom: 0.372em;"
+                                >
+                                  2
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </dt>
+          
+
+          <dd>
+            Liquid Hydrogen
+          </dd>
+          
+
+          <dt
+            class="ltx_glossaryentry ltx_role_acronym"
+            id="id10"
+          >
+            IC
+          </dt>
+          
+
+          <dd>
+            Integrated Circuit
+          </dd>
+          
+
+          <dt
+            class="ltx_glossaryentry ltx_role_acronym"
+            id="id11"
+          >
+            BUT
+          </dt>
+          
+
+          <dd>
+            Block Under Test
+          </dd>
+          
+
+        </dl>
+        
+
+      </section>
+      
+
+    </article>
+    
+
+  </div>
+  
+
+  <footer
+    class="ltx_page_footer"
+  >
+    
+
+    <div
+      class="ltx_page_logo"
+    >
+      Generated  by 
+      <a
+        href="http://dlmf.nist.gov/LaTeXML/"
+      >
+        LaTeXML 
+        <img
+          alt="[LOGO]"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="
+        />
+      </a>
+      
+
+    </div>
+  </footer>
+  
+
+</div>
+`;
+
 exports[`algorithm.tex 1`] = `
 <div
   class="ltx_page_main"

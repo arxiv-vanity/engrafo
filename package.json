@@ -16,7 +16,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "aws-sdk": "^2.295.0",
+    "aws-sdk": "^2.302.0",
     "express": "^4.16.3",
     "fs-extra": "^7.0.0",
     "include-media": "^1.4.9",

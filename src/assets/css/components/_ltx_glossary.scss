@@ -1,0 +1,13 @@
+@import "../fonts";
+
+.ltx_glossary {
+  @include font-body();
+
+  .ltx_glossarylist {
+    margin: 0;
+  }
+
+  .ltx_glossaryentry {
+    font-weight: bold;
+  }
+}

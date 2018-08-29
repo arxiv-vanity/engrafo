@@ -28,7 +28,7 @@ RUN apt-get update -qq && apt-get install -qy curl gnupg2 \
 
 RUN mkdir -p /usr/src/latexml
 WORKDIR /usr/src/latexml
-ENV LATEXML_COMMIT=0dba10912214899be7f9eb144108759c18bba136
+ENV LATEXML_COMMIT=dcfe88ec96bc600e0125b7218ca45bf76f1add63
 RUN curl -L https://github.com/brucemiller/LaTeXML/tarball/$LATEXML_COMMIT | tar --strip-components 1 -zxf - \
     && perl Makefile.PL \
     && make \

@@ -332,6 +332,367 @@ watershed basin graph.
 </div>"
 `;
 
+exports[`color.sty.tex 1`] = `
+"<div class=\\"ltx_page_main\\">
+<div class=\\"ltx_page_content\\">
+<article class=\\"ltx_document\\">
+<section id=\\"S1\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">1 </span>Predefined colors</h2>
+
+<div id=\\"S1.p1\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text\\" style=\\"color:#000000;\\">Black</span> vs. <span class=\\"ltx_text\\" style=\\"color:#000000;\\">Black</span>.</p>
+</div>
+<div id=\\"S1.p2\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text\\" style=\\"color:#FFFFFF;\\">White</span> vs. <span class=\\"ltx_text\\" style=\\"color:#FFFFFF;\\">White</span>.</p>
+</div>
+<div id=\\"S1.p3\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text\\" style=\\"color:#FF0000;\\">Red</span> vs. <span class=\\"ltx_text\\" style=\\"color:#FF0000;\\">Red</span>.</p>
+</div>
+<div id=\\"S1.p4\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text\\" style=\\"color:#00FF00;\\">Green</span> vs. <span class=\\"ltx_text\\" style=\\"color:#00FF00;\\">Green</span>.</p>
+</div>
+<div id=\\"S1.p5\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text\\" style=\\"color:#0000FF;\\">Blue</span> vs. <span class=\\"ltx_text\\" style=\\"color:#0000FF;\\">Blue</span>.</p>
+</div>
+<div id=\\"S1.p6\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text\\" style=\\"color:#00FFFF;\\">Cyan</span> vs. <span class=\\"ltx_text\\" style=\\"color:#00FFFF;\\">Cyan</span>.</p>
+</div>
+<div id=\\"S1.p7\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text\\" style=\\"color:#FF00FF;\\">Magenta</span> vs. <span class=\\"ltx_text\\" style=\\"color:#FF00FF;\\">Magenta</span>.</p>
+</div>
+<div id=\\"S1.p8\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text\\" style=\\"color:#FFFF00;\\">Yellow</span> vs. <span class=\\"ltx_text\\" style=\\"color:#FFFF00;\\">Yellow</span>.</p>
+</div>
+</section>
+<section id=\\"S2\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">2 </span>RGB colors</h2>
+
+<div id=\\"S2.p1\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text\\" style=\\"color:#FF0000;\\">Red</span>
+vs. <span class=\\"ltx_text\\" style=\\"color:#FF0000;\\">Red</span>
+vs. <span class=\\"ltx_text\\" style=\\"color:#FF0000;\\">Red</span>.</p>
+</div>
+</section>
+<section id=\\"S3\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">3 </span>CMYK colors</h2>
+
+<div id=\\"S3.p1\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text\\" style=\\"color:#00FFFF;\\">Cyan</span>
+vs. <span class=\\"ltx_text\\" style=\\"color:#00FFFF;\\">Cyan</span>
+vs. <span class=\\"ltx_text\\" style=\\"color:#00FFFF;\\">Cyan</span></p>
+</div>
+<div id=\\"S3.p2\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text\\" style=\\"color:#000000;\\">Black</span>
+vs.<span class=\\"ltx_text\\" style=\\"color:#000000;\\">Black</span>
+vs.<span class=\\"ltx_text\\" style=\\"color:#000000;\\">Black</span></p>
+</div>
+</section>
+<section id=\\"S4\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">4 </span>Gray colors</h2>
+
+<div id=\\"S4.p1\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text\\" style=\\"color:#000000;\\">Black</span>
+vs. <span class=\\"ltx_text\\" style=\\"color:#000000;\\">Black</span>
+vs. <span class=\\"ltx_text\\" style=\\"color:#000000;\\">Black</span></p>
+</div>
+<div id=\\"S4.p2\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text\\" style=\\"color:#808080;\\">Gray</span>
+vs. <span class=\\"ltx_text\\" style=\\"color:#808080;\\">Gray</span>
+vs. <span class=\\"ltx_text\\" style=\\"color:#808080;\\">Gray</span>
+</p>
+</div>
+<div id=\\"S4.p3\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text\\" style=\\"color:#E6E6E6;\\">Light</span>
+vs. <span class=\\"ltx_text\\" style=\\"color:#E6E6E6;\\">Light</span>
+vs. <span class=\\"ltx_text\\" style=\\"color:#E6E6E6;\\">Light</span></p>
+</div>
+</section>
+<section id=\\"S5\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">5 </span>Boxes</h2>
+
+<div id=\\"S5.p1\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text\\" style=\\"color:#E6E6E6;background-color:#808080;\\">Light within Gray</span></p>
+</div>
+<div id=\\"S5.p2\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">vs. <span class=\\"ltx_text\\" style=\\"color:#E6E6E6;background-color:#808080;\\">Light within Gray</span></p>
+</div>
+<div id=\\"S5.p3\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text ltx_framed_rectangle\\" style=\\"color:#00FF00;background-color:#FF0000;border-color: #0000FF;\\">Green in Red surrounded by Blue</span></p>
+</div>
+<div id=\\"S5.p4\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text ltx_framed_rectangle\\" style=\\"color:#FFFF00;background-color:#00FFFF;border-color: #FF00FF;\\">Yellow in Cyan surrounded by Magenta</span></p>
+</div>
+</section>
+<section id=\\"S6\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">6 </span>Math</h2>
+
+<div id=\\"S6.p1\\" class=\\"ltx_para\\">
+<table id=\\"S6.Ex1\\" class=\\"ltx_equation ltx_eqn_table\\">
+
+<tbody><tr class=\\"ltx_equation ltx_eqn_row ltx_align_baseline\\">
+<td class=\\"ltx_eqn_cell ltx_eqn_center_padleft\\"></td>
+<td class=\\"ltx_eqn_cell ltx_align_center\\"><span id=\\"S6.Ex1.m1\\" class=\\"ltx_DisplayMath\\"><span class=\\"mjpage mjpage__block\\"><span class=\\"mjx-chtml MJXc-display\\" style=\\"text-align: left;\\"><span class=\\"mjx-math\\" aria-label=\\" {\\\\color[rgb]{1,0,0}R}+{\\\\color[rgb]{0,1,0}G}+{\\\\color[rgb]{0,0,1}B} \\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mstyle\\" style=\\"color: rgb(255, 0, 0);\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">R</span></span></span></span></span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.298em; padding-bottom: 0.446em;\\">+</span></span><span class=\\"mjx-texatom MJXc-space2\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mstyle\\" style=\\"color: rgb(0, 255, 0);\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.519em; padding-bottom: 0.298em;\\">G</span></span></span></span></span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.298em; padding-bottom: 0.446em;\\">+</span></span><span class=\\"mjx-texatom MJXc-space2\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mstyle\\" style=\\"color: rgb(0, 0, 255);\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">B</span></span></span></span></span></span></span></span></span></span></span></td>
+<td class=\\"ltx_eqn_cell ltx_eqn_center_padright\\"></td>
+</tr>
+</tbody></table>
+</div>
+<div id=\\"S6.p2\\" class=\\"ltx_para\\">
+<table id=\\"S6.Ex2\\" class=\\"ltx_equation ltx_eqn_table\\">
+
+<tbody><tr class=\\"ltx_equation ltx_eqn_row ltx_align_baseline\\">
+<td class=\\"ltx_eqn_cell ltx_eqn_center_padleft\\"></td>
+<td class=\\"ltx_eqn_cell ltx_align_center\\"><span id=\\"S6.Ex2.m1\\" class=\\"ltx_DisplayMath\\"><span class=\\"mjpage mjpage__block\\"><span class=\\"mjx-chtml MJXc-display\\" style=\\"text-align: left;\\"><span class=\\"mjx-math\\" aria-label=\\" {\\\\pagecolor{red}R}+{\\\\pagecolor{green}G}+{\\\\pagecolor{blue}B} \\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\pagecolor</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">r</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;\\">d</span></span></span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">R</span></span></span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.298em; padding-bottom: 0.446em;\\">+</span></span><span class=\\"mjx-texatom MJXc-space2\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\pagecolor</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.003em;\\">g</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">r</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">n</span></span></span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.519em; padding-bottom: 0.298em;\\">G</span></span></span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.298em; padding-bottom: 0.446em;\\">+</span></span><span class=\\"mjx-texatom MJXc-space2\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\pagecolor</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">b</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">u</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span></span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">B</span></span></span></span></span></span></span></span></span></td>
+<td class=\\"ltx_eqn_cell ltx_eqn_center_padright\\"></td>
+</tr>
+</tbody></table>
+</div>
+<div id=\\"S6.p3\\" class=\\"ltx_para\\">
+<table id=\\"S6.Ex3\\" class=\\"ltx_equation ltx_eqn_table\\">
+
+<tbody><tr class=\\"ltx_equation ltx_eqn_row ltx_align_baseline\\">
+<td class=\\"ltx_eqn_cell ltx_eqn_center_padleft\\"></td>
+<td class=\\"ltx_eqn_cell ltx_align_center\\"><span id=\\"S6.Ex3.m1\\" class=\\"ltx_DisplayMath\\"><span class=\\"mjpage mjpage__block\\"><span class=\\"mjx-chtml MJXc-display\\" style=\\"text-align: left;\\"><span class=\\"mjx-math\\" aria-label=\\" \\\\fcolorbox{green}{blue}{\\\\textcolor{red}{R}}+\\\\fcolorbox{blue}{red}{\\\\textcolor{%
+green}{G}}+\\\\fcolorbox{red}{green}{\\\\textcolor{blue}{B}} \\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\fcolorbox</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.003em;\\">g</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">r</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">n</span></span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">b</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">u</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\textcolor</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">r</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;\\">d</span></span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">R</span></span></span></span></span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.298em; padding-bottom: 0.446em;\\">+</span></span><span class=\\"mjx-mtext MJXc-space2\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\fcolorbox</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">b</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">u</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">r</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;\\">d</span></span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\textcolor</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.003em;\\">g</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">r</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">n</span></span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.519em; padding-bottom: 0.298em;\\">G</span></span></span></span></span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.298em; padding-bottom: 0.446em;\\">+</span></span><span class=\\"mjx-mtext MJXc-space2\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\fcolorbox</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">r</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;\\">d</span></span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.003em;\\">g</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">r</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">n</span></span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\textcolor</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">b</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">u</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">B</span></span></span></span></span></span></span></span></span></span></span></td>
+<td class=\\"ltx_eqn_cell ltx_eqn_center_padright\\"></td>
+</tr>
+</tbody></table>
+</div>
+</section>
+<section id=\\"S7\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">7 </span>Named colors (DVIPS)</h2>
+
+<div id=\\"S7.p1\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text\\" style=\\"color:#03FF7A;\\">JungleGreen</span>
+vs. <span class=\\"ltx_text\\" style=\\"color:#03FF7A;\\">JungleGreen</span>
+vs. <span class=\\"ltx_text\\" style=\\"color:#03FF7A;\\">JungleGreen</span>
+</p>
+</div>
+<div id=\\"S7.p2\\" class=\\"ltx_para\\">
+<table class=\\"ltx_tabular ltx_guessed_headers ltx_align_middle\\">
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#D9FF4F;\\">GreenYellow</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#D9FF4F;\\">GreenYellow</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FFFF00;\\">Yellow</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#FFFF00;\\">Yellow</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FFE629;\\">Goldenrod</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#FFE629;\\">Goldenrod</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FFB529;\\">Dandelion</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#FFB529;\\">Dandelion</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FFAD7A;\\">Apricot</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#FFAD7A;\\">Apricot</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FF804D;\\">Peach</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF804D;\\">Peach</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FF8A80;\\">Melon</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF8A80;\\">Melon</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FF9400;\\">YellowOrange</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF9400;\\">YellowOrange</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FF6321;\\">Orange</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF6321;\\">Orange</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FF7D00;\\">BurntOrange</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF7D00;\\">BurntOrange</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#C20300;\\">Bittersweet</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#C20300;\\">Bittersweet</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FF3B21;\\">RedOrange</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF3B21;\\">RedOrange</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#A60000;\\">Mahogany</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#A60000;\\">Mahogany</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#AD0000;\\">Maroon</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#AD0000;\\">Maroon</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#B80000;\\">BrickRed</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#B80000;\\">BrickRed</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FF0000;\\">Red</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF0000;\\">Red</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FF0080;\\">OrangeRed</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF0080;\\">OrangeRed</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FF00DE;\\">RubineRed</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF00DE;\\">RubineRed</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FF0A9C;\\">WildStrawberry</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF0A9C;\\">WildStrawberry</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FF789E;\\">Salmon</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF789E;\\">Salmon</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FF5EFF;\\">CarnationPink</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF5EFF;\\">CarnationPink</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FF00FF;\\">Magenta</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF00FF;\\">Magenta</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FF30FF;\\">VioletRed</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF30FF;\\">VioletRed</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FF2EFF;\\">Rhodamine</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF2EFF;\\">Rhodamine</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#A314FA;\\">Mulberry</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#A314FA;\\">Mulberry</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#9600A8;\\">RedViolet</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#9600A8;\\">RedViolet</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#7303EB;\\">Fuchsia</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#7303EB;\\">Fuchsia</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FF85FF;\\">Lavender</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF85FF;\\">Lavender</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#E069FF;\\">Thistle</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#E069FF;\\">Thistle</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#AD5CFF;\\">Orchid</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#AD5CFF;\\">Orchid</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#9933CC;\\">DarkOrchid</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#9933CC;\\">DarkOrchid</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#8C24FF;\\">Purple</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#8C24FF;\\">Purple</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#8000FF;\\">Plum</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#8000FF;\\">Plum</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#361FFF;\\">Violet</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#361FFF;\\">Violet</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#401AFF;\\">RoyalPurple</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#401AFF;\\">RoyalPurple</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#1A0DF5;\\">BlueViolet</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#1A0DF5;\\">BlueViolet</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#6E73FF;\\">Periwinkle</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#6E73FF;\\">Periwinkle</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#616EC4;\\">CadetBlue</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#616EC4;\\">CadetBlue</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#59DEFF;\\">CornflowerBlue</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#59DEFF;\\">CornflowerBlue</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#007091;\\">MidnightBlue</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#007091;\\">MidnightBlue</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#0F75FF;\\">NavyBlue</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#0F75FF;\\">NavyBlue</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#0080FF;\\">RoyalBlue</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#0080FF;\\">RoyalBlue</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#0000FF;\\">Blue</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#0000FF;\\">Blue</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#0FE3FF;\\">Cerulean</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#0FE3FF;\\">Cerulean</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#00FFFF;\\">Cyan</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#00FFFF;\\">Cyan</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#0AFFFF;\\">ProcessBlue</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#0AFFFF;\\">ProcessBlue</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#61FFE0;\\">SkyBlue</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#61FFE0;\\">SkyBlue</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#26FFCC;\\">Turquoise</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#26FFCC;\\">Turquoise</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#1FFAA3;\\">TealBlue</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#1FFAA3;\\">TealBlue</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#2EFFB3;\\">Aquamarine</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#2EFFB3;\\">Aquamarine</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#26FFAB;\\">BlueGreen</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#26FFAB;\\">BlueGreen</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#00FF80;\\">Emerald</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#00FF80;\\">Emerald</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#03FF7A;\\">JungleGreen</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#03FF7A;\\">JungleGreen</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#4FFF80;\\">SeaGreen</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#4FFF80;\\">SeaGreen</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#00FF00;\\">Green</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#00FF00;\\">Green</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#00E000;\\">ForestGreen</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#00E000;\\">ForestGreen</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#00BF29;\\">PineGreen</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#00BF29;\\">PineGreen</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#80FF00;\\">LimeGreen</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#80FF00;\\">LimeGreen</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#8FFF42;\\">YellowGreen</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#8FFF42;\\">YellowGreen</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#BDFF3D;\\">SpringGreen</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#BDFF3D;\\">SpringGreen</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#009900;\\">OliveGreen</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#009900;\\">OliveGreen</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#8C0000;\\">RawSienna</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#8C0000;\\">RawSienna</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#4D0000;\\">Sepia</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#4D0000;\\">Sepia</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#660000;\\">Brown</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#660000;\\">Brown</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#DB9470;\\">Tan</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#DB9470;\\">Tan</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#808080;\\">Gray</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#808080;\\">Gray</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#000000;\\">Black</span></th>
+<td class=\\"ltx_td ltx_align_left ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#000000;\\">Black</span></td>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row\\"><span class=\\"ltx_text\\" style=\\"color:#FFFFFF;\\">White</span></th>
+<td class=\\"ltx_td ltx_align_left\\"><span class=\\"ltx_text\\" style=\\"background-color:#FFFFFF;\\">White</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class=\\"ltx_page_footer\\">
+<div class=\\"ltx_page_logo\\">Generated  by <a href=\\"http://dlmf.nist.gov/LaTeXML/\\">LaTeXML <img src=\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==\\" alt=\\"[LOGO]\\"></a>
+</div></footer>
+</div>"
+`;
+
 exports[`figures.tex 1`] = `
 "<div class=\\"ltx_page_main\\">
 <div class=\\"ltx_page_content\\">

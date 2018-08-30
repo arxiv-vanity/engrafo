@@ -1,4 +1,6 @@
 \documentclass{article}
+\usepackage{hyperref}
+\usepackage{url}
 \begin{document}
   http link: http://link.co.uk/to\#something \\
   https link: https://link.info?param url \\
@@ -6,6 +8,6 @@
   this should not make a link: foo.bar \\
   this is a link without leading space: badlatex.http://example.com \\
   this is already a link with href: \href{http://example.com}{example.com} \\
-  this is a link without http: \href{example.com}{example.com} \\
-  this is already a link with url: \url{http://example.com} \\
+  \\href \href{http://example.com}{example.com} \\
+  \\href without http://, Engrafo should add it: \href{example.com}{example.com} \\
 \end{document}

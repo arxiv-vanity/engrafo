@@ -3178,8 +3178,10 @@ exports[`urls.tex 1`] = `
 </span><br class=\\"ltx_break\\">this should not make a link: foo.bar 
 <br class=\\"ltx_break\\"><span>this is a link without leading space: badlatex.<a href=\\"http://example.com\\">http://example.com</a> 
 </span><br class=\\"ltx_break\\">this is already a link with href: <a href=\\"http://example.com\\" title=\\"\\" class=\\"ltx_ref ltx_href\\">example.com</a> 
-<br class=\\"ltx_break\\">this is a link without http: <a href=\\"http://example.com\\" title=\\"\\" class=\\"ltx_ref ltx_href\\">example.com</a> 
-<br class=\\"ltx_break\\">this is already a link with url: <a href=\\"http://example.com\\" title=\\"\\" class=\\"ltx_ref ltx_url ltx_font_typewriter\\">http://example.com</a> 
+<br class=\\"ltx_break\\">
+<br class=\\"ltx_break\\">href <a href=\\"http://example.com\\" title=\\"\\" class=\\"ltx_ref ltx_href\\">example.com</a> 
+<br class=\\"ltx_break\\">
+<br class=\\"ltx_break\\">href without http://, Engrafo should add it: <a href=\\"http://example.com\\" title=\\"\\" class=\\"ltx_ref ltx_href\\">example.com</a> 
 <br class=\\"ltx_break\\"></p>
 </div>
 </article>

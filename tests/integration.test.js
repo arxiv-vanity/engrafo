@@ -1,7 +1,7 @@
 const { spawn } = require("child_process");
 const path = require("path");
 const tmp = require("tmp-promise");
-const { testDocuments, renderToDom } = require("./utils");
+const { integrationDocuments, renderToDom } = require("./utils");
 
 let percySnapshots = [],
   outputDir;
@@ -33,7 +33,7 @@ afterAll(async () => {
   jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000;
 }, 20000); // long timeout to wait for Percy
 
-test.each(testDocuments())("%s", async (documentName, documentPath) => {
+test.each(integrationDocuments())("%s", async (documentName, documentPath) => {
   const outputPath = path.join(outputDir.path, path.parse(documentName).name);
   // await fs.mkdirs(outputPath);
   const { htmlString, document } = await renderToDom(documentPath, outputPath);

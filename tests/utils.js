@@ -3,8 +3,8 @@ const fs = require("fs-extra");
 const jsdom = require("jsdom");
 const path = require("path");
 
-function testDocuments() {
-  const documentsPath = path.join(__dirname, "documents");
+function integrationDocuments() {
+  const documentsPath = path.join(__dirname, "integration");
   const documents = fs.readdirSync(documentsPath);
   return documents
     .filter(name => name.match(/\.tex$/))
@@ -28,5 +28,5 @@ async function renderToDom(input, output) {
 
 module.exports = {
   renderToDom: renderToDom,
-  testDocuments: testDocuments
+  integrationDocuments: integrationDocuments
 };

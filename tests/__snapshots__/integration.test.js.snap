@@ -955,6 +955,58 @@ exports[`headings.tex 1`] = `
 </div>"
 `;
 
+exports[`hyperref.sty.tex 1`] = `
+"<div class=\\"ltx_page_main\\">
+<div class=\\"ltx_page_content\\">
+<article class=\\"ltx_document\\">
+<section id=\\"S1\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">1 </span>Introduction</h2>
+
+</section>
+<section id=\\"S2\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">2 </span>Motivation</h2>
+
+</section>
+<section id=\\"S3\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">3 </span>Conclusion</h2>
+
+<section id=\\"S3.SS1\\" class=\\"ltx_subsection\\">
+<h3 class=\\"ltx_title ltx_title_subsection\\">
+<span class=\\"ltx_tag ltx_tag_subsection\\">3.1 </span>nameref</h3>
+
+<div id=\\"S3.SS1.p1\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">Nameref for sections <a href=\\"#S1\\" title=\\"1 Introduction\\" class=\\"ltx_ref ltx_refmacro_nameref\\"><span class=\\"ltx_text ltx_ref_title\\"><span class=\\"ltx_tag ltx_tag_ref\\">1 </span>Introduction</span></a> and <a href=\\"#S2\\" title=\\"2 Motivation\\" class=\\"ltx_ref ltx_refmacro_nameref\\"><span class=\\"ltx_text ltx_ref_title\\"><span class=\\"ltx_tag ltx_tag_ref\\">2 </span>Motivation</span></a>.</p>
+</div>
+<div id=\\"S3.SS1.p2\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">And subsections <a href=\\"#S3.SS1\\" title=\\"3.1 nameref ‣ 3 Conclusion\\" class=\\"ltx_ref ltx_refmacro_nameref\\"><span class=\\"ltx_text ltx_ref_title\\"><span class=\\"ltx_tag ltx_tag_ref\\">3.1 </span>nameref</span></a> and <a href=\\"#S3.SS2\\" title=\\"3.2 autoref ‣ 3 Conclusion\\" class=\\"ltx_ref ltx_refmacro_nameref\\"><span class=\\"ltx_text ltx_ref_title\\"><span class=\\"ltx_tag ltx_tag_ref\\">3.2 </span>autoref</span></a>.</p>
+</div>
+</section>
+<section id=\\"S3.SS2\\" class=\\"ltx_subsection\\">
+<h3 class=\\"ltx_title ltx_title_subsection\\">
+<span class=\\"ltx_tag ltx_tag_subsection\\">3.2 </span>autoref</h3>
+
+<div id=\\"S3.SS2.p1\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">Autoref for <a href=\\"#S1\\" title=\\"1 Introduction\\" class=\\"ltx_ref ltx_refmacro_autoref\\"><span class=\\"ltx_text ltx_ref_tag\\">section&nbsp;1</span></a> and <a href=\\"#S2\\" title=\\"2 Motivation\\" class=\\"ltx_ref ltx_refmacro_autoref\\"><span class=\\"ltx_text ltx_ref_tag\\">section&nbsp;2</span></a>.</p>
+</div>
+<div id=\\"S3.SS2.p2\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">And also <a href=\\"#S3.SS1\\" title=\\"3.1 nameref ‣ 3 Conclusion\\" class=\\"ltx_ref ltx_refmacro_autoref\\"><span class=\\"ltx_text ltx_ref_tag\\">subsection&nbsp;3.1</span></a> and <a href=\\"#S3.SS2\\" title=\\"3.2 autoref ‣ 3 Conclusion\\" class=\\"ltx_ref ltx_refmacro_autoref\\"><span class=\\"ltx_text ltx_ref_tag\\">subsection&nbsp;3.2</span></a>.</p>
+</div>
+<div id=\\"S3.SS2.p3\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">These two should fail gracefully: <span class=\\"ltx_ref ltx_refmacro_nameref ltx_missing_label ltx_ref_self\\">LABEL:sec:fail</span> and <span class=\\"ltx_ref ltx_refmacro_autoref ltx_missing_label ltx_ref_self\\">LABEL:sec:fail</span>.</p>
+</div>
+</section>
+</section>
+</article>
+</div>
+<footer class=\\"ltx_page_footer\\">
+<div class=\\"ltx_page_logo\\">Generated  by <a href=\\"http://dlmf.nist.gov/LaTeXML/\\">LaTeXML <img src=\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==\\" alt=\\"[LOGO]\\"></a>
+</div></footer>
+</div>"
+`;
+
 exports[`listings.tex 1`] = `
 "<div class=\\"ltx_page_main\\">
 <div class=\\"ltx_page_content\\">

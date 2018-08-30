@@ -45,6 +45,7 @@ storiesOf("Packages", module)
   .add("cleveref.sty", createStory("cleveref.sty.tex 1"))
   .add("color.sty", createStory("color.sty.tex 1"))
   .add("graphicx.sty", createStory("graphicx.sty.tex 1"))
+  .add("hyperref.sty", createStory("hyperref.sty.tex 1"))
   .add("listings", createStory("listings.tex 1"));
 
 storiesOf("Complete documents")

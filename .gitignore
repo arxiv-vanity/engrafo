@@ -13,6 +13,4 @@ tests/__image_snapshots__/__diff_output__
 dist
 .tmp
 
-# codeship
-.codeship.aes
-.codeship.env
+/storybook-static

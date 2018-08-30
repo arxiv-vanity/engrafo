@@ -32,13 +32,13 @@ First, install [Node](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/en/
 
 ### Frontend development
 
-For developing the CSS and frontend JavaScript, there are a bunch of pre-rendered documents you can use to work with. This means you don't need to install any LaTeX or Docker stuff.
+For developing the CSS and frontend JavaScript, there are a bunch of pre-rendered documents you can use to work with. This means you don't need to install LaTeX or Docker.
 
 Run this command:
 
     $ yarn run storybook
 
-Then, all the documents will be available as a Storybook at [http://localhost:6006](http://localhost:6006). Any chances you make to the CSS and JS in `src/assets/` will be automatically updated in the Storybook.
+Then, all the documents will be available as a Storybook at [http://localhost:6006](http://localhost:6006). Any changes you make to the CSS and JS in `src/assets/` will automatically be updated in the Storybook.
 
 ### Converting documents
 

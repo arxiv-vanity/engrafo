@@ -1007,39 +1007,488 @@ exports[`hyperref.sty.tex 1`] = `
 </div>"
 `;
 
-exports[`listings.tex 1`] = `
+exports[`listings.sty.tex 1`] = `
 "<div class=\\"ltx_page_main\\">
 <div class=\\"ltx_page_content\\">
 <article class=\\"ltx_document\\">
 <section id=\\"S1\\" class=\\"ltx_section\\">
 <h2 class=\\"ltx_title ltx_title_section\\">
-<span class=\\"ltx_tag ltx_tag_section\\">1 </span>Listings</h2>
+<span class=\\"ltx_tag ltx_tag_section\\">1 </span>Introduction</h2>
 
 <div id=\\"S1.p1\\" class=\\"ltx_para\\">
-<p class=\\"ltx_p\\">Some text before.</p>
-<div class=\\"ltx_listing ltx_lst_language_Pascal ltx_lstlisting ltx_listing\\">
-<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Zm9yIGk6PW1heGludCB0byAwIGRvCmJlZ2luCnsgZG8gbm90aGluZyB9CmVuZDsKV3JpdGUoJ0Nhc2UgaW5zZW5zaXRpdmUgJyk7CldyaXRlKCdQYXNjYWwga2V5d29yZHMuJyk7\\">⬇</a></div>
+<p class=\\"ltx_p\\">This document contains the following listings:</p>
+</div>
+<div class=\\"ltx_TOC ltx_toc_lol\\">
+<h6>Listings</h6>
+<ul class=\\"ltx_toclist\\">
+<li class=\\"ltx_tocentry ltx_tocentry_float\\"><a href=\\"#LST1\\" title=\\"Listing 1 ‣ 5 A Pascal Listing\\" class=\\"ltx_ref\\"><span class=\\"ltx_text ltx_ref_title\\"><span class=\\"ltx_tag ltx_tag_ref\\">1 </span>Another bit of Pascal</span></a></li>
+<li class=\\"ltx_tocentry ltx_tocentry_float\\"><a href=\\"#LST2\\" title=\\"Listing 2 ‣ 7 Framing and such\\" class=\\"ltx_ref\\"><span class=\\"ltx_text ltx_ref_title\\"><span class=\\"ltx_tag ltx_tag_ref\\">2 </span>A C language listing</span></a></li>
+</ul>
+</div>
+</section>
+<section id=\\"S2\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">2 </span>Inline Listings</h2>
+
+<div id=\\"S2.p1\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">Various delimiters: <span class=\\"ltx_text ltx_lst_numbers_left ltx_lstlisting ltx_lst_identifier\\">a_word</span>,
+<span class=\\"ltx_text ltx_lst_numbers_left ltx_lstlisting ltx_lst_identifier\\">a_word</span>, <span class=\\"ltx_text ltx_lst_numbers_left ltx_lstlisting ltx_lst_identifier\\">a_word</span>,
+<span class=\\"ltx_text ltx_lst_numbers_left ltx_lstlisting ltx_lst_identifier\\">a_word</span> and even <span class=\\"ltx_text ltx_lst_numbers_left ltx_lstlisting ltx_lst_identifier\\">a_word</span> done.</p>
+</div>
+<div id=\\"S2.p2\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">Indirectly: <span class=\\"ltx_text ltx_lst_numbers_left ltx_lstlisting ltx_lst_identifier\\">a_word</span>;
+and with messed up braces <span class=\\"ltx_text ltx_lst_numbers_left ltx_lstlisting\\"><span class=\\"ltx_text ltx_lst_identifier\\">foo</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>{<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">bar</span></span>.</p>
+</div>
+<div id=\\"S2.p3\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">And also as an environment:
+<span class=\\"ltx_text ltx_lst_numbers_left ltx_lstlisting ltx_lst_identifier\\">a_word</span>; done.
+</p>
+</div>
+</section>
+<section id=\\"S3\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">3 </span>An untyped Listing</h2>
+
+<div id=\\"S3.p1\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">No options, language, etc</p>
+<div class=\\"ltx_listing ltx_lst_numbers_left ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,c3R1ZmYxCnN0dWZmMgpzdHVmZjM=\\">⬇</a></div>
 <div id=\\"lstnumberx1\\" class=\\"ltx_listingline\\">
-<span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">for</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">i</span>:=<span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">maxint</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">to</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>0<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">do</span>
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_identifier\\">stuff1</span>
 </div>
 <div id=\\"lstnumberx2\\" class=\\"ltx_listingline\\">
-<span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">begin</span>
+<span class=\\"ltx_tag ltx_tag_listingline\\">2</span><span class=\\"ltx_text ltx_lst_identifier\\">stuff2</span>
 </div>
 <div id=\\"lstnumberx3\\" class=\\"ltx_listingline\\">
-<span class=\\"ltx_text ltx_lst_comment\\">{<span class=\\"ltx_text ltx_lst_space ltx_font_italic\\">&nbsp;</span><span class=\\"ltx_text ltx_font_italic\\">do<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>nothing<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span></span>}</span>
+<span class=\\"ltx_tag ltx_tag_listingline\\">3</span><span class=\\"ltx_text ltx_lst_identifier\\">stuff3</span>
 </div>
+</div>
+</div>
+</section>
+<section id=\\"S4\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">4 </span>Some C</h2>
+
+<div id=\\"S4.p1\\" class=\\"ltx_para\\">
+<div class=\\"ltx_listing ltx_lst_language_C ltx_lst_numbers_left ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,I2RlZmluZSBFWEFNUExFIHdoaWNod2hhdAp4ID0gImZvbyI7CmJyZWFrOw==\\">⬇</a></div>
 <div id=\\"lstnumberx4\\" class=\\"ltx_listingline\\">
-<span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">end</span>;
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_directive ltx_font_typewriter\\">#define</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier ltx_font_slanted\\">EXAMPLE</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier ltx_font_slanted\\">whichwhat</span>
 </div>
 <div id=\\"lstnumberx5\\" class=\\"ltx_listingline\\">
-<span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">Write</span>(<span class=\\"ltx_text ltx_lst_string\\">’Case<span class=\\"ltx_text ltx_lst_space\\">␣</span>insensitive<span class=\\"ltx_text ltx_lst_space\\">␣</span>’</span>);
+<span class=\\"ltx_tag ltx_tag_listingline\\">2</span><span class=\\"ltx_text ltx_lst_identifier ltx_font_slanted\\">x</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>=<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_string\\">”foo”</span>;
 </div>
 <div id=\\"lstnumberx6\\" class=\\"ltx_listingline\\">
-<span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">Write</span>(<span class=\\"ltx_text ltx_lst_string\\">’Pascal<span class=\\"ltx_text ltx_lst_space\\">␣</span>keywords.’</span>);
+<span class=\\"ltx_tag ltx_tag_listingline\\">3</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">break</span>;
 </div>
 </div>
-<p class=\\"ltx_p\\">Some text after.</p>
 </div>
+</section>
+<section id=\\"S5\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">5 </span>A Pascal Listing</h2>
+
+<div id=\\"S5.p1\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">A listing portion:</p>
+<div class=\\"ltx_listing ltx_lst_language_Pascal ltx_lst_numbers_left ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Zm9yIGk6PW1heGludCB0byAwIGRvCmJlZ2luCiAgeyBkbyBub3RoaW5nIH0KZW5kOwoKV3JpdGUoJ2Nhc2UgaW5zZW5zaXRpdmUnKTsKV3JpdGUoJ2xvbmcgJycgc3RyaW5nJyk7CldyaXRFKCdQYXNjYWwga2V5d29yZHMuJyk7\\">⬇</a></div>
+<div id=\\"lstnumberx7\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">2</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">begin</span>
+</div>
+<div id=\\"lstnumberx8\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">3</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;&nbsp;</span><span class=\\"ltx_text ltx_lst_comment\\">{<span class=\\"ltx_text ltx_lst_space ltx_font_italic\\">&nbsp;</span><span class=\\"ltx_text ltx_font_italic\\">do<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>nothing<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span></span>}</span>
+</div>
+<div id=\\"lstnumberx9\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">4</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">end</span>;
+</div>
+</div>
+</div>
+<div id=\\"S5.p2\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">A numbered listing:</p>
+<div class=\\"ltx_listing ltx_lst_language_Pascal ltx_lst_numbers_left ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Zm9yIGk6PW1heGludCB0byAwIGRvCgliZWdpbgoJCXsgZG8gbm90aGluZyB9CgllbmQ7CgpXcml0ZSgnY2FzZSBpbnNlbnNpdGl2ZScpOwpXcml0ZSgnbG9uZyAnJyBzdHJpbmcnKTsKV3JpdEUoJ1Bhc2NhbCBrZXl3b3Jkcy4nKTs=\\">⬇</a></div>
+<div id=\\"lstnumberx10\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"font-size:50%;\\">1</span></span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">for</span><span class=\\"ltx_text ltx_lst_space\\">␣</span><span class=\\"ltx_text ltx_lst_identifier\\">i</span>:=<span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">maxint</span><span class=\\"ltx_text ltx_lst_space\\">␣</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">to</span><span class=\\"ltx_text ltx_lst_space\\">␣</span>0<span class=\\"ltx_text ltx_lst_space\\">␣</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">do</span>
+</div>
+<div id=\\"lstnumberx11\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"></span><span class=\\"ltx_text ltx_lst_space\\">␣␣␣␣</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">begin</span>
+</div>
+<div id=\\"lstnumberx12\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"font-size:50%;\\">3</span></span><span class=\\"ltx_text ltx_lst_space\\">␣␣␣␣␣␣␣␣</span><span class=\\"ltx_text ltx_lst_comment\\">{<span class=\\"ltx_text ltx_lst_space ltx_font_italic\\">␣</span><span class=\\"ltx_text ltx_font_italic\\">do<span class=\\"ltx_text ltx_lst_space\\">␣</span>nothing<span class=\\"ltx_text ltx_lst_space\\">␣</span></span>}</span>
+</div>
+<div id=\\"lstnumberx13\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"></span><span class=\\"ltx_text ltx_lst_space\\">␣␣␣␣</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">end</span>;
+</div>
+<div id=\\"lstnumberx14\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"font-size:50%;\\">5</span></span>
+</div>
+<div id=\\"lstnumberx15\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"></span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">Write</span>(<span class=\\"ltx_text ltx_lst_string ltx_font_typewriter\\" style=\\"color:#FF0000;\\">’case<span class=\\"ltx_text ltx_lst_space\\">␣</span>insensitive’</span>);
+</div>
+<div id=\\"lstnumberx16\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"font-size:50%;\\">7</span></span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">Write</span>(<span class=\\"ltx_text ltx_lst_string ltx_font_typewriter\\" style=\\"color:#FF0000;\\">’long<span class=\\"ltx_text ltx_lst_space\\">␣</span>’’<span class=\\"ltx_text ltx_lst_space\\">␣</span>string’</span>);
+</div>
+<div id=\\"lstnumberx17\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"></span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">WritE</span>(<span class=\\"ltx_text ltx_lst_string ltx_font_typewriter\\" style=\\"color:#FF0000;\\">’Pascal<span class=\\"ltx_text ltx_lst_space\\">␣</span>keywords.’</span>);
+</div>
+</div>
+</div>
+<div id=\\"S5.p3\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">A Titled listing:</p>
+</div>
+<figure id=\\"LSTx1\\" class=\\"ltx_float ltx_lstlisting\\">
+
+<div class=\\"ltx_listing ltx_lst_language_Pascal ltx_lst_numbers_left ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Zm9yIGk6PW1heGludCB0byAwIGRvCmJlZ2luCiAgeyBkbyBub3RoaW5nIH0KZW5kOwpXcml0ZSgnY2FzZSBpbnNlbnNpdGl2ZScpOw==\\">⬇</a></div>
+<div id=\\"lstnumberx18\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">for</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">i</span>:=<span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">maxint</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">to</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>0<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">do</span>
+</div>
+<div id=\\"lstnumberx19\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">2</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">begin</span>
+</div>
+<div id=\\"lstnumberx20\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">3</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;&nbsp;</span><span class=\\"ltx_text ltx_lst_comment\\">{<span class=\\"ltx_text ltx_lst_space ltx_font_italic\\">&nbsp;</span><span class=\\"ltx_text ltx_font_italic\\">do<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>nothing<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span></span>}</span>
+</div>
+<div id=\\"lstnumberx21\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">4</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">end</span>;
+</div>
+<div id=\\"lstnumberx22\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">5</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">Write</span>(<span class=\\"ltx_text ltx_lst_string\\">’case<span class=\\"ltx_text ltx_lst_space\\">␣</span>insensitive’</span>);
+</div>
+</div>
+<figcaption class=\\"ltx_caption\\">A bit of Pascal</figcaption></figure>
+<div id=\\"S5.p4\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">A Captioned listing (known as Listing <a href=\\"#LST1\\" title=\\"Listing 1 ‣ 5 A Pascal Listing\\" class=\\"ltx_ref\\"><span class=\\"ltx_text ltx_ref_tag\\">1</span></a>) :</p>
+</div>
+<figure id=\\"LST1\\" class=\\"ltx_float ltx_lstlisting\\">
+
+<div class=\\"ltx_listing ltx_lst_language_Pascal ltx_lst_numbers_left ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Zm9yIGk6PW1heGludCB0byAwIGRvCmJlZ2luCiAgeyBkbyBub3RoaW5nIH0KZW5kOw==\\">⬇</a></div>
+<div id=\\"lstnumberx23\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">100</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">for</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">i</span>:=<span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">maxint</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">to</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>0<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">do</span>
+</div>
+<div id=\\"lstnumberx24\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">101</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">begin</span>
+</div>
+<div id=\\"lstnumberx25\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">102</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;&nbsp;</span><span class=\\"ltx_text ltx_lst_comment\\">{<span class=\\"ltx_text ltx_lst_space ltx_font_italic\\">&nbsp;</span><span class=\\"ltx_text ltx_font_italic\\">do<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>nothing<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span></span>}</span>
+</div>
+<div id=\\"lstnumberx26\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">103</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">end</span>;
+</div>
+</div>
+<figcaption class=\\"ltx_caption\\"><span class=\\"ltx_tag ltx_tag_float\\">Listing&nbsp;1: </span>Another bit of Pascal</figcaption></figure>
+</section>
+<section id=\\"S6\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">6 </span>An Environment</h2>
+
+<div id=\\"S6.p1\\" class=\\"ltx_para\\">
+<div class=\\"ltx_listing ltx_lst_language_Pascal ltx_lst_numbers_left ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Zm9yIGk6PW1heGludCB0byAwIGRvCmJlZ2luCiAgeyBkbyBub3RoaW5nIH0KZW5kOw==\\">⬇</a></div>
+<div id=\\"lstnumberx27\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">for</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">i</span>:=<span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">maxint</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">to</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>0<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">do</span>
+</div>
+<div id=\\"lstnumberx28\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">2</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">begin</span>
+</div>
+<div id=\\"lstnumberx29\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">3</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;&nbsp;</span><span class=\\"ltx_text ltx_lst_comment\\">{<span class=\\"ltx_text ltx_lst_space ltx_font_italic\\">&nbsp;</span><span class=\\"ltx_text ltx_font_italic\\">do<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>nothing<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span></span>}</span>
+</div>
+<div id=\\"lstnumberx30\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">4</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">end</span>;
+</div>
+</div>
+</div>
+<div id=\\"S6.p2\\" class=\\"ltx_para\\">
+<div class=\\"ltx_listing ltx_lst_language_Pascal ltx_lst_numbers_right ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Zm9yIGk6PW1heGludCB0byAwIGRvCmJlZ2luCiAgeyBkbyBub3RoaW5nIH0KZW5kOw==\\">⬇</a></div>
+<div id=\\"lstnumberx31\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"color:#FF0000;\\">1</span></span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">for</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">i</span>:=<span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">maxint</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">to</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>0<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">do</span>
+</div>
+<div id=\\"lstnumberx32\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"color:#FF0000;\\">2</span></span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">begin</span>
+</div>
+<div id=\\"lstnumberx33\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"color:#FF0000;\\">3</span></span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;&nbsp;</span><span class=\\"ltx_text ltx_lst_comment\\">{<span class=\\"ltx_text ltx_lst_space ltx_font_italic\\">&nbsp;</span><span class=\\"ltx_text ltx_font_italic\\">do<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>nothing<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span></span>}</span>
+</div>
+<div id=\\"lstnumberx34\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"color:#FF0000;\\">4</span></span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">end</span>;
+</div>
+</div>
+</div>
+<div id=\\"S6.p3\\" class=\\"ltx_para\\">
+<div class=\\"ltx_listing ltx_lst_language_Pascal ltx_lst_numbers_right ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Zm9yIGk6PW1heGludCB0byAwIGRvCmJlZ2luCiAgeyBkbyBub3RoaW5nIH0KZW5kOw==\\">⬇</a></div>
+<div id=\\"lstnumberx35\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"color:#0000FF;\\">1</span></span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">for</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">i</span>:=<span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">maxint</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">to</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>0<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">do</span>
+</div>
+<div id=\\"lstnumberx36\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"color:#0000FF;\\">2</span></span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">begin</span>
+</div>
+<div id=\\"lstnumberx37\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"color:#0000FF;\\">3</span></span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;&nbsp;</span><span class=\\"ltx_text ltx_lst_comment\\">{<span class=\\"ltx_text ltx_lst_space ltx_font_italic\\">&nbsp;</span><span class=\\"ltx_text ltx_font_italic\\">do<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>nothing<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span></span>}</span>
+</div>
+<div id=\\"lstnumberx38\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"color:#0000FF;\\">4</span></span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">end</span>;
+</div>
+</div>
+</div>
+</section>
+<section id=\\"S7\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">7 </span>Framing and such</h2>
+
+<div id=\\"S7.p1\\" class=\\"ltx_para\\">
+<div class=\\"ltx_listing ltx_lst_language_Pascal ltx_lst_numbers_left ltx_lstlisting ltx_framed_rectangle ltx_listing\\" style=\\"background-color:#FF5EFF;border-color: #FF0000;\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Zm9yIGk6PW1heGludCB0byAwIGRvCmJlZ2luCiAgeyBkbyBub3RoaW5nIH0KZW5kOw==\\">⬇</a></div>
+<div id=\\"lstnumberx39\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">for</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">i</span>:=<span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">maxint</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">to</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>0<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">do</span>
+</div>
+<div id=\\"lstnumberx40\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">2</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">begin</span>
+</div>
+<div id=\\"lstnumberx41\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">3</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;&nbsp;</span><span class=\\"ltx_text ltx_lst_comment\\">{<span class=\\"ltx_text ltx_lst_space ltx_font_italic\\">&nbsp;</span><span class=\\"ltx_text ltx_font_italic\\">do<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>nothing<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span></span>}</span>
+</div>
+<div id=\\"lstnumberx42\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">4</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">end</span>;
+</div>
+</div>
+</div>
+<div id=\\"S7.p2\\" class=\\"ltx_para\\">
+<div class=\\"ltx_listing ltx_lst_language_Pascal ltx_lst_numbers_left ltx_lstlisting ltx_listing\\" style=\\"background-color:#FFFF00;\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Zm9yIGk6PW1heGludCB0byAwIGRvCmJlZ2luCiAgeyBkbyBub3RoaW5nIH0KZW5kOw==\\">⬇</a></div>
+<div id=\\"lstnumberx43\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">for</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">i</span>:=<span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">maxint</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">to</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>0<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">do</span>
+</div>
+<div id=\\"lstnumberx44\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">2</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">begin</span>
+</div>
+<div id=\\"lstnumberx45\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">3</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;&nbsp;</span><span class=\\"ltx_text ltx_lst_comment\\">{<span class=\\"ltx_text ltx_lst_space ltx_font_italic\\">&nbsp;</span><span class=\\"ltx_text ltx_font_italic\\">do<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>nothing<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span></span>}</span>
+</div>
+<div id=\\"lstnumberx46\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">4</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">end</span>;
+</div>
+</div>
+<div class=\\"ltx_listing ltx_lst_language_Pascal ltx_lst_numbers_left ltx_lstlisting ltx_framed_rectangle ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Zm9yIGk6PW1heGludCB0byAwIGRvCmJlZ2luCiAgeyBkbyBub3RoaW5nIH0KZW5kOw==\\">⬇</a></div>
+<div id=\\"lstnumberx47\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">for</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">i</span>:=<span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">maxint</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">to</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>0<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">do</span>
+</div>
+<div id=\\"lstnumberx48\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">2</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">begin</span>
+</div>
+<div id=\\"lstnumberx49\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">3</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;&nbsp;</span><span class=\\"ltx_text ltx_lst_comment\\">{<span class=\\"ltx_text ltx_lst_space ltx_font_italic\\">&nbsp;</span><span class=\\"ltx_text ltx_font_italic\\">do<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>nothing<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span></span>}</span>
+</div>
+<div id=\\"lstnumberx50\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">4</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">end</span>;
+</div>
+</div>
+</div>
+<div id=\\"S7.p3\\" class=\\"ltx_para\\">
+<div class=\\"ltx_listing ltx_lst_language_Pascal ltx_lst_numbers_left ltx_lstlisting ltx_framed_topbottom ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Zm9yIGk6PW1heGludCB0byAwIGRvCmJlZ2luCiAgeyBkbyBub3RoaW5nIH0KZW5kOw==\\">⬇</a></div>
+<div id=\\"lstnumberx51\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">for</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">i</span>:=<span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">maxint</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">to</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>0<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">do</span>
+</div>
+<div id=\\"lstnumberx52\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">2</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">begin</span>
+</div>
+<div id=\\"lstnumberx53\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">3</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;&nbsp;</span><span class=\\"ltx_text ltx_lst_comment\\">{<span class=\\"ltx_text ltx_lst_space ltx_font_italic\\">&nbsp;</span><span class=\\"ltx_text ltx_font_italic\\">do<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>nothing<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span></span>}</span>
+</div>
+<div id=\\"lstnumberx54\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">4</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">end</span>;
+</div>
+</div>
+</div>
+<figure id=\\"LST2\\" class=\\"ltx_float ltx_lstlisting\\">
+
+<div class=\\"ltx_listing ltx_lst_language_C ltx_lst_numbers_left ltx_lstlisting ltx_framed_topbottom ltx_listing\\" style=\\"background-color:#E6E6E6;\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,I2RlZmluZSBFWEFNUExFIHdoaWNod2hhdAp4ID0gImZvbyI7CmJyZWFrOw==\\">⬇</a></div>
+<div id=\\"lstnumberx55\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_directive ltx_font_typewriter\\">#define</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier ltx_font_slanted\\">EXAMPLE</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier ltx_font_slanted\\">whichwhat</span>
+</div>
+<div id=\\"lstnumberx56\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">2</span><span class=\\"ltx_text ltx_lst_identifier ltx_font_slanted\\">x</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>=<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_string\\">”foo”</span>;
+</div>
+<div id=\\"lstnumberx57\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">3</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">break</span>;
+</div>
+</div>
+<figcaption class=\\"ltx_caption\\"><span class=\\"ltx_tag ltx_tag_float\\">Listing&nbsp;2: </span>A C language listing</figcaption></figure>
+</section>
+<section id=\\"S8\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">8 </span>Listing with Math</h2>
+
+<div id=\\"S8.p1\\" class=\\"ltx_para\\">
+<div class=\\"ltx_listing ltx_lst_language_c ltx_lst_numbers_left ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Ly8gXHVwc2hhcGUgY2FsY3VsYXRlICRhX3tpan0kCmFbaV1bal0gPSBhW2pdW2pdL2FbaV1bal07\\">⬇</a></div>
+<div id=\\"lstnumberx58\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_comment\\" style=\\"color:#00FF00;\\">//calculate <span id=\\"lstnumberx58.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"a_{ij}\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-msubsup\\"><span class=\\"mjx-base\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span></span><span class=\\"mjx-sub\\" style=\\"font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;\\"><span class=\\"mjx-texatom\\" style=\\"\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">i</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.519em;\\">j</span></span></span></span></span></span></span></span></span></span></span></span>
+</div>
+<div id=\\"lstnumberx59\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">2</span><span class=\\"ltx_text ltx_lst_identifier\\">a</span>[<span class=\\"ltx_text ltx_lst_identifier\\">i</span>][j]<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>=<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">a</span>[j][j]/<span class=\\"ltx_text ltx_lst_identifier\\">a</span>[<span class=\\"ltx_text ltx_lst_identifier\\">i</span>][j];
+</div>
+</div>
+</div>
+<div id=\\"S8.p2\\" class=\\"ltx_para\\">
+<div class=\\"ltx_listing ltx_lst_language_c ltx_lst_numbers_left ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Ly8gXHVwc2hhcGUgY2FsY3VsYXRlICRhX3tpan0kCmFbaV1bal0gPSBhW2pdW2pdL2FbaV1bal07\\">⬇</a></div>
+<div id=\\"lstnumberx60\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_comment\\"><span class=\\"ltx_text ltx_font_italic\\">//</span>calculate <span id=\\"lstnumberx60.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"a_{ij}\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-msubsup\\"><span class=\\"mjx-base\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span></span><span class=\\"mjx-sub\\" style=\\"font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;\\"><span class=\\"mjx-texatom\\" style=\\"\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">i</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.519em;\\">j</span></span></span></span></span></span></span></span></span></span></span></span>
+</div>
+<div id=\\"lstnumberx61\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">2</span><span class=\\"ltx_text ltx_lst_identifier\\">a</span>[<span class=\\"ltx_text ltx_lst_identifier\\">i</span>][j]<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>=<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">a</span>[j][j]/<span class=\\"ltx_text ltx_lst_identifier\\">a</span>[<span class=\\"ltx_text ltx_lst_identifier\\">i</span>][j];
+</div>
+</div>
+</div>
+<div id=\\"S8.p3\\" class=\\"ltx_para\\">
+<div class=\\"ltx_listing ltx_lst_language_c ltx_lst_numbers_left ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Ly8gY2FsY3VsYXRlICRhX3tpan0kCiRhX3tpan0KID0gYV97amp9L2F7aWp9JDsKLy8gY2FsY3VsYXRlICRhX3tpan0gPQpcc2luIHgkCmFbaSxqXT1zaW4oeCkKZm9vPSJhIHdvcmQiOwpmb289ImEgJHheMiQgbWF0aCI7\\">⬇</a></div>
+<div id=\\"lstnumberx62\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_comment\\" style=\\"color:#00FF00;\\">//<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>calculate<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span id=\\"lstnumberx62.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"a_{ij}\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-msubsup\\"><span class=\\"mjx-base\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span></span><span class=\\"mjx-sub\\" style=\\"font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;\\"><span class=\\"mjx-texatom\\" style=\\"\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">i</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.519em;\\">j</span></span></span></span></span></span></span></span></span></span></span></span>
+</div>
+<div id=\\"lstnumberx63\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">2</span><span id=\\"lstnumberx63.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"a_{ij}=a_{jj}/a{ij}\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-msubsup\\"><span class=\\"mjx-base\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span></span><span class=\\"mjx-sub\\" style=\\"font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;\\"><span class=\\"mjx-texatom\\" style=\\"\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">i</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.519em;\\">j</span></span></span></span></span></span><span class=\\"mjx-mo MJXc-space3\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.077em; padding-bottom: 0.298em;\\">=</span></span><span class=\\"mjx-msubsup MJXc-space3\\"><span class=\\"mjx-base\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span></span><span class=\\"mjx-sub\\" style=\\"font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;\\"><span class=\\"mjx-texatom\\" style=\\"\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.519em;\\">j</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.519em;\\">j</span></span></span></span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mo\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.446em; padding-bottom: 0.593em;\\">/</span></span></span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">i</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.519em;\\">j</span></span></span></span></span></span></span></span></span>;
+</div>
+<div id=\\"lstnumberx64\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">3</span><span class=\\"ltx_text ltx_lst_comment\\" style=\\"color:#00FF00;\\">//<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>calculate<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span id=\\"lstnumberx64.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"a_{ij}=\\\\sin x\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-msubsup\\"><span class=\\"mjx-base\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span></span><span class=\\"mjx-sub\\" style=\\"font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;\\"><span class=\\"mjx-texatom\\" style=\\"\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">i</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.519em;\\">j</span></span></span></span></span></span><span class=\\"mjx-mo MJXc-space3\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.077em; padding-bottom: 0.298em;\\">=</span></span><span class=\\"mjx-mi MJXc-space3\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">sin</span></span><span class=\\"mjx-mo\\"><span class=\\"mjx-char\\"></span></span><span class=\\"mjx-mi MJXc-space1\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">x</span></span></span></span></span></span></span></span>
+</div>
+<div id=\\"lstnumberx65\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">4</span><span class=\\"ltx_text ltx_lst_identifier\\">a</span>[<span class=\\"ltx_text ltx_lst_identifier\\">i</span>,j]=<span class=\\"ltx_text ltx_lst_identifier\\">sin</span>(<span class=\\"ltx_text ltx_lst_identifier\\">x</span>)
+</div>
+<div id=\\"lstnumberx66\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">5</span><span class=\\"ltx_text ltx_lst_identifier\\">foo</span>=<span class=\\"ltx_text ltx_lst_string\\">”a<span class=\\"ltx_text ltx_lst_space\\">␣</span>word”</span>;
+</div>
+<div id=\\"lstnumberx67\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">6</span><span class=\\"ltx_text ltx_lst_identifier\\">foo</span>=<span class=\\"ltx_text ltx_lst_string\\">”a<span class=\\"ltx_text ltx_lst_space\\">␣</span><span id=\\"lstnumberx67.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"x^{2}\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-msubsup\\"><span class=\\"mjx-base\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">x</span></span></span><span class=\\"mjx-sup\\" style=\\"font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;\\"><span class=\\"mjx-texatom\\" style=\\"\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mn\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">2</span></span></span></span></span></span></span></span></span></span></span><span class=\\"ltx_text ltx_lst_space\\">␣</span>math”</span>;
+</div>
+</div>
+</div>
+<div id=\\"S8.p4\\" class=\\"ltx_para\\">
+<div class=\\"ltx_listing ltx_lst_language_c ltx_lst_numbers_left ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Ly8gY2FsY3VsYXRlICUkYV97aWp9JCUKYV97aWp9CiA9IGFfe2pqfS9he2lqfTs=\\">⬇</a></div>
+<div id=\\"lstnumberx68\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_comment ltx_font_italic\\">//<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>calculate<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>&lt;<span id=\\"lstnumberx68.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"a_{ij}\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-msubsup\\"><span class=\\"mjx-base\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span></span><span class=\\"mjx-sub\\" style=\\"font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;\\"><span class=\\"mjx-texatom\\" style=\\"\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">i</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.519em;\\">j</span></span></span></span></span></span></span></span></span></span></span>&gt;</span>
+</div>
+<div id=\\"lstnumberx69\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">2</span><span class=\\"ltx_text ltx_lst_identifier\\">a_</span>{<span class=\\"ltx_text ltx_lst_identifier\\">i</span>j}
+</div>
+<div id=\\"lstnumberx70\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">3</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>=<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">a_</span>{jj}/<span class=\\"ltx_text ltx_lst_identifier\\">a</span>{<span class=\\"ltx_text ltx_lst_identifier\\">i</span>j};
+</div>
+</div>
+</div>
+<div id=\\"S8.p5\\" class=\\"ltx_para\\">
+<div class=\\"ltx_listing ltx_lst_language_c ltx_lst_numbers_left ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Ly8gY2FsY3VsYXRlICRhX3tpan0kCiRhX3tpan0KID0gYV97amp9L2F7aWp9JDsKLy8gY2FsY3VsYXRlICRhX3tpan0gPQpcc2luIHgkCmFbaSxqXT1zaW4oeCkKZm9vPSJhIHdvcmQiOwpmb289ImEgXCJzdHJpbmciOwpmb289ImEgJHheMiQgbWF0aCI7\\">⬇</a></div>
+<div id=\\"lstnumberx71\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_comment ltx_font_italic\\">//<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>calculate<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>$a_{ij}$</span>
+</div>
+<div id=\\"lstnumberx72\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">2</span><span class=\\"ltx_text ltx_lst_identifier\\">$a_</span>{<span class=\\"ltx_text ltx_lst_identifier\\">i</span>j}
+</div>
+<div id=\\"lstnumberx73\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">3</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>=<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">a_</span>{jj}/<span class=\\"ltx_text ltx_lst_identifier\\">a</span>{<span class=\\"ltx_text ltx_lst_identifier\\">i</span>j}<span class=\\"ltx_text ltx_lst_identifier\\">$</span>;
+</div>
+<div id=\\"lstnumberx74\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">4</span><span class=\\"ltx_text ltx_lst_comment ltx_font_italic\\">//<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>calculate<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>$a_{ij}<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>=</span>
+</div>
+<div id=\\"lstnumberx75\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">5</span>\\\\<span class=\\"ltx_text ltx_lst_identifier\\">sin</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">x$</span>
+</div>
+<div id=\\"lstnumberx76\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">6</span><span class=\\"ltx_text ltx_lst_identifier\\">a</span>[<span class=\\"ltx_text ltx_lst_identifier\\">i</span>,j]=<span class=\\"ltx_text ltx_lst_identifier\\">sin</span>(<span class=\\"ltx_text ltx_lst_identifier\\">x</span>)
+</div>
+<div id=\\"lstnumberx77\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">7</span><span class=\\"ltx_text ltx_lst_identifier\\">foo</span>=<span class=\\"ltx_text ltx_lst_string ltx_font_typewriter\\">\\"a<span class=\\"ltx_text ltx_lst_space\\">␣</span>word\\"</span>;
+</div>
+<div id=\\"lstnumberx78\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">8</span><span class=\\"ltx_text ltx_lst_identifier\\">foo</span>=<span class=\\"ltx_text ltx_lst_string ltx_font_typewriter\\">\\"a<span class=\\"ltx_text ltx_lst_space\\">␣</span>\\\\\\"string\\"</span>;
+</div>
+<div id=\\"lstnumberx79\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">9</span><span class=\\"ltx_text ltx_lst_identifier\\">foo</span>=<span class=\\"ltx_text ltx_lst_string ltx_font_typewriter\\">\\"a<span class=\\"ltx_text ltx_lst_space\\">␣</span>$x^2$<span class=\\"ltx_text ltx_lst_space\\">␣</span>math\\"</span>;
+</div>
+</div>
+</div>
+</section>
+<section id=\\"S9\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">9 </span>A Perl Listing</h2>
+
+<figure id=\\"LSTx2\\" class=\\"ltx_float ltx_lstlisting\\">
+<div class=\\"ltx_listing ltx_lstlisting ltx_listing\\">
+</div>
+</figure>
+</section>
+<section id=\\"S10\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">10 </span>A Recursive TeX&nbsp;listing</h2>
+
+<figure id=\\"LSTx3\\" class=\\"ltx_float ltx_lstlisting\\">
+<div class=\\"ltx_listing ltx_lstlisting ltx_listing\\">
+</div>
+</figure>
+</section>
+<section id=\\"S11\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">11 </span>Testing Tag</h2>
+
+<div id=\\"S11.p1\\" class=\\"ltx_para\\">
+<div class=\\"ltx_listing ltx_lst_language_XML ltx_lst_numbers_left ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,PGVsZW1lbnQgYXR0cj0ndmFsdWUnPmNvbnRlbnQ8L2VsZW1lbnQ+\\">⬇</a></div>
+<div id=\\"lstnumberx80\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_tag ltx_font_bold\\">&lt;element<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>attr=<span class=\\"ltx_text ltx_lst_string\\">’value’</span>&gt;</span><span class=\\"ltx_text ltx_lst_identifier\\">content</span><span class=\\"ltx_text ltx_lst_tag ltx_font_bold\\">&lt;/element&gt;</span>
+</div>
+</div>
+<div class=\\"ltx_listing ltx_lst_language_XML ltx_lst_numbers_left ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,PGVsZW1lbnQgYXR0cj0ndmFsdWUnPmNvbnRlbnQ8L2VsZW1lbnQ+\\">⬇</a></div>
+<div id=\\"lstnumberx81\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_tag ltx_font_bold\\">&lt;element<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>attr=<span class=\\"ltx_text ltx_lst_string\\">’value’</span>&gt;</span><span class=\\"ltx_text ltx_lst_identifier\\">content</span><span class=\\"ltx_text ltx_lst_tag ltx_font_bold\\">&lt;/element&gt;</span>
+</div>
+</div>
+<div class=\\"ltx_listing ltx_lst_language_XML ltx_lst_numbers_left ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,PGVsZW1lbnQgYXR0cj0ndmFsdWUnPmNvbnRlbnQ8L2VsZW1lbnQ+\\">⬇</a></div>
+<div id=\\"lstnumberx82\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_tag ltx_font_bold\\">&lt;element<span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span>attr=<span class=\\"ltx_text ltx_lst_string\\">’value’</span>&gt;</span><span class=\\"ltx_text ltx_lst_identifier\\">content</span><span class=\\"ltx_text ltx_lst_tag ltx_font_bold\\">&lt;/element&gt;</span>
+</div>
+</div>
+</div>
+</section>
+<section id=\\"S12\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">12 </span>Screwiness</h2>
+
+<div id=\\"S12.p1\\" class=\\"ltx_para\\">
+<div class=\\"ltx_listing ltx_lst_language_bingo ltx_lst_numbers_left ltx_lstlisting ltx_listing\\">
+<div class=\\"ltx_listing_data\\"><a href=\\"http://data:text/plain;base64,Zm9vIGJhciBiYXogYmluZyBib29ib28=\\">⬇</a></div>
+<div id=\\"lstnumberx83\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\">1</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">foo</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keyword ltx_font_bold\\">bar</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">baz</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_keywords2 ltx_font_italic\\">bing</span><span class=\\"ltx_text ltx_lst_space\\">&nbsp;</span><span class=\\"ltx_text ltx_lst_identifier\\">booboo</span>
+</div>
+</div>
+<p class=\\"ltx_p\\"><span class=\\"ltx_text ltx_font_bold ltx_font_italic\\">bfit</span>
+<span class=\\"ltx_text ltx_font_bold ltx_font_italic\\">itbf</span></p>
+</div>
+</section>
+<section id=\\"idx\\" class=\\"ltx_index\\">
+<h2 class=\\"ltx_title ltx_title_index\\">Index</h2>
+
+<ul class=\\"ltx_indexlist\\">
+<li id=\\"idx.bar\\" class=\\"ltx_indexentry\\">
+<span class=\\"ltx_indexphrase\\"><span class=\\"ltx_text ltx_font_typewriter\\">bar</span></span><span class=\\"ltx_indexrefs\\"><span class=\\"ltx_text\\"> </span><a href=\\"#lstnumberx83\\" title=\\"1 ‣ 12 Screwiness\\" class=\\"ltx_ref\\"><span class=\\"ltx_text ltx_ref_tag\\">§12</span></a></span>
+</li>
+<li id=\\"idx.baz\\" class=\\"ltx_indexentry\\">
+<span class=\\"ltx_indexphrase\\"><span class=\\"ltx_text ltx_font_typewriter\\">baz</span></span><span class=\\"ltx_indexrefs\\"><span class=\\"ltx_text\\"> </span><a href=\\"#lstnumberx83\\" title=\\"1 ‣ 12 Screwiness\\" class=\\"ltx_ref\\"><span class=\\"ltx_text ltx_ref_tag\\">§12</span></a></span>
+</li>
+<li id=\\"idx.bing\\" class=\\"ltx_indexentry\\">
+<span class=\\"ltx_indexphrase\\"><span class=\\"ltx_text ltx_font_typewriter\\">bing</span></span><span class=\\"ltx_indexrefs\\"><span class=\\"ltx_text\\"> </span><a href=\\"#lstnumberx83\\" title=\\"1 ‣ 12 Screwiness\\" class=\\"ltx_ref\\"><span class=\\"ltx_text ltx_ref_tag\\">§12</span></a></span>
+</li>
+</ul>
 </section>
 </article>
 </div>

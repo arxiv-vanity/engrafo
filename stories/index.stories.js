@@ -46,7 +46,7 @@ storiesOf("Packages", module)
   .add("color.sty", createStory("color.sty.tex 1"))
   .add("graphicx.sty", createStory("graphicx.sty.tex 1"))
   .add("hyperref.sty", createStory("hyperref.sty.tex 1"))
-  .add("listings", createStory("listings.tex 1"))
+  .add("listings.sty", createStory("listings.sty.tex 1"))
   .add("pifont.sty", createStory("pifont.sty.tex 1"));
 
 storiesOf("Complete documents")

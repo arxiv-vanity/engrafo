@@ -317,8 +317,7 @@ exports[`amsart.cls.tex 1`] = `
 <span class=\\"ltx_tag ltx_tag_section\\">1. </span>Introduction</h2>
 
 <div id=\\"S1.p1\\" class=\\"ltx_para\\">
-<p class=\\"ltx_p\\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+<p class=\\"ltx_p\\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 <div id=\\"S1.p2\\" class=\\"ltx_para\\">
 <table id=\\"S1.E1\\" class=\\"ltx_equation ltx_eqn_table\\">
@@ -442,8 +441,7 @@ exports[`amsart.cls.tex 1`] = `
 <dd class=\\"ltx_item\\">
 <div id=\\"S1.I3.ix3.p1\\" class=\\"ltx_para\\">
 <p class=\\"ltx_p\\">blah, blah. Moreover
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 </dd>
 </dl>
@@ -630,7 +628,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <h5 class=\\"ltx_title ltx_title_paragraph\\">A Paragraph</h5>
 
 <div id=\\"S2.SS1.SSS1.Px1.p1\\" class=\\"ltx_para\\">
-<p class=\\"ltx_p\\">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p class=\\"ltx_p\\">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
 </div>
 </section>
 </section>
@@ -1425,8 +1424,7 @@ and with messed up braces <span class=\\"ltx_text ltx_lst_numbers_left ltx_lstli
 </div>
 <div id=\\"S2.p3\\" class=\\"ltx_para\\">
 <p class=\\"ltx_p\\">And also as an environment:
-<span class=\\"ltx_text ltx_lst_numbers_left ltx_lstlisting ltx_lst_identifier\\">a_word</span>; done.
-</p>
+<span class=\\"ltx_text ltx_lst_numbers_left ltx_lstlisting ltx_lst_identifier\\">a_word</span>; done.</p>
 </div>
 </section>
 <section id=\\"S3\\" class=\\"ltx_section\\">
@@ -2163,8 +2161,7 @@ exports[`pifont.sty.tex 1`] = `
 </li>
 <li id=\\"S1.I3.i2.i2\\" class=\\"ltx_item\\">
 <div id=\\"S1.I3.i2.i2.p1\\" class=\\"ltx_para\\">
-<p class=\\"ltx_p\\">second
-</p>
+<p class=\\"ltx_p\\">second</p>
 </div>
 </li>
 <li id=\\"S1.I3.i2.i3\\" class=\\"ltx_item\\">

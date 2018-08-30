@@ -760,6 +760,50 @@ second paragraph! And some <span class=\\"ltx_text ltx_emph ltx_font_italic\\">f
 </div>"
 `;
 
+exports[`graphicx.sty.tex 1`] = `
+"<div class=\\"ltx_page_main\\">
+<div class=\\"ltx_page_content\\">
+<article class=\\"ltx_document\\">
+<div id=\\"p1\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">In all the following examples the input will be of the form</p>
+<pre class=\\"ltx_verbatim ltx_font_typewriter\\">left---\\\\fbox{\\\\includegraphics{a}}---right
+</pre>
+<p class=\\"ltx_p\\">With different options supplied to <code class=\\"ltx_verbatim ltx_font_typewriter\\">\\\\includegraphics</code>.</p>
+</div>
+<div id=\\"p2\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">No optional argument.
+<br class=\\"ltx_break\\">left—<span class=\\"ltx_text ltx_framed_rectangle\\" style=\\"border-color: black;\\"><img src=\\"x1.png\\" id=\\"p2.g1\\" class=\\"ltx_graphics\\" width=\\"90\\" height=\\"90\\" alt=\\"\\"></span>—right
+</p>
+</div>
+<div id=\\"p3\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text ltx_align_left\\" style=\\"width:75.0pt;\\"><span class=\\"ltx_text ltx_font_sansserif\\">graphics</span>:</span><code class=\\"ltx_verbatim ltx_font_typewriter\\">\\\\scalebox{0.5}{\\\\includegraphics{a}}</code>
+<br class=\\"ltx_break\\"><span class=\\"ltx_text ltx_align_left\\" style=\\"width:75.0pt;\\"><span class=\\"ltx_text ltx_font_sansserif\\">graphicx</span>:</span><code class=\\"ltx_verbatim ltx_font_typewriter\\">\\\\includegraphics[scale=.5]{a}</code>
+<br class=\\"ltx_break\\">left—<span class=\\"ltx_text ltx_framed_rectangle\\" style=\\"border-color: black;\\"><img src=\\"x2.png\\" id=\\"p3.g1\\" class=\\"ltx_graphics\\" width=\\"45\\" height=\\"45\\" alt=\\"\\"></span>—right</p>
+</div>
+<div id=\\"p4\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text ltx_align_left\\" style=\\"width:75.0pt;\\"><span class=\\"ltx_text ltx_font_sansserif\\">graphics</span>:</span><code class=\\"ltx_verbatim ltx_font_typewriter\\">\\\\includegraphics[15,10][35,45]{a}}</code>
+<br class=\\"ltx_break\\"><span class=\\"ltx_text ltx_align_left\\" style=\\"width:75.0pt;\\"><span class=\\"ltx_text ltx_font_sansserif\\">graphicx</span>:</span><code class=\\"ltx_verbatim ltx_font_typewriter\\">\\\\includegraphics[viewport= 15 10 35 45]{a}</code>
+<br class=\\"ltx_break\\">left—<span class=\\"ltx_text ltx_framed_rectangle\\" style=\\"border-color: black;\\"><img src=\\"x1.png\\" id=\\"p4.g1\\" class=\\"ltx_graphics\\" width=\\"90\\" height=\\"90\\" alt=\\"\\"></span>—right</p>
+</div>
+<div id=\\"p5\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text ltx_align_left\\" style=\\"width:75.0pt;\\"><span class=\\"ltx_text ltx_font_sansserif\\">graphics</span>:</span><code class=\\"ltx_verbatim ltx_font_typewriter\\">\\\\includegraphics*[15,10][35,45]{a}}</code>
+<br class=\\"ltx_break\\"><span class=\\"ltx_text ltx_align_left\\" style=\\"width:75.0pt;\\"><span class=\\"ltx_text ltx_font_sansserif\\">graphicx</span>:</span><code class=\\"ltx_verbatim ltx_font_typewriter\\">\\\\includegraphics[viewport= 15 10 35 45,clip]{a}</code>
+<br class=\\"ltx_break\\">left—<span class=\\"ltx_text ltx_framed_rectangle\\" style=\\"border-color: black;\\"><img src=\\"x3.png\\" id=\\"p5.g1\\" class=\\"ltx_graphics\\" width=\\"25\\" height=\\"44\\" alt=\\"\\"></span>—right</p>
+</div>
+<div id=\\"p6\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\"><span class=\\"ltx_text ltx_align_left\\" style=\\"width:75.0pt;\\"><span class=\\"ltx_text ltx_font_sansserif\\">graphics</span>:</span><code class=\\"ltx_verbatim ltx_font_typewriter\\">\\\\scalebox{0.5}{\\\\includegraphics{a}}</code>
+and <code class=\\"ltx_verbatim ltx_font_typewriter\\">draft</code> option.
+<br class=\\"ltx_break\\"><span class=\\"ltx_text ltx_align_left\\" style=\\"width:75.0pt;\\"><span class=\\"ltx_text ltx_font_sansserif\\">graphicx</span>:</span><code class=\\"ltx_verbatim ltx_font_typewriter\\">\\\\includegraphics[scale=.5, draft]{a}</code>
+<br class=\\"ltx_break\\">left—<span class=\\"ltx_text ltx_framed_rectangle\\" style=\\"border-color: black;\\"><img src=\\"x4.png\\" id=\\"p6.g1\\" class=\\"ltx_graphics\\" width=\\"45\\" height=\\"45\\" alt=\\"\\"></span>—right</p>
+</div>
+</article>
+</div>
+<footer class=\\"ltx_page_footer\\">
+<div class=\\"ltx_page_logo\\">Generated  by <a href=\\"http://dlmf.nist.gov/LaTeXML/\\">LaTeXML <img src=\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==\\" alt=\\"[LOGO]\\"></a>
+</div></footer>
+</div>"
+`;
+
 exports[`headings.tex 1`] = `
 "<div class=\\"ltx_page_main\\">
 <div class=\\"ltx_page_content\\">

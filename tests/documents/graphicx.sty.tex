@@ -1,0 +1,43 @@
+% from grfguide.tex in the graphicx package
+% licensed under LPPL 1.3c
+% https://ctan.org/pkg/graphicx
+
+\documentclass{article}
+
+\usepackage{graphicx}
+
+\let\package\textsf
+
+\newlength{\gxlen}
+\settowidth{\gxlen}{\package{graphicx}: }
+\newcommand\gs{\makebox[\gxlen][l]{\package{graphics}:}}
+\newcommand\gx{\makebox[\gxlen][l]{\package{graphicx}:}}
+
+\begin{document}
+In all the following examples the input will be of the form
+\begin{verbatim}
+left---\fbox{\includegraphics{graphicx-a}}---right
+\end{verbatim}
+With different options supplied to \verb|\includegraphics|.
+
+No optional argument.\\
+left---\fbox{\includegraphics{graphicx-a}}---right
+
+\gs \verb|\scalebox{0.5}{\includegraphics{graphicx-a}}|\\
+\gx \verb|\includegraphics[scale=.5]{graphicx-a}|\\
+left---\fbox{\includegraphics[scale=.5]{graphicx-a}}---right
+
+\gs \verb|\includegraphics[15,10][35,45]{graphicx-a}}|\\
+\gx \verb|\includegraphics[viewport= 15 10 35 45]{graphicx-a}|\\
+left---\fbox{\includegraphics[viewport= 15 10 35 45]{graphicx-a}}---right
+
+\gs \verb|\includegraphics*[15,10][35,45]{graphicx-a}}|\\
+\gx \verb|\includegraphics[viewport= 15 10 35 45,clip]{graphicx-a}|\\
+left---\fbox{\includegraphics[viewport= 15 10 35 45,clip]{graphicx-a}}---right
+
+\gs \verb|\scalebox{0.5}{\includegraphics{graphicx-a}}|
+                   and \verb|draft| option.\\
+\gx \verb|\includegraphics[scale=.5, draft]{graphicx-a}|\\
+left---\fbox{\includegraphics[scale=.5, draft]{graphicx-a}}---right
+
+\end{document}

@@ -1,7 +1,5 @@
 # Engrafo
 
-**Note:** Engrafo is being rewritten, so we recommend not to not use the version in master. If you want to convert documents, see the "Usage" section below, where there are instructions on how to use the stable 1.1.0 version.
-
 Engrafo converts LaTeX documents into beautiful responsive web pages using [LaTeXML](https://dlmf.nist.gov/LaTeXML/).
 
 It is a set of stylesheets and scripts for LaTeXML output. It makes the design responsive so you can read it on phones, and adds various interactive bits like footnote tooltips.
@@ -13,6 +11,8 @@ It turns this sort of thing:
 Into this:
 
 <img src="docs/screenshot-screens.png">
+
+**Note:** Engrafo is being rewritten, so we recommend not to not use the version in master. [See this issue for more details.](https://github.com/arxiv-vanity/engrafo/issues/255) If you want to convert documents, see the "Usage" section below, where there are instructions on how to use the stable 1.1.0 version.
 
 ## Usage
 

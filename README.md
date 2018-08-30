@@ -72,21 +72,11 @@ Or particular tests by matching a string:
 
 ### Writing integration tests
 
-The integration tests in `tests/integration.test.js` render small LaTeX files and ensure they produce a particular HTML output. They also compare a screenshot of the output with a known good screenshot.
+The integration tests are LaTeX documents in `tests/integration` that are rendered to ensure they produce a particular output. The HTML output from LaTeXML is checked using [Jest snapshots](https://jestjs.io/docs/en/snapshot-testing), and the visual output is checked using [Percy](https://percy.io/).
 
-The integration tests use [Jest's](http://facebook.github.io/jest/) snapshotting feature.
+First, write a LaTeX document in `tests/integration`. If it is a test for a package, it normally has the same name as the package, as you can see from other documents in that directory.
 
-Each test renders a LaTeX file and ensures it matches a snapshot. If it does not match, Jest prints a pretty diff and gives you the option to automatically fix the test.
-
-First, write a test case describing in plain text what you are testing. For example, in `tests/integration.test.js`:
-
-```javascript
-test("bold text renders correctly", done => {
-  utils.expectBodyToMatchSnapshot("documents/bold.tex", done);
-});
-```
-
-Then, write `tests/documents/bold.tex`:
+For example, this could be a test in `tests/integration/textbf.tex`:
 
 ```latex
 \begin{document}
@@ -96,11 +86,13 @@ Then, write `tests/documents/bold.tex`:
 
 Now, run the test passing the `-u` option to write out a snapshot of what is rendered:
 
-    $ yarn test -t "bold text renders correctly" -u
+    $ yarn test -t "textbf.tex" -u
 
 Check the output looks correct in `tests/__snapshots__/integration.test.js.snap`. You can re-run that command without the `-u` option to ensure the test passes.
 
 The test will fail if the output changes in the future. If the change is expected, then you can simply re-run the test with `-u` to overwrite the snapshot and fix the test.
+
+The visual changes are harder to test locally. The easiest way is to open a pull request, then Percy will check for any changes against master.
 
 ## Code style
 

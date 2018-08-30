@@ -8,7 +8,7 @@ let percySnapshots = [],
 
 beforeAll(async () => {
   outputDir = await tmp.dir({ unsafeCleanup: true, dir: "/tmp" });
-  jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = 20000;
 });
 
 afterAll(async () => {

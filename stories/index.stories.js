@@ -42,6 +42,7 @@ storiesOf("Packages", module)
   .add("acronym.sty", createStory("acronym.sty.tex 1"))
   .add("algorithm2e", createStory("algorithm.tex 1"))
   .add("alltt.sty", createStory("alltt.sty.tex 1"))
+  .add("cleveref.sty", createStory("cleveref.sty.tex 1"))
   .add("color.sty", createStory("color.sty.tex 1"))
   .add("graphicx.sty", createStory("graphicx.sty.tex 1"))
   .add("listings", createStory("listings.tex 1"));

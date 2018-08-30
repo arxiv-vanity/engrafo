@@ -12,8 +12,8 @@
     "server": "LATEXML_DOCKER=true bin/engrafo-server",
     "test": "LATEXML_DOCKER=true yarn run test-inside-docker",
     "test-inside-docker": "yarn run prettier-check && jest",
-    "storybook": "start-storybook -p 6006 -s tests/documents/",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook -p 6006 -s tests/integration/",
+    "build-storybook": "build-storybook -s tests/integration/"
   },
   "dependencies": {
     "aws-sdk": "^2.295.0",

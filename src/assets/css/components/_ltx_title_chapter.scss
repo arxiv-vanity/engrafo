@@ -1,0 +1,26 @@
+@import "../fonts";
+@import "../media";
+
+.ltx_title_chapter {
+  font-family: $fontFamilyComputerModern;
+  font-weight: normal;
+  margin: 2em 0;
+  max-width: 13em; // TODO: put this in grid?
+
+  font-size: 20px;
+  line-height: 1.1;
+
+  @include media("<desktop", ">=tablet") {
+    font-size: 30px;
+    min-height: 2em;
+  }
+  @include media(">=desktop") {
+    font-size: 40px;
+    min-height: 2em;
+  }
+
+  .ltx_tag_chapter {
+    display: block;
+    margin-bottom: 1em;
+  }
+}

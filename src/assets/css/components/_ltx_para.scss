@@ -1,13 +1,6 @@
-.ltx_para {
+.ltx_p {
   @include font-body();
-
-  .ltx_p {
-    margin: 0;
-  }
-
-  // * {
-  //   text-indent: 0;
-  // }
+  margin: 0;
 }
 
 // This doesn't quite work right - sometimes things in previous .ltx_para

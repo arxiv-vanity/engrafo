@@ -24,6 +24,7 @@ body {
   @import "./components/ltx_framed";
   @import "./components/ltx_glossary";
   @import "./components/ltx_indent";
+  @import "./components/ltx_index";
   @import "./components/ltx_itemize";
   @import "./components/ltx_keywords";
   @import "./components/ltx_listing";
@@ -45,6 +46,7 @@ body {
   @import "./components/ltx_title_subparagraph";
   @import "./components/ltx_title_subsection";
   @import "./components/ltx_title_subsubsection";
+  @import "./components/ltx_TOC";
   @import "./components/ltx_verbatim";
 }
 

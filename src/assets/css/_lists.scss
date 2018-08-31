@@ -1,0 +1,13 @@
+@import "fonts";
+
+@mixin list() {
+  margin: 2em 0;
+  padding-left: 2.5em;
+
+  // Ensure bullets and numbers are in predictable style.
+  @include font-body();
+
+  & > li {
+    padding-left: 0.5em;
+  }
+}

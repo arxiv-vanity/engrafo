@@ -1,13 +1,5 @@
-@import "../fonts.scss";
+@import "../lists.scss";
 
 .ltx_enumerate {
-  margin: 2em 0;
-  padding-left: 2.5em;
-
-  // Ensure bullets and numbers are in predictable style.
-  @include font-body();
-
-  & > .ltx_item {
-    padding-left: 0.5em;
-  }
+  @include list();
 }

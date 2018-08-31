@@ -1,0 +1,13 @@
+/* Hack to simulate run-in! put class="ltx_runin" on a title or tag
+   for it to run-into the following text. */
+.ltx_runin {
+  display: inline;
+}
+.ltx_runin:after {
+  content: " ";
+}
+.ltx_runin + .ltx_para,
+.ltx_runin + .ltx_para p,
+.ltx_runin + p {
+  display: inline;
+}

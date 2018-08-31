@@ -1,0 +1,7 @@
+@import "../fonts";
+
+.ltx_proof {
+  .ltx_title_proof {
+    @include font-body();
+  }
+}

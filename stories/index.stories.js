@@ -47,6 +47,7 @@ storiesOf("Packages", module)
   .add("color.sty", createStory("color.sty.tex 1"))
   .add("graphicx.sty", createStory("graphicx.sty.tex 1"))
   .add("hyperref.sty", createStory("hyperref.sty.tex 1"))
+  .add("IEEEtran.cls", createStory("IEEEtran.cls.tex 1"))
   .add("listings.sty", createStory("listings.sty.tex 1"))
   .add("pifont.sty", createStory("pifont.sty.tex 1"))
   .add("report.cls", createStory("report.cls.tex 1"));

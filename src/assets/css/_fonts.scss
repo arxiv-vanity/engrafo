@@ -84,6 +84,22 @@ $fontFamilyMonospace: "Computer Modern Typewriter", monospace;
   }
 }
 
+@mixin font-caption() {
+  font-family: $fontFamilyComputerModern;
+  font-style: italic;
+  line-height: 1.5;
+
+  font-size: 12px !important;
+
+  @include media(">=tablet", "<desktop") {
+    font-size: 14px !important;
+  }
+
+  @include media(">=desktop") {
+    font-size: 16px !important;
+  }
+}
+
 @mixin font-monospace() {
   font-family: $fontFamilyMonospace;
 

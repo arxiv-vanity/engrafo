@@ -1041,6 +1041,124 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 </div>"
 `;
 
+exports[`array.sty.tex 1`] = `
+"<div class=\\"ltx_page_main\\">
+<div class=\\"ltx_page_content\\">
+<article class=\\"ltx_document\\">
+<section id=\\"S1\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">1 </span>New Column types</h2>
+
+<div id=\\"S1.p1\\" class=\\"ltx_para\\">
+<table class=\\"ltx_tabular ltx_align_middle\\">
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_justify ltx_border_l ltx_border_r ltx_border_t\\" style=\\"width:72.3pt;\\">Lorem ipsum dolor sit amet, consectetur adipisicing elit</td>
+<td class=\\"ltx_td ltx_align_justify ltx_align_middle ltx_border_r ltx_border_t\\" style=\\"width:72.3pt;\\">Lorem ipsum dolor sit amet, consectetur adipisicing elit</td>
+<td class=\\"ltx_td ltx_align_justify ltx_align_bottom ltx_border_r ltx_border_t\\" style=\\"width:72.3pt;\\">Lorem ipsum dolor sit amet, consectetur adipisicing elit</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_justify ltx_border_b ltx_border_l ltx_border_r ltx_border_t\\" style=\\"width:72.3pt;\\">Lorem ipsum dolor sit amet, consectetur adipisicing elit</td>
+<td class=\\"ltx_td ltx_align_justify ltx_align_middle ltx_border_b ltx_border_r ltx_border_t\\" style=\\"width:72.3pt;\\">Lorem ipsum dolor sit amet, consectetur adipisicing elit</td>
+<td class=\\"ltx_td ltx_align_justify ltx_align_bottom ltx_border_b ltx_border_r ltx_border_t\\" style=\\"width:72.3pt;\\">Lorem ipsum dolor sit amet, consectetur adipisicing elit</td>
+</tr>
+</tbody>
+</table>
+<table class=\\"ltx_tabular ltx_align_middle\\">
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left ltx_border_l ltx_border_r\\">[left]</td>
+<td class=\\"ltx_td ltx_align_center ltx_border_r\\">[center]</td>
+<td class=\\"ltx_td ltx_align_right ltx_border_r\\">[right]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id=\\"S2\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">2 </span>Math columns</h2>
+
+<div id=\\"S2.p1\\" class=\\"ltx_para\\">
+<table class=\\"ltx_tabular ltx_guessed_headers ltx_align_middle\\">
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_center ltx_th ltx_th_row\\">word</th>
+<td class=\\"ltx_td ltx_align_center\\"><span id=\\"S2.p1.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"a+b\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.298em; padding-bottom: 0.446em;\\">+</span></span><span class=\\"mjx-mi MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">b</span></span></span></span></span></span></span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_center ltx_th ltx_th_row\\">word</th>
+<td class=\\"ltx_td ltx_align_center\\"><span id=\\"S2.p1.m2\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"a+b\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.298em; padding-bottom: 0.446em;\\">+</span></span><span class=\\"mjx-mi MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">b</span></span></span></span></span></span></span></td>
+</tr>
+</tbody>
+</table>
+<table id=\\"S2.E1\\" class=\\"ltx_equation ltx_eqn_table\\">
+
+<tbody><tr class=\\"ltx_equation ltx_eqn_row ltx_align_baseline\\">
+<td class=\\"ltx_eqn_cell ltx_eqn_center_padleft\\"></td>
+<td class=\\"ltx_eqn_cell ltx_align_center\\"><span id=\\"S2.E1.m1\\" class=\\"ltx_DisplayMath\\"><span class=\\"mjpage mjpage__block\\"><span class=\\"mjx-chtml MJXc-display\\" style=\\"text-align: left;\\"><span class=\\"mjx-math\\" aria-label=\\" z=\\\\begin{array}[]{Cc}$word$&amp;a+b\\\\\\\\
+$word$&amp;a+b\\\\\\\\
+$$\\\\end{array} \\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em; padding-right: 0.003em;\\">z</span></span><span class=\\"mjx-mo MJXc-space3\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.077em; padding-bottom: 0.298em;\\">=</span></span><span class=\\"mjx-mtable MJXc-space3 MJXc-space3\\" style=\\"vertical-align: -1.65em; padding: 0px 0.167em;\\"><span class=\\"mjx-table\\"><span class=\\"mjx-mtr\\" style=\\"height: 1.2em;\\"><span class=\\"mjx-mtd\\" style=\\"padding: 0px 0.5em 0px 0px; width: 3.175em;\\"><span class=\\"mjx-mrow\\" style=\\"margin-top: -0.2em;\\"><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mo\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.446em; padding-bottom: 0.372em;\\">$</span></span></span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">w</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">o</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">r</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;\\">d</span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mo\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.446em; padding-bottom: 0.372em;\\">$</span></span></span></span><span class=\\"mjx-strut\\"></span></span></span><span class=\\"mjx-mtd\\" style=\\"padding: 0px 0px 0px 0.5em; width: 2.18em;\\"><span class=\\"mjx-mrow\\" style=\\"margin-top: -0.2em;\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.298em; padding-bottom: 0.446em;\\">+</span></span><span class=\\"mjx-mi MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">b</span></span><span class=\\"mjx-strut\\"></span></span></span></span><span class=\\"mjx-mtr\\" style=\\"height: 1.4em;\\"><span class=\\"mjx-mtd\\" style=\\"padding: 0.2em 0.5em 0px 0px;\\"><span class=\\"mjx-mrow\\" style=\\"margin-top: -0.2em;\\"><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mo\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.446em; padding-bottom: 0.372em;\\">$</span></span></span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">w</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">o</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">r</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;\\">d</span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mo\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.446em; padding-bottom: 0.372em;\\">$</span></span></span></span><span class=\\"mjx-strut\\"></span></span></span><span class=\\"mjx-mtd\\" style=\\"padding: 0.2em 0px 0px 0.5em;\\"><span class=\\"mjx-mrow\\" style=\\"margin-top: -0.2em;\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.298em; padding-bottom: 0.446em;\\">+</span></span><span class=\\"mjx-mi MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">b</span></span><span class=\\"mjx-strut\\"></span></span></span></span><span class=\\"mjx-mtr\\" style=\\"height: 1.2em;\\"><span class=\\"mjx-mtd\\" style=\\"padding: 0.2em 0.5em 0px 0px;\\"><span class=\\"mjx-mrow\\" style=\\"margin-top: -0.2em;\\"><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mo\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.446em; padding-bottom: 0.372em;\\">$</span></span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mo\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.446em; padding-bottom: 0.372em;\\">$</span></span></span></span><span class=\\"mjx-strut\\"></span></span></span><span class=\\"mjx-mtd\\" style=\\"padding: 0.2em 0px 0px 0.5em;\\"><span style=\\"margin-top: -0.2em;\\"></span></span></span></span></span></span></span></span></span></span></td>
+<td class=\\"ltx_eqn_cell ltx_eqn_center_padright\\"></td>
+<td rowspan=\\"1\\" class=\\"ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right\\"><span class=\\"ltx_tag ltx_tag_equation ltx_align_right\\">(1)</span></td>
+</tr>
+</tbody></table>
+</div>
+</section>
+<section id=\\"S3\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">3 </span>Special variations of hline</h2>
+
+<div id=\\"S3.p1\\" class=\\"ltx_para\\">
+<p class=\\"ltx_p\\">Tables
+
+<span class=\\"ltx_tabular ltx_align_top\\">
+<span class=\\"ltx_tbody\\">
+<span class=\\"ltx_tr\\">
+<span class=\\"ltx_td ltx_align_left\\">with no</span></span>
+<span class=\\"ltx_tr\\">
+<span class=\\"ltx_td ltx_align_left\\">hline</span></span>
+<span class=\\"ltx_tr\\">
+<span class=\\"ltx_td ltx_align_left\\">commands</span></span>
+<span class=\\"ltx_tr\\">
+<span class=\\"ltx_td ltx_align_left\\">used</span></span>
+</span>
+</span> versus
+tables
+
+<span class=\\"ltx_tabular ltx_align_top\\">
+<span class=\\"ltx_tbody\\">
+<span class=\\"ltx_tr\\">
+<span class=\\"ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t\\">with</span></span>
+<span class=\\"ltx_tr\\">
+<span class=\\"ltx_td ltx_align_left ltx_border_l ltx_border_r\\">hline</span></span>
+<span class=\\"ltx_tr\\">
+<span class=\\"ltx_td ltx_align_left ltx_border_b ltx_border_l ltx_border_r\\">commands</span></span>
+</span>
+</span> used.
+tables
+
+<span class=\\"ltx_tabular ltx_align_top\\">
+<span class=\\"ltx_tbody\\">
+<span class=\\"ltx_tr\\">
+<span class=\\"ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t\\">with</span></span>
+<span class=\\"ltx_tr\\">
+<span class=\\"ltx_td ltx_align_left ltx_border_l ltx_border_r\\">hline</span></span>
+<span class=\\"ltx_tr\\">
+<span class=\\"ltx_td ltx_align_left ltx_border_b ltx_border_l ltx_border_r\\">commands</span></span>
+</span>
+</span> used.
+</p>
+</div>
+</section>
+</article>
+</div>
+<footer class=\\"ltx_page_footer\\">
+<div class=\\"ltx_page_logo\\">Generated  by <a href=\\"http://dlmf.nist.gov/LaTeXML/\\">LaTeXML <img src=\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==\\" alt=\\"[LOGO]\\"></a>
+</div></footer>
+</div>"
+`;
+
 exports[`citations.tex 1`] = `
 "<div class=\\"ltx_page_main\\">
 <div class=\\"ltx_page_content\\">

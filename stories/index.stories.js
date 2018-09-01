@@ -52,6 +52,7 @@ storiesOf("Packages", module)
   .add("hyperref.sty", createStory("hyperref.sty.tex 1"))
   .add("IEEEtran.cls", createStory("IEEEtran.cls.tex 1"))
   .add("listings.sty", createStory("listings.sty.tex 1"))
+  .add("longtable.sty", createStory("longtable.sty.tex 1"))
   .add("pifont.sty", createStory("pifont.sty.tex 1"))
   .add("report.cls", createStory("report.cls.tex 1"))
   .add("supertabular.sty", createStory("supertabular.sty.tex 1"));

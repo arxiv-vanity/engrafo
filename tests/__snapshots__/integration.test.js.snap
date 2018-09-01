@@ -457,7 +457,74 @@ blocks to be tested separately. The latter are commonly indicated as
 </div>"
 `;
 
-exports[`algorithm.tex 1`] = `
+exports[`algorithm.sty.tex 1`] = `
+"<div class=\\"ltx_page_main\\">
+<div class=\\"ltx_page_content\\">
+<article class=\\"ltx_document\\">
+<div id=\\"p1\\" class=\\"ltx_para\\">
+<div class=\\"ltx_listing ltx_listing\\">
+<div id=\\"algx1.l1\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"font-size:80%;\\">1:</span></span><span class=\\"ltx_text ltx_font_bold\\">procedure</span>&nbsp;<span class=\\"ltx_text ltx_font_smallcaps\\">Proc</span>(<span id=\\"algx1.l1.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"a,b\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span><span class=\\"mjx-mo\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"margin-top: -0.144em; padding-bottom: 0.519em;\\">,</span></span><span class=\\"mjx-mi MJXc-space1\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">b</span></span></span></span></span></span></span>)
+
+</div>
+<div id=\\"algx1.l2\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"font-size:80%;\\">2:</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\\"ltx_text ltx_font_bold\\">return</span> 7
+
+</div>
+<div id=\\"algx1.l3\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"font-size:80%;\\">3:</span></span><span class=\\"ltx_text ltx_font_bold\\">end</span>&nbsp;<span class=\\"ltx_text ltx_font_bold\\">procedure</span>
+</div>
+</div>
+</div>
+<figure id=\\"alg1\\" class=\\"ltx_float ltx_float_algorithm ltx_framed_top\\">
+
+<div class=\\"ltx_listing ltx_listing\\">
+<div id=\\"alg1.l1\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"font-size:80%;\\">1:</span></span><span class=\\"ltx_text ltx_font_bold\\">procedure</span>&nbsp;<span class=\\"ltx_text ltx_font_smallcaps\\">Euclid</span>(<span id=\\"alg1.l1.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"a,b\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span><span class=\\"mjx-mo\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"margin-top: -0.144em; padding-bottom: 0.519em;\\">,</span></span><span class=\\"mjx-mi MJXc-space1\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">b</span></span></span></span></span></span></span>)<span class=\\"ltx_text\\" style=\\"float:right;\\"><span id=\\"alg1.l1.m2\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"\\\\triangleright\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mo\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.225em; padding-bottom: 0.372em;\\">▹</span></span></span></span></span></span></span> The g.c.d. of a and b
+</span>
+</div>
+<div id=\\"alg1.l2\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"font-size:80%;\\">2:</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id=\\"alg1.l2.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"r\\\\leftarrow a\\\\bmod b\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">r</span></span><span class=\\"mjx-mo MJXc-space3\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.225em; padding-bottom: 0.372em;\\">←</span></span><span class=\\"mjx-mi MJXc-space3\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span><span class=\\"mjx-mo\\" style=\\"padding-left: 0.278em; padding-right: 0.278em;\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">mod</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">b</span></span></span></span></span></span></span>
+
+</div>
+<div id=\\"alg1.l3\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"font-size:80%;\\">3:</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\\"ltx_text ltx_font_bold\\">while</span>&nbsp;<span id=\\"alg1.l3.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"r\\\\not=0\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">r</span></span><span class=\\"mjx-mo MJXc-space3\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.446em; padding-bottom: 0.593em;\\">≠</span></span><span class=\\"mjx-mn MJXc-space3\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">0</span></span></span></span></span></span></span>&nbsp;<span class=\\"ltx_text ltx_font_bold\\">do<span class=\\"ltx_text ltx_font_medium\\" style=\\"float:right;\\"><span id=\\"alg1.l3.m2\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"\\\\triangleright\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mo\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.225em; padding-bottom: 0.372em;\\">▹</span></span></span></span></span></span></span> We have the answer if r is 0
+</span></span>
+</div>
+<div id=\\"alg1.l4\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"font-size:80%;\\">4:</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id=\\"alg1.l4.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"a\\\\leftarrow b\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span><span class=\\"mjx-mo MJXc-space3\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.225em; padding-bottom: 0.372em;\\">←</span></span><span class=\\"mjx-mi MJXc-space3\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">b</span></span></span></span></span></span></span>
+
+</div>
+<div id=\\"alg1.l5\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"font-size:80%;\\">5:</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id=\\"alg1.l5.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"b\\\\leftarrow r\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">b</span></span><span class=\\"mjx-mo MJXc-space3\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.225em; padding-bottom: 0.372em;\\">←</span></span><span class=\\"mjx-mi MJXc-space3\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">r</span></span></span></span></span></span></span>
+
+</div>
+<div id=\\"alg1.l6\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"font-size:80%;\\">6:</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id=\\"alg1.l6.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"r\\\\leftarrow a\\\\bmod b\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">r</span></span><span class=\\"mjx-mo MJXc-space3\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.225em; padding-bottom: 0.372em;\\">←</span></span><span class=\\"mjx-mi MJXc-space3\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span><span class=\\"mjx-mo\\" style=\\"padding-left: 0.278em; padding-right: 0.278em;\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">mod</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">b</span></span></span></span></span></span></span>
+
+</div>
+<div id=\\"alg1.l7\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"font-size:80%;\\">7:</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\\"ltx_text ltx_font_bold\\">end</span>&nbsp;<span class=\\"ltx_text ltx_font_bold\\">while</span>
+
+</div>
+<div id=\\"alg1.l8\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"font-size:80%;\\">8:</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\\"ltx_text ltx_font_bold\\">return</span> <span id=\\"alg1.l8.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"b\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">b</span></span></span></span></span></span></span><span class=\\"ltx_text\\" style=\\"float:right;\\"><span id=\\"alg1.l8.m2\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"\\\\triangleright\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mo\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.225em; padding-bottom: 0.372em;\\">▹</span></span></span></span></span></span></span> The gcd is b
+</span>
+</div>
+<div id=\\"alg1.l9\\" class=\\"ltx_listingline\\">
+<span class=\\"ltx_tag ltx_tag_listingline\\"><span class=\\"ltx_text\\" style=\\"font-size:80%;\\">9:</span></span><span class=\\"ltx_text ltx_font_bold\\">end</span>&nbsp;<span class=\\"ltx_text ltx_font_bold\\">procedure</span>
+</div>
+</div>
+<figcaption class=\\"ltx_caption\\"><span class=\\"ltx_tag ltx_tag_float\\"><span class=\\"ltx_text ltx_font_bold\\">Algorithm 1</span> </span> Euclid’s algorithm</figcaption></figure>
+</article>
+</div>
+<footer class=\\"ltx_page_footer\\">
+<div class=\\"ltx_page_logo\\">Generated  by <a href=\\"http://dlmf.nist.gov/LaTeXML/\\">LaTeXML <img src=\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==\\" alt=\\"[LOGO]\\"></a>
+</div></footer>
+</div>"
+`;
+
+exports[`algorithm2e.sty.tex 1`] = `
 "<div class=\\"ltx_page_main\\">
 <div class=\\"ltx_page_content\\">
 <article class=\\"ltx_document\\">

@@ -4026,6 +4026,217 @@ The manual tells how to make other symbols.</p>
 </div>"
 `;
 
+exports[`supertabular.sty.tex 1`] = `
+"<div class=\\"ltx_page_main\\">
+<div class=\\"ltx_page_content\\">
+<article class=\\"ltx_document\\">
+<figure id=\\"S0.T1\\" class=\\"ltx_table\\">
+
+<table class=\\"ltx_tabular\\">
+<thead class=\\"ltx_thead\\">
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_column\\"><span class=\\"ltx_text ltx_font_bold\\">Entity</span></th>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_column\\"><span class=\\"ltx_text ltx_font_bold\\">Unicode Name</span></th>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_column\\"><span class=\\"ltx_text ltx_font_bold\\">Unicode</span></th>
+</tr>
+</thead>
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left ltx_border_t\\">
+alpha</td>
+<td class=\\"ltx_td ltx_align_left ltx_border_t\\">GREEK SMALL LETTER ALPHA</td>
+<td class=\\"ltx_td ltx_align_left ltx_border_t\\">03B1</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\">beta</td>
+<td class=\\"ltx_td ltx_align_left\\">GREEK SMALL LETTER BETA</td>
+<td class=\\"ltx_td ltx_align_left\\">03B2</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\">chi</td>
+<td class=\\"ltx_td ltx_align_left\\">GREEK SMALL LETTER CHI</td>
+<td class=\\"ltx_td ltx_align_left\\">03C7</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\">Delta</td>
+<td class=\\"ltx_td ltx_align_left\\">GREEK CAPITAL LETTER DELTA</td>
+<td class=\\"ltx_td ltx_align_left\\">0394</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\">delta</td>
+<td class=\\"ltx_td ltx_align_left\\">GREEK SMALL LETTER DELTA</td>
+<td class=\\"ltx_td ltx_align_left\\">03B4</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\">epsi</td>
+<td class=\\"ltx_td ltx_align_left\\">GREEK SMALL LETTER EPSILON</td>
+<td class=\\"ltx_td ltx_align_left\\">03B5</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left ltx_border_b\\">epsis</td>
+<td class=\\"ltx_td ltx_align_left ltx_border_b\\">GREEK LUNATE EPSILON SYMBOL</td>
+<td class=\\"ltx_td ltx_align_left ltx_border_b\\">03F5</td>
+</tr>
+</tbody>
+</table>
+<figcaption class=\\"ltx_caption\\"><span class=\\"ltx_tag ltx_tag_table\\">Table 1: </span>The ISOGRK3 entity set</figcaption></figure>
+<figure id=\\"S0.T2\\" class=\\"ltx_table\\">
+
+<table class=\\"ltx_tabular\\" style=\\"width:433.6pt;\\">
+<thead class=\\"ltx_thead\\">
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_column\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\"><span class=\\"ltx_text ltx_font_bold\\">Entity</span></th>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_column\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\"><span class=\\"ltx_text ltx_font_bold\\">Unicode Name</span></th>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_column\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\"><span class=\\"ltx_text ltx_font_bold\\">Unicode</span></th>
+</tr>
+</thead>
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left ltx_border_t\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">
+alpha</td>
+<td class=\\"ltx_td ltx_align_left ltx_border_t\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">GREEK SMALL LETTER ALPHA</td>
+<td class=\\"ltx_td ltx_align_left ltx_border_t\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">03B1</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">beta</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">GREEK SMALL LETTER BETA</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">03B2</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">chi</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">GREEK SMALL LETTER CHI</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">03C7</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">Delta</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">GREEK CAPITAL LETTER DELTA</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">0394</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">delta</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">GREEK SMALL LETTER DELTA</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">03B4</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">epsi</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">GREEK SMALL LETTER EPSILON</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">03B5</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left ltx_border_b\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">epsis</td>
+<td class=\\"ltx_td ltx_align_left ltx_border_b\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">GREEK LUNATE EPSILON SYMBOL</td>
+<td class=\\"ltx_td ltx_align_left ltx_border_b\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">03F5</td>
+</tr>
+</tbody>
+</table>
+<figcaption class=\\"ltx_caption\\"><span class=\\"ltx_tag ltx_tag_table\\">Table 2: </span>The ISOGRK3 entity set, wider</figcaption></figure>
+<figure id=\\"tab1\\" class=\\"ltx_table\\">
+<table class=\\"ltx_tabular\\">
+<thead class=\\"ltx_thead\\">
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_column\\"><span class=\\"ltx_text ltx_font_bold\\">Entity</span></th>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_column\\"><span class=\\"ltx_text ltx_font_bold\\">Unicode Name</span></th>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_column\\"><span class=\\"ltx_text ltx_font_bold\\">Unicode</span></th>
+</tr>
+</thead>
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left ltx_border_t\\">
+alpha</td>
+<td class=\\"ltx_td ltx_align_left ltx_border_t\\">GREEK SMALL LETTER ALPHA</td>
+<td class=\\"ltx_td ltx_align_left ltx_border_t\\">03B1</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\">beta</td>
+<td class=\\"ltx_td ltx_align_left\\">GREEK SMALL LETTER BETA</td>
+<td class=\\"ltx_td ltx_align_left\\">03B2</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\">chi</td>
+<td class=\\"ltx_td ltx_align_left\\">GREEK SMALL LETTER CHI</td>
+<td class=\\"ltx_td ltx_align_left\\">03C7</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\">Delta</td>
+<td class=\\"ltx_td ltx_align_left\\">GREEK CAPITAL LETTER DELTA</td>
+<td class=\\"ltx_td ltx_align_left\\">0394</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\">delta</td>
+<td class=\\"ltx_td ltx_align_left\\">GREEK SMALL LETTER DELTA</td>
+<td class=\\"ltx_td ltx_align_left\\">03B4</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\">epsi</td>
+<td class=\\"ltx_td ltx_align_left\\">GREEK SMALL LETTER EPSILON</td>
+<td class=\\"ltx_td ltx_align_left\\">03B5</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left ltx_border_b\\">epsis</td>
+<td class=\\"ltx_td ltx_align_left ltx_border_b\\">GREEK LUNATE EPSILON SYMBOL</td>
+<td class=\\"ltx_td ltx_align_left ltx_border_b\\">03F5</td>
+</tr>
+</tbody>
+</table>
+</figure>
+<figure id=\\"S0.T3\\" class=\\"ltx_table\\">
+
+<table class=\\"ltx_tabular\\" style=\\"width:433.6pt;\\">
+<thead class=\\"ltx_thead\\">
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_column\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\"><span class=\\"ltx_text ltx_font_bold\\">Entity</span></th>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_column\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\"><span class=\\"ltx_text ltx_font_bold\\">Unicode Name</span></th>
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_column\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\"><span class=\\"ltx_text ltx_font_bold\\">Unicode</span></th>
+</tr>
+</thead>
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left ltx_border_t\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">
+alpha</td>
+<td class=\\"ltx_td ltx_align_left ltx_border_t\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">GREEK SMALL LETTER ALPHA</td>
+<td class=\\"ltx_td ltx_align_left ltx_border_t\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">03B1</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">beta</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">GREEK SMALL LETTER BETA</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">03B2</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">chi</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">GREEK SMALL LETTER CHI</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">03C7</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">Delta</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">GREEK CAPITAL LETTER DELTA</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">0394</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">delta</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">GREEK SMALL LETTER DELTA</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">03B4</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">epsi</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">GREEK SMALL LETTER EPSILON</td>
+<td class=\\"ltx_td ltx_align_left\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">03B5</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_left ltx_border_b\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">epsis</td>
+<td class=\\"ltx_td ltx_align_left ltx_border_b\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">GREEK LUNATE EPSILON SYMBOL</td>
+<td class=\\"ltx_td ltx_align_left ltx_border_b\\" style=\\"padding-left:20.0pt;padding-right:20.0pt;\\">03F5</td>
+</tr>
+</tbody>
+</table>
+<figcaption class=\\"ltx_caption\\"><span class=\\"ltx_tag ltx_tag_table\\">Table 3: </span>Another table in a minipage</figcaption></figure>
+</article>
+</div>
+<footer class=\\"ltx_page_footer\\">
+<div class=\\"ltx_page_logo\\">Generated  by <a href=\\"http://dlmf.nist.gov/LaTeXML/\\">LaTeXML <img src=\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==\\" alt=\\"[LOGO]\\"></a>
+</div></footer>
+</div>"
+`;
+
 exports[`tables.tex 1`] = `
 "<div class=\\"ltx_page_main\\">
 <div class=\\"ltx_page_content\\">

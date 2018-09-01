@@ -1662,6 +1662,242 @@ vs. <span class=\\"ltx_text\\" style=\\"color:#03FF7A;\\">JungleGreen</span>
 </div>"
 `;
 
+exports[`colortbl.sty.tex 1`] = `
+"<div class=\\"ltx_page_main\\">
+<div class=\\"ltx_page_content\\">
+<article class=\\"ltx_document\\">
+<section id=\\"S1\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">1 </span>Basics</h2>
+
+<div id=\\"S1.p1\\" class=\\"ltx_para ltx_noindent\\">
+<table class=\\"ltx_tabular ltx_guessed_headers ltx_align_middle\\">
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r\\">one</th>
+<td class=\\"ltx_td ltx_align_center ltx_border_r\\">two</td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r\\">three</th>
+<td class=\\"ltx_td ltx_align_center ltx_border_r\\">four</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id=\\"S1.p2\\" class=\\"ltx_para ltx_noindent\\">
+<table class=\\"ltx_tabular ltx_guessed_headers ltx_align_middle\\">
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r\\" style=\\"background-color:#CCCCCC;\\"><span class=\\"ltx_text\\" style=\\"background-color:#CCCCCC;\\">one</span></th>
+<td class=\\"ltx_td ltx_align_center ltx_border_r\\" style=\\"background-color:#333333;\\"><span class=\\"ltx_text\\" style=\\"color:#FFFFFF;background-color:#333333;\\">two</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r\\" style=\\"background-color:#CCCCCC;\\"><span class=\\"ltx_text\\" style=\\"background-color:#CCCCCC;\\">three</span></th>
+<td class=\\"ltx_td ltx_align_center ltx_border_r\\" style=\\"background-color:#333333;\\"><span class=\\"ltx_text\\" style=\\"color:#FFFFFF;background-color:#333333;\\">four</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id=\\"S2\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">2 </span>Complex</h2>
+
+<div id=\\"S2.p1\\" class=\\"ltx_para ltx_noindent\\">
+<table class=\\"ltx_tabular ltx_guessed_headers ltx_align_middle\\">
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r\\" style=\\"background-color:#CCCCCC;\\"><span class=\\"ltx_text\\" style=\\"background-color:#CCCCCC;\\">one</span></th>
+<td class=\\"ltx_td ltx_align_center ltx_border_r\\" style=\\"background-color:#333333;\\"><span class=\\"ltx_text\\" style=\\"color:#FFFFFF;background-color:#333333;\\">two</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r\\" style=\\"background-color:#CCCCCC;\\"><span class=\\"ltx_text\\" style=\\"background-color:#CCCCCC;\\">three</span></th>
+<td class=\\"ltx_td ltx_align_center ltx_border_r\\" style=\\"background-color:#333333;\\"><span class=\\"ltx_text\\" style=\\"color:#FFFFFF;background-color:#333333;\\">four</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure id=\\"S2.T1\\" class=\\"ltx_table\\">
+<table class=\\"ltx_tabular\\">
+<thead class=\\"ltx_thead\\">
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_center ltx_th ltx_th_column\\" style=\\"background-color:#00FFFF;\\" colspan=\\"3\\"><span class=\\"ltx_text ltx_font_bold\\" style=\\"font-size:120%;background-color:#00FFFF;\\">A long table example</span></th>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_center ltx_th ltx_th_column\\" style=\\"background-color:#FF00FF;\\" colspan=\\"2\\"><span class=\\"ltx_text\\" style=\\"color:#FFFFFF;background-color:#FF00FF;\\">First two columns</span></th>
+<th class=\\"ltx_td ltx_align_center ltx_th ltx_th_column\\" style=\\"background-color:#FF00FF;\\"><span class=\\"ltx_text\\" style=\\"color:#FFFFFF;background-color:#FF00FF;\\">Third column</span></th>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_center ltx_th ltx_th_column\\" style=\\"background-color:#FF00FF;\\" colspan=\\"2\\"><span class=\\"ltx_text\\" style=\\"color:#FFFFFF;background-color:#FF00FF;\\">p-type</span></th>
+<th class=\\"ltx_td ltx_align_center ltx_th ltx_th_column\\" style=\\"background-color:#FF00FF;\\"><span class=\\"ltx_text\\" style=\\"color:#FFFFFF;background-color:#FF00FF;\\">D-type (<span class=\\"ltx_text ltx_font_sansserif\\">dcolumn</span>)</span></th>
+</tr>
+</thead>
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:56.9pt;background-color:#FF0000;\\"><span class=\\"ltx_text ltx_align_left ltx_wrap\\" style=\\"color:#FFFFFF;background-color:#FF0000;\\">P-column</span></td>
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:85.4pt;background-color:#0000FF;\\"><span class=\\"ltx_text ltx_align_left ltx_wrap\\" style=\\"color:#FFFF00;background-color:#0000FF;\\">and another one</span></td>
+<td class=\\"ltx_td ltx_align_char:⋅\\" style=\\"background-color:#FFFF00;text-align:&quot;⋅&quot;;\\"><span id=\\"S2.T1.m1\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"\\\\pagecolor{yellow}12\\\\cdot 34\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\pagecolor</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.006em;\\">y</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">o</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">w</span></span></span></span><span class=\\"mjx-mn\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">12</span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.004em; padding-bottom: 0.298em;\\">⋅</span></span><span class=\\"mjx-mn MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">34</span></span></span></span></span></span></span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:56.9pt;background-color:#CCCCCC;\\"><span class=\\"ltx_text\\" style=\\"background-color:#CCCCCC;\\">Total</span></td>
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:85.4pt;background-color:#CCCCCC;\\"><span class=\\"ltx_text\\" style=\\"background-color:#CCCCCC;\\">(wrong)</span></td>
+<td class=\\"ltx_td ltx_align_char:⋅\\" style=\\"background-color:#CCCCCC;text-align:&quot;⋅&quot;;\\"><span id=\\"S2.T1.m2\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"\\\\pagecolor[gray]{0.8}100\\\\cdot 6\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\pagecolor</span></span></span><span class=\\"mjx-mo\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.446em; padding-bottom: 0.593em;\\">[</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.003em;\\">g</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">r</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.006em;\\">y</span></span><span class=\\"mjx-mo\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.446em; padding-bottom: 0.593em;\\">]</span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mn\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">0.8</span></span></span></span><span class=\\"mjx-mn\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">100</span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.004em; padding-bottom: 0.298em;\\">⋅</span></span><span class=\\"mjx-mn MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">6</span></span></span></span></span></span></span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:56.9pt;background-color:#FF0000;\\"><span class=\\"ltx_text ltx_align_left ltx_wrap\\" style=\\"color:#FFFFFF;background-color:#FF0000;\\">Some long text in the first column</span></td>
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:85.4pt;background-color:#0000FF;\\"><span class=\\"ltx_text ltx_align_left ltx_wrap\\" style=\\"color:#FFFF00;background-color:#0000FF;\\">bbb</span></td>
+<td class=\\"ltx_td ltx_align_char:⋅\\" style=\\"background-color:#FFFF00;text-align:&quot;⋅&quot;;\\"><span id=\\"S2.T1.m3\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"\\\\pagecolor{yellow}1\\\\cdot 2\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\pagecolor</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.006em;\\">y</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">o</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">w</span></span></span></span><span class=\\"mjx-mn\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">1</span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.004em; padding-bottom: 0.298em;\\">⋅</span></span><span class=\\"mjx-mn MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">2</span></span></span></span></span></span></span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:56.9pt;background-color:#FF0000;\\"><span class=\\"ltx_text ltx_align_left ltx_wrap\\" style=\\"color:#FFFFFF;background-color:#FF0000;\\">aaa</span></td>
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:85.4pt;background-color:#0000FF;\\"><span class=\\"ltx_text ltx_align_left ltx_wrap\\" style=\\"color:#FFFF00;background-color:#0000FF;\\">and some long text in the second column</span></td>
+<td class=\\"ltx_td ltx_align_char:⋅\\" style=\\"background-color:#FFFF00;text-align:&quot;⋅&quot;;\\"><span id=\\"S2.T1.m4\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"\\\\pagecolor{yellow}1\\\\cdot 345\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\pagecolor</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.006em;\\">y</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">o</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">w</span></span></span></span><span class=\\"mjx-mn\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">1</span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.004em; padding-bottom: 0.298em;\\">⋅</span></span><span class=\\"mjx-mn MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">345</span></span></span></span></span></span></span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:56.9pt;background-color:#CCCCCC;\\"><span class=\\"ltx_text\\" style=\\"background-color:#CCCCCC;\\">Total</span></td>
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:85.4pt;background-color:#CCCCCC;\\"><span class=\\"ltx_text\\" style=\\"background-color:#CCCCCC;\\">(wrong)</span></td>
+<td class=\\"ltx_td ltx_align_char:⋅\\" style=\\"background-color:#CCCCCC;text-align:&quot;⋅&quot;;\\"><span id=\\"S2.T1.m5\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"\\\\pagecolor[gray]{0.8}100\\\\cdot 6\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\pagecolor</span></span></span><span class=\\"mjx-mo\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.446em; padding-bottom: 0.593em;\\">[</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.003em;\\">g</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">r</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">a</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.006em;\\">y</span></span><span class=\\"mjx-mo\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.446em; padding-bottom: 0.593em;\\">]</span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mn\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">0.8</span></span></span></span><span class=\\"mjx-mn\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">100</span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.004em; padding-bottom: 0.298em;\\">⋅</span></span><span class=\\"mjx-mn MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">6</span></span></span></span></span></span></span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:56.9pt;background-color:#FF0000;\\"><span class=\\"ltx_text ltx_align_left ltx_wrap\\" style=\\"color:#FFFFFF;background-color:#FF0000;\\">aaa</span></td>
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:85.4pt;background-color:#0000FF;\\"><span class=\\"ltx_text ltx_align_left ltx_wrap\\" style=\\"color:#FFFF00;background-color:#0000FF;\\">bbb</span></td>
+<td class=\\"ltx_td ltx_align_char:⋅\\" style=\\"background-color:#FFFF00;text-align:&quot;⋅&quot;;\\"><span id=\\"S2.T1.m6\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"\\\\pagecolor{yellow}1\\\\cdot 345\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\pagecolor</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.006em;\\">y</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">o</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">w</span></span></span></span><span class=\\"mjx-mn\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">1</span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.004em; padding-bottom: 0.298em;\\">⋅</span></span><span class=\\"mjx-mn MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">345</span></span></span></span></span></span></span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:56.9pt;background-color:#FF0000;\\"><span class=\\"ltx_text ltx_align_left ltx_wrap\\" style=\\"color:#FFFFFF;background-color:#FF0000;\\">Note that the coloured rules in all columns stretch to accomodate
+large entries in one column.</span></td>
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:85.4pt;background-color:#0000FF;\\"><span class=\\"ltx_text ltx_align_left ltx_wrap\\" style=\\"color:#FFFF00;background-color:#0000FF;\\">bbb</span></td>
+<td class=\\"ltx_td ltx_align_char:⋅\\" style=\\"background-color:#FFFF00;text-align:&quot;⋅&quot;;\\"><span id=\\"S2.T1.m7\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"\\\\pagecolor{yellow}1\\\\cdot 345\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\pagecolor</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.006em;\\">y</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">o</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">w</span></span></span></span><span class=\\"mjx-mn\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">1</span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.004em; padding-bottom: 0.298em;\\">⋅</span></span><span class=\\"mjx-mn MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">345</span></span></span></span></span></span></span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:56.9pt;background-color:#FF0000;\\"><span class=\\"ltx_text ltx_align_left ltx_wrap\\" style=\\"color:#FFFFFF;background-color:#FF0000;\\">aaa</span></td>
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:85.4pt;background-color:#0000FF;\\"><span class=\\"ltx_text ltx_align_left ltx_wrap\\" style=\\"color:#FFFF00;background-color:#0000FF;\\">bbb</span></td>
+<td class=\\"ltx_td ltx_align_char:⋅\\" style=\\"background-color:#FFFF00;text-align:&quot;⋅&quot;;\\"><span id=\\"S2.T1.m8\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"\\\\pagecolor{yellow}100\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\pagecolor</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.006em;\\">y</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">o</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">w</span></span></span></span><span class=\\"mjx-mn\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">100</span></span></span></span></span></span></span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:56.9pt;background-color:#FF0000;\\"><span class=\\"ltx_text ltx_align_left ltx_wrap\\" style=\\"color:#FFFFFF;background-color:#FF0000;\\">aaa</span></td>
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:85.4pt;background-color:#0000FF;\\"><span class=\\"ltx_text ltx_align_left ltx_wrap\\" style=\\"color:#FFFF00;background-color:#0000FF;\\">Depending on your driver you may get unsightly gaps or lines
+where the ‘screens’ used to produce different shapes interact
+badly. You may want to cause adjacent panels of the same colour by
+specifying a larger overhang
+or by adding some negative space (in a ”“noalign” between rows.</span></td>
+<td class=\\"ltx_td ltx_align_char:⋅\\" style=\\"background-color:#FFFF00;text-align:&quot;⋅&quot;;\\"><span id=\\"S2.T1.m9\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"\\\\pagecolor{yellow}12\\\\cdot 4\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\pagecolor</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.006em;\\">y</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">o</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">w</span></span></span></span><span class=\\"mjx-mn\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">12</span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.004em; padding-bottom: 0.298em;\\">⋅</span></span><span class=\\"mjx-mn MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">4</span></span></span></span></span></span></span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:56.9pt;background-color:#FF0000;\\"><span class=\\"ltx_text ltx_align_left ltx_wrap\\" style=\\"color:#FFFFFF;background-color:#FF0000;\\">aaa</span></td>
+<td class=\\"ltx_td ltx_align_justify\\" style=\\"width:85.4pt;background-color:#0000FF;\\"><span class=\\"ltx_text ltx_align_left ltx_wrap\\" style=\\"color:#FFFF00;background-color:#0000FF;\\">bbb</span></td>
+<td class=\\"ltx_td ltx_align_char:⋅\\" style=\\"background-color:#FFFF00;text-align:&quot;⋅&quot;;\\"><span id=\\"S2.T1.m10\\" class=\\"ltx_Math\\"><span class=\\"mjpage\\"><span class=\\"mjx-chtml\\"><span class=\\"mjx-math\\" aria-label=\\"\\\\pagecolor{yellow}45\\\\cdot 3\\"><span class=\\"mjx-mrow\\" aria-hidden=\\"true\\"><span class=\\"mjx-mtext\\" style=\\"color: red;\\"><span class=\\"mjx-char\\" style=\\"padding-top: 0.519em; padding-bottom: 0.225em;\\"><span class=\\"mjx-charbox MJXc-font-inherit\\" style=\\"font-size: 100%; padding-bottom: 0.3em;\\">\\\\pagecolor</span></span></span><span class=\\"mjx-texatom\\"><span class=\\"mjx-mrow\\"><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.006em;\\">y</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">e</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.446em; padding-bottom: 0.298em;\\">l</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">o</span></span><span class=\\"mjx-mi\\"><span class=\\"mjx-char MJXc-TeX-math-I\\" style=\\"padding-top: 0.225em; padding-bottom: 0.298em;\\">w</span></span></span></span><span class=\\"mjx-mn\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">45</span></span><span class=\\"mjx-mo MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.004em; padding-bottom: 0.298em;\\">⋅</span></span><span class=\\"mjx-mn MJXc-space2\\"><span class=\\"mjx-char MJXc-TeX-main-R\\" style=\\"padding-top: 0.372em; padding-bottom: 0.372em;\\">3</span></span></span></span></span></span></span></td>
+</tr>
+</tbody>
+<tfoot class=\\"ltx_tfoot\\">
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_center ltx_th ltx_th_column\\" style=\\"background-color:#00FFFF;\\" colspan=\\"3\\"><span class=\\"ltx_text ltx_font_bold\\" style=\\"font-size:120%;background-color:#00FFFF;\\">The End</span></th>
+</tr>
+</tfoot>
+</table>
+</figure>
+</section>
+<section id=\\"S3\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">3 </span>Row &amp; Cell Colors</h2>
+
+<div id=\\"S3.p1\\" class=\\"ltx_para ltx_noindent\\">
+<table class=\\"ltx_tabular ltx_guessed_headers ltx_align_middle\\">
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r\\">one</th>
+<td class=\\"ltx_td ltx_align_center ltx_border_r\\">two</td>
+</tr>
+<tr class=\\"ltx_tr\\" style=\\"background-color:#FF0000;\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF0000;\\">
+three</span></th>
+<td class=\\"ltx_td ltx_align_center ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF0000;\\">four</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id=\\"S3.p2\\" class=\\"ltx_para ltx_noindent\\">
+<table class=\\"ltx_tabular ltx_guessed_headers ltx_align_middle\\">
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r\\">one</th>
+<td class=\\"ltx_td ltx_align_center ltx_border_r\\" style=\\"background-color:#0000FF;\\"><span class=\\"ltx_text\\" style=\\"background-color:#0000FF;\\">two</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r\\">three</th>
+<td class=\\"ltx_td ltx_align_center ltx_border_r\\" style=\\"background-color:#0000FF;\\"><span class=\\"ltx_text\\" style=\\"background-color:#0000FF;\\">four</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id=\\"S3.p3\\" class=\\"ltx_para ltx_noindent\\">
+<table class=\\"ltx_tabular ltx_guessed_headers ltx_align_middle\\">
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r\\">one</th>
+<td class=\\"ltx_td ltx_align_center ltx_border_r\\" style=\\"background-color:#0000FF;\\"><span class=\\"ltx_text\\" style=\\"background-color:#0000FF;\\">two</span></td>
+</tr>
+<tr class=\\"ltx_tr\\" style=\\"background-color:#FF0000;\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF0000;\\">
+three</span></th>
+<td class=\\"ltx_td ltx_align_center ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF0000;\\">four</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id=\\"S3.p4\\" class=\\"ltx_para ltx_noindent\\">
+<table class=\\"ltx_tabular ltx_guessed_headers ltx_align_middle\\">
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r\\">one</th>
+<td class=\\"ltx_td ltx_align_center ltx_border_r\\" style=\\"background-color:#0000FF;\\"><span class=\\"ltx_text\\" style=\\"background-color:#0000FF;\\">two</span></td>
+</tr>
+<tr class=\\"ltx_tr\\" style=\\"background-color:#FF0000;\\">
+<th class=\\"ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r\\"><span class=\\"ltx_text\\" style=\\"background-color:#FF0000;\\">
+three</span></th>
+<td class=\\"ltx_td ltx_align_center ltx_border_r\\" style=\\"background-color:#00FF00;\\"><span class=\\"ltx_text\\" style=\\"background-color:#00FF00;\\">four</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id=\\"S4\\" class=\\"ltx_section\\">
+<h2 class=\\"ltx_title ltx_title_section\\">
+<span class=\\"ltx_tag ltx_tag_section\\">4 </span>Gaudy</h2>
+
+<div id=\\"S4.p1\\" class=\\"ltx_para\\">
+<table class=\\"ltx_tabular ltx_align_middle\\">
+<tbody class=\\"ltx_tbody\\">
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_center ltx_border_ll ltx_border_t\\" style=\\"background-color:#E6E6E6;\\"><span class=\\"ltx_text\\" style=\\"background-color:#E6E6E6;\\">Richard</span></td>
+<td class=\\"ltx_td ltx_align_center ltx_border_t\\" style=\\"background-color:#E6E6E6;\\"><span class=\\"ltx_text\\" style=\\"background-color:#E6E6E6;\\">of</span></td>
+<td class=\\"ltx_td ltx_align_center ltx_border_t\\" style=\\"background-color:#E6E6E6;\\"><span class=\\"ltx_text\\" style=\\"background-color:#E6E6E6;\\">York</span></td>
+<td class=\\"ltx_td ltx_align_center ltx_border_t\\" style=\\"background-color:#E6E6E6;\\"><span class=\\"ltx_text\\" style=\\"background-color:#E6E6E6;\\">gave</span></td>
+<td class=\\"ltx_td ltx_align_center ltx_border_t\\" style=\\"background-color:#E6E6E6;\\"><span class=\\"ltx_text\\" style=\\"background-color:#E6E6E6;\\">battle</span></td>
+<td class=\\"ltx_td ltx_align_center ltx_border_t\\" style=\\"background-color:#E6E6E6;\\"><span class=\\"ltx_text\\" style=\\"background-color:#E6E6E6;\\">in</span></td>
+<td class=\\"ltx_td ltx_align_center ltx_border_rr ltx_border_t\\" style=\\"background-color:#E6E6E6;\\"><span class=\\"ltx_text\\" style=\\"background-color:#E6E6E6;\\">vain</span></td>
+</tr>
+<tr class=\\"ltx_tr\\">
+<td class=\\"ltx_td ltx_align_center ltx_border_b ltx_border_ll ltx_border_t\\" style=\\"background-color:#E6E6E6;\\"><span class=\\"ltx_text\\" style=\\"background-color:#E6E6E6;\\">1</span></td>
+<td class=\\"ltx_td ltx_align_center ltx_border_b ltx_border_t\\" style=\\"background-color:#E6E6E6;\\"><span class=\\"ltx_text\\" style=\\"background-color:#E6E6E6;\\">2</span></td>
+<td class=\\"ltx_td ltx_align_center ltx_border_b ltx_border_t\\" style=\\"background-color:#E6E6E6;\\"><span class=\\"ltx_text\\" style=\\"background-color:#E6E6E6;\\">3</span></td>
+<td class=\\"ltx_td ltx_align_center ltx_border_b ltx_border_t\\" style=\\"background-color:#E6E6E6;\\"><span class=\\"ltx_text\\" style=\\"background-color:#E6E6E6;\\">4</span></td>
+<td class=\\"ltx_td ltx_align_center ltx_border_b ltx_border_t\\" style=\\"background-color:#E6E6E6;\\"><span class=\\"ltx_text\\" style=\\"background-color:#E6E6E6;\\">5</span></td>
+<td class=\\"ltx_td ltx_align_center ltx_border_b ltx_border_t\\" style=\\"background-color:#E6E6E6;\\"><span class=\\"ltx_text\\" style=\\"background-color:#E6E6E6;\\">6</span></td>
+<td class=\\"ltx_td ltx_align_center ltx_border_b ltx_border_rr ltx_border_t\\" style=\\"background-color:#E6E6E6;\\"><span class=\\"ltx_text\\" style=\\"background-color:#E6E6E6;\\">7</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class=\\"ltx_page_footer\\">
+<div class=\\"ltx_page_logo\\">Generated  by <a href=\\"http://dlmf.nist.gov/LaTeXML/\\">LaTeXML <img src=\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==\\" alt=\\"[LOGO]\\"></a>
+</div></footer>
+</div>"
+`;
+
 exports[`figures.tex 1`] = `
 "<div class=\\"ltx_page_main\\">
 <div class=\\"ltx_page_content\\">

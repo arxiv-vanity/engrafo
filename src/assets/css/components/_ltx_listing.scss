@@ -16,7 +16,10 @@
     white-space: nowrap;
     min-height: 1em;
   }
-  &.ltx_lst_numbers_left .ltx_listingline .ltx_tag {
+
+  // Default is assumed to be &.ltx_list_numbers_left. Sometimes this class
+  // is omitted. (e.g. in algorithms)
+  .ltx_listingline .ltx_tag {
     background-color: transparent;
     margin-left: -4em;
     width: 2.5em;

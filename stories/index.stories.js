@@ -38,7 +38,7 @@ storiesOf("Basic functionality")
   .add("URLs", createStory("urls.tex 1"));
 
 storiesOf("Packages", module)
-  .add("aa", createStory("aa.tex 1"))
+  .add("aa.cls", createStory("aa.cls.tex 1"))
   .add("acronym.sty", createStory("acronym.sty.tex 1"))
   .add("algorithm.sty", createStory("algorithm.sty.tex 1"))
   .add("algorithm2e.sty", createStory("algorithm2e.sty.tex 1"))

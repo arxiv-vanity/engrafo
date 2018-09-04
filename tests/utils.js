@@ -1,14 +1,15 @@
 const converter = require("../src/converter");
 const fs = require("fs-extra");
 const jsdom = require("jsdom");
+const klawSync = require("klaw-sync");
 const path = require("path");
 
 function integrationDocuments() {
-  const documentsPath = path.join(__dirname, "integration");
-  const documents = fs.readdirSync(documentsPath);
+  const documentsPath = path.join(__dirname, "integration/");
+  const documents = klawSync(documentsPath, { nodir: true });
   return documents
-    .filter(name => name.match(/\.tex$/))
-    .map(name => [name, path.join(documentsPath, name)]);
+    .filter(item => item.path.match(/\.tex$/))
+    .map(item => [item.path.replace(documentsPath, ""), item.path]);
 }
 
 async function renderToDom(input, output) {

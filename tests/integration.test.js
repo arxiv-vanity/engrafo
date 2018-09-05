@@ -7,13 +7,13 @@ let percySnapshots = [],
   outputDir;
 
 beforeAll(async () => {
-  outputDir = await tmp.dir({ unsafeCleanup: true, dir: "/tmp" });
-  jasmine.DEFAULT_TIMEOUT_INTERVAL = 20000;
+  outputDir = path.join(__dirname, "integration-output");
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = 100000;
 });
 
 afterAll(async () => {
   if (process.env.PERCY_TOKEN) {
-    const percy = spawn("percy", ["snapshot", outputDir.path]);
+    const percy = spawn("percy", ["snapshot", outputDir]);
     percy.stdout.on("data", d => console.log(d.toString()));
     percy.stderr.on("data", d => console.error(d.toString()));
     await new Promise((resolve, reject) => {
@@ -29,12 +29,11 @@ afterAll(async () => {
   } else {
     console.log("No, PERCY_TOKEN envvar, skipping percy test");
   }
-  outputDir.cleanup();
   jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000;
 }, 20000); // long timeout to wait for Percy
 
 test.each(integrationDocuments())("%s", async (documentName, documentPath) => {
-  const outputPath = path.join(outputDir.path, path.parse(documentName).name);
+  const outputPath = path.join(outputDir, path.parse(documentName).name);
   // await fs.mkdirs(outputPath);
   const { htmlString, document } = await renderToDom(documentPath, outputPath);
 

@@ -13,9 +13,14 @@ function integrationDocuments() {
 }
 
 async function renderToDom(input, output) {
+  const absoluteAssetsPath = path.join(__dirname, "../dist");
+  const relativeAssetsPath = path.relative(output, absoluteAssetsPath);
+
   const htmlPath = await converter.render({
     input: input,
-    output: output
+    output: output,
+    externalCSS: path.join(relativeAssetsPath, "css/index.css"),
+    externalJavaScript: path.join(relativeAssetsPath, "javascript/index.js")
   });
   const htmlString = await fs.readFile(htmlPath, "utf-8");
   const document = jsdom.jsdom(htmlString, {

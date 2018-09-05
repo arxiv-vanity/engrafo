@@ -33,7 +33,7 @@ afterAll(async () => {
 }, 20000); // long timeout to wait for Percy
 
 test.each(integrationDocuments())("%s", async (documentName, documentPath) => {
-  const outputPath = path.join(outputDir, path.parse(documentName).name);
+  const outputPath = path.join(outputDir, documentName);
   // await fs.mkdirs(outputPath);
   const { htmlString, document } = await renderToDom(documentPath, outputPath);
 

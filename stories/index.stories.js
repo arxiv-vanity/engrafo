@@ -1,6 +1,7 @@
 /* eslint-disable no-console, react/button-has-type */
 
 import { storiesOf } from "@storybook/html";
+import groupBy from "lodash/groupBy";
 
 // Webpack doesn't import the CSS and JS referenced in the HTML, so we have
 // to import that manually.
@@ -22,8 +23,15 @@ const integrationImport = require.context(
   /\.html/
 );
 
-const stories = storiesOf("Integration");
-integrationImport.keys().forEach(key => {
-  const name = key.replace(/^\.\//, "").replace(/\/index\.html$/, "");
-  stories.add(name, createStory(integrationImport(key)));
+const groups = groupBy(integrationImport.keys(), key => key.split("/")[1]);
+Object.keys(groups).forEach(group => {
+  const stories = storiesOf(group);
+  groups[group].forEach(key => {
+    // Slice off ./group/ at start and /index.html at end
+    const name = key
+      .split("/")
+      .slice(2, -1)
+      .join("/");
+    stories.add(name, createStory(integrationImport(key)));
+  });
 });

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+
+# HACK: Percy doesn't work with large file trees so copy what we need into separate dir
+TMPDIR=$(mktemp -d)
+CID=$(docker create arxivvanity/engrafo)
+docker cp $CID:/app/dist "$TMPDIR"
+docker cp $CID:/app/tests "$TMPDIR"
+
+# Percy is ran outside of Docker because it needs a crapload of environment variables
+# from Travis. Also we don't clutter up the Docker image with it and Ruby.
+percy snapshot "$TMPDIR"

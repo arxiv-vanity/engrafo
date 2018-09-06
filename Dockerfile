@@ -22,8 +22,6 @@ RUN apt-get update -qq && apt-get install -qy curl gnupg2 \
     libparse-recdescent-perl liburi-perl libuuid-tiny-perl libwww-perl \
     libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl  \
     imagemagick libimage-magick-perl perl-doc build-essential \
-    # percy dependencies \
-    rubygems \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /usr/src/latexml
@@ -33,9 +31,6 @@ RUN curl -L https://github.com/brucemiller/LaTeXML/tarball/$LATEXML_COMMIT | tar
     && perl Makefile.PL \
     && make \
     && make install
-
-# Percy
-RUN gem install percy-cli
 
 RUN mkdir -p /app
 WORKDIR /app

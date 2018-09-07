@@ -1,1 +1,3 @@
-module.exports = {};
+module.exports = {
+  reporters: ["<rootDir>/tests/jest-reporter.js"]
+};

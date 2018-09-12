@@ -1,3 +1,8 @@
+@import "../fonts";
+
 .ltx_equation {
+  @include font-body();
+
   margin: 2em 0;
+  width: 100%;
 }

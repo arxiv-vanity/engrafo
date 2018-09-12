@@ -15,12 +15,17 @@
     padding: 2em 0;
     text-indent: 0;
 
+    // .ltx_note_mark and .ltx_tag normally display the same thing, except
+    // sometimes just .ltx_note_mark exists, so use that to make the footnote
+    // heading
     .ltx_note_mark {
-      display: none;
+      display: block;
+      vertical-align: inherit;
+      font-size: inherit;
     }
 
     .ltx_tag {
-      display: block;
+      display: none;
     }
 
     display: none;

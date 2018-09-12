@@ -8,6 +8,7 @@ body {
   // .ltx_document is the root element for most of the document, containing the grid layout
   @import "./components/ltx_document";
 
+  @import "./components/errors";
   @import "./components/link";
   @import "./components/ltx_abstract";
   @import "./components/ltx_align";

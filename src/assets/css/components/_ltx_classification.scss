@@ -1,0 +1,17 @@
+@import "../fonts";
+
+.ltx_classification {
+  .ltx_title_classification {
+    @include font-body();
+
+    font-weight: bold;
+    margin: 0;
+
+    &::first-letter {
+      // For some reason "Keywords" sometimes isn't capitalized
+      text-transform: uppercase;
+    }
+  }
+
+  @include font-body();
+}

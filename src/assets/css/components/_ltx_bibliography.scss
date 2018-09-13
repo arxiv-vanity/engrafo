@@ -3,7 +3,6 @@
 
 .ltx_bibliography {
   margin: 4em 0;
-  grid-column: page;
 
   .ltx_title_bibliography {
     @include font-heading();

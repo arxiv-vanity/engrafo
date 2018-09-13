@@ -2,47 +2,44 @@
 
 .ltx_document {
   background: white;
+  margin-top: 4em;
   margin-bottom: 4em;
 
-  // Grid
-  // .ltx_document is root element. sections and appendix are children,
-  // which then have a sub-grid inside.
-  &,
-  .ltx_section,
-  .ltx_subsection,
-  .ltx_subsubsection,
-  .ltx_appendix {
-    display: grid;
-    grid-template-columns: [screen-start] 8px [page-start text-start] 1fr [page-end text-end] 8px [screen-end];
-    grid-column-gap: 8px;
+  width: auto;
+  margin-left: 8px;
+  margin-right: 8px;
+  box-sizing: border-box;
 
-    @include media(">=tablet", "<desktop") {
-      grid-template-columns: [screen-start] 1fr [page-start text-start] 650px [page-end text-end] 1fr [screen-end];
-      grid-column-gap: 16px;
-    }
-
-    @include media(">=desktop") {
-      grid-template-columns: [screen-start] 1fr [page-start text-start] 700px [text-end gutter-start] 200px [page-end gutter-end] 1fr [screen-end];
-      grid-column-gap: 16px;
-    }
-
-    // By default, everything is the text column
-    & > * {
-      grid-column: text;
-    }
-
-    & > .ltx_title,
-    & > .ltx_figure {
-      grid-column: page;
-    }
+  @include media(">=tablet", "<desktop") {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  // Reset sections and appendix back to screen so sub-grid inside is same size as
-  // parent.
-  .ltx_section,
-  .ltx_subsection,
-  .ltx_subsubsection,
-  .ltx_appendix {
-    grid-column: screen;
+  @include media(">=desktop") {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+
+    // Everything is 700px wide
+    & > *,
+    & section > * {
+      width: 700px;
+    }
+
+    // ... except sections, because they can contain other stuff which might
+    // be wider than 700px
+    & > section,
+    & section > section {
+      width: 900px;
+    }
+
+    // ... and except the stuff we actually want to be wider than 700px
+    .ltx_biblist,
+    .ltx_figure,
+    .ltx_listing,
+    .ltx_title {
+      width: 900px;
+    }
   }
 }

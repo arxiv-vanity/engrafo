@@ -2,6 +2,9 @@ a {
   color: #7c7ec1;
   text-decoration: none;
 
+  /* Slice off long URLs because they mess up the mobile design */
+  word-break: break-word;
+
   &:hover {
     text-decoration: underline;
   }

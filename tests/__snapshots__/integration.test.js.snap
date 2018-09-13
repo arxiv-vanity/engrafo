@@ -617,7 +617,7 @@ exports[`basic/footnotes.tex 1`] = `
         <p
           class="ltx_p"
         >
-          This is some text.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           <span
             class="ltx_note ltx_role_footnote"
             id="footnote1"
@@ -643,11 +643,11 @@ exports[`basic/footnotes.tex 1`] = `
                 >
                   1
                 </span>
-                This is a footnote.
+                Footnotes inline in a paragraph are no problem.
               </span>
             </span>
           </span>
-           This is some more text.
+           exercitation ullamco
           <span
             class="ltx_note ltx_role_footnote"
             id="footnote2"
@@ -673,8 +673,83 @@ exports[`basic/footnotes.tex 1`] = `
                 >
                   2
                 </span>
-                And a footnote with a
-second paragraph! And some 
+                Another nearby will stack underneath the previous one.
+              </span>
+            </span>
+          </span>
+           laboris
+          <span
+            class="ltx_note ltx_role_footnote"
+            id="footnote3"
+          >
+            <sup
+              class="ltx_note_mark"
+            >
+              3
+            </sup>
+            <span
+              class="ltx_note_outer"
+            >
+              <span
+                class="ltx_note_content"
+              >
+                <sup
+                  class="ltx_note_mark"
+                >
+                  3
+                </sup>
+                <span
+                  class="ltx_tag ltx_tag_note"
+                >
+                  3
+                </span>
+                And they should keep on stacking across the next paragraph instead of pushing it down.
+              </span>
+            </span>
+          </span>
+           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        
+
+      </div>
+      
+
+      <div
+        class="ltx_para"
+        id="p2"
+      >
+        
+
+        <p
+          class="ltx_p"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          <span
+            class="ltx_note ltx_role_footnote"
+            id="footnote4"
+          >
+            <sup
+              class="ltx_note_mark"
+            >
+              4
+            </sup>
+            <span
+              class="ltx_note_outer"
+            >
+              <span
+                class="ltx_note_content"
+              >
+                <sup
+                  class="ltx_note_mark"
+                >
+                  4
+                </sup>
+                <span
+                  class="ltx_tag ltx_tag_note"
+                >
+                  4
+                </span>
+                Footnotes can have 
                 <span
                   class="ltx_text ltx_emph ltx_font_italic"
                 >
@@ -684,10 +759,106 @@ second paragraph! And some
               </span>
             </span>
           </span>
+           mollit
+          <span
+            class="ltx_note ltx_role_footnote"
+            id="footnote5"
+          >
+            <sup
+              class="ltx_note_mark"
+            >
+              5
+            </sup>
+            <span
+              class="ltx_note_outer"
+            >
+              <span
+                class="ltx_note_content"
+              >
+                <sup
+                  class="ltx_note_mark"
+                >
+                  5
+                </sup>
+                <span
+                  class="ltx_tag ltx_tag_note"
+                >
+                  5
+                </span>
+                A stacked footnote should push figures down, not collide with them.
+              </span>
+            </span>
+          </span>
+           anim id est laborum.
         </p>
         
 
       </div>
+      
+
+      <figure
+        class="ltx_figure"
+        id="S0.F1"
+      >
+        
+
+        <table
+          style="width:100%;"
+        >
+          
+
+          <tbody>
+            <tr>
+              
+
+              <td
+                class="ltx_subgraphics"
+              >
+                <img
+                  alt=""
+                  class="ltx_graphics"
+                  height="301"
+                  id="S0.F1.g1"
+                  src="fig.png"
+                  width="284"
+                />
+              </td>
+              
+
+              <td
+                class="ltx_subgraphics"
+              >
+                <img
+                  alt=""
+                  class="ltx_graphics"
+                  height="301"
+                  id="S0.F1.g2"
+                  src="fig.png"
+                  width="284"
+                />
+              </td>
+              
+
+            </tr>
+            
+
+          </tbody>
+        </table>
+        
+
+        <figcaption
+          class="ltx_caption"
+        >
+          <span
+            class="ltx_tag ltx_tag_figure"
+          >
+            Figure 1: 
+          </span>
+          Fig.
+        </figcaption>
+        
+
+      </figure>
       
 
     </article>

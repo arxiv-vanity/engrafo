@@ -1,0 +1,326 @@
+\begin{thebibliography}{31}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Bertsekas(1982)}]{Z_Hydro_bertsekas1982}
+\bibinfo{author}{Bertsekas, D.~P.} (\bibinfo{year}{1982}).
+\newblock \bibinfo{title}{Projected newton methods for optimization problems
+  with simple constraints}.
+\newblock {\it \bibinfo{journal}{SIAM Journal on control and Optimization}\/},
+  {\it \bibinfo{volume}{20}\/}, \bibinfo{pages}{221--246}.
+  \DOIprefix\doi{https://doi.org/10.1137/0320018}.
+%Type = Article
+\bibitem[{Botter et~al.(2011)Botter, Bertuzzo \& Rinaldo}]{Z_Hydro_Botter2011}
+\bibinfo{author}{Botter, G.}, \bibinfo{author}{Bertuzzo, E.}, \&
+  \bibinfo{author}{Rinaldo, A.} (\bibinfo{year}{2011}).
+\newblock \bibinfo{title}{Catchment residence and travel time distributions:
+  The master equation}.
+\newblock {\it \bibinfo{journal}{Geophysical Research Letters}\/},  {\it
+  \bibinfo{volume}{38}\/}, \bibinfo{pages}{n/a--n/a}. \URLprefix
+  \url{http://dx.doi.org/10.1029/2011GL047666}.
+  \DOIprefix\doi{10.1029/2011GL047666}.
+\newblock \bibinfo{note}{L11403}.
+%Type = Article
+\bibitem[{Cirpka et~al.(2007)Cirpka, Fienen, Hofer, Hoehn, Tessarini, Kipfer \&
+  Kitanidis}]{Z_Hydro_Cirpka2007}
+\bibinfo{author}{Cirpka, O.~A.}, \bibinfo{author}{Fienen, M.~N.},
+  \bibinfo{author}{Hofer, M.}, \bibinfo{author}{Hoehn, E.},
+  \bibinfo{author}{Tessarini, A.}, \bibinfo{author}{Kipfer, R.}, \&
+  \bibinfo{author}{Kitanidis, P.~K.} (\bibinfo{year}{2007}).
+\newblock \bibinfo{title}{Analyzing bank filtration by deconvoluting time
+  series of electric conductivity}.
+\newblock {\it \bibinfo{journal}{Ground Water}\/},  {\it
+  \bibinfo{volume}{45}\/}, \bibinfo{pages}{318--328}. \URLprefix
+  \url{http://dx.doi.org/10.1111/j.1745-6584.2006.00293.x}.
+  \DOIprefix\doi{10.1111/j.1745-6584.2006.00293.x}.
+%Type = Article
+\bibitem[{Delbart et~al.(2014)Delbart, Valdes, Barbecot, Tognelli, Richon \&
+  Couchoux}]{Z_Hydro_Delbart_2014}
+\bibinfo{author}{Delbart, C.}, \bibinfo{author}{Valdes, D.},
+  \bibinfo{author}{Barbecot, F.}, \bibinfo{author}{Tognelli, A.},
+  \bibinfo{author}{Richon, P.}, \& \bibinfo{author}{Couchoux, L.}
+  (\bibinfo{year}{2014}).
+\newblock \bibinfo{title}{Temporal variability of karst aquifer response time
+  established by the sliding-windows cross-correlation method}.
+\newblock {\it \bibinfo{journal}{Journal of Hydrology}\/},  {\it
+  \bibinfo{volume}{511}\/}, \bibinfo{pages}{580--588}.
+  \DOIprefix\doi{10.1016/j.jhydrol.2014.02.008}.
+%Type = Article
+\bibitem[{Dietrich \& Chapman(1993)}]{Dietrich1993}
+\bibinfo{author}{Dietrich, C.}, \& \bibinfo{author}{Chapman, T.}
+  (\bibinfo{year}{1993}).
+\newblock \bibinfo{title}{Unit graph estimation and stabilization using
+  quadratic programming and difference norms}.
+\newblock {\it \bibinfo{journal}{Water resources research}\/},  {\it
+  \bibinfo{volume}{29}\/}, \bibinfo{pages}{2629--2635}.
+%Type = Article
+\bibitem[{Dzikowski \& Delay(1992)}]{Z_Hydro_DZIKOWSKI1992697}
+\bibinfo{author}{Dzikowski, M.}, \& \bibinfo{author}{Delay, F.}
+  (\bibinfo{year}{1992}).
+\newblock \bibinfo{title}{Simulation algorithm of time-dependent tracer test
+  systems in hydrogeology}.
+\newblock {\it \bibinfo{journal}{Computers \& Geosciences}\/},  {\it
+  \bibinfo{volume}{18}\/}, \bibinfo{pages}{697 -- 705}. \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/009830049290004B}.
+  \DOIprefix\doi{http://dx.doi.org/10.1016/0098-3004(92)90004-B}.
+%Type = Article
+\bibitem[{Etcheverry \& Perrochet(2000)}]{Z_Hydro_Etcheverry2000}
+\bibinfo{author}{Etcheverry, D.}, \& \bibinfo{author}{Perrochet, P.}
+  (\bibinfo{year}{2000}).
+\newblock \bibinfo{title}{Direct simulation of groundwater transit-time
+  distributions using the reservoir theory}.
+\newblock {\it \bibinfo{journal}{Hydrogeology Journal}\/},  {\it
+  \bibinfo{volume}{8}\/}, \bibinfo{pages}{200--208}. \URLprefix
+  \url{http://dx.doi.org/10.1007/s100400050006}.
+  \DOIprefix\doi{10.1007/s100400050006}.
+%Type = Article
+\bibitem[{Fienen et~al.(2008)Fienen, Clemo \& Kitanidis}]{Fienen2008}
+\bibinfo{author}{Fienen, M.~N.}, \bibinfo{author}{Clemo, T.}, \&
+  \bibinfo{author}{Kitanidis, P.~K.} (\bibinfo{year}{2008}).
+\newblock \bibinfo{title}{An interactive bayesian geostatistical inverse
+  protocol for hydraulic tomography}.
+\newblock {\it \bibinfo{journal}{Water Resources Research}\/},  {\it
+  \bibinfo{volume}{44}\/}.
+%Type = Article
+\bibitem[{Fienen et~al.(2006)Fienen, Luo \& Kitanidis}]{Fienen2006}
+\bibinfo{author}{Fienen, M.~N.}, \bibinfo{author}{Luo, J.}, \&
+  \bibinfo{author}{Kitanidis, P.~K.} (\bibinfo{year}{2006}).
+\newblock \bibinfo{title}{A bayesian geostatistical transfer function approach
+  to tracer test analysis}.
+\newblock {\it \bibinfo{journal}{Water Resources Research}\/},  {\it
+  \bibinfo{volume}{42}\/}.
+%Type = Article
+\bibitem[{Gooseff et~al.(2011)Gooseff, Benson, Briggs, Weaver, Wollheim,
+  Peterson \& Hopkinson}]{Z_Hydro_Gooseff2011}
+\bibinfo{author}{Gooseff, M.~N.}, \bibinfo{author}{Benson, D.~A.},
+  \bibinfo{author}{Briggs, M.~A.}, \bibinfo{author}{Weaver, M.},
+  \bibinfo{author}{Wollheim, W.}, \bibinfo{author}{Peterson, B.}, \&
+  \bibinfo{author}{Hopkinson, C.~S.} (\bibinfo{year}{2011}).
+\newblock \bibinfo{title}{Residence time distributions in surface transient
+  storage zones in streams: Estimation via signal deconvolution}.
+\newblock {\it \bibinfo{journal}{Water Resources Research}\/},  {\it
+  \bibinfo{volume}{47}\/}, \bibinfo{pages}{n/a--n/a}. \URLprefix
+  \url{http://dx.doi.org/10.1029/2010WR009959}.
+  \DOIprefix\doi{10.1029/2010WR009959}.
+\newblock \bibinfo{note}{W05509}.
+%Type = Article
+\bibitem[{Hoehn \& Cirpka(2006)}]{HoehnCirpka2006}
+\bibinfo{author}{Hoehn, E.}, \& \bibinfo{author}{Cirpka, O.~A.}
+  (\bibinfo{year}{2006}).
+\newblock \bibinfo{title}{Assessing residence times of hyporheic ground water
+  in two alluvial flood plains of the southern alps using water temperature and
+  tracers}.
+\newblock {\it \bibinfo{journal}{Hydrology and Earth System Sciences}\/},  {\it
+  \bibinfo{volume}{10}\/}, \bibinfo{pages}{553--563}. \URLprefix
+  \url{https://www.hydrol-earth-syst-sci.net/10/553/2006/}.
+  \DOIprefix\doi{10.5194/hess-10-553-2006}.
+%Type = Misc
+\bibitem[{Irstea(2017)}]{IRSTEA}
+\bibinfo{author}{Irstea} (\bibinfo{year}{2017}).
+\newblock \bibinfo{title}{"base de données des observatoires en hydrologie"
+  $\copyright$ irstea}.
+\newblock \URLprefix \url{https://bdoh.irstea.fr/ORACLE/}.
+%Type = Article
+\bibitem[{Long \& Derickson(1999)}]{Long1999}
+\bibinfo{author}{Long, A.}, \& \bibinfo{author}{Derickson, R.}
+  (\bibinfo{year}{1999}).
+\newblock \bibinfo{title}{Linear systems analysis in a karst aquifer}.
+\newblock {\it \bibinfo{journal}{Journal of Hydrology}\/},  {\it
+  \bibinfo{volume}{219}\/}, \bibinfo{pages}{206--217}.
+%Type = Article
+\bibitem[{Luo et~al.(2006)Luo, Cirpka, Fienen, Wu, Mehlhorn, Carley, Jardine,
+  Criddle \& Kitanidis}]{Luo2006}
+\bibinfo{author}{Luo, J.}, \bibinfo{author}{Cirpka, O.~A.},
+  \bibinfo{author}{Fienen, M.~N.}, \bibinfo{author}{Wu, W.-m.},
+  \bibinfo{author}{Mehlhorn, T.~L.}, \bibinfo{author}{Carley, J.},
+  \bibinfo{author}{Jardine, P.~M.}, \bibinfo{author}{Criddle, C.~S.}, \&
+  \bibinfo{author}{Kitanidis, P.~K.} (\bibinfo{year}{2006}).
+\newblock \bibinfo{title}{A parametric transfer function methodology for
+  analyzing reactive transport in nonuniform flow}.
+\newblock {\it \bibinfo{journal}{Journal of contaminant hydrology}\/},  {\it
+  \bibinfo{volume}{83}\/}, \bibinfo{pages}{27--41}.
+%Type = Article
+\bibitem[{Massei et~al.(2006)Massei, Dupont, Mahler, Laignel, Fournier, Valdes
+  \& Ogier}]{Z_Hydro_Massei2006}
+\bibinfo{author}{Massei, N.}, \bibinfo{author}{Dupont, J.},
+  \bibinfo{author}{Mahler, B.}, \bibinfo{author}{Laignel, B.},
+  \bibinfo{author}{Fournier, M.}, \bibinfo{author}{Valdes, D.}, \&
+  \bibinfo{author}{Ogier, S.} (\bibinfo{year}{2006}).
+\newblock \bibinfo{title}{Investigating transport properties and turbidity
+  dynamics of a karst aquifer using correlation, spectral, and wavelet
+  analyses}.
+\newblock {\it \bibinfo{journal}{Journal of Hydrology}\/},  {\it
+  \bibinfo{volume}{329}\/}, \bibinfo{pages}{244 -- 257}. \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0022169406000965}.
+  \DOIprefix\doi{http://doi.org/10.1016/j.jhydrol.2006.02.021}.
+%Type = Article
+\bibitem[{McCormick(1969)}]{McCormick1969}
+\bibinfo{author}{McCormick, G.~P.} (\bibinfo{year}{1969}).
+\newblock \bibinfo{title}{Anti-zig-zagging by bending}.
+\newblock {\it \bibinfo{journal}{Management Science}\/},  (pp.
+  \bibinfo{pages}{315--320}).
+%Type = Article
+\bibitem[{McGuire \& McDonnell(2006)}]{Z_Hydro_McGuireMcDonnell2006}
+\bibinfo{author}{McGuire, K.~J.}, \& \bibinfo{author}{McDonnell, J.~J.}
+  (\bibinfo{year}{2006}).
+\newblock \bibinfo{title}{A review and evaluation of catchment transit time
+  modeling}.
+\newblock {\it \bibinfo{journal}{Journal of Hydrology}\/},  {\it
+  \bibinfo{volume}{330}\/}, \bibinfo{pages}{543--563}. \URLprefix
+  \url{http://dx.doi.org/10.1016/j.jhydrol.2006.04.020}.
+  \DOIprefix\doi{10.1016/j.jhydrol.2006.04.020}.
+%Type = Article
+\bibitem[{Michalak \& Kitanidis(2003)}]{Michalak2003}
+\bibinfo{author}{Michalak, A.~M.}, \& \bibinfo{author}{Kitanidis, P.~K.}
+  (\bibinfo{year}{2003}).
+\newblock \bibinfo{title}{A method for enforcing parameter nonnegativity in
+  bayesian inverse problems with an application to contaminant source
+  identification}.
+\newblock {\it \bibinfo{journal}{Water Resources Research}\/},  {\it
+  \bibinfo{volume}{39}\/}.
+%Type = Article
+\bibitem[{Neuman \& De~Marsily(1976)}]{Z_Hydro_NeumanDeMarsily1976}
+\bibinfo{author}{Neuman, S.~P.}, \& \bibinfo{author}{De~Marsily, G.}
+  (\bibinfo{year}{1976}).
+\newblock \bibinfo{title}{Identification of linear systems response by
+  parametric programing}.
+\newblock {\it \bibinfo{journal}{Water Resources Research}\/},  {\it
+  \bibinfo{volume}{12}\/}, \bibinfo{pages}{253--262}. \URLprefix
+  \url{http://dx.doi.org/10.1029/WR012i002p00253}.
+  \DOIprefix\doi{10.1029/WR012i002p00253}.
+%Type = Article
+\bibitem[{Neuman et~al.(1982)Neuman, Resnick, Reebles \&
+  Dunbar}]{Z_Hydro_Neuman1982}
+\bibinfo{author}{Neuman, S.~P.}, \bibinfo{author}{Resnick, S.~D.},
+  \bibinfo{author}{Reebles, R.~W.}, \& \bibinfo{author}{Dunbar, D.~B.}
+  (\bibinfo{year}{1982}).
+\newblock \bibinfo{title}{Developing a new deconvolution technique to model
+  rainfall-runoff in arid environments}.
+\newblock {\it \bibinfo{journal}{Water Resources Research Center, University of
+  Arizona}\/}, . \URLprefix \url{http://hdl.handle.net/10150/305311}.
+%Type = Article
+\bibitem[{O’Sullivan(1998)}]{Z_Hydro_O_Sullivan_1998}
+\bibinfo{author}{O’Sullivan, J.~A.} (\bibinfo{year}{1998}).
+\newblock \bibinfo{title}{Alternating minimization algorithms: From
+  blahut-arimoto to expectation-maximization}.
+\newblock {\it \bibinfo{journal}{Springer Science+Business Media New York}\/},
+  (pp. \bibinfo{pages}{173--192}).
+  \DOIprefix\doi{10.1007/978-1-4615-5121-8_13}.
+%Type = Article
+\bibitem[{Payn et~al.(2008)Payn, Gooseff, Benson, Cirpka, Zarnetske, Bowden,
+  McNamara \& Bradford}]{Z_Hydro_PaynGooseff2008}
+\bibinfo{author}{Payn, R.~A.}, \bibinfo{author}{Gooseff, M.~N.},
+  \bibinfo{author}{Benson, D.~A.}, \bibinfo{author}{Cirpka, O.~A.},
+  \bibinfo{author}{Zarnetske, J.~P.}, \bibinfo{author}{Bowden, W.~B.},
+  \bibinfo{author}{McNamara, J.~P.}, \& \bibinfo{author}{Bradford, J.~H.}
+  (\bibinfo{year}{2008}).
+\newblock \bibinfo{title}{Comparison of instantaneous and constant-rate stream
+  tracer experiments through non-parametric analysis of residence time
+  distributions}.
+\newblock {\it \bibinfo{journal}{Water Resources Research}\/},  {\it
+  \bibinfo{volume}{44}\/}, \bibinfo{pages}{n/a--n/a}. \URLprefix
+  \url{http://dx.doi.org/10.1029/2007WR006274}.
+  \DOIprefix\doi{10.1029/2007WR006274}.
+\newblock \bibinfo{note}{W06404}.
+%Type = Article
+\bibitem[{Pereverzev \& Schock(2009)}]{Z_Hydro_Pereverzev2009}
+\bibinfo{author}{Pereverzev, S.}, \& \bibinfo{author}{Schock, E.}
+  (\bibinfo{year}{2009}).
+\newblock \bibinfo{title}{Morozov's discrepancy principle for tikhonov
+  regularization of severely ill-posed problems in finite-dimensional
+  subspaces.}
+\newblock {\it \bibinfo{journal}{Numerical Functional Analysis and
+  Optimization}\/}, .
+  \DOIprefix\doi{http://dx.doi.org/10.1080/01630560008816993}.
+%Type = Article
+\bibitem[{Provencher(1982)}]{Provencher1982a}
+\bibinfo{author}{Provencher, S.~W.} (\bibinfo{year}{1982}).
+\newblock \bibinfo{title}{Contin: a general purpose constrained regularization
+  program for inverting noisy linear algebraic and integral equations}.
+\newblock {\it \bibinfo{journal}{Computer Physics Communications}\/},  {\it
+  \bibinfo{volume}{27}\/}, \bibinfo{pages}{229--242}.
+%Type = Article
+\bibitem[{Robinson et~al.(2010)Robinson, Dash \&
+  Srinivasan}]{Z_Hydro_Robinson2010}
+\bibinfo{author}{Robinson, B.~A.}, \bibinfo{author}{Dash, Z.~V.}, \&
+  \bibinfo{author}{Srinivasan, G.} (\bibinfo{year}{2010}).
+\newblock \bibinfo{title}{A particle tracking transport method for the
+  simulation of resident and flux-averaged concentration of solute plumes in
+  groundwater models}.
+\newblock {\it \bibinfo{journal}{Computational Geosciences}\/},  {\it
+  \bibinfo{volume}{14}\/}, \bibinfo{pages}{779--792}. \URLprefix
+  \url{http://dx.doi.org/10.1007/s10596-010-9190-6}.
+  \DOIprefix\doi{10.1007/s10596-010-9190-6}.
+%Type = Article
+\bibitem[{Sheets et~al.(2002)Sheets, Darner \& Whitteberry}]{Sheets2002}
+\bibinfo{author}{Sheets, R.}, \bibinfo{author}{Darner, R.}, \&
+  \bibinfo{author}{Whitteberry, B.} (\bibinfo{year}{2002}).
+\newblock \bibinfo{title}{Lag times of bank filtration at a well field,
+  cincinnati, ohio, usa}.
+\newblock {\it \bibinfo{journal}{Journal of Hydrology}\/},  {\it
+  \bibinfo{volume}{266}\/}, \bibinfo{pages}{162 -- 174}. \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0022169402001646}.
+  \DOIprefix\doi{https://doi.org/10.1016/S0022-1694(02)00164-6}.
+\newblock \bibinfo{note}{Attenuation of Groundwater Pollution by Bank
+  Filtration}.
+%Type = Article
+\bibitem[{Skaggs et~al.(1998)Skaggs, Kabala \& Jury}]{Skaggs1998}
+\bibinfo{author}{Skaggs, T.~H.}, \bibinfo{author}{Kabala, Z.}, \&
+  \bibinfo{author}{Jury, W.~A.} (\bibinfo{year}{1998}).
+\newblock \bibinfo{title}{Deconvolution of a nonparametric transfer function
+  for solute transport in soils}.
+\newblock {\it \bibinfo{journal}{Journal of Hydrology}\/},  {\it
+  \bibinfo{volume}{207}\/}, \bibinfo{pages}{170--178}.
+%Type = Article
+\bibitem[{Tessier et~al.(1996)Tessier, Lovejoy, Hubert, Schertzer \&
+  Pecknold}]{Z_Hydro_Tessier1996b}
+\bibinfo{author}{Tessier, Y.}, \bibinfo{author}{Lovejoy, S.},
+  \bibinfo{author}{Hubert, P.}, \bibinfo{author}{Schertzer, D.}, \&
+  \bibinfo{author}{Pecknold, S.} (\bibinfo{year}{1996}).
+\newblock \bibinfo{title}{Multifractal analysis and modeling of rainfall and
+  river flows and scaling, causal transfer functions}.
+\newblock {\it \bibinfo{journal}{Journal of Geophysical Research:
+  Atmospheres}\/},  {\it \bibinfo{volume}{101}\/},
+  \bibinfo{pages}{26427--26440}. \URLprefix
+  \url{http://dx.doi.org/10.1029/96JD01799}. \DOIprefix\doi{10.1029/96JD01799}.
+%Type = Article
+\bibitem[{Vogt et~al.(2010)Vogt, Hoehn, Schneider, Freund, Schirmer \&
+  Cirpka}]{Vogt2010}
+\bibinfo{author}{Vogt, T.}, \bibinfo{author}{Hoehn, E.},
+  \bibinfo{author}{Schneider, P.}, \bibinfo{author}{Freund, A.},
+  \bibinfo{author}{Schirmer, M.}, \& \bibinfo{author}{Cirpka, O.~A.}
+  (\bibinfo{year}{2010}).
+\newblock \bibinfo{title}{Fluctuations of electrical conductivity as a natural
+  tracer for bank filtration in a losing stream}.
+\newblock {\it \bibinfo{journal}{Advances in Water Resources}\/},  {\it
+  \bibinfo{volume}{33}\/}, \bibinfo{pages}{1296--1308}.
+%Type = Article
+\bibitem[{Werner \& Kadlec(2000)}]{Z_Hydro_WernerKadlec2000}
+\bibinfo{author}{Werner, T.~M.}, \& \bibinfo{author}{Kadlec, R.~H.}
+  (\bibinfo{year}{2000}).
+\newblock \bibinfo{title}{Wetland residence time distribution modeling}.
+\newblock {\it \bibinfo{journal}{Ecological Engineering}\/},  {\it
+  \bibinfo{volume}{15}\/}, \bibinfo{pages}{77--90}. \URLprefix
+  \url{http://dx.doi.org/10.1016/S0925-8574(99)00036-1}.
+  \DOIprefix\doi{10.1016/s0925-8574(99)00036-1}.
+%Type = Article
+\bibitem[{Zuo \& Hu(2012)}]{Z_Hydro_Zuo2012170}
+\bibinfo{author}{Zuo, B.}, \& \bibinfo{author}{Hu, X.} (\bibinfo{year}{2012}).
+\newblock \bibinfo{title}{Geophysical model enhancement technique based on
+  blind deconvolution}.
+\newblock {\it \bibinfo{journal}{Computers \& Geosciences}\/},  {\it
+  \bibinfo{volume}{49}\/}, \bibinfo{pages}{170 -- 181}. \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0098300412002129}.
+  \DOIprefix\doi{http://doi.org/10.1016/j.cageo.2012.06.017}.
+
+\end{thebibliography}

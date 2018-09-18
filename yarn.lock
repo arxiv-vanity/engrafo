@@ -112,11 +112,11 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.0.tgz#50c1e2260ac0ed9439a181de3725a0168d59c48a"
 
-"@storybook/addon-viewport@^3.4.10":
-  version "3.4.10"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-3.4.10.tgz#c89495b52801921ce0656a4fef280ae96b1aef2f"
+"@storybook/addon-viewport@^3.4.11":
+  version "3.4.11"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-3.4.11.tgz#55f10b258b8010baeeb9dfccefc0a9cfcb4e97b0"
   dependencies:
-    "@storybook/components" "3.4.10"
+    "@storybook/components" "3.4.11"
     babel-runtime "^6.26.0"
     global "^4.3.2"
     prop-types "^15.6.1"
@@ -146,9 +146,9 @@
   version "4.0.0-alpha.11"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-4.0.0-alpha.11.tgz#1c0d312b5e11967345c7a166c14cdf7001068d73"
 
-"@storybook/components@3.4.10":
-  version "3.4.10"
-  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-3.4.10.tgz#9af0bba14234d10f14a37656ac5982ec640cfcc8"
+"@storybook/components@3.4.11":
+  version "3.4.11"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-3.4.11.tgz#dbaa1ee19036cd8617993fb6bf4a07780d111f7e"
   dependencies:
     glamor "^2.20.40"
     glamorous "^4.12.1"

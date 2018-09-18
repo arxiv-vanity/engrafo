@@ -5701,9 +5701,9 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-linkify-urls@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/linkify-urls/-/linkify-urls-2.0.0.tgz#b34c2e1bfd68799128092f55c2e0236303b6ea5d"
+linkify-urls@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/linkify-urls/-/linkify-urls-2.1.0.tgz#4b22f58951187c592fa22150d06913738cb7cfcb"
   dependencies:
     create-html-element "^2.0.0"
 

@@ -38,7 +38,7 @@
     "klaw-sync": "^5.0.0",
     "node-sass": "^4.9.3",
     "parcel-bundler": "^1.9.7",
-    "prettier": "^1.14.2",
+    "prettier": "^1.14.3",
     "prettier-check": "^2.0.0",
     "sass-loader": "^7.1.0"
   }

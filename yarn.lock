@@ -9446,9 +9446,9 @@ tiny-inflate@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/tiny-inflate/-/tiny-inflate-1.0.2.tgz#93d9decffc8805bd57eae4310f0b745e9b6fb3a7"
 
-tippy.js@^2.5.4:
-  version "2.5.4"
-  resolved "https://registry.yarnpkg.com/tippy.js/-/tippy.js-2.5.4.tgz#69155d673761275dbf874c93175df443a006de46"
+tippy.js@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/tippy.js/-/tippy.js-2.6.0.tgz#5493cd478322ce75c08306e67a0107aa609a39c9"
   dependencies:
     popper.js "^1.14.3"
 

@@ -6,15 +6,15 @@
   font-weight: normal;
   margin: 1em 0 2em 0;
 
-  font-size: 30px;
+  font-size: 30px !important;
   line-height: 1.1;
 
   @include media("<desktop", ">=tablet") {
-    font-size: 40px;
+    font-size: 40px !important;
     min-height: 2em;
   }
   @include media(">=desktop") {
-    font-size: 60px;
+    font-size: 60px !important;
     min-height: 2em;
   }
 }

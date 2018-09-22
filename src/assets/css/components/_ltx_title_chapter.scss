@@ -7,15 +7,15 @@
   margin: 2em 0;
   max-width: 13em; // TODO: put this in grid?
 
-  font-size: 20px;
+  font-size: 20px !important;
   line-height: 1.1;
 
   @include media("<desktop", ">=tablet") {
-    font-size: 30px;
+    font-size: 30px !important;
     min-height: 2em;
   }
   @include media(">=desktop") {
-    font-size: 40px;
+    font-size: 40px !important;
     min-height: 2em;
   }
 

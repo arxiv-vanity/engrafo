@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "aws-sdk": "^2.295.0",
-    "express": "^4.16.3",
+    "express": "^4.16.4",
     "fs-extra": "^7.0.0",
     "include-media": "^1.4.9",
     "linkify-urls": "^2.1.0",

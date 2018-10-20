@@ -2,8 +2,8 @@
 FROM debian:testing-20181011
 
 # LaTeX stuff first, because it's enormous and doesn't change much
-# Change logs here: https://packages.debian.org/buster/texlive
-RUN apt-get update -qq && apt-get install -qy texlive-full=2018.20180725*
+# Change logs here: https://packages.debian.org/buster/texlive-full
+RUN apt-get update -qq && apt-get install -qy texlive-full=2018.20181009*
 
 RUN apt-get update -qq && apt-get install -qy curl gnupg2 \
     && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \

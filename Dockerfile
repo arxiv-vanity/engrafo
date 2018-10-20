@@ -13,9 +13,9 @@ RUN apt-get update -qq && apt-get install -qy curl gnupg2 \
     && apt-get install -qy \
     # Node.js dependencies \
     ca-certificates \
-    nodejs=8.11.4* \
+    nodejs=8.12.0* \
     git-core \
-    yarn=1.9.4* \
+    yarn=1.10.* \
     # latexml dependencies \
     libarchive-zip-perl libfile-which-perl libimage-size-perl  \
     libio-string-perl libjson-xs-perl libtext-unidecode-perl \

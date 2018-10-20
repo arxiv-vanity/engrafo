@@ -5,6 +5,8 @@
   padding: 1.5em;
   margin-bottom: 2em;
 
+  @include font-body();
+
   .ltx_title_abstract {
     @include font-heading();
 

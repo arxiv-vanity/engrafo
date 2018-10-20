@@ -1,10 +1,20 @@
-.ltx_p {
+.ltx_para {
   @include font-body();
+}
+
+.ltx_p {
   margin: 0;
 }
 
-// This doesn't quite work right - sometimes things in previous .ltx_para
-// are not text, but a quote or equation or figure or something like that.
-.ltx_para + .ltx_para > .ltx_p {
-  text-indent: 2em;
+// This is an attempt to simulate the way LaTeX does indents in PDFs.
+// It goes something like this:
+// - Within a section, first paragraph does not have indent
+// - Subsequent paragraphs do have indents, but not anything within those paragraph.
+//   So, for example, if there is a displayed formula, the text following it is not indented,
+//   even though it looks like a new paragraph and is in a ltx_p
+//
+.ltx_para + .ltx_para {
+  & > .ltx_p:first-child {
+    text-indent: 2em;
+  }
 }

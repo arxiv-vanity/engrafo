@@ -41,5 +41,10 @@
     .ltx_title {
       width: 900px;
     }
+
+    // Subfigures contain .ltx_figure, which we don't want to be wider than 700px
+    .ltx_subfigure .ltx_figure {
+      width: auto;
+    }
   }
 }

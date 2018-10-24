@@ -17,4 +17,7 @@
   & > .ltx_p:first-child {
     text-indent: 2em;
   }
+  &.ltx_noindent > .ltx_p:first-child {
+    text-indent: 0;
+  }
 }

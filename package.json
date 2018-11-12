@@ -12,8 +12,8 @@
     "server": "LATEXML_DOCKER=true bin/engrafo-server",
     "test": "LATEXML_DOCKER=true yarn run test-inside-docker",
     "test-inside-docker": "yarn run prettier-check && jest",
-    "storybook": "start-storybook -p 6006 -s tests/integration/",
-    "build-storybook": "build-storybook -s tests/integration/"
+    "storybook": "start-storybook -p 6006 -c .storybook -s tests/integration/",
+    "build-storybook": "build-storybook -c .storybook -s tests/integration/"
   },
   "dependencies": {
     "aws-sdk": "^2.295.0",
@@ -29,9 +29,10 @@
     "tmp-promise": "^1.0.5"
   },
   "devDependencies": {
-    "@storybook/addon-viewport": "^3.4.11",
+    "@storybook/addon-viewport": "^4.0.4",
     "@storybook/html": "^4.0.4",
     "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
     "babel-runtime": "^6.26.0",
     "chalk": "^2.4.1",
     "eslint": "^5.8.0",

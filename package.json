@@ -29,7 +29,7 @@
     "tmp-promise": "^1.0.5"
   },
   "devDependencies": {
-    "@storybook/addon-viewport": "^4.0.4",
+    "@storybook/addon-viewport": "^4.0.6",
     "@storybook/html": "^4.0.4",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",

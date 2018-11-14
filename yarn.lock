@@ -7262,9 +7262,9 @@ pn@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/pn/-/pn-1.0.0.tgz#1cf5a30b0d806cd18f88fc41a6b5d4ad615b3ba9"
 
-popper.js@^1.14.3:
-  version "1.14.3"
-  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.14.3.tgz#1438f98d046acf7b4d78cd502bf418ac64d4f095"
+popper.js@^1.14.5:
+  version "1.14.5"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.14.5.tgz#98abcce7c7c34c4ee47fcbc6b3da8af2c0a127bc"
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
@@ -9536,11 +9536,11 @@ tiny-inflate@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/tiny-inflate/-/tiny-inflate-1.0.2.tgz#93d9decffc8805bd57eae4310f0b745e9b6fb3a7"
 
-tippy.js@^2.5.4:
-  version "2.5.4"
-  resolved "https://registry.yarnpkg.com/tippy.js/-/tippy.js-2.5.4.tgz#69155d673761275dbf874c93175df443a006de46"
+tippy.js@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/tippy.js/-/tippy.js-3.1.3.tgz#dec8e25979d1629a85317b582b490144b2a3d19a"
   dependencies:
-    popper.js "^1.14.3"
+    popper.js "^1.14.5"
 
 titlecase@^1.1.2:
   version "1.1.2"

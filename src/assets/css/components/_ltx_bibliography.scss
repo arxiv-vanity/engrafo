@@ -14,16 +14,11 @@
     list-style: none;
     margin: 0;
     padding: 0;
-
-    @include media(">=desktop") {
-      column-count: 2;
-    }
   }
 
   .ltx_bibitem {
     @include font-body();
 
-    padding: 0 2em;
     margin: 0 0 2em 0;
 
     .ltx_tag_bibitem + .ltx_bibblock {

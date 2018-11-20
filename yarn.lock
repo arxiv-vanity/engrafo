@@ -751,25 +751,16 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.0.tgz#50c1e2260ac0ed9439a181de3725a0168d59c48a"
 
-"@storybook/addon-viewport@^4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-4.0.4.tgz#1a491b73048a9c2d7be06287aa5e401ef6bb11b7"
+"@storybook/addon-viewport@^4.0.7":
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-4.0.7.tgz#6de46bdae67ba3dcd57d07a83cfcad9b46924225"
   dependencies:
     "@emotion/styled" "^0.10.6"
-    "@storybook/addons" "4.0.4"
-    "@storybook/components" "4.0.4"
-    "@storybook/core-events" "4.0.4"
+    "@storybook/addons" "4.0.7"
+    "@storybook/components" "4.0.7"
+    "@storybook/core-events" "4.0.7"
     global "^4.3.2"
     prop-types "^15.6.2"
-    util-deprecate "^1.0.2"
-
-"@storybook/addons@4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-4.0.4.tgz#133609c527435aba1149ead53ca91f694db1a490"
-  dependencies:
-    "@storybook/channels" "4.0.4"
-    "@storybook/components" "4.0.4"
-    global "^4.3.2"
     util-deprecate "^1.0.2"
 
 "@storybook/addons@4.0.7":
@@ -789,10 +780,6 @@
     global "^4.3.2"
     json-stringify-safe "^5.0.1"
 
-"@storybook/channels@4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-4.0.4.tgz#fdf717cd726d15508ac80ff93a3893b75d3ab8b8"
-
 "@storybook/channels@4.0.7":
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-4.0.7.tgz#bb7607c9d0036cbed884c11683d7c168c2663733"
@@ -800,21 +787,6 @@
 "@storybook/client-logger@4.0.7":
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-4.0.7.tgz#6831c35959a8d3d06c381c0068bffecbe0260444"
-
-"@storybook/components@4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-4.0.4.tgz#e07fc89cd7d64e0686c933da92a3e849d8c59d60"
-  dependencies:
-    "@emotion/core" "^0.13.1"
-    "@emotion/provider" "^0.11.2"
-    "@emotion/styled" "^0.10.6"
-    global "^4.3.2"
-    lodash "^4.17.11"
-    prop-types "^15.6.2"
-    react-inspector "^2.3.0"
-    react-split-pane "^0.1.84"
-    react-textarea-autosize "^7.0.4"
-    render-fragment "^0.1.1"
 
 "@storybook/components@4.0.7":
   version "4.0.7"
@@ -830,10 +802,6 @@
     react-split-pane "^0.1.84"
     react-textarea-autosize "^7.0.4"
     render-fragment "^0.1.1"
-
-"@storybook/core-events@4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-4.0.4.tgz#bf457afe9aec3fb2cd66d7cad3fa5e5821e01503"
 
 "@storybook/core-events@4.0.7":
   version "4.0.7"

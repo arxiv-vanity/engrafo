@@ -13,19 +13,20 @@ export default function render(el) {
     if (!bibItem) {
       continue;
     }
-    ref.setAttribute("title", bibItem.innerHTML);
-  }
 
-  tippy(refs, {
-    arrow: true,
-    animateFill: false,
-    animation: "fade",
-    delay: [0, 250],
-    duration: [0, 300],
-    interactive: true,
-    interactiveBorder: 5,
-    placement: "top-start",
-    size: "large",
-    theme: "engrafo"
-  });
+    tippy(ref, {
+      content: bibItem.innerHTML,
+      arrow: true,
+      animateFill: false,
+      animation: "fade",
+      delay: [0, 250],
+      duration: [0, 300],
+      interactive: true,
+      interactiveBorder: 5,
+      interactiveDebounce: 100,
+      placement: "top-start",
+      size: "large",
+      theme: "light-border"
+    });
+  }
 }

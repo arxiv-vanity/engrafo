@@ -48,7 +48,8 @@ module.exports = function(dom) {
     if (
       !href.startsWith("http://") &&
       !href.startsWith("https://") &&
-      !href.startsWith("#")
+      !href.startsWith("#") &&
+      !href.startsWith("mailto:")
     ) {
       a.setAttribute("href", "http://" + href);
     }

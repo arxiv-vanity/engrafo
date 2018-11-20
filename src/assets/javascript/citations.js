@@ -1,5 +1,14 @@
 import tippy from "tippy.js";
 
+// https://github.com/atomiks/tippyjs/issues/260
+function onShow(instance) {
+  document.querySelectorAll(".tippy-popper").forEach(popper => {
+    if (popper !== instance.popper) {
+      popper._tippy.hide();
+    }
+  });
+}
+
 export default function render(el) {
   const refs = el.querySelectorAll(".ltx_cite .ltx_ref");
   for (let ref of refs) {
@@ -26,7 +35,8 @@ export default function render(el) {
       interactiveDebounce: 100,
       placement: "top-start",
       size: "large",
-      theme: "light-border"
+      theme: "light-border",
+      onShow: onShow
     });
   }
 }

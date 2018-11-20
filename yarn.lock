@@ -7527,7 +7527,7 @@ pn@^1.1.0:
   resolved "https://registry.yarnpkg.com/pn/-/pn-1.1.0.tgz#e2f4cef0e219f463c179ab37463e4e1ecdccbafb"
   integrity sha512-2qHaIQr2VLRFoxe2nASzsV6ef4yOOH+Fi9FBOVH6cqeSgUnoyySPZkxzLuzd+RYOQTRpROA0ztTMqxROKSb/nA==
 
-popper.js@^1.14.3:
+popper.js@^1.14.5:
   version "1.14.5"
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.14.5.tgz#98abcce7c7c34c4ee47fcbc6b3da8af2c0a127bc"
   integrity sha512-fs4Sd8bZLgEzrk8aS7Em1qh+wcawtE87kRUJQhK6+LndyV1HerX7+LURzAylVaTyWIn5NTB/lyjnWqw/AZ6Yrw==
@@ -9935,12 +9935,12 @@ tiny-inflate@^1.0.0:
   resolved "https://registry.yarnpkg.com/tiny-inflate/-/tiny-inflate-1.0.2.tgz#93d9decffc8805bd57eae4310f0b745e9b6fb3a7"
   integrity sha1-k9nez/yIBb1X6uQxDwt0Xptvs6c=
 
-tippy.js@^2.5.4:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/tippy.js/-/tippy.js-2.6.0.tgz#5493cd478322ce75c08306e67a0107aa609a39c9"
-  integrity sha512-hBcy6UXK3epiFwpkycy7Pn1SSLofUmawpPnlYg5ginbXMc/3EX2ivjzHfjvr/WPEpUg71/7ssiovhxDtCWvL2A==
+tippy.js@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/tippy.js/-/tippy.js-3.2.0.tgz#dc4d1f13047f973ff062b5305201d068819f9935"
+  integrity sha512-OBZzx/g0ukTJ4CpS165pNU8RZ1uSWG1rDJHLFol4nA8kt+8VB7DQbnXh/HFEJ2hxo7K3+Np3Acqn0NbJ6iJUIg==
   dependencies:
-    popper.js "^1.14.3"
+    popper.js "^1.14.5"
 
 titlecase@^1.1.2:
   version "1.1.2"

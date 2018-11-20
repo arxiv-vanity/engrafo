@@ -1,31 +1,7 @@
-@import "./colors";
+@import url("./vendor/tippy.css");
+@import url("./vendor/tippy-light-border.css");
 @import "./fonts";
 
-.tippy-tooltip.engrafo-theme {
+.tippy-tooltip {
   @include font-sans();
-
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 0;
-  color: #333;
-
-  .tippy-arrow {
-    border-top-color: $secondaryBackground;
-  }
-}
-
-.tippy-popper[x-placement^="right"] .tippy-tooltip.engrafo-theme .tippy-arrow {
-  border-right: 7px solid $borderColor;
-}
-
-.tippy-popper[x-placement^="left"] .tippy-tooltip.engrafo-theme .tippy-arrow {
-  border-left: 7px solid $borderColor;
-}
-
-.tippy-popper[x-placement^="top"] .tippy-tooltip.engrafo-theme .tippy-arrow {
-  border-top: 7px solid $borderColor;
-}
-
-.tippy-popper[x-placement^="bottom"] .tippy-tooltip.engrafo-theme .tippy-arrow {
-  border-bottom: 7px solid $borderColor;
 }

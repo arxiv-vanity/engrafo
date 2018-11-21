@@ -1,5 +1,7 @@
+@import "../colors";
+
 a {
-  color: #7c7ec1;
+  color: $linkColor;
   text-decoration: none;
 
   /* Slice off long URLs because they mess up the mobile design */

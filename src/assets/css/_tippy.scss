@@ -3,5 +3,18 @@
 @import "./fonts";
 
 .tippy-tooltip {
+  @import "./components/link";
   @include font-sans();
+
+  .tippy-content {
+    padding: 0.5em;
+    text-align: left;
+    .ltx_bibitem {
+      margin-bottom: 1em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

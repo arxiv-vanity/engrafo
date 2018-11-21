@@ -1,3 +1,5 @@
+@import "../colors";
+
 .ltx_cite {
   font-style: normal;
 
@@ -5,5 +7,20 @@
   a.ltx_ref:hover {
     border-bottom: 0;
     text-decoration: none;
+
+    // Individual tooltip progressive enhancement
+    &.ltx_ref {
+      cursor: inherit;
+    }
+  }
+
+  // Combined tooltip progressive enhancement
+  &.ltx_engrafo_tooltip {
+    color: $linkColor;
+
+    a.ltx_ref,
+    a.ltx_ref:hover {
+      cursor: inherit;
+    }
   }
 }

@@ -36,6 +36,14 @@ export default function render(el) {
       placement: "top-start",
       size: "large",
       theme: "light-border",
+      popperOptions: {
+        modifiers: {
+          // If document overflows on mobile, still keep tooltip within viewport
+          preventOverflow: {
+            boundariesElement: 'viewport'
+          }
+        }
+      },
       onShow: onShow
     });
   }

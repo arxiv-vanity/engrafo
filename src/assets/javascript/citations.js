@@ -40,7 +40,7 @@ export default function render(el) {
         modifiers: {
           // If document overflows on mobile, still keep tooltip within viewport
           preventOverflow: {
-            boundariesElement: 'viewport'
+            boundariesElement: "viewport"
           }
         }
       },

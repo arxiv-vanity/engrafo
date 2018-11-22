@@ -49,7 +49,11 @@ function renderMath(htmlString) {
         ketbra: ["\\ket{#1}\\bra{#2}", 2],
         hdots: ["\\dots", 0],
         dag: ["\\dagger", 0],
-        ddag: ["\\ddagger", 0]
+        ddag: ["\\ddagger", 0],
+        leavevmode: ["", 0],
+        nobreak: ["", 0],
+        // \mathbb, but with numerals
+        mathds: ["{\\mathbb #1}", 1]
       },
       Augment: {
         Definitions: {

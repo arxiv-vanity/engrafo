@@ -53,7 +53,9 @@ function renderMath(htmlString) {
         leavevmode: ["", 0],
         nobreak: ["", 0],
         // \mathbb, but with numerals
-        mathds: ["{\\mathbb #1}", 1]
+        mathds: ["{\\mathbb #1}", 1],
+        // https://github.com/mathjax/MathJax/issues/1275
+        bigtimes: ["\\mathop{\\vcenter{\\huge\\times}}", 0]
       },
       Augment: {
         Definitions: {

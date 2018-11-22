@@ -3,6 +3,13 @@
 .ltx_cite {
   font-style: normal;
 
+  // 1512.03385 changes size of citations so also apply to children.
+  // Need a general solution to this.
+  &,
+  * {
+    @include font-body();
+  }
+
   a.ltx_ref,
   a.ltx_ref:hover {
     border-bottom: 0;

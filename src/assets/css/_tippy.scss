@@ -4,7 +4,13 @@
 
 .tippy-tooltip {
   @import "./components/link";
-  @include font-sans();
+
+  // 1512.03385 changes size of citations so also apply to children.
+  // Need a general solution to this.
+  &,
+  * {
+    @include font-sans();
+  }
 
   .tippy-content {
     padding: 0.5em;

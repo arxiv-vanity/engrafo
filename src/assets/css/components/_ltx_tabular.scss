@@ -10,10 +10,12 @@
 
   .ltx_td,
   .ltx_th {
-    padding: 0.3em 0.8em;
+    // Some tables define their own padding which produces squished, awful tables.
+    // This might break some tables, but makes, e.g., 1512.03385 render much better.
+    padding: 0.3em 0.8em !important;
 
     @media (min-width: 768px) {
-      padding: 0.5em 0.8em;
+      padding: 0.5em 0.8em !important;
     }
 
     // Don't let anything justify a table cell because it looks like ass

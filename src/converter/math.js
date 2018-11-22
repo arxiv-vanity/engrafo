@@ -11,7 +11,7 @@ function renderMath(htmlString) {
     displayAlign: "left",
     tex2jax: {
       processRefs: false,
-      ignoreClass: "engrafo-container", // Ignore everything
+      ignoreClass: "ltx_page_main", // Ignore everything
       processClass: "ltx_Math|ltx_DisplayMath" // Then just process math
     },
     CommonHTML: {

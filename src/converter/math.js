@@ -57,7 +57,9 @@ function renderMath(htmlString) {
         mathbbm: ["{\\mathbb #1}", 1],
         // https://github.com/mathjax/MathJax/issues/1275
         bigtimes: ["\\mathop{\\vcenter{\\huge\\times}}", 0],
-        vspace: ["", 1]
+        vspace: ["", 1],
+        // https://stackoverflow.com/questions/18189175/how-to-use-textup-with-mathjax
+        textup: ["\\mathrm{#1}", 1]
       },
       Augment: {
         Definitions: {

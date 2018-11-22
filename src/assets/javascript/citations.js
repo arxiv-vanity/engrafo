@@ -76,10 +76,14 @@ export default function render(el) {
     else {
       const content = document.createElement("div");
       for (let ref of refs) {
-        content.appendChild(createContent(el, ref));
-        // Used in CSS for progressive enhancement
+        const itemContent = createContent(el, ref);
+        if (itemContent) {
+          content.appendChild(itemContent);
+        }
       }
-      makeTippy(cite, content);
+      if (content.children.length > 0) {
+        makeTippy(cite, content);
+      }
     }
 
     for (let ref of refs) {

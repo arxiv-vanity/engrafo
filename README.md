@@ -56,6 +56,10 @@ There is also a development server, which is useful for developing CSS and JavaS
 
     $ yarn run server tests/documents/sample2e.tex
 
+There is a script to download a paper from arXiv and start a development server:
+
+    $ script/arxiv-server 1707.08901
+
 ## Tests
 
 Run the main test suite:

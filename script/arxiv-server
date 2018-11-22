@@ -1,0 +1,17 @@
+#!/bin/bash
+set -e
+
+if [ -z "$1" ];then
+  echo "Converts and serves a paper from arXiv"
+  echo "Usage: script/arxiv-server <arxiv-id>"
+  exit 1
+fi
+
+ARXIV_ID=$1
+OUTPUT_DIR="local/arxiv/$ARXIV_ID/"
+
+if [ ! -d "$OUTPUT_DIR" ]; then
+  script/arxiv-download $ARXIV_ID
+fi
+
+exec yarn run server $OUTPUT_DIR

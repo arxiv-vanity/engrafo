@@ -4,8 +4,8 @@ exports.removeAll = function(els) {
   });
 };
 
-exports.nodeFromString = function(dom, str) {
-  var div = dom.createElement("div");
+exports.nodeFromString = function(document, str) {
+  var div = document.createElement("div");
   div.innerHTML = str;
   if (!div.firstChild) {
     throw new Error("Invalid HTML passed to nodeFromString");

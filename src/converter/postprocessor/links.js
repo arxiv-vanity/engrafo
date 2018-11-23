@@ -1,11 +1,11 @@
 let linkifyUrls = require("linkify-urls");
 
-module.exports = function(dom) {
-  var window = dom.defaultView;
+module.exports = function(document) {
+  var window = document.defaultView;
 
   // Linkify plain text URLs
-  var walker = dom.createTreeWalker(
-    dom.querySelector(".ltx_page_main"),
+  var walker = document.createTreeWalker(
+    document.querySelector(".ltx_page_main"),
     window.NodeFilter.SHOW_TEXT,
     {
       acceptNode: function(node) {
@@ -37,13 +37,13 @@ module.exports = function(dom) {
   }
 
   nodesToReplace.forEach(obj => {
-    var replacementNode = dom.createElement("span");
+    var replacementNode = document.createElement("span");
     replacementNode.innerHTML = obj.replacement;
     obj.node.parentNode.replaceChild(replacementNode, obj.node);
   });
 
   // Add http:// to URLs which don't have it
-  Array.from(dom.querySelectorAll("a")).forEach(a => {
+  Array.from(document.querySelectorAll("a")).forEach(a => {
     var href = a.getAttribute("href");
     if (
       !href.startsWith("http://") &&

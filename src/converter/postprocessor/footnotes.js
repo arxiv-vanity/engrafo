@@ -1,12 +1,12 @@
 const { nodeFromString } = require("./utils");
 
-module.exports = function(document) {
-  // Put footnotes in authors underneath authors
+// Put footnotes in authors underneath authors
+function authorFootnotes(document) {
   const authors = document.querySelector(".ltx_authors");
   if (!authors) {
     return;
   }
-  const notes = authors.querySelectorAll(".ltx_note_outer");
+  const notes = authors.querySelectorAll(".ltx_note");
   if (!notes.length) {
     return;
   }
@@ -22,6 +22,11 @@ module.exports = function(document) {
     );
     authorNote.appendChild(note.querySelector(".ltx_note_content"));
     authorNotesContainer.appendChild(authorNote);
-    note.remove();
+    // Remove the footnote and replace with just the mark, because it isn't really a footnote any longer
+    note.parentNode.replaceChild(note.querySelector(".ltx_note_mark"), note);
   }
+}
+
+module.exports = function(document) {
+  authorFootnotes(document);
 };

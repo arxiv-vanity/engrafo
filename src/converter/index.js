@@ -15,6 +15,7 @@ function postprocess(htmlString, options) {
   // Run all processing on document.
   postprocessors.css(document, options);
   postprocessors.figures(document);
+  postprocessors.footnotes(document);
   postprocessors.headings(document);
   postprocessors.links(document);
   postprocessors.math(document);

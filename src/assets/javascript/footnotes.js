@@ -8,8 +8,14 @@ export default function render(el) {
     note.appendChild(tooltipMark);
 
     const content = note.querySelector(".ltx_note_content").cloneNode(true);
-    content.querySelector(".ltx_note_mark").remove();
-    content.querySelector(".ltx_tag").remove();
+    const ltxNoteMark = content.querySelector(".ltx_note_mark");
+    if (ltxNoteMark) {
+      ltxNoteMark.remove();
+    }
+    const ltxTag = content.querySelector(".ltx_tag");
+    if (ltxTag) {
+      ltxTag.remove();
+    }
 
     createTooltip(tooltipMark, content);
   }

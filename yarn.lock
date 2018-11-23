@@ -5961,7 +5961,7 @@ jsbn@~0.1.0:
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
   integrity sha1-peZUwuWi3rXyAdls77yoDA7y9RM=
 
-"jsdom@7.0 - 9.12":
+"jsdom@7.0 - 9.12", jsdom@^9.12.0:
   version "9.12.0"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-9.12.0.tgz#e8c546fffcb06c00d4833ca84410fed7f8a097d4"
   integrity sha1-6MVG//ywbADUgzyoRBD+1/igl9Q=

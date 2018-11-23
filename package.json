@@ -20,6 +20,7 @@
     "express": "^4.16.4",
     "fs-extra": "^7.0.0",
     "include-media": "^1.4.9",
+    "jsdom": "^9.12.0",
     "linkify-urls": "^2.1.0",
     "lodash": "^4.17.11",
     "mathjax-node-page": "^2.0.0",

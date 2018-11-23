@@ -1,7 +1,24 @@
+@import "../colors";
 @import "../fonts";
 
 .ltx_note {
   position: relative;
+
+  & > .ltx_note_mark {
+    display: none;
+
+    @include media(">=desktop") {
+      display: inline;
+    }
+  }
+
+  .ltx_engrafo_note_mark_tooltip {
+    color: $linkColor;
+
+    @include media(">=desktop") {
+      display: none;
+    }
+  }
 
   .ltx_note_outer {
     @include font-sans();

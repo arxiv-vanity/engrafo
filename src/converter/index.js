@@ -8,18 +8,18 @@ const postprocessors = require("./postprocessor");
 
 // Run postprocessing against a string of HTML
 function postprocess(htmlString, options) {
-  var dom = jsdom.jsdom(htmlString, {
+  const document = jsdom.jsdom(htmlString, {
     features: { ProcessExternalResources: false, FetchExternalResources: false }
   });
 
   // Run all processing on document.
-  postprocessors.css(dom, options);
-  postprocessors.figures(dom);
-  postprocessors.headings(dom);
-  postprocessors.links(dom);
-  postprocessors.math(dom);
+  postprocessors.css(document, options);
+  postprocessors.figures(document);
+  postprocessors.headings(document);
+  postprocessors.links(document);
+  postprocessors.math(document);
 
-  return jsdom.serializeDocument(dom);
+  return jsdom.serializeDocument(document);
 }
 
 // Do all processing on the file that LaTeXML produces

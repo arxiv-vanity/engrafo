@@ -1,0 +1,18 @@
+@import "../fonts";
+
+.ltx_engrafo_author_notes {
+  margin-top: 1em;
+
+  .ltx_note_outer {
+    @include font-caption();
+
+    .ltx_note_mark {
+      vertical-align: inherit;
+      font-size: inherit;
+      margin-right: 0.25em;
+    }
+    .ltx_tag {
+      display: none;
+    }
+  }
+}

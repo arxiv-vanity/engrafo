@@ -6,6 +6,12 @@
   padding-left: 3em;
   margin: 4rem 0;
 
+  @include media("<desktop") {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
   // Remove download button. It's much easier to copy and paste
   .ltx_listing_data {
     display: none;

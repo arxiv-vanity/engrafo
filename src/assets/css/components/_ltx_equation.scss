@@ -1,8 +1,7 @@
 @import "../fonts";
 
-.ltx_equation {
+.ltx_equation.ltx_eqn_table {
   @include font-body();
 
-  margin: 2em 0;
   width: 100%;
 }

@@ -1,3 +1,5 @@
+const utils = require("./utils");
+
 module.exports = function(document) {
   Array.from(document.querySelectorAll(".ltx_equation .ltx_Math")).forEach(
     math => {
@@ -8,11 +10,19 @@ module.exports = function(document) {
     }
   );
 
-  Array.from(document.querySelectorAll(".ltx_equationgroup")).forEach(math => {
-    // These are sometimes not figures so add class to parent so we can make
-    // it scroll on overflow
-    math.parentNode.className += " ltx_equationgroup_container";
-  });
+  const eqnTables = document.querySelectorAll(
+    ".ltx_equation.ltx_eqn_table,.ltx_equationgroup"
+  );
+  for (let table of eqnTables) {
+    // Add parent div so we can make it scrollable on mobile.
+    // See hacks in _ltx_engrafo_equation_container.scss
+    const tableContainer = utils.nodeFromString(
+      document,
+      '<div class="ltx_engrafo_equation_container" />'
+    );
+    table.parentNode.replaceChild(tableContainer, table);
+    tableContainer.appendChild(table);
+  }
 
   Array.from(document.querySelectorAll(".ltx_Math")).forEach(math => {
     math.innerHTML = `\\(${math.innerHTML}\\)`;

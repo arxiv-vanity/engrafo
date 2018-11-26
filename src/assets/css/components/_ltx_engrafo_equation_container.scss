@@ -1,0 +1,13 @@
+@import "../media";
+
+.ltx_engrafo_equation_container {
+  // Created in postprocessors/math.js
+  width: 100%;
+  margin: 2em 0;
+
+  // On desktop, long equations just keep on going outside the container, but that kinda works
+  @include media("<desktop") {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}

@@ -6,6 +6,13 @@
   margin: 0;
 }
 
+// HACK: stop inline math from overflowing scrolling whole page on mobile
+@include media("<desktop") {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 // This is an attempt to simulate the way LaTeX does indents in PDFs.
 // It goes something like this:
 // - Within a section, first paragraph does not have indent

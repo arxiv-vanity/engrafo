@@ -1,0 +1,11 @@
+# -*- mode: Perl -*-
+package LaTeXML::Package::Pool;
+use strict;
+use warnings;
+use LaTeXML::Package;
+
+# This is overriding lipsum.sty in LaTeXML due to this bug:
+# https://github.com/brucemiller/LaTeXML/issues/1082
+Warn(":missing:lipsum.sty lipsum.sty has been disabled");
+
+1;

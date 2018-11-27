@@ -28,6 +28,7 @@ function createChildProcess({
     "--svg",
     "--verbose",
     "--timestamp", "0",
+    "--path", "/app/latexml/packages/",
     "--preload", "/app/latexml/engrafo.ltxml",
     "--preload", "/usr/src/latexml/lib/LaTeXML/Package/hyperref.sty.ltxml",
     "--xsltparameter", "SIMPLIFY_HTML:true"

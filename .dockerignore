@@ -1,4 +1,6 @@
+.cache
 .git
+.tmp
 local
 
 # node

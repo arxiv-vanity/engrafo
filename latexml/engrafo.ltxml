@@ -1,3 +1,5 @@
+# -*- mode: Perl -*-
+
 use LaTeXML::Package;
 use strict;
 use warnings;

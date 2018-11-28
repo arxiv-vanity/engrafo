@@ -15,4 +15,7 @@ DefMacro('\affaddr{}', '#1');
 DefMacro('\icmltitle{}', '\title{#1}');
 DefMacro('\icmltitlerunning{}', '\title{#1}');
 
+# https://github.com/ICLR/Master-Template
+DefMacro('\iclrfinalcopy', '');
+
 1;

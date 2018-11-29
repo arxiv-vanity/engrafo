@@ -21,4 +21,7 @@ DefMacro('\iclrfinalcopy', '');
 # https://github.com/brucemiller/LaTeXML/issues/1085
 DefMacro('\biboptions{}', '');
 
+# 1707.08172
+DefMacro('\emnlpfinalcopy', '');
+
 1;

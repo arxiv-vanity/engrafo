@@ -5,23 +5,30 @@ FROM debian:testing-20181112
 # Change logs here: https://packages.debian.org/buster/texlive-full
 RUN apt-get update -qq && apt-get install -qy texlive-full
 
-RUN apt-get update -qq && apt-get install -qy curl gnupg2 \
-    && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
-    && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
-    # runs apt-get update for us \
-    && curl -sL https://deb.nodesource.com/setup_8.x | bash - \
+RUN set -ex \
+    && apt-get update -qq \
     && apt-get install -qy \
+    # apt-key dependencies
+    curl \
+    gnupg2 \
     # Node.js dependencies \
     ca-certificates \
-    nodejs=8.13.0* \
     git-core \
-    yarn=1.12.* \
     # latexml dependencies \
     libarchive-zip-perl libfile-which-perl libimage-size-perl  \
     libio-string-perl libjson-xs-perl libtext-unidecode-perl \
     libparse-recdescent-perl liburi-perl libuuid-tiny-perl libwww-perl \
     libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl  \
     imagemagick libimage-magick-perl perl-doc build-essential \
+    # This is so we can pin to Node versions https://github.com/nodesource/distributions/issues/33 
+    # See https://deb.nodesource.com/node_8.x/pool/main/n/nodejs/ for list of packages
+    && curl -o nodejs.deb https://deb.nodesource.com/node_8.x/pool/main/n/nodejs/nodejs_8.14.0-1nodesource1_amd64.deb \
+    && dpkg -i ./nodejs.deb \
+    && rm nodejs.deb \
+    && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
+    && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
+    && apt-get update -qq \
+    && apt-get install -qy yarn=1.12.* \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /usr/src/latexml

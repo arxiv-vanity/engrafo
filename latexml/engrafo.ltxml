@@ -18,4 +18,7 @@ DefMacro('\icmltitlerunning{}', '\title{#1}');
 # https://github.com/ICLR/Master-Template
 DefMacro('\iclrfinalcopy', '');
 
+# https://github.com/brucemiller/LaTeXML/issues/1085
+DefMacro('\biboptions{}', '');
+
 1;

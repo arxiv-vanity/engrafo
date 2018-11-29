@@ -190,7 +190,10 @@ function renderMath(htmlString) {
       Augment: {
         Definitions: {
           macros: {
-            bm: "myBoldSwitch"
+            bm: "myBoldSwitch",
+            // https://github.com/mathjax/MathJax-docs/wiki/Macro:-arc-symbol-under,-over
+            overparen: ["UnderOver", "23DC"], // UnderOver represents the MathML element, 23DC the unicode character
+            underparen: ["UnderOver", "23DD"] // UnderOver represents the MathML element, 23DC the unicode character
           }
         },
         Parse: {

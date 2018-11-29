@@ -26,4 +26,8 @@ DefMacro('\emnlpfinalcopy', '');
 
 DefMacro('\cvprfinalcopy', '');
 
+# 1607.07429
+# https://github.com/arxiv-vanity/engrafo-issues/issues/142
+DefMacro('\citeauthoryear{}', '#1');
+
 1;

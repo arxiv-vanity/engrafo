@@ -49,4 +49,12 @@
       width: auto;
     }
   }
+
+  // FIXME: These are set by various things and come from ltx:note in the frontmatter.
+  // There is a journal one in the 1803.07574 integration test. acmart.cls also has them
+  // (e.g. 1806.07527)
+  // Maybe we should figure out the right thing to do with them? For now, just hide.
+  & > .ltx_note {
+    display: none;
+  }
 }

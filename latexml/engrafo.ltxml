@@ -24,4 +24,6 @@ DefMacro('\biboptions{}', '');
 # 1707.08172
 DefMacro('\emnlpfinalcopy', '');
 
+DefMacro('\cvprfinalcopy', '');
+
 1;

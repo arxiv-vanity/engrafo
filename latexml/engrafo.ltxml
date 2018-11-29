@@ -15,21 +15,20 @@ DefMacro('\affaddr{}', '#1');
 DefMacro('\icmltitle{}', '\title{#1}');
 DefMacro('\icmltitlerunning{}', '\title{#1}');
 
-# https://github.com/ICLR/Master-Template
-DefMacro('\iclrfinalcopy', '');
-
 # https://github.com/brucemiller/LaTeXML/issues/1085
 DefMacro('\biboptions{}', '');
 
+# https://github.com/ICLR/Master-Template
+DefMacro('\iclrfinalcopy', '');
 # 1707.08172
 DefMacro('\emnlpfinalcopy', '');
-
 DefMacro('\cvprfinalcopy', '');
+DefMacro('\aclfinalcopy', '');
+DefMacro('\iccvfinalcopy', '');
+
 
 # 1607.07429
 # https://github.com/arxiv-vanity/engrafo-issues/issues/142
 DefMacro('\citeauthoryear{}', '#1');
-
-DefMacro('\aclfinalcopy', '');
 
 1;

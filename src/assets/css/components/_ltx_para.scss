@@ -1,16 +1,16 @@
 .ltx_para {
   @include font-body();
+
+  // HACK: stop inline math from overflowing scrolling whole page on mobile
+  @include media("<desktop") {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
 }
 
 .ltx_p {
   margin: 0;
-}
-
-// HACK: stop inline math from overflowing scrolling whole page on mobile
-@include media("<desktop") {
-  max-width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
 }
 
 // This is an attempt to simulate the way LaTeX does indents in PDFs.

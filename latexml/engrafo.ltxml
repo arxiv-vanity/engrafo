@@ -30,4 +30,6 @@ DefMacro('\cvprfinalcopy', '');
 # https://github.com/arxiv-vanity/engrafo-issues/issues/142
 DefMacro('\citeauthoryear{}', '#1');
 
+DefMacro('\aclfinalcopy', '');
+
 1;

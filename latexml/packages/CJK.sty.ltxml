@@ -1,0 +1,13 @@
+# -*- mode: Perl -*-
+
+package LaTeXML::Package::Pool;
+use strict;
+use warnings;
+use LaTeXML::Package;
+
+# seems to make 1705.06031 work
+DefEnvironment("{CJK}{}{}", "#body");
+DefEnvironment("{CJK*}{}{}", "#body");
+
+1;
+

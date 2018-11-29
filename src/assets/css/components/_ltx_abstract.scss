@@ -12,4 +12,10 @@
 
     margin: 0 0 1em 0;
   }
+
+  // Footnotes collide with border
+  // Maybe they should just be tooltips?
+  .ltx_note .ltx_note_outer {
+    width: 160px;
+  }
 }

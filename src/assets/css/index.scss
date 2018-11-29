@@ -5,6 +5,8 @@ body {
 
 // Contain everything inside .ltx_page_main
 .ltx_page_main {
+  text-rendering: optimizeLegibility;
+
   // .ltx_document is the root element for most of the document, containing the grid layout
   @import "./components/ltx_document";
 

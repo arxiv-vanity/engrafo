@@ -19,6 +19,11 @@
   .ltx_bibitem {
     @include font-body();
 
+    // HACK: https://github.com/arxiv-vanity/engrafo/issues/250
+    * {
+      font-size: inherit !important;
+    }
+
     margin: 0 0 2em 0;
 
     .ltx_tag_bibitem + .ltx_bibblock {

@@ -31,4 +31,7 @@ DefMacro('\iccvfinalcopy', '');
 # https://github.com/arxiv-vanity/engrafo-issues/issues/142
 DefMacro('\citeauthoryear{}', '#1');
 
+# 1802.06006
+DefMacro('\appendixpage', '');
+
 1;

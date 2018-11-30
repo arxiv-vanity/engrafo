@@ -48,6 +48,12 @@
     .ltx_subfigure .ltx_figure {
       width: auto;
     }
+
+    // Paragraph and subparagraph titles we want to float
+    .ltx_title_paragraph,
+    .ltx_title_subparagraph {
+      width: auto;
+    }
   }
 
   // FIXME: These are set by various things and come from ltx:note in the frontmatter.

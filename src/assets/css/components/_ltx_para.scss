@@ -2,11 +2,12 @@
   @include font-body();
 
   // HACK: stop inline math from overflowing scrolling whole page on mobile
-  @include media("<desktop") {
-    max-width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
+  // Disabled because this stops paragraph headings from working.
+  // @include media("<desktop") {
+  //   max-width: 100%;
+  //   overflow-x: auto;
+  //   overflow-y: hidden;
+  // }
 }
 
 .ltx_p {

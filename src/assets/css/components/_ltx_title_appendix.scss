@@ -1,12 +1,9 @@
-@import "../fonts";
+@import "./ltx_title_section";
 
 .ltx_title_appendix {
-  @include font-heading();
-
-  margin-bottom: 4em;
+  @extend .ltx_title_section;
 
   .ltx_tag_appendix {
-    display: inline-block;
     margin-right: 2em;
   }
 }

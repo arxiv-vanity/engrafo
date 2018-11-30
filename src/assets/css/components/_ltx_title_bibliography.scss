@@ -1,0 +1,5 @@
+@import "./ltx_title_section";
+
+.ltx_title_bibliography {
+  @extend .ltx_title_section;
+}

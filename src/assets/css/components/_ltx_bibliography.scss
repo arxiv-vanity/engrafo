@@ -1,14 +1,9 @@
 @import "../fonts";
 @import "../media";
+@import "./ltx_section";
 
 .ltx_bibliography {
-  margin: 4em 0;
-
-  .ltx_title_bibliography {
-    @include font-heading();
-
-    margin: 0 0 2em 0;
-  }
+  @extend .ltx_section;
 
   .ltx_biblist {
     list-style: none;

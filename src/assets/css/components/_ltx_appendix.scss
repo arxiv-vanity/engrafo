@@ -1,0 +1,5 @@
+@import "./ltx_section";
+
+.ltx_appendix {
+  @extend .ltx_section;
+}

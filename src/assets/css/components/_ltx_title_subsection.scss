@@ -5,6 +5,10 @@
 
   margin-bottom: 1.5em;
 
+  @include media(">=tablet") {
+    margin: 3em 0;
+  }
+
   .ltx_tag_subsection {
     display: inline-block;
     min-width: 50px;

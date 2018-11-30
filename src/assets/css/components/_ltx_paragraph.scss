@@ -1,0 +1,8 @@
+// Typically a <section> with a .ltx_title_paragraph heading
+.ltx_paragraph {
+  margin: 2em 0;
+
+  @include media(">=tablet") {
+    margin-bottom: 4em 0;
+  }
+}

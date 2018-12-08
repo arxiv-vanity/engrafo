@@ -1,5 +1,5 @@
 const fs = require("fs-extra");
-const jsdom = require("jsdom");
+const { JSDOM } = require("jsdom");
 
 const io = require("./io");
 const latexml = require("./latexml");
@@ -8,9 +8,8 @@ const postprocessors = require("./postprocessor");
 
 // Run postprocessing against a string of HTML
 function postprocess(htmlString, options) {
-  const document = jsdom.jsdom(htmlString, {
-    features: { ProcessExternalResources: false, FetchExternalResources: false }
-  });
+  const dom = new JSDOM(htmlString);
+  const document = dom.window.document;
 
   // Run all processing on document.
   postprocessors.css(document, options);
@@ -20,7 +19,7 @@ function postprocess(htmlString, options) {
   postprocessors.links(document);
   postprocessors.math(document);
 
-  return jsdom.serializeDocument(document);
+  return dom.serialize();
 }
 
 // Do all processing on the file that LaTeXML produces

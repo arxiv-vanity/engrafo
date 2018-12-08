@@ -1,6 +1,6 @@
 const converter = require("../src/converter");
 const fs = require("fs-extra");
-const jsdom = require("jsdom");
+const { JSDOM } = require("jsdom");
 const klawSync = require("klaw-sync");
 const path = require("path");
 
@@ -23,12 +23,8 @@ async function renderToDom(input, output) {
     externalJavaScript: path.join(relativeAssetsPath, "javascript/index.js")
   });
   const htmlString = await fs.readFile(htmlPath, "utf-8");
-  const document = jsdom.jsdom(htmlString, {
-    features: {
-      ProcessExternalResources: false,
-      FetchExternalResources: false
-    }
-  });
+  const dom = new JSDOM(htmlString);
+  const document = dom.window.document;
   return { htmlPath, htmlString, document };
 }
 

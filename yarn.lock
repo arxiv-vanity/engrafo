@@ -6167,10 +6167,10 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-linkify-urls@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/linkify-urls/-/linkify-urls-2.2.0.tgz#228886ed644d35f527fcdd1dc4dde33cb2525f1a"
-  integrity sha512-Zl71ZJPq1BrPmwlyEyZVTgzt1FzbMJnmxR9Oi/BcZLe2XG2UUhScj9TCn62yEfEf0za1t+yLji4jz96gXbb36A==
+linkify-urls@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/linkify-urls/-/linkify-urls-3.0.0.tgz#f99b3a5374bdace73601aa892e4177c0295916a0"
+  integrity sha512-hYOB5p3G2t8U9PXigra9uwzAeE6NzVjU8NCnNgXWMRMzG1jfS7uJs1avXBEMUw6ru12m2vs+7GJ5/MPsReUNBw==
   dependencies:
     create-html-element "^2.0.0"
 

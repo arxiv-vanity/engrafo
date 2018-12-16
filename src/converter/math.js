@@ -225,9 +225,6 @@ function renderMath(htmlString) {
 
   let pageConfig = {
     format: ["TeX"],
-    fontURL:
-      // TODO: get version from mathjax package
-      "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS",
     MathJax: mathjaxConfig
   };
 

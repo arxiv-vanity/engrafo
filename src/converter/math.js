@@ -186,7 +186,21 @@ function renderMath(htmlString) {
         Mapsfrom: ["\\mathrel{\u2906}"],
         Longmapsto: ["\\mathrel{\u27FE}"],
         longmapsfrom: ["\\mathrel{\u27FB}"],
-        Longmapsfrom: ["\\mathrel{\u27FD}"]
+        Longmapsfrom: ["\\mathrel{\u27FD}"],
+
+        // These are defined in LaTeXML's siunitx bindings, but for some reason don't work inside math
+        // From https://github.com/brucemiller/LaTeXML/blob/master/lib/LaTeXML/Package/siunitx.sty.ltxml
+        SIUnitSymbolCelsius: ["\u00B0C"],
+        SIUnitSymbolOhm: ["\u03C9"],
+        SIUnitSymbolDegree: ["\u00B0"],
+        SIUnitSymbolArcminute: ["{}^{\\prime}"],
+        SIUnitSymbolArcsecond: ["{}^{\\prime\\prime}"],
+        SIUnitSymbolAngstrom: ["\u00C5"],
+        SIUnitSymbolMicro: ["\u00B5"],
+        // FIXME: these don't work
+        "lx@arcdegree": ["\u00B0"],
+        "lx@arcminute": ["{}^{\\prime}"],
+        "lx@arcsecond": ["{}^{\\prime\\prime}"]
       },
       Augment: {
         Definitions: {

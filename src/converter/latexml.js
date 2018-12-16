@@ -70,7 +70,15 @@ function createChildProcess({
   });
 }
 
-// render a document with latexml
+/**
+ * Render a document with latexml
+ *
+ * @param {Object} options
+ * @param {string} options.texPath
+ * @param {string} options.outputDir
+ * @param {string} [options.cssPath]
+ * @param {string} [options.javaScriptPath]
+ */
 function render({ texPath, outputDir, cssPath, javaScriptPath }) {
   const htmlPath = path.join(outputDir, "index.html");
 

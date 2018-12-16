@@ -30,9 +30,18 @@ async function processHTML(htmlPath, options) {
   await fs.writeFile(htmlPath, htmlString);
 }
 
-// Render and postprocess a LaTeX file into outputDir (created if does not
-// exist). Calls callback with an error on failure or a path to an HTML file
-// on success.
+/**
+ * Render and postprocess a LaTeX file into outputDir (created if does not
+ * exist). Calls callback with an error on failure or a path to an HTML file
+ * on success.
+ *
+ * @param {Object} options
+ * @param {string} options.input
+ * @param {string} options.output
+ * @param {boolean} [options.postProcessing]
+ * @param {string} [options.externalCSS]
+ * @param {string} [options.externalJavaScript]
+ */
 async function render({
   input,
   output,

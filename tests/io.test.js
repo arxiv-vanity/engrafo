@@ -184,6 +184,7 @@ describe("pickLatexFile", () => {
 describe("uploadOutputToS3", () => {
   let dir;
   beforeEach(async () => {
+    // @ts-ignore
     uploader.mockReset();
     dir = await tmp.dir({ unsafeCleanup: true });
   });
@@ -192,6 +193,7 @@ describe("uploadOutputToS3", () => {
   });
 
   it("uploads files to S3", async () => {
+    // @ts-ignore
     uploader.mockReturnValueOnce(Promise.resolve({ count: 2 }));
     fs.writeFileSync(path.join(dir.path, "index.html"), "");
     fs.writeFileSync(path.join(dir.path, "cool.gif"), "");

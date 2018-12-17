@@ -800,15 +800,16 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@storybook/addon-viewport@^4.0.12":
-  version "4.0.12"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-4.0.12.tgz#54806e6b6559d37d0bc4cf0b78dd0f29a3e1e75b"
-  integrity sha512-CIN+/FQz/VkWLWNzIDXXV0/16YfzzPZRy7pNc9yJ6pqOq02nR/YIScUs8Htyeyp6+FaDOlDIoeKGwUDoaSjnAA==
+"@storybook/addon-viewport@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-4.1.2.tgz#c87a327840f09087755a86cdb8c651b756e81cd6"
+  integrity sha512-Lii8utWEdUD5B+i3ta/7aTt8REfOoQeXH2DQT5MUB78ojPmGNUFbtR/fTvWmYdHGCd+B3TGWTjWJykC2zrK+UQ==
   dependencies:
     "@emotion/styled" "^0.10.6"
-    "@storybook/addons" "4.0.12"
-    "@storybook/components" "4.0.12"
-    "@storybook/core-events" "4.0.12"
+    "@storybook/addons" "4.1.2"
+    "@storybook/components" "4.1.2"
+    "@storybook/core-events" "4.1.2"
+    core-js "^2.5.7"
     global "^4.3.2"
     prop-types "^15.6.2"
     util-deprecate "^1.0.2"
@@ -820,6 +821,16 @@
   dependencies:
     "@storybook/channels" "4.0.12"
     "@storybook/components" "4.0.12"
+    global "^4.3.2"
+    util-deprecate "^1.0.2"
+
+"@storybook/addons@4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-4.1.2.tgz#c5b21f19b9d648a52800f6854f8ca99d08e71aef"
+  integrity sha512-b9GrSzD6HTFK1U06zbZaFNKlBanrBBpaDfHPByEdkefzGmGMVpDehC+wG8xuUoENjYlbZH7D6GnlTKdHviXkGg==
+  dependencies:
+    "@storybook/channels" "4.1.2"
+    "@storybook/components" "4.1.2"
     global "^4.3.2"
     util-deprecate "^1.0.2"
 
@@ -836,6 +847,11 @@
   version "4.0.12"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-4.0.12.tgz#7698b5365a85b8a57ff018da637c8bc8bb6cc737"
   integrity sha512-HmdjiTeY9GO3ZTeveaAisbpXE7fMb/T7nRpR8vIJxS/9g87z/RInH88aUnCerfwrz56y+GkqrX5bpO/cAhYNvg==
+
+"@storybook/channels@4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-4.1.2.tgz#4efc82e2775fc143d5c5aa95b332ddd0e5b5bdd2"
+  integrity sha512-sdwiF7a0mKI0r/6g6qgaIvQRu+MGsvQ+Fv0HSDUU0qrThE8LhA6dl8wLjJ2BcHY93edksCKRg8zMhc0yARopOw==
 
 "@storybook/client-logger@4.0.12":
   version "4.0.12"
@@ -858,10 +874,31 @@
     react-textarea-autosize "^7.0.4"
     render-fragment "^0.1.1"
 
+"@storybook/components@4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-4.1.2.tgz#e7b52e19dde4e22db3625230280290e346dcb7bc"
+  integrity sha512-qCVIsgSBbEr8TaTyFZw5nwkui+7MLscI0/zodbluvFo2e2uorxH5W2gPqn76t0PVZaubAbn2t62pnJytyFbNbw==
+  dependencies:
+    "@emotion/core" "^0.13.1"
+    "@emotion/provider" "^0.11.2"
+    "@emotion/styled" "^0.10.6"
+    global "^4.3.2"
+    lodash "^4.17.11"
+    prop-types "^15.6.2"
+    react-inspector "^2.3.0"
+    react-split-pane "^0.1.84"
+    react-textarea-autosize "^7.0.4"
+    render-fragment "^0.1.1"
+
 "@storybook/core-events@4.0.12":
   version "4.0.12"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-4.0.12.tgz#76330bf25e521d69947216815a3695255fade24c"
   integrity sha512-TWj1xjtBv/0bRH1mPkoWAOexDkFNiBYSlV6BJXo9ozOQUEGnq+3Ii4CLK6HWfKCBL+whJNN+6DHs9CwS7HxuIQ==
+
+"@storybook/core-events@4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-4.1.2.tgz#73c36938537158d1f22767cd183a59576089c1d7"
+  integrity sha512-tyYqmVRmkHUWjgJ7A4hjSJ6qreaZhWWlvoGCCrPMQ09QSwtNkC41Ie6yLW64ZXp7PS4FK6yvVw+30YHNA53KZQ==
 
 "@storybook/core@4.0.12":
   version "4.0.12"

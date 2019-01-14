@@ -25,7 +25,7 @@
     "lodash": "^4.17.11",
     "mathjax-node-page": "^3.0.1",
     "s3-recursive-uploader": "^0.3.0",
-    "tippy.js": "^3.3.0",
+    "tippy.js": "^3.4.1",
     "titlecase": "^1.1.2",
     "tmp-promise": "^1.0.5"
   },

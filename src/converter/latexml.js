@@ -54,7 +54,7 @@ function createChildProcess({
       "-v", `${path.join(__dirname, "../../")}:/app`,
       "-w", "/input",
       "--rm",
-      "engrafo",
+      "engrafo-dev",
     ];
 
     latexmlArgs.push("--dest", "/output/index.html");

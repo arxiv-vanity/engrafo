@@ -7,5 +7,5 @@ exec docker run \
     -w /app \
     --rm \
     -it \
-    engrafo \
+    engrafo-dev \
     "$@"

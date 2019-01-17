@@ -1,2 +1,2 @@
 #!/bin/sh
-exec docker build -t engrafo .
+exec docker build -t engrafo-dev .

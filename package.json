@@ -16,7 +16,7 @@
     "build-storybook": "build-storybook -c .storybook -s tests/integration/"
   },
   "dependencies": {
-    "aws-sdk": "^2.387.0",
+    "aws-sdk": "^2.390.0",
     "express": "^4.16.4",
     "fs-extra": "^7.0.0",
     "include-media": "^1.4.9",

@@ -29,7 +29,7 @@ async function prepareInputDirectory(givenPath) {
 async function prepareOutputDirectory(outputDir) {
   // Create temp output dir if uploading to S3
   if (outputDir.startsWith("s3://")) {
-    const tmpdir = await tmp.dir();
+    const tmpdir = await tmp.dir({ dir: "/tmp" });
     return tmpdir.path;
   } else {
     // Create output directory if it doesn't exist
@@ -40,7 +40,7 @@ async function prepareOutputDirectory(outputDir) {
 
 // Fetch a tarball from S3 to use as input
 async function fetchInputFromS3(s3URL) {
-  const tmpDir = await tmp.dir();
+  const tmpDir = await tmp.dir({ dir: "/tmp" });
   const parsedS3URL = url.parse(s3URL);
   const localFile = path.join(tmpDir.path, path.basename(parsedS3URL.path));
   console.log(`Downloading ${s3URL} to ${localFile}...`);
@@ -61,7 +61,7 @@ async function fetchInputFromS3(s3URL) {
 }
 
 async function extractGzipToTmpdir(gzipPath) {
-  const tmpDir = await tmp.dir();
+  const tmpDir = await tmp.dir({ dir: "/tmp" });
   // TODO: this will delete the existing file. don't do that.
   await exec(`gunzip ${gzipPath}`);
   const gunzippedPath = gzipPath.replace(/\.gz$/, "");

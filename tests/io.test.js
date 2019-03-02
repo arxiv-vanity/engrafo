@@ -1,6 +1,7 @@
 const childProcess = require("child_process");
 const fs = require("fs");
 const path = require("path");
+const request = require("request");
 const uploader = require("s3-recursive-uploader");
 const tmp = require("tmp-promise");
 const io = require("../src/converter/io");
@@ -15,6 +16,7 @@ jest.mock("aws-sdk", () => {
   };
 });
 
+jest.mock("request");
 jest.mock("s3-recursive-uploader");
 
 function makeTarball(p) {
@@ -29,6 +31,7 @@ describe("prepareInputDirectory", () => {
   let dir;
   beforeEach(async () => {
     mockGetObject.mockReset();
+    request.mockReset();
     dir = await tmp.dir({ unsafeCleanup: true });
   });
   afterEach(() => {
@@ -68,6 +71,16 @@ describe("prepareInputDirectory", () => {
       Key: "foobar.tar.gz"
     });
     var texFile = path.join(inputPath, "main.tex");
+    expect(fs.lstatSync(texFile).isFile()).toBe(true);
+  });
+
+  it("fetches tarballs from URLs", async () => {
+    const tarball = makeTarball(dir.path);
+    request.get.mockReturnValueOnce(fs.createReadStream(tarball));
+    const inputPath = await io.prepareInputDirectory(
+      "https://example.com/foo.tar.gz"
+    );
+    const texFile = path.join(inputPath, "main.tex");
     expect(fs.lstatSync(texFile).isFile()).toBe(true);
   });
 });

@@ -2,6 +2,7 @@ const childProcess = require("child_process");
 const fs = require("fs-extra");
 const path = require("path");
 const uploader = require("s3-recursive-uploader");
+const request = require("request");
 const AWS = require("aws-sdk");
 const tmp = require("tmp-promise");
 const url = require("url");
@@ -16,6 +17,11 @@ async function prepareInputDirectory(givenPath) {
   // Fetch input from S3 if required
   if (givenPath.startsWith("s3://")) {
     inputPath = await fetchInputFromS3(inputPath);
+  }
+
+  // Fetch URL if required
+  if (givenPath.startsWith("https://")) {
+    inputPath = await fetchInputFromURL(inputPath);
   }
 
   // Untar tarball, if required
@@ -57,6 +63,35 @@ async function fetchInputFromS3(s3URL) {
     const file = fs.createWriteStream(localFile);
     readStream.pipe(file);
   });
+  return localFile;
+}
+
+// Fetch tarball from URL to use as input
+async function fetchInputFromURL(inputURL) {
+  const tmpDir = await tmp.dir({ dir: "/tmp" });
+  const parsedURL = url.parse(inputURL);
+  let localFile = path.join(tmpDir.path, path.basename(parsedURL.path));
+  let contentEncoding;
+  await new Promise((resolve, reject) => {
+    request
+      .get({
+        url: inputURL,
+        headers: {
+          "User-Agent": "engrafo"
+        }
+      })
+      .on("response", response => {
+        contentEncoding = response.headers["content-encoding"];
+      })
+      .on("end", resolve)
+      .on("error", reject)
+      .pipe(fs.createWriteStream(localFile));
+  });
+  // arXiv URLs don't have extensions, but we rely on the extensions to know whether to unzip
+  if (contentEncoding === "x-gzip" && !localFile.endsWith(".gz")) {
+    await fs.rename(localFile, localFile + ".gz");
+    localFile = localFile + ".gz";
+  }
   return localFile;
 }
 

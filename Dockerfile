@@ -1,5 +1,5 @@
 # Version from https://hub.docker.com/_/debian/
-FROM debian:testing-20190204
+FROM debian:testing-20190228
 
 # LaTeX stuff first, because it's enormous and doesn't change much
 # Change logs here: https://packages.debian.org/buster/texlive-full

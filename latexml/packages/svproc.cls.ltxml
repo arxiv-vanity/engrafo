@@ -1,0 +1,14 @@
+# -*- mode: Perl -*-
+package LaTeXML::Package::Pool;
+use strict;
+use warnings;
+use LaTeXML::Package;
+
+LoadClass('OmniBus');
+RequirePackage('multicol');
+RequirePackage('aliascnt');
+
+DefMacro('\frontmatter', '');
+DefMacro('\mainmatter', '');
+DefMacro('\backmatter', '');
+1;

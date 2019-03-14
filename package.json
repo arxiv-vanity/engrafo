@@ -27,7 +27,7 @@
     "request": "^2.88.0",
     "s3-recursive-uploader": "^0.3.0",
     "tippy.js": "^3.4.1",
-    "titlecase": "^1.1.2",
+    "titlecase": "^1.1.3",
     "tmp-promise": "^1.0.5"
   },
   "devDependencies": {

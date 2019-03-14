@@ -9836,10 +9836,10 @@ tippy.js@^3.4.1:
   dependencies:
     popper.js "^1.14.6"
 
-titlecase@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/titlecase/-/titlecase-1.1.2.tgz#78113d1108086b8326331a3247dea8f5a49ea853"
-  integrity sha1-eBE9EQgIa4MmMxoyR96o9aSeqFM=
+titlecase@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/titlecase/-/titlecase-1.1.3.tgz#fc6d65ff582b0602410768ef1a09b70506313dc3"
+  integrity sha512-pQX4oiemzjBEELPqgK4WE+q0yhAqjp/yzusGtlSJsOuiDys0RQxggepYmo0BuegIDppYS3b3cpdegRwkpyN3hw==
 
 tmp-promise@^1.0.5:
   version "1.0.5"

@@ -47,6 +47,9 @@ module.exports = function(document) {
   // Add http:// to URLs which don't have it
   Array.from(document.querySelectorAll("a")).forEach(a => {
     var href = a.getAttribute("href");
+    if (!href) {
+      return;
+    }
     if (
       !href.startsWith("http://") &&
       !href.startsWith("https://") &&

@@ -83,7 +83,11 @@ $fontFamilyMonospace: "Computer Modern Typewriter", monospace;
     font-size: 18px !important;
   }
 
-  @include media(">=desktop") {
+  @include media(">=desktop", "<huge") {
+    font-size: 20px !important;
+  }
+
+  @include media(">=huge") {
     font-size: 24px !important;
   }
 }
@@ -114,8 +118,12 @@ $fontFamilyMonospace: "Computer Modern Typewriter", monospace;
     font-size: 16px !important;
   }
 
-  @include media(">=desktop") {
-    font-size: 22px !important;
+  @include media(">=desktop", "<huge") {
+    font-size: 18px !important;
+  }
+
+  @include media(">=huge") {
+    font-size: 20px !important;
   }
 }
 

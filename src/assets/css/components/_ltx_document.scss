@@ -1,5 +1,43 @@
 @import "../media";
 
+@mixin document-width($textWidth, $pageWidth) {
+  width: $pageWidth;
+
+  // Everything is width of text
+  & > *,
+  & section > * {
+    width: $textWidth;
+  }
+
+  // ... except sections, because they can contain other stuff which might
+  // be wider than the text
+  & > section,
+  & section > section {
+    width: $pageWidth;
+  }
+
+  // ... and except the stuff we actually want to be wider than the text
+  .ltx_biblist,
+  .ltx_figure,
+  .ltx_engrafo_equation_container,
+  .ltx_listing,
+  .ltx_table,
+  .ltx_title {
+    width: $pageWidth;
+  }
+
+  // Subfigures contain .ltx_figure, which we don't want to be $pageWidth wide
+  .ltx_subfigure .ltx_figure {
+    width: auto;
+  }
+
+  // Paragraph and subparagraph titles we want to float
+  .ltx_title_paragraph,
+  .ltx_title_subparagraph {
+    width: auto;
+  }
+}
+
 .ltx_document {
   background: white;
   margin-top: 4em;
@@ -10,50 +48,20 @@
   margin-right: 8px;
   box-sizing: border-box;
 
-  @include media(">=tablet", "<desktop") {
+  @include media(">=tablet") {
     width: 650px;
     margin-left: auto;
     margin-right: auto;
   }
 
   @include media(">=desktop") {
-    width: 900px;
+    @include document-width(700px, 900px);
     margin-left: auto;
     margin-right: auto;
+  }
 
-    // Everything is 700px wide
-    & > *,
-    & section > * {
-      width: 700px;
-    }
-
-    // ... except sections, because they can contain other stuff which might
-    // be wider than 700px
-    & > section,
-    & section > section {
-      width: 900px;
-    }
-
-    // ... and except the stuff we actually want to be wider than 700px
-    .ltx_biblist,
-    .ltx_figure,
-    .ltx_engrafo_equation_container,
-    .ltx_listing,
-    .ltx_table,
-    .ltx_title {
-      width: 900px;
-    }
-
-    // Subfigures contain .ltx_figure, which we don't want to be wider than 700px
-    .ltx_subfigure .ltx_figure {
-      width: auto;
-    }
-
-    // Paragraph and subparagraph titles we want to float
-    .ltx_title_paragraph,
-    .ltx_title_subparagraph {
-      width: auto;
-    }
+  @include media(">=huge") {
+    @include document-width(700px, 1100px);
   }
 
   // FIXME: These are set by various things and come from ltx:note in the frontmatter.

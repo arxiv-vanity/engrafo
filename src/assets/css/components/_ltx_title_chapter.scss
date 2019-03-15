@@ -10,11 +10,11 @@
   font-size: 20px !important;
   line-height: 1.1;
 
-  @include media("<desktop", ">=tablet") {
+  @include media("<huge", ">=tablet") {
     font-size: 30px !important;
     min-height: 2em;
   }
-  @include media(">=desktop") {
+  @include media(">=huge") {
     font-size: 40px !important;
     min-height: 2em;
   }

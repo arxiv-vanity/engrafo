@@ -49,10 +49,14 @@
       display: none;
     }
 
-    display: none;
+    // Hide on mobile
+    @include media("<desktop") {
+      display: none;
+    }
 
-    @include media(">=desktop") {
-      display: block;
+    // Push out a bit on larger screens
+    @include media(">=1200px") {
+      margin-right: -300px;
     }
   }
 }

@@ -13,7 +13,11 @@
     font-size: 40px !important;
     min-height: 2em;
   }
-  @include media(">=desktop") {
+  @include media("<huge", ">=desktop") {
+    font-size: 50px !important;
+    min-height: 2em;
+  }
+  @include media(">=huge") {
     font-size: 60px !important;
     min-height: 2em;
   }

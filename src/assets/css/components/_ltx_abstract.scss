@@ -2,10 +2,14 @@
 
 .ltx_abstract {
   border: 1px solid #666;
-  padding: 1.5em;
+  padding: 16px;
   margin-bottom: 2em;
 
   @include font-body();
+
+  @include media(">=tablet") {
+    padding: 1.5em;
+  }
 
   .ltx_title_abstract {
     @include font-heading();

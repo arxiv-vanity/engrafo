@@ -12,17 +12,15 @@ Into this:
 
 <img src="docs/screenshot-screens.png">
 
-**Note:** Engrafo is being rewritten, so we recommend not to not use the version in master. [See this issue for more details.](https://github.com/arxiv-vanity/engrafo/issues/255) If you want to convert documents, see the "Usage" section below, where there are instructions on how to use the stable 1.1.0 version.
-
 ## Usage
 
 The easiest way to run Engrafo is by using the Docker image. To convert `input/main.tex` into `output/index.html`, run:
 
     $ docker run \
       -v "$(pwd)":/workdir -w /workdir \
-      arxivvanity/engrafo:1.1.0 engrafo input/main.tex output/
+      arxivvanity/engrafo engrafo input/main.tex output/
 
-For full usage, run `docker run arxivvanity/engrafo:1.1.0 engrafo --help`.
+For full usage, run `docker run arxivvanity/engrafo engrafo --help`.
 
 ## Development environment
 

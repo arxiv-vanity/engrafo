@@ -6692,10 +6692,10 @@ math-expression-evaluator@^1.2.14:
   resolved "https://registry.yarnpkg.com/math-expression-evaluator/-/math-expression-evaluator-1.2.17.tgz#de819fdbcd84dccd8fae59c6aeb79615b9d266ac"
   integrity sha1-3oGf282E3M2PrlnGrreWFbnSZqw=
 
-mathjax-node-page@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/mathjax-node-page/-/mathjax-node-page-3.0.1.tgz#6c1cad0dbab61fbf23054889369d5a89f833fcce"
-  integrity sha512-LlkChMBprwRqiNIhQ6eSuIG/FNt7HUzy0wkm2BD9/guGRLGvYxAmUC+cGbupmmqnuv0S1p0Un04BBoZAWdPqrQ==
+mathjax-node-page@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/mathjax-node-page/-/mathjax-node-page-3.0.2.tgz#ebb14aafb39bda101f0b8c425982cb48078f4f3a"
+  integrity sha512-xrq0ZrS0A5U2+VE9qls2refOH0eNCccNDgNQZ4pmN17CdP+N3MbwfeRT72ceXwYKECqvCEWZuObrAH7p8GE/Ug==
   dependencies:
     mathjax-node "^2.0.0"
     yargs "^11.0.0"

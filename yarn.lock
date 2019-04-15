@@ -962,16 +962,16 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@storybook/addon-viewport@^5.0.5":
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-5.0.5.tgz#212240f9955e7dc2f0ca2481e73effbeac95135d"
-  integrity sha512-47NU7wRwKBfnwGCBbslDPLsFIGvStYq1AUqvdtoV/WskLa+Zhi4dwaSyj0XhF3eSeUa23SiDGejUDHsEyVBtiw==
+"@storybook/addon-viewport@^5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-5.0.7.tgz#a766234ce67b998faee9254396a0fa86e7732678"
+  integrity sha512-oTMkGKeghqj1iWBoUJj1I4UHvcfU8/OxlQJSRTVBx5GuwRVINSdxmCeYcq8CviXCv/lrecGYAh9NyJSd94z9jg==
   dependencies:
-    "@storybook/addons" "5.0.5"
-    "@storybook/client-logger" "5.0.5"
-    "@storybook/components" "5.0.5"
-    "@storybook/core-events" "5.0.5"
-    "@storybook/theming" "5.0.5"
+    "@storybook/addons" "5.0.7"
+    "@storybook/client-logger" "5.0.7"
+    "@storybook/components" "5.0.7"
+    "@storybook/core-events" "5.0.7"
+    "@storybook/theming" "5.0.7"
     core-js "^2.6.5"
     global "^4.3.2"
     memoizerific "^1.11.3"
@@ -985,6 +985,17 @@
   dependencies:
     "@storybook/channels" "5.0.5"
     "@storybook/client-logger" "5.0.5"
+    core-js "^2.6.5"
+    global "^4.3.2"
+    util-deprecate "^1.0.2"
+
+"@storybook/addons@5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-5.0.7.tgz#2663cb384a0c840e74dc34d738b4f8173b58a0e5"
+  integrity sha512-/4Gwy6DYSSk2FDjJt9lqbrJQliH1Sliy8yQ+a7SThaNxZ3ixiGgonSf55eRyhjyMYTrdUpcy/FjPZo6RcvBzEQ==
+  dependencies:
+    "@storybook/channels" "5.0.7"
+    "@storybook/client-logger" "5.0.7"
     core-js "^2.6.5"
     global "^4.3.2"
     util-deprecate "^1.0.2"
@@ -1004,6 +1015,13 @@
   version "5.0.5"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-5.0.5.tgz#76a7a0ead489a544dc6827e09e8ef66fa5415a78"
   integrity sha512-PKSGev6fRzquBpeqk473P7M+2GmTveO4v2LFkFyUOQkxKyyGJzbLkfrptgy1SNBpqmPRkiIxGIrab7iN9QUbEg==
+  dependencies:
+    core-js "^2.6.5"
+
+"@storybook/channels@5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-5.0.7.tgz#38fa956882acbcdab75aadbf7f8f04e864fce402"
+  integrity sha512-zZ/HMtsWANwMH2oRzqW2PIGctzMYRvIR7xH7emGwZQP8YX3IyncHwUdmiOudqMHoc2NnlAGtcSFPz5uIHg9TlQ==
   dependencies:
     core-js "^2.6.5"
 
@@ -1031,6 +1049,13 @@
   version "5.0.5"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-5.0.5.tgz#35af9420325cc7dcd5952593351620670db0903d"
   integrity sha512-7J0FfwgYcMw6WsEfE0174C8O0yalN73Aqqo6At3SyYHwy6/UiIPFs2X78MzahIqOqywXEWjCIPoGghmpukuCmw==
+  dependencies:
+    core-js "^2.6.5"
+
+"@storybook/client-logger@5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-5.0.7.tgz#24a4471d152610e898b0ccb62189d14ffd03491b"
+  integrity sha512-L8AKnSYWxhfiGGjrue2FNBIO+WkYlJUHD20bYBe1l7QP3VgjadLtreCm7kNaY0MwKgDsdajRwV4KANQuBI+vyw==
   dependencies:
     core-js "^2.6.5"
 
@@ -1065,10 +1090,48 @@
     recompose "^0.30.0"
     render-fragment "^0.1.1"
 
+"@storybook/components@5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-5.0.7.tgz#c24e0bda88454e87e22c251c3d8d37ab82c286e3"
+  integrity sha512-HQ8pHarkJQfEdae2BThJOcArvX4YgHlaFDHrSMpI+HIx7xDCy5+TxhupynlrvvXRpjho4qeyNQBCQQ063mT6aQ==
+  dependencies:
+    "@storybook/addons" "5.0.7"
+    "@storybook/client-logger" "5.0.7"
+    "@storybook/core-events" "5.0.7"
+    "@storybook/router" "5.0.7"
+    "@storybook/theming" "5.0.7"
+    core-js "^2.6.5"
+    global "^4.3.2"
+    immer "^1.12.0"
+    js-beautify "^1.8.9"
+    lodash.pick "^4.4.0"
+    lodash.throttle "^4.1.1"
+    memoizerific "^1.11.3"
+    polished "^2.3.3"
+    prop-types "^15.6.2"
+    react "^16.8.1"
+    react-dom "^16.8.1"
+    react-focus-lock "^1.17.7"
+    react-helmet-async "^0.2.0"
+    react-inspector "^2.3.0"
+    react-popper-tooltip "^2.8.0"
+    react-syntax-highlighter "^8.0.1"
+    react-textarea-autosize "^7.0.4"
+    reactjs-popup "^1.3.2"
+    recompose "^0.30.0"
+    render-fragment "^0.1.1"
+
 "@storybook/core-events@5.0.5":
   version "5.0.5"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-5.0.5.tgz#831fa76523194a79f23c986ab57393cbbf49d091"
   integrity sha512-N6E1uhvCHpqixCkLjPEwN7aIMaWt2RZvnW0TW46BnX4W3OOwpSB6xWKM1k8TDDntGAsFwaqB7AuiATBy9VHXOg==
+  dependencies:
+    core-js "^2.6.5"
+
+"@storybook/core-events@5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-5.0.7.tgz#527f09231a20feb354fcfabb38be5da6b5ed6a65"
+  integrity sha512-Sy7Bmvrd4fIA3sG1sY+6HP3K1mVdtU5Cu6+JdqhQnb0IWc1YpqS4Uk6nuasNcZy6vLdPpq/K0wQk1biiHp5KBA==
   dependencies:
     core-js "^2.6.5"
 
@@ -1183,6 +1246,18 @@
     memoizerific "^1.11.3"
     qs "^6.5.2"
 
+"@storybook/router@5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@storybook/router/-/router-5.0.7.tgz#5b9bdc91ac7a4b35531fbf88c9519fd5f143ab83"
+  integrity sha512-b1uWWECe9qOP1yww7kk5nzkBc1oy5MPtsAFEdbOnJtDooyX58HNeuWUXouUj5dGH38ksKiHqparpHEknczRajg==
+  dependencies:
+    "@reach/router" "^1.2.1"
+    "@storybook/theming" "5.0.7"
+    core-js "^2.6.5"
+    global "^4.3.2"
+    memoizerific "^1.11.3"
+    qs "^6.5.2"
+
 "@storybook/theming@5.0.5":
   version "5.0.5"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-5.0.5.tgz#184939e66dcfaf96975f77f38a530f3cf92c0e78"
@@ -1191,6 +1266,26 @@
     "@emotion/core" "^10.0.7"
     "@emotion/styled" "^10.0.7"
     "@storybook/client-logger" "5.0.5"
+    common-tags "^1.8.0"
+    core-js "^2.6.5"
+    deep-object-diff "^1.1.0"
+    emotion-theming "^10.0.7"
+    global "^4.3.2"
+    lodash.isequal "^4.5.0"
+    lodash.mergewith "^4.6.1"
+    memoizerific "^1.11.3"
+    polished "^2.3.3"
+    prop-types "^15.6.2"
+    react-inspector "^2.3.1"
+
+"@storybook/theming@5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-5.0.7.tgz#cb253580c699dcebb7702905f07bb2815ef141ce"
+  integrity sha512-7SgHlxxKOMNZyZGv0lo8uTNfzse8223E4/2zTulVTl5LZ5xSNUgwdrkHeb6p4tiD0NoiT9+qIZiW3S4pHgN/pw==
+  dependencies:
+    "@emotion/core" "^10.0.7"
+    "@emotion/styled" "^10.0.7"
+    "@storybook/client-logger" "5.0.7"
     common-tags "^1.8.0"
     core-js "^2.6.5"
     deep-object-diff "^1.1.0"

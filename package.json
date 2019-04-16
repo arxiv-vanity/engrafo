@@ -34,7 +34,7 @@
     "@babel/core": "^7.4.0",
     "@babel/runtime": "^7.3.4",
     "@storybook/addon-viewport": "^5.0.5",
-    "@storybook/html": "^5.0.5",
+    "@storybook/html": "^5.0.8",
     "babel-loader": "^8.0.5",
     "chalk": "^2.4.2",
     "eslint": "^5.15.3",

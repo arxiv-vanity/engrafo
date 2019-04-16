@@ -33,7 +33,7 @@
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/runtime": "^7.4.3",
-    "@storybook/addon-viewport": "^5.0.5",
+    "@storybook/addon-viewport": "^5.0.8",
     "@storybook/html": "^5.0.8",
     "babel-loader": "^8.0.5",
     "chalk": "^2.4.2",

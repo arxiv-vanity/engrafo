@@ -16,4 +16,9 @@ describe("linkifyArxiv", () => {
       'This is <a href="https://arxiv.org/abs/1234.5678">abs/1234.5678</a>, a sentence'
     );
   });
+  it("converts 'arxiv report 1234.5678' into a link", () => {
+    expect(linkifyArxiv("blah blah arXiv report 1234.5678 blah blah")).toEqual(
+      'blah blah <a href="https://arxiv.org/abs/1234.5678">arXiv report 1234.5678</a> blah blah'
+    );
+  });
 });

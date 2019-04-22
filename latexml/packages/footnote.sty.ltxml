@@ -1,0 +1,10 @@
+# -*- mode: Perl -*-
+package LaTeXML::Package::Pool;
+use strict;
+use warnings;
+use LaTeXML::Package;
+
+# e.g. 1903.06464 
+
+DefMacro('\makesavenoteenv{}', '');
+1;

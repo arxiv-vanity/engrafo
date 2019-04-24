@@ -25,6 +25,7 @@ DefMacro('\emnlpfinalcopy', '');
 DefMacro('\cvprfinalcopy', '');
 DefMacro('\aclfinalcopy', '');
 DefMacro('\iccvfinalcopy', '');
+DefMacro('\nipsfinalcopy', '');
 
 
 # 1607.07429

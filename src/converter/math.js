@@ -233,6 +233,8 @@ function renderMath(htmlString) {
     css: true
   };
 
+  console.log("Rendering math...");
+
   return new Promise(resolve => {
     mjpage(htmlString, pageConfig, mjnodeConfig, resolve);
   });

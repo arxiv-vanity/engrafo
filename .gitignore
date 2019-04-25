@@ -12,6 +12,7 @@ tests/__image_snapshots__/__diff_output__
 .cache
 dist
 .tmp
+.env
 
 /storybook-static
 

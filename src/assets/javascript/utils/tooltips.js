@@ -1,13 +1,4 @@
-import tippy from "tippy.js";
-
-// https://github.com/atomiks/tippyjs/issues/260
-function onShow(instance) {
-  document.querySelectorAll(".tippy-popper").forEach(popper => {
-    if (popper !== instance.popper) {
-      popper._tippy.hide();
-    }
-  });
-}
+import tippy from "tippy.js/esm";
 
 export function createTooltip(el, content) {
   tippy(el, {
@@ -31,7 +22,10 @@ export function createTooltip(el, content) {
         }
       }
     },
-    onShow: onShow
+    // https://github.com/atomiks/tippyjs/issues/260
+    onShow: instance => {
+      tippy.hideAll({ exclude: instance });
+    }
   });
   // For progressive enhancement in CSS
   el.className += " ltx_engrafo_tooltip";

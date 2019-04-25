@@ -20,6 +20,14 @@ async function main(argv) {
       "--javascript <path>",
       "URL or path to external JavaScript to use instead of the default JS. If not passed, the default JS is not copied to the output directory."
     )
+    .option(
+      "--biblio-glutton-url <url>",
+      "URL to a biblio-glutton instance to resolve citations into links"
+    )
+    .option(
+      "--grobid-url <url>",
+      "URL to a grobid instance to resolve citations into links"
+    )
     .parse(argv);
 
   const input = program.args[0];
@@ -35,7 +43,11 @@ async function main(argv) {
     output: output,
     postProcessing: program.postProcessing,
     externalCSS: program.css,
-    externalJavaScript: program.javascript
+    externalJavaScript: program.javascript,
+    biblioGluttonUrl: program.biblioGluttonUrl
+      ? program.biblioGluttonUrl
+      : process.env.BIBLIO_GLUTTON_URL,
+    grobidUrl: program.grobidUrl ? program.grobidUrl : process.env.GROBID_URL
   };
 
   const htmlPath = await converter.render(options);

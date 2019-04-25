@@ -7,7 +7,7 @@ const math = require("./math");
 const postprocessors = require("./postprocessor");
 
 // Run postprocessing against a string of HTML
-function postprocess(htmlString, options) {
+async function postprocess(htmlString, options) {
   const dom = new JSDOM(htmlString);
   const document = dom.window.document;
 
@@ -17,6 +17,7 @@ function postprocess(htmlString, options) {
   postprocessors.footnotes(document);
   postprocessors.headings(document);
   postprocessors.links(document);
+  await postprocessors.bibliographyLinks(document, options); // after links
   postprocessors.math(document);
 
   return dom.serialize();
@@ -25,7 +26,7 @@ function postprocess(htmlString, options) {
 // Do all processing on the file that LaTeXML produces
 async function processHTML(htmlPath, options) {
   let htmlString = await fs.readFile(htmlPath, "utf8");
-  htmlString = postprocess(htmlString, options);
+  htmlString = await postprocess(htmlString, options);
   htmlString = await math.renderMath(htmlString);
   await fs.writeFile(htmlPath, htmlString);
 }
@@ -41,13 +42,16 @@ async function processHTML(htmlPath, options) {
  * @param {boolean} [options.postProcessing]
  * @param {string} [options.externalCSS]
  * @param {string} [options.externalJavaScript]
+ * @param {string} [options.biblioGluttonUrl]
  */
 async function render({
   input,
   output,
   postProcessing,
   externalCSS,
-  externalJavaScript
+  externalJavaScript,
+  biblioGluttonUrl,
+  grobidUrl
 }) {
   if (postProcessing === undefined) {
     postProcessing = true;
@@ -74,7 +78,12 @@ async function render({
     javaScriptPath
   });
 
-  await processHTML(htmlPath, { externalCSS, externalJavaScript });
+  await processHTML(htmlPath, {
+    externalCSS,
+    externalJavaScript,
+    biblioGluttonUrl,
+    grobidUrl
+  });
 
   if (output.startsWith("s3://")) {
     await io.uploadOutputToS3(outputDir, output);

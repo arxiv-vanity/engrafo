@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "aws-sdk": "^2.441.0",
+    "axios": "^0.18.0",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "fs-extra": "^7.0.0",
@@ -25,11 +26,13 @@
     "linkify-urls": "^3.1.0",
     "lodash": "^4.17.11",
     "mathjax-node-page": "^3.0.2",
+    "querystring": "^0.2.0",
     "request": "^2.88.0",
     "s3-recursive-uploader": "^0.3.0",
     "tippy.js": "^4.3.0",
     "titlecase": "^1.1.2",
-    "tmp-promise": "^1.0.5"
+    "tmp-promise": "^1.0.5",
+    "xml2js": "^0.4.19"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",

@@ -13,4 +13,10 @@ if (program.args.length != 1) {
   process.exit(1);
 }
 
-server.start(program.args[0]);
+const options = {
+  input: program.args[0],
+  biblioGluttonUrl: process.env.BIBLIO_GLUTTON_URL,
+  grobidUrl: process.env.GROBID_URL
+};
+
+server.start(options);

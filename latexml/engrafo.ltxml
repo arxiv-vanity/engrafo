@@ -20,6 +20,7 @@ DefMacro('\biboptions{}', '');
 
 # https://github.com/ICLR/Master-Template
 DefMacro('\iclrfinalcopy', '');
+DefMacro('\iclrconference', '');
 # 1707.08172
 DefMacro('\emnlpfinalcopy', '');
 DefMacro('\cvprfinalcopy', '');

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+require("dotenv").config();
 const converter = require("../src/converter");
 const program = require("commander");
 

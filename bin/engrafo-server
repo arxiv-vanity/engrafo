@@ -1,9 +1,7 @@
 #!/usr/bin/env node
-
-var server = require("../src/converter/server");
-var path = require("path");
-var fs = require("fs");
-var program = require("commander");
+require("dotenv").config();
+const program = require("commander");
+const server = require("../src/converter/server");
 
 program
   .version("0.0.1")

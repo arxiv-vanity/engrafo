@@ -21,11 +21,17 @@ module.exports = async function(document, { biblioGluttonUrl, grobidUrl }) {
       tag.remove();
     }
 
-    const data = await biblioGlutton.getCitationMetadata(
-      bibitemCopy.textContent.trim(),
-      { biblioGluttonUrl, grobidUrl }
-    );
-    if (!data) {
+    let data;
+    try {
+      data = await biblioGlutton.getCitationMetadata(
+        bibitemCopy.textContent.trim(),
+        { biblioGluttonUrl, grobidUrl }
+      );
+      if (!data) {
+        continue;
+      }
+    } catch (error) {
+      console.error(`Error getting citation metadata: ${error}`);
       continue;
     }
 

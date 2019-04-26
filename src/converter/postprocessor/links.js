@@ -1,5 +1,4 @@
 let linkifyUrls = require("linkify-urls");
-let linkifyArxiv = require("../linkifyArxiv");
 
 module.exports = function(document) {
   var window = document.defaultView;
@@ -25,7 +24,6 @@ module.exports = function(document) {
   while (walker.nextNode()) {
     var node = walker.currentNode;
     var newText = linkifyUrls(node.textContent);
-    newText = linkifyArxiv(newText);
     // Linkify didn't do anything
     if (node.textContent === newText) {
       continue;

@@ -38,20 +38,25 @@ module.exports = async function(document, { biblioGluttonUrl, grobidUrl }) {
       }
     }
 
-    // If there existing links, skip for now
-    if (existingLinks.length > 0) {
-      continue;
-    }
+    // STEP 2: If there's an arXiv ID, always use the arXiv ID
 
-    // STEP 2: Find unlinked arXiv IDs
-    const arxivID = matchArxivID(bibitem.textContent);
-    if (arxivID) {
-      wrapCitationInLink(document, bibitem, "https://arxiv.org/abs/" + arxivID);
-      continue;
+    // FIXME: maybe if there is a link, do something clever? just link the ID? clobber the other link if we're confident?
+    if (existingLinks.length === 0) {
+      const arxivID = matchArxivID(bibitem.textContent);
+      if (arxivID) {
+        wrapCitationInLink(
+          document,
+          bibitem,
+          "https://arxiv.org/abs/" + arxivID
+        );
+        continue;
+      }
     }
 
     // STEP 3: THE GROBIDATOR
-    // Try and turn the plain text citation into a link using biblio-glutton and Grobid
+    // Try and turn the citation into a link using biblio-glutton and Grobid.
+    // This will also process links which already have a link in them -- in that case, this gives us the opportunity to
+    // find a better one!
 
     // If no biblio-glutton or Grobid, skip this
     if (!biblioGluttonUrl || !grobidUrl) {
@@ -82,6 +87,17 @@ module.exports = async function(document, { biblioGluttonUrl, grobidUrl }) {
     let url = data.oaLink ? data.oaLink : data.URL;
     if (!url) {
       continue;
+    }
+
+    // If there was an existing link and we didn't find a open access alternative,
+    // just give up and use what they already had
+    if (existingLinks.length > 0 && !data.oaLink) {
+      continue;
+    }
+
+    // Remove any existing links
+    for (let a of bibitem.querySelectorAll("a")) {
+      removeNodeAndKeepChildren(a);
     }
 
     wrapCitationInLink(document, bibitem, url);

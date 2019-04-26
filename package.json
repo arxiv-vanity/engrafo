@@ -27,6 +27,7 @@
     "lodash": "^4.17.11",
     "mathjax-node-page": "^3.0.2",
     "querystring": "^0.2.0",
+    "raven": "^2.6.4",
     "request": "^2.88.0",
     "s3-recursive-uploader": "^0.3.0",
     "tippy.js": "^4.3.0",

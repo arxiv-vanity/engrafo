@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 require("dotenv").config();
+
+if (process.env.SENTRY_DSN) {
+  const Raven = require("raven");
+  Raven.config(process.env.SENTRY_DSN).install();
+}
+
 const converter = require("../src/converter");
 const program = require("commander");
 

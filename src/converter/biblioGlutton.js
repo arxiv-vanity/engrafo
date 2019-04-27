@@ -51,6 +51,7 @@ async function biblioGluttonLookup(biblioGluttonUrl, params) {
       // No match, ignore
       return;
     }
+    throw error;
   }
 }
 

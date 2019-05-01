@@ -116,7 +116,7 @@ async function extractGzipToTmpdir(gzipPath) {
         console.log(
           "Input file is gzipped but not a tarball, assuming it is a .tex file"
         );
-        await fs.rename(gunzippedPath, path.join(tmpDir.path, "main.tex"));
+        await fs.move(gunzippedPath, path.join(tmpDir.path, "main.tex"));
       }
     } else {
       throw err;

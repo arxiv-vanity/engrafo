@@ -32,7 +32,7 @@
     "s3-recursive-uploader": "^0.3.0",
     "tippy.js": "^4.3.0",
     "titlecase": "^1.1.2",
-    "tmp-promise": "^1.0.5",
+    "tmp-promise": "^1.1.0",
     "xml2js": "^0.4.19"
   },
   "devDependencies": {

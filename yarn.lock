@@ -6740,10 +6740,10 @@ markdown-to-jsx@^6.9.1:
     prop-types "^15.6.2"
     unquote "^1.1.0"
 
-mathjax-node-page@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/mathjax-node-page/-/mathjax-node-page-3.0.2.tgz#ebb14aafb39bda101f0b8c425982cb48078f4f3a"
-  integrity sha512-xrq0ZrS0A5U2+VE9qls2refOH0eNCccNDgNQZ4pmN17CdP+N3MbwfeRT72ceXwYKECqvCEWZuObrAH7p8GE/Ug==
+mathjax-node-page@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/mathjax-node-page/-/mathjax-node-page-3.2.0.tgz#251e78c08efecd5755234f96a1901bdb5bfc621d"
+  integrity sha512-06891FqPo9+IPoxFteF9vu8g09cHNUMvIrClTj2EmAOITJWtd2v1JC7V4FL40nZriMcMIkADkZw7eq+fpAA4Ww==
   dependencies:
     mathjax-node "^2.0.0"
     yargs "^11.0.0"

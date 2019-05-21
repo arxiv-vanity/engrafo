@@ -25,7 +25,7 @@
     "jsdom": "^11.0.0",
     "linkify-urls": "^3.1.0",
     "lodash": "^4.17.11",
-    "mathjax-node-page": "^3.0.2",
+    "mathjax-node-page": "^3.2.0",
     "querystring": "^0.2.0",
     "raven": "^2.6.4",
     "request": "^2.88.0",

@@ -1,6 +1,6 @@
 const mjpage = require("mathjax-node-page").mjpage;
 
-function renderMath(htmlString) {
+function renderMath(dom) {
   let mathjaxConfig = {
     showProcessingMessages: false,
     messageStyle: "none",
@@ -236,7 +236,7 @@ function renderMath(htmlString) {
   console.log("Rendering math...");
 
   return new Promise(resolve => {
-    mjpage(htmlString, pageConfig, mjnodeConfig, resolve);
+    mjpage(dom, pageConfig, mjnodeConfig, resolve);
   });
 }
 

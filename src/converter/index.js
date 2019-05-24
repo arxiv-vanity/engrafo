@@ -20,6 +20,8 @@ async function postprocess(htmlString, options) {
   await postprocessors.bibliographyLinks(document, options); // after links
   postprocessors.math(document);
 
+  await math.renderMath(dom);
+
   return dom.serialize();
 }
 
@@ -27,7 +29,6 @@ async function postprocess(htmlString, options) {
 async function processHTML(htmlPath, options) {
   let htmlString = await fs.readFile(htmlPath, "utf8");
   htmlString = await postprocess(htmlString, options);
-  htmlString = await math.renderMath(htmlString);
   await fs.writeFile(htmlPath, htmlString);
 }
 

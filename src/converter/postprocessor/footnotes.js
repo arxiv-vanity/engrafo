@@ -20,10 +20,12 @@ function authorFootnotes(document) {
       document,
       '<div class="ltx_note_outer"></div>'
     );
-    authorNote.appendChild(note.querySelector(".ltx_note_content"));
+    const noteContent = note.querySelector(".ltx_note_content");
+    authorNote.appendChild(noteContent);
     authorNotesContainer.appendChild(authorNote);
+    const noteMark = note.querySelector(".ltx_note_mark");
     // Remove the footnote and replace with just the mark, because it isn't really a footnote any longer
-    note.parentNode.replaceChild(note.querySelector(".ltx_note_mark"), note);
+    note.parentNode.replaceChild(noteMark, note);
   }
 }
 

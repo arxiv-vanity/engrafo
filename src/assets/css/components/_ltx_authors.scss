@@ -7,6 +7,12 @@
 
   .ltx_personname {
     font-weight: bold;
+
+    // In case of multiple notes per author, separate them with comma.
+    .ltx_note_mark:not(:last-child):after {
+      content: ",";
+    }
+
   }
 
   // No spaces between authors

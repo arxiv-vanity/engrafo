@@ -30,7 +30,7 @@
     "raven": "^2.6.4",
     "request": "^2.88.0",
     "s3-recursive-uploader": "^0.3.0",
-    "tippy.js": "^4.3.3",
+    "tippy.js": "^4.3.4",
     "titlecase": "^1.1.2",
     "tmp-promise": "^2.0.1",
     "xml2js": "^0.4.19"

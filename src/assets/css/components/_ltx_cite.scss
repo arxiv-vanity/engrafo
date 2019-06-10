@@ -10,15 +10,11 @@
     font-size: inherit !important;
   }
 
-  a.ltx_ref,
-  a.ltx_ref:hover {
+  a.ltx_ref.engrafo_not_a_link,
+  a.ltx_ref.engrafo_not_a_link:hover {
     border-bottom: 0;
     text-decoration: none;
-
-    // Individual tooltip progressive enhancement
-    &.ltx_ref {
-      cursor: inherit;
-    }
+    cursor: inherit;
   }
 
   // Combined tooltip progressive enhancement

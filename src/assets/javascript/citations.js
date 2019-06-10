@@ -18,6 +18,7 @@ function createContent(el, ref) {
   const itemContainer = document.createElement("div");
   itemContainer.className = "ltx_bibitem";
   itemContainer.innerHTML = bibItem.innerHTML;
+  itemContainer.querySelector(".ltx_tag_bibitem").remove();
   return itemContainer;
 }
 
@@ -26,26 +27,10 @@ export default function render(el) {
   for (let cite of cites) {
     const refs = cite.querySelectorAll(".ltx_ref");
 
-    // Lots of references, separate tooltips otherwise it won't fit on the screen
-    if (refs.length > 3) {
-      for (let ref of refs) {
-        const content = createContent(el, ref);
-        if (content) {
-          createTooltip(ref, content);
-        }
-      }
-    }
-    // Not many references, put 'em all in one tooltip
-    else {
-      const content = document.createElement("div");
-      for (let ref of refs) {
-        const itemContent = createContent(el, ref);
-        if (itemContent) {
-          content.appendChild(itemContent);
-        }
-      }
-      if (content.children.length > 0) {
-        createTooltip(cite, content);
+    for (let ref of refs) {
+      const content = createContent(el, ref);
+      if (content) {
+        createTooltip(ref, content);
       }
     }
 

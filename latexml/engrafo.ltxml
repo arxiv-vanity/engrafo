@@ -11,10 +11,6 @@ DefMacro('\includepdf[]{}', '');
 DefMacro('\alignauthor', '');
 DefMacro('\affaddr{}', '#1');
 
-# icml2017.sty
-DefMacro('\icmltitle{}', '\title{#1}');
-DefMacro('\icmltitlerunning{}', '\title{#1}');
-
 # https://github.com/brucemiller/LaTeXML/issues/1085
 DefMacro('\biboptions{}', '');
 

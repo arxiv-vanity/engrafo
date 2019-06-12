@@ -33,7 +33,7 @@ RUN set -ex \
 
 RUN mkdir -p /usr/src/latexml
 WORKDIR /usr/src/latexml
-ENV LATEXML_COMMIT=2075e323dfc558d2462887775193ea6e499ba202
+ENV LATEXML_COMMIT=efca8582ff812bc1f65d27c5726e342555f7a3b7
 RUN curl -L https://github.com/brucemiller/LaTeXML/tarball/$LATEXML_COMMIT | tar --strip-components 1 -zxf - \
     && perl Makefile.PL \
     && make \

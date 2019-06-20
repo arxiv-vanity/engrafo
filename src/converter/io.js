@@ -2,7 +2,7 @@ const childProcess = require("child_process");
 const fs = require("fs-extra");
 const path = require("path");
 const uploader = require("s3-recursive-uploader");
-const request = require("request");
+const axios = require("axios");
 const AWS = require("aws-sdk");
 const tmp = require("tmp-promise");
 const url = require("url");
@@ -71,23 +71,21 @@ async function fetchInputFromURL(inputURL) {
   const tmpDir = await tmp.dir({ dir: "/tmp" });
   const parsedURL = url.parse(inputURL);
   let localFile = path.join(tmpDir.path, path.basename(parsedURL.path));
-  let contentEncoding;
+  const response = await axios.get(inputURL, {
+    headers: {
+      "User-Agent": "engrafo"
+    },
+    responseType: "stream"
+  });
   await new Promise((resolve, reject) => {
-    request
-      .get({
-        url: inputURL,
-        headers: {
-          "User-Agent": "engrafo"
-        }
-      })
-      .on("response", response => {
-        contentEncoding = response.headers["content-encoding"];
-      })
-      .on("end", resolve)
+    response.data
       .on("error", reject)
-      .pipe(fs.createWriteStream(localFile));
+      .pipe(fs.createWriteStream(localFile))
+      .on("error", reject)
+      .on("finish", resolve);
   });
   // arXiv URLs don't have extensions, but we rely on the extensions to know whether to unzip
+  const contentEncoding = response.headers["content-encoding"];
   if (contentEncoding === "x-gzip" && !localFile.endsWith(".gz")) {
     await fs.rename(localFile, localFile + ".gz");
     localFile = localFile + ".gz";

@@ -1,7 +1,7 @@
 const childProcess = require("child_process");
 const fs = require("fs");
 const path = require("path");
-const request = require("request");
+const axios = require("axios");
 const uploader = require("s3-recursive-uploader");
 const tmp = require("tmp-promise");
 const io = require("../src/converter/io");
@@ -16,7 +16,7 @@ jest.mock("aws-sdk", () => {
   };
 });
 
-jest.mock("request");
+jest.mock("axios");
 jest.mock("s3-recursive-uploader");
 
 function makeTarball(p) {
@@ -31,7 +31,7 @@ describe("prepareInputDirectory", () => {
   let dir;
   beforeEach(async () => {
     mockGetObject.mockReset();
-    request.mockReset();
+    axios.mockReset();
     dir = await tmp.dir({ unsafeCleanup: true });
   });
   afterEach(() => {
@@ -76,7 +76,12 @@ describe("prepareInputDirectory", () => {
 
   it("fetches tarballs from URLs", async () => {
     const tarball = makeTarball(dir.path);
-    request.get.mockReturnValueOnce(fs.createReadStream(tarball));
+    axios.get.mockResolvedValueOnce({
+      data: fs.createReadStream(tarball),
+      headers: {
+        "content-encoding": "x-gzip"
+      }
+    });
     const inputPath = await io.prepareInputDirectory(
       "https://example.com/foo.tar.gz"
     );

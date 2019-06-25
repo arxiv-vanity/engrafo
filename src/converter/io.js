@@ -96,13 +96,16 @@ async function fetchInputFromURL(inputURL) {
 }
 
 async function extractGzipToTmpdir(gzipPath) {
-  const tmpDir = await tmp.dir({ dir: "/tmp" });
-  // TODO: this will delete the existing file. don't do that.
-  await exec(`gunzip ${gzipPath}`);
-  const gunzippedPath = gzipPath.replace(/\.gz$/, "");
+  const gunzippedDir = await tmp.dir({ dir: "/tmp" });
+  const extractedDir = await tmp.dir({ dir: "/tmp" });
+
+  const gunzippedFilename = path.basename(gzipPath).replace(/\.gz$/, "");
+  const gunzippedPath = path.join(gunzippedDir.path, gunzippedFilename);
+
+  await exec(`gunzip < "${gzipPath}" > "${gunzippedPath}"`);
   try {
     await exec(`tar -xf "${gunzippedPath}"`, {
-      cwd: tmpDir.path
+      cwd: extractedDir.path
     });
   } catch (err) {
     if (err.stderr) {
@@ -116,13 +119,13 @@ async function extractGzipToTmpdir(gzipPath) {
         console.log(
           "Input file is gzipped but not a tarball, assuming it is a .tex file"
         );
-        await fs.move(gunzippedPath, path.join(tmpDir.path, "main.tex"));
+        await fs.move(gunzippedPath, path.join(extractedDir.path, "main.tex"));
       }
     } else {
       throw err;
     }
   }
-  return tmpDir.path;
+  return extractedDir.path;
 }
 
 // Upload rendered directory to S3 if need be

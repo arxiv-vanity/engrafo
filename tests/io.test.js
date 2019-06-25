@@ -19,8 +19,8 @@ jest.mock("aws-sdk", () => {
 jest.mock("request");
 jest.mock("s3-recursive-uploader");
 
-function makeTarball(p) {
-  fs.writeFileSync(path.join(p, "main.tex"), "");
+function makeTarball(p, contents) {
+  fs.writeFileSync(path.join(p, "main.tex"), contents);
   const tarball = path.join(p, "tarball.gz");
   childProcess.execSync(`tar -czf "${tarball}" main.tex`, { cwd: p });
   fs.unlinkSync(path.join(p, "main.tex"));
@@ -39,10 +39,12 @@ describe("prepareInputDirectory", () => {
   });
 
   it("extracts tarballs", async () => {
-    const tarball = makeTarball(dir.path);
+    const tarball = makeTarball(dir.path, "\\documentclass{article}");
     const inputPath = await io.prepareInputDirectory(tarball);
     var texFile = path.join(inputPath, "main.tex");
-    expect(fs.lstatSync(texFile).isFile()).toBe(true);
+    expect(fs.readFileSync(texFile).toString()).toEqual(
+      "\\documentclass{article}"
+    );
   });
 
   it("extracts gzipped tex files", async () => {
@@ -55,7 +57,9 @@ describe("prepareInputDirectory", () => {
 
     const inputPath = await io.prepareInputDirectory(inputFile);
     var texFile = path.join(inputPath, "main.tex");
-    expect(fs.lstatSync(texFile).isFile()).toBe(true);
+    expect(fs.readFileSync(texFile).toString()).toEqual(
+      "\\documentclass{article}"
+    );
   });
 
   it("fetches tarballs from S3", async () => {

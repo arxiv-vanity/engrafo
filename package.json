@@ -30,7 +30,7 @@
     "s3-recursive-uploader": "^0.3.0",
     "tippy.js": "^4.3.4",
     "titlecase": "^1.1.2",
-    "tmp-promise": "^2.0.1"
+    "tmp-promise": "^2.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

@@ -7,7 +7,8 @@ const axios = require("axios");
 async function biblioGluttonLookup(biblioGluttonUrl, params) {
   try {
     const response = await axios.get(biblioGluttonUrl + "/service/lookup", {
-      params: params
+      params: params,
+      timeout: 15000
     });
     return response.data;
   } catch (error) {

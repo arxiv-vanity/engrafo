@@ -28,7 +28,7 @@
     "mathjax-node-page": "^3.2.0",
     "raven": "^2.6.4",
     "s3-recursive-uploader": "^0.3.0",
-    "tippy.js": "^4.3.4",
+    "tippy.js": "^4.3.5",
     "titlecase": "^1.1.2",
     "tmp-promise": "^2.0.2"
   },

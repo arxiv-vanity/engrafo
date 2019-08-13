@@ -12,7 +12,14 @@ async function biblioGluttonLookup(biblioGluttonUrl, params) {
     });
     return response.data;
   } catch (error) {
-    if (error.response && error.response.status === 404) {
+    const res = error.response;
+    if (
+      res &&
+      res.status === 404 &&
+      res.data &&
+      res.data.message ===
+        "Best bibliographical record did not passed the post-validation"
+    ) {
       // No match, ignore
       return;
     }

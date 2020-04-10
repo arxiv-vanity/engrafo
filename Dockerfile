@@ -23,13 +23,13 @@ RUN set -ex \
     imagemagick libimage-magick-perl perl-doc build-essential \
     # This is so we can pin to Node versions https://github.com/nodesource/distributions/issues/33 
     # See https://deb.nodesource.com/node_8.x/pool/main/n/nodejs/ for list of packages
-    && curl -o nodejs.deb https://deb.nodesource.com/node_8.x/pool/main/n/nodejs/nodejs_8.14.0-1nodesource1_amd64.deb \
+    && curl -o nodejs.deb https://deb.nodesource.com/node_12.x/pool/main/n/nodejs/nodejs_12.16.2-1nodesource1_amd64.deb \
     && dpkg -i ./nodejs.deb \
     && rm nodejs.deb \
     && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
     && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
     && apt-get update -qq \
-    && apt-get install -qy yarn=1.12.* \
+    && apt-get install -qy yarn=1.22.* \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /usr/src/latexml

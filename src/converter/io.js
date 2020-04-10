@@ -110,9 +110,9 @@ async function extractGzipToTmpdir(gzipPath) {
       const errorMessage = err.stderr.toString();
       if (
         // Linux
-        errorMessage.includes("tar: This does not look like a tar archive") ||
+        errorMessage.includes("This does not look like a tar archive") ||
         // OS X
-        errorMessage.includes("tar: Unrecognized archive format")
+        errorMessage.includes("Unrecognized archive format")
       ) {
         console.log(
           "Input file is gzipped but not a tarball, assuming it is a .tex file"

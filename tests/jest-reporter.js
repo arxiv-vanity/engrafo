@@ -1,7 +1,7 @@
 /* eslint import/no-extraneous-dependencies: 0 */
 // https://github.com/mozilla/addons-frontend/commit/6bbf218dc3c3872cbe25654cb63ed0dfd367cf00
 const chalk = require("chalk");
-const { getConsoleOutput } = require("jest-util");
+const { getConsoleOutput } = require("@jest/console");
 const DefaultReporter = require("@jest/reporters/build/default_reporter")
   .default;
 const getResultHeader = require("@jest/reporters/build/get_result_header")

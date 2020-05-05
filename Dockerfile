@@ -14,6 +14,7 @@ RUN set -ex \
     # Node.js dependencies \
     ca-certificates \
     git-core \
+    python-minimal \
     # latexml dependencies \
     libarchive-zip-perl libfile-which-perl libimage-size-perl  \
     libio-string-perl libjson-xs-perl libtext-unidecode-perl \

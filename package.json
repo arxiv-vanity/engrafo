@@ -38,7 +38,7 @@
     "@storybook/addon-viewport": "^5.1.11",
     "@storybook/html": "^5.1.11",
     "babel-loader": "^8.0.6",
-    "chalk": "^2.4.2",
+    "chalk": "^4.0.0",
     "eslint": "^6.8.0",
     "jest": "^25.3.0",
     "klaw-sync": "^6.0.0",

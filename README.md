@@ -104,7 +104,7 @@ All code must be formatted with [Prettier](https://prettier.io/). To automatical
 
 ## Sponsors
 
-Thanks to our generous sponsors for supporting the development of Arxiv Vanity! [Sponsor us to get your logo here.](https://www.patreon.com/arxivvanity)
+Thanks to our generous sponsors for supporting the development of arXiv Vanity!
 
 [<img src="docs/sponsor-yld.png" alt="YLD" width="250" />](https://www.yld.io/)
 

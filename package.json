@@ -24,7 +24,7 @@
     "include-media": "^1.4.9",
     "jsdom": "^11.0.0",
     "linkify-urls": "^3.1.0",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.19",
     "mathjax-node-page": "^3.2.0",
     "raven": "^2.6.4",
     "s3-recursive-uploader": "^0.3.0",

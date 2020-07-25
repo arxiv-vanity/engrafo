@@ -18,7 +18,7 @@ function wrapCitationInLink(document, bibitem, href) {
   bibitem.appendChild(a);
 }
 
-module.exports = async function(document, { biblioGluttonUrl, grobidUrl }) {
+module.exports = async function (document, { biblioGluttonUrl, grobidUrl }) {
   console.log("Adding bibliography links...");
 
   const bibitems = document.querySelectorAll(".ltx_bibliography .ltx_bibitem");

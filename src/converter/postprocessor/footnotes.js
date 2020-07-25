@@ -40,6 +40,6 @@ function authorFootnotes(document) {
   }
 }
 
-module.exports = function(document) {
+module.exports = function (document) {
   authorFootnotes(document);
 };

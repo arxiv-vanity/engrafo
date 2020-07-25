@@ -9,5 +9,5 @@ function matchArxivID(input) {
 }
 
 module.exports = {
-  matchArxivID: matchArxivID
+  matchArxivID: matchArxivID,
 };

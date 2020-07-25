@@ -18,14 +18,14 @@ export function createTooltip(el, content) {
       modifiers: {
         // If document overflows on mobile, still keep tooltip within viewport
         preventOverflow: {
-          boundariesElement: "viewport"
-        }
-      }
+          boundariesElement: "viewport",
+        },
+      },
     },
     // https://github.com/atomiks/tippyjs/issues/260
-    onShow: instance => {
+    onShow: (instance) => {
       tippy.hideAll({ exclude: instance });
-    }
+    },
   });
   // For progressive enhancement in CSS
   el.className += " ltx_engrafo_tooltip";

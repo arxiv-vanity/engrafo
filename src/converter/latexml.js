@@ -18,7 +18,7 @@ function createChildProcess({
   javaScriptPath,
   htmlPath,
   texPath,
-  outputDir
+  outputDir,
 }) {
   // prettier-ignore
   const latexmlArgs = [
@@ -66,7 +66,7 @@ function createChildProcess({
   latexmlArgs.push("--dest", htmlPath);
 
   return childProcess.spawn("latexmlc", latexmlArgs, {
-    cwd: path.dirname(texPath)
+    cwd: path.dirname(texPath),
   });
 }
 
@@ -87,7 +87,7 @@ function render({ texPath, outputDir, cssPath, javaScriptPath }) {
     outputDir,
     htmlPath,
     cssPath,
-    javaScriptPath
+    javaScriptPath,
   });
 
   const stdoutReadline = readline.createInterface({ input: latexmlc.stdout });
@@ -97,7 +97,7 @@ function render({ texPath, outputDir, cssPath, javaScriptPath }) {
 
   return new Promise((resolve, reject) => {
     latexmlc.on("error", reject);
-    latexmlc.on("close", code => {
+    latexmlc.on("close", (code) => {
       if (code !== 0) {
         return reject(new Error(`latexmlc exited with status ${code}`));
       }
@@ -111,5 +111,5 @@ function render({ texPath, outputDir, cssPath, javaScriptPath }) {
 }
 
 module.exports = {
-  render: render
+  render: render,
 };

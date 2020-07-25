@@ -52,7 +52,7 @@ async function render({
   externalCSS,
   externalJavaScript,
   biblioGluttonUrl,
-  grobidUrl
+  grobidUrl,
 }) {
   if (postProcessing === undefined) {
     postProcessing = true;
@@ -76,14 +76,14 @@ async function render({
     texPath,
     outputDir,
     cssPath,
-    javaScriptPath
+    javaScriptPath,
   });
 
   await processHTML(htmlPath, {
     externalCSS,
     externalJavaScript,
     biblioGluttonUrl,
-    grobidUrl
+    grobidUrl,
   });
 
   if (output.startsWith("s3://")) {
@@ -94,5 +94,5 @@ async function render({
 }
 
 module.exports = {
-  render: render
+  render: render,
 };

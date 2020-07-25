@@ -1,9 +1,9 @@
 let toTitleCase = require("titlecase");
 
-module.exports = function(document) {
+module.exports = function (document) {
   // Things to apply to all headings
   let headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
-  Array.from(headings).forEach(heading => {
+  Array.from(headings).forEach((heading) => {
     var textNodes = document.createTreeWalker(
       heading,
       document.defaultView.NodeFilter.SHOW_TEXT

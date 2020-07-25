@@ -11,8 +11,8 @@ const mockGetObject = jest.fn();
 jest.mock("aws-sdk", () => {
   return {
     S3: jest.fn().mockImplementation(() => ({
-      getObject: mockGetObject
-    }))
+      getObject: mockGetObject,
+    })),
   };
 });
 
@@ -65,14 +65,14 @@ describe("prepareInputDirectory", () => {
   it("fetches tarballs from S3", async () => {
     const tarball = makeTarball(dir.path);
     mockGetObject.mockReturnValueOnce({
-      createReadStream: () => fs.createReadStream(tarball)
+      createReadStream: () => fs.createReadStream(tarball),
     });
     const inputPath = await io.prepareInputDirectory(
       "s3://bucket/foobar.tar.gz"
     );
     expect(mockGetObject).toHaveBeenCalledWith({
       Bucket: "bucket",
-      Key: "foobar.tar.gz"
+      Key: "foobar.tar.gz",
     });
     var texFile = path.join(inputPath, "main.tex");
     expect(fs.lstatSync(texFile).isFile()).toBe(true);
@@ -83,8 +83,8 @@ describe("prepareInputDirectory", () => {
     axios.get.mockResolvedValueOnce({
       data: fs.createReadStream(tarball),
       headers: {
-        "content-encoding": "x-gzip"
-      }
+        "content-encoding": "x-gzip",
+      },
     });
     const inputPath = await io.prepareInputDirectory(
       "https://example.com/foo.tar.gz"
@@ -223,7 +223,7 @@ describe("uploadOutputToS3", () => {
     expect(uploader).toHaveBeenCalledWith({
       destination: "bucket/output/",
       ignoreHidden: false,
-      source: dir.path
+      source: dir.path,
     });
   });
 });

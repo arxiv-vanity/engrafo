@@ -52,11 +52,11 @@ You can convert documents with `yarn run convert`:
 
 There is also a development server, which is useful for developing CSS and JavaScript. When you make changes to the JavaScript or CSS, it will automatically update in the browser:
 
-    $ yarn run server tests/documents/sample2e.tex
+    $ yarn run dev-server tests/documents/sample2e.tex
 
 There is a script to download a paper from arXiv and start a development server:
 
-    $ script/arxiv-server 1707.08901
+    $ script/arxiv-dev-server 1707.08901
 
 ## Tests
 

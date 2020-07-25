@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 require("dotenv").config();
 const program = require("commander");
-const server = require("../src/converter/server");
+const server = require("../src/converter/dev-server");
 
 program
   .version("0.0.1")
@@ -16,7 +16,7 @@ if (program.args.length != 1) {
 const options = {
   input: program.args[0],
   biblioGluttonUrl: process.env.BIBLIO_GLUTTON_URL,
-  grobidUrl: process.env.GROBID_URL
+  grobidUrl: process.env.GROBID_URL,
 };
 
 server.start(options);

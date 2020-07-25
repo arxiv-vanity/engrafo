@@ -6,16 +6,16 @@ function renderMath(dom) {
     messageStyle: "none",
     showMathMenu: false,
     menuSettings: {
-      inTabOrder: false
+      inTabOrder: false,
     },
     displayAlign: "left",
     tex2jax: {
       processRefs: false,
       ignoreClass: "ltx_page_main", // Ignore everything
-      processClass: "ltx_Math|ltx_DisplayMath" // Then just process math
+      processClass: "ltx_Math|ltx_DisplayMath", // Then just process math
     },
     CommonHTML: {
-      mtextFontInherit: true // Use body font for text
+      mtextFontInherit: true, // Use body font for text
     },
     TeX: {
       extensions: [
@@ -30,7 +30,7 @@ function renderMath(dom) {
         "extpfeil.js",
         "mhchem.js",
         // Don't fail completely if a macro is missing
-        "noUndefined.js"
+        "noUndefined.js",
       ],
       Macros: {
         // This is used to make macros work in both normal and math mode, so
@@ -200,7 +200,7 @@ function renderMath(dom) {
         // FIXME: these don't work
         "lx@arcdegree": ["\u00B0"],
         "lx@arcminute": ["{}^{\\prime}"],
-        "lx@arcsecond": ["{}^{\\prime\\prime}"]
+        "lx@arcsecond": ["{}^{\\prime\\prime}"],
       },
       Augment: {
         Definitions: {
@@ -208,38 +208,38 @@ function renderMath(dom) {
             bm: "myBoldSwitch",
             // https://github.com/mathjax/MathJax-docs/wiki/Macro:-arc-symbol-under,-over
             overparen: ["UnderOver", "23DC"], // UnderOver represents the MathML element, 23DC the unicode character
-            underparen: ["UnderOver", "23DD"] // UnderOver represents the MathML element, 23DC the unicode character
-          }
+            underparen: ["UnderOver", "23DD"], // UnderOver represents the MathML element, 23DC the unicode character
+          },
         },
         Parse: {
           prototype: {
             // https://github.com/mathjax/MathJax/issues/1219
-            myBoldSwitch: function() {
+            myBoldSwitch: function () {
               this.stack.env.boldsymbol = true;
-            }
-          }
-        }
-      }
-    }
+            },
+          },
+        },
+      },
+    },
   };
 
   let pageConfig = {
     format: ["TeX"],
-    MathJax: mathjaxConfig
+    MathJax: mathjaxConfig,
   };
 
   let mjnodeConfig = {
     html: true,
-    css: true
+    css: true,
   };
 
   console.log("Rendering math...");
 
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     mjpage(dom, pageConfig, mjnodeConfig, resolve);
   });
 }
 
 module.exports = {
-  renderMath: renderMath
+  renderMath: renderMath,
 };

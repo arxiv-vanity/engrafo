@@ -1,6 +1,6 @@
 const utils = require("./utils");
 
-module.exports = function(document, { externalCSS, externalJavaScript }) {
+module.exports = function (document, { externalCSS, externalJavaScript }) {
   const head = document.querySelector("head");
   const body = document.querySelector("body");
   const meta = utils.nodeFromString(

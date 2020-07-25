@@ -1,6 +1,6 @@
 let linkifyUrls = require("linkify-urls");
 
-module.exports = function(document) {
+module.exports = function (document) {
   var window = document.defaultView;
 
   // Linkify plain text URLs
@@ -8,13 +8,13 @@ module.exports = function(document) {
     document.querySelector(".ltx_page_main"),
     window.NodeFilter.SHOW_TEXT,
     {
-      acceptNode: function(node) {
+      acceptNode: function (node) {
         // Skip links and all their children
         if (node.parentNode.nodeName === "A") {
           return window.NodeFilter.FILTER_REJECT;
         }
         return window.NodeFilter.FILTER_ACCEPT;
-      }
+      },
     },
     null
   );
@@ -32,18 +32,18 @@ module.exports = function(document) {
     // up changes and perform after treewalker has finished
     nodesToReplace.push({
       node: node,
-      replacement: newText
+      replacement: newText,
     });
   }
 
-  nodesToReplace.forEach(obj => {
+  nodesToReplace.forEach((obj) => {
     var replacementNode = document.createElement("span");
     replacementNode.innerHTML = obj.replacement;
     obj.node.parentNode.replaceChild(replacementNode, obj.node);
   });
 
   // Add http:// to URLs which don't have it
-  Array.from(document.querySelectorAll("a")).forEach(a => {
+  Array.from(document.querySelectorAll("a")).forEach((a) => {
     var href = a.getAttribute("href");
     if (!href) {
       return;

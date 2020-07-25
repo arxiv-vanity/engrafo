@@ -53,7 +53,7 @@ async function fetchInputFromS3(s3URL) {
 
   const params = {
     Bucket: parsedS3URL.host,
-    Key: parsedS3URL.path.slice(1)
+    Key: parsedS3URL.path.slice(1),
   };
   const s3 = new AWS.S3();
   const readStream = s3.getObject(params).createReadStream();
@@ -73,9 +73,9 @@ async function fetchInputFromURL(inputURL) {
   let localFile = path.join(tmpDir.path, path.basename(parsedURL.path));
   const response = await axios.get(inputURL, {
     headers: {
-      "User-Agent": "engrafo"
+      "User-Agent": "engrafo",
     },
-    responseType: "stream"
+    responseType: "stream",
   });
   await new Promise((resolve, reject) => {
     response.data
@@ -103,7 +103,7 @@ async function extractGzipToTmpdir(gzipPath) {
   await exec(`gunzip < "${gzipPath}" > "${gunzippedPath}"`);
   try {
     await exec(`tar -xf "${gunzippedPath}"`, {
-      cwd: extractedDir.path
+      cwd: extractedDir.path,
     });
   } catch (err) {
     if (err.stderr) {
@@ -136,7 +136,7 @@ async function uploadOutputToS3(renderedPath, outputDir) {
   const stats = await uploader({
     source: renderedPath,
     destination: outputDir,
-    ignoreHidden: false
+    ignoreHidden: false,
   });
   console.log(`Uploaded ${stats.count} files to s3://${outputDir}`);
 }
@@ -160,7 +160,7 @@ async function pickLatexFile(dir) {
   if (files.includes("main.tex")) {
     return path.join(dir, "main.tex");
   }
-  const texPaths = files.filter(f => f.endsWith(".tex"));
+  const texPaths = files.filter((f) => f.endsWith(".tex"));
   if (texPaths.length === 0) {
     throw new Error("No .tex files found");
   }
@@ -202,5 +202,5 @@ module.exports = {
   prepareInputDirectory: prepareInputDirectory,
   prepareOutputDirectory: prepareOutputDirectory,
   uploadOutputToS3: uploadOutputToS3,
-  pickLatexFile: pickLatexFile
+  pickLatexFile: pickLatexFile,
 };

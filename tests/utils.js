@@ -8,8 +8,8 @@ function integrationDocuments() {
   const documentsPath = path.join(__dirname, "integration/");
   const documents = klawSync(documentsPath, { nodir: true });
   return documents
-    .filter(item => item.path.match(/\.tex$/))
-    .map(item => [item.path.replace(documentsPath, ""), item.path]);
+    .filter((item) => item.path.match(/\.tex$/))
+    .map((item) => [item.path.replace(documentsPath, ""), item.path]);
 }
 
 async function renderToDom(input, output) {
@@ -20,7 +20,7 @@ async function renderToDom(input, output) {
     input: input,
     output: output,
     externalCSS: path.join(relativeAssetsPath, "css/index.css"),
-    externalJavaScript: path.join(relativeAssetsPath, "javascript/index.js")
+    externalJavaScript: path.join(relativeAssetsPath, "javascript/index.js"),
   });
   const htmlString = await fs.readFile(htmlPath, "utf-8");
   const dom = new JSDOM(htmlString);
@@ -30,5 +30,5 @@ async function renderToDom(input, output) {
 
 module.exports = {
   renderToDom: renderToDom,
-  integrationDocuments: integrationDocuments
+  integrationDocuments: integrationDocuments,
 };

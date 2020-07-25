@@ -38,7 +38,7 @@ export default function render(el) {
         ref.setAttribute("href", link.getAttribute("href"));
         ref.setAttribute("target", "_blank");
       } else {
-        ref.addEventListener("click", function(e) {
+        ref.addEventListener("click", function (e) {
           e.preventDefault();
         });
         ref.className += " engrafo_not_a_link";

@@ -8,7 +8,7 @@ async function biblioGluttonLookup(biblioGluttonUrl, params) {
   try {
     const response = await axios.get(biblioGluttonUrl + "/service/lookup", {
       params: params,
-      timeout: 5000
+      timeout: 5000,
     });
     return response.data;
   } catch (error) {
@@ -35,7 +35,7 @@ async function biblioGluttonLookup(biblioGluttonUrl, params) {
  */
 async function getCitationMetadata(text, { biblioGluttonUrl }) {
   const data = await biblioGluttonLookup(biblioGluttonUrl, {
-    biblio: text
+    biblio: text,
   });
   return data;
 }

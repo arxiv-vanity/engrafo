@@ -5,7 +5,7 @@ const render = require("./index").render;
 const path = require("path");
 const tmp = require("tmp-promise");
 
-module.exports.start = async options => {
+module.exports.start = async (options) => {
   // tmp dir needs to be within the project directory so Parcel can resolve
   // assets.
   // TODO: cleanup tmpdir
@@ -19,7 +19,7 @@ module.exports.start = async options => {
     // which will compile the SCSS. "~" is Parcel shorthand for the project
     // root.
     externalCSS: "../../src/assets/css/index.scss",
-    externalJavaScript: "../../src/assets/javascript/index.js"
+    externalJavaScript: "../../src/assets/javascript/index.js",
   });
   const htmlPath = await render(options);
 

@@ -1,5 +1,5 @@
-module.exports = function(document) {
-  Array.from(document.querySelectorAll("figure")).forEach(figure => {
+module.exports = function (document) {
+  Array.from(document.querySelectorAll("figure")).forEach((figure) => {
     // If caption is at start, put it at end
     if (
       figure.children.length > 0 &&

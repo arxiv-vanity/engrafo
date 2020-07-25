@@ -1,8 +1,8 @@
 const utils = require("./utils");
 
-module.exports = function(document) {
+module.exports = function (document) {
   Array.from(document.querySelectorAll(".ltx_equation .ltx_Math")).forEach(
-    math => {
+    (math) => {
       // Disambiguate display maths
       math.className = "ltx_DisplayMath";
       // Add markup so mathjax picks it up
@@ -24,7 +24,7 @@ module.exports = function(document) {
     tableContainer.appendChild(table);
   }
 
-  Array.from(document.querySelectorAll(".ltx_Math")).forEach(math => {
+  Array.from(document.querySelectorAll(".ltx_Math")).forEach((math) => {
     math.innerHTML = `\\(${math.innerHTML}\\)`;
   });
 };

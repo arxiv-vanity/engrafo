@@ -53,17 +53,17 @@ async function main(argv) {
     biblioGluttonUrl: program.biblioGluttonUrl
       ? program.biblioGluttonUrl
       : process.env.BIBLIO_GLUTTON_URL,
-    grobidUrl: program.grobidUrl ? program.grobidUrl : process.env.GROBID_URL
+    grobidUrl: program.grobidUrl ? program.grobidUrl : process.env.GROBID_URL,
   };
 
-  const htmlPath = await converter.render(options);
-  console.log("💃  Document successfully rendered to", htmlPath);
+  const out = await converter.render(options);
+  console.log("💃  Document successfully rendered to", out);
   return 0;
 }
 
 main(process.argv)
-  .then(exitCode => process.exit(exitCode))
-  .catch(err => {
+  .then((exitCode) => process.exit(exitCode))
+  .catch((err) => {
     console.error("Engrafo rendering failed:", err);
     process.exit(1);
   });

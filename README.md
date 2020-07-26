@@ -20,7 +20,27 @@ The easiest way to run Engrafo is by using the Docker image. To convert `input/m
       -v "$(pwd)":/workdir -w /workdir \
       arxivvanity/engrafo engrafo input/main.tex output/
 
+Input can be a TeX file, a directory containing a TeX file and supporting files, or a tarball containing a TeX file and supporting files.
+
+Either input or output can be on S3 by using the form `s3://bucket/path` and setting the `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` environment variables.
+
 For full usage, run `docker run arxivvanity/engrafo engrafo --help`.
+
+## Server
+
+Engrafo can also be run as an HTTP server, which is useful if you need to run it over a network.
+
+    $ docker run -e PORT=8000 -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -p 8000:8000 arxivvanity/engrafo engrafo-server
+    💃  Listening on http://0.0.0.0:8000
+
+    $ curl -X POST \
+        -H 'Content-Type: application/json' \
+        -d '{"input": "s3://some-bucket/source.tar.gz", "output": "s3://some-bucket/output/"}' \
+        http://localhost:8000/convert
+    {
+        "success": true,
+        "logs": "..."
+    }
 
 ## Development environment
 

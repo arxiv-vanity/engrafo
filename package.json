@@ -35,7 +35,7 @@
     "tmp-promise": "^2.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.0",
+    "@babel/core": "^7.12.1",
     "@babel/runtime": "^7.6.0",
     "@storybook/addon-viewport": "^5.1.11",
     "@storybook/html": "^5.1.11",

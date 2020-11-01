@@ -14,4 +14,4 @@ if [ ! -d "$OUTPUT_DIR" ]; then
   script/arxiv-download $ARXIV_ID
 fi
 
-exec yarn run server $OUTPUT_DIR
+exec yarn run dev-server $OUTPUT_DIR

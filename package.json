@@ -42,7 +42,7 @@
     "babel-loader": "^8.0.6",
     "chalk": "^4.1.0",
     "eslint": "^7.5.0",
-    "jest": "^26.2.2",
+    "jest": "^26.6.3",
     "klaw-sync": "^6.0.0",
     "node-sass": "^4.14.1",
     "parcel-bundler": "^1.12.4",

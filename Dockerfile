@@ -5,6 +5,11 @@ FROM debian:testing-20200720
 # Change logs here: https://packages.debian.org/buster/texlive-full
 RUN apt-get update -qq && apt-get install -qy texlive-full
 
+RUN apt-get install python2-minimal equivs -qy
+ADD dummy-python-minimal.equivs .
+RUN equivs-build dummy-python-minimal.equivs \
+    && dpkg -i python-minimal_99_all.deb
+
 RUN set -ex \
     && apt-get update -qq \
     && apt-get install -qy \
@@ -14,7 +19,6 @@ RUN set -ex \
     # Node.js dependencies \
     ca-certificates \
     git-core \
-    python-minimal \
     # latexml dependencies \
     libarchive-zip-perl libfile-which-perl libimage-size-perl  \
     libio-string-perl libjson-xs-perl libtext-unidecode-perl \

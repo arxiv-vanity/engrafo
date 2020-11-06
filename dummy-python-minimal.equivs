@@ -1,0 +1,6 @@
+Package: python-minimal
+Version: 99:99
+Maintainer: Your Name <you@example.com>
+Architecture: all
+Description: dummy python-minimal package
+ A dummy package providing python-minimal for nodesource nodejs repository.

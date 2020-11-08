@@ -5,7 +5,7 @@ FROM debian:testing-20200720
 # Change logs here: https://packages.debian.org/buster/texlive-full
 RUN apt-get update -qq && apt-get install -qy texlive-full
 
-RUN apt-get install python2-minimal equivs -qy
+RUN apt-get update -qy && apt-get install python2-minimal equivs -qy
 ADD dummy-python-minimal.equivs .
 RUN equivs-build dummy-python-minimal.equivs \
     && dpkg -i python-minimal_99_all.deb

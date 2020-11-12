@@ -48,7 +48,7 @@
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.5",
     "prettier-check": "^2.0.0",
-    "sass-loader": "^8.0.2",
+    "sass-loader": "^10.1.0",
     "supertest": "^4.0.2"
   }
 }

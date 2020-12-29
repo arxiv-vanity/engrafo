@@ -63,7 +63,7 @@ describe("prepareInputDirectory", () => {
   });
 
   it("fetches tarballs from S3", async () => {
-    const tarball = makeTarball(dir.path);
+    const tarball = makeTarball(dir.path, "\\documentclass{article}");
     mockGetObject.mockReturnValueOnce({
       createReadStream: () => fs.createReadStream(tarball),
     });
@@ -79,7 +79,7 @@ describe("prepareInputDirectory", () => {
   });
 
   it("fetches tarballs from URLs", async () => {
-    const tarball = makeTarball(dir.path);
+    const tarball = makeTarball(dir.path, "\\documentclass{article}");
     axios.get.mockResolvedValueOnce({
       data: fs.createReadStream(tarball),
       headers: {

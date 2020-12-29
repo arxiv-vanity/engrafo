@@ -1,0 +1,24 @@
+version: 2
+updates:
+- package-ecosystem: docker
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: aws-sdk
+    versions:
+    - "< 2.303"
+    - ">= 2.302.a"
+  - dependency-name: aws-sdk
+    versions:
+    - "> 2.482.0"
+    - "< 3"
+  - dependency-name: jsdom
+    versions:
+    - "> 11.12.0"

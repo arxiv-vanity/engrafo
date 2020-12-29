@@ -40,6 +40,10 @@ RUN curl -L https://github.com/brucemiller/LaTeXML/tarball/$LATEXML_COMMIT | tar
     && make \
     && make install
 
+# allow converting PDF, etc
+# https://stackoverflow.com/questions/52998331/imagemagick-security-policy-pdf-blocking-conversion
+COPY .docker/policy.xml /etc/ImageMagick-6/policy.xml
+
 RUN mkdir -p /app
 WORKDIR /app
 

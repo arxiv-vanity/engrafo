@@ -40,7 +40,7 @@ jobs:
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
         run: |
           docker push arxivvanity/engrafo:latest
-          docker push arxivvanity/engrafo:${TRAVIS_COMMIT}
+          docker push arxivvanity/engrafo:${GITHUB_SHA}
 
       - name: Push tag
         if: startsWith(github.ref, 'refs/tags/')

@@ -14,7 +14,7 @@ RUN set -ex \
     # Node.js dependencies \
     ca-certificates \
     git-core \
-    python-minimal \
+    python3-minimal \
     # latexml dependencies \
     libarchive-zip-perl libfile-which-perl libimage-size-perl  \
     libio-string-perl libjson-xs-perl libtext-unidecode-perl \
@@ -22,8 +22,8 @@ RUN set -ex \
     libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl  \
     imagemagick libimage-magick-perl perl-doc build-essential \
     # This is so we can pin to Node versions https://github.com/nodesource/distributions/issues/33 
-    # See https://deb.nodesource.com/node_8.x/pool/main/n/nodejs/ for list of packages
-    && curl -o nodejs.deb https://deb.nodesource.com/node_12.x/pool/main/n/nodejs/nodejs_12.16.2-1nodesource1_amd64.deb \
+    # See https://deb.nodesource.com/node_12.x/pool/main/n/nodejs/ for list of packages
+    && curl -o nodejs.deb https://deb.nodesource.com/node_12.x/pool/main/n/nodejs/nodejs_12.20.0-deb-1nodesource1_amd64.deb \
     && dpkg -i ./nodejs.deb \
     && rm nodejs.deb \
     && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \

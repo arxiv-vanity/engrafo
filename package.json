@@ -21,7 +21,7 @@
     "dotenv": "^8.2.0",
     "execa": "^4.0.3",
     "express": "^4.17.1",
-    "express-validator": "^6.6.1",
+    "express-validator": "^6.9.1",
     "fs-extra": "^9.0.1",
     "include-media": "^1.4.9",
     "jsdom": "^11.0.0",

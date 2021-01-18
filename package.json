@@ -41,7 +41,7 @@
     "@storybook/html": "^5.1.11",
     "babel-loader": "^8.0.6",
     "chalk": "^4.1.0",
-    "eslint": "^7.16.0",
+    "eslint": "^7.18.0",
     "jest": "^26.2.2",
     "klaw-sync": "^6.0.0",
     "node-sass": "^4.14.1",

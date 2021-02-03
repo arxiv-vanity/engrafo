@@ -39,7 +39,7 @@
     "@babel/runtime": "^7.6.0",
     "@storybook/addon-viewport": "^5.1.11",
     "@storybook/html": "^5.1.11",
-    "babel-loader": "^8.0.6",
+    "babel-loader": "^8.2.2",
     "chalk": "^4.1.0",
     "eslint": "^7.16.0",
     "jest": "^26.2.2",
@@ -49,6 +49,6 @@
     "prettier": "^2.0.5",
     "prettier-check": "^2.0.0",
     "sass-loader": "^8.0.2",
-    "supertest": "^4.0.2"
+    "supertest": "^6.1.3"
   }
 }

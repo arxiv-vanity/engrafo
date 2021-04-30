@@ -80,6 +80,12 @@ There is a script to download a paper from arXiv and start a development server:
 
 ## Tests
 
+As a one-off, you will need to build the Docker image:
+
+    $ script/docker-build
+
+This only needs running once, unless you change something in the build process (e.g. LaTeXML version). The code is mounted at run-time.
+
 Run the main test suite:
 
     $ yarn test

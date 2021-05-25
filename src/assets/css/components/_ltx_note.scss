@@ -4,7 +4,7 @@
 .ltx_note {
   position: relative;
 
-  & > .ltx_note_mark {
+  &>.ltx_note_mark {
     display: none;
 
     @include media(">=desktop") {
@@ -27,9 +27,8 @@
     clear: right;
     position: relative;
     width: 200px;
-    margin-right: -216px;
     margin-top: -1em;
-    padding: 2em 0;
+    padding: 12em 0;
     text-indent: 0;
 
     // It inherits from wherever the footnote is, so we need to reset stuff.
@@ -52,11 +51,6 @@
     // Hide on mobile
     @include media("<desktop") {
       display: none;
-    }
-
-    // Push out a bit on larger screens
-    @include media(">=1200px") {
-      margin-right: -300px;
     }
   }
 }

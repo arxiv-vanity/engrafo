@@ -38,7 +38,7 @@
     "@babel/core": "^7.15.5",
     "@babel/runtime": "^7.12.13",
     "@storybook/addon-viewport": "^5.1.11",
-    "@storybook/html": "^5.1.11",
+    "@storybook/html": "^6.3.9",
     "babel-loader": "^8.2.2",
     "chalk": "^4.1.0",
     "eslint": "^7.19.0",

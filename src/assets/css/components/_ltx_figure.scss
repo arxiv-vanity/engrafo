@@ -1,10 +1,13 @@
 // Only top-level figures, not subfigures
 *:not(.ltx_subfigure) > .ltx_figure {
   margin: 4rem 0;
-
   max-width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
   .ltx_caption {
     margin-top: 1em;

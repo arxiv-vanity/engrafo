@@ -2,6 +2,9 @@
 
 .ltx_subsection {
   margin: 2em 0;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @include media(">=tablet") {
     margin: 3em 0;

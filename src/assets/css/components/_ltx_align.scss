@@ -5,6 +5,8 @@
   text-align: right;
 }
 .ltx_align_center {
+   display: flex;
+   justify-content: center;
   text-align: center;
 }
 .ltx_align_justify {

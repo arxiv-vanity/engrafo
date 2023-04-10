@@ -11,8 +11,8 @@
   .ltx_engrafo_note_mark_tooltip {
     color: $linkColor;
     @include media(">=desktop") {
-        display: inline;
-      }
+       display: inline;
+     }
   }
 
   .ltx_note_outer {

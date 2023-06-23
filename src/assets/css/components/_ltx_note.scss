@@ -23,7 +23,6 @@
   .ltx_note_outer {
     @include font-sans();
 
-    float: right;
     clear: right;
     position: relative;
     width: 200px;
@@ -45,9 +44,7 @@
       font-size: inherit;
     }
 
-    .ltx_tag {
-      display: none;
-    }
+    
 
     // Hide on mobile
     @include media("<desktop") {

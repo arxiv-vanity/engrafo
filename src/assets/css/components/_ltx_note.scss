@@ -23,7 +23,6 @@
   .ltx_note_outer {
     @include font-sans();
 
-    float: right;
     clear: right;
     position: relative;
     width: 200px;
@@ -42,7 +41,7 @@
     .ltx_note_mark {
       display: block;
       vertical-align: inherit;
-      font-size: inherit;
+      font-size: 0;
     }
 
     .ltx_tag {

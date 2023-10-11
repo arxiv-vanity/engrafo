@@ -1,0 +1,79 @@
+<html>
+<head>
+    <style>
+       h3 { text-align:center;
+color:yellow; 
+       }
+       h1{text-align:center;} 
+       
+       div{height:50px;
+       width:6px;
+       background:white;
+       position:relative;
+     animation :mymove 3s  infinite;
+       } 
+    @keyframes mymove{
+        form{right:200px;} 
+        to{left:300px;} 
+        
+       } 
+button {background-color:orange;
+} 
+  c1,c2,c3,c4,c5,c6{text-align:center;} 
+a1{border:5px;
+    text-size:100px;} 
+    Name{align-:centre;
+} 
+ </style>
+</head>
+<form action="/action_page.php">
+<body bgcolor ="red">
+    <fieldset>
+    <header>
+<div></div><h1>Order On Online</h1>
+    </header>
+    Your
+    Name:<input type style="text-align:center ;" ="text" placeholder="enter name"
+    >
+    <br></br>
+    
+Age:<input type="text" placeholder=" enter age" name="a1">
+<br></br>
+Date:<input type ="date">
+<br></br>
+Address:<input type ="textarea" placeholder="enter Your address">
+<br></br>
+Gender:<input type="radio" name="r1">male
+<input type="radio" name="r1">female
+<br></br>
+<hr>
+<p>
+<h3>select your order</h3>
+</p>
+<input type="checkbox" name value="c1">pizza
+<br></br>
+<input type="checkbox" name value="c2">burger
+<br></br>
+<input type="checkbox" name value="c3">sandwich</br>
+</br>
+<input type="checkbox" name
+value="c4">Manchurian
+<br></br>
+<input type ="checkbox" name value="c5">thosa
+<br></br>
+<input type ="checkbox"oninvalid="c6">
+Pavbhaji
+<br></br> 
+<button>
+<a href="//https/www.zomato.com/search">Order
+</a>
+</button>
+. 
+<button style="right:20px;">
+Clear
+</button>
+
+</fieldset>
+</form>
+</body>
+</html

@@ -50,7 +50,7 @@ First, install [Node](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/en/
 
 ### Frontend development
 
-For developing the CSS and frontend JavaScript, there are a bunch of pre-rendered documents you can use to work with. This means you don't need to install LaTeX or Docker.
+For developing the CSS and frontend JavaScript, there are a bunch of pre-rendered documents you can use to work with. This means you do not need to install LaTeX or Docker.
 
 Run this command:
 

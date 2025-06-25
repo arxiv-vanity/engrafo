@@ -1,5 +1,6 @@
 # Version from https://hub.docker.com/_/debian/
 FROM debian:buster-20211115
+ARG TARGETARCH
 
 # LaTeX stuff first, because it's enormous and doesn't change much
 # Change logs here: https://packages.debian.org/buster/texlive-full
@@ -23,7 +24,7 @@ RUN set -ex \
     imagemagick libimage-magick-perl perl-doc build-essential \
     # This is so we can pin to Node versions https://github.com/nodesource/distributions/issues/33 
     # See https://deb.nodesource.com/node_12.x/pool/main/n/nodejs/ for list of packages
-    && curl -o nodejs.deb https://deb.nodesource.com/node_12.x/pool/main/n/nodejs/nodejs_12.20.0-deb-1nodesource1_amd64.deb \
+    && curl -o nodejs.deb "https://deb.nodesource.com/node_12.x/pool/main/n/nodejs/nodejs_12.20.0-deb-1nodesource1_${TARGETARCH}.deb" \
     && dpkg -i ./nodejs.deb \
     && rm nodejs.deb \
     && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
